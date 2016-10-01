@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>新闻管理列表
