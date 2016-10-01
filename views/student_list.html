@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+<title>学生信息列表</title>
+
+    <meta charset="UTF-8">
+ 
+	 <style>
+	td{
+		text-align: center;
+	}
+ul li
+{
+	display: inline-block;
+ }
+	 </style>
+</head>
+<body>
+<ul>
+	<li><a href="/mvc/index.php?c=student&a=info_list">学生信息管理</a></li>
+	<li><a href="/mvc/index.php?c=teacher&a=info_list">老师信息管理</a></li>
+</ul>
+ <table cellspacing="0" cellpadding="5"  style="width:980px">
+ 	<tr>
+ 		<th>编号</th>
+ 		<th>学籍号</th>
+ 		<th>姓名</th>
+ 		<th>老师姓名</th>
+ 		<th>学生成绩</th>
+ 		<th>地址</th>
+ 		<th>手机号码</th>
+ 		<th>操作</th>
+ 	</tr>
+	<!-- {section loop=$class_info_a  name='class_info_i'} -->
+	<!--  {if $smarty.section.class_info_i.first} -->
+	<tr style="font-weight:bold;color:red;">
+	<!-- {elseif $smarty.section.class_info_i.last} -->
+	<tr style="font-weight:bold;">
+	<!-- {else} -->
+	<tr>
+	<!-- {/if} -->
+		<td>{$smarty.section.class_info_i.iteration}</td>
+		<td>{$class_info_a[class_info_i]['id']}</td>
+		<td>{$class_info_a[class_info_i]['name']}</td>
+		<td>{$class_info_a[class_info_i]['teacher_name']}</td>
+		<td>{$class_info_a[class_info_i]['grade']}</td>
+		<td>{$class_info_a[class_info_i]['address']}</td>
+		<td>{$class_info_a[class_info_i]['mobile']} </td>
+		<td><a href="/mvc/index.php?c=student&a=info_edit&id={$class_info_a[class_info_i]['id']}">修改</a> | <a href="/mvc/index.php?c=student&a=info_delete&id={$class_info_a[class_info_i]['id']}">删除</a></td>
+		
+	</tr>
+
+
+	<!-- {/section}	  -->
+	<tr>
+		<td colspan="8">
+			<b>统计：总人数：{$smarty.section.class_info_i.total}</b>
+		</td>
+	</tr>
+</table>
+
+<a href="/mvc/index.php?c=student&a=info_add">添加</a>
+</body>
+</html>
