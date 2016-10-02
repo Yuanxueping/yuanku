@@ -38,6 +38,34 @@ class IndexController extends Controller {
     	$this->display();
     	
     }
+    public function student_edit($value='')
+    {
+        $id=intval($_GET['id']);
+
+        $stu_info=M('Student')->find($id);
+
+        $this->assign('stu_info',$stu_info);
+        $this->display();
+        
+    }
+   public function update_info($value='')
+    {
+        $id=intval($_POST['id']);
+        if ($id>0) {
+           M('Student')->save($_POST,array('where'=>'id='.$id));
+           $this->success('修改成功','Index/index');
+        }else{
+            $this->error('修改错误');
+        }
+         
+        
+    }
+    public function student_del($value='')
+    {
+        $this->display();
+        
+    }
+
     public function insert($value='')
     {
     	$student=D('Student');

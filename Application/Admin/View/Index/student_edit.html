@@ -1,0 +1,13 @@
+ <include file='Public:header' /> 
+
+<form action="__URL__/update_info" method="post">
+	学生姓名：<input type="text" name="name" value="{$stu_info['name']}"><br>
+	学生成绩：<input type="text" name="grade" value="{$stu_info['grade']}"><br>
+	手机号码：<input type="text" name="mobile" value="{$stu_info['mobile']}"><br>
+	<input type="hidden"  name="id" value="{$stu_info['id']}">
+	<input type="submit" class="btn btn-success">
+</form>
+ 
+
+ <include file='Public:footer' /> 
+ 
