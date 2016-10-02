@@ -45,7 +45,7 @@
 				<td><?php echo ($vo["mobile"]); ?></td>
 				<td>
 					<a href="/thinkphp_3.2.3_full/yuanku/index.php/Admin/Index/student_edit/id/<?php echo ($vo["id"]); ?>" class="btn">编辑</a>
-					<a href="/thinkphp_3.2.3_full/yuanku/index.php/Admin/Index/student_del" class="btn btn-warning">删除</a>
+					<a href="/thinkphp_3.2.3_full/yuanku/index.php/Admin/Index/student_del/id/<?php echo ($vo["id"]); ?>" class="btn btn-warning">删除</a>
 				</td>
 			</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 

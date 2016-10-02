@@ -53,16 +53,24 @@ class IndexController extends Controller {
         $id=intval($_POST['id']);
         if ($id>0) {
            M('Student')->save($_POST,array('where'=>'id='.$id));
-           $this->success('修改成功','Index/index');
+           $this->success('修改成功！',__MODULE__.'/Index/index');
         }else{
-            $this->error('修改错误');
+            $this->error('修改失败！');
         }
          
         
     }
     public function student_del($value='')
     {
-        $this->display();
+        $id=intval($_GET['id']);
+        if ($id>0) {
+            M('Student')->delete($id);
+           $this->success('删除成功！',__MODULE__.'/Index/index');
+            http://localhost/thinkphp_3.2.3_full/yuanku/index.php/Admin/Index/student_del/id/Index/index
+        }else{
+            $this->error('删除失败！');
+
+        }
         
     }
 
