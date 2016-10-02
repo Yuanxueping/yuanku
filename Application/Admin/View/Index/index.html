@@ -1,49 +1,5 @@
  <include file='Public:header' /> 
-
-<br>
-	<ul>
-		<li>
-			<a class="btn btn-success" href="/mvc/index.php?c=student&a=info_list">学生信息管理</a>
-		</li>
-		<li>
-			<a href="/mvc/index.php?c=teacher&a=info_list">老师信息管理</a>
-		</li>
-	</ul>
-	<table cellspacing="10" cellpadding="5"  style="width:980px" class="td_pd5">
-		<tr>
-			<th>编号</th>
-			<th>学籍号</th>
-			<th>姓名</th>
-			<th>老师姓名</th>
-			<th>学生成绩</th>
-			<th>地址</th>
-			<th>手机号码</th>
-			<th>操作</th>
-		</tr>
-
-		<volist name="student_list" key="num" id="vo" >
-	 
-			<tr>
-				<td>{$num}</td>
-				<td>{$vo.id}</td>
-				<td>{$vo.name}</td>
-				<td>{$vo.teacher_name}</td>
-				<td>{$vo.grade}</td>
-				<td>{$vo.address}</td>
-				<td>{$vo.mobile}</td>
-				<td>
-					<a href="__URL__/student_edit/id/{$vo.id}" class="btn">编辑</a>
-					<a href="__URL__/student_del/id/{$vo.id}" class="btn btn-warning">删除</a>
-				</td>
-			</tr>
-			
-		</volist>
-
-	</tr>
-	<td colspan="8"> <b>统计：总人数：{$smarty.section.class_info_i.total}</b>
-	</td>
-</tr>
-</table>
+ 
 
  <include file='Public:footer' /> 
  

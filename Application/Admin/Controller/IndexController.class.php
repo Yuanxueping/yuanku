@@ -66,7 +66,6 @@ class IndexController extends Controller {
         if ($id>0) {
             M('Student')->delete($id);
            $this->success('删除成功！',__MODULE__.'/Index/index');
-            http://localhost/thinkphp_3.2.3_full/yuanku/index.php/Admin/Index/student_del/id/Index/index
         }else{
             $this->error('删除失败！');
 

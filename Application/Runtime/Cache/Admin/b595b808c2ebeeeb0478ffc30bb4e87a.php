@@ -7,7 +7,7 @@
 
 	 
 	 <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/common.css">
+	 <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/common.css">
 	 <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
 
 
