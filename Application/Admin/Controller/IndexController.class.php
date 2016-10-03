@@ -31,6 +31,7 @@ class IndexController extends Controller {
         // exit();
         $this->assign('student_list',$student_list);
     	$this->display();
+		//$this->display();
     }
 
     public function student_add($value='')
