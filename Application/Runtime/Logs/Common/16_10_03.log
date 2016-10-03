@@ -3829,3 +3829,129 @@ INFO: [ app_init ] --END-- [ RunTime:0.002251s ]
 ERR: 无法加载模块:Img
 
 >>>>>>> ecfdbee1f7f1fa524798f7bfc5cd1df5ac815b09
+[ 2016-10-03T16:16:17+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:16:44+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:16:45+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:16:46+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:20:14+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:29:13+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:29:14+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:29:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:29:16+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:29:18+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:29:49+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:29:49+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:33:29+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001426s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:33:30+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001945s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:34:14+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000159s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001277s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:34:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000215s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002418s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:34:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000212s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001882s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:34:18+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000234s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001680s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:34:30+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000163s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003170s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:36:35+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/index.php/about_us
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000155s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001343s ]
+ERR: 无法加载模块:About_us
+
+[ 2016-10-03T16:36:35+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/index.php/about_us
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001251s ]
+ERR: 无法加载模块:About_us
+
+[ 2016-10-03T16:36:38+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/index/about_us
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000157s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001274s ]
+ERR: 无法加载模块:Index
+
+[ 2016-10-03T16:36:38+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/index/about_us
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000229s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001731s ]
+ERR: 无法加载模块:Index
+
+[ 2016-10-03T16:39:01+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/index/about_us
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002185s ]
+ERR: 无法加载模块:Index
+
+[ 2016-10-03T16:39:01+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/index/about_us
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001389s ]
+ERR: 无法加载模块:Index
+
+[ 2016-10-03T16:44:28+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/home/about.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000220s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001818s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T16:44:46+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/home/about.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000153s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001876s ]
+ERR: 无法加载模块:Public
+

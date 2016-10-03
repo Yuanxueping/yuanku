@@ -6,10 +6,10 @@
 	<meta charset="UTF-8">
 
 	 
-	 <link rel="stylesheet" href="/lidong/clone/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/lidong/clone/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	  <script src="/lidong/clone/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+	 <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	  <script src="/thinkphp_3.2.3_full/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
 
 	<!--  <link rel="stylesheet" href="css/headAndFoot.css" />
 	 <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
@@ -20,6 +20,7 @@
 
 </head>
 <body>
+
 	<nav class="navbar navbar-default top-nav" >
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -52,7 +53,10 @@
 	        </div>
 		  </div>
 		</nav>
+
 		<div style="height:300px"></div>
+
+
 首页
 
 
