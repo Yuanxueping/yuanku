@@ -18,19 +18,19 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/bootstrap.css">
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/material-design-iconic-font.css">
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/animate.css">
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/metisMenu.css">
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/jquery_002.css">
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/waves.css">
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/toastr.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/material-design-iconic-font.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/animate.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/metisMenu.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/jquery_002.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/waves.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/toastr.css">
 
 
 
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/jquery.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/jquery.css">
 
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/style.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/style.css">
 
 <!--
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
@@ -40,7 +40,7 @@
       <script src="bower_components/html5shiv/dist/html5shiv.min,js"></script>
       <script src="bower_components/respondJs/dest/respond.min.js"></script>
     <![endif]-->
-<script src="/lidong/clone/yuanku/Public/js/jquery_008.js"></script></head>
+<script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_008.js"></script></head>
 
 <body class="fixed-all boxed-layout fixed-sidebar mCustomScrollbar _mCS_4 mCS-autoHide" style="overflow: visible;">
  <div id="mCSB_4" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_4_container" class="mCSB_container" style="position: relative; top: -164px; left: 0px;" dir="ltr">
@@ -54,7 +54,7 @@
    <nav class="navbar navbar-indigo">
  <div class="navbar-header container brand-orange">
    <a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
-   <a href="/thinkphp_3.2.3_full/yuanku/admin" class="logo"><img src="Pacificonis%20-%20Dashboard_files/logo.png" alt="力动企业" class="mCS_img_loaded"></a>
+   <a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="logo"><img src="Pacificonis%20-%20Dashboard_files/logo.png" alt="力动企业" class="mCS_img_loaded"></a>
    <a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="icon-logo"></a>
  </div>
   <div class="navbar-container clearfix">
@@ -114,32 +114,10 @@
     </div>
   </div>
 </nav> 
+
  <aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
   <ul class="nav metismenu">
-    <li class="profile-sidebar-container">
-      <div class="profile-sidebar text-center">
-        <div class="profile-userpic">
-          <img src="/thinkphp_3.2.3_full/yuanku/Public/images/admin/profile_user.jpg" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
-          <span class="online"></span>
-        </div>
-        <div class="profile-usertitle">
-          <div class="name">
-            Smith
-          </div>
-          <div class="city">
-            <i class="zmdi zmdi-pin"></i>San Francisco, CA
-          </div>
-        </div>
-        <div class="profile-activity clearfix">
-          <div class="pull-left">
-             
-          </div>
-          <div class="pull-right">
-            
-          </div>
-        </div>
-      </div>
-    </li>
+    
     <li class="">
       <a href="#" aria-expanded="false"><i class="zmdi zmdi-view-dashboard"></i>系统设置<span class="zmdi arrow"></span></a>
       <ul class="nav nav-inside collapse" aria-expanded="false" style="height: 0px;">
@@ -168,8 +146,8 @@
       <a href="#"><i class="zmdi zmdi-flower"></i>新闻管理<span class="zmdi arrow"></span></a>
       <ul class="nav nav-inside collapse" aria-expanded="false">
         <li class="inside-title">新闻管理</li>
-        <li><a href="/lidong/clone/yuanku/admin/news/index">新闻列表</a></li>
-        <li><a href="/lidong/clone/yuanku/admin/news/add">添加新闻</a></li>
+        <li><a href="/thinkphp_3.2.3_full/yuanku/admin/news/index">新闻列表</a></li>
+        <li><a href="/thinkphp_3.2.3_full/yuanku/admin/news/add">添加新闻</a></li>
         
       </ul>
     </li>  
@@ -367,11 +345,199 @@
           <div class="content-box">
              <div class="content"> 
 
- <div>
- 	新闻列表
- 	<a href="/lidong/clone/yuanku/index.php/Admin/News/index.php/add">添加新闻</a>
- </div>
-
+<h4>管理员列表</h4>
+<div class="table-responsive alt-table">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="table-check">
+                                #
+                            </th>
+                            <th>管理员姓名</th>
+                            <th>简介</th>
+                            <th class="table-icon-cell">
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                            </th>
+                            <th class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                            </th>
+                            <th>最近登录</th>
+                            <th class="text-center">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-check">
+                                1
+                            </td>
+                            <td>
+                                Last month income
+                            </td>
+                            <td>Revenue for last month in state Ohio for year 2016, with...</td>
+                            <td>
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                                8
+                            </td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                                47
+                            </td>
+                            <td class="table-date">7 minets ago <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                               <div class="btn-group">
+                                <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-check">
+                                2
+                            </td>
+                            <td>
+                                Expenses in 2016
+                            </td>
+                            <td></td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                                2
+                            </td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                                15
+                            </td>
+                            <td class="table-date">2 hours ago <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-check">
+                                3
+                            </td>
+                            <td>
+                                Accounting
+                            </td>
+                            <td class="color-blue-grey-lighter">Attention he extremity</td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                                9
+                            </td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                                20
+                            </td>
+                            <td class="table-date">5 hours ago <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-check">
+                                4
+                            </td>
+                            <td>
+                                Nike orders
+                            </td>
+                            <td>And produce say the ten moments parties. Simple innate</td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                                78
+                            </td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                                347
+                            </td>
+                            <td class="table-date">15 hours ago <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-check">
+                                5
+                            </td>
+                            <td>
+                                Reebok orders
+                            </td>
+                            <td>Written enquire painful ye to offices forming it.</td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                                56
+                            </td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                                34
+                            </td>
+                            <td class="table-date">2 days ago <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-check">
+                                6
+                            </td>
+                            <td>
+                                IOS update
+                            </td>
+                            <td>Then so does over sent dull on.</td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                                120
+                            </td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                                278
+                            </td>
+                            <td class="table-date">3 days ago <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-check">
+                                7
+                            </td>
+                            <td>
+                                Puma orders
+                            </td>
+                            <td></td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                                32
+                            </td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                                13
+                            </td>
+                            <td class="table-date">3 days ago <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
  
  </div>
           </div>
@@ -380,23 +546,23 @@
 
    </div>
 </div></div>
-  <script src="/lidong/clone/yuanku/Public/js/jquery.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/bootstrap.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/metisMenu.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/jquery_006.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/waves.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/toastr.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/bootstrap.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/metisMenu.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_006.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/waves.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/toastr.js"></script>
 
 
-  <script src="/lidong/clone/yuanku/Public/js/jquery_004.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/dataTables.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/moment.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_004.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/dataTables.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/moment.js"></script>
 
-  <script src="/lidong/clone/yuanku/Public/js/Chart.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/jquery_005.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/jquery_007.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/jquery_003.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/jquery_002.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/Chart.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_005.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_007.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_003.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_002.js"></script>
 
   <script>
     var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
@@ -618,8 +784,8 @@
     });
   </script>
 
-    <script src="/lidong/clone/yuanku/Public/js/common.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/demo-switch.js">  </script>
+    <script src="/thinkphp_3.2.3_full/yuanku/Public/js/common.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/demo-switch.js">  </script>
     <script>
     if($(window).width() >= 1200){
       $("body").addClass("boxed-layout");
