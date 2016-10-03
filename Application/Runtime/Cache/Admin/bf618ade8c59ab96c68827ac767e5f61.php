@@ -54,7 +54,7 @@
    <nav class="navbar navbar-indigo">
  <div class="navbar-header container brand-orange">
    <a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
-   <a href="/thinkphp_3.2.3_full/yuanku/admin" class="logo"><img src="Pacificonis%20-%20Dashboard_files/logo.png" alt="力动企业" class="mCS_img_loaded"></a>
+   <a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="logo"><img src="Pacificonis%20-%20Dashboard_files/logo.png" alt="力动企业" class="mCS_img_loaded"></a>
    <a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="icon-logo"></a>
  </div>
   <div class="navbar-container clearfix">
@@ -345,23 +345,199 @@
           <div class="content-box">
              <div class="content"> 
 
- <div class="head success-bg clearfix">
- 	<h5 class="content-title pull-left">系统设置</h5>
-
- </div>
-<div class="content">
- <form action="/thinkphp_3.2.3_full/yuanku/index.php/Admin/System/save" method="post" class="form-horizontal">
- 	<div class="form-group">
- 		<label for="inputText" class="col-sm-2 control-label">项目名称：</label>
- 		<div class="col-sm-10">
- 			<input class="form-control" name="site_name" id="inputText" placeholder="请输入名称" type="text"></div>
- 	</div>
- 
-
- 	<button class="btn btn-primary ">提交</button>
-
- </form>
-</div>
+<h4>管理员列表</h4>
+<div class="table-responsive alt-table">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="table-check">
+                                #
+                            </th>
+                            <th>管理员姓名</th>
+                            <th>简介</th>
+                            <th class="table-icon-cell">
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                            </th>
+                            <th class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                            </th>
+                            <th>最近登录</th>
+                            <th class="text-center">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-check">
+                                1
+                            </td>
+                            <td>
+                                Last month income
+                            </td>
+                            <td>Revenue for last month in state Ohio for year 2016, with...</td>
+                            <td>
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                                8
+                            </td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                                47
+                            </td>
+                            <td class="table-date">7 minets ago <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                               <div class="btn-group">
+                                <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-check">
+                                2
+                            </td>
+                            <td>
+                                Expenses in 2016
+                            </td>
+                            <td></td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                                2
+                            </td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                                15
+                            </td>
+                            <td class="table-date">2 hours ago <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-check">
+                                3
+                            </td>
+                            <td>
+                                Accounting
+                            </td>
+                            <td class="color-blue-grey-lighter">Attention he extremity</td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                                9
+                            </td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                                20
+                            </td>
+                            <td class="table-date">5 hours ago <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-check">
+                                4
+                            </td>
+                            <td>
+                                Nike orders
+                            </td>
+                            <td>And produce say the ten moments parties. Simple innate</td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                                78
+                            </td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                                347
+                            </td>
+                            <td class="table-date">15 hours ago <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-check">
+                                5
+                            </td>
+                            <td>
+                                Reebok orders
+                            </td>
+                            <td>Written enquire painful ye to offices forming it.</td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                                56
+                            </td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                                34
+                            </td>
+                            <td class="table-date">2 days ago <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-check">
+                                6
+                            </td>
+                            <td>
+                                IOS update
+                            </td>
+                            <td>Then so does over sent dull on.</td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                                120
+                            </td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                                278
+                            </td>
+                            <td class="table-date">3 days ago <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-check">
+                                7
+                            </td>
+                            <td>
+                                Puma orders
+                            </td>
+                            <td></td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-favorite danger-color"></i>
+                                32
+                            </td>
+                            <td class="table-icon-cell">
+                                <i class="zmdi zmdi-comment primary-color"></i>
+                                13
+                            </td>
+                            <td class="table-date">3 days ago <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
  
  </div>
           </div>

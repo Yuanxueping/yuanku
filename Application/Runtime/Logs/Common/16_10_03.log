@@ -1456,3 +1456,2319 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000365s ]
 INFO: [ app_init ] --END-- [ RunTime:0.003216s ]
 ERR: 无法加载模块:Public
 
+[ 2016-10-03T10:56:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001366s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:56:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001321s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:56:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000159s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001513s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:56:13+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001656s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:56:13+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000301s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002478s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:56:13+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001300s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:59:03+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001299s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:59:03+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000602s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003531s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:59:03+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000175s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002290s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:59:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001779s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:59:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000186s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003727s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:59:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001377s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:59:20+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001322s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:59:20+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009367s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:59:20+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001542s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:59:24+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000594s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002928s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:59:25+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000232s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002014s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T10:59:25+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000175s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002656s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:00:11+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000232s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002352s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:00:11+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001519s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:00:11+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000416s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003513s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:00:49+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001547s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:00:49+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000243s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001965s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:00:49+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001385s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:00:51+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002007s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:00:51+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001942s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:00:51+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001394s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:02:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001806s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:02:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001341s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:02:50+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002275s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:02:50+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001305s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:02:50+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000225s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002184s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:02:50+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001335s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:02:50+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000194s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002884s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:02:52+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001378s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:02:52+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001446s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:16+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001299s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:16+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000230s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002065s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:16+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000265s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002200s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:16+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000526s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003689s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:16+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000375s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002575s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:17+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000231s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002120s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:17+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000221s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002304s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:21+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001311s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:21+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002074s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:21+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000242s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002483s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:21+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000207s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001673s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:21+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002091s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:22+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001621s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:22+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000810s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003084s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:24+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000255s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002137s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:24+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000299s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002336s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:24+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003338s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:24+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001494s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:24+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001543s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:25+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000246s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002338s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:25+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000230s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001962s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:25+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000230s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002031s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:25+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000443s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003826s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:25+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000284s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003245s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:26+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001379s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:26+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000225s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002027s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:30+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000242s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006346s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:30+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001334s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:30+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001408s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:31+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000161s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001387s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:31+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000546s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005044s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:31+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:33+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000405s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002656s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:33+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000251s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005483s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:03:33+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000255s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003173s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:05:49+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001804s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:05:49+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001325s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:05:49+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001398s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:05:51+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000254s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002172s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:05:52+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003372s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:05:52+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002314s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:06:19+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001411s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:06:19+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000153s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001307s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:06:24+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000513s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002511s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:06:24+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000153s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001429s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:06:24+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000243s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002410s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:06:24+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001320s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:06:24+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000199s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001442s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:06:25+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002133s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:06:25+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000224s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002072s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:06:57+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000269s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002315s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:06:57+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000223s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001919s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:06:57+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000225s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002043s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:06:57+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000252s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002950s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:06:57+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001934s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:07:01+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000231s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002076s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:07:01+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000229s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002012s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:07:01+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000243s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002133s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:07:01+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001349s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:07:01+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000335s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002964s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:07:02+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001311s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:07:02+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001951s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:07:18+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000178s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002120s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:07:18+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000155s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001577s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:07:18+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000224s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001886s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:07:18+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001726s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:07:18+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000221s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002085s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:07:20+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000212s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001822s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:07:20+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000235s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001786s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:11:53+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001347s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:11:53+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002569s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:11:53+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001280s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:12:17+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000248s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002055s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:12:17+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000829s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004301s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:12:17+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000206s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001424s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:12:20+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000161s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001574s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:12:20+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007910s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:12:20+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000187s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001579s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:13:16+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001346s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:13:16+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000155s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001430s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:14+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000245s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002244s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:14+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000161s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001798s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:14+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002243s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:14+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001268s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:14+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000219s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002565s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:16+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000225s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001909s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:16+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000160s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001377s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:23+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002862s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:23+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000528s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003255s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:23+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002414s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:23+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001280s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:23+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001344s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:24+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002019s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:24+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001418s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:26+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002989s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:26+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001598s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:26+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000252s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002160s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:27+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000255s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003333s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:27+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000159s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001729s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:28+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000220s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002046s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:21:28+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000237s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002147s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:24:50+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002233s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:24:50+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000847s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005779s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:24:50+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000254s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001875s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:25:07+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000248s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002285s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:25:07+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000205s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001459s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:25:07+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002997s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:25:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001403s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:25:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001414s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:25:41+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001317s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:27:06+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000273s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002148s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:27:06+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000165s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001833s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:27:06+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001321s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:27:38+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000232s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002044s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:27:38+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000375s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002749s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:27:38+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000226s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001947s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:31:02+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002128s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:31:02+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001628s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:31:02+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000512s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003568s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:31:35+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000200s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001684s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:31:35+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000239s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001940s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:31:35+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001349s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:31:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001601s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:31:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000265s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011833s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:31:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000289s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002799s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:32:29+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001876s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:32:29+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000232s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002124s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:32:29+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000339s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003492s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:33:21+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000198s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001870s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:33:21+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000266s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001713s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:34:17+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000240s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002028s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:34:17+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000254s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002327s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:34:17+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000246s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001964s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:34:17+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002724s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:34:17+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000227s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002372s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:34:18+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000242s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005523s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:34:18+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000225s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004932s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:34:20+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000197s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009018s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:34:20+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000234s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003525s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:34:20+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004379s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:34:20+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000445s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004222s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:34:20+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000249s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002828s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:34:21+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000227s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002113s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:34:21+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002037s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:35+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001485s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:35+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000226s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008791s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:35+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001524s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:36+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000159s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001639s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:36+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001760s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001383s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000229s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002007s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:42+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000254s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002278s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:42+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001556s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:43+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000245s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002019s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:46+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001418s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:46+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002272s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:46+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000182s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002258s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:55+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000187s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001625s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:55+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000238s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002312s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:35:55+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000258s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002472s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:37:58+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/bootstrap-3.3.0/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002257s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:37:59+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000239s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002140s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:37:59+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001702s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:37:59+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001312s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:38:22+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002223s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:38:22+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.woff?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000229s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004166s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:38:22+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000263s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001522s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:43:01+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001700s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:43:01+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005050s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:43:18+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000166s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001506s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:43:18+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000259s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002370s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:43:19+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:43:19+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000288s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002088s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:43:33+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000255s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003017s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:43:33+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000222s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001873s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:44:19+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000265s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002229s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:44:19+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000256s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002935s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:47:38+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000153s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001340s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:47:38+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001268s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:50:36+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001529s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:50:36+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001738s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:50:48+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000299s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002843s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:50:48+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000261s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002638s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:50:50+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000644s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003073s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:50:50+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000230s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003603s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:51:32+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000257s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002134s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:51:32+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000213s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002239s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:51:33+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000229s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002702s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:51:33+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000397s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003695s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:51:47+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002072s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:51:47+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000237s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002640s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:51:50+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000157s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001416s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:51:50+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001319s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:53:13+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000462s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002434s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:53:13+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000238s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002082s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:53:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001374s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:53:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001395s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:57:43+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000258s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002192s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:57:43+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000271s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002164s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:57:43+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000245s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002232s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:57:43+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000234s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002357s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T11:57:43+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000232s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002113s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:57:43+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002651s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:57:43+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000241s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002473s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:57:43+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000153s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002487s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:57:43+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000266s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002243s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T11:57:43+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000248s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002028s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:57:43+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001305s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:57:43+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001988s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:58:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001404s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:58:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000178s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001424s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:58:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000237s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002169s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:58:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000154s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003777s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:58:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000248s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019328s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T11:58:38+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000531s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003687s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:58:38+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000251s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002168s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:58:38+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000267s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009132s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:58:38+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000240s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002389s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:58:38+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003479s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:58:38+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002405s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T11:58:38+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000337s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002373s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T11:58:43+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001340s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T11:58:43+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000239s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002182s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T14:34:07+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000242s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003680s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:07+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000255s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003896s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:34:07+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000271s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002121s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:07+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000226s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001986s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:07+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000243s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002114s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002706s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000245s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002063s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000252s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002050s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002147s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002161s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001317s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:34:09+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000266s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002129s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:09+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000225s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001987s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:09+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000393s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002915s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:34:09+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000262s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002089s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:09+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000243s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013828s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:09+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000225s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001947s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002299s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000268s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002168s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000240s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002059s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000227s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002105s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002143s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:34:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001432s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:35:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000289s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002767s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000225s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005326s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002297s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:35:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/profile_user.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000270s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003032s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002151s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000617s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002280s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000197s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001850s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000240s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002058s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002372s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:35:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/profile_user.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000225s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002136s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002072s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000255s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002964s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004857s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:10+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000231s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002030s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000274s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002496s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000615s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004359s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000235s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002152s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000275s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002185s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000814s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002780s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:35:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001279s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000160s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001339s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000232s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002928s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:35:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000223s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002025s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002324s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000213s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001954s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:35:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000213s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002081s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000246s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003997s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000279s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002499s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000235s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002173s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000249s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003085s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:36:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000242s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002315s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002319s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001349s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002100s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000231s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002067s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:36:08+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000227s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002081s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:09+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000241s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002068s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:09+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001550s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:14+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000341s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004394s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:14+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002255s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:14+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000254s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002021s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:36:14+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000240s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004205s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001302s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002005s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000231s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004192s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000238s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002235s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000238s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015953s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:36:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002173s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000220s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002103s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:15+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000246s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002242s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002517s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:36:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000255s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002855s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000230s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002262s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000280s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003951s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000307s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002267s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002048s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002165s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:36:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000252s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002146s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000219s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002585s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000229s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002084s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000234s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003484s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:37+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000510s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002478s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:44+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000251s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002774s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:36:44+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000259s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003034s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:44+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000255s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002485s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:44+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000234s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002041s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:44+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000246s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002113s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:44+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001817s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:45+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001846s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:36:45+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000240s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002042s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:45+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000217s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001867s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:45+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002370s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:45+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000223s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002042s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:45+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001231s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:36:55+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000271s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001983s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T14:36:55+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000234s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001946s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T14:37:03+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000242s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002110s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T14:37:03+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000217s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001935s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T14:37:39+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000260s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002257s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:37:39+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000245s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002265s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:37:39+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000239s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003016s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:37:39+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000244s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002183s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:37:39+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000242s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002499s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:37:39+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000172s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002201s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:37:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002554s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:37:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002017s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:37:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000251s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002197s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:37:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000217s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001940s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:37:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000223s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002472s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:37:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000257s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002192s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T14:37:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000285s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002113s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:37:40+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000222s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001973s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T14:41:45+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000263s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002709s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:41:45+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000235s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001982s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:41:45+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000234s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001982s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:41:45+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000339s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009557s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:41:45+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000234s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002053s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:41:45+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000661s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003650s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:41:46+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002075s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:41:46+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002658s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:41:46+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002939s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:41:46+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000223s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001959s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T14:41:46+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002492s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T14:41:46+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000230s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002251s ]
+ERR: 无法加载模块:Img
+
