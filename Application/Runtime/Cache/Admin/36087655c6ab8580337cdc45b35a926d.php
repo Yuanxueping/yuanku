@@ -18,19 +18,19 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.css">
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/material-design-iconic-font.css">
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/animate.css">
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/metisMenu.css">
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/jquery_002.css">
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/waves.css">
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/toastr.css">
+  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/bootstrap.css">
+  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/material-design-iconic-font.css">
+  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/animate.css">
+  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/metisMenu.css">
+  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/jquery_002.css">
+  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/waves.css">
+  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/toastr.css">
 
 
 
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/jquery.css">
+  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/jquery.css">
 
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/style.css">
+  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/style.css">
 
 <!--
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
@@ -40,7 +40,7 @@
       <script src="bower_components/html5shiv/dist/html5shiv.min,js"></script>
       <script src="bower_components/respondJs/dest/respond.min.js"></script>
     <![endif]-->
-<script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_008.js"></script></head>
+<script src="/lidong/clone/yuanku/Public/js/jquery_008.js"></script></head>
 
 <body class="fixed-all boxed-layout fixed-sidebar mCustomScrollbar _mCS_4 mCS-autoHide" style="overflow: visible;">
  <div id="mCSB_4" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_4_container" class="mCSB_container" style="position: relative; top: -164px; left: 0px;" dir="ltr">
@@ -145,8 +145,8 @@
       <a href="#"><i class="zmdi zmdi-flower"></i>新闻管理<span class="zmdi arrow"></span></a>
       <ul class="nav nav-inside collapse" aria-expanded="false">
         <li class="inside-title">新闻管理</li>
-        <li><a href="/thinkphp_3.2.3_full/yuanku/admin/news/index">新闻列表</a></li>
-        <li><a href="/thinkphp_3.2.3_full/yuanku/admin/news/add">添加新闻</a></li>
+        <li><a href="/lidong/clone/yuanku/admin/news/index">新闻列表</a></li>
+        <li><a href="/lidong/clone/yuanku/admin/news/add">添加新闻</a></li>
         
       </ul>
     </li>  
@@ -164,7 +164,7 @@
 
  <div>
  	新闻列表
- 	<a href="/thinkphp_3.2.3_full/yuanku/index.php/Admin/News/add">添加新闻</a>
+ 	<a href="/lidong/clone/yuanku/index.php/Admin/News/index.php/add">添加新闻</a>
  </div>
 
  
@@ -175,23 +175,23 @@
 
    </div>
 </div></div>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/bootstrap.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/metisMenu.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_006.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/waves.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/toastr.js"></script>
+  <script src="/lidong/clone/yuanku/Public/js/jquery.js"></script>
+  <script src="/lidong/clone/yuanku/Public/js/bootstrap.js"></script>
+  <script src="/lidong/clone/yuanku/Public/js/metisMenu.js"></script>
+  <script src="/lidong/clone/yuanku/Public/js/jquery_006.js"></script>
+  <script src="/lidong/clone/yuanku/Public/js/waves.js"></script>
+  <script src="/lidong/clone/yuanku/Public/js/toastr.js"></script>
 
 
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_004.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/dataTables.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/moment.js"></script>
+  <script src="/lidong/clone/yuanku/Public/js/jquery_004.js"></script>
+  <script src="/lidong/clone/yuanku/Public/js/dataTables.js"></script>
+  <script src="/lidong/clone/yuanku/Public/js/moment.js"></script>
 
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/Chart.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_005.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_007.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_003.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_002.js"></script>
+  <script src="/lidong/clone/yuanku/Public/js/Chart.js"></script>
+  <script src="/lidong/clone/yuanku/Public/js/jquery_005.js"></script>
+  <script src="/lidong/clone/yuanku/Public/js/jquery_007.js"></script>
+  <script src="/lidong/clone/yuanku/Public/js/jquery_003.js"></script>
+  <script src="/lidong/clone/yuanku/Public/js/jquery_002.js"></script>
 
   <script>
     var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
@@ -413,8 +413,8 @@
     });
   </script>
 
-    <script src="/thinkphp_3.2.3_full/yuanku/Public/js/common.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/demo-switch.js">  </script>
+    <script src="/lidong/clone/yuanku/Public/js/common.js"></script>
+  <script src="/lidong/clone/yuanku/Public/js/demo-switch.js">  </script>
     <script>
     if($(window).width() >= 1200){
       $("body").addClass("boxed-layout");
