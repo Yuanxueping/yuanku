@@ -24,6 +24,12 @@ class SystemController extends Controller{
 			$this->error($system->getError());
 		}
 	}
+
+	public function manager_user()
+	{
+		$this->display();
+		
+	}
 }
 
 ?>
