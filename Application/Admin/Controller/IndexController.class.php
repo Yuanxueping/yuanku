@@ -6,32 +6,14 @@ use Think\Controller;
 
 class IndexController extends Controller {
     public function index(){
-        $m_student=M('Student');
-        // $m_student=new Student();
+        // 导入第三方类库
+        vendor('weixin.JSSDK');
+        $jssdk            =   new \JSSDK("wx71107600f5fc27b6", "dc036338ad3efe7c8d09792e0725723e");
 
-        // $where_a=array("grade"=>99);
-        // $student_list=$m_student->find(3);
-
-     // echo   $m_student->getLastSql();
-
-     //    if (is_array($options) && (count($options) > 0) && is_array($pk)) {
-
-     //    $student_info=$m_student->find($where_a);
-     // echo   $m_student->getLastSql();
-
-    	// print_r($student_info);
-
-        $student_list=$m_student->join('teacher ON student.teacher_id = teacher.id')->limit(10)->getField('student.id,name,teacher_name,grade,address,mobile');
-
-
-        // $student_list=$m_student->join('teacher ON student.teacher_id = teacher.id')->limit(10)->select();
-
-        // echo   $m_student->getLastSql();
-        // exit();
-        // exit();
-        $this->assign('student_list',$student_list);
+        $signPackage = $jssdk->GetSignPackage();
+         
+        $this->assign('signPackage',$signPackage);
     	$this->display();
-		//$this->display();
     }
 
     public function student_add($value='')

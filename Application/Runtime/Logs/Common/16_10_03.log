@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [ 2016-10-03T16:47:53+08:00 ] 127.0.0.1 /lidong/yuanku/index.php/Pacificonis%20-%20Dashboard_files/logo.png
 ERR: 无法加载模块:Pacificonis - Dashboard_files
 
@@ -141,4 +142,29 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
 ERR: 无法加载模块:Img
+=======
+[ 2016-10-03T16:58:52+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/site.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000197s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001512s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T16:58:54+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/css/home/about.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001217s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T16:58:57+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/index/about_us
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001228s ]
+ERR: 无法加载模块:Index
+
+[ 2016-10-03T16:58:57+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/index/about_us
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000251s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001622s ]
+ERR: 无法加载模块:Index
+>>>>>>> f824cd19a13e83b8d36915dacb194c1458cf069b
 
