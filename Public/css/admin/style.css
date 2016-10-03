@@ -509,7 +509,6 @@ body {
 
 .content-box .content {
   padding: 20px;
-  margin-top: 145px;
 }
 
 .content-box .dataTables_wrapper {
@@ -2756,12 +2755,12 @@ aside.sidebar li.active:before {
 .profile-sidebar .profile-activity div {
   width: 50%;
   border-top: 1px solid #121D2D;
-  border-bottom: 1px solid #121D2D;
+  /*border-bottom: 1px solid #121D2D;*/
   padding: 15px 0;
 }
 
 .profile-sidebar .profile-activity div:first-child {
-  border-right: 1px solid #121D2D;
+  /*border-right: 1px solid #121D2D;*/
 }
 
 .profile-sidebar .profile-activity span {
