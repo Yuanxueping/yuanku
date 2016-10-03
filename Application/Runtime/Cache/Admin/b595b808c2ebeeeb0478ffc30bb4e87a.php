@@ -18,19 +18,19 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/bootstrap.css">
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/material-design-iconic-font.css">
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/animate.css">
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/metisMenu.css">
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/jquery_002.css">
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/waves.css">
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/toastr.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/bootstrap.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/material-design-iconic-font.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/animate.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/metisMenu.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/jquery_002.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/waves.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/toastr.css">
 
 
 
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/jquery.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/jquery.css">
 
-  <link rel="stylesheet" href="/lidong/clone/yuanku/Public/css/admin/style.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/style.css">
 
 <!--
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
@@ -40,7 +40,7 @@
       <script src="bower_components/html5shiv/dist/html5shiv.min,js"></script>
       <script src="bower_components/respondJs/dest/respond.min.js"></script>
     <![endif]-->
-<script src="/lidong/clone/yuanku/Public/js/jquery_008.js"></script></head>
+<script src="/lidong/yuanku/Public/js/jquery_008.js"></script></head>
 
 <body class="fixed-all boxed-layout fixed-sidebar mCustomScrollbar _mCS_4 mCS-autoHide" style="overflow: visible;">
  <div id="mCSB_4" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_4_container" class="mCSB_container" style="position: relative; top: -164px; left: 0px;" dir="ltr">
@@ -54,7 +54,7 @@
    <nav class="navbar navbar-indigo">
  <div class="navbar-header container brand-orange">
    <a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
-   <a href="/thinkphp_3.2.3_full/yuanku/admin" class="logo"><img src="Pacificonis%20-%20Dashboard_files/logo.png" alt="力动企业" class="mCS_img_loaded"></a>
+   <a href="/lidong/yuanku/admin" class="logo"><img src="Pacificonis%20-%20Dashboard_files/logo.png" alt="力动企业" class="mCS_img_loaded"></a>
    <a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="icon-logo"></a>
  </div>
   <div class="navbar-container clearfix">
@@ -119,7 +119,7 @@
     <li class="profile-sidebar-container">
       <div class="profile-sidebar text-center">
         <div class="profile-userpic">
-          <img src="/thinkphp_3.2.3_full/yuanku/Public/images/admin/profile_user.jpg" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
+          <img src="/lidong/yuanku/Public/images/admin/profile_user.jpg" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
           <span class="online"></span>
         </div>
         <div class="profile-usertitle">
@@ -144,8 +144,8 @@
       <a href="#" aria-expanded="false"><i class="zmdi zmdi-view-dashboard"></i>系统设置<span class="zmdi arrow"></span></a>
       <ul class="nav nav-inside collapse" aria-expanded="false" style="height: 0px;">
         <li class="inside-title">系统设置</li>
-        <li><a href="/thinkphp_3.2.3_full/yuanku/admin/system">网站设置</a></li>
-        <li><a href="/thinkphp_3.2.3_full/yuanku/admin/system/manager_user">管理员设置</a></li>
+        <li><a href="/lidong/yuanku/admin/system">网站设置</a></li>
+        <li><a href="/lidong/yuanku/admin/system/manager_user">管理员设置</a></li>
       </ul>
     </li>
         <li>
@@ -168,32 +168,14 @@
       <a href="#"><i class="zmdi zmdi-flower"></i>新闻管理<span class="zmdi arrow"></span></a>
       <ul class="nav nav-inside collapse" aria-expanded="false">
         <li class="inside-title">新闻管理</li>
-<<<<<<< HEAD
-        <li><a href="/lidong/clone/yuanku/admin/news/index">新闻列表</a></li>
-        <li><a href="/lidong/clone/yuanku/admin/news/add">添加新闻</a></li>
-=======
-        <li><a href="/thinkphp_3.2.3_full/yuanku/admin/news/index">新闻列表</a></li>
-        <li><a href="/thinkphp_3.2.3_full/yuanku/admin/news/add">添加新闻</a></li>
->>>>>>> ecfdbee1f7f1fa524798f7bfc5cd1df5ac815b09
+        <li><a href="/lidong/yuanku/admin/news/index">新闻列表</a></li>
+        <li><a href="/lidong/yuanku/admin/news/add">添加新闻</a></li>
         
       </ul>
     </li>  
      
   </ul>
 </div></div><div id="mCSB_5_scrollbar_vertical" class="mCSB_scrollTools mCSB_5_scrollbar mCS-minimal mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_5_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 299px; max-height: 527px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></aside>
-<<<<<<< HEAD
-
-
-   <div class="container-fluid" >
-      
-       <div class="row">
-        <div class="col-md-12">
-          <div class="content-box">
-             <div class="content"> 
-  
-
-=======
->>>>>>> ecfdbee1f7f1fa524798f7bfc5cd1df5ac815b09
 
 
 <!-- 右上角弹出层 -->
@@ -389,7 +371,7 @@
  <div class="row">
         <div class="col-lg-3 col-md-6">
           <div class="content-box p-20 twitter white f-s-16">
-            <img src="/thinkphp_3.2.3_full/yuanku/Public/images/admin/avatar.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+            <img src="/lidong/yuanku/Public/images/admin/avatar.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
             <span class="text-uppercase">第一组</span>  <br>
             <span class="half-opacity">@组长：黄寰</span>
             <span class="zmdi zmdi-twitter p-absolute t-20 r-20 f-s-20"></span>
@@ -402,7 +384,7 @@
         </div>
          <div class="col-lg-3 col-md-6">
           <div class="content-box p-20 soundcloud white f-s-16">
-            <img src="/thinkphp_3.2.3_full/yuanku/Public/images/admin/avatar4.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+            <img src="/lidong/yuanku/Public/images/admin/avatar4.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
             <span class="text-uppercase">第二组</span>  <br>
             <span class="half-opacity">@组长：沈迪豪</span>
             <span class="zmdi zmdi-soundcloud p-absolute t-20 r-20 f-s-20"></span>
@@ -415,7 +397,7 @@
         </div>
         <div class="col-lg-3 col-md-6">
             <div class="content-box p-20 facebook white f-s-16">
-              <img src="/thinkphp_3.2.3_full/yuanku/Public/images/admin/avatar2.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+              <img src="/lidong/yuanku/Public/images/admin/avatar2.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
               <span class="text-uppercase">第三组</span>  <br>
               <span class="half-opacity">@组长：袁雪萍</span>
               <span class="zmdi zmdi-facebook p-absolute t-20 r-20 f-s-20"></span>
@@ -428,7 +410,7 @@
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="content-box p-20 gplus white f-s-16">
-            <img src="/thinkphp_3.2.3_full/yuanku/Public/images/admin/avatar3.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+            <img src="/lidong/yuanku/Public/images/admin/avatar3.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
             <span class="text-uppercase">第四组</span>  <br>
             <span class="half-opacity">@smith</span>
             <span class="zmdi zmdi-google-plus p-absolute t-20 r-20 f-s-20"></span>
@@ -452,32 +434,23 @@
 
    </div>
 </div></div>
-<<<<<<< HEAD
-  <script src="/lidong/clone/yuanku/Public/js/jquery.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/bootstrap.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/metisMenu.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/jquery_006.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/waves.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/toastr.js"></script>
-=======
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/bootstrap.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/metisMenu.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_006.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/waves.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/toastr.js"></script>
->>>>>>> ecfdbee1f7f1fa524798f7bfc5cd1df5ac815b09
+  <script src="/lidong/yuanku/Public/js/jquery.js"></script>
+  <script src="/lidong/yuanku/Public/js/bootstrap.js"></script>
+  <script src="/lidong/yuanku/Public/js/metisMenu.js"></script>
+  <script src="/lidong/yuanku/Public/js/jquery_006.js"></script>
+  <script src="/lidong/yuanku/Public/js/waves.js"></script>
+  <script src="/lidong/yuanku/Public/js/toastr.js"></script>
 
 
-  <script src="/lidong/clone/yuanku/Public/js/jquery_004.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/dataTables.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/moment.js"></script>
+  <script src="/lidong/yuanku/Public/js/jquery_004.js"></script>
+  <script src="/lidong/yuanku/Public/js/dataTables.js"></script>
+  <script src="/lidong/yuanku/Public/js/moment.js"></script>
 
-  <script src="/lidong/clone/yuanku/Public/js/Chart.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/jquery_005.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/jquery_007.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/jquery_003.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/jquery_002.js"></script>
+  <script src="/lidong/yuanku/Public/js/Chart.js"></script>
+  <script src="/lidong/yuanku/Public/js/jquery_005.js"></script>
+  <script src="/lidong/yuanku/Public/js/jquery_007.js"></script>
+  <script src="/lidong/yuanku/Public/js/jquery_003.js"></script>
+  <script src="/lidong/yuanku/Public/js/jquery_002.js"></script>
 
   <script>
     var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
@@ -699,8 +672,8 @@
     });
   </script>
 
-    <script src="/lidong/clone/yuanku/Public/js/common.js"></script>
-  <script src="/lidong/clone/yuanku/Public/js/demo-switch.js">  </script>
+    <script src="/lidong/yuanku/Public/js/common.js"></script>
+  <script src="/lidong/yuanku/Public/js/demo-switch.js">  </script>
     <script>
     if($(window).width() >= 1200){
       $("body").addClass("boxed-layout");
