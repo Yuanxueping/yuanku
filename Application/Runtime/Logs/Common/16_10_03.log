@@ -3829,3 +3829,105 @@ INFO: [ app_init ] --END-- [ RunTime:0.002251s ]
 ERR: 无法加载模块:Img
 
 >>>>>>> ecfdbee1f7f1fa524798f7bfc5cd1df5ac815b09
+[ 2016-10-03T16:05:00+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001241s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:05:00+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:05:27+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T16:05:27+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001055s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T16:05:27+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001139s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T16:05:27+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001345s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T16:05:27+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001256s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T16:05:27+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001337s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T16:05:28+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003578s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T16:05:28+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/Pacificonis%20-%20Dashboard_files/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001032s ]
+ERR: 无法加载模块:Pacificonis - Dashboard_files
+
+[ 2016-10-03T16:05:28+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001218s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T16:05:28+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001681s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T16:05:28+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/Public/css/img/icon_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-03T16:05:28+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004811s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T16:05:28+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001243s ]
+ERR: 无法加载模块:Img
+
+[ 2016-10-03T16:07:47+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001274s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T16:14:20+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001030s ]
+ERR: 无法加载模块:Js
+
