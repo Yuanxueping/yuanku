@@ -7,12 +7,13 @@ use Think\Controller;
 class IndexController extends Controller {
     public function index(){
         // 导入第三方类库
-        vendor('weixin.JSSDK');
-        $jssdk            =   new \JSSDK("wx71107600f5fc27b6", "dc036338ad3efe7c8d09792e0725723e");
+        // 生成签名
+        // vendor('weixin.JSSDK');
+        // $jssdk            =   new \JSSDK("APPID", "SECRET");
 
-        $signPackage = $jssdk->GetSignPackage();
+        // $signPackage = $jssdk->GetSignPackage();
          
-        $this->assign('signPackage',$signPackage);
+        // $this->assign('signPackage',$signPackage);
     	$this->display();
     }
 
