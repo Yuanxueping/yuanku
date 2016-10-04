@@ -1,0 +1,126 @@
+[ 2016-10-04T10:55:49+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000999s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-04T10:55:50+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001078s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-04T10:56:31+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000895s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-04T11:00:25+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-04T11:01:02+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-04T11:03:30+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001285s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-04T11:04:53+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001878s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-04T11:13:01+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001491s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-04T11:13:26+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001087s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-04T11:13:27+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001264s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-04T11:16:51+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003892s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-04T11:17:13+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001137s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-04T11:17:14+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001872s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-04T17:21:52+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/Public/css/home/%E2%80%98__PUBLIC__/font/nevis.ttf%E2%80%99
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001261s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-04T17:21:55+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/Public/css/home/%E2%80%98__PUBLIC__/font/nevis.ttf%E2%80%99
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001492s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-04T17:22:02+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/Public/css/home/%E2%80%98__PUBLIC__/font/nevis.ttf%E2%80%99
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001098s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-04T17:22:48+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/Public/css/home/%E2%80%98../font/nevis.ttf%E2%80%99
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-04T17:22:50+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/Public/css/home/%E2%80%98../font/nevis.ttf%E2%80%99
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003209s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-04T17:23:11+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/Public/css/home/font/nevis.ttf%E2%80%99
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001077s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-04T17:23:15+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/Public/css/home/font/nevis.ttf%E2%80%99
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-04T17:23:36+08:00 ] ::1 /201610/thinkphp_3.2.3_full/yuanku/Public/font/nevis.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+ERR: 无法加载模块:Public
+
