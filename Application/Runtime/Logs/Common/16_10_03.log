@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 [ 2016-10-03T16:47:53+08:00 ] 127.0.0.1 /lidong/yuanku/index.php/Pacificonis%20-%20Dashboard_files/logo.png
 ERR: 无法加载模块:Pacificonis - Dashboard_files
 
@@ -142,6 +142,7 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
 ERR: 无法加载模块:Img
+<<<<<<< HEAD
 =======
 [ 2016-10-03T16:58:52+08:00 ] ::1 /thinkphp_3.2.3_full/yuanku/Public/js/site.min.map
 INFO: [ app_init ] --START--
@@ -240,3 +241,6 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001193s ]
 ERR: 无法加载模块:Js
 
+=======
+ 
+>>>>>>> 655336e0e9328084065312b4a4306784e76bb344
