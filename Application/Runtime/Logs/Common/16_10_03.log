@@ -222,3 +222,21 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
 ERR: 无法加载模块:Js
 
+[ 2016-10-03T20:38:46+08:00 ] ::1 /lidong/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001153s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T20:39:16+08:00 ] ::1 /lidong/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+ERR: 无法加载模块:Js
+
+[ 2016-10-03T20:39:37+08:00 ] ::1 /lidong/yuanku/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001193s ]
+ERR: 无法加载模块:Js
+

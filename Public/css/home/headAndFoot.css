@@ -1,4 +1,8 @@
 @charset 'utf-8';
+ body{
+ 	font-family: "微软雅黑"!important;
+ 	font-weight: 600;
+ }
 .logo {
   height: 40px;
   margin-top: -10px;
@@ -8,7 +12,7 @@
   height: 45px;
 }
 .top-nav{
-	background-color: gray!important;
+	background-color: #727272!important;
 	color: white;
 	
 	
@@ -17,20 +21,15 @@
 .color>li>a{
 	color:white !important;
 }
+.color>li>a:hover{
+	color: goldenrod!important;
+}
 
 .top-nav .seach-input {
   width: 80px;
 }
 
-.top-nav .nav-collect {
-  box-shadow: none;
-  border: 1px solid #6452a0;
-  border-top-width: 0px;
-  -webkit-transition: all 0.75 ease;
-  -moz-transition: all 0.75 ease;
-  -o-transition: all 0.75 ease;
-  transition: all 0.75 ease;
-}
+
 
 .foot-nav .container-fluid {
   background-color:gray;
@@ -51,5 +50,5 @@
 .foot-nav .foot-text {
   padding-top: 20px;
   height: 40px;
-  background-color:gray;
+  background-color:#727272;
 }
