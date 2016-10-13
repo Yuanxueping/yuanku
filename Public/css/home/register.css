@@ -2,19 +2,21 @@
 	袁雪萍
 	登录/注册
  */
-body,h1,h2,a,p{
+body,h1,h2,h4,a,p{
 	margin: 0px;
 	padding: 0px;
 	font-family: "微软雅黑";
-	font-weight: normal;
+	
 }
 h1{
 	font-size:36px;
+	font-weight: normal;
 }
 .container{
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
+	margin-top: 50px;
 }
 .row.clearcss{
 	margin: 0px;
@@ -43,12 +45,13 @@ h1{
 }
 .box{
 	padding:0px 5%;
+	margin-bottom:10%;
 }
 .form-signin{
 	border: 1px solid #ececec;
 	border-radius: 5px;
 	width: 100%;
-	margin-top: 8%;
+	margin-top: 10%;
 	padding: 1px;
 }
 .form-header{
@@ -80,7 +83,7 @@ h1{
 	word-spacing: 2pt;
 }
 .Btn{
-	margin:20px 10% 15%;
+	margin:20px 10% 8%;
 }
 .Btn > p{
 	margin-bottom: 10px;
