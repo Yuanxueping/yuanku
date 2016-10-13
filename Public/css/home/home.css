@@ -26,7 +26,22 @@ body, input, textarea {
     line-height: 23px;
     color: #727272;
 }
-
+a {
+    color: #2ecc71;
+    text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+a, input {
+    transition: all 0.3s ease;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    list-style: none;
+}
 
 
 .feature_section3 {
@@ -82,7 +97,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-weight: normal;
     line-height: 23px;
-    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #727272;
 }
@@ -132,4 +146,684 @@ p {
     color: #aaa;
     font: 800 12px/16px 'HOME-FONT', sans-serif;
 }
+
+/**
+ * 第四部分
+ */
+.feature_section4 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 90px 0px 90px 0px;
+}
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    margin: auto;
+}
+.linebg_2 {
+    width: 50px;
+    height: 2px;
+    background-color: #3cbcd2;
+    margin: 0 auto;
+}
+.container p{
+	margin: 20px 0 20px 0;
+}
+.feature_section4 .root {
+    float: left;
+    width: 100%;
+    background: url("../../img/highstand homepage/line-bg.png") no-repeat center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.one_fifth {
+    width: 16.8%;
+    position: relative;
+    margin-right: 4%;
+    float: left;
+}
+.feature_section4 .one_fifth i {
+    color: #e3e3e3;
+    font-size: 37px;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+    background-color: #fff;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+    margin-top: 50px;
+    border: solid 7px #f3f3f3;
+}
+.feature_section4 .one_fifth i:hover{
+	color: #57C4D7;
+	border-color: #57C4D7;
+}
+.feature_section4 .one_fifth h5 {
+    color: #272727;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+@media only screen  and (max-width: 767px) {
+	.one_fifth{
+		width: 100%;
+	}
+	.feature_section4 .root{
+		background: none;
+	}
+}
+/**
+ * 第五部分
+ */
+.feature_section5 {
+    float: left;
+    width: 100%;
+    background-color: #272727;
+    text-align: center;
+}
+.feature_section5 .leftbox {
+    float: left;
+    width: 30%;
+    text-align: left;
+    background-color: #272727;
+    padding: 75px 0px 30px 35px;
+}
+.feature_section5 .leftbox .img {
+    background-image: url("../../img/highstand homepage/site-image05.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 597px;
+}
+.feature_section5 .rightbox {
+    float: left;
+    width: 70%;
+    text-align: left;
+    padding-top: 100px;
+    padding-right: 2%;
+    padding-bottom: 80px;
+    padding-left: 70px;
+    background: #2ecc71;
+}
+.one_third_less {
+    width: 32%;
+    position: relative;
+    margin-right: 2%;
+    float: left;
+}
+.feature_section5 h3 {
+    font-weight: normal;
+    margin-top: 10px;
+}
+h3 {
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.caps {
+    text-transform: uppercase;
+}
+.white {
+    color: #fff;
+}
+.feature_section5 b {
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 45px;
+}
+.feature_section5 .box {
+    background-color: #fff;
+    padding: 35px 40px 35px 40px;
+}
+.feature_section5 p {
+    padding-bottom: 15px;
+}
+.last {
+    margin-right: 0 !important;
+}
+.margin_bottom2 {
+    margin-bottom: 20px;
+}
+.clearfix {
+    display: block;
+}
+.feature_section5 .bgline {
+    width: 50px;
+    height: 2px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    background-color: #2ecc71;
+}
+.button.two {
+    font-family: 'Open Sans', sans-serif;
+    color: #2ecc71;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+.button.two:hover{
+	color: #000000;
+	text-decoration: none;
+}
+@media only screen and (max-width: 999px)  {
+	.feature_section5 .leftbox .img {
+	    background-size: 100%;
+	}
+	.feature_section5 .leftbox {
+	    width: 100%;
+	    padding: 0px;
+	}
+	.feature_section5 .rightbox {
+	    width: 100%;
+	    padding-left: 40px;
+	    padding-top: 50px;
+	    padding-right: 5%;
+	}
+	
+}
+@media only screen and (max-width: 479px) {
+	.feature_section5 .rightbox .one_third_less{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.feature_section5 .box {
+	     padding: 35px 30px 35px 30px;
+	}
+	.feature_section5 .rightbox {
+	    width: 100%;
+	    padding-left: 30px;
+	    padding-top: 50px;
+	    padding-right: 7%;
+	}
+}
+/**
+ * 第六部分
+ */
+.feature_section6 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 86px 0px 60px 0px;
+}
+.feature_section6 h2 {
+    margin-bottom: 15px;
+}
+.owl-carousel {
+    position: relative;
+    width: 100%;
+    -ms-touch-action: pan-y;
+    overflow: hidden;
+   
+}
+#wiper{
+	position: absolute;
+	float: left;
+	transition: left 0.8s ease-in-out;
+}
+.feature_section6 .item{
+	float: left;
+	padding: 0px 10px;
+	width: 214px;
+}
+.feature_section6 .boximg {
+    
+    width: 100%;
+}
+.rimg {
+   width: 100%;
+}
+.feature_section6 .content {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(60, 188, 210, 0.9);
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: -81px;
+    line-height: 18px;
+    transition: all 0.3s ease;
+}
+.feature_section6 .item:hover .content{
+	padding-top: 25px;
+	background-color: rgba(48, 49, 50, 0.9);
+	margin-top: -90px;
+}
+.feature_section6 .content b {
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: none;
+}
+.feature_section6  a{
+	text-decoration: none;
+}
+
+/**
+ * 第七部分
+ */
+.feature_section7 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 75px 0px 90px 0px;
+    border-top-width: thin;
+    border-top-style: dashed;
+    border-top-color: #cccccc;
+}
+.one_third {
+    width: 30.650%;
+    position: relative;
+    margin-right: 4%;
+    float: left;
+}
+.one_third h3{
+	text-align: left;
+}
+.feature_section7 i {
+    font-size: 22px;
+    float: left;
+    color: #272727;
+    padding-right: 12px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.feature_section7 p {
+    text-align: left;
+}
+.margin_bottom4 {
+    margin-bottom: 40px;
+}
+@media only screen and (max-width: 767px){
+	.one_third{
+		width: 100%;
+		margin-bottom: 50px;
+		padding: 0 20px 0 20px;
+	}
+}
+/**
+ * 第八部分
+ */
+.feature_section8 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 110px 0px 0px 0px;
+    background-image: url("../../img/highstand homepage/bg-image01.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+.feature_section8 .left {
+    float: left;
+    width: 51%;
+    text-align: right;
+    padding-right: 100px;
+    padding-top: 27px;
+}
+.feature_section8 h1 {
+    color: #fff;
+    font-weight: 300;
+    line-height: 50px;
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+.feature_section8 .right {
+    float: right;
+    width: 49%;
+    text-align: left;
+    padding-left: 50px;
+    border-left: solid 1px rgba(255, 255, 255, 0.5);
+}
+.white {
+    color: #fff;
+}
+.feature_section8 h4 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 600;
+}
+.feature_section8 ul{
+	color: #FFFFFF;
+	list-style: none;
+}
+.feature_section8 ul li{
+	margin-bottom: 10px;
+}
+.feature_section8 ul li i{
+	margin-right: 10px;
+}
+.margin_bottom8 {
+    margin-bottom: 80px;
+}
+.feature_section8 .nupie {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 57px 0px 70px 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.piechart5 {
+    float: left;
+    color: #fff;
+    width: 20%;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+/**
+ * 第九部分
+ */
+.feature_section9 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 86px 0px 90px 0px;
+}
+.feature_section9 h2 {
+    margin-bottom: 15px;
+}
+.linebg {
+    width: 50px;
+    height: 2px;
+    background-color: #2ecc71;
+    margin: 0 auto;
+}
+.feature_section9 p {
+    font-size: 16px;
+    padding: 25px 0px 50px 0px;
+}
+.feature_section9 .box01 {
+    background-color: #f3f3f3;
+    padding-bottom: 25px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+.feature_section9 .box01:hover{
+	box-shadow: 0px 0px 0px 8px #2ecc71;
+}
+.feature_section9 .two_third_less .box01:hover{
+	box-shadow: 0px 0px 0px 8px #000000;
+}
+.choose-blog .box01:hover{
+	box-shadow: 0px 0px 0px 8px #000000;
+}
+.feature_section9 .box02 {
+    background-color: #2ecc71;
+    padding: 0px 40px 0px 40px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3s ease;
+    height: 332px;
+    display: table;
+}
+.two_third_less {
+    width: 66%;
+    display: inline-block;
+}
+.feature_section9 .box03 {
+    float: left;
+    width: 100%;
+    background: #3cbcd2;
+    transition: all 0.3s ease;
+}
+.feature_section9 .box03 .content {
+    text-align: left;
+    position: absolute;
+    top: 120px;
+}
+.feature_section9 .two_third_less .box01{
+	position: relative;
+	padding-bottom: 0;
+}
+.feature_section9 .two_third_less .content{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(61,173,192,0.8);
+	padding-top: 120px;
+}
+.two_third_less .content h4 {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding-left: 40px;
+    color: #fff;
+}
+.two_third_less .content b {
+    color: #FFF;
+}
+.feature_section9 b {
+    font-size: 13px;
+    text-align: left;
+    padding: 20px 0px 0px 40px;
+    font-weight: normal;
+}
+.feature_section9 h4 {
+    padding: 18px 0px 0px 40px;
+    text-align: left;
+    font-weight: 600;
+}
+.blogs-news img {
+    width: 100%;
+}
+h4 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 600;
+}
+.feature_section9 .choose-blog .box01{
+	position: relative;
+	padding-bottom: 120px;
+	text-align: center;
+}
+.feature_section9 .choose-blog .content{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(46,204,113,1);
+	padding-top: 50px;
+	color: #FFFFFF;	
+	
+}
+.feature_section9 .choose-blog .content h4{
+	color: #FFFFFF;
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+	padding: 18px 20px 0px 20px;
+}
+.feature_section9 .choose-blog .content b{
+	padding: 18px 20px 0px 20px;
+}
+/**
+ * 第十部分
+ */
+.feature_section10 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 140px 0px 140px 0px;
+    background-image: url("../../img/highstand homepage/bg-image02.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+.feature_section10 h1 {
+    font-size: 45px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+}
+.less6 {
+    width: 70%;
+    margin: 0 auto;
+}
+.feature_section10 em {
+    font-size: 18px;
+    color: #fff;
+    text-transform: none;
+    font-style: normal;
+    display: block;
+    line-height: 27px;
+    margin-top: 20px;
+    font-family: "arial narrow";
+}
+.feature_section10 a {
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 14px 50px;
+    border-radius: 25px;
+    margin: 0px 10px;
+    transition: all 0.3s ease;
+    font-family: "arial narrow";
+}
+/**
+ * 第十一部分
+ */
+
+.feature_section11 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    background-color: #3cbcd2;
+    padding: 90px 0px 90px 0px;
+}
+#tabs {
+    width: 100%;
+    margin: 0 auto;
+}
+#tabs ul {
+    padding: 0;
+    margin: 0;
+    float: left;
+    background-color: #fff;
+}
+#tabs li a {
+    width: 400px;
+    text-align: left;
+    display: block;
+    padding: 27px 45px 21px 35px;
+    text-decoration: none;
+    margin: 0px 0px 0px 0px;
+    transition: all 0.3s ease;
+}
+.tabulous_active {
+    background: #272727 !important;
+    color: #fff !important;
+    /*background-image: url("../../img/highstand homepage/right-arrow.png");
+    background-position: left;
+    background-repeat: no-repeat;*/
+    /*display: inline-block;*/
+    position: relative;
+}
+#tabs li a i {
+    float: left;
+    color: #fff;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+#tabs li a h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+#tabs_container {
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    padding: 0px 0px 0px 90px;
+    height: 683px;
+}
+.transition {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transition-delay: .3s;
+    -moz-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    -ms-transition-delay: .3s;
+    transition-delay: .3s;
+}
+#tabs_container div {
+    margin-right: 0px;
+    background-color: #fff;
+    padding: 50px;
+    position: absolute;
+}
+.feature_section11 h3 {
+    margin: 25px 0px 15px 0px;
+}
+#tabs_container div p {
+    padding-bottom: 100px;
+}
+p {
+    font-weight: normal;
+    line-height: 23px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #727272;
+}
+.hidescaleup {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.make_transist {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.showscaleup {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-transition-delay: .3s;
+    -moz-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    -ms-transition-delay: .3s;
+    transition-delay: .3s;
+}
+
+
 
