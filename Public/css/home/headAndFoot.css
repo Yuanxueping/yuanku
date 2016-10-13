@@ -22,7 +22,7 @@
   height: 45px;
 }
 .top-nav{
-	background-color: #727272!important;
+	background-color: #272727!important;
 	color: white;
 	
 	
@@ -39,10 +39,13 @@
   width: 80px;
 }
 
-
+#back{
+  background-color:#272727;
+  color:white;
+}
 
 .foot-nav .container-fluid {
-  background-color:gray;
+  
   padding: 10px 0;
 
 }
@@ -51,14 +54,17 @@
   display: inline-block;
   padding: 0 4px ;
   cursor: pointer;
-  color: white;
+
+}
+.foot-nav .container-fluid li h4{
+  color: white!important;
 }
 .foot-nav .container-fluid li a {
-  color: white;
+  color: white!important;
   padding: 0 8px;
 }
 .foot-nav .foot-text {
   padding-top: 20px;
   height: 40px;
-  background-color:#727272;
+  background-color:rgb(17,17,17);
 }
