@@ -1,8 +1,8 @@
 <include file="public/header" />
 		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/register.css"/>
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/transform.css"/>
+		<!-- <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/transform.css"/> -->
 		
-		<script src="__PUBLIC__/js//register.js" type="text/javascript" charset="utf-8"></script>
+		<script src="__PUBLIC__/js/login.js" type="text/javascript" charset="utf-8"></script>
 
 		<div class="container">
 			<div class="row login_header clearcss">
@@ -11,7 +11,7 @@
 						<h1>登录</h1>
 					</div>
 					<div class="col-lg-offset-4 col-lg-2 col-md-12">
-		              	<a href="index.html">首页 <i>/</i> </a> 
+		              	<a href="index.html" style="opacity:0.6">首页 <i>/</i> </a> 
 					</div>
 		    </div>
 		    
@@ -36,15 +36,18 @@
 			            <input type="text" class="form-control" name="username" id="username"  autocomplete="off">
 			          </div>
 			          <p style="margin-top: 10px;">输入用户名或邮箱</p>
-			          <p class="form-signin-heading" style="margin-top:0px;"><img src="__PUBLIC__/img/login/pwd.png"/>&nbsp;密码</p>
+			          
+			        </div>
+			        <div class="form-group" style="margin-top:0px;">
+						<p class="form-signin-heading" style="margin-top:0px;"><img src="__PUBLIC__/img/login/pwd.png"/>&nbsp;密码</p>
 			          <div class="input-group">
-			            <input type="text" class="form-control" name="username" id="username"  autocomplete="off">
+			            <input type="text" class="form-control" name="password" id="password"  autocomplete="off">
 			          </div>
 			          <p style="margin-top: 10px;">输入与用户名相匹配的密码</p>
 			        </div>
 					<div class="Btn">
 						<!--<p>Password reset instructions will be send to your registered email address</p>-->
-			        <button class="btn btn-lg btn-primary btn-block" id="register" type="submit">登录</button>
+			        <button class="btn btn-lg btn-primary btn-block" id="login" type="submit">登录</button>
 					</div>
 			     </form>
 			</div>
