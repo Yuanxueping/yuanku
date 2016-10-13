@@ -23,7 +23,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-default top-nav" >
+	<nav class="navbar navbar-default top-nav navbar-fixed-top" >
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header"> 
