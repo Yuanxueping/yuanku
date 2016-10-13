@@ -1,6 +1,7 @@
 body.contact_us,
 div.contact_us{
   margin-top: 50px;
+  /*margin: 0px;*/
   padding: 0px;
   font-family: "微软雅黑";
   font-weight: 400;
@@ -9,6 +10,9 @@ div.contact_us{
   padding-left: 0px;
   margin-bottom: 50px;
 }*/
+.contact_us .contact_head{
+  margin: 0px auto;
+}
 .contact_us .a_style {
   color: #2ecc71;
   text-decoration: none;
@@ -39,7 +43,8 @@ div.contact_us{
   padding: 0px;
 }
 .contact_us .form-group {
-  margin-bottom: 0px;
+  margin: 30px 0px 0px;/*头部样式引起冲突*/
+  /*margin_bottom:0px;*/
 }
 .contact_us .form-group .form-control {
   height: 37px;
