@@ -1,0 +1,96 @@
+body,h1,h2,a,p{
+	margin: 0px;
+	padding: 0px;
+}
+.container{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.row.clearcss{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+.login_header{
+	width: 100%;
+	height: auto;
+	background:#272727;
+	padding-top: 5% !important;
+}
+.login_header h1{
+	display: inline-block;
+	color: #F7F7F7;
+	margin-left: 10%;
+}
+.login_header a{
+	display: inline-block;
+	color: #F7F7F7;
+	margin-right: 10%;
+	text-decoration: none;
+	margin-left: 10%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.box{
+	padding:0px 5%;
+}
+.form-signin{
+	border: 1px solid #ececec;
+	border-radius: 5px;
+	width: 100%;
+	margin-top: 8%;
+	padding: 1px;
+}
+.form-header{
+	width: 100%;
+	height: 122px;
+	background-color: #f3f3f3;
+}
+.form-header h4{
+	padding:15px 0px 10px;
+	margin: 0px;
+	text-align: center;
+	font-weight: 600;
+}
+.form-header p{
+	text-align: center;
+	color: #727272;
+	margin-bottom: 5px;
+}
+.form-header a{
+	color:  #2ecc71;
+	text-decoration: none;
+}
+.form-group{
+	margin:30px 10% 0px;
+}
+.form-group > P{
+	margin-bottom: 10px;
+	color: #727272;
+	word-spacing: 2pt;
+}
+.Btn{
+	margin:20px 10% 15%;
+}
+.Btn > p{
+	margin-bottom: 10px;
+	color: #727272;
+	word-spacing: 2pt;
+}
+.btn-lg{
+	background-color: #2ecc71;
+	border: none;
+	
+}
+ .btn-lg:hover,.btn-lg:active{
+ 	background-color: #2ecc71;
+ }
+.input-group{
+	
+	width: 100%;
+}
+.form-control{
+	border-radius: 5px !important;
+	height: 45px;
+}
