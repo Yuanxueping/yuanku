@@ -1,3 +1,67 @@
 <include file="public/header" />
-注册
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>注册页面</title>
+		
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap-3.3.0/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/register.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/transform.css"/>
+		<script src="__PUBLIC__/js/jquery.1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="__PUBLIC__/bootstrap-3.3.0/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="__PUBLIC__/js//register.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row login_header clearcss">
+				
+					<div class="col-lg-6 col-md-12">
+						<h1>Reset your password</h1>
+					</div>
+					<div class="col-lg-offset-4 col-lg-2 col-md-12">
+		              	<a href="">Home <i>/</i> </a> 
+					</div>
+		    </div>
+		    <!--<div class="row  clearcss">
+		    	<div class="col-lg-offset-3 col-lg-3 col-md-12">
+		    		<form action="" method="post">
+		    		
+		    		<input type="submit" value=""/>
+		    	</form>
+		    	</div>
+		    </div>-->
+		</div>
+		<div class="container  box">
+			<div class="col-lg-offset-3 col-lg-6 col-md-12">
+				<form class="form-signin" role="form" action="/login" method="POST" enctype="application/x-www-form-urlencoded">
+			        <div class="form-header">
+			        	<h4>RESET YOUR PASSWORD</h4>
+			        	<p>Not memner yet?&nbsp;<a href="">Sign up</a></p>
+			        	<p>Already registered?&nbsp;<a href="">Log in</a></p>
+			        </div>
+			        <div class="message">
+			        	<div id="warn" class="alert alert-warning alert-dismissable" style="display: none;"> 
+			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+			        		<strong>警告！&nbsp;&nbsp;</strong>内容不能为空！
+			        	</div>
+			        </div>
+			        <div class="form-group">
+			        	<p class="form-signin-heading">Username or email address</p>
+			          <div class="input-group">
+			            <input type="text" class="form-control" name="username" id="username" placeholder="123456@qq.com" autocomplete="off">
+			          </div>
+			        </div>
+					<div class="Btn">
+						<p>Password reset instructions will be send to your registered email address</p>
+			        <button class="btn btn-lg btn-primary btn-block" id="register" type="submit">SUBMIT</button>
+					</div>
+			     </form>
+			</div>
+    </div>
+	</body>	
+</html>
+
 <include file="public/footer" />
