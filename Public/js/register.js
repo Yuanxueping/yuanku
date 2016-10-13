@@ -1,3 +1,8 @@
+/*
+	袁雪萍
+	登录/注册
+ */
+
 'use strict';
 
 $(function(){

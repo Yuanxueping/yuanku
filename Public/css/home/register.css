@@ -1,6 +1,15 @@
+/*
+	袁雪萍
+	登录/注册
+ */
 body,h1,h2,a,p{
 	margin: 0px;
 	padding: 0px;
+	font-family: "微软雅黑";
+	font-weight: normal;
+}
+h1{
+	font-size:36px;
 }
 .container{
 	width: 100%;

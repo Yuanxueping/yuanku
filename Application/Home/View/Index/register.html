@@ -1,46 +1,29 @@
 <include file="public/header" />
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>注册页面</title>
-		
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap-3.3.0/css/bootstrap.min.css"/>
+
 		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/register.css"/>
 		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/transform.css"/>
-		<script src="__PUBLIC__/js/jquery.1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="__PUBLIC__/bootstrap-3.3.0/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		
 		<script src="__PUBLIC__/js//register.js" type="text/javascript" charset="utf-8"></script>
-	</head>
-	<body>
+	
 		<div class="container">
 			<div class="row login_header clearcss">
 				
 					<div class="col-lg-6 col-md-12">
-						<h1>Reset your password</h1>
+						<h1>重置密码</h1>
 					</div>
 					<div class="col-lg-offset-4 col-lg-2 col-md-12">
-		              	<a href="">Home <i>/</i> </a> 
+		              	<a href="">首页 <i>/</i> </a> 
 					</div>
 		    </div>
-		    <!--<div class="row  clearcss">
-		    	<div class="col-lg-offset-3 col-lg-3 col-md-12">
-		    		<form action="" method="post">
-		    		
-		    		<input type="submit" value=""/>
-		    	</form>
-		    	</div>
-		    </div>-->
+		    
 		</div>
 		<div class="container  box">
 			<div class="col-lg-offset-3 col-lg-6 col-md-12">
 				<form class="form-signin" role="form" action="/login" method="POST" enctype="application/x-www-form-urlencoded">
 			        <div class="form-header">
-			        	<h4>RESET YOUR PASSWORD</h4>
-			        	<p>Not memner yet?&nbsp;<a href="">Sign up</a></p>
-			        	<p>Already registered?&nbsp;<a href="">Log in</a></p>
+			        	<h4>重置密码</h4>
+			        	<p>不记得账号或密码?&nbsp;<a href="">注册</a></p>
+			        	<p>已经注册?&nbsp;<a href="">登录</a></p>
 			        </div>
 			        <div class="message">
 			        	<div id="warn" class="alert alert-warning alert-dismissable" style="display: none;"> 
@@ -49,19 +32,17 @@
 			        	</div>
 			        </div>
 			        <div class="form-group">
-			        	<p class="form-signin-heading">Username or email address</p>
+			        	<p class="form-signin-heading">用户名或邮箱地址</p>
 			          <div class="input-group">
-			            <input type="text" class="form-control" name="username" id="username" placeholder="123456@qq.com" autocomplete="off">
+			            <input type="text" class="form-control" name="username" id="username" autocomplete="off">
 			          </div>
 			        </div>
 					<div class="Btn">
-						<p>Password reset instructions will be send to your registered email address</p>
-			        <button class="btn btn-lg btn-primary btn-block" id="register" type="submit">SUBMIT</button>
+						<p>密码重置说明将会发送到你被注册的邮箱地址</p>
+			        <button class="btn btn-lg btn-primary btn-block" id="register" type="submit">提交</button>
 					</div>
 			     </form>
 			</div>
     </div>
-	</body>	
-</html>
-
+	
 <include file="public/footer" />
