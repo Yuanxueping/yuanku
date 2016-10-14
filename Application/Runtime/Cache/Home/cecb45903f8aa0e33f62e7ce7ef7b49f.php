@@ -1,57 +1,38 @@
-﻿<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1">-->
-		<title>力动企业</title>
-		<link rel="stylesheet" href="css/headAndFoot.css" />
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
+<head lang="zh">
+	<title><?php echo ($title); ?></title>
+
+	<meta charset="UTF-8">
+
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="/lidong/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/lidong/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/lidong/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+	 
+
+	<!--  <link rel="stylesheet" href="css/headAndFoot.css" />
+	 <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
 		
-		<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
-		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
-		<!--<script src="js/headAndFoot.js" type="text/javascript" charset="utf-8"></script>-->
-		 <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-	</head>
-	<body>
-		<nav class="navbar navbar-default top-nav" >
-		  <div class="container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <!--<a class="navbar-brand" href="#">
-		      	<img class="logo" src="img/logo.png" />
-		      </a>-->
-		    </div>		
-		    
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				      <ul class="nav navbar-nav navbar-right color">
-				        <li><a href="#">首页</a></li>
-				        <li><a href="#">登录</a></li>
-				        <li><a href="#">注册</a></li>
-				        <li><a href="#">新闻</a></li>
-				        <li><a href="#">联系我们</a></li>
-				        <li><a href="#">关于我们</a></li>
-				        <li>
-				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
-				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
-				        	</a>
-				        </li>
-				      </ul>		          			        				        	
-	        </div>
-		  </div>
-		</nav>
-		<div style="height: 400px;"></div>
-		<nav class="foot-nav" style="background-color: #727272;">
-			<div class="container-fluid">
-				<div class="row">
+	<!--  <script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script> 
+	 <script type="text/javascript" src="js/bootstrap.min.js" ></script>-->
+
+	
+	
+
+		
+
+		
+
+
+新闻列表
+
+
+<div class="clearfix"></div>
+<nav class="foot-nav" id="back">
+			<div class="container-fluid" >
+				<div class="row" >
 					<div class="col-lg-3 col-md-6 col-lg-12">
 						<ul class="clearfix">
 							<li><h4>友情连接</h4></li><br/>
@@ -90,10 +71,10 @@
 					</div>				
 				</div>	
 			</div>
-			<div class="foot-text" style="background-color:#727272;">
+			<div class="foot-text">
 				<p class="text-center">Copyright? 2003-2016 </p>
 			</div>
-		</nav>
+</nav>
 <!--摸态框-->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog">
