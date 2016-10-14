@@ -1,0 +1,98 @@
+a {
+  text-decoration: none !important;
+}
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.container {
+  border-bottom: 1px solid #eee;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.container .wenzhang {
+  padding-top: 30px;
+  font-size: 14px;
+}
+.container .wenzhang p a.biaoti {
+  color: #2ecc71;
+  font-weight: 400;
+  font-size: 30px;
+}
+.container .wenzhang p a.biaoti:hover {
+  color: #383634;
+}
+.container .wenzhang p a.time {
+  color: #383634;
+  font-size: 16px;
+  padding-right: 18px;
+}
+.container .wenzhang p a.time:hover {
+  color: #2ecc71;
+}
+.container .wenzhang p a.more {
+  color: #2ecc71;
+}
+.container .wenzhang p a.more:hover {
+  color: #383634;
+}
+.container .wenzhang p a.name {
+  font-size: 11px;
+  color: #999;
+}
+.container .wenzhang p a.name:hover {
+  color: #383634;
+}
+.container .wenzhang p a.comments {
+  font-size: 11px;
+  color: #999;
+}
+.container .wenzhang p a.comments:hover {
+  color: #383634;
+}
+.container .wenzhang p i {
+  color: #bbb;
+  font-style: normal;
+  font-size: 12px;
+}
+.container .wenzhang p span {
+  color: #999;
+}
+.news_img {
+  width: 100%;
+}
+.paging {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  /*top: 100px;*/
+}
+.products .main {
+  display: none;
+}
+.products .main.selected {
+  display: block;
+}
+.tab button {
+  color: #2ecc71;
+  background-color: #eee;
+  outline: none !important;
+}
+.tab button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.tab button:active {
+  outline: none !important;
+}
+.tab button.active {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=news_list.css.map */
