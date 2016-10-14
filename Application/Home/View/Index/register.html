@@ -1,9 +1,9 @@
 <include file="public/header" />
 
 		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/register.css"/>
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/transform.css"/>
+		<!-- <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/transform.css"/> -->
 		
-		<script src="__PUBLIC__/js/register.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <script src="__PUBLIC__/js/register.js" type="text/javascript" charset="utf-8"></script> -->
 	
 		<div class="container">
 			<div class="row login_header clearcss">
@@ -12,7 +12,7 @@
 						<h1>重置密码</h1>
 					</div>
 					<div class="col-lg-offset-4 col-lg-2 col-md-12">
-		              	<a href="index.html" style="opacity:0.6">首页 <i>/</i> </a> 
+		              	<a href="index.html" style="opacity:0.6;font-weight:normal;">首页 <i>/</i> </a> 
 					</div>
 		    </div>
 		    
@@ -44,5 +44,24 @@
 			     </form>
 			</div>
     </div>
-	
+	<script>
+		$(function(){
+			var $register = $("#register");
+			var $username = $("#username");
+			var $wran = $("#warn");
+			var $close = $(".close");
+			
+			$register.click(function(){
+				if ($username.val().length === 0) {
+					$wran.css("display","block");
+					return false;
+				}
+			});
+			
+			$close.click(function(){
+				$wran.css("display","none");
+				return false;
+			})
+		})
+	</script>
 <include file="public/footer" />
