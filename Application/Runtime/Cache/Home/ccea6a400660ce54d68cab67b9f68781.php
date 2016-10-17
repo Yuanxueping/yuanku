@@ -6,10 +6,10 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+	 <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/thinkphp_3.2.3_full/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
 	 
 
 	<!--  <link rel="stylesheet" href="css/headAndFoot.css" />
@@ -25,11 +25,11 @@
 		
 
 
-		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/register.css"/>
-		<!-- <link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/transform.css"/> -->
+		<link rel="stylesheet" type="text/css" href="/thinkphp_3.2.3_full/yuanku/Public/css/home/register.css"/>
+		<!-- <link rel="stylesheet" type="text/css" href="/thinkphp_3.2.3_full/yuanku/Public/css/home/transform.css"/> -->
 		
 
-		<script src="/yuanku/Public/js//register.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/thinkphp_3.2.3_full/yuanku/Public/js//register.js" type="text/javascript" charset="utf-8"></script>
   </head>
 <body>
 	<nav class="navbar navbar-default top-nav navbar-fixed-top gaise">
@@ -43,18 +43,18 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#">
-		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
+		      	<img class="logo" src="/thinkphp_3.2.3_full/yuanku/Public/img/logoko2.png" />
 		      </a>
 		    </div>		
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-				        <li><a href="/yuanku/index.php/Home/Index">首页</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/login">登录</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/register">注册</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/news">新闻</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
+				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index">首页</a></li>
+				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/login">登录</a></li>
+				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/register">注册</a></li>
+				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/news">新闻</a></li>
+				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
+				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
 				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
@@ -65,7 +65,7 @@
 		  </div>
 		</nav>
 
-		<!-- <script src="/yuanku/Public/js/login.js" type="text/javascript" charset="utf-8"></script> -->
+		<!-- <script src="/thinkphp_3.2.3_full/yuanku/Public/js/login.js" type="text/javascript" charset="utf-8"></script> -->
 
 		<div class="container">
 			<div class="row login_header clearcss">
@@ -94,7 +94,7 @@
 			        	</div>
 			        </div>
 			        <div class="form-group">
-			        	<p class="form-signin-heading"><img src="/yuanku/Public/img/login/user.png"/>&nbsp;用户名/邮箱</p>
+			        	<p class="form-signin-heading"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/login/user.png"/>&nbsp;用户名/邮箱</p>
 			          <div class="input-group">
 			            <input type="text" class="form-control" name="username" id="username"  autocomplete="off">
 			          </div>
@@ -108,7 +108,7 @@
 			        	</div>
 			        </div>
 			        <div class="form-group" style="margin-top:0px;">
-						<p class="form-signin-heading" style="margin-top:0px;"><img src="/yuanku/Public/img/login/pwd.png"/>&nbsp;密码</p>
+						<p class="form-signin-heading" style="margin-top:0px;"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/login/pwd.png"/>&nbsp;密码</p>
 			          <div class="input-group">
 			            <input type="text" class="form-control" name="password" id="password"  autocomplete="off">
 			          </div>
@@ -172,9 +172,9 @@
 					<div class="col-lg-3 col-md-6 col-lg-12">
 						<ul >
 							<li><h4>最新动态</h4></li><br/>
-							<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
-							<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
-							<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
+							<li><a href="#"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
+							<li><a href="#"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
+							<li><a href="#"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
 												
 						</ul>
 					</div>

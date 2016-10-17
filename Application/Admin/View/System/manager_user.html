@@ -2,7 +2,10 @@
 
  <include file='Public:menu' /> 
 
-<h4>管理员列表</h4>
+<h4>管理员列表
+
+<button class="btn btn-success " onclick="location.href='{:U('System/user_add')}'">添加管理员</button>
+</h4>
 <div class="table-responsive alt-table">
                 <table class="table table-hover table-bordered">
                     <thead>
@@ -11,188 +14,43 @@
                                 #
                             </th>
                             <th>管理员姓名</th>
-                            <th>简介</th>
-                            <th class="table-icon-cell">
-                                <i class="zmdi zmdi-favorite danger-color"></i>
-                            </th>
-                            <th class="table-icon-cell">
-                                <i class="zmdi zmdi-comment primary-color"></i>
-                            </th>
+                            <th width="220">密码</th>
+                            
                             <th>最近登录</th>
                             <th class="text-center">操作</th>
                         </tr>
                     </thead>
                     <tbody>
+
+                    <volist   name="user_list" id="user_i">
                         <tr>
                             <td class="table-check">
-                                1
+                               {$user_i.id}
                             </td>
                             <td>
-                                Last month income
+                               {$user_i.user_name}
+                               <br>
                             </td>
-                            <td>订单为什么还没有发货？</td>
-                            <td>
-                                <i class="zmdi zmdi-favorite danger-color"></i>
-                                8
+                             <td class="pwd_box " pwd="{$user_i.user_pwd}"  id_val="{$user_i.id}">
+                               {$user_i.user_pwd}
+                               <br>
                             </td>
-                            <td class="table-icon-cell">
-                                <i class="zmdi zmdi-comment primary-color"></i>
-                                47
-                            </td>
-                            <td class="table-date">7 minets ago <i class="zmdi zmdi-time"></i></td>
+                            
+                            <td class="table-date"> {$user_i.create_time|date="Y-m-d H:i:s",###} <i class="zmdi zmdi-time"></i></td>
                             <td class="text-center">
                                <div class="btn-group">
-                                <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
-                                <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                                <button onclick="location.href='{:U('System/user_edit',array('id'=>$user_i[id]))}'" type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                <button onclick="location.href='{:U('System/user_del',array('id'=>$user_i[id]))}'" type="button" class="btn btn-danger waves-effect"><i class="zmdi zmdi-delete"></i></button>
                               </div>
                             </td>
                         </tr>
-                        <tr>
-                            <td class="table-check">
-                                2
-                            </td>
-                            <td>
-                                Expenses in 2016
-                            </td>
-                            <td></td>
-                            <td class="table-icon-cell">
-                                <i class="zmdi zmdi-favorite danger-color"></i>
-                                2
-                            </td>
-                            <td class="table-icon-cell">
-                                <i class="zmdi zmdi-comment primary-color"></i>
-                                15
-                            </td>
-                            <td class="table-date">2 hours ago <i class="zmdi zmdi-time"></i></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
-                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-check">
-                                3
-                            </td>
-                            <td>
-                                Accounting
-                            </td>
-                            <td class="color-blue-grey-lighter">Attention he extremity</td>
-                            <td class="table-icon-cell">
-                                <i class="zmdi zmdi-favorite danger-color"></i>
-                                9
-                            </td>
-                            <td class="table-icon-cell">
-                                <i class="zmdi zmdi-comment primary-color"></i>
-                                20
-                            </td>
-                            <td class="table-date">5 hours ago <i class="zmdi zmdi-time"></i></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
-                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-check">
-                                4
-                            </td>
-                            <td>
-                                Nike orders
-                            </td>
-                            <td>And produce say the ten moments parties. Simple innate</td>
-                            <td class="table-icon-cell">
-                                <i class="zmdi zmdi-favorite danger-color"></i>
-                                78
-                            </td>
-                            <td class="table-icon-cell">
-                                <i class="zmdi zmdi-comment primary-color"></i>
-                                347
-                            </td>
-                            <td class="table-date">15 hours ago <i class="zmdi zmdi-time"></i></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
-                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-check">
-                                5
-                            </td>
-                            <td>
-                                Reebok orders
-                            </td>
-                            <td>Written enquire painful ye to offices forming it.</td>
-                            <td class="table-icon-cell">
-                                <i class="zmdi zmdi-favorite danger-color"></i>
-                                56
-                            </td>
-                            <td class="table-icon-cell">
-                                <i class="zmdi zmdi-comment primary-color"></i>
-                                34
-                            </td>
-                            <td class="table-date">2 days ago <i class="zmdi zmdi-time"></i></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
-                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-check">
-                                6
-                            </td>
-                            <td>
-                                IOS update
-                            </td>
-                            <td>Then so does over sent dull on.</td>
-                            <td class="table-icon-cell">
-                                <i class="zmdi zmdi-favorite danger-color"></i>
-                                120
-                            </td>
-                            <td class="table-icon-cell">
-                                <i class="zmdi zmdi-comment primary-color"></i>
-                                278
-                            </td>
-                            <td class="table-date">3 days ago <i class="zmdi zmdi-time"></i></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
-                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-check">
-                                7
-                            </td>
-                            <td>
-                                Puma orders
-                            </td>
-                            <td></td>
-                            <td class="table-icon-cell">
-                                <i class="zmdi zmdi-favorite danger-color"></i>
-                                32
-                            </td>
-                            <td class="table-icon-cell">
-                                <i class="zmdi zmdi-comment primary-color"></i>
-                                13
-                            </td>
-                            <td class="table-date">3 days ago <i class="zmdi zmdi-time"></i></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
-                                  <button type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-delete"></i></button>
-                                </div>
-                            </td>
-                        </tr>
+                    </volist>
                         
                     </tbody>
                 </table>
             </div>
+<script>
+  var ajax_url='{:U("System/ajax_set_pwd")}';
+</script>
+      <script src="__PUBLIC__/js/admin/manager_ajax.js"> </script>
  <include file='Public:footer' /> 

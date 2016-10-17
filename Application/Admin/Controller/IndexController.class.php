@@ -1,10 +1,10 @@
 <?php
 namespace Admin\Controller;
-use Think\Controller;
+use Common\Controller\AuthController;
 
 
 
-class IndexController extends Controller {
+class IndexController extends AuthController {
     public function index(){
         // 导入第三方类库
         // 生成签名
