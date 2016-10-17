@@ -51,4 +51,31 @@ class LoginController extends Controller {
 		session('[destroy]');
 		$this->success('退出成功！', U('Login/index'));
 	}
+
+	public function ajax_login()
+	{
+
+		 $verfiy = new Verify();
+		
+			// $this->ajaxReturn(array('stauts'=>1,'message'=>'验证码正确！'));
+			$user_m=D('AdminUser');
+			$user_info=$user_m->where('user_name="'.I('user_name').'" and user_pwd="'.I('user_pwd').'"')->find();
+
+			if ($user_info['id']<=0) {
+				$this->ajaxReturn(array('stauts'=>-1,'message'=>'用户名或密码错误！'));
+			}else{
+				if (!$verfiy->check(I('verify'))) {
+					$this->ajaxReturn(array('stauts'=>-2,'message'=>'验证码错误！'));
+				}else{
+					$login['uid'] = $user_info['id'];
+					$login['user'] = 'admin';
+					session('auth', $login);
+					$this->ajaxReturn(array('stauts'=>1,'message'=>'登录成功！'));
+				}
+
+				 
+			}
+
+
+	}
 }

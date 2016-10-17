@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2016 年 10 月 02 日 15:14
+-- 生成日期: 2016 年 10 月 17 日 17:52
 -- 服务器版本: 5.5.20
 -- PHP 版本: 5.3.10
 
@@ -19,6 +19,33 @@ SET time_zone = "+00:00";
 --
 -- 数据库: `hello`
 --
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `admin_user`
+--
+
+CREATE TABLE IF NOT EXISTS `admin_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(255) NOT NULL,
+  `user_pwd` varchar(255) NOT NULL,
+  `create_time` varchar(255) NOT NULL,
+  `head_photo` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
+
+--
+-- 转存表中的数据 `admin_user`
+--
+
+INSERT INTO `admin_user` (`id`, `user_name`, `user_pwd`, `create_time`, `head_photo`) VALUES
+(7, 'hlo', '1234567890198', '1476346987', ''),
+(9, 'test5', '123456788887', '1476347197', ''),
+(10, 'hlo2', '123456', '1476349745', ''),
+(12, 'admin', '123456', '1476350743', './2016-10-14/58004d3c2bdb8.png'),
+(13, 'test8', '1234567', '1476410314', ''),
+(14, 'test9', '123456123', '1476410480', './2016-10-14/58003c7048b5d.jpg');
 
 -- --------------------------------------------------------
 
@@ -101,14 +128,16 @@ CREATE TABLE IF NOT EXISTS `system_conf` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `site_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- 转存表中的数据 `system_conf`
 --
 
 INSERT INTO `system_conf` (`id`, `site_name`) VALUES
-(1, '力动企业');
+(1, '力动企业'),
+(2, ''),
+(3, '');
 
 -- --------------------------------------------------------
 
@@ -131,6 +160,68 @@ INSERT INTO `teacher` (`id`, `teacher_name`) VALUES
 (2, 'Bell'),
 (3, 'Mps'),
 (4, 'Sklim');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `think_auth_group`
+--
+
+CREATE TABLE IF NOT EXISTS `think_auth_group` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `title` char(100) NOT NULL DEFAULT '',
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `rules` char(80) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- 转存表中的数据 `think_auth_group`
+--
+
+INSERT INTO `think_auth_group` (`id`, `title`, `status`, `rules`) VALUES
+(1, '超级管理员', 1, ''),
+(2, '用户管理员', 1, '');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `think_auth_group_access`
+--
+
+CREATE TABLE IF NOT EXISTS `think_auth_group_access` (
+  `uid` mediumint(8) unsigned NOT NULL,
+  `group_id` mediumint(8) unsigned NOT NULL,
+  UNIQUE KEY `uid_group_id` (`uid`,`group_id`),
+  KEY `uid` (`uid`),
+  KEY `group_id` (`group_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `think_auth_group_access`
+--
+
+INSERT INTO `think_auth_group_access` (`uid`, `group_id`) VALUES
+(12, 1),
+(13, 1),
+(14, 1);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `think_auth_rule`
+--
+
+CREATE TABLE IF NOT EXISTS `think_auth_rule` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `name` char(80) NOT NULL DEFAULT '',
+  `title` char(20) NOT NULL DEFAULT '',
+  `type` tinyint(1) NOT NULL DEFAULT '1',
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `condition` char(100) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

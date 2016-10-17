@@ -18,8 +18,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  
-  <link rel="stylesheet" href="__PUBLIC__/css/admin/bootstrap.css">
-  <link rel="stylesheet" href="__PUBLIC__/css/admin/material-design-iconic-font.css">
+  <link rel="stylesheet" href="__PUBLIC__/css/admin/bootstrap.css"> 
   <link rel="stylesheet" href="__PUBLIC__/css/admin/animate.css">
   <link rel="stylesheet" href="__PUBLIC__/css/admin/metisMenu.css">
   <link rel="stylesheet" href="__PUBLIC__/css/admin/jquery_002.css">
@@ -33,8 +32,12 @@
   <link rel="stylesheet" href="__PUBLIC__/css/admin/style.css">
   <link rel="stylesheet" href="__PUBLIC__/css/admin/common.css">
   <script src="__PUBLIC__/js/jquery.js"></script>
+  <!-- 第一步引用 -->
+  <script src="__PUBLIC__/js/angular.min.js"></script>
 
   
+
+
 
 <body   class="user-page" style="overflow: visible;">
  
@@ -46,16 +49,35 @@
             <div class="login">
 
                   <h4 class="text-center">力动管理后台登录</h4>
-                  <form method="post" action="{:U('Login/index')}">
+<!-- action="{:U('Login/index')}" -->
+                  <form ng-submit="get_val();" name="myForm" ng-app="myApp" ng-controller="validateCtrl" method="post"  novalidate>
                     <div class="form-group">
-                      <input type="text" class="form-control" id="login" name="user_name">
+
+                      <input type="text" class="form-control" id="login" name="user_name" required ng-model='data_user.user_name'>
+                      <span>
+                        {{user_name}}
+                      </span>
+                      <span style="color:red" ng-show="myForm.user_name.$dirty">
+                        <span ng-show="myForm.user_name.$error.required">用户名是必须的。</span>
+                      </span>
+                        <!-- <span ng-show="myForm.user_name.$error.email">用户名的邮箱格式错误！</span> -->
+                       
                     </div>
                     <div class="form-group">
-                      <input type="password" class="form-control" id="password" name="user_pwd">
+                      <input type="password" class="form-control" id="password" name="user_pwd" required ng-model="data_user.user_pwd">
+                      <!--  && myForm.user_pwd.$invalid -->
+                      <span style="color:red" ng-show="myForm.user_pwd.$dirty && myForm.user_pwd.$invalid">
+                        <span ng-show="myForm.user_pwd.$error.required">密码不能为空！</span>
+                        </span>
                     </div>
 
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="请输入验证码" id="password" name="verify"> 
+                      <input type="text" ng-model="data_user.verify" class="form-control" placeholder="请输入验证码" required  name="verify"> 
+                      <span style="color:red" ng-show="myForm.verify.$dirty && myForm.verify.$invalid">
+
+                        <span ng-show="myForm.verify.$error.required">验证码不能为空！</span>
+                        </span>
+                      
                       <img src="{:U('Login/get_verify')}" alt="" onclick="$(this).attr('src','{:U('Login/get_verify')}?'+Math.random())">
                     </div>
                   <!--   <div class="form-group text-left">
@@ -65,8 +87,9 @@
                           <span class="white f-s-16 m-l-5">Remember me</span>
                       </div>
                     </div> -->
-
-                    <button type="submit" class="btn btn-block btn-lg btn-primary">登录</button>
+                    
+                    <button type="submit" ng-disabled=" myForm.user_name.$invalid || myForm.verify.$invalid || myForm.user_pwd.$invalid" class="btn btn-block btn-lg btn-primary">登录</button>
+                    <div> {{ message }}</div>
 
                   </form>
 
@@ -79,6 +102,31 @@
   <style>
 .flot-tooltip{display: none !important;}
   </style>
-
+<script>
+  var app = angular.module('myApp', []);
+  app.controller('validateCtrl',function  ($scope,$http) {
+     // $scope.user_name='adminster';
+     $scope.get_val = function  () {
+          $http({
+                  method  : 'POST',
+                  url     : '{:U("Login/ajax_login")}',
+                  data    : $.param($scope.data_user),  // pass in data as strings
+                  headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
+              })
+                  .success(function(data) {
+           
+                      if (data.stauts==1) {
+                          location.href='{:U("index/index")}';
+                      } else {
+                          console.log(data.message);
+                          // if successful, bind success message to message
+                          $scope.message = data.message;
+                      }
+                  });
+     }
+      
+  })
+ 
+</script>
   </body>
 </html>    
