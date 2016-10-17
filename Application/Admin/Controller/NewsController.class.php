@@ -1,9 +1,9 @@
 <?php
 namespace Admin\Controller;
-use Think\Controller;
+use Common\Controller\AuthController;
 
 
-class NewsController extends Controller {
+class NewsController extends AuthController {
     public function index(){
     	$this->display();
     }
