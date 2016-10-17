@@ -27,7 +27,7 @@
 			        <div class="message">
 			        	<div id="warn" class="alert alert-warning alert-dismissable" style="display: none;"> 
 			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>内容不能为空！
+			        		<strong>警告！&nbsp;&nbsp;</strong>用户名不能为空！
 			        	</div>
 			        </div>
 			        <div class="form-group">
@@ -37,6 +37,12 @@
 			          </div>
 			          <p style="margin-top: 10px;">输入用户名或邮箱</p>
 			          
+			        </div>
+			        <div class="message">
+			        	<div id="warn" class="warn_p alert alert-warning alert-dismissable" style="display: none;"> 
+			        		<button type="button" class="close close_p" data-dismiss="alert" aria-hidden="true">×</button>
+			        		<strong>警告！&nbsp;&nbsp;</strong>密码不能为空！
+			        	</div>
 			        </div>
 			        <div class="form-group" style="margin-top:0px;">
 						<p class="form-signin-heading" style="margin-top:0px;"><img src="__PUBLIC__/img/login/pwd.png"/>&nbsp;密码</p>
@@ -59,7 +65,9 @@
 			var $password = $("#password");
 			var $wran = $("#warn");
 			var $close = $(".close");
-			
+			var $warn_p = $(".warn_p");
+			var $close_p = $(".close_p");
+
 			$login.click(function(){
 				if ($username.val().length === 0) {
 					$wran.css("display","block");
@@ -67,7 +75,7 @@
 					$warn.css("display","none");
 				} else{
 					if ($password.val().length === 0) {
-						$wran.css("display","block");
+						$warn_p.css("display","block");
 						return false;
 					}
 				}
@@ -76,7 +84,11 @@
 			$close.click(function(){
 				$wran.css("display","none");
 				return false;
-			})
+			});
+			$close_p.click(function(){
+				$warn_p.css("display","none");
+				return false;
+			});
 		})
 	</script>
 <include file="public/footer" />
