@@ -13,5 +13,6 @@ return array(
 	'DB_PREFIX'=>'',// 数据库表前缀
 	'DB_CHARSET'=>'utf8',// 数据库字符集
 
+
      // 'URL_PATHINFO_DEPR'=>'-' //PATHINFO模式下面，URL参数分隔符是可定制
 );

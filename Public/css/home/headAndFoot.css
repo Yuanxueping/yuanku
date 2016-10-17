@@ -9,6 +9,10 @@
 }
  .navbar-default{
   border-color: transparent!important;
+
+ }
+ .gaise{
+  background-color:#272727!important;
  }
  .navbar{
   border-radius:0!important ;
@@ -21,12 +25,16 @@
 .logo:hover {
   height: 45px;
 }
-.top-nav{
-	background-color: #272727!important;
+.top-nav .navbar-default{
+	background-color:red!important;
 	color: white;
 	
 	
 }
+.xian{
+  border-bottom: 1px solid white!important;
+}
+
 
 .color>li>a{
 	color:white !important;
@@ -42,6 +50,11 @@
 #back{
   background-color:#272727;
   color:white;
+
+}
+#back img{
+  vertical-align: middle;
+  padding-right:10px; 
 }
 
 .foot-nav .container-fluid {
