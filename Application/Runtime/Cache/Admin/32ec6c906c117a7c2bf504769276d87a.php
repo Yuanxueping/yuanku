@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>{$title}  后台管理</title>
+	<title><?php echo ($title); ?>  后台管理</title>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,22 +18,22 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  
-  <link rel="stylesheet" href="__PUBLIC__/css/admin/bootstrap.css"> 
-  <link rel="stylesheet" href="__PUBLIC__/css/admin/animate.css">
-  <link rel="stylesheet" href="__PUBLIC__/css/admin/metisMenu.css">
-  <link rel="stylesheet" href="__PUBLIC__/css/admin/jquery_002.css">
-  <link rel="stylesheet" href="__PUBLIC__/css/admin/waves.css">
-  <link rel="stylesheet" href="__PUBLIC__/css/admin/toastr.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.css"> 
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/animate.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/metisMenu.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/jquery_002.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/waves.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/toastr.css">
 
 
 
-  <link rel="stylesheet" href="__PUBLIC__/css/admin/jquery.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/jquery.css">
 
-  <link rel="stylesheet" href="__PUBLIC__/css/admin/style.css">
-  <link rel="stylesheet" href="__PUBLIC__/css/admin/common.css">
-  <script src="__PUBLIC__/js/jquery.js"></script>
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/style.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/common.css">
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery.js"></script>
   <!-- 第一步引用 -->
-  <script src="__PUBLIC__/js/angular.min.js"></script>
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/angular.min.js"></script>
 
   
 
@@ -49,7 +49,7 @@
             <div class="login">
 
                   <h4 class="text-center">力动管理后台登录</h4>
-<!-- action="{:U('Login/index')}" -->
+<!-- action="<?php echo U('Login/index');?>" -->
                   <form ng-submit="get_val();" name="myForm" ng-app="myApp" ng-controller="validateCtrl" method="post"  novalidate>
                     <div class="form-group">
 {{ 1+1 }}
@@ -78,7 +78,7 @@
                         <span ng-show="myForm.verify.$error.required">验证码不能为空！</span>
                         </span>
                       
-                      <img src="{:U('Login/get_verify')}" alt="" onclick="$(this).attr('src','{:U('Login/get_verify')}?'+Math.random())">
+                      <img src="<?php echo U('Login/get_verify');?>" alt="" onclick="$(this).attr('src','<?php echo U('Login/get_verify');?>?'+Math.random())">
                     </div>
                   <!--   <div class="form-group text-left">
                       <div class="checkbox checkbox-primary">
@@ -110,14 +110,14 @@
      $scope.get_val = function  () {
           $http({
                   method  : 'POST',
-                  url     : '{:U("Login/ajax_login")}',
+                  url     : '<?php echo U("Login/ajax_login");?>',
                   data    : $.param($scope.data_user),  // pass in data as strings
                   headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
               })
                   .success(function(data) {
            
                       if (data.stauts==1) {
-                          location.href='{:U("index/index")}';
+                          location.href='<?php echo U("index/index");?>';
                       } else {
                           console.log(data.message);
                           // if successful, bind success message to message
@@ -130,4 +130,4 @@
  
 </script>
   </body>
-</html>    
+</html>
