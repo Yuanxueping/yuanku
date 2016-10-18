@@ -21,8 +21,8 @@
 			$username.focus();
 			return false;
 		}
-		if ($username.val().length < 4 || $username.val().length > 12 ) {
-			$div1.html("请输入4-16个字符");
+		if ($username.val().length < 2 || $username.val().length > 10 ) {
+			$div1.html("请输入2-10个字符");
 			$username.select();
 			return false;
 		}
@@ -52,54 +52,54 @@
 			return false;
 		}
 		if ($password.val() != $ensure_pwd.val()) {
-			$div3.html("输入密码和确认密码长度不一致!");
+			$div3.html("确认密码和输入密码长度不一致!");
 			$ensure_pwd.select();
 			return false;
 		}
 		return true;
 	}
 
-	 // function checkEmail(){
- //        $div4.html("");
- //        var sw = $email_address.indexOf("@", 0);
- //        var sw1 = $email_address.indexOf(".", 0);
- //        var tt = sw1 - sw;
- //        if ($email_address.length == 0) {
- //           $div4.html("电子邮件不能位空!");
- //            $email_address.focus();
- //            return false;
- //        }
- //        if ($email_address.indexOf("@", 0) == -1) {
- //        	$div4.html("电子邮件格式不正确，必须包含@符号！");
+	 function checkemail(){
+        $div4.html("");
+        var sw = $email_address.val().indexOf("@", 0);
+        var sw1 = $email_address.val().indexOf(".", 0);
+        var tt = sw1 - sw;
+        if ($email_address.val().length == 0) {
+           $div4.html("电子邮件不能位空!");
+            $email_address.focus();
+            return false;
+        }
+        if ($email_address.val().indexOf("@", 0) == -1) {
+        	$div4.html("电子邮件格式不正确，必须包含@符号！");
            
- //            $email_address.select();
- //            return false;
- //        }
- //        if ($email_address.indexOf(".", 0) == -1) {
- //            $div4.html("电子邮件格式不正确，必须包含.符号！");
- //            $email_address.select();
- //            return false;
- //        }
- //        if (tt == 1) {
- //            $div4.html("邮件格式不对。@和.不可以挨着！");
- //            $email_address.select();
- //            return false;
- //        }
- //        if (sw > sw1) {
- //            $div.html("电子邮件格式不正确，@符号必须在.之前");
- //            $email_address.select();
- //            return false;
- //        }
- //        else {
- //            return true;
- //        }
+            $email_address.select();
+            return false;
+        }
+        if ($email_address.val().indexOf(".", 0) == -1) {
+            $div4.html("电子邮件格式不正确，必须包含.符号！");
+            $email_address.select();
+            return false;
+        }
+        if (tt == 1) {
+            $div4.html("邮件格式不对。@和.不可以挨着！");
+            $email_address.select();
+            return false;
+        }
+        if (sw > sw1) {
+            $div.html("电子邮件格式不正确，@符号必须在.之前");
+            $email_address.select();
+            return false;
+        }
+        else {
+            return true;
+        }
         
- //        return true;
- //    }
+        return true;
+    }
 
 // });
  function check(){
- 	   	if (checkname() && checkpassword() && checkensure_pwd()) {
+ 	   	if (checkname() && checkpassword() && checkensure_pwd() && checkemail()) {
 	        return true;
         }
         else {

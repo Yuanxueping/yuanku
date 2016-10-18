@@ -64,6 +64,15 @@ class IndexController extends Controller {
        $this->display();
     	
     }
+    public function personal()
+    {
+       $cache_a= S('site_name');
+       $this->assign('title','个人中心 - '.$cache_a['site_name']);
+
+      // do it
+       $this->display();
+      
+    }
     
 	public function news_detail()
     {
