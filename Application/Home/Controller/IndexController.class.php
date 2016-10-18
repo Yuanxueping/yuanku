@@ -74,4 +74,14 @@ class IndexController extends Controller {
       
     }
     
+	public function news_detail()
+    {
+
+       $cache_a= S('site_name');
+       $this->assign('title','新闻详情 - '.$cache_a['site_name']);
+
+    	// do it
+       $this->display();
+    	
+    }
 }

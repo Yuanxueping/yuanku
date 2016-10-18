@@ -1,9 +1,13 @@
+<!-- /*
+	*yxp
+	*修改用户信息页面
+ */ -->
 <include file="public/header" />
 <include file="public/headerstwo"/>
 		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/personal.css"/>
 		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/site.min.css">
 		<script src="__PUBLIC__/js/site.min.js" type="text/javascript" charset="utf-8"></script>
-		
+	
 
 		<div class="container-fluid" style="margin-top:55px;">
     	<!--documents-->
@@ -25,28 +29,30 @@
 	            <div class="panel panel-default">
 	              <div class="panel-heading">
 	                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a>
-	                <a href="personal.html"> 个人中心</a></h3>
+	                <a href="personal.html" style=""> 个人中心</a></h3>
 	              </div>
 	              <div class="panel-body" style="margin-bottom:10%;">
-		            	<div class="content" style="margin-bottom:15%;"> 
+		            	<div class="content"> 
 
-							 <form action="/yuanku/index.php/Admin/System/user_add.html" method="post" class="form_wd_23" enctype="multipart/form-data">
+							 <form action="/yuanku/index.php/Admin/System/user_add.html" method="post" class="form_wd_23" enctype="multipart/form-data" class="form_wd_23">
 							 	<div class="form-group">
 							 		<label class="control-label">用户名</label>
-							 		<input class="form-control" name="user_name" style="width:40%"></div>
+							 		<input class="form-control" name="user_name">
+							 	</div>
 							 	<div class="form-group">
 							 		<label class="control-label">密码</label>
-							 		<input class="form-control" name="user_pwd" style="width:40%"></div>
+							 		<input class="form-control" name="user_pwd">
+							 	</div>
 							 	<div class="form-group">
 							 		<label class="control-label">头像</label>
-
-							 		<input class="dropify" name="head_photo" type="file"></div>
+							 		<input class="dropify"  name="head_photo" type="file">
+							 	</div>
 							 	<button class="btn btn-success waves-effect">提交</button>
 
-							 	</form>
-						 <link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css"> 
+								</form>
+							 <link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css"> 
 						 
-						 </div>   
+						</div>  
 				  </div>
 
 	              </div><!-- panel body -->
@@ -56,6 +62,8 @@
 	    </div>
 
 
+<script src="__PUBLIC__/js/dropify.min.js"></script>
 
+ <script>$('.dropify').dropify();</script>
 
 <include file="public/footer" />

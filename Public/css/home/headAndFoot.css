@@ -1,7 +1,7 @@
 @charset 'utf-8';
  body{
  	font-family: "微软雅黑"!important;
- 	font-weight: 600!important;
+ 	
  }
   .modal-open {
   overflow:  inherit !important;
@@ -9,6 +9,7 @@
 }
  .navbar-default{
   border-color: transparent!important;
+  font-weight: 600!important;
 
  }
  .gaise{
