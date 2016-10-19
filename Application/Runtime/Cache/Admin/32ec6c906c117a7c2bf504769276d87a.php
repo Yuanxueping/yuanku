@@ -52,7 +52,6 @@
 <!-- action="<?php echo U('Login/index');?>" -->
                   <form ng-submit="get_val();" name="myForm" ng-app="myApp" ng-controller="validateCtrl" method="post"  novalidate>
                     <div class="form-group">
-{{ 1+1 }}
                       <input type="text" class="form-control" id="login" name="user_name" required ng-model='data_user.user_name'>
                       <span>
                         {{user_name}}
@@ -90,7 +89,7 @@
                     
                     <button type="submit" ng-disabled=" myForm.user_name.$invalid || myForm.verify.$invalid || myForm.user_pwd.$invalid" class="btn btn-block btn-lg btn-primary">登录</button>
                     <div> {{ message }}</div>
-
+<!-- <span ng-bind="hl_bd()"></span> -->
                   </form>
 
             </div>
@@ -107,6 +106,9 @@
   var app = angular.module('myApp', []);
   app.controller('validateCtrl',function  ($scope,$http) {
      // $scope.user_name='adminster';
+     // $scope.hl_bd=function  () {
+     //   return $scope.data_user.user_name;
+     // }
      $scope.get_val = function  () {
           $http({
                   method  : 'POST',
