@@ -282,4 +282,8 @@ body {
   width: 70px;
   height: 60px;
 }
+.container{
+  width: 100%!important;
+
+}
 /*# sourceMappingURL=about.css.map */
