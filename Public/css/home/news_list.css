@@ -15,22 +15,17 @@ a {
 .container-fluid.toubei{
 	margin-top: 28px;
 	background-color: #272727;
-	/*background-color: ;*/
-  /*color: white !important;*/
-  height: 125px;
+  height: 128px;
 }
 .container-fluid.toubei .container {
-  /*border: 1px solid red;*/
   height: 125px;
   line-height: 125px;
-  /*vertical-align: middle !important;*/
 }
 .container-fluid.toubei .container h1 {
   height: 125px;
   line-height: 125px;
   float: left;
   font-size: 36px;
-  /*border: 1px solid red;*/
   margin: auto;
   font-family: "微软雅黑";
   font-weight: 400;
@@ -42,7 +37,6 @@ a {
   line-height: 125px;
   float: right;
   margin: auto;
-  /*border: 1px solid red;*/
 }
 .container-fluid.toubei .container div a {
   color: #999;
@@ -57,8 +51,6 @@ a {
 .container-fluid.toubei .container div a:hover i{
   color: #999;
 }
-
-
 /*新增加结束*/
 .products .container {
   border-bottom: 1px solid #eee;
@@ -122,25 +114,25 @@ a {
   position: relative;
   /*top: 100px;*/
 }
-.products .main {
+/*.products .main {
   display: none;
 }
 .products .main.selected {
   display: block;
-}
-.tab button {
+}*/
+.tab a {
   color: #2ecc71;
   background-color: #eee;
   outline: none !important;
 }
-.tab button:hover {
+.tab a:hover {
   background-color: #000000;
   color: #FFFFFF;
 }
-.tab button:active {
+.tab a:active {
   outline: none !important;
 }
-.tab button.active {
+.tab a.active {
   background-color: #000000;
   color: #FFFFFF;
 }
