@@ -12,4 +12,5 @@ class NewsController extends AuthController {
     {
     	$this->display();
     }
+   
 }
