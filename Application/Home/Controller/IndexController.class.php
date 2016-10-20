@@ -65,4 +65,21 @@ class IndexController extends Controller {
     	
     }
     
+	public function news_detail()
+    {
+    	$id = I('id');
+		
+    	$news = M('News');
+		
+		$news_detail = $news -> join('author') -> where('news.id='.$id.' AND author.id=author_id') -> select();
+		
+		$this -> assign('news_detail',$news_detail);
+    	
+       $cache_a= S('site_name');
+       $this->assign('title','新闻详情 - '.$cache_a['site_name']);
+
+    	// do it
+       $this->display();
+    	
+    }
 }

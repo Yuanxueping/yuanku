@@ -1,15 +1,22 @@
+<!-- /*
+	*yxp
+	*注册页面
+ */ -->
 <include file="public/header" />
 
 		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/register.css"/>
-
-		
+ 
 <include file="public/headerstwo"/>
 
 		<div class="container">
 			<div class="row login_header clearcss">
 				
 					<div class="col-lg-6 col-md-12">
+<<<<<<< HEAD
 						<h1>注册用户</h1>
+=======
+						<h1>注册</h1>
+>>>>>>> d13129141e9ffe7459001f1c4c03693bbd26ff85
 					</div>
 					<div class="col-lg-offset-4 col-lg-2 col-md-12">
 		              	<a href="index.html" style="opacity:0.6;font-weight:normal;">首页 <i>/</i> </a> 
@@ -19,12 +26,20 @@
 		</div>
 		<div class="container  box">
 			<div class="col-lg-offset-3 col-lg-6 col-md-12">
+<<<<<<< HEAD
 				<form class="form-signin" role="form" action="__MODULE__/Register/regNewMember" method="POST" enctype="application/x-www-form-urlencoded">
 			        <div class="form-header">
 			        	<h4>注用户册</h4>
+=======
+ 
+				<form class="form-signin" role="form" action="/login" onsubmit="return check()" method="POST" enctype="application/x-www-form-urlencoded">
+			        <div class="form-header">
+			        	<h4>注册</h4>
+			        	<p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">注册</a></p>
+>>>>>>> d13129141e9ffe7459001f1c4c03693bbd26ff85
 			        	<p style="margin-top:5px;">已经注册?&nbsp;<a href="login.html">登录</a></p>
 			        </div>
-			        <div class="message">
+			        <!-- <div class="message">
 			        	<div id="warn" class="alert alert-warning alert-dismissable" style="display: none;"> 
 			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
 			        		<strong>警告！&nbsp;&nbsp;</strong>用户名和密码内容不能低于6位！
@@ -37,13 +52,28 @@
 			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
 			        		<strong>警告！&nbsp;&nbsp;</strong>用户已存在，请使用新的用户名进行注册！或者<a href="./login">直接登陆</a>
 			        	</div>
-			        </div>
+			        </div> -->
+			        <!-- 用户名 -->
 			        <div class="form-group">
-			        	<p class="form-signin-heading">注册用户名或邮箱地址</p>
+			        	<p class="form-signin-heading">用户名</p>
 			          <div class="input-group">
-			            <input type="text" class="form-control" name="username" id="username" autocomplete="off">
+			            <input type="text" class="form-control" name="username" id="username" autocomplete="off" >
+			            <div id="div1" style="display:inline;color:red;"></div>
 			          </div>
 			        </div>
+			        <!-- 密码 -->
+			        <div class="form-group">
+<<<<<<< HEAD
+			        	<p class="form-signin-heading">注册用户名或邮箱地址</p>
+=======
+			        	<p class="form-signin-heading">输入密码</p>
+>>>>>>> d13129141e9ffe7459001f1c4c03693bbd26ff85
+			          <div class="input-group">
+			            <input type="password" class="form-control" name="password" id="password" autocomplete="off" >
+			            <div id="div2" style="display:inline;color:red;"></div>
+			          </div>
+			        </div>
+<<<<<<< HEAD
 			
 			        <div class="form-group">
 			        	<p class="form-signin-heading">密码</p>
@@ -147,4 +177,31 @@
 
 		})
 	</script>
+=======
+			        <!-- 确认密码 -->
+			        <div class="form-group">
+			        	<p class="form-signin-heading">请再次输入密码</p>
+			          <div class="input-group">
+			            <input type="password" class="form-control" name="ensure_pwd" id="ensure_pwd" autocomplete="off" >
+			            <div id="div3" style="display:inline;color:red;"></div>
+			           </div>
+			        </div>
+			         <!-- 邮箱地址 -->
+			        <div class="form-group">
+			        	<p class="form-signin-heading">请输入您的邮箱地址</p>
+			          <div class="input-group">
+			            <input type="text" class="form-control" name="email_address" id="email_address" autocomplete="off" >
+			            <div id="div4" style="display:inline;color:red;"></div>
+			           </div>
+			        </div>
+			       	<div class="Btn">
+						<p>密码重置说明将会发送到你被注册的邮箱地址</p>
+			        <button class="btn btn-lg btn-primary btn-block" id="register" type="submit">提交</button>
+			       	</div>
+			     </form>
+			</div>
+    </div>
+	
+		<script src="__PUBLIC__/js/register.js" type="text/javascript" charset="utf-8"></script>
+>>>>>>> d13129141e9ffe7459001f1c4c03693bbd26ff85
 <include file="public/footer" />

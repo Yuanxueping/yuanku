@@ -1,7 +1,17 @@
 <include file="public/header" />
 
+
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/news_list.css"/>
 <include file="public/headerstwo"/>
+<div class="container-fluid clearfix toubei">
+	<div class="container clearfix">
+		<h1 class="clearfix" style="color: white;">博客帖子</h1>
+		<div class="clearfix">
+			<a href="index.html" class="clearfix">主页&nbsp;<i>&#47;</i></a>
+		</div>
+	</div>
+</div>
+
 <div class="products">
 			
 			<div class="main selected">
@@ -9,7 +19,7 @@
 					<img src="__PUBLIC__/img/news_img/site-img225 (1).jpg" class="news_img"/>
 					<div class="wenzhang">
 						<p>
-							<a href="" class="biaoti">许多桌面包</a>
+							<a href="{:U('Index/news_detail')}" class="biaoti">许多桌面包</a>
 						</p>
 						<p>
 							<a href="" class="time">5 JULY 2016</a>
@@ -26,7 +36,7 @@
 							and a search for 'lorem ipsum' will uncover many web sites still in their infancy over the years
 							<a href="" class="more"> read more...</a>
 						</p>
-					</div>			
+					</div>
 				</div>
 				
 				<div class="container">
@@ -57,7 +67,7 @@
 					<img src="__PUBLIC__/img/news_img/blog-img-05.jpg" class="news_img"/>
 					<div class="wenzhang">
 						<p>
-							<a href="" class="biaoti">许多桌面包</a>
+							<a href="{:U('Index/news_detail','id=3')}" class="biaoti">许多桌面包</a>
 						</p>
 						<p>
 							<a href="" class="time">5 JULY 2016</a>

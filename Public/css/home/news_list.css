@@ -11,57 +11,106 @@ a {
   visibility: hidden;
   clear: both;
 }
-.container {
+/*新增加*/
+.container-fluid.toubei{
+	margin-top: 28px;
+	background-color: #272727;
+	/*background-color: ;*/
+  /*color: white !important;*/
+  height: 125px;
+}
+.container-fluid.toubei .container {
+  /*border: 1px solid red;*/
+  height: 125px;
+  line-height: 125px;
+  /*vertical-align: middle !important;*/
+}
+.container-fluid.toubei .container h1 {
+  height: 125px;
+  line-height: 125px;
+  float: left;
+  font-size: 36px;
+  /*border: 1px solid red;*/
+  margin: auto;
+  font-family: "微软雅黑";
+  font-weight: 400;
+}
+.container-fluid.toubei .container div {
+  display: block;
+  height: 125px;
+  color: white;
+  line-height: 125px;
+  float: right;
+  margin: auto;
+  /*border: 1px solid red;*/
+}
+.container-fluid.toubei .container div a {
+  color: #999;
+  display: inline-block;
+}
+.container-fluid.toubei .container div a:hover {
+  color: white;
+}
+.container-fluid.toubei .container div a i{
+  color: #999;
+}
+.container-fluid.toubei .container div a:hover i{
+  color: #999;
+}
+
+
+/*新增加结束*/
+.products .container {
   border-bottom: 1px solid #eee;
   margin-top: 60px;
   padding-bottom: 60px;
 }
-.container .wenzhang {
+.products .container .wenzhang {
   padding-top: 30px;
   font-size: 14px;
 }
-.container .wenzhang p a.biaoti {
+.products .container .wenzhang p a.biaoti {
   color: #2ecc71;
   font-weight: 400;
   font-size: 30px;
 }
-.container .wenzhang p a.biaoti:hover {
+.products .container .wenzhang p a.biaoti:hover {
   color: #383634;
 }
-.container .wenzhang p a.time {
+.products .container .wenzhang p a.time {
   color: #383634;
   font-size: 16px;
   padding-right: 18px;
 }
-.container .wenzhang p a.time:hover {
+.products .container .wenzhang p a.time:hover {
   color: #2ecc71;
 }
-.container .wenzhang p a.more {
+.products .container .wenzhang p a.more {
   color: #2ecc71;
 }
-.container .wenzhang p a.more:hover {
+.products .container .wenzhang p a.more:hover {
   color: #383634;
 }
-.container .wenzhang p a.name {
+.products .container .wenzhang p a.name {
   font-size: 11px;
   color: #999;
 }
-.container .wenzhang p a.name:hover {
+.products .container .wenzhang p a.name:hover {
   color: #383634;
 }
-.container .wenzhang p a.comments {
+.products .container .wenzhang p a.comments {
   font-size: 11px;
   color: #999;
 }
-.container .wenzhang p a.comments:hover {
+.products .container .wenzhang p a.comments:hover {
   color: #383634;
 }
-.container .wenzhang p i {
+.products .container .wenzhang p i {
   color: #bbb;
   font-style: normal;
   font-size: 12px;
 }
-.container .wenzhang p span {
+.products .container .wenzhang p span {
   color: #999;
 }
 .news_img {
