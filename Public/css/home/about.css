@@ -1,11 +1,5 @@
 body {
   font-family: 'Raleway', sans-serif;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-.container-fluid{
-/*  padding: 0px;*/
 }
 .height_90 {
   height: 90px;
@@ -45,7 +39,7 @@ body {
   padding: 220px 0px 120px 0px;
   width: 100%;
   text-align: center;
-  
+  background-image: url(../img/01.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -55,7 +49,7 @@ body {
   padding-bottom: 27px;
   font-size: 58px;
   text-transform: none;
-  /*background: url(../images/white-line.png) no-repeat center bottom;*/
+  background: url(../images/white-line.png) no-repeat center bottom;
 }
 .banner .container h3 {
   margin: 0px 0px 8px 0px;
@@ -87,16 +81,15 @@ body {
   font-weight: 400;
 }
 .theme {
-  /*width: 23%;*/
-  padding-right: 5%;
+  width: 23%;
+  margin-right: 2%;
   padding: 0px;
 }
 .theme > img {
-  width: 95%;
+  width: 100%;
 }
 .theme .theme_title {
-  width: 95%;
-  
+  width: 100%;
   background: #272727;
   text-align: center;
   margin-top: -32px;
@@ -141,15 +134,7 @@ body {
   font-style: normal;
   font-weight: normal;
 }
-.green_center > ul{
-  float: none;
-  list-style-type: disc;
-  padding-left: 0px;
-}
 .green_center > ul > li {
-  list-style-type: disc;
-  float: none;
-  display: block;
   font-size: 14px;
   font-weight: 600;
   line-height: 35px;
@@ -184,6 +169,25 @@ body {
   letter-spacing: 0.5px;
   color: #272727;
 }
+.lunbo{
+  position: relative;
+  height: 140px;
+  margin-top: 10px;
+  width: 100%;
+}
+.lunbo:before .lunbo:after{
+  content: " ";
+  display: block;
+  clear: both;
+}
+.our_people{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+
+}
+
 .people_detail .left {
   padding-left: 50px;
 }
@@ -227,6 +231,7 @@ body {
 .dian_all {
   text-align: center;
   padding-top: 20px;
+  
 }
 .dian_all .dian {
   display: inline-block;
@@ -236,12 +241,16 @@ body {
   border-radius: 50%;
   background-color: #999999;
 }
+.dian_click{
+   background-color:#2ecc71;
+}
 .container {
   margin: 0 auto;
 }
 .say_title2 {
   text-align: center;
   padding-top: 30px;
+  padding-bottom: 20px;
 }
 .say_title2 > h3 {
   font-size: 16px;
