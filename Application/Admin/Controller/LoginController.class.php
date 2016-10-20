@@ -9,13 +9,14 @@ class LoginController extends Controller {
 
 			$user_m=D('AdminUser');
 			$user_info=$user_m->where('user_name="'.I('user_name').'" and user_pwd="'.I('user_pwd').'"')->find();
-
+   
 			$verfiy = new Verify();
 			if (!$verfiy->check(I('verify'))) {
 				$this->error('验证码错误！');
 			}
 			if ($user_info['id']<=0) {
 					$this->error('用户名或密码错误！');
+				dump($user_info['id']);
 			}else{
 				$login = array();
 				$gourp_a=M('ThinkAuthGroupAccess')->where('uid='.$user_info['id'])->find();
