@@ -1,7 +1,8 @@
+<<<<<<< HEAD
 <?php if (!defined('THINK_PATH')) exit();?><!-- /*
-	*yxp
-	*个人中心页面
- */ -->
+=======
+<?php if (!defined('THINK_PATH')) exit();?>
+
 <!DOCTYPE html>
 <html>
 <head lang="zh">
@@ -10,10 +11,10 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="/lidong/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/lidong/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/lidong/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
 	 
 
 	<!--  <link rel="stylesheet" href="css/headAndFoot.css" />
@@ -29,14 +30,9 @@
 		
 
 
-
-		<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/personal.css"/>
-		<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/site.min.css">
-		
-	    <script src="/lidong/yuanku/Public/js/site.min.js" type="text/javascript" charset="utf-8"></script>                                  
+<!-- 个人中心页面 -->
   </head>
 <body>
-<!-- <div class="container-fluid"> -->
 	<nav class="navbar navbar-default top-nav navbar-fixed-top gaise">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -48,12 +44,115 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#">
-		      	<img class="logo" src="/lidong/yuanku/Public/img/logoko2.png" />
+		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
 		      </a>
 		    </div>		
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
+				        <li><a href="/yuanku/index.php/Home/Index/index">首页</a></li>
+				        <li>
+				        <a href="
+				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
+				        ">
+				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
+				        </a>
+				        </li>
+				        <li>
+				        	<a href="
+				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
+				        	">
+				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
+				        	</a>
+				        </li>
+				        <li><a href="/yuanku/index.php/Home/Personal/news">新闻</a></li>
+				        <li><a href="/yuanku/index.php/Home/Personal/contact_us">联系我们</a></li>
+				        <li><a href="/yuanku/index.php/Home/Personal/about_us">关于我们</a></li>
+				        
+				        <li>
+				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
+				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
+				        	</a>
+				        </li>
+				      </ul>		          			        				        	
+	        </div>
+		  </div>
+		</nav>
+=======
+<!-- /*
+>>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
+	*yxp
+	*个人中心页面
+ */ -->
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+	<title><?php echo ($title); ?></title>
+
+	<meta charset="UTF-8">
+
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
+	 <link rel="stylesheet" href="/lidong/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/lidong/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/lidong/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+=======
+	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+>>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
+	 
+
+	<!--  <link rel="stylesheet" href="css/headAndFoot.css" />
+	 <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+		
+	<!--  <script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script> 
+	 <script type="text/javascript" src="js/bootstrap.min.js" ></script>-->
+
+
+
+		
+
+		
+
+
+<<<<<<< HEAD
+
+		<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/personal.css"/>
+		<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/site.min.css">
+		
+	    <script src="/lidong/yuanku/Public/js/site.min.js" type="text/javascript" charset="utf-8"></script>                                  
+  </head>
+<body>
+<!-- <div class="container-fluid"> -->
+=======
+  </head>
+<body>
+>>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
+	<nav class="navbar navbar-default top-nav navbar-fixed-top gaise">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header"> 
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">
+<<<<<<< HEAD
+		      	<img class="logo" src="/lidong/yuanku/Public/img/logoko2.png" />
+=======
+		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
+>>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
+		      </a>
+		    </div>		
+		    
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav navbar-right color">
+<<<<<<< HEAD
 				        <li><a href="/lidong/yuanku/index.php/Home/Index">首页</a></li>
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/login">登录</a></li>
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/register">注册</a></li>
@@ -61,15 +160,46 @@
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/personal">个人中心</a></li>
+=======
+				        <li><a href="/yuanku/index.php/Home/Index/index">首页</a></li>
+				        <li>
+				        <a href="
+				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
+				        ">
+				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
+				        </a>
+				        </li>
+				        <li>
+				        	<a href="
+				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
+				        	">
+				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
+				        	</a>
+				        </li>
+				        <li><a href="/yuanku/index.php/Home/Personal/news">新闻</a></li>
+				        <li><a href="/yuanku/index.php/Home/Personal/contact_us">联系我们</a></li>
+				        <li><a href="/yuanku/index.php/Home/Personal/about_us">关于我们</a></li>
+				        
+>>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
 				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
 				        	</a>
 				        </li>
 				      </ul>		          			        				        	
+<<<<<<< HEAD
 	            </div>
 		  </div>
 	</nav>		
+=======
+	        </div>
+		  </div>
+		</nav>
+		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/personal.css"/>
+		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/site.min.css">
+		<script src="/yuanku/Public/js/site.min.js" type="text/javascript" charset="utf-8"></script>
+		
+>>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 
 		<div class="container-fluid" style="margin-top:55px;">
     	<!--documents-->
@@ -78,7 +208,15 @@
 	            <ul class="list-group panel">
 	                <li class="list-group-item"><i class="glyphicon glyphicon-align-justify"></i> <b>侧边栏</b></li>
 	                <li class="list-group-item"><a href="index.html"><i class="glyphicon glyphicon-home"></i>主页 </a></li>
+<<<<<<< HEAD
 	                <li class="list-group-item"><a href="login.html"><i class="glyphicon glyphicon-certificate"></i>登录 </a></li>
+=======
+
+	                <li class="list-group-item"><a href="login.html"><i class="glyphicon glyphicon-certificate"></i><?php echo (session('username')); ?> </a></li>
+
+	                <li class="list-group-item"><a href="login.html"><i class="glyphicon glyphicon-certificate"></i>登录 </a></li>
+
+>>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 	                <li class="list-group-item"><a href="register.html"><i class="glyphicon glyphicon-th-list"></i>注册 </a></li>
 	                <li class="list-group-item"><a href="news.html"><i class="glyphicon glyphicon-list-alt"></i>新闻</a></li>
 	                <li class="list-group-item"><a href="contact_us.html"><i class="glyphicon glyphicon-envelope"></i>联系我们</a></li>
@@ -97,15 +235,25 @@
 							<div class="row">
 								<div class="col-md-6 col-sm-12 col-xs-12">
 									<div class="kitty">
+<<<<<<< HEAD
 										<img src="/lidong/yuanku/Public/img/personal/图层-5.png"/>
 										<ul class="clearfix">
 											<li><b><a href="">Kitty</a></b></li>
 											<li>早上好~</a></li>
 											<li><a href="edit_user_info.html">修改个人信息</a>&nbsp;<img src="/lidong/yuanku/Public/img/personal/矩形-18-拷贝.png"/></li>
+=======
+
+										<img width="140px" height="140px" src="/yuanku/<?php echo ($head_photo); ?>"/>
+										<ul class="clearfix">
+											<li><b><a href=""><?php echo (session('username')); ?></a></b></li>
+											<li id="sayhello">1</li>
+											<li><a href="/yuanku/index.php/Home/Personal/edit_message">修改个人信息</a>&nbsp;<img src="/yuanku/Public/img/personal/矩形-18-拷贝.png"/></li>
+>>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 										</ul>
 									</div>
 								</div>
 								<div class="col-md-6 col-sm-12 col-xs-12">
+<<<<<<< HEAD
 									<div class="message">
 										<ul>
 											<!-- <li>账户安全较高：较高</li> -->
@@ -116,17 +264,37 @@
 								</div>
 							</div>
 					   </div>
+=======
+										<div class="message">
+											<ul>
+												<!-- <li>账户安全较高：较高</li> -->
+												<li>绑定手机：</li>
+												<li>绑定邮箱<?php echo ($email_address); ?></li>
+											</ul>
+										</div>
+								</div>
+							</div>	
+					  </div>
+>>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 					   <div class="personal-bottom" style="margin-top:5px">
 									<div class="row">
 										<div class="col-md-6 col-sm-12 col-xs-12">
 											<div class="product">
 												<table border="0px" cellspacing="0px" cellpadding="0px">
 													<tr>
+<<<<<<< HEAD
 														<td rowspan="2"><img src="/lidong/yuanku/Public/img/personal/椭圆-3.png"/></td>
 														<td>&nbsp;订阅的文章：&nbsp;<span>0</span></td>
 													</tr>
 													<tr>
 														<td>&nbsp;<a href="">查看已订阅的文章</a>&nbsp;<img src="/lidong/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
+=======
+														<td rowspan="2"><img src="/yuanku/Public/img/personal/椭圆-3.png"/></td>
+														<td>&nbsp;订阅的文章：&nbsp;<span>0</span></td>
+													</tr>
+													<tr>
+														<td>&nbsp;<a href="">查看已订阅的文章</a>&nbsp;<img src="/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
+>>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 													</tr>
 												</table>
 											</div>
@@ -135,11 +303,19 @@
 											<div class="product">
 												<table border="0px" cellspacing="0px" cellpadding="0px">
 													<tr>
+<<<<<<< HEAD
 														<td rowspan="2"><img src="/lidong/yuanku/Public/img/personal/椭圆-4-拷贝.png"/></td>
 														<td>&nbsp;我的浏览足迹：&nbsp;<span>0</span></td>
 													</tr>
 													<tr>
 														<td>&nbsp;<a href="">查看浏览足迹</a>&nbsp;<img src="/lidong/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
+=======
+														<td rowspan="2"><img src="/yuanku/Public/img/personal/椭圆-4-拷贝.png"/></td>
+														<td>&nbsp;我的浏览足迹：&nbsp;<span>0</span></td>
+													</tr>
+													<tr>
+														<td>&nbsp;<a href="">查看浏览足迹</a>&nbsp;<img src="/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
+>>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 													</tr>
 												</table>
 											</div>
@@ -150,11 +326,19 @@
 											<div class="product">
 												<table border="0px" cellspacing="0px" cellpadding="0px">
 													<tr>
+<<<<<<< HEAD
 														<td rowspan="2"><img src="/lidong/yuanku/Public/img/personal/矩形-20-拷贝-3.png"/></td>
 														<td>&nbsp;我发布的文章&nbsp;<span>0</span></td>
 													</tr>
 													<tr>
 														<td>&nbsp;<a href="">查看我发布的文章</a>&nbsp;<img src="/lidong/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
+=======
+														<td rowspan="2"><img src="/yuanku/Public/img/personal/矩形-20-拷贝-3.png"/></td>
+														<td>&nbsp;我发布的文章&nbsp;<span>0</span></td>
+													</tr>
+													<tr>
+														<td>&nbsp;<a href="">查看我发布的文章</a>&nbsp;<img src="/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
+>>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 													</tr>
 												</table>
 											</div>
@@ -163,11 +347,19 @@
 											<div class="product">
 												<table border="0px" cellspacing="0px" cellpadding="0px">
 													<tr>
+<<<<<<< HEAD
 														<td rowspan="2"><img src="/lidong/yuanku/Public/img/personal/矩形-20-拷贝.png"/></td>
 														<td>&nbsp;喜欢的文章：&nbsp;<span>0</span></td>
 													</tr>
 													<tr>
 														<td>&nbsp;<a href="">查看喜欢的文章</a>&nbsp;<img src="/lidong/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
+=======
+														<td rowspan="2"><img src="/yuanku/Public/img/personal/矩形-20-拷贝.png"/></td>
+														<td>&nbsp;喜欢的文章：&nbsp;<span>0</span></td>
+													</tr>
+													<tr>
+														<td>&nbsp;<a href="">查看喜欢的文章</a>&nbsp;<img src="/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
+>>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 													</tr>
 												</table>
 											</div>
@@ -189,6 +381,7 @@
 <div class="clearfix"></div>
 <nav class="foot-nav" id="back">
 			<div class="container-fluid" >
+<<<<<<< HEAD
 				<div class="row" >
 					<div class="col-lg-3 col-md-6 col-lg-12">
 						<ul class="clearfix">
@@ -227,6 +420,48 @@
 					    </ul>
 					</div>				
 				</div>	
+=======
+				<div class="container">
+					<div class="row" >
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul class="clearfix">
+								<li><h4>友情连接</h4></li><br/>
+								<li><a href="#">1</a></li><br/>
+								<li><a href="#">2</a></li><br/>
+								<li><a href="#">3</a></li><br/>
+								<li><a href="#">4</a></li>							
+							</ul>						
+						</div>					
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul >
+								<li><h4>最新动态</h4></li><br/>
+								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
+								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
+								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
+													
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul >
+								<li><h4>关于我们</h4></li><br/>
+								<li><a href="#">1</a></li><br/>
+								<li><a href="#">2</a></li><br/>
+								<li><a href="#">3</a></li><br/>
+								<li><a href="#">4</a></li>
+						   </ul>
+						</div>
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul >
+								<li><h4>邮箱地址</h4></li></br>
+								<li><a href="#">1</a></li><br/>
+								<li><a href="#">2</a></li><br/>
+								<li><a href="#">3</a></li><br/>
+								<li><a href="#">4</a></li>							
+						    </ul>
+						</div>				
+					</div>	
+				</div>
+>>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 			</div>
 			<div class="foot-text">
 				<p class="text-center">Copyright? 2003-2016 </p>
@@ -259,6 +494,30 @@
 		    </div>
 		  </div>
 </div>
+<<<<<<< HEAD
 <!-- </div> -->
 	</body>
 </html>
+=======
+	</body>
+</html>
+<script type="text/javascript">
+    function sayhello(){
+    	var content=$('#sayhello');
+    	var time=new Date();
+    	var clock=time.getHours();
+    	if(clock>6&&clock<=12){
+    		content.html('上午好');
+    	}else if(clock>12&&clock<=18){
+    		content.html('下午好');
+    	}else if(clock>18&&clock<=24){
+    		content.html('晚上好');
+    	}else{
+    		console.log(clock);
+    		content.html('凌晨好');
+    	}
+      }
+
+      sayhello();
+</script>
+>>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
