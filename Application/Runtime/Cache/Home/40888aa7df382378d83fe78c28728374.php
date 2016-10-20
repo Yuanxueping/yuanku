@@ -66,6 +66,7 @@
 				        <li><a href="/yuanku/index.php/Home/Index/news">新闻</a></li>
 				        <li><a href="/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
 				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
+				        
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
 				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
@@ -317,44 +318,46 @@
 <div class="clearfix"></div>
 <nav class="foot-nav" id="back">
 			<div class="container-fluid" >
-				<div class="row" >
-					<div class="col-lg-3 col-md-6 col-lg-12">
-						<ul class="clearfix">
-							<li><h4>友情连接</h4></li><br/>
-							<li><a href="#">1</a></li><br/>
-							<li><a href="#">2</a></li><br/>
-							<li><a href="#">3</a></li><br/>
-							<li><a href="#">4</a></li>							
-						</ul>						
-					</div>					
-					<div class="col-lg-3 col-md-6 col-lg-12">
-						<ul >
-							<li><h4>最新动态</h4></li><br/>
-							<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
-							<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
-							<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
-												
-						</ul>
-					</div>
-					<div class="col-lg-3 col-md-6 col-lg-12">
-						<ul >
-							<li><h4>关于我们</h4></li><br/>
-							<li><a href="#">1</a></li><br/>
-							<li><a href="#">2</a></li><br/>
-							<li><a href="#">3</a></li><br/>
-							<li><a href="#">4</a></li>
-					   </ul>
-					</div>
-					<div class="col-lg-3 col-md-6 col-lg-12">
-						<ul >
-							<li><h4>邮箱地址</h4></li></br>
-							<li><a href="#">1</a></li><br/>
-							<li><a href="#">2</a></li><br/>
-							<li><a href="#">3</a></li><br/>
-							<li><a href="#">4</a></li>							
-					    </ul>
-					</div>				
-				</div>	
+				<div class="container">
+					<div class="row" >
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul class="clearfix">
+								<li><h4>友情连接</h4></li><br/>
+								<li><a href="#">1</a></li><br/>
+								<li><a href="#">2</a></li><br/>
+								<li><a href="#">3</a></li><br/>
+								<li><a href="#">4</a></li>							
+							</ul>						
+						</div>					
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul >
+								<li><h4>最新动态</h4></li><br/>
+								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
+								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
+								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
+													
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul >
+								<li><h4>关于我们</h4></li><br/>
+								<li><a href="#">1</a></li><br/>
+								<li><a href="#">2</a></li><br/>
+								<li><a href="#">3</a></li><br/>
+								<li><a href="#">4</a></li>
+						   </ul>
+						</div>
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul >
+								<li><h4>邮箱地址</h4></li></br>
+								<li><a href="#">1</a></li><br/>
+								<li><a href="#">2</a></li><br/>
+								<li><a href="#">3</a></li><br/>
+								<li><a href="#">4</a></li>							
+						    </ul>
+						</div>				
+					</div>	
+				</div>
 			</div>
 			<div class="foot-text">
 				<p class="text-center">Copyright? 2003-2016 </p>
