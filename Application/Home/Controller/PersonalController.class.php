@@ -6,12 +6,20 @@ use Think\Upload;
 class PersonalController extends Controller {
 	public function index(){
 		$this->showLogo();
+		$this->showt_email();
 		if(isset($_SESSION['username'])){
 			$this->display('Index/personal');	
 		}else{
 			$this->error('用户未登陆，请重新登陆',U('Index/login'),3);
 		}
 				
+	}
+	public function showt_email(){
+		$Model = new \Think\Model() ;
+		$result=$Model->query("SELECT email_address FROM client_user WHERE user_name ='".$_SESSION['username']."'");
+		$email_address=$result[0]['email_address'];
+		$this->assign('email_address',$email_address);
+		
 	}
 
 	public function logout(){
@@ -37,7 +45,6 @@ class PersonalController extends Controller {
 
 	public function update(){
 		$data['user_name']=I('user_name');
-		dump(I('user_name'));
 		$data['email_address']=I('email_address');
 		$data['user_pwd']=md5(I('user_pwd'));
 		$obj=M('clientUser')->where("`user_name`='".I('user_name')."'");

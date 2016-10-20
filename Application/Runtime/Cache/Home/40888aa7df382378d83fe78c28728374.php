@@ -48,7 +48,7 @@
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-				        <li><a href="/yuanku/index.php/Home/Index/Index">首页</a></li>
+				        <li><a href="/yuanku/index.php/Home/Index/index">首页</a></li>
 				        <li>
 				        <a href="
 				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>

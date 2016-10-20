@@ -58,8 +58,8 @@
 										<div class="message">
 											<ul>
 												<!-- <li>账户安全较高：较高</li> -->
-												<li>绑定手机：182******90</li>
-												<li>绑定邮箱：57*****89.q*.com</li>
+												<li>绑定手机：</li>
+												<li>绑定邮箱{$email_address}</li>
 											</ul>
 										</div>
 								</div>
@@ -139,15 +139,14 @@
     	var content=$('#sayhello');
     	var time=new Date();
     	var clock=time.getHours();
-    	 console.log(clock);
-
-    	if(clock>6&&clock<12){
+    	if(clock>6&&clock<=12){
     		content.html('上午好');
-    	}else if(clock>12&&clock<18){
+    	}else if(clock>12&&clock<=18){
     		content.html('下午好');
-    	}else if(clock>18&&clock<24){
+    	}else if(clock>18&&clock<=24){
     		content.html('晚上好');
     	}else{
+    		console.log(clock);
     		content.html('凌晨好');
     	}
       }

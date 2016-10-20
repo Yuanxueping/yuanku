@@ -47,7 +47,7 @@
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-				        <li><a href="/yuanku/index.php/Home/Personal/Index">首页</a></li>
+				        <li><a href="/yuanku/index.php/Home/Index/index">首页</a></li>
 				        <li>
 				        <a href="
 				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
@@ -126,7 +126,7 @@
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-				        <li><a href="/yuanku/index.php/Home/Personal/Index">首页</a></li>
+				        <li><a href="/yuanku/index.php/Home/Index/index">首页</a></li>
 				        <li>
 				        <a href="
 				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
@@ -202,8 +202,8 @@
 										<div class="message">
 											<ul>
 												<!-- <li>账户安全较高：较高</li> -->
-												<li>绑定手机：182******90</li>
-												<li>绑定邮箱：57*****89.q*.com</li>
+												<li>绑定手机：</li>
+												<li>绑定邮箱<?php echo ($email_address); ?></li>
 											</ul>
 										</div>
 								</div>
@@ -361,15 +361,14 @@
     	var content=$('#sayhello');
     	var time=new Date();
     	var clock=time.getHours();
-    	 console.log(clock);
-
-    	if(clock>6&&clock<12){
+    	if(clock>6&&clock<=12){
     		content.html('上午好');
-    	}else if(clock>12&&clock<18){
+    	}else if(clock>12&&clock<=18){
     		content.html('下午好');
-    	}else if(clock>18&&clock<24){
+    	}else if(clock>18&&clock<=24){
     		content.html('晚上好');
     	}else{
+    		console.log(clock);
     		content.html('凌晨好');
     	}
       }
