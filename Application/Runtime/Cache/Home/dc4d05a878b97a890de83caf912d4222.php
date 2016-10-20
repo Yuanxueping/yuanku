@@ -50,20 +50,8 @@
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
 				        <li><a href="/yuanku/index.php/Home/Index/Index">首页</a></li>
-				        <li>
-				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
-				        ">
-				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
-				        </a>
-				        </li>
-				        <li>
-				        	<a href="
-				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
-				        	">
-				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
-				        	</a>
-				        </li>
+				        <li><a href="/yuanku/index.php/Home/Index/Login">登录</a></li>
+				        <li><a href="/yuanku/index.php/Home/Index/register">注册</a></li>
 				        <li><a href="/yuanku/index.php/Home/Index/news">新闻</a></li>
 				        <li><a href="/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
 				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li>

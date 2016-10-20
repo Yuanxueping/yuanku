@@ -1,0 +1,69 @@
+<!-- /*
+	*yxp
+	*修改用户信息页面
+ */ -->
+<include file="public/header" />
+<include file="public/headerstwo"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/personal.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/site.min.css">
+		<script src="__PUBLIC__/js/site.min.js" type="text/javascript" charset="utf-8"></script>
+	
+
+		<div class="container-fluid" style="margin-top:55px;">
+    	<!--documents-->
+	        <div class="row row-offcanvas row-offcanvas-left">
+	          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+	            <ul class="list-group panel">
+	                <li class="list-group-item"><i class="glyphicon glyphicon-align-justify"></i> <b>侧边栏</b></li>
+	                <li class="list-group-item"><a href="index.html"><i class="glyphicon glyphicon-home"></i>主页 </a></li>
+	                <li class="list-group-item"><a href="login.html"><i class="glyphicon glyphicon-certificate"></i>登录 </a></li>
+	                <li class="list-group-item"><a href="register.html"><i class="glyphicon glyphicon-th-list"></i>注册 </a></li>
+	                <li class="list-group-item"><a href="news.html"><i class="glyphicon glyphicon-list-alt"></i>新闻</a></li>
+	                <li class="list-group-item"><a href="contact_us.html"><i class="glyphicon glyphicon-envelope"></i>联系我们</a></li>
+	                <li class="list-group-item"><a href="about_us.html"><i class="glyphicon glyphicon-heart"></i>关于我们</a></li>
+	                
+	                
+	              </ul>
+	          </div>
+	          <div class="col-xs-12 col-sm-9 content">
+	            <div class="panel panel-default">
+	              <div class="panel-heading">
+	                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a>
+	                <a href="personal.html" style=""> 个人中心</a></h3>
+	              </div>
+	              <div class="panel-body" style="margin-bottom:10%;">
+		            	<div class="content"> 
+
+							 <form action="__CONTROLLER__/update" method="post" class="form_wd_23" enctype="multipart/form-data" class="form_wd_23">
+							 	<div class="form-group">
+							 		<label class="control-label">用户名</label>
+							 		<input class="form-control" name="user_name" disabled="disabled" value="{$Think.session.username}">
+							 	</div>
+							 	<div class="form-group">
+							 		<label class="control-label">密码</label>
+							 		<input class="form-control" name="user_pwd">
+							 	</div>
+							 	<div class="form-group">
+							 		<label class="control-label">头像</label>
+							 		<input class="dropify"  name="head_photo" type="file">
+							 	</div>
+							 	<button class="btn btn-success waves-effect">提交</button>
+
+								</form>
+							 <link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css"> 
+						 
+						</div>  
+				  </div>
+
+	              </div><!-- panel body -->
+	            </div>
+	        </div><!-- content -->
+	      </div>
+	    </div>
+
+
+<script src="__PUBLIC__/js/dropify.min.js"></script>
+
+ <script>$('.dropify').dropify();</script>
+
+<include file="public/footer" />

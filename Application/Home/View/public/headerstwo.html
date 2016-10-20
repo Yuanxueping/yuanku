@@ -17,9 +17,42 @@
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-				        <li><a href="__URL__">首页</a></li>
-				        <li><a href="__URL__/login">登录</a></li>
-				        <li><a href="__URL__/register">注册</a></li>
+				        <li><a href="__URL__/Index">首页</a></li>
+				        <li>
+				        <a href="
+				        	<?php if(isset($_SESSION['username']))
+				        			{echo '__MODULE__/Personal/index';}
+				        			else{
+				        				echo '__MODULE__/Index/login';
+				        			}
+				        	 ?>
+				        ">
+				        <?php 
+				        	if(isset($_SESSION['username'])){
+				        			echo $_SESSION['username'];
+				        	}else{
+				        		echo '登陆';
+				        	}
+				        ?>
+				        </a>
+				        </li>
+				        <li>
+				        	<a href="
+				        		<?php if(isset($_SESSION['username']))
+				        			{echo '__MODULE__/Personal/logout';}
+				        			else{
+				        				echo '__MODULE__/Index/register';
+				        			}
+				        	 	?>
+				        	">
+				        		<?php if(isset($_SESSION['username']))
+				        			{echo '退出';}
+				        			else{
+				        				echo '注册';
+				        			}
+				        	 	?>
+				        	</a>
+				        </li>
 				        <li><a href="__URL__/news">新闻</a></li>
 				        <li><a href="__URL__/contact_us">联系我们</a></li>
 				        <li><a href="__URL__/about_us">关于我们</a></li>

@@ -22,16 +22,20 @@
 		</div>
 		<div class="container  box">
 			<div class="col-lg-offset-3 col-lg-6 col-md-12">
-				<form class="form-signin" role="form" action="/login" method="POST" enctype="application/x-www-form-urlencoded">
+				<form class="form-signin" role="form" action="__MODULE__/Login/checkLogin" method="POST" enctype="application/x-www-form-urlencoded">
 			        <div class="form-header">
 			        	<h4>账号登录</h4>
 			        	<p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">注册</a></p>
 			        	<p style="margin-top:5px;"><a href="register.html">忘记密码？</a></p>
 			        </div>
 			        <div class="message">
-			        	<div id="warn" class="alert alert-warning alert-dismissable" style="display: none;"> 
+			        	<div id="warn" class="alert alert-warning alert-dismissable warn" style="display: none;"> 
 			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
 			        		<strong>警告！&nbsp;&nbsp;</strong>用户名不能为空！
+			        	</div>
+			        	<div id="notassign" class="alert alert-warning alert-dismissable warn" style="display: none;"> 
+			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+			        		<strong>警告！&nbsp;&nbsp;</strong>该用户未注册，请重新输入
 			        	</div>
 			        </div>
 			        <div class="form-group">
@@ -71,7 +75,7 @@
 			var $close = $(".close");
 			var $warn_p = $(".warn_p");
 			var $close_p = $(".close_p");
-
+			var $notassign=$('#notassign');
 			$login.click(function(){
 				if ($username.val().length === 0) {
 					$wran.css("display","block");
@@ -84,9 +88,31 @@
 					}
 				}
 			});
-			
+			$username.change(function(){
+				/*ajax 查询用户知否已经注册*/
+				var data='username='+$username.val();
+				console.log(data);
+				var path=window.location.pathname;
+				var urlSlice=path.split('Home');
+				url=urlSlice[0]+'Home/Register/userExistCheck';
+				$.ajax({
+					type:"GET",
+					url:url,
+					data:data,
+					dataType:"json",
+					success:function(data){
+						console.log(data);
+						data=data.toString();
+						if(data!="error"){
+						   $notassign.css('display','none');
+						}else{
+							 $notassign.css('display','block');
+						}
+					}
+				});
+			});
 			$close.click(function(){
-				$wran.css("display","none");
+				$(".warn").css("display","none");
 				return false;
 			});
 			$close_p.click(function(){

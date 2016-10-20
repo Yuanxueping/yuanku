@@ -6,10 +6,10 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/thinkphp_3.2.3_full/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
 	 
 
 	<!--  <link rel="stylesheet" href="css/headAndFoot.css" />
@@ -26,7 +26,7 @@
 
 
 
-		<link rel="stylesheet" type="text/css" href="/thinkphp_3.2.3_full/yuanku/Public/css/home/register.css"/>
+		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/register.css"/>
 
 		
   </head>
@@ -42,18 +42,30 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#">
-		      	<img class="logo" src="/thinkphp_3.2.3_full/yuanku/Public/img/logoko2.png" />
+		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
 		      </a>
 		    </div>		
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index">首页</a></li>
-				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/login">登录</a></li>
-				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/register">注册</a></li>
-				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/news">新闻</a></li>
-				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
-				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
+				        <li><a href="/yuanku/index.php/Home/Index/Index">首页</a></li>
+				        <li>
+				        <a href="
+				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
+				        ">
+				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
+				        </a>
+				        </li>
+				        <li>
+				        	<a href="
+				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
+				        	">
+				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
+				        	</a>
+				        </li>
+				        <li><a href="/yuanku/index.php/Home/Index/news">新闻</a></li>
+				        <li><a href="/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
+				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
 				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
@@ -68,7 +80,7 @@
 			<div class="row login_header clearcss">
 				
 					<div class="col-lg-6 col-md-12">
-						<h1>重置密码</h1>
+						<h1>注册用户</h1>
 					</div>
 					<div class="col-lg-offset-4 col-lg-2 col-md-12">
 		              	<a href="index.html" style="opacity:0.6;font-weight:normal;">首页 <i>/</i> </a> 
@@ -78,27 +90,40 @@
 		</div>
 		<div class="container  box">
 			<div class="col-lg-offset-3 col-lg-6 col-md-12">
-				<form class="form-signin" role="form" action="/login" method="POST" enctype="application/x-www-form-urlencoded">
+				<form class="form-signin" role="form" action="/yuanku/index.php/Home/Register/regNewMember" method="POST" enctype="application/x-www-form-urlencoded">
 			        <div class="form-header">
-			        	<h4>重置密码</h4>
-			        	<p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">注册</a></p>
+			        	<h4>注用户册</h4>
 			        	<p style="margin-top:5px;">已经注册?&nbsp;<a href="login.html">登录</a></p>
 			        </div>
 			        <div class="message">
 			        	<div id="warn" class="alert alert-warning alert-dismissable" style="display: none;"> 
 			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>内容不能为空！
+			        		<strong>警告！&nbsp;&nbsp;</strong>用户名和密码内容不能低于6位！
+			        	</div>
+			        	<div id="checkBlank" class="alert alert-warning alert-dismissable" style="display: none;"> 
+			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+			        		<strong>警告！&nbsp;&nbsp;</strong>用户名和密码内容不能含有空格字符！
+			        	</div>
+			        	<div id="checkLogin" class="alert alert-warning alert-dismissable" style="display: none;"> 
+			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+			        		<strong>警告！&nbsp;&nbsp;</strong>用户已存在，请使用新的用户名进行注册！或者<a href="./login">直接登陆</a>
 			        	</div>
 			        </div>
 			        <div class="form-group">
-			        	<p class="form-signin-heading">用户名或邮箱地址</p>
+			        	<p class="form-signin-heading">注册用户名或邮箱地址</p>
 			          <div class="input-group">
 			            <input type="text" class="form-control" name="username" id="username" autocomplete="off">
 			          </div>
 			        </div>
+			
+			        <div class="form-group">
+			        	<p class="form-signin-heading">密码</p>
+			          <div class="input-group">
+			            <input type="text" class="form-control" name="password" id="password" autocomplete="off">
+			          </div>
+			        </div>
 					<div class="Btn">
-						<p>密码重置说明将会发送到你被注册的邮箱地址</p>
-			        <button class="btn btn-lg btn-primary btn-block" id="register" type="submit">提交</button>
+			        <button class="btn btn-lg btn-primary btn-block" id="register" type="submit">注册</button>
 					</div>
 			     </form>
 			</div>
@@ -108,19 +133,89 @@
 			var $register = $("#register");
 			var $username = $("#username");
 			var $wran = $("#warn");
+			var $mail = $("#mail");
 			var $close = $(".close");
+			var $checkLogin=$('#checkLogin');
+			var $checkBlank=$('#checkBlank');
 			
 			$register.click(function(){
-				if ($username.val().length === 0) {
+				if ($username.val().length < 6||$('#password').val().length<6) {
 					$wran.css("display","block");
 					return false;
 				}
 			});
+		    
 			
 			$close.click(function(){
 				$wran.css("display","none");
+				$checkBlank.css("display","none");
+				$checkLogin.css("display","none");
 				return false;
-			})
+			});
+
+
+			$username.change(function(){
+			/*非空见擦*/
+			if ($username.val().length > 0) {
+					$wran.css("display","none");
+				}	
+			/* 字符串空格检查*/
+			var str=$username.val();
+			var Bnum=0;
+			for(var i=0;i<str.length;i++){
+				if(str.charCodeAt(i)==32){
+					Bnum++;
+				}
+			}
+			if(Bnum>0){
+				$('#checkBlank').css('display','block');
+			}else{
+				$('#checkBlank').css('display','none');
+			}
+
+			/*ajax 查询用户知否已经注册*/
+			var data='username='+$username.val();
+			console.log(data);
+			var path=window.location.pathname;
+			var urlSlice=path.split('Home');
+			url=urlSlice[0]+'Home/Register/userExistCheck';
+			$.ajax({
+				type:"GET",
+				url:url,
+				data:data,
+				dataType:"json",
+				success:function(data){
+					console.log(data);
+					data=data.toString();
+					if(data!="error"){
+					   $checkLogin.css('display','block');
+					}else{
+						 $checkLogin.css('display','none');
+					}
+				}
+			});
+			});
+
+			$('#password').change(function(){
+				/*非空见擦*/
+				if ($('#password').val().length > 0) {
+					$wran.css("display","none");
+				}	
+				/*检查空格*/
+				var str=$('#password').val();
+				var Bnum=0;
+				for(var i=0;i<str.length;i++){
+					if(str.charCodeAt(i)==32){
+					Bnum++;
+					}
+				}
+				if(Bnum>0){
+				$('#checkBlank').css('display','block');
+				}else{
+				$('#checkBlank').css('display','none');
+				}	
+			});
+
 		})
 	</script>
 
@@ -141,9 +236,9 @@
 					<div class="col-lg-3 col-md-6 col-lg-12">
 						<ul >
 							<li><h4>最新动态</h4></li><br/>
-							<li><a href="#"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
-							<li><a href="#"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
-							<li><a href="#"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
+							<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
+							<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
+							<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
 												
 						</ul>
 					</div>

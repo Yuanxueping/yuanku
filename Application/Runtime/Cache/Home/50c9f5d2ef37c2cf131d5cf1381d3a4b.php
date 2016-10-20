@@ -49,24 +49,12 @@
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-				        <li><a href="/yuanku/index.php/Home/Index/Index">首页</a></li>
-				        <li>
-				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
-				        ">
-				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
-				        </a>
-				        </li>
-				        <li>
-				        	<a href="
-				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
-				        	">
-				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
-				        	</a>
-				        </li>
-				        <li><a href="/yuanku/index.php/Home/Index/news">新闻</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
+				        <li><a href="/yuanku/index.php/Home/Index">首页</a></li>
+				        <li><a href="/yuanku/index.php/Home/Login">登录</a></li>
+				        <li><a href="/yuanku/index.php/Home/register">注册</a></li>
+				        <li><a href="/yuanku/index.php/Home/news">新闻</a></li>
+				        <li><a href="/yuanku/index.php/Home/contact_us">联系我们</a></li>
+				        <li><a href="/yuanku/index.php/Home/about_us">关于我们</a></li>
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
 				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
@@ -100,13 +88,9 @@
 			        	<p style="margin-top:5px;"><a href="register.html">忘记密码？</a></p>
 			        </div>
 			        <div class="message">
-			        	<div id="warn" class="alert alert-warning alert-dismissable warn" style="display: none;"> 
+			        	<div id="warn" class="alert alert-warning alert-dismissable" style="display: none;"> 
 			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
 			        		<strong>警告！&nbsp;&nbsp;</strong>用户名不能为空！
-			        	</div>
-			        	<div id="notassign" class="alert alert-warning alert-dismissable warn" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>该用户未注册，请重新输入
 			        	</div>
 			        </div>
 			        <div class="form-group">
@@ -146,7 +130,7 @@
 			var $close = $(".close");
 			var $warn_p = $(".warn_p");
 			var $close_p = $(".close_p");
-			var $notassign=$('#notassign');
+
 			$login.click(function(){
 				if ($username.val().length === 0) {
 					$wran.css("display","block");
@@ -159,31 +143,9 @@
 					}
 				}
 			});
-			$username.change(function(){
-				/*ajax 查询用户知否已经注册*/
-				var data='username='+$username.val();
-				console.log(data);
-				var path=window.location.pathname;
-				var urlSlice=path.split('Home');
-				url=urlSlice[0]+'Home/Register/userExistCheck';
-				$.ajax({
-					type:"GET",
-					url:url,
-					data:data,
-					dataType:"json",
-					success:function(data){
-						console.log(data);
-						data=data.toString();
-						if(data!="error"){
-						   $notassign.css('display','none');
-						}else{
-							 $notassign.css('display','block');
-						}
-					}
-				});
-			});
+			
 			$close.click(function(){
-				$(".warn").css("display","none");
+				$wran.css("display","none");
 				return false;
 			});
 			$close_p.click(function(){

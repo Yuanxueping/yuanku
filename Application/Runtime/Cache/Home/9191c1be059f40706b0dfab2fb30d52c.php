@@ -1,4 +1,8 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!-- /*
+	*yxp
+	*修改用户信息页面
+ */ -->
+<!DOCTYPE html>
 <html>
 <head lang="zh">
 	<title><?php echo ($title); ?></title>
@@ -25,11 +29,6 @@
 		
 
 
-		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/register.css"/>
-		<!-- <link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/transform.css"/> -->
-		
-
-		<script src="/yuanku/Public/js//register.js" type="text/javascript" charset="utf-8"></script>
   </head>
 <body>
 	<nav class="navbar navbar-default top-nav navbar-fixed-top gaise">
@@ -49,7 +48,7 @@
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-				        <li><a href="/yuanku/index.php/Home/Index/Index">首页</a></li>
+				        <li><a href="/yuanku/index.php/Home/Personal/Index">首页</a></li>
 				        <li>
 				        <a href="
 				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
@@ -64,9 +63,9 @@
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
 				        </li>
-				        <li><a href="/yuanku/index.php/Home/Index/news">新闻</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
+				        <li><a href="/yuanku/index.php/Home/Personal/news">新闻</a></li>
+				        <li><a href="/yuanku/index.php/Home/Personal/contact_us">联系我们</a></li>
+				        <li><a href="/yuanku/index.php/Home/Personal/about_us">关于我们</a></li>
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
 				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
@@ -76,122 +75,73 @@
 	        </div>
 		  </div>
 		</nav>
+		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/personal.css"/>
+		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/site.min.css">
+		<script src="/yuanku/Public/js/site.min.js" type="text/javascript" charset="utf-8"></script>
+	
 
-		<!-- <script src="/yuanku/Public/js/login.js" type="text/javascript" charset="utf-8"></script> -->
+		<div class="container-fluid" style="margin-top:55px;">
+    	<!--documents-->
+	        <div class="row row-offcanvas row-offcanvas-left">
+	          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+	            <ul class="list-group panel">
+	                <li class="list-group-item"><i class="glyphicon glyphicon-align-justify"></i> <b>侧边栏</b></li>
+	                <li class="list-group-item"><a href="index.html"><i class="glyphicon glyphicon-home"></i>主页 </a></li>
+	                <li class="list-group-item"><a href="login.html"><i class="glyphicon glyphicon-certificate"></i>登录 </a></li>
+	                <li class="list-group-item"><a href="register.html"><i class="glyphicon glyphicon-th-list"></i>注册 </a></li>
+	                <li class="list-group-item"><a href="news.html"><i class="glyphicon glyphicon-list-alt"></i>新闻</a></li>
+	                <li class="list-group-item"><a href="contact_us.html"><i class="glyphicon glyphicon-envelope"></i>联系我们</a></li>
+	                <li class="list-group-item"><a href="about_us.html"><i class="glyphicon glyphicon-heart"></i>关于我们</a></li>
+	                
+	                
+	              </ul>
+	          </div>
+	          <div class="col-xs-12 col-sm-9 content">
+	            <div class="panel panel-default">
+	              <div class="panel-heading">
+	                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a>
+	                <a href="personal.html" style=""> 个人中心</a></h3>
+	              </div>
+	              <div class="panel-body" style="margin-bottom:10%;">
+		            	<div class="content"> 
 
-		<div class="container">
-			<div class="row login_header clearcss">
-				
-					<div class="col-lg-6 col-md-12">
-						<h1>登录</h1>
-					</div>
-					<div class="col-lg-offset-4 col-lg-2 col-md-12">
-		              	<a href="index.html" style="opacity:0.6;font-weight:normal;">首页 <i>/</i> </a> 
-					</div>
-		    </div>
-		    
-		</div>
-		<div class="container  box">
-			<div class="col-lg-offset-3 col-lg-6 col-md-12">
-				<form class="form-signin" role="form" action="/yuanku/index.php/Home/Login/checkLogin" method="POST" enctype="application/x-www-form-urlencoded">
-			        <div class="form-header">
-			        	<h4>账号登录</h4>
-			        	<p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">注册</a></p>
-			        	<p style="margin-top:5px;"><a href="register.html">忘记密码？</a></p>
-			        </div>
-			        <div class="message">
-			        	<div id="warn" class="alert alert-warning alert-dismissable warn" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>用户名不能为空！
-			        	</div>
-			        	<div id="notassign" class="alert alert-warning alert-dismissable warn" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>该用户未注册，请重新输入
-			        	</div>
-			        </div>
-			        <div class="form-group">
-			        	<p class="form-signin-heading"><img src="/yuanku/Public/img/login/user.png"/>&nbsp;用户名/邮箱</p>
-			          <div class="input-group">
-			            <input type="text" class="form-control" name="username" id="username"  autocomplete="off">
-			          </div>
-			          <p style="margin-top: 10px;">输入用户名或邮箱</p>
-			          
-			        </div>
-			        <div class="message">
-			        	<div id="warn" class="warn_p alert alert-warning alert-dismissable" style="display: none;"> 
-			        		<button type="button" class="close close_p" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>密码不能为空！
-			        	</div>
-			        </div>
-			        <div class="form-group" style="margin-top:0px;">
-						<p class="form-signin-heading" style="margin-top:0px;"><img src="/yuanku/Public/img/login/pwd.png"/>&nbsp;密码</p>
-			          <div class="input-group">
-			            <input type="text" class="form-control" name="password" id="password"  autocomplete="off">
-			          </div>
-			          <p style="margin-top: 10px;">输入与用户名相匹配的密码</p>
-			        </div>
-					<div class="Btn">
-						<!--<p>Password reset instructions will be send to your registered email address</p>-->
-			        <button class="btn btn-lg btn-primary btn-block" id="login" type="submit">登录</button>
-					</div>
-			     </form>
-			</div>
-    </div>
-	<script>
-		$(function(){
-			var $login = $("#login");
-			var $username = $("#username");
-			var $password = $("#password");
-			var $wran = $("#warn");
-			var $close = $(".close");
-			var $warn_p = $(".warn_p");
-			var $close_p = $(".close_p");
-			var $notassign=$('#notassign');
-			$login.click(function(){
-				if ($username.val().length === 0) {
-					$wran.css("display","block");
-					return false;
-					$warn.css("display","none");
-				} else{
-					if ($password.val().length === 0) {
-						$warn_p.css("display","block");
-						return false;
-					}
-				}
-			});
-			$username.change(function(){
-				/*ajax 查询用户知否已经注册*/
-				var data='username='+$username.val();
-				console.log(data);
-				var path=window.location.pathname;
-				var urlSlice=path.split('Home');
-				url=urlSlice[0]+'Home/Register/userExistCheck';
-				$.ajax({
-					type:"GET",
-					url:url,
-					data:data,
-					dataType:"json",
-					success:function(data){
-						console.log(data);
-						data=data.toString();
-						if(data!="error"){
-						   $notassign.css('display','none');
-						}else{
-							 $notassign.css('display','block');
-						}
-					}
-				});
-			});
-			$close.click(function(){
-				$(".warn").css("display","none");
-				return false;
-			});
-			$close_p.click(function(){
-				$warn_p.css("display","none");
-				return false;
-			});
-		})
-	</script>
+							 <form action="/yuanku/index.php/Home/Personal/update" method="post" class="form_wd_23" enctype="multipart/form-data" class="form_wd_23">
+							 	<div class="form-group">
+							 		<label class="control-label">用户名</label>
+							 		<input class="form-control" style="display:none" name="user_name"  value="<?php echo (session('username')); ?>">
+							 		<input class="form-control" value="<?php echo (session('username')); ?>" disabled="true">
+							 	</div>
+							 	<div class="form-group">
+							 		<label class="control-label">密码</label>
+							 		<input class="form-control" name="user_pwd">
+							 	</div>
+							 	<div class="form-group">
+							 		<label class="control-label">邮箱</label>
+							 		<input class="form-control" name="email_address">
+							 	</div>
+							 	<div class="form-group">
+							 		<label class="control-label">头像</label>
+							 		<input class="dropify"  name="head_photo" type="file">
+							 	</div>
+							 	<button class="btn btn-success waves-effect">提交</button>
+
+								</form>
+							 <link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css"> 
+						 
+						</div>  
+				  </div>
+
+	              </div><!-- panel body -->
+	            </div>
+	        </div><!-- content -->
+	      </div>
+	    </div>
+
+
+<script src="/yuanku/Public/js/dropify.min.js"></script>
+
+ <script>$('.dropify').dropify();</script>
+
 
 
 <div class="clearfix"></div>
