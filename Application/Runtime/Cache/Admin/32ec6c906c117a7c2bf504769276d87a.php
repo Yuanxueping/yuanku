@@ -18,38 +18,27 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  
-<<<<<<< HEAD
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/bootstrap.css">
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/material-design-iconic-font.css">
-=======
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/bootstrap.css"> 
->>>>>>> d13129141e9ffe7459001f1c4c03693bbd26ff85
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/animate.css">
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/metisMenu.css">
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/jquery_002.css">
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/waves.css">
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/toastr.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/bootstrap.css"> 
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/animate.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/metisMenu.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/jquery_002.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/waves.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/toastr.css">
 
 
 
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/jquery.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/jquery.css">
 
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/style.css">
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/common.css">
-  <script src="/yuanku/Public/js/jquery.js"></script>
-<<<<<<< HEAD
-
-  
-
-=======
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/style.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/common.css">
+  <script src="/lidong/yuanku/Public/js/jquery.js"></script>
   <!-- 第一步引用 -->
-  <script src="/yuanku/Public/js/angular.min.js"></script>
+  <script src="/lidong/yuanku/Public/js/angular.min.js"></script>
 
   
 
 
 
->>>>>>> d13129141e9ffe7459001f1c4c03693bbd26ff85
 <body   class="user-page" style="overflow: visible;">
  
  
@@ -60,22 +49,9 @@
             <div class="login">
 
                   <h4 class="text-center">力动管理后台登录</h4>
-<<<<<<< HEAD
-                  <form method="post" action="<?php echo U('Login/index');?>">
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="login" name="user_name">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" class="form-control" id="password" name="user_pwd">
-                    </div>
-
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="请输入验证码" id="password" name="verify"> 
-=======
 <!-- action="<?php echo U('Login/index');?>" -->
                   <form ng-submit="get_val();" name="myForm" ng-app="myApp" ng-controller="validateCtrl" method="post"  novalidate>
                     <div class="form-group">
-{{ 1+1 }}
                       <input type="text" class="form-control" id="login" name="user_name" required ng-model='data_user.user_name'>
                       <span>
                         {{user_name}}
@@ -101,7 +77,6 @@
                         <span ng-show="myForm.verify.$error.required">验证码不能为空！</span>
                         </span>
                       
->>>>>>> d13129141e9ffe7459001f1c4c03693bbd26ff85
                       <img src="<?php echo U('Login/get_verify');?>" alt="" onclick="$(this).attr('src','<?php echo U('Login/get_verify');?>?'+Math.random())">
                     </div>
                   <!--   <div class="form-group text-left">
@@ -111,15 +86,10 @@
                           <span class="white f-s-16 m-l-5">Remember me</span>
                       </div>
                     </div> -->
-<<<<<<< HEAD
-
-                    <button type="submit" class="btn btn-block btn-lg btn-primary">登录</button>
-=======
                     
                     <button type="submit" ng-disabled=" myForm.user_name.$invalid || myForm.verify.$invalid || myForm.user_pwd.$invalid" class="btn btn-block btn-lg btn-primary">登录</button>
                     <div> {{ message }}</div>
->>>>>>> d13129141e9ffe7459001f1c4c03693bbd26ff85
-
+<!-- <span ng-bind="hl_bd()"></span> -->
                   </form>
 
             </div>
@@ -128,12 +98,6 @@
       </div>
 
   </div>
-<<<<<<< HEAD
-  <style>
-.flot-tooltip{display: none !important;}
-  </style>
-
-=======
 
   <style>
 .flot-tooltip{display: none !important;}
@@ -142,6 +106,9 @@
   var app = angular.module('myApp', []);
   app.controller('validateCtrl',function  ($scope,$http) {
      // $scope.user_name='adminster';
+     // $scope.hl_bd=function  () {
+     //   return $scope.data_user.user_name;
+     // }
      $scope.get_val = function  () {
           $http({
                   method  : 'POST',
@@ -164,6 +131,5 @@
   })
  
 </script>
->>>>>>> d13129141e9ffe7459001f1c4c03693bbd26ff85
   </body>
 </html>

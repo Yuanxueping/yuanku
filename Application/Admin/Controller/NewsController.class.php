@@ -22,5 +22,8 @@ class NewsController extends AuthController {
     {
     	$this->display();
     }
-   
+   public function newsort(){
+     	$this->display(); 
+
+   }
 }

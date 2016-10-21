@@ -18,22 +18,23 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/bootstrap.css">
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/material-design-iconic-font.css">
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/animate.css">
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/metisMenu.css">
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/jquery_002.css">
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/waves.css">
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/toastr.css">
+  
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/material-design-iconic-font.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/animate.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/metisMenu.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/jquery_002.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/waves.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/toastr.css">
 
 
 
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/jquery.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/jquery.css">
 
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/style.css">
-  <link rel="stylesheet" href="/yuanku/Public/css/admin/common.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/style.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/bootstrap.css">
+  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/common.css">
 
-  <script src="/yuanku/Public/js/jquery.js"></script>
+  <script src="/lidong/yuanku/Public/js/jquery.js"></script>
 <!--
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -42,7 +43,7 @@
       <script src="bower_components/html5shiv/dist/html5shiv.min,js"></script>
       <script src="bower_components/respondJs/dest/respond.min.js"></script>
     <![endif]-->
-<script src="/yuanku/Public/js/jquery_008.js"></script></head>
+<script src="/lidong/yuanku/Public/js/jquery_008.js"></script></head>
 
 <body class="fixed-all boxed-layout fixed-sidebar mCustomScrollbar _mCS_4 mCS-autoHide" style="overflow: visible;">
  <div id="mCSB_4" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_4_container" class="mCSB_container" style="position: relative; top: -164px; left: 0px;" dir="ltr">
@@ -56,7 +57,7 @@
    <nav class="navbar navbar-indigo">
  <div class="navbar-header container brand-orange">
    <a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
-   <a href="/yuanku/admin" class="logo"><img src="Pacificonis%20-%20Dashboard_files/logo.png" alt="力动企业" class="mCS_img_loaded"></a>
+   <a href="/lidong/yuanku/admin" class="logo">力动企业</a>
    <a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="icon-logo"></a>
  </div>
   <div class="navbar-container clearfix">
@@ -122,7 +123,7 @@
     <li class="profile-sidebar-container">
       <div class="profile-sidebar text-center">
         <div class="profile-userpic">
-          <img src="/yuanku/Uploads<?php echo ($user_info["head_photo"]); ?>" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
+          <img src="/lidong/yuanku/Uploads<?php echo ($user_info["head_photo"]); ?>" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
           <span class="online"></span>
         </div>
         <div class="profile-usertitle">
@@ -172,7 +173,7 @@
       <ul class="nav nav-inside collapse" aria-expanded="false">
         <li class="inside-title">新闻管理</li>
         <li><a href="<?php echo U('news/index');?>">新闻列表</a></li>
-        <li><a href="<?php echo U('news/category');?>">新闻分类</a></li>
+        <li><a href="<?php echo U('news/newsort');?>">新闻分类</a></li>
         <li><a href="<?php echo U('news/add');?>">添加新闻</a></li>
         
       </ul>
@@ -376,7 +377,7 @@
 
  </div>
 <div class="content">
- <form action="/yuanku/index.php/Admin/System/save" method="post" class="form-horizontal">
+ <form action="/lidong/yuanku/index.php/Admin/System/save" method="post" class="form-horizontal">
  	<div class="form-group">
  		<label for="inputText" class="col-sm-2 control-label">项目名称：</label>
  		<div class="col-sm-10">
@@ -396,22 +397,22 @@
 
    </div>
 </div></div>
-  <script src="/yuanku/Public/js/bootstrap.js"></script>
-  <script src="/yuanku/Public/js/metisMenu.js"></script>
-  <script src="/yuanku/Public/js/jquery_006.js"></script>
-  <script src="/yuanku/Public/js/waves.js"></script>
-  <script src="/yuanku/Public/js/toastr.js"></script>
+  <script src="/lidong/yuanku/Public/js/bootstrap.js"></script>
+  <script src="/lidong/yuanku/Public/js/metisMenu.js"></script>
+  <script src="/lidong/yuanku/Public/js/jquery_006.js"></script>
+  <script src="/lidong/yuanku/Public/js/waves.js"></script>
+  <script src="/lidong/yuanku/Public/js/toastr.js"></script>
 
 
-  <script src="/yuanku/Public/js/jquery_004.js"></script>
-  <script src="/yuanku/Public/js/dataTables.js"></script>
-  <script src="/yuanku/Public/js/moment.js"></script>
+  <script src="/lidong/yuanku/Public/js/jquery_004.js"></script>
+  <script src="/lidong/yuanku/Public/js/dataTables.js"></script>
+  <script src="/lidong/yuanku/Public/js/moment.js"></script>
 
-  <script src="/yuanku/Public/js/Chart.js"></script>
-  <script src="/yuanku/Public/js/jquery_005.js"></script>
-  <script src="/yuanku/Public/js/jquery_007.js"></script>
-  <script src="/yuanku/Public/js/jquery_003.js"></script>
-  <script src="/yuanku/Public/js/jquery_002.js"></script>
+  <script src="/lidong/yuanku/Public/js/Chart.js"></script>
+  <script src="/lidong/yuanku/Public/js/jquery_005.js"></script>
+  <script src="/lidong/yuanku/Public/js/jquery_007.js"></script>
+  <script src="/lidong/yuanku/Public/js/jquery_003.js"></script>
+  <script src="/lidong/yuanku/Public/js/jquery_002.js"></script>
  
 
   <script>
@@ -576,8 +577,8 @@
     });
   </script>
 
-    <script src="/yuanku/Public/js/common.js"></script>
-  <script src="/yuanku/Public/js/demo-switch.js">  </script>
+    <script src="/lidong/yuanku/Public/js/common.js"></script>
+  <script src="/lidong/yuanku/Public/js/demo-switch.js">  </script>
     <script>
     if($(window).width() >= 1200){
       $("body").addClass("boxed-layout");

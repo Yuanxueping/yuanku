@@ -6,17 +6,10 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
 	 <link rel="stylesheet" href="/lidong/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/headAndFoot.css">
 	 <script src="/lidong/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
 	 <script src="/lidong/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
-=======
-	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
->>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 	 
 
 	<!--  <link rel="stylesheet" href="css/headAndFoot.css" />
@@ -33,20 +26,12 @@
 
 
 
-<<<<<<< HEAD
 		<!-- <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/site.min.css">  -->
 		<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/about.css"/>
 		<!-- <script type="text/javascript" src="/lidong/yuanku/Public/js/site.min.js"></script> -->
   </head>
 <body>
 <!-- <div class="container-fluid"> -->
-=======
-		<!-- <link rel="stylesheet" href="/yuanku/Public/css/home/site.min.css">  -->
-		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/about.css"/>
-		<!-- <script type="text/javascript" src="/yuanku/Public/js/site.min.js"></script> -->
-  </head>
-<body>
->>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 	<nav class="navbar navbar-default top-nav navbar-fixed-top gaise">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -58,52 +43,38 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#">
-<<<<<<< HEAD
 		      	<img class="logo" src="/lidong/yuanku/Public/img/logoko2.png" />
-=======
-		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
->>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 		      </a>
 		    </div>		
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-<<<<<<< HEAD
-				        <li><a href="/lidong/yuanku/index.php/Home/Index">首页</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/login">登录</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/register">注册</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/news">新闻</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/personal">个人中心</a></li>
-=======
-				        <li><a href="/yuanku/index.php/Home/Index/index">首页</a></li>
+				        <li><a href="/lidong/yuanku/index.php/Home/Index/index">首页</a></li>
 				        <li>
 				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
+				        	<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/index';} else{ echo '/lidong/yuanku/index.php/Home/Index/login'; } ?>
 				        ">
 				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
 				        </a>
 				        </li>
 				        <li>
 				        	<a href="
-				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
+				        		<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/logout';} else{ echo '/lidong/yuanku/index.php/Home/Index/register'; } ?>
 				        	">
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
 				        </li>
-				        <li><a href="/yuanku/index.php/Home/Index/news">新闻</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
+				        <li><a href="/lidong/yuanku/index.php/Home/Index/news">新闻</a></li>
+				        <li><a href="/lidong/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
+				        <li><a href="/lidong/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
+				        <li><a href="/lidong/yuanku/index.php/Home/Index/personal">个人中心</a></li>
 				        
->>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
 				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
 				        	</a>
 				        </li>
 				      </ul>		          			        				        	
-<<<<<<< HEAD
 	            </div>
 		  </div>
 	</nav>
@@ -112,15 +83,6 @@
 		<div class="container-fluid" style="padding:0px;">
 			<!-- <div class="row">
 			
-=======
-	        </div>
-		  </div>
-		</nav>
-		
-	
-		<div class="container-fluid">
-			<!-- <div class="row">
->>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 				<div class="col-lg-1">
 					logo
 				</div>
@@ -165,11 +127,7 @@
 			<div class="row ">
 				
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<<<<<<< HEAD
 					<div class="banner" style="background-image: url(/lidong/yuanku/Public/img/01.jpg);">
-=======
-					<div class="banner" style="background-image: url(/yuanku/Public/img/01.jpg);">
->>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 						<div class="container">
 							<div class="title">
 								<h1>About Us</h1>
@@ -197,7 +155,6 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 theme" >
-<<<<<<< HEAD
 						<img src="/lidong/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
 						<div class="theme_title">Corporate Theme</div>
 					</div>
@@ -211,21 +168,6 @@
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 theme last" >
 						<img src="/lidong/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
-=======
-						<img src="/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
-						<div class="theme_title">Corporate Theme</div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 theme" >
-						<img src="/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
-						<div class="theme_title">Business Theme</div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 theme" >
-						<img src="/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
-						<div class="theme_title">Marketing Theme</div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 theme last" >
-						<img src="/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
->>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 						<div class="theme_title">Website Theme</div>
 					</div>					
 				</div>
@@ -235,11 +177,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 left_img">
-<<<<<<< HEAD
 					<img src="/lidong/yuanku/Public/img/highstand homepage/2016-09-27_214450.png"/>
-=======
-					<img src="/yuanku/Public/img/highstand homepage/2016-09-27_214450.png"/>
->>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 green_center">
 					<h2>30+ Diffrent Templates</h2>
@@ -286,11 +224,7 @@
 				</div>
 				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 people_detail">
                   	<div class="left">
-<<<<<<< HEAD
     					<img src="/lidong/yuanku/Public/img/highstand homepage/people-img10.jpg" alt="" class="client_img">
-=======
-    					<img src="/yuanku/Public/img/highstand homepage/people-img10.jpg" alt="" class="client_img">
->>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
     					<h5 class="nocaps">Michle Siminson<br> <span>Developer</span></h5>
 					</div>
                   
@@ -304,11 +238,7 @@
 					
 				</div>
 			</div>
-<<<<<<< HEAD
 			<!-- <div class="row dian_all">
-=======
-			<div class="row dian_all">
->>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<span class="dian"></span>
 					<span class="dian"></span>
@@ -319,7 +249,6 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 say_title2">
 					<h3 >OUR TRUSTED PARTNERS</h3>
 				</div>
-<<<<<<< HEAD
 			</div> -->
 			
 			<!-- <div class="row container ">
@@ -342,30 +271,6 @@
 					<img src="/lidong/yuanku/Public/img/highstand homepage/clogo5_1.png"/>
 				</div>
 			</div> -->
-=======
-			</div>
-			
-			<div class="row container ">
-				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 partner_logo">
-					<img src="/yuanku/Public/img/highstand homepage/clogo1_0.png"/>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 partner_logo">
-					<img src="/yuanku/Public/img/highstand homepage/clogo2.png"/>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 partner_logo">
-					<img src="/yuanku/Public/img/highstand homepage/clogo3_1.png"/>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6  partner_logo">
-					<img src="/yuanku/Public/img/highstand homepage/clogo2_0.png"/>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 partner_logo">
-					<img src="/yuanku/Public/img/highstand homepage/clogo3_2.png"/>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 partner_logo">
-					<img src="/yuanku/Public/img/highstand homepage/clogo5_1.png"/>
-				</div>
-			</div>
->>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 		
 			<!-- <div class="row">
 				<div class="col-lg-12">
@@ -384,15 +289,9 @@
                             </dl>
                             <dl class="footer-nav blog_post">
                               <dt class="nav-title">Blog Posts</dt>
-<<<<<<< HEAD
                               <dd class="nav-item"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/><a href="#">image Many desktop packages</a></dd>
                               <dd class="nav-item"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/><a href="#">Many desktop packages</a></dd>
                               <dd class="nav-item"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/><a href="#">Formula 1 Crashes | Shocking</a></dd>
-=======
-                              <dd class="nav-item"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/><a href="#">image Many desktop packages</a></dd>
-                              <dd class="nav-item"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/><a href="#">Many desktop packages</a></dd>
-                              <dd class="nav-item"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/><a href="#">Formula 1 Crashes | Shocking</a></dd>
->>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
                             </dl>
                             <dl class="footer-nav">
                               <dt class="nav-title">About Us</dt>
@@ -422,46 +321,6 @@
 <div class="clearfix"></div>
 <nav class="foot-nav" id="back">
 			<div class="container-fluid" >
-<<<<<<< HEAD
-				<div class="row" >
-					<div class="col-lg-3 col-md-6 col-lg-12">
-						<ul class="clearfix">
-							<li><h4>友情连接</h4></li><br/>
-							<li><a href="#">1</a></li><br/>
-							<li><a href="#">2</a></li><br/>
-							<li><a href="#">3</a></li><br/>
-							<li><a href="#">4</a></li>							
-						</ul>						
-					</div>					
-					<div class="col-lg-3 col-md-6 col-lg-12">
-						<ul >
-							<li><h4>最新动态</h4></li><br/>
-							<li><a href="#"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
-							<li><a href="#"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
-							<li><a href="#"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
-												
-						</ul>
-					</div>
-					<div class="col-lg-3 col-md-6 col-lg-12">
-						<ul >
-							<li><h4>关于我们</h4></li><br/>
-							<li><a href="#">1</a></li><br/>
-							<li><a href="#">2</a></li><br/>
-							<li><a href="#">3</a></li><br/>
-							<li><a href="#">4</a></li>
-					   </ul>
-					</div>
-					<div class="col-lg-3 col-md-6 col-lg-12">
-						<ul >
-							<li><h4>邮箱地址</h4></li></br>
-							<li><a href="#">1</a></li><br/>
-							<li><a href="#">2</a></li><br/>
-							<li><a href="#">3</a></li><br/>
-							<li><a href="#">4</a></li>							
-					    </ul>
-					</div>				
-				</div>	
-=======
 				<div class="container">
 					<div class="row" >
 						<div class="col-lg-3 col-md-6 col-lg-12">
@@ -476,9 +335,9 @@
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
 								<li><h4>最新动态</h4></li><br/>
-								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
-								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
-								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
+								<li><a href="#"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
+								<li><a href="#"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
+								<li><a href="#"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
 													
 							</ul>
 						</div>
@@ -502,7 +361,6 @@
 						</div>				
 					</div>	
 				</div>
->>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 			</div>
 			<div class="foot-text">
 				<p class="text-center">Copyright? 2003-2016 </p>
@@ -535,9 +393,6 @@
 		    </div>
 		  </div>
 </div>
-<<<<<<< HEAD
 <!-- </div> -->
-=======
->>>>>>> a8bd4ad9d7aa3f4fdbe89d306d3f5cdb046bf92d
 	</body>
 </html>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿ <!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title><?php echo ($title); ?>  后台管理</title>
@@ -117,7 +117,6 @@
     </div>
   </div>
 </nav> 
-
  <aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
   <ul class="nav metismenu">
     <li class="profile-sidebar-container">
@@ -372,21 +371,15 @@
           <div class="content-box">
              <div class="content"> 
 
- <form action="<?php echo U('System/user_add');?>" method="post" class="form_wd_23" enctype="multipart/form-data">
- 	<div class="form-group">
- 		<label class="control-label">用户名</label>
- 		<input class="form-control" name="user_name"></div>
- 	<div class="form-group">
- 		<label class="control-label">密码</label>
- 		<input class="form-control" name="user_pwd"></div>
- 	<div class="form-group">
- 		<label class="control-label">头像</label>
-
- 		<input class="dropify"  name="head_photo" type="file"></div>
- 	<button class="btn btn-success">提交</button>
-
+ <div>
+ 	添加新闻
+ 	<form action="">
+ 		
+ 		新闻名称：<input type="text">
+ 		<input type="submit" class="btn btn-success" value="添加"> 
  	</form>
- <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/dropify.min.css"> 
+ </div>
+
  
  </div>
           </div>
@@ -617,7 +610,4 @@
   </script>
 
 
-<div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html> 
- <script src="/lidong/yuanku/Public/js/dropify.min.js"></script>
-
- <script>$('.dropify').dropify();</script>
+<div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html>
