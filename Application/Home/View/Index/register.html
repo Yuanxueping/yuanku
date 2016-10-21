@@ -26,10 +26,12 @@
 
 				<form class="form-signin" role="form" action="__MODULE__/Register/regNewMember" method="POST" enctype="application/x-www-form-urlencoded">
 			        <div class="form-header">
-			        	<h4>注用户册</h4>
-			        	<p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">注册</a></p>
+			        	<!-- <h4>注用户册</h4> -->
+			        	<h4>用户注册</h4>
+			        	<!-- <p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">注册</a></p> -->
 
 			        	<p style="margin-top:5px;">已经注册?&nbsp;<a href="login.html">登录</a></p>
+			        	<p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">找回账户或密码</a></p>
 			        </div>
 			        <div class="message">
 			        	<div id="warn" class="alert alert-warning alert-dismissable" style="display: none;"> 
@@ -48,12 +50,14 @@
 			        <!-- 密码 -->
 			        <div class="form-group">
 
-			        	<p class="form-signin-heading">注册用户名或邮箱地址</p>
+			        	<!-- <p class="form-signin-heading">注册用户名或邮箱地址</p> -->
 
-			        	<p class="form-signin-heading">输入用户名</p>
+			        	<!-- <p class="form-signin-heading">输入用户名</p> -->
+			        	<p class="form-signin-heading">用户名</p>
 
 			          <div class="input-group">
-			            <input type="text" class="form-control" name="username" id="username" autocomplete="off" >
+			          	<!-- <input type="text" class="form-control" name="username" id="username" autocomplete="off> -->
+			            <input type="text" class="form-control" name="username" id="username" autocomplete="off" placeholder="请输入用户名或邮箱">
 			            <div id="div2" style="display:inline;color:red;"></div>
 			          </div>
 
@@ -62,7 +66,8 @@
 			        <div class="form-group">
 			        	<p class="form-signin-heading">密码</p>
 			          <div class="input-group">
-			            <input type="text" class="form-control" name="password" id="password" autocomplete="off">
+			            <!-- <input type="text" class="form-control" name="password" id="password" autocomplete="off"> -->
+			            <input type="password" class="form-control" name="password" id="password" autocomplete="off" placeholder="请输入6-18位的密码，建议含中英文">
 			          </div>
 			        </div>
 					<div class="Btn">
