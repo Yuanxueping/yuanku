@@ -41,6 +41,39 @@ class IndexController extends Controller {
     }
     public function news()
     {
+//新增加
+		$news = M('News');
+		
+		$page_cout=6;
+		
+		$page_num=I('page_num')>0?I('page_num'):1;
+		
+		
+		$start_index=($page_num-1)*$page_cout;
+//		$start_index=0;
+		
+		$news_list=$news->limit($start_index,$page_cout)->select();
+
+		$this->assign('news_list',$news_list);
+		
+//		select count(*) from News
+		$news_total_num=$news->count();
+//		总页数
+		$total_num=ceil($news_total_num/$page_cout);
+		$cur_page_style;
+		for($i=1;$i<=$total_num;$i++){
+			if($page_num==$i){
+				$cur_page_style="style='background-color: #000000;color: #FFFFFF'";
+
+			}
+
+			$page_html.="<a ".$cur_page_style." class='btn' href=".U('Index/news',array('page_num'=>$i)).">$i</a>&nbsp;&nbsp;&nbsp;";
+			$cur_page_style='';
+			
+		}
+		$this->assign('page_html',$page_html);
+
+//新增加
        $cache_a= S('site_name');
        $this->assign('title','新闻列表 - '.$cache_a['site_name']);
     	// do it 
