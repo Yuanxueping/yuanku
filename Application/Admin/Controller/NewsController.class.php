@@ -38,9 +38,24 @@ class NewsController extends AuthController {
     	$this->display();
     }
 
-    public function add()
+    public function news_add()
     {
-    	$this->display();
+    	if(IS_POST) {
+    		$news = D('news');
+			
+			if($news -> create()) {
+				if($news -> add()) {
+					$this -> success('添加成功');
+				} else {
+					$this -> error('添加失败');
+				}
+			} else {
+				$this -> error($news -> getError());
+			}
+    	} else {
+    		$this->display();
+    	}
+    	
     }
   
     public function newsort(){
