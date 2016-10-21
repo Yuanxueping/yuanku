@@ -18,8 +18,8 @@ class NewsController extends AuthController {
     	$this->display();
     }
 
-    public function add()
-    {
+    public function news_add()
+    {	
     	$this->display();
     }
    public function newsort(){

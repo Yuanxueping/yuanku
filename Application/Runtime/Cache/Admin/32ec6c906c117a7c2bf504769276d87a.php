@@ -18,22 +18,22 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/bootstrap.css"> 
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/animate.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/metisMenu.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/jquery_002.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/waves.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/toastr.css">
+  <link rel="stylesheet" href="/lidong_clone/yuanku/Public/css/admin/bootstrap.css"> 
+  <link rel="stylesheet" href="/lidong_clone/yuanku/Public/css/admin/animate.css">
+  <link rel="stylesheet" href="/lidong_clone/yuanku/Public/css/admin/metisMenu.css">
+  <link rel="stylesheet" href="/lidong_clone/yuanku/Public/css/admin/jquery_002.css">
+  <link rel="stylesheet" href="/lidong_clone/yuanku/Public/css/admin/waves.css">
+  <link rel="stylesheet" href="/lidong_clone/yuanku/Public/css/admin/toastr.css">
 
 
 
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/jquery.css">
+  <link rel="stylesheet" href="/lidong_clone/yuanku/Public/css/admin/jquery.css">
 
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/style.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/common.css">
-  <script src="/lidong/yuanku/Public/js/jquery.js"></script>
+  <link rel="stylesheet" href="/lidong_clone/yuanku/Public/css/admin/style.css">
+  <link rel="stylesheet" href="/lidong_clone/yuanku/Public/css/admin/common.css">
+  <script src="/lidong_clone/yuanku/Public/js/jquery.js"></script>
   <!-- 第一步引用 -->
-  <script src="/lidong/yuanku/Public/js/angular.min.js"></script>
+  <script src="/lidong_clone/yuanku/Public/js/angular.min.js"></script>
 
   
 
