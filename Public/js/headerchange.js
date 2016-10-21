@@ -1,4 +1,12 @@
  $(function(){
+           var w=$(window).width();
+           if(w<850){
+            $(".kong").css({
+                        "width":"100%",
+                        "height":"50px"
+                    });
+        
+           }
         	
         	
         	$(window).scroll(function(){
