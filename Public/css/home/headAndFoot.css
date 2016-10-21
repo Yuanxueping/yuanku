@@ -1,22 +1,22 @@
 @charset 'utf-8';
  body{
  	font-family: "微软雅黑"!important;
- 	
  }
   .modal-open {
   overflow:  inherit !important;
   padding-right:0px!important
 }
+
  .navbar-default{
   border-color: transparent!important;
   font-weight: 600!important;
-
  }
  .gaise{
   background-color:#272727!important;
  }
  .navbar{
   border-radius:0!important ;
+  width: 100px!!important;
  }
 .logo {
   height: 40px;
@@ -81,4 +81,14 @@
   padding-top: 20px;
   height: 40px;
   background-color:rgb(17,17,17);
+}
+/*.navbar-toggle{
+  position: absolute;
+  float: none;
+  right:15px;
+}*/
+.row{
+  width: 100%!important;
+  margin-right:0px!important; 
+  margin-left:0px!important
 }
