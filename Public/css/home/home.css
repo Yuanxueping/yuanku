@@ -826,5 +826,82 @@ p {
     transition-delay: .3s;
 }
 
+/*
+**第一第二部分
+*/
+.business{
+	background: #FFFFFF;
+	min-height: 166px;	
+	padding-top: 83px;
+	padding-bottom: 83px;
+}
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section_2_welcome >h2{
+	margin: 0px;
+	font-size: 27px;
+	font-weight: 500;
+	color: #272727;
+	line-height: 32px;
+}
+
+.section_2_welcome > h2 > b{
+	font-size: 40px;
+}
+
+.section_2_welcome > h2 > em{
+	font-style: normal;
+	color: #727272;
+	font-size: 16px;
+}
+
+.section_2_top>.section_2_welcome{
+	min-height: 166px;	
+	float: left;
+}
+
+.section_2_top>.section_2_words{
+	padding-left: 30px;
+	color: #727272;
+	font-size: 16px;
+	line-height: 23px;
+	min-height: 166px;	
+	float: left;
+}
+
+.button-one{
+	color: #2ecc71;
+}
+
+.button-one:hover{
+	color: #000000;
+}
+
+.section_2_bottom > .box{
+	background: #FFFFFF;
+	border: 1px solid #EEEEEE;
+	float: left;
+	padding: 60px 60px 80px 60px;
+	font-size: 16px;
+	line-height: 23px;
+	transition: all 0.5s ease;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: initial;
+}
+
+.box>.fa{
+	font-size: 30px;
+}
+
+.section_2_bottom > .box:hover{
+	background: #2ecc71;
+	color: #FFFFFF;
+}
 
 
