@@ -42,12 +42,33 @@ class LoginController extends Controller {
 			$this->display();
 		}
 	}
-	public function get_verify($value='')
-	{
-		 $verfiy = new Verify();
+
+
+	// 单独出来验证码
+ 	public function get_verify()
+ 	{
+ 		$Verify = new \Think\Verify();
+ 		$Verify->useCurve=false;
+ 		$Verify->useNoise=false;
+
+		 $Verify->entry();
+ 	}	
+
+
+
+
+
+
+
+
+
+
+	// public function get_verify($value='')
+	// {
+	// 	 $verfiy = new Verify();
 		 
-		$verfiy->entry();
-	}
+	// 	$verfiy->entry();
+	// }
 	public function logout() {
 		session('[destroy]');
 		$this->success('退出成功！', U('Login/index'));
