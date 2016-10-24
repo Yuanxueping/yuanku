@@ -56,3 +56,13 @@
 .btn-xs {
 	min-width: 30px;
 }
+
+.btn-toolbar .btn-group {
+	float: none;
+}
+
+.btn-toolbar .btn-group > a {
+	color: black;
+	line-height: 16px;
+	border: 1px solid #ccc!important;
+}

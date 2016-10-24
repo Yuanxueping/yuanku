@@ -1,0 +1,45 @@
+ <include file='Public:header' /> 
+ <include file='Public:menu' /> 
+<link rel="stylesheet" href="__PUBLIC__/css/admin/news.css">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h5>用户列表</h5>
+  </div>
+  <table class="table table-hover">
+        <thead>
+          <tr>
+              <th>#</th>
+              <th>ID</th>
+            <th>用户名</th>
+            <th>密码</th>
+            <th>创建时间</th>
+            <th>头像</th>
+            <th>邮箱地址</th>
+            <!-- <th>日期</th> -->
+            <th class="text-center">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <volist name="client_list" id="client_i" key="k">
+            <tr>
+              <td>{$k}</td>
+          <td>{$client_i.id}</td>
+          <td>{$client_i.user_name}</td>
+          <td>{$client_i.user_pwd}</td>
+          <td> {$client_i.create_time|date="Y-m-d H:i:s",###}</td>
+          <td>{$client_i.head_photo}</td>
+          <td>{$client_iemail_address}</td>
+          <!-- <td>{$vo['date']}</td> -->
+          <td class="text-center">
+            <div class="btn-group">
+              <button onclick="location.href='{:U('Client/client_edit',array('id'=>$client_i[id]))}'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+              <button onclick="location.href='{:U('Client/client_del',array('id'=>$client_i[id]))}'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+            </div>
+          </td>
+        </tr>
+      </volist>
+        </tbody>
+    </table>
+</div>
+
+ <include file='Public:footer' /> 
