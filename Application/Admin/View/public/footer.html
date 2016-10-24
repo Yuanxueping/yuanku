@@ -1,0 +1,231 @@
+
+ </div>
+          </div>
+        </div>
+      </div> 
+
+   </div>
+</div></div>
+  <script src="__PUBLIC__/js/bootstrap.js"></script>
+  <script src="__PUBLIC__/js/metisMenu.js"></script>
+  <script src="__PUBLIC__/js/jquery_006.js"></script>
+  <script src="__PUBLIC__/js/waves.js"></script>
+  <script src="__PUBLIC__/js/toastr.js"></script>
+
+
+  <script src="__PUBLIC__/js/jquery_004.js"></script>
+  <script src="__PUBLIC__/js/dataTables.js"></script>
+  <script src="__PUBLIC__/js/moment.js"></script>
+
+  <script src="__PUBLIC__/js/Chart.js"></script>
+  <script src="__PUBLIC__/js/jquery_005.js"></script>
+  <script src="__PUBLIC__/js/jquery_007.js"></script>
+  <script src="__PUBLIC__/js/jquery_003.js"></script>
+  <script src="__PUBLIC__/js/jquery_002.js"></script>
+ 
+
+  <script>
+  $(function () {
+  /* Make some random data for the Chart*/
+
+      var d1 = [];
+      for (var i = 0; i <= 10; i += 1) {
+          d1.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      var d2 = [];
+      for (var i = 0; i <= 10; i += 1) {
+          d2.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      var d3 = [];
+      for (var i = 0; i <= 10; i += 1) {
+          d3.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      var d4 = [];
+      for (var i = 0; i <= 50; i += 1) {
+          d4.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      /* Chart Options */
+
+      var options = {
+          series: {
+            shadowSize: 0,
+            label: "Qty",
+            lines: {
+                show: true,
+                lineWidth: 2
+            },
+            points: {
+              show: true
+            }
+          },
+          grid: {
+            margin: 10,
+            show: false,
+            hoverable: true,
+            clickable: true
+          },
+          yaxis: {
+              max: 100,
+              min: 0
+          },
+          legend: {
+            show: false
+          },
+          tooltip: {
+            show: true,
+            cssClass: "flot-tooltip",
+            defaultTheme: false,
+            content: '%y.2',
+            shifts: {
+                x: 1,
+                y: -45
+            }
+          }
+      };
+
+      var options2 = {
+          series: {
+            shadowSize: 5,
+            label: "Qty",
+            lines: {
+                show: true,
+                lineWidth: 2
+            }
+          },
+          grid: {
+            margin: 10,
+            show: false,
+            hoverable: true,
+            clickable: false
+          },
+          legend: {
+            show: false
+          },
+          tooltip: {
+            show: true,
+            cssClass: "flot-tooltip",
+            defaultTheme: false,
+            content: '%y.2',
+            shifts: {
+                x: 1,
+                y: -45
+            }
+          }
+      };
+
+
+      /* Let's create the chart */
+     if ($("#line-chart-2")[0]) {
+          $.plot($("#line-chart-2"), [
+              {data: d2, color: '#fff' }
+          ], options);
+      }
+
+      if ($("#line-chart-3")[0]) {
+          $.plot($("#line-chart-3"), [
+              {data: d3, color: '#fff' }
+          ], options);
+      }
+
+      if ($("#line-chart-4")[0]) {
+          $.plot($("#line-chart-4"), [
+              {data: d4, color: '#fff' }
+          ], options2);
+      }
+
+  });
+  </script>
+
+  <script>
+  $(function() {
+      $('.easychart').easyPieChart({
+        barColor: "#F44336",
+        trackColor: '#cccccc',
+        size: 115,
+        lineWidth: 15,
+        scaleLength: 0
+      });
+  });
+  </script>
+
+    <script>
+    $('#table2').DataTable({
+     "dom": '<"toolbar tool2">rtip',
+      info: false,
+      paging: false,
+      responsive: true,
+    });
+
+    $("div.tool2").css("padding", "7px 20px").html('<h5 class="content-title">Exchange rates</h5>');
+
+    //Todo
+    $(document).on('mouseover', '.list-group .checkbox', function () {
+      $('.list-group input:checkbox').each(function () {
+        $(this).on("change", function () {
+          if ($(this).is(":checked")) {
+            $(this).closest(".list-group-item").addClass("checked-todo").removeClass("list-item");
+          } else {
+            $(this).closest(".list-group-item").removeClass("checked-todo");
+          }
+        });
+      });
+    });
+
+    $(document).on('click', '.trash', function (e) {
+      var clearedCompItem = $(this).closest(".list-group-item").remove();
+      e.preventDefault();
+    });
+
+    //Social widget
+    $('.socials span').on('click', function() {
+        $(this).toggleClass("half-opacity");
+    });
+  </script>
+
+    <script src="__PUBLIC__/js/common.js"></script>
+  <script src="__PUBLIC__/js/demo-switch.js">  </script>
+    <script>
+    if($(window).width() >= 1200){
+      $("body").addClass("boxed-layout");
+    }
+    else{
+      $("body").removeClass("boxed-layout");
+    }
+    
+	
+	
+	
+    $(window).resize(function(){
+          if($(window).width() >= 1200){
+      $("body").addClass("boxed-layout");
+    }
+    else{
+      $("body").removeClass("boxed-layout");
+    }
+    });
+    
+  </script>
+  <script>
+    if($(window).width() >= 1200){
+      $("body").addClass("fixed-sidebar");
+    }
+    else{
+      $("body").removeClass("fixed-sidebar");
+    }
+    
+    $(window).resize(function(){
+    if($(window).width() >= 1200){
+      $("body").addClass("fixed-sidebar");
+    }
+    else{
+      $("body").removeClass("fixed-sidebar");
+    }
+    });
+  </script>
+
+
+<div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html>

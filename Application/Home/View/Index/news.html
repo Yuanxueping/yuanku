@@ -1,0 +1,49 @@
+<include file="public/header" />
+
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/news_list.css"/>
+<include file="public/headerstwo"/>
+<div class="container-fluid clearfix toubei">
+	<div class="container clearfix">
+		<h1 class="clearfix" style="color: white;">博客文章</h1>
+		<div class="clearfix">
+			<a href="index.html" class="clearfix">主页&nbsp;<i>&#47;</i></a>
+		</div>
+	</div>
+</div>
+
+<div class="products">		
+	<div class="">
+		<!--增加-->
+		<volist   name="news_list" id="news_i">
+			<div class="container">					
+				<img src="__PUBLIC__/{$news_i.img}" class="news_img"/>
+				<div class="wenzhang">
+					<p>						
+						<a href="{:U('Index/news_detail',array(id=>$news_i[id]))}" class="biaoti">{$news_i.title}</a>
+					</p>
+					<p>
+						<a href="" class="time">{$news_i.date}</a>
+						<i>by:</i>
+						<span> admin</span>
+						<i>in:</i> 
+						<a href="" class="name">TRAVEL</a> 
+						<i>note:</i> 
+						<a href="" class="comments">0 COMMENTS</a>
+					</p>
+					<p>{$news_i.content}
+						<a href="" class="more"> read more...</a>
+					</p>
+				</div>					
+			</div>				
+		</volist>
+	</div>					
+	<div class="paging wrapper">		
+		<div class="container fenye tab">
+			{$page_html}
+		</div>	
+	</div>			
+</div>
+		<script src="__PUBLIC__/js/news_list.js" type="text/javascript" charset="utf-8"></script>
+
+<include file="public/footer" />

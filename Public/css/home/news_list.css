@@ -1,0 +1,139 @@
+a {
+  text-decoration: none !important;
+}
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+/*新增加*/
+.container-fluid.toubei{
+	margin-top: 28px;
+	background-color: #272727;
+  height: 128px;
+}
+.container-fluid.toubei .container {
+  height: 125px;
+  line-height: 125px;
+}
+.container-fluid.toubei .container h1 {
+  height: 125px;
+  line-height: 125px;
+  float: left;
+  font-size: 36px;
+  margin: auto;
+  font-family: "微软雅黑";
+  font-weight: 400;
+}
+.container-fluid.toubei .container div {
+  display: block;
+  height: 125px;
+  color: white;
+  line-height: 125px;
+  float: right;
+  margin: auto;
+}
+.container-fluid.toubei .container div a {
+  color: #999;
+  display: inline-block;
+}
+.container-fluid.toubei .container div a:hover {
+  color: white;
+}
+.container-fluid.toubei .container div a i{
+  color: #999;
+}
+.container-fluid.toubei .container div a:hover i{
+  color: #999;
+}
+/*新增加结束*/
+.products .container {
+  border-bottom: 1px solid #eee;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.products .container .wenzhang {
+  padding-top: 30px;
+  font-size: 14px;
+}
+.products .container .wenzhang p a.biaoti {
+  color: #2ecc71;
+  font-weight: 400;
+  font-size: 30px;
+}
+.products .container .wenzhang p a.biaoti:hover {
+  color: #383634;
+}
+.products .container .wenzhang p a.time {
+  color: #383634;
+  font-size: 16px;
+  padding-right: 18px;
+}
+.products .container .wenzhang p a.time:hover {
+  color: #2ecc71;
+}
+.products .container .wenzhang p a.more {
+  color: #2ecc71;
+}
+.products .container .wenzhang p a.more:hover {
+  color: #383634;
+}
+.products .container .wenzhang p a.name {
+  font-size: 11px;
+  color: #999;
+}
+.products .container .wenzhang p a.name:hover {
+  color: #383634;
+}
+.products .container .wenzhang p a.comments {
+  font-size: 11px;
+  color: #999;
+}
+.products .container .wenzhang p a.comments:hover {
+  color: #383634;
+}
+.products .container .wenzhang p i {
+  color: #bbb;
+  font-style: normal;
+  font-size: 12px;
+}
+.products .container .wenzhang p span {
+  color: #999;
+}
+.news_img {
+  width: 100%;
+}
+.paging {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  /*top: 100px;*/
+}
+/*.products .main {
+  display: none;
+}
+.products .main.selected {
+  display: block;
+}*/
+.tab a {
+  color: #2ecc71;
+  background-color: #eee;
+  outline: none !important;
+}
+.tab a:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.tab a:active {
+  outline: none !important;
+}
+.tab a.active {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=news_list.css.map */

@@ -1,0 +1,116 @@
+body.contact_us,
+div.contact_us{
+  margin-top: 50px;
+  /*margin: 0px;*/
+  padding: 0px;
+  font-family: "微软雅黑";
+  font-weight: 400;
+}
+/*.contact_us .map_contact {
+  padding-left: 0px;
+  margin-bottom: 50px;
+}*/
+.contact_us .contact_head{
+  margin: 0px auto;
+}
+.contact_us .a_style {
+  color: #2ecc71;
+  text-decoration: none;
+}
+.contact_us .a_style:hover {
+  color: #454545;
+  text-decoration: none;
+}
+.contact_us .panel-body {
+  color: #727272;
+  font-size: 14px;
+}
+.contact_us .panel-body .contact_left,
+.contact_us .panel-body .contact_right {
+  margin-bottom: 90px;
+}
+.contact_us .panel-body p {
+  font-weight: 400;
+  line-height: 23px;
+}
+.contact_us .panel-body p:first-of-type {
+  margin-bottom: 23px;
+}
+.contact_us .panel-body p:nth-of-type(2) {
+  margin-bottom: 46px;
+}
+.contact_us .panel-body .row > div {
+  padding: 0px;
+}
+.contact_us .form-group {
+  margin: 30px 0px 0px;/*头部样式引起冲突*/
+  /*margin_bottom:0px;*/
+}
+.contact_us .form-group .form-control {
+  height: 37px;
+  line-height: 23px;
+  padding: 0px 10px;
+  background-color: #f9f9f9;
+  border-top: 2px solid #e3e3e3;
+  border-left: 2px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -mz-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.contact_us .form-group .form-control:focus {
+  border-top: 2px solid #e3e3e3;
+  border-left: 2px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  box-shadow: none;
+}
+.contact_us .form-group textarea.form-control {
+  height: auto;
+}
+.contact_us .submit_btn {
+  margin-top: 30px;
+  color: #FFFFFF;
+}
+.contact_us .submit_btn input[type=submit] {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #2ecc71;
+  border: 1px solid #2ecc71;
+  padding: 14px 20px;
+  line-height: 23px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -mz-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.contact_us .submit_btn .btn:focus,
+.contact_us .submit_btn .btn:hover {
+  /*color: #FFFFFF;*/
+  background-color: #2ecc71;
+  border: 1px solid #2ecc71;
+  outline: none;
+  box-shadow: none;
+}
+.contact_us .contact_right {
+  margin-left: 50px;
+}
+.contact_us .contact_right address {
+  padding: 0px 40px 30px;
+  /*padding: 0px 50px 20px;*/
+}
+.contact_us .contact_right address ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.contact_us .contact_right address h4 {
+  color: #272727;
+  font-size: 20px;
+  line-height: 28px;
+}
+/*# sourceMappingURL=contact_us.css.map */

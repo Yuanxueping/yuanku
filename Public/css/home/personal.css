@@ -1,0 +1,76 @@
+/*
+	*yxp
+	*个人中心页面样式
+ */
+a{
+	text-decoration: none;
+}
+@media screen and (min-width:767px){
+	.form_wd_23{width: 40%;}
+
+}
+.form_wd_23{
+	margin-bottom: 5%;
+}
+.content{
+	width: 90%;
+}
+.personal-right{
+	width: 100%;
+	background-color: white;
+	margin-bottom: 1%;
+}
+.personal-right .kitty{
+	width: 100%;
+	height: 210px;
+}
+.personal-right .kitty > img{
+	margin: 5%;
+	float: left;
+}
+.personal-right .kitty > ul{
+	list-style: none;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 20%;
+	margin-left: 5%;
+}
+.personal-right .kitty > ul > li:nth-child(3){
+	height: 35px;
+	line-height: 35px;
+}
+.personal-right .kitty > ul > li a{
+	text-decoration: none;
+	color: black;
+}
+.personal-right .message{
+	width: 100%;
+}
+.personal-right .message > ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-bottom: 20%;
+}
+.personal-bottom{
+	background-color: white;
+}
+.personal-bottom .product{
+	padding: 10%;
+}
+.personal-bottom .product table{
+	width: 100%;
+}
+.personal-bottom .product span{
+	color: orange;
+}
+.personal-bottom .product a{
+	text-decoration: none;
+	color: #666666;
+}
+/*.kitty > img:hover{
+	transform: rotateX(45deg);
+}*/
