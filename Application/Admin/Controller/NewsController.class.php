@@ -55,7 +55,6 @@ class NewsController extends AuthController {
     	} else {
     		$this->display();
     	}
-    	
     }
   
     public function newsort(){
