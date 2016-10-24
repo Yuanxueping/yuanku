@@ -705,6 +705,24 @@ h4 {
     transition: all 0.3s ease;
     font-family: "arial narrow";
 }
+
+/* for 480px width screen */
+@media only screen and (min-device-width:321px) and (max-device-width:480px){
+	
+	.feature_section10  a{
+		margin-left: 50px;
+		margin-right: 50px;
+		padding-left: 75px;
+		padding-right: 75px;
+	}
+	
+	.purchase{
+		position: relative;
+		top: 35px;
+	}
+	
+}
+
 /**
  * 第十一部分
  */
@@ -727,8 +745,8 @@ h4 {
     background-color: #fff;
 }
 #tabs li a {
-    width:400px;
-    width: 100%;
+    max-width:400px;
+    /*width: 100%;*/
     text-align: left;
     display: block;
     padding: 27px 45px 21px 35px;
@@ -755,6 +773,7 @@ h4 {
     font-weight: 600;
     margin-bottom: 5px;
 }
+
 #tabs_container {
     overflow: hidden;
     position: relative;
@@ -824,6 +843,25 @@ p {
     -o-transition-delay: .3s;
     -ms-transition-delay: .3s;
     transition-delay: .3s;
+}
+
+/* for 480px width screen */
+@media only screen and (min-device-width:321px) and (max-device-width:480px){
+	
+	#tabs_container{
+		margin-top: 10px;
+		padding-top: 10px;
+		padding-left: 1px;
+	}
+	.transition{
+		margin-left: 0px;
+	}
+	#tabs_container > div{
+		padding: 0px;
+	}
+	.hsta{
+		width: 100%;
+	}
 }
 
 /*
