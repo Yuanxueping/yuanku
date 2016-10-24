@@ -10,17 +10,10 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
 	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
 	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
 	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
-=======
-	 <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/thinkphp_3.2.3_full/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
->>>>>>> 3f360c4a041ba0eb6fcbba7a45d7ab06f0b03fcd
 	 
 
 	<!--  <link rel="stylesheet" href="css/headAndFoot.css" />
@@ -37,11 +30,7 @@
 
 
 
-<<<<<<< HEAD
 		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/register.css"/>
-=======
-		<link rel="stylesheet" type="text/css" href="/thinkphp_3.2.3_full/yuanku/Public/css/home/register.css"/>
->>>>>>> 3f360c4a041ba0eb6fcbba7a45d7ab06f0b03fcd
  
   </head>
 <body>
@@ -57,53 +46,31 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#">
-<<<<<<< HEAD
 		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
-=======
-		      	<img class="logo" src="/thinkphp_3.2.3_full/yuanku/Public/img/logoko2.png" />
->>>>>>> 3f360c4a041ba0eb6fcbba7a45d7ab06f0b03fcd
 		      </a>
 		    </div>		
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-<<<<<<< HEAD
 				        <li><a href="/yuanku/index.php/Home/Index/index">首页</a></li>
 				        <li>
 				        <a href="
 				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
-=======
-				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/index">首页</a></li>
-				        <li>
-				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/thinkphp_3.2.3_full/yuanku/index.php/Home/Personal/index';} else{ echo '/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/login'; } ?>
->>>>>>> 3f360c4a041ba0eb6fcbba7a45d7ab06f0b03fcd
 				        ">
 				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
 				        </a>
 				        </li>
 				        <li>
 				        	<a href="
-<<<<<<< HEAD
 				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
-=======
-				        		<?php if(isset($_SESSION['username'])) {echo '/thinkphp_3.2.3_full/yuanku/index.php/Home/Personal/logout';} else{ echo '/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/register'; } ?>
->>>>>>> 3f360c4a041ba0eb6fcbba7a45d7ab06f0b03fcd
 				        	">
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
 				        </li>
-<<<<<<< HEAD
 				        <li><a href="/yuanku/index.php/Home/Index/news">新闻</a></li>
 				        <li><a href="/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
 				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/personal">个人中心</a></li>
-=======
-				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/news">新闻</a></li>
-				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
-				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
-				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/personal">个人中心</a></li>
->>>>>>> 3f360c4a041ba0eb6fcbba7a45d7ab06f0b03fcd
+				        <!-- <li><a href="/yuanku/index.php/Home/Index/personal">个人中心</a></li> -->
 				        
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
@@ -131,11 +98,7 @@
 		<div class="container  box">
 			<div class="col-lg-offset-3 col-lg-6 col-md-12">
 
-<<<<<<< HEAD
 				<form class="form-signin" role="form" action="/yuanku/index.php/Home/Register/regNewMember" method="POST" enctype="application/x-www-form-urlencoded">
-=======
-				<form class="form-signin" role="form" action="/thinkphp_3.2.3_full/yuanku/index.php/Home/Register/regNewMember" method="POST" enctype="application/x-www-form-urlencoded">
->>>>>>> 3f360c4a041ba0eb6fcbba7a45d7ab06f0b03fcd
 			        <div class="form-header">
 			        	<!-- <h4>注用户册</h4> -->
 			        	<h4>用户注册</h4>
@@ -206,15 +169,9 @@
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
 								<li><h4>最新动态</h4></li><br/>
-<<<<<<< HEAD
 								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
 								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
 								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
-=======
-								<li><a href="#"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
-								<li><a href="#"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
-								<li><a href="#"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
->>>>>>> 3f360c4a041ba0eb6fcbba7a45d7ab06f0b03fcd
 													
 							</ul>
 						</div>
@@ -363,8 +320,4 @@
 
 		})
 		</script>			
-<<<<<<< HEAD
 		<script src="/yuanku/Public/js/register.js" type="text/javascript" charset="utf-8"></script>
-=======
-		<script src="/thinkphp_3.2.3_full/yuanku/Public/js/register.js" type="text/javascript" charset="utf-8"></script>
->>>>>>> 3f360c4a041ba0eb6fcbba7a45d7ab06f0b03fcd

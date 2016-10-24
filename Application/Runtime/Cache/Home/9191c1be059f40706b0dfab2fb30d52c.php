@@ -67,7 +67,7 @@
 				        <li><a href="/yuanku/index.php/Home/Personal/news">新闻</a></li>
 				        <li><a href="/yuanku/index.php/Home/Personal/contact_us">联系我们</a></li>
 				        <li><a href="/yuanku/index.php/Home/Personal/about_us">关于我们</a></li>
-				        <li><a href="/yuanku/index.php/Home/Personal/personal">个人中心</a></li>
+				        <!-- <li><a href="/yuanku/index.php/Home/Personal/personal">个人中心</a></li> -->
 				        
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">

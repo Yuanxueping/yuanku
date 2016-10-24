@@ -410,6 +410,12 @@
     </table>
 </div>
 
+<div class="btn-toolbar text-center" role="toolbar">
+	<div class="btn-group">
+		<?php echo ($page_html); ?>
+	</div>
+</div>
+<script src="/yuanku/Public/js/admin/news.js"></script>
  
  </div>
           </div>
