@@ -163,7 +163,7 @@
       <a href="#"><i class="zmdi zmdi-google-pages"></i>用户管理<span class="zmdi arrow"></span></a>
       <ul class="nav nav-inside collapse" aria-expanded="false">
         <li class="inside-title">用户列表</li>
-        <li><a href="/land/l3/article.html">用户列表</a></li>
+        <li><a href="<?php echo U('client/client_list');?>">用户列表</a></li>
         <li><a href="/land/l3/article.html">咨询列表</a></li>
       </ul>
     </li>
@@ -173,7 +173,7 @@
         <li class="inside-title">新闻管理</li>
         <li><a href="<?php echo U('news/index');?>">新闻列表</a></li>
         <li><a href="<?php echo U('news/newsort');?>">新闻分类</a></li>
-        <li><a href="<?php echo U('news/add');?>">添加新闻</a></li>
+        <li><a href="<?php echo U('news/news_add');?>">添加新闻</a></li>
         
       </ul>
     </li>  
@@ -374,9 +374,12 @@
 <div class="panel panel-primary">
 	<div class="panel-heading">
 		<h5>新闻分类</h5>
-		<button class="btn btn-success " onclick="location.href='<?php echo U('News/newsort');?>'">类型</button>
+		<!--<button class="btn btn-success " onclick="location.href='<?php echo U('News/newsort');?>'">类型</button>
 		<button class="btn btn-success " onclick="location.href='<?php echo U('News/sortbyauthor');?>'">作者</button>
-		<button class="btn btn-success " onclick="location.href='<?php echo U('News/sortbytime');?>'">时间</button>
+		<button class="btn btn-success " onclick="location.href='<?php echo U('News/sortbytime');?>'">时间</button>-->
+		<button class="btn btn-success change" >类型</button>
+		<button class="btn btn-success change">作者</button>
+		<button class="btn btn-success change">时间</button>
 
 
 
@@ -395,7 +398,7 @@
 		        <th class="text-center">操作</th>
         	</tr>
       	</thead>
-      	<tbody>
+      	<tbody id="ajax_rt_box">
       		<?php if(is_array($news_list)): $k = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
       				<td><?php echo ($k); ?></td>
 					<td><?php echo ($vo['nid']); ?></td>
@@ -415,6 +418,39 @@
       	</tbody>
     </table>
 </div>
+<div class="btn-toolbar text-center" role="toolbar">
+	<div class="btn-group">
+		<?php echo ($page_html); ?>
+	</div>
+</div>
+<script type="text/javascript">
+var ajax_url='<?php echo U("News/newsort");?>';
+$(function(){
+	var arr=$(".change");
+	$.each(arr,function(i,item){
+        $(item).click(function(){
+        
+        	value=i;
+//      	$.post(ajax_url,{"value":value});
+        	$.ajax({
+			   type: "POST",
+			   url: "<?php echo U("News/newsort_j");?>",
+			   data: {"value":value},
+			   success: function(msg){
+				$("#ajax_rt_box").html(msg)
+     
+   }
+});
+        })
+	
+	})
+
+	
+})
+
+	
+</script>
+
 
  
  </div>
