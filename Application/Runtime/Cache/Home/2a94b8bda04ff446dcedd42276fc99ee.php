@@ -129,7 +129,7 @@
 					乱数假文搜索会发现很多网站尚在襁褓中的版本已经发展了多年的目的。</p>
 				<a href="#" class="button-one">
 					一次神奇的旅途 &nbsp;
-					<i class="fa fa-long-arrow-right"></i>
+					<span class="glyphicon glyphicon-arrow-right"></span>
 				</a>
 			</div>
 		</div>
@@ -140,22 +140,22 @@
 <!--第二部分-->
 <div class="section_2_bottom">
 	<div class="box col-lg-3 col-md-3 col-sm-6 col-xs-12">
-		<i class="fa fa-anchor"></i>
+		<span class="glyphicon glyphicon-pencil"></span>
 		<h5>网站设计</h5>
 		<p>对于乱数假文地球发现很多网站还有最近与桌面出版像婴儿的年软件版本。</p>
 	</div>
 	<div class="box col-lg-3 col-md-3 col-sm-6 col-xs-12">
-		<i class="fa fa-code"></i>
+		<span class="glyphicon glyphicon-signal"></span>
 		<h5>网站开发</h5>
 		<p>对于乱数假文地球发现很多网站还有最近与桌面出版像婴儿的年软件版本。</p>
 	</div>
 	<div class="box col-lg-3 col-md-3 col-sm-6 col-xs-12">
-		<i class="fa fa-paper-plane-o"></i>
+		<span class="glyphicon glyphicon-link"></span>
 		<h5>在线营销</h5>
 		<p>对于乱数假文地球发现很多网站还有最近与桌面出版像婴儿的年软件版本。</p>
 	</div>
 	<div class="box col-lg-3 col-md-3 col-sm-6 col-xs-12">
-		<i class="fa fa-heart"></i>
+		<span class="glyphicon glyphicon-heart"></span>
 		<h5>良好支持</h5>
 		<p>对于乱数假文地球发现很多网站还有最近与桌面出版像婴儿的年软件版本。</p>
 	</div>
@@ -800,7 +800,7 @@
 					<div class="box01">
 						<img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/2h1BK2H2Quk.jpg?itok=Z0ts4wwD" alt="" typeof="Image" />
 						<div class="content">
-							<h4>公式1 崩溃 | 震惊</h4>
+							<h4>方程式1 崩溃 | 震惊</h4>
 							<b>May 12, 2016</b>
 						</div>
 					</div>
@@ -850,7 +850,7 @@
 
 </div>
 <!--第十一部分-->
-<div class="views-element-container feature_section11">
+<div class="views-element-container feature_section11 col-lg-3 col-md-5 col-sm-12 col-xs-12">
 
 	<div class="container">
 		<div id="tabs">
@@ -893,7 +893,7 @@
 				</li>
 
 			</ul>
-			<div id="tabs_container" class="transition">
+			<div id="tabs_container" class="transition ">
 				<div id="tabs1" title=""> <img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/site-image01.jpg" width="585" height="200" alt="content" typeof="Image" />
 
 					<h3>图形 &amp; 设计</h3>
@@ -921,7 +921,6 @@
 </div>
 
 <script src="/thinkphp_3.2.3_full/yuanku/Public/js/home.js" type="text/javascript" charset="utf-8"></script>
-
 
 
 
