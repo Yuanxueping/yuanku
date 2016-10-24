@@ -81,15 +81,17 @@ body {
   font-weight: 400;
 }
 .theme {
-  width: 23%;
-  margin-right: 2%;
+ /* width: 23%;*/
+  margin-top: 10px;
   padding: 0px;
+  padding-left: 2%;
 }
 .theme > img {
-  width: 100%;
+  width: 95%;
 }
 .theme .theme_title {
-  width: 100%;
+  width: 95%;
+
   background: #272727;
   text-align: center;
   margin-top: -32px;
@@ -113,6 +115,7 @@ body {
   width: 100%;
   vertical-align: baseline;
   height: 540px;
+  vertical-align: middle;
 }
 .green_center {
   color: #ffffff;
@@ -171,9 +174,10 @@ body {
 }
 .lunbo{
   position: relative;
-  height: 140px;
+  height: 150px;
   margin-top: 10px;
   width: 100%;
+  overflow: hidden;
 }
 .lunbo:before .lunbo:after{
   content: " ";
@@ -185,11 +189,12 @@ body {
   top: 0px;
   left: 0px;
   display: none;
-
+  
 }
 
 .people_detail .left {
-  padding-left: 50px;
+  position: absolute;
+  right: 10%;
 }
 .people_detail .left img {
   margin: 0 auto;
@@ -201,7 +206,7 @@ body {
   background-position: center center;
   text-align: center;
   vertical-align: middle;
-  padding-left: 0px;
+  padding: 0px;
 }
 .people_detail .left h5 {
   width: 100%;
@@ -230,8 +235,12 @@ body {
 }
 .dian_all {
   text-align: center;
-  padding-top: 20px;
+  margin-top: 10px;
   
+}
+.bannav{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .dian_all .dian {
   display: inline-block;
