@@ -8,7 +8,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background: transparent;
 }
 @font-face { 
-  font-family: HOME-FONT; 
+  font-family: "微软雅黑"; 
   src: url(../../fonts/nevis.ttf); 
 } 
 body, input, textarea {
