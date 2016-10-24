@@ -1,4 +1,8 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!-- /*
+	*yxp
+	*修改用户信息页面
+ */ -->
+<!DOCTYPE html>
 <html>
 <head lang="zh">
 	<title><?php echo ($title); ?></title>
@@ -6,17 +10,10 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-	 <link rel="stylesheet" href="/lidong/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/lidong/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/lidong/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
-=======
 	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
 	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
 	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
 	 
 
 	<!--  <link rel="stylesheet" href="css/headAndFoot.css" />
@@ -32,13 +29,6 @@
 		
 
 
-
-
-<<<<<<< HEAD
-<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/news_list.css"/>
-=======
-<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/news_list.css"/>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
   </head>
 <body>
 <!-- <div class="container-fluid"> -->
@@ -53,53 +43,31 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#">
-<<<<<<< HEAD
-		      	<img class="logo" src="/lidong/yuanku/Public/img/logoko2.png" />
-=======
 		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
 		      </a>
 		    </div>		
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-<<<<<<< HEAD
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/index">首页</a></li>
-				        <li>
-				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/index';} else{ echo '/lidong/yuanku/index.php/Home/Index/login'; } ?>
-=======
 				        <li><a href="/yuanku/index.php/Home/Index/index">首页</a></li>
 				        <li>
 				        <a href="
 				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
 				        ">
 				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
 				        </a>
 				        </li>
 				        <li>
 				        	<a href="
-<<<<<<< HEAD
-				        		<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/logout';} else{ echo '/lidong/yuanku/index.php/Home/Index/register'; } ?>
-=======
 				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
 				        	">
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
 				        </li>
-<<<<<<< HEAD
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/news">新闻</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/personal">个人中心</a></li>
-=======
-				        <li><a href="/yuanku/index.php/Home/Index/news">新闻</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/personal">个人中心</a></li>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+				        <li><a href="/yuanku/index.php/Home/Personal/news">新闻</a></li>
+				        <li><a href="/yuanku/index.php/Home/Personal/contact_us">联系我们</a></li>
+				        <li><a href="/yuanku/index.php/Home/Personal/about_us">关于我们</a></li>
+				        <!-- <li><a href="/yuanku/index.php/Home/Personal/personal">个人中心</a></li> -->
 				        
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
@@ -110,54 +78,75 @@
 	            </div>
 		  </div>
 	</nav>
-<div class="container-fluid clearfix toubei">
-	<div class="container clearfix">
-		<h1 class="clearfix" style="color: white;">博客文章</h1>
-		<div class="clearfix">
-			<a href="index.html" class="clearfix">主页&nbsp;<i>&#47;</i></a>
-		</div>
-	</div>
-</div>
+		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/personal.css"/>
+		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/site.min.css">
+		<script src="/yuanku/Public/js/site.min.js" type="text/javascript" charset="utf-8"></script>
+	
 
-<div class="products">		
-	<div class="">
-		<!--增加-->
-		<?php if(is_array($news_list)): $i = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_i): $mod = ($i % 2 );++$i;?><div class="container">					
-<<<<<<< HEAD
-				<img src="/lidong/yuanku/Public/<?php echo ($news_i["img"]); ?>" class="news_img"/>
-=======
-				<img src="/yuanku/Public/<?php echo ($news_i["img"]); ?>" class="news_img"/>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
-				<div class="wenzhang">
-					<p>
-						<a href="<?php echo U('Index/news_detail');?>" class="biaoti"><?php echo ($news_i["title"]); ?></a>
-					</p>
-					<p>
-						<a href="" class="time"><?php echo ($news_i["date"]); ?></a>
-						<i>by:</i>
-						<span> admin</span>
-						<i>in:</i> 
-						<a href="" class="name">TRAVEL</a> 
-						<i>note:</i> 
-						<a href="" class="comments">0 COMMENTS</a>
-					</p>
-					<p><?php echo ($news_i["content"]); ?>
-						<a href="" class="more"> read more...</a>
-					</p>
-				</div>					
-			</div><?php endforeach; endif; else: echo "" ;endif; ?>
-	</div>					
-	<div class="paging wrapper">		
-		<div class="container fenye tab">
-			<?php echo ($page_html); ?>
-		</div>	
-	</div>			
-</div>
-<<<<<<< HEAD
-		<script src="/lidong/yuanku/Public/js/news_list.js" type="text/javascript" charset="utf-8"></script>
-=======
-		<script src="/yuanku/Public/js/news_list.js" type="text/javascript" charset="utf-8"></script>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+		<div class="container-fluid" style="margin-top:55px;">
+    	<!--documents-->
+	        <div class="row row-offcanvas row-offcanvas-left">
+	          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+	            <ul class="list-group panel">
+	                <li class="list-group-item"><i class="glyphicon glyphicon-align-justify"></i> <b>侧边栏</b></li>
+	                <li class="list-group-item"><a href="index.html"><i class="glyphicon glyphicon-home"></i>主页 </a></li>
+	                <li class="list-group-item"><a href="login.html"><i class="glyphicon glyphicon-certificate"></i>登录 </a></li>
+	                <li class="list-group-item"><a href="register.html"><i class="glyphicon glyphicon-th-list"></i>注册 </a></li>
+	                <li class="list-group-item"><a href="news.html"><i class="glyphicon glyphicon-list-alt"></i>新闻</a></li>
+	                <li class="list-group-item"><a href="contact_us.html"><i class="glyphicon glyphicon-envelope"></i>联系我们</a></li>
+	                <li class="list-group-item"><a href="about_us.html"><i class="glyphicon glyphicon-heart"></i>关于我们</a></li>
+	                
+	                
+	              </ul>
+	          </div>
+	          <div class="col-xs-12 col-sm-9 content">
+	            <div class="panel panel-default">
+	              <div class="panel-heading">
+	                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a>
+	                <a href="./personal.html" style=""> 个人中心</a></h3>
+	              </div>
+	              <div class="panel-body" style="margin-bottom:10%;">
+		            	<div class="content"> 
+
+							 <form action="/yuanku/index.php/Home/Personal/update" method="post" class="form_wd_23" enctype="multipart/form-data" class="form_wd_23">
+							 	<div class="form-group">
+							 		<label class="control-label">用户名</label>
+							 		<input class="form-control" style="display:none" name="user_name"  value="<?php echo (session('username')); ?>">
+							 		<input class="form-control" value="<?php echo (session('username')); ?>" disabled="true">
+							 	<div class="form-group">
+							 	</div>
+							 	<div class="form-group">
+							 		<label class="control-label">密码</label>
+							 		<input class="form-control" name="user_pwd">
+							 	</div>
+							 	<div class="form-group">
+
+							 		<label class="control-label">邮箱</label>
+							 		<input class="form-control" name="email_address">
+							 	</div>
+							 	<div class="form-group">
+
+							 		<label class="control-label">头像</label>
+							 		<input class="dropify"  name="head_photo" type="file">
+							 	</div>
+							 	<button class="btn btn-success waves-effect">提交</button>
+
+								</form>
+							 <link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css"> 
+						 
+						</div>  
+				  </div>
+
+	              </div><!-- panel body -->
+	            </div>
+	        </div><!-- content -->
+	      </div>
+	    </div>
+
+
+<script src="/yuanku/Public/js/dropify.min.js"></script>
+
+ <script>$('.dropify').dropify();</script>
 
 
 
@@ -178,15 +167,9 @@
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
 								<li><h4>最新动态</h4></li><br/>
-<<<<<<< HEAD
-								<li><a href="#"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
-								<li><a href="#"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
-								<li><a href="#"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
-=======
 								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
 								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
 								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
 													
 							</ul>
 						</div>

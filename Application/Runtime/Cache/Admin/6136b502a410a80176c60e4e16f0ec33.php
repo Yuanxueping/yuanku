@@ -19,22 +19,22 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  
   
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/material-design-iconic-font.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/animate.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/metisMenu.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/jquery_002.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/waves.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/toastr.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/material-design-iconic-font.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/animate.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/metisMenu.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/jquery_002.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/waves.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/toastr.css">
 
 
 
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/jquery.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/jquery.css">
 
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/style.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/bootstrap.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/common.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/style.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/bootstrap.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/common.css">
 
-  <script src="/lidong/yuanku/Public/js/jquery.js"></script>
+  <script src="/yuanku/Public/js/jquery.js"></script>
 <!--
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -43,7 +43,7 @@
       <script src="bower_components/html5shiv/dist/html5shiv.min,js"></script>
       <script src="bower_components/respondJs/dest/respond.min.js"></script>
     <![endif]-->
-<script src="/lidong/yuanku/Public/js/jquery_008.js"></script></head>
+<script src="/yuanku/Public/js/jquery_008.js"></script></head>
 
 <body class="fixed-all boxed-layout fixed-sidebar mCustomScrollbar _mCS_4 mCS-autoHide" style="overflow: visible;">
  <div id="mCSB_4" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_4_container" class="mCSB_container" style="position: relative; top: -164px; left: 0px;" dir="ltr">
@@ -57,7 +57,7 @@
    <nav class="navbar navbar-indigo">
  <div class="navbar-header container brand-orange">
    <a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
-   <a href="/lidong/yuanku/admin" class="logo">力动企业</a>
+   <a href="/yuanku/admin" class="logo">力动企业</a>
    <a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="icon-logo"></a>
  </div>
   <div class="navbar-container clearfix">
@@ -123,7 +123,7 @@
     <li class="profile-sidebar-container">
       <div class="profile-sidebar text-center">
         <div class="profile-userpic">
-          <img src="/lidong/yuanku/Uploads<?php echo ($user_info["head_photo"]); ?>" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
+          <img src="/yuanku/Uploads<?php echo ($user_info["head_photo"]); ?>" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
           <span class="online"></span>
         </div>
         <div class="profile-usertitle">
@@ -164,7 +164,7 @@
       <a href="#"><i class="zmdi zmdi-google-pages"></i>用户管理<span class="zmdi arrow"></span></a>
       <ul class="nav nav-inside collapse" aria-expanded="false">
         <li class="inside-title">用户列表</li>
-        <li><a href="/land/l3/article.html">用户列表</a></li>
+        <li><a href="<?php echo U('client/client_list');?>">用户列表</a></li>
         <li><a href="/land/l3/article.html">咨询列表</a></li>
       </ul>
     </li>
@@ -371,6 +371,54 @@
         <div class="col-md-12">
           <div class="content-box">
              <div class="content"> 
+<<<<<<< HEAD:Application/Runtime/Cache/Admin/6136b502a410a80176c60e4e16f0ec33.php
+=======
+<link rel="stylesheet" href="/yuanku/Public/css/admin/news.css">
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h5>新闻分类</h5>
+		<button class="btn btn-success " onclick="location.href='<?php echo U('News/newsort');?>'">类型</button>
+		<button class="btn btn-success " onclick="location.href='<?php echo U('News/sortbyauthor');?>'">作者</button>
+		<button class="btn btn-success " onclick="location.href='<?php echo U('News/sortbytime');?>'">时间</button>
+
+
+
+	</div>
+	<table class="table table-hover">
+      	<thead>
+        	<tr>
+	          	<th>#</th>
+	          	<th>ID</th>
+		        <th>新闻标题</th>
+		        <th>作者</th>
+		        <th>分类</th>
+		        <th>内容</th>
+		        <th>图片</th>
+		        <th>日期</th>
+		        <th class="text-center">操作</th>
+        	</tr>
+      	</thead>
+      	<tbody>
+      		<?php if(is_array($news_list)): $k = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
+      				<td><?php echo ($k); ?></td>
+					<td><?php echo ($vo['nid']); ?></td>
+					<td><?php echo ($vo['title']); ?></td>
+					<td><?php echo ($vo['name']); ?></td>
+					<td><?php echo ($vo['sort_name']); ?></td>
+					<td><?php echo ($vo['content']); ?></td>
+					<td><?php echo ($vo['img']); ?></td>
+					<td><?php echo ($vo['date']); ?></td>
+					<td class="text-center">
+						<div class="btn-group">
+							<button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+							<button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+						</div>
+					</td>
+				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+      	</tbody>
+    </table>
+</div>
+>>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56:Application/Runtime/Cache/Admin/2d6d320910ec31d24b294ad8c03a0f54.php
 
  <form action="<?php echo U('System/user_edit');?>" method="post" class="form_wd_23" enctype="multipart/form-data">
  	<div class="form-group">
@@ -396,22 +444,22 @@
 
    </div>
 </div></div>
-  <script src="/lidong/yuanku/Public/js/bootstrap.js"></script>
-  <script src="/lidong/yuanku/Public/js/metisMenu.js"></script>
-  <script src="/lidong/yuanku/Public/js/jquery_006.js"></script>
-  <script src="/lidong/yuanku/Public/js/waves.js"></script>
-  <script src="/lidong/yuanku/Public/js/toastr.js"></script>
+  <script src="/yuanku/Public/js/bootstrap.js"></script>
+  <script src="/yuanku/Public/js/metisMenu.js"></script>
+  <script src="/yuanku/Public/js/jquery_006.js"></script>
+  <script src="/yuanku/Public/js/waves.js"></script>
+  <script src="/yuanku/Public/js/toastr.js"></script>
 
 
-  <script src="/lidong/yuanku/Public/js/jquery_004.js"></script>
-  <script src="/lidong/yuanku/Public/js/dataTables.js"></script>
-  <script src="/lidong/yuanku/Public/js/moment.js"></script>
+  <script src="/yuanku/Public/js/jquery_004.js"></script>
+  <script src="/yuanku/Public/js/dataTables.js"></script>
+  <script src="/yuanku/Public/js/moment.js"></script>
 
-  <script src="/lidong/yuanku/Public/js/Chart.js"></script>
-  <script src="/lidong/yuanku/Public/js/jquery_005.js"></script>
-  <script src="/lidong/yuanku/Public/js/jquery_007.js"></script>
-  <script src="/lidong/yuanku/Public/js/jquery_003.js"></script>
-  <script src="/lidong/yuanku/Public/js/jquery_002.js"></script>
+  <script src="/yuanku/Public/js/Chart.js"></script>
+  <script src="/yuanku/Public/js/jquery_005.js"></script>
+  <script src="/yuanku/Public/js/jquery_007.js"></script>
+  <script src="/yuanku/Public/js/jquery_003.js"></script>
+  <script src="/yuanku/Public/js/jquery_002.js"></script>
  
 
   <script>
@@ -576,8 +624,8 @@
     });
   </script>
 
-    <script src="/lidong/yuanku/Public/js/common.js"></script>
-  <script src="/lidong/yuanku/Public/js/demo-switch.js">  </script>
+    <script src="/yuanku/Public/js/common.js"></script>
+  <script src="/yuanku/Public/js/demo-switch.js">  </script>
     <script>
     if($(window).width() >= 1200){
       $("body").addClass("boxed-layout");

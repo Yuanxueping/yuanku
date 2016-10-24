@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title><?php echo ($title); ?>  后台管理</title>
@@ -173,7 +173,7 @@
         <li class="inside-title">新闻管理</li>
         <li><a href="<?php echo U('news/index');?>">新闻列表</a></li>
         <li><a href="<?php echo U('news/newsort');?>">新闻分类</a></li>
-        <li><a href="<?php echo U('news/add');?>">添加新闻</a></li>
+        <li><a href="<?php echo U('news/news_add');?>">添加新闻</a></li>
         
       </ul>
     </li>  
@@ -372,80 +372,43 @@
              <div class="content"> 
 <link rel="stylesheet" href="/yuanku/Public/css/admin/news.css">
 <div class="panel panel-primary">
-	<div class="panel-heading">
-		<h5>新闻分类</h5>
-		<!--<button class="btn btn-success " onclick="location.href='<?php echo U('News/newsort');?>'">类型</button>
-		<button class="btn btn-success " onclick="location.href='<?php echo U('News/sortbyauthor');?>'">作者</button>
-		<button class="btn btn-success " onclick="location.href='<?php echo U('News/sortbytime');?>'">时间</button>-->
-		<button class="btn btn-success change" >类型</button>
-		<button class="btn btn-success change">作者</button>
-		<button class="btn btn-success change">时间</button>
-
-
-
-	</div>
-	<table class="table table-hover">
-      	<thead>
-        	<tr>
-	          	<th>#</th>
-	          	<th>ID</th>
-		        <th>新闻标题</th>
-		        <th>作者</th>
-		        <th>分类</th>
-		        <th>内容</th>
-		        <th>图片</th>
-		        <th>日期</th>
-		        <th class="text-center">操作</th>
-        	</tr>
-      	</thead>
-      	<tbody>
-      		<?php if(is_array($news_list)): $k = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
-      				<td><?php echo ($k); ?></td>
-					<td><?php echo ($vo['nid']); ?></td>
-					<td><?php echo ($vo['title']); ?></td>
-					<td><?php echo ($vo['name']); ?></td>
-					<td><?php echo ($vo['sort_name']); ?></td>
-					<td><?php echo ($vo['content']); ?></td>
-					<td><?php echo ($vo['img']); ?></td>
-					<td><?php echo ($vo['date']); ?></td>
-					<td class="text-center">
-						<div class="btn-group">
-							<button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
-							<button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
-						</div>
-					</td>
-				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-      	</tbody>
+  <div class="panel-heading">
+    <h5>用户列表</h5>
+  </div>
+  <table class="table table-hover">
+        <thead>
+          <tr>
+              <th>#</th>
+              <th>ID</th>
+            <th>用户名</th>
+            <th>密码</th>
+            <th>创建时间</th>
+            <th>头像</th>
+            <th>邮箱地址</th>
+            <!-- <th>日期</th> -->
+            <th class="text-center">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php if(is_array($client_list)): $k = 0; $__LIST__ = $client_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$client_i): $mod = ($k % 2 );++$k;?><tr>
+              <td><?php echo ($k); ?></td>
+          <td><?php echo ($client_i["id"]); ?></td>
+          <td><?php echo ($client_i["user_name"]); ?></td>
+          <td><?php echo ($client_i["user_pwd"]); ?></td>
+          <td> <?php echo (date("Y-m-d H:i:s",$client_i["create_time"])); ?></td>
+          <td><?php echo ($client_i["head_photo"]); ?></td>
+          <td><?php echo ($client_iemail_address); ?></td>
+          <!-- <td><?php echo ($vo['date']); ?></td> -->
+          <td class="text-center">
+            <div class="btn-group">
+              <button onclick="location.href='<?php echo U('Client/client_edit',array('id'=>$client_i[id]));?>'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+              <button onclick="location.href='<?php echo U('Client/client_del',array('id'=>$client_i[id]));?>'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+            </div>
+          </td>
+        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+        </tbody>
     </table>
 </div>
-<script type="text/javascript">
-var ajax_url='<?php echo U("News/newsort");?>';
-$(function(){
-//	var value;
-	var arr=$(".change");
-	$.each(arr,function(i,item){
-        $(item).click(function(){
-        	value=i;
-//      	$.post(ajax_url,{"value":value});
-        	$.ajax({
-			   type: "POST",
-			   url: "<?php echo U("News/newsort");?>",
-			   data: {"value":value},
-			   success: function(msg){
-			     $("body").html(msg);
-     
-   }
-});
-        })
-	
-	})
-
-	
-})
-
-	
-</script>
-
 
  
  </div>

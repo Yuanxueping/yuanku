@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title><?php echo ($title); ?>  后台管理</title>
@@ -117,6 +117,7 @@
     </div>
   </div>
 </nav> 
+
  <aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
   <ul class="nav metismenu">
     <li class="profile-sidebar-container">
@@ -370,83 +371,24 @@
         <div class="col-md-12">
           <div class="content-box">
              <div class="content"> 
-<link rel="stylesheet" href="/yuanku/Public/css/admin/news.css">
-<div class="panel panel-primary">
-	<div class="panel-heading">
-		<h5>新闻分类</h5>
-		<!--<button class="btn btn-success " onclick="location.href='<?php echo U('News/newsort');?>'">类型</button>
-		<button class="btn btn-success " onclick="location.href='<?php echo U('News/sortbyauthor');?>'">作者</button>
-		<button class="btn btn-success " onclick="location.href='<?php echo U('News/sortbytime');?>'">时间</button>-->
-		<button class="btn btn-success change" >类型</button>
-		<button class="btn btn-success change">作者</button>
-		<button class="btn btn-success change">时间</button>
 
+ <div class="head success-bg clearfix">
+ 	<h5 class="content-title pull-left">系统设置</h5>
 
+ </div>
+<div class="content">
+ <form action="/yuanku/index.php/Admin/System/save" method="post" class="form-horizontal">
+ 	<div class="form-group">
+ 		<label for="inputText" class="col-sm-2 control-label">项目名称：</label>
+ 		<div class="col-sm-10">
+ 			<input class="form-control" name="site_name" id="inputText" placeholder="请输入名称" type="text"></div>
+ 	</div>
+ 
 
-	</div>
-	<table class="table table-hover">
-      	<thead>
-        	<tr>
-	          	<th>#</th>
-	          	<th>ID</th>
-		        <th>新闻标题</th>
-		        <th>作者</th>
-		        <th>分类</th>
-		        <th>内容</th>
-		        <th>图片</th>
-		        <th>日期</th>
-		        <th class="text-center">操作</th>
-        	</tr>
-      	</thead>
-      	<tbody>
-      		<?php if(is_array($news_list)): $k = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
-      				<td><?php echo ($k); ?></td>
-					<td><?php echo ($vo['nid']); ?></td>
-					<td><?php echo ($vo['title']); ?></td>
-					<td><?php echo ($vo['name']); ?></td>
-					<td><?php echo ($vo['sort_name']); ?></td>
-					<td><?php echo ($vo['content']); ?></td>
-					<td><?php echo ($vo['img']); ?></td>
-					<td><?php echo ($vo['date']); ?></td>
-					<td class="text-center">
-						<div class="btn-group">
-							<button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
-							<button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
-						</div>
-					</td>
-				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-      	</tbody>
-    </table>
+ 	<button class="btn btn-primary ">提交</button>
+
+ </form>
 </div>
-<script type="text/javascript">
-var ajax_url='<?php echo U("News/newsort");?>';
-$(function(){
-//	var value;
-	var arr=$(".change");
-	$.each(arr,function(i,item){
-        $(item).click(function(){
-        	value=i;
-//      	$.post(ajax_url,{"value":value});
-        	$.ajax({
-			   type: "POST",
-			   url: "<?php echo U("News/newsort");?>",
-			   data: {"value":value},
-			   success: function(msg){
-			     $("body").html(msg);
-     
-   }
-});
-        })
-	
-	})
-
-	
-})
-
-	
-</script>
-
-
  
  </div>
           </div>
