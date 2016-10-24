@@ -374,9 +374,12 @@
 <div class="panel panel-primary">
 	<div class="panel-heading">
 		<h5>新闻分类</h5>
-		<button class="btn btn-success " onclick="location.href='<?php echo U('News/newsort');?>'">类型</button>
+		<!--<button class="btn btn-success " onclick="location.href='<?php echo U('News/newsort');?>'">类型</button>
 		<button class="btn btn-success " onclick="location.href='<?php echo U('News/sortbyauthor');?>'">作者</button>
-		<button class="btn btn-success " onclick="location.href='<?php echo U('News/sortbytime');?>'">时间</button>
+		<button class="btn btn-success " onclick="location.href='<?php echo U('News/sortbytime');?>'">时间</button>-->
+		<button class="btn btn-success change" >类型</button>
+		<button class="btn btn-success change">作者</button>
+		<button class="btn btn-success change">时间</button>
 
 
 
@@ -415,6 +418,34 @@
       	</tbody>
     </table>
 </div>
+<script type="text/javascript">
+var ajax_url='<?php echo U("News/newsort");?>';
+$(function(){
+//	var value;
+	var arr=$(".change");
+	$.each(arr,function(i,item){
+        $(item).click(function(){
+        	value=i;
+//      	$.post(ajax_url,{"value":value});
+        	$.ajax({
+			   type: "POST",
+			   url: "<?php echo U("News/newsort");?>",
+			   data: {"value":value},
+			   success: function(msg){
+			     $("body").html(msg);
+     
+   }
+});
+        })
+	
+	})
+
+	
+})
+
+	
+</script>
+
 
  
  </div>
