@@ -18,47 +18,36 @@
          <th class="text-center">操作</th>
        </tr>
      </thead>
-     <tbody>
-
-       <volist   name="user_list" id="user_i">
-         <tr>
-           <td class="table-check">{$user_i.id}</td>
-           <td>
-             {$user_i.user_name}
-             <br></td>
-           <td class="pwd_box " pwd="{$user_i.user_pwd}"  id_val="{$user_i.id}">
-             {$user_i.user_pwd}
-             <br></td>
-
-           <td class="table-date">
-             {$user_i.create_time|date="Y-m-d H:i:s",###} <i class="zmdi zmdi-time"></i>
-           </td>
-           <td class="text-center">
-             <div class="btn-group">
-               <button onclick="location.href='{:U('System/user_edit',array('id'=>
-                 $user_i[id]))}'" type="button" class="btn btn-success waves-effect"> <i class="zmdi zmdi-edit"></i>
-               </button>
-               <button onclick="location.href='{:U('System/user_del',array('id'=>
-                 $user_i[id]))}'" type="button" class="btn btn-danger waves-effect">
-                 <i class="zmdi zmdi-delete"></i>
-               </button>
-             </div>
-           </td>
-         </tr>
-       </volist>
-
-     </tbody>
-   </table>
-   <div>
-      <!-- 总共有{$user_total_num}条数据: &nbsp;{$page_html} -->
-    <div class="page_box" style="text-align: center;"> 
-       {$page}
-    </div> 
-    <style>
-.page_box a,.page_box span{padding: 0 10px;}
-    </style>
-   </div>
- </div>
- <script>var ajax_url='{:U("System/ajax_set_pwd")}';</script>
- <script src="__PUBLIC__/js/admin/manager_ajax.js"></script>
+     <tbody> 
+                    <volist   name="user_list" id="user_i">
+                        <tr>
+                            <td class="table-check">
+                               {$user_i.id}
+                            </td>
+                            <td>
+                               {$user_i.user_name}
+                               <br>
+                            </td>
+                             <td class="pwd_box " pwd="{$user_i.user_pwd}"  id_val="{$user_i.id}">
+                               {$user_i.user_pwd}
+                               <br>
+                            </td>
+                            
+                            <td class="table-date"> {$user_i.create_time|date="Y-m-d H:i:s",###} <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                               <div class="btn-group">
+                                <button onclick="location.href='{:U('Client/user_edit',array('id'=>$user_i[id]))}'" type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                <button onclick="location.href='{:U('Client/user_del',array('id'=>$user_i[id]))}'" type="button" class="btn btn-danger waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                              </div>
+                            </td>
+                        </tr>
+                    </volist>
+                        
+                    </tbody>
+                </table>
+            </div>
+<script>
+  var ajax_url='{:U("System/ajax_set_pwd")}';
+</script>
+      <script src="__PUBLIC__/js/admin/manager_ajax.js"> </script>
  <include file='Public:footer' /> 
