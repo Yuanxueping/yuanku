@@ -528,6 +528,29 @@ h3 {
     font-weight: 600;
     text-align: center;
 }
+/*for less than 480px width screen */
+@media only screen and (min-device-width:319px) and (max-device-width:480px){
+    
+    .feature_section8 .left{
+    	float: none;
+    	padding-left: 30px;
+    	padding-right: 30px;
+    	width: 100%;
+    	text-align: center;
+    }
+    .feature_section8 .left h1{
+    	font-size: 26px;
+    }
+    .feature_section8 .right{
+    	float: none;
+    	padding-left: 30px;
+    	padding-right: 30px;
+    	width: 100%;
+    	text-align: center;
+    	border: none;
+    }
+}
+
 /**
  * 第九部分
  */
@@ -706,7 +729,7 @@ h4 {
     font-family: "arial narrow";
 }
 
-/* for  less than 480px width screen */
+/* for less than 480px width screen */
 @media only screen and (min-device-width:319px) and (max-device-width:480px){
 	
 	.feature_section10  a{
