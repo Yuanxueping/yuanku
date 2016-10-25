@@ -528,6 +528,29 @@ h3 {
     font-weight: 600;
     text-align: center;
 }
+/*for less than 480px width screen */
+@media only screen and (min-device-width:319px) and (max-device-width:480px){
+    
+    .feature_section8 .left{
+    	float: none;
+    	padding-left: 30px;
+    	padding-right: 30px;
+    	width: 100%;
+    	text-align: center;
+    }
+    .feature_section8 .left h1{
+    	font-size: 26px;
+    }
+    .feature_section8 .right{
+    	float: none;
+    	padding-left: 30px;
+    	padding-right: 30px;
+    	width: 100%;
+    	text-align: center;
+    	border: none;
+    }
+}
+
 /**
  * 第九部分
  */
@@ -706,8 +729,8 @@ h4 {
     font-family: "arial narrow";
 }
 
-/* for 480px width screen */
-@media only screen and (min-device-width:321px) and (max-device-width:480px){
+/* for less than 480px width screen */
+@media only screen and (min-device-width:319px) and (max-device-width:480px){
 	
 	.feature_section10  a{
 		margin-left: 50px;
@@ -845,8 +868,8 @@ h4 {
     transition-delay: .3s;
 }
 
-/* for 480px width screen */
-@media only screen and (min-device-width:321px) and (max-device-width:480px){
+/* for less than 410px but more than 321px width screen */
+@media only screen and (min-device-width:321px) and (max-device-width:410px){
 	
 	#tabs_container{
 		margin-top: 10px;
@@ -854,8 +877,12 @@ h4 {
 		padding-left: 1px;
 	}
 	.transition{
-		margin-left: 0px;
+		margin-right:  0px;
 	}
+    #tabs>ul>li{
+      width: 100%;
+    }
+
 	#tabs_container > div{
 		padding: 0px;
 	}
@@ -863,6 +890,40 @@ h4 {
 		width: 100%;
 	}
 }
+
+/*for less than 321px width screen*/
+@media only screen and (max-device-width:320px){
+    
+    #tabs_container{
+        padding-top: 20px;
+        padding-left: 1px;
+    }
+    #tabs_container div{
+        padding: 0px;
+    }
+    .hsta{
+        width: 100%;   
+    }
+    #tabs_container div p{
+        width:320px;
+    }
+}
+
+/*for less than 480 but more than 410px width screen*/
+@media only screen and (min-device-width:410px) and (max-device-width:480px){
+    
+    #tabs ul{
+        width: 100%;
+    }
+    #tabs_container{
+        padding-left: 1px;
+    }
+    #tabs_container div{
+        padding: 0px;
+        width: 100%;
+    }
+}
+
 
 /*
 **第一第二部分
@@ -907,6 +968,7 @@ h4 {
 	padding-left: 30px;
 	color: #727272;
 	font-size: 16px;
+	line-height: 25px;
 	min-height: 166px;	
 	float: left;
 }
