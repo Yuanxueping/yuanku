@@ -805,7 +805,7 @@ h4 {
 #tabs_container div p {
     padding-bottom: 100px;
 }
-p {
+.tabulous_active a p {
     font-weight: normal;
     line-height: 23px;
     font-family: 'Open Sans', sans-serif;
@@ -889,6 +889,7 @@ p {
 
 .section_2_welcome > h2 > b{
 	font-size: 40px;
+    line-height: 50px;
 }
 
 .section_2_welcome > h2 > em{
@@ -906,9 +907,12 @@ p {
 	padding-left: 30px;
 	color: #727272;
 	font-size: 16px;
-	line-height: 23px;
 	min-height: 166px;	
 	float: left;
+}
+
+.section_2_top>.section_2_words>p{
+    line-height: 25px;
 }
 
 .button-one{
