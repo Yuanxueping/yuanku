@@ -931,39 +931,39 @@
 				<div class="container">
 					<div class="row" >
 						<div class="col-lg-3 col-md-6 col-lg-12">
-							<ul class="clearfix">
-								<li><h4>友情连接</h4></li><br/>
-								<li><a href="#">1</a></li><br/>
-								<li><a href="#">2</a></li><br/>
-								<li><a href="#">3</a></li><br/>
-								<li><a href="#">4</a></li>							
+							<ul>
+								<li><h4 >友情连接</h4></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>百度一下</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>淘宝商城</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>腾讯首页</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>网易新闻</span></a></li>							
 							</ul>						
 						</div>					
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><h4>最新动态</h4></li><br/>
-								<li><a href="#"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
-								<li><a href="#"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
-								<li><a href="#"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
-													
+								<li><h4 >最新动态</h4></li><br/>
+								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
+					
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
 								<li><h4>关于我们</h4></li><br/>
-								<li><a href="#">1</a></li><br/>
-								<li><a href="#">2</a></li><br/>
-								<li><a href="#">3</a></li><br/>
-								<li><a href="#">4</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;&nbsp;<span>技术中心</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;&nbsp;<span>产品特色</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;<span>结算流程</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>&nbsp;&nbsp;<span>服务宗旨</span></a></li>
 						   </ul>
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><h4>邮箱地址</h4></li></br>
-								<li><a href="#">1</a></li><br/>
-								<li><a href="#">2</a></li><br/>
-								<li><a href="#">3</a></li><br/>
-								<li><a href="#">4</a></li>							
+								<li><h4>联系我们</h4></li></br>
+								<li><a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;<span>511186470@qq.com</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;<span>0201-6666666</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-map-marker"aria-hidden="true"></span>&nbsp;&nbsp;<span>美国洛杉矶</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>&nbsp;&nbsp;<span>邮政编码：88888</span></a></li>							
 						    </ul>
 						</div>				
 					</div>	

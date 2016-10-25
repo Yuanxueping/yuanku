@@ -66,16 +66,24 @@
 
 .foot-nav .container-fluid li {
   display: inline-block;
-  padding: 0 4px ;
+  padding: 8px 4px ;
   cursor: pointer;
 
 }
 .foot-nav .container-fluid li h4{
   color: white!important;
+  text-indent: 12px;
 }
 .foot-nav .container-fluid li a {
-  color: white!important;
+  color: gainsboro!important;
   padding: 0 8px;
+}
+.foot-nav .container-fluid li a span{
+  color: gainsboro!important;
+}
+.foot-nav .container-fluid li a:hover span{
+  color: white!important;
+  
 }
 .foot-nav .foot-text {
   padding-top: 20px;
@@ -83,8 +91,10 @@
   background-color:rgb(17,17,17);
   line-height: 60px;
  
-  
-  
+}
+.glyphicon{
+	font-size:8px;
+	font-weight: normal;
 }
 /*.navbar-toggle{
   position: absolute;
@@ -95,4 +105,12 @@
   width: 100%!important;
   margin-right:0px!important; 
   margin-left:0px!important
+}
+.size{
+	width: 100px;
+	display:inline-block;
+	
+}
+.size>img{
+  width:100%;	
 }

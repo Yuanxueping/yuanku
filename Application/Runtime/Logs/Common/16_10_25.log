@@ -118,3 +118,9 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
 ERR: 无法加载模块:Public
 
+[ 2016-10-25T16:32:02+08:00 ] ::1 /lidong/yuanku/Public/img/highstand%20homepage/site-img02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+ERR: 无法加载模块:Public
+
