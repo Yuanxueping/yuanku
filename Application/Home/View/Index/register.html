@@ -36,7 +36,11 @@
 			        <div class="message">
 			        	<div id="warn" class="alert alert-warning alert-dismissable" style="display: none;"> 
 			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>用户名和密码内容不能低于6位！
+			        		<strong>警告！&nbsp;&nbsp;</strong>请输入2-6个字符的用户名！
+			        	</div>
+			        	<div id="warn1" class="alert alert-warning alert-dismissable" style="display: none;"> 
+			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+			        		<strong>警告！&nbsp;&nbsp;</strong>密码内容不能低于6位！
 			        	</div>
 			        	<div id="checkBlank" class="alert alert-warning alert-dismissable" style="display: none;"> 
 			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
@@ -86,10 +90,15 @@
 			var $close = $(".close");
 			var $checkLogin=$('#checkLogin');
 			var $checkBlank=$('#checkBlank');
+			var $warn1 = $("#warn1");
 			
 			$register.click(function(){
-				if ($username.val().length < 6||$('#password').val().length<6) {
+				if ($username.val().length < 2|| $username.val().length > 6) {
 					$wran.css("display","block");
+					return false;
+				}
+				if ($('#password').val().length<6) {
+					$warn1.css("display","block");
 					return false;
 				}
 			});
@@ -99,6 +108,7 @@
 				$wran.css("display","none");
 				$checkBlank.css("display","none");
 				$checkLogin.css("display","none");
+				$warn1.css("display","none");
 				return false;
 			});
 

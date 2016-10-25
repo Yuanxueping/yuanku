@@ -24,6 +24,7 @@
 	 * 第八部分  画板生成百分图代码
 	 */
 
+
 		//创建第一个画板
 		// var canvas1 = document.getElementById('loader01'), //获取canvas元素
 		// 	context1 = canvas1.getContext('2d'), //获取画图环境，指明为2d
@@ -111,6 +112,7 @@
 		// drawFrame(canvas3, context3, speed3, data3, time3);
 		// drawFrame(canvas4, context4, speed4, data4, time4);
 		// drawFrame(canvas5, context5, speed5, data5, time5);
+
 
 	/**
 	 * 第十一部分 tabs代码
