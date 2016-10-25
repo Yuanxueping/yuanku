@@ -8,7 +8,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background: transparent;
 }
 @font-face { 
-  font-family: "微软雅黑"; 
+  font-family: HOME-FONT; 
   src: url(../../fonts/nevis.ttf); 
 } 
 body, input, textarea {
@@ -705,6 +705,24 @@ h4 {
     transition: all 0.3s ease;
     font-family: "arial narrow";
 }
+
+/* for 480px width screen */
+@media only screen and (min-device-width:321px) and (max-device-width:480px){
+	
+	.feature_section10  a{
+		margin-left: 50px;
+		margin-right: 50px;
+		padding-left: 75px;
+		padding-right: 75px;
+	}
+	
+	.purchase{
+		position: relative;
+		top: 35px;
+	}
+	
+}
+
 /**
  * 第十一部分
  */
@@ -727,8 +745,8 @@ h4 {
     background-color: #fff;
 }
 #tabs li a {
-    /*width:400px;*/
-    width: 100%;
+    max-width:400px;
+    /*width: 100%;*/
     text-align: left;
     display: block;
     padding: 27px 45px 21px 35px;
@@ -755,6 +773,7 @@ h4 {
     font-weight: 600;
     margin-bottom: 5px;
 }
+
 #tabs_container {
     overflow: hidden;
     position: relative;
@@ -786,7 +805,7 @@ h4 {
 #tabs_container div p {
     padding-bottom: 100px;
 }
-p {
+.tabulous_active a p {
     font-weight: normal;
     line-height: 23px;
     font-family: 'Open Sans', sans-serif;
@@ -826,6 +845,25 @@ p {
     transition-delay: .3s;
 }
 
+/* for 480px width screen */
+@media only screen and (min-device-width:321px) and (max-device-width:480px){
+	
+	#tabs_container{
+		margin-top: 10px;
+		padding-top: 10px;
+		padding-left: 1px;
+	}
+	.transition{
+		margin-left: 0px;
+	}
+	#tabs_container > div{
+		padding: 0px;
+	}
+	.hsta{
+		width: 100%;
+	}
+}
+
 /*
 **第一第二部分
 */
@@ -851,6 +889,7 @@ p {
 
 .section_2_welcome > h2 > b{
 	font-size: 40px;
+    line-height: 50px;
 }
 
 .section_2_welcome > h2 > em{
@@ -868,9 +907,12 @@ p {
 	padding-left: 30px;
 	color: #727272;
 	font-size: 16px;
-	line-height: 23px;
 	min-height: 166px;	
 	float: left;
+}
+
+.section_2_top>.section_2_words>p{
+    line-height: 25px;
 }
 
 .button-one{
@@ -895,12 +937,25 @@ p {
     transition-delay: initial;
 }
 
-.box>.fa{
-	font-size: 30px;
+.section_2_bottom > .box > h5{
+    margin-top:10px; 
+    margin-bottom:10px; 
+    font-size: 14px
+}
+
+.section_2_bottom > .box >span{
+    font-size: 30px;
+}
+
+.section_2_bottom > .box > p{
+    margin-bottom: 10px
 }
 
 .section_2_bottom > .box:hover{
 	background: #2ecc71;
+}
+
+.section_2_bottom > .box:hover > h5,.section_2_bottom > .box:hover >p ,.section_2_bottom > .box:hover > span{
 	color: #FFFFFF;
 }
 

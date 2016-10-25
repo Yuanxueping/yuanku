@@ -45,8 +45,12 @@ class PersonalController extends Controller {
 
 	public function update(){
 		$data['user_name']=I('user_name');
-		$data['email_address']=I('email_address');
+		if(I('email_address')!=''){
+			$data['email_address']=I('email_address');
+		}
+		if(I('user_pwd')!=''){
 		$data['user_pwd']=md5(I('user_pwd'));
+		}
 		$obj=M('clientUser')->where("`user_name`='".I('user_name')."'");
 		$info=$this->upload();
 		//更新logo字段

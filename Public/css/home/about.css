@@ -81,6 +81,7 @@ body {
   font-weight: 400;
 }
 .theme {
+<<<<<<< HEAD
   width: 23%;
   margin-right: 2%;
   padding: 0px;
@@ -90,6 +91,19 @@ body {
 }
 .theme .theme_title {
   width: 100%;
+=======
+ /* width: 23%;*/
+  margin-top: 10px;
+  padding: 0px;
+  padding-left: 2%;
+}
+.theme > img {
+  width: 95%;
+}
+.theme .theme_title {
+  width: 95%;
+
+>>>>>>> a88239c732e9bfcee7ffa0a14ac82b6d021b9288
   background: #272727;
   text-align: center;
   margin-top: -32px;
@@ -113,6 +127,10 @@ body {
   width: 100%;
   vertical-align: baseline;
   height: 540px;
+<<<<<<< HEAD
+=======
+  vertical-align: middle;
+>>>>>>> a88239c732e9bfcee7ffa0a14ac82b6d021b9288
 }
 .green_center {
   color: #ffffff;
@@ -171,9 +189,16 @@ body {
 }
 .lunbo{
   position: relative;
+<<<<<<< HEAD
   height: 140px;
   margin-top: 10px;
   width: 100%;
+=======
+  height: 150px;
+  margin-top: 10px;
+  width: 100%;
+  overflow: hidden;
+>>>>>>> a88239c732e9bfcee7ffa0a14ac82b6d021b9288
 }
 .lunbo:before .lunbo:after{
   content: " ";
@@ -185,11 +210,20 @@ body {
   top: 0px;
   left: 0px;
   display: none;
+<<<<<<< HEAD
 
 }
 
 .people_detail .left {
   padding-left: 50px;
+=======
+  
+}
+
+.people_detail .left {
+  position: absolute;
+  right: 10%;
+>>>>>>> a88239c732e9bfcee7ffa0a14ac82b6d021b9288
 }
 .people_detail .left img {
   margin: 0 auto;
@@ -201,7 +235,11 @@ body {
   background-position: center center;
   text-align: center;
   vertical-align: middle;
+<<<<<<< HEAD
   padding-left: 0px;
+=======
+  padding: 0px;
+>>>>>>> a88239c732e9bfcee7ffa0a14ac82b6d021b9288
 }
 .people_detail .left h5 {
   width: 100%;
@@ -230,9 +268,19 @@ body {
 }
 .dian_all {
   text-align: center;
+<<<<<<< HEAD
   padding-top: 20px;
   
 }
+=======
+  margin-top: 10px;
+  
+}
+.bannav{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+>>>>>>> a88239c732e9bfcee7ffa0a14ac82b6d021b9288
 .dian_all .dian {
   display: inline-block;
   width: 8px;
