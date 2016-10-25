@@ -91,7 +91,6 @@ body {
 }
 .theme .theme_title {
   width: 95%;
-
   background: #272727;
   text-align: center;
   margin-top: -32px;
@@ -189,7 +188,6 @@ body {
   top: 0px;
   left: 0px;
   display: none;
-  
 }
 
 .people_detail .left {
