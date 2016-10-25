@@ -11,7 +11,7 @@ class ClientController extends Controller {
     public function client_list(){
     	$client_m = M('Client_user');
 
-    	$page_count = 3;	//每页的数据数
+    	$page_count = 5;	//每页的数据数
     	$page_num = I('page_num') > 0 ? I('page_num') : 1; //获取ID值，没有则默认为1
     	$client_total_num = $client_m -> count();	//获取数据总数
     	$start_index = ($page_num - 1) * $page_count;//从第几条数据查起
