@@ -26,6 +26,7 @@ class RegisterController extends Controller {
 	
 		$person['user_name']=I('username');
 		$person['user_pwd']=md5(I('password'));
+		
 		// dump($person);
         $users=M('clientUser');
 			if($users->add($person)){

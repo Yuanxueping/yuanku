@@ -28,7 +28,7 @@
 		        <th class="text-center">操作</th>
         	</tr>
       	</thead>
-      	<tbody>
+      	<tbody id="ajax_rt_box">
       		<volist name="news_list" id="vo" key="k">
       			<tr>
       				<td>{$k}</td>
@@ -50,21 +50,26 @@
       	</tbody>
     </table>
 </div>
+<div class="btn-toolbar text-center" role="toolbar">
+	<div class="btn-group">
+		{$page_html}
+	</div>
+</div>
 <script type="text/javascript">
 var ajax_url='{:U("News/newsort")}';
 $(function(){
-//	var value;
 	var arr=$(".change");
 	$.each(arr,function(i,item){
         $(item).click(function(){
+        
         	value=i;
 //      	$.post(ajax_url,{"value":value});
         	$.ajax({
 			   type: "POST",
-			   url: "{:U("News/newsort")}",
+			   url: "{:U("News/newsort_j")}",
 			   data: {"value":value},
 			   success: function(msg){
-			     $("body").html(msg);
+				$("#ajax_rt_box").html(msg)
      
    }
 });
