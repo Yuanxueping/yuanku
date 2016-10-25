@@ -1,10 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?>
 
-<<<<<<< HEAD
-<!DOCTYPE html>
-=======
 <!-- <!DOCTYPE html>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
 <html>
 <head lang="zh">
 	<title><?php echo ($title); ?></title>
@@ -12,17 +8,10 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-	 <link rel="stylesheet" href="/lidong/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/lidong/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/lidong/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
-=======
-	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+	 <link rel="stylesheet" href="/1001/clone_two/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/1001/clone_two/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/1001/clone_two/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/1001/clone_two/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
 	 
 
 	<!--  <link rel="stylesheet" href="css/headAndFoot.css" />
@@ -37,15 +26,9 @@
 
 		
 
-<<<<<<< HEAD
-
-<!-- 个人中心页面 -->
-  </head>
-=======
  -->
 <!-- 个人中心页面 -->
 <!--   </head>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
 <body>
 <!-- <div class="container-fluid"> -->
 	<nav class="navbar navbar-default top-nav navbar-fixed-top gaise">
@@ -59,54 +42,31 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#">
-<<<<<<< HEAD
-		      	<img class="logo" src="/lidong/yuanku/Public/img/logoko2.png" />
-=======
-		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+		      	<img class="logo" src="/1001/clone_two/yuanku/Public/img/logoko2.png" />
 		      </a>
 		    </div>		
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-<<<<<<< HEAD
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/index">首页</a></li>
+				        <li><a href="/1001/clone_two/yuanku/index.php/Home/Index/index">首页</a></li>
 				        <li>
 				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/index';} else{ echo '/lidong/yuanku/index.php/Home/Index/login'; } ?>
-=======
-				        <li><a href="/yuanku/index.php/Home/Index/index">首页</a></li>
-				        <li>
-				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+				        	<?php if(isset($_SESSION['username'])) {echo '/1001/clone_two/yuanku/index.php/Home/Personal/index';} else{ echo '/1001/clone_two/yuanku/index.php/Home/Index/login'; } ?>
 				        ">
 				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
 				        </a>
 				        </li>
 				        <li>
 				        	<a href="
-<<<<<<< HEAD
-				        		<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/logout';} else{ echo '/lidong/yuanku/index.php/Home/Index/register'; } ?>
-=======
-				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+				        		<?php if(isset($_SESSION['username'])) {echo '/1001/clone_two/yuanku/index.php/Home/Personal/logout';} else{ echo '/1001/clone_two/yuanku/index.php/Home/Index/register'; } ?>
 				        	">
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
 				        </li>
-<<<<<<< HEAD
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/news">新闻</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/personal">个人中心</a></li>
-=======
-				        <li><a href="/yuanku/index.php/Home/Personal/news">新闻</a></li>
-				        <li><a href="/yuanku/index.php/Home/Personal/contact_us">联系我们</a></li>
-				        <li><a href="/yuanku/index.php/Home/Personal/about_us">关于我们</a></li>
-				        <!-- <li><a href="/yuanku/index.php/Home/Personal/personal">个人中心</a></li> -->
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
-				        
+				        <li><a href="/1001/clone_two/yuanku/index.php/Home/Index/news">新闻</a></li>
+				        <li><a href="/1001/clone_two/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
+				        <li><a href="/1001/clone_two/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
+				       				        
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
 				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
@@ -115,12 +75,7 @@
 				      </ul>		          			        				        	
 	            </div>
 		  </div>
-<<<<<<< HEAD
-	</nav>
-=======
-=======
 	</nav> -->
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
 <!-- /*
 	*yxp
 	*个人中心页面
@@ -133,17 +88,10 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-	 <link rel="stylesheet" href="/lidong/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/lidong/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/lidong/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
-=======
-	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+	 <link rel="stylesheet" href="/1001/clone_two/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/1001/clone_two/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/1001/clone_two/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/1001/clone_two/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
 	 
 
 	<!--  <link rel="stylesheet" href="css/headAndFoot.css" />
@@ -160,17 +108,10 @@
 
 
 
-<<<<<<< HEAD
-		<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/personal.css"/>
-		<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/site.min.css">
+		<link rel="stylesheet" type="text/css" href="/1001/clone_two/yuanku/Public/css/home/personal.css"/>
+		<link rel="stylesheet" type="text/css" href="/1001/clone_two/yuanku/Public/css/home/site.min.css">
 		
-	    <script src="/lidong/yuanku/Public/js/site.min.js" type="text/javascript" charset="utf-8"></script>                                  
-=======
-		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/personal.css"/>
-		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/site.min.css">
-		
-	    <script src="/yuanku/Public/js/site.min.js" type="text/javascript" charset="utf-8"></script>                                  
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+	    <script src="/1001/clone_two/yuanku/Public/js/site.min.js" type="text/javascript" charset="utf-8"></script>                                  
   </head>
 <body>
 <!-- <div class="container-fluid"> -->
@@ -185,54 +126,31 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#">
-<<<<<<< HEAD
-		      	<img class="logo" src="/lidong/yuanku/Public/img/logoko2.png" />
-=======
-		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+		      	<img class="logo" src="/1001/clone_two/yuanku/Public/img/logoko2.png" />
 		      </a>
 		    </div>		
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-<<<<<<< HEAD
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/index">首页</a></li>
+				        <li><a href="/1001/clone_two/yuanku/index.php/Home/Index/index">首页</a></li>
 				        <li>
 				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/index';} else{ echo '/lidong/yuanku/index.php/Home/Index/login'; } ?>
-=======
-				        <li><a href="/yuanku/index.php/Home/Index/index">首页</a></li>
-				        <li>
-				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+				        	<?php if(isset($_SESSION['username'])) {echo '/1001/clone_two/yuanku/index.php/Home/Personal/index';} else{ echo '/1001/clone_two/yuanku/index.php/Home/Index/login'; } ?>
 				        ">
 				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
 				        </a>
 				        </li>
 				        <li>
 				        	<a href="
-<<<<<<< HEAD
-				        		<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/logout';} else{ echo '/lidong/yuanku/index.php/Home/Index/register'; } ?>
-=======
-				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+				        		<?php if(isset($_SESSION['username'])) {echo '/1001/clone_two/yuanku/index.php/Home/Personal/logout';} else{ echo '/1001/clone_two/yuanku/index.php/Home/Index/register'; } ?>
 				        	">
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
 				        </li>
-<<<<<<< HEAD
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/news">新闻</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/personal">个人中心</a></li>
-=======
-				        <li><a href="/yuanku/index.php/Home/Personal/news">新闻</a></li>
-				        <li><a href="/yuanku/index.php/Home/Personal/contact_us">联系我们</a></li>
-				        <li><a href="/yuanku/index.php/Home/Personal/about_us">关于我们</a></li>
-				        <!-- <li><a href="/yuanku/index.php/Home/Personal/personal">个人中心</a></li> -->
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
-				        
+				        <li><a href="/1001/clone_two/yuanku/index.php/Home/Index/news">新闻</a></li>
+				        <li><a href="/1001/clone_two/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
+				        <li><a href="/1001/clone_two/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
+				       				        
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
 				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
@@ -274,19 +192,11 @@
 								<div class="col-md-6 col-sm-12 col-xs-12">
 									<div class="kitty">
 
-<<<<<<< HEAD
-										<img width="140px" height="140px" src="/lidong/yuanku/<?php echo ($head_photo); ?>"/>
+										<img width="140px" height="140px" src="/1001/clone_two/yuanku/<?php echo ($head_photo); ?>"/>
 										<ul class="clearfix">
 											<li><b><a href=""><?php echo (session('username')); ?></a></b></li>
 											<li id="sayhello">1</li>
-											<li><a href="/lidong/yuanku/index.php/Home/Index/edit_message">修改个人信息</a>&nbsp;<img src="/lidong/yuanku/Public/img/personal/矩形-18-拷贝.png"/></li>
-=======
-										<img width="140px" height="140px" src="/yuanku/<?php echo ($head_photo); ?>"/>
-										<ul class="clearfix">
-											<li><b><a href=""><?php echo (session('username')); ?></a></b></li>
-											<li id="sayhello">1</li>
-											<li><a href="/yuanku/index.php/Home/Personal/edit_message">修改个人信息</a>&nbsp;<img src="/yuanku/Public/img/personal/矩形-18-拷贝.png"/></li>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+											<li><a href="/1001/clone_two/yuanku/index.php/Home/Index/edit_message">修改个人信息</a>&nbsp;<img src="/1001/clone_two/yuanku/Public/img/personal/矩形-18-拷贝.png"/></li>
 										</ul>
 									</div>
 								</div>
@@ -307,19 +217,11 @@
 											<div class="product">
 												<table border="0px" cellspacing="0px" cellpadding="0px">
 													<tr>
-<<<<<<< HEAD
-														<td rowspan="2"><img src="/lidong/yuanku/Public/img/personal/椭圆-3.png"/></td>
+														<td rowspan="2"><img src="/1001/clone_two/yuanku/Public/img/personal/椭圆-3.png"/></td>
 														<td>&nbsp;订阅的文章：&nbsp;<span>0</span></td>
 													</tr>
 													<tr>
-														<td>&nbsp;<a href="">查看已订阅的文章</a>&nbsp;<img src="/lidong/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
-=======
-														<td rowspan="2"><img src="/yuanku/Public/img/personal/椭圆-3.png"/></td>
-														<td>&nbsp;订阅的文章：&nbsp;<span>0</span></td>
-													</tr>
-													<tr>
-														<td>&nbsp;<a href="">查看已订阅的文章</a>&nbsp;<img src="/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+														<td>&nbsp;<a href="">查看已订阅的文章</a>&nbsp;<img src="/1001/clone_two/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
 													</tr>
 												</table>
 											</div>
@@ -328,19 +230,11 @@
 											<div class="product">
 												<table border="0px" cellspacing="0px" cellpadding="0px">
 													<tr>
-<<<<<<< HEAD
-														<td rowspan="2"><img src="/lidong/yuanku/Public/img/personal/椭圆-4-拷贝.png"/></td>
+														<td rowspan="2"><img src="/1001/clone_two/yuanku/Public/img/personal/椭圆-4-拷贝.png"/></td>
 														<td>&nbsp;我的浏览足迹：&nbsp;<span>0</span></td>
 													</tr>
 													<tr>
-														<td>&nbsp;<a href="">查看浏览足迹</a>&nbsp;<img src="/lidong/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
-=======
-														<td rowspan="2"><img src="/yuanku/Public/img/personal/椭圆-4-拷贝.png"/></td>
-														<td>&nbsp;我的浏览足迹：&nbsp;<span>0</span></td>
-													</tr>
-													<tr>
-														<td>&nbsp;<a href="">查看浏览足迹</a>&nbsp;<img src="/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+														<td>&nbsp;<a href="">查看浏览足迹</a>&nbsp;<img src="/1001/clone_two/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
 													</tr>
 												</table>
 											</div>
@@ -351,19 +245,11 @@
 											<div class="product">
 												<table border="0px" cellspacing="0px" cellpadding="0px">
 													<tr>
-<<<<<<< HEAD
-														<td rowspan="2"><img src="/lidong/yuanku/Public/img/personal/矩形-20-拷贝-3.png"/></td>
+														<td rowspan="2"><img src="/1001/clone_two/yuanku/Public/img/personal/矩形-20-拷贝-3.png"/></td>
 														<td>&nbsp;我发布的文章&nbsp;<span>0</span></td>
 													</tr>
 													<tr>
-														<td>&nbsp;<a href="">查看我发布的文章</a>&nbsp;<img src="/lidong/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
-=======
-														<td rowspan="2"><img src="/yuanku/Public/img/personal/矩形-20-拷贝-3.png"/></td>
-														<td>&nbsp;我发布的文章&nbsp;<span>0</span></td>
-													</tr>
-													<tr>
-														<td>&nbsp;<a href="">查看我发布的文章</a>&nbsp;<img src="/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+														<td>&nbsp;<a href="">查看我发布的文章</a>&nbsp;<img src="/1001/clone_two/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
 													</tr>
 												</table>
 											</div>
@@ -372,19 +258,11 @@
 											<div class="product">
 												<table border="0px" cellspacing="0px" cellpadding="0px">
 													<tr>
-<<<<<<< HEAD
-														<td rowspan="2"><img src="/lidong/yuanku/Public/img/personal/矩形-20-拷贝.png"/></td>
+														<td rowspan="2"><img src="/1001/clone_two/yuanku/Public/img/personal/矩形-20-拷贝.png"/></td>
 														<td>&nbsp;喜欢的文章：&nbsp;<span>0</span></td>
 													</tr>
 													<tr>
-														<td>&nbsp;<a href="">查看喜欢的文章</a>&nbsp;<img src="/lidong/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
-=======
-														<td rowspan="2"><img src="/yuanku/Public/img/personal/矩形-20-拷贝.png"/></td>
-														<td>&nbsp;喜欢的文章：&nbsp;<span>0</span></td>
-													</tr>
-													<tr>
-														<td>&nbsp;<a href="">查看喜欢的文章</a>&nbsp;<img src="/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+														<td>&nbsp;<a href="">查看喜欢的文章</a>&nbsp;<img src="/1001/clone_two/yuanku/Public/img/personal/矩形-10-拷贝.png"/></td>												
 													</tr>
 												</table>
 											</div>
@@ -420,15 +298,9 @@
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
 								<li><h4>最新动态</h4></li><br/>
-<<<<<<< HEAD
-								<li><a href="#"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
-								<li><a href="#"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
-								<li><a href="#"><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
-=======
-								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
-								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
-								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
->>>>>>> c5274da217807b8663f2627f49f18c03f70c0b56
+								<li><a href="#"><img src="/1001/clone_two/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
+								<li><a href="#"><img src="/1001/clone_two/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
+								<li><a href="#"><img src="/1001/clone_two/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
 													
 							</ul>
 						</div>
