@@ -173,7 +173,7 @@
         <li class="inside-title">新闻管理</li>
         <li><a href="<?php echo U('news/index');?>">新闻列表</a></li>
         <li><a href="<?php echo U('news/newsort');?>">新闻分类</a></li>
-        <li><a href="<?php echo U('news/add');?>">添加新闻</a></li>
+        <li><a href="<?php echo U('news/news_add');?>">添加新闻</a></li>
         
       </ul>
     </li>  
@@ -373,7 +373,8 @@
 <link rel="stylesheet" href="/yuanku/Public/css/admin/news.css">
 <div class="panel panel-primary">
 	<div class="panel-heading">
-		<h5>新闻列表</h5>
+		<span>新闻列表</span>
+		<a href="<?php echo U('News/news_add');?>" class="btn btn-success btn-sm white pull-right">添加新闻</a>
 	</div>
 	<table class="table table-hover">
       	<thead>

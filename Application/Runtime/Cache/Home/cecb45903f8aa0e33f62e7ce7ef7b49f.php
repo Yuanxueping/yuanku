@@ -66,8 +66,7 @@
 				        <li><a href="/yuanku/index.php/Home/Index/news">新闻</a></li>
 				        <li><a href="/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
 				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/personal">个人中心</a></li>
-				        
+				       				        
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
 				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
@@ -92,8 +91,8 @@
 		<?php if(is_array($news_list)): $i = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_i): $mod = ($i % 2 );++$i;?><div class="container">					
 				<img src="/yuanku/Public/<?php echo ($news_i["img"]); ?>" class="news_img"/>
 				<div class="wenzhang">
-					<p>
-						<a href="<?php echo U('Index/news_detail');?>" class="biaoti"><?php echo ($news_i["title"]); ?></a>
+					<p>						
+						<a href="<?php echo U('Index/news_detail',array(id=>$news_i[id]));?>" class="biaoti"><?php echo ($news_i["title"]); ?></a>
 					</p>
 					<p>
 						<a href="" class="time"><?php echo ($news_i["date"]); ?></a>

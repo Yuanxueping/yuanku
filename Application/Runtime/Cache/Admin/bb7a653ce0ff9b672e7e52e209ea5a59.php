@@ -397,17 +397,23 @@
           <td><?php echo ($client_i["user_pwd"]); ?></td>
           <td> <?php echo (date("Y-m-d H:i:s",$client_i["create_time"])); ?></td>
           <td><?php echo ($client_i["head_photo"]); ?></td>
-          <td><?php echo ($client_iemail_address); ?></td>
+          <td><?php echo ($client_i["email_address"]); ?></td>
           <!-- <td><?php echo ($vo['date']); ?></td> -->
           <td class="text-center">
             <div class="btn-group">
-              <button onclick="location.href='<?php echo U('Client/client_edit',array('id'=>$client_i[id]));?>'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+              <!-- <button onclick="location.href='<?php echo U('Client/client_edit',array('id'=>$client_i[id]));?>'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button> -->
               <button onclick="location.href='<?php echo U('Client/client_del',array('id'=>$client_i[id]));?>'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
             </div>
           </td>
         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
         </tbody>
     </table>
+</div>
+
+<div class="btn-toolbar text-center" role="toolbar">
+  <div class="btn-group">
+    <?php echo ($page_html); ?>
+  </div>
 </div>
 
  
