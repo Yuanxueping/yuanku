@@ -53,7 +53,7 @@ class IndexController extends Controller {
 //		$start_index=0;
 		
 		$news_list=$news->limit($start_index,$page_cout)->select();
-
+		
 		$this->assign('news_list',$news_list);
 		
 //		select count(*) from News
@@ -104,7 +104,7 @@ class IndexController extends Controller {
 		
     	$news = M('News');
 		
-		$news_detail = $news -> join('author') -> where('news.id='.$id.' AND author.id=author_id') -> select();
+		$news_detail = $news -> join('author') -> join('news_sort') -> where('news.id='.$id.' AND author.id=author_id AND sort_id=news_sort.id') -> select();
 		
 		$this -> assign('news_detail',$news_detail);
     	

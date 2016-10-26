@@ -970,7 +970,11 @@
 				</div>
 			</div>
 			<div class="foot-text">
+<<<<<<< HEAD
+				<p>Copyright © 2016 lidong.com. All rights reserved. Terms of Use | Privacy Policy</p>
+=======
 				<p class="text-center">Copyright? 2003-2016 </p>
+>>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 			</div>
 </nav>
 <!--摸态框-->

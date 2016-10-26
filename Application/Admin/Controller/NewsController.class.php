@@ -1,5 +1,6 @@
 <?php
 namespace Admin\Controller;
+use Think\Upload;
 use Common\Controller\AuthController;
 
 
@@ -14,7 +15,6 @@ class NewsController extends AuthController {
 		$news_total_num = $news_m -> count();	//获取数据的总数
 		$start_index = ($page_num - 1) * $page_count;	//从第几条数据查起
 		$total_num = ceil($news_total_num/$page_count);	//总共有多少页
-		
 		for($i = 1; $i <= $total_num; $i++) {
 			if($page_num == $i) {
 				$active = 'active';
@@ -44,20 +44,62 @@ class NewsController extends AuthController {
     {
     	if(IS_POST) {
     		$news = D('news');
+			$_POST['date'] = time();
+			
+			$upload = new Upload();
+			$upload -> maxSize = 10240000;
+			$upload -> exts = array('jpg','gif','jpeg','png');
+			$upload -> autoSub = FALSE;
+			$upload -> rootPath = './Public/img/news_img/';
+			$info = $upload -> upload();
+			if(!$info) {
+				$this -> error($upload->getError());
+			} else {
+				$_POST['img'] = 'img/news_img/'.$info['img']['savename'];
+			}
 			
 			if($news -> create()) {
 				if($news -> add()) {
-					$this -> success('添加成功');
+					$this -> success('添加成功',U('News/index'));
 				} else {
-					$this -> error('添加失败');
+					$this -> error('添加失败',U('News/news_add'));
 				}
 			} else {
 				$this -> error($news -> getError());
 			}
     	} else {
+    		$author = D('author');
+			$news_sort = D('news_sort');
+			
+			$author_list = $author -> field('id,name') -> select();
+			$news_sort = $news_sort -> select();
+			
+			$this -> assign('author_list',$author_list);
+			$this -> assign('news_sort',$news_sort);
+			
     		$this->display();
     	}
     }
+
+	public function news_edit() {
+		if(IS_POST) {
+			
+		} else {
+			$news = D('news');
+			$author = D('author');
+			$news_sort = D('news_sort');
+			
+			$news_info = $news -> where('id='.I('id')) -> select();
+			$author_list = $author -> select();
+			$sort_list = $news_sort -> select();
+			
+			$this -> assign('news_info',$news_info);
+			$this -> assign('author_list',$author_list);
+			$this -> assign('sort_list',$sort_list);
+			
+			$this -> display();
+		}
+	}
   
     public function newsort(){
     	$news_m = M('News');
