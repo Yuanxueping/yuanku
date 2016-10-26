@@ -1,6 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?><!-- /*
 	*yxp
-	*注册页面
+	*修改用户信息页面
  */ -->
 <!DOCTYPE html>
 <html>
@@ -29,9 +29,6 @@
 		
 
 
-
-		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/register.css"/>
- 
   </head>
 <body>
 <!-- <div class="container-fluid"> -->
@@ -67,9 +64,9 @@
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
 				        </li>
-				        <li><a href="/yuanku/index.php/Home/Index/news">新闻</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
+				        <li><a href="/yuanku/index.php/Home/Personal/news">新闻</a></li>
+				        <li><a href="/yuanku/index.php/Home/Personal/contact_us">联系我们</a></li>
+				        <li><a href="/yuanku/index.php/Home/Personal/about_us">关于我们</a></li>
 				       				        
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
@@ -80,80 +77,77 @@
 	            </div>
 		  </div>
 	</nav>
+		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/personal.css"/>
+		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/site.min.css">
+		<script src="/yuanku/Public/js/site.min.js" type="text/javascript" charset="utf-8"></script>
+	
 
-		<div class="container">
-			<div class="row login_header clearcss">
-				
-					<div class="col-lg-6 col-md-12">
-						<h1>注册用户</h1>
+		<div class="container-fluid" style="margin-top:55px;">
+    	<!--documents-->
+	        <div class="row row-offcanvas row-offcanvas-left">
+	          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+	            <ul class="list-group panel">
+	                <li class="list-group-item"><i class="glyphicon glyphicon-align-justify"></i> <b>侧边栏</b></li>
+	                <li class="list-group-item"><a href="index.html"><i class="glyphicon glyphicon-home"></i>主页 </a></li>
+	                <li class="list-group-item"><a href="login.html"><i class="glyphicon glyphicon-certificate"></i>登录 </a></li>
+	                <li class="list-group-item"><a href="register.html"><i class="glyphicon glyphicon-th-list"></i>注册 </a></li>
+	                <li class="list-group-item"><a href="news.html"><i class="glyphicon glyphicon-list-alt"></i>新闻</a></li>
+	                <li class="list-group-item"><a href="contact_us.html"><i class="glyphicon glyphicon-envelope"></i>联系我们</a></li>
+	                <li class="list-group-item"><a href="about_us.html"><i class="glyphicon glyphicon-heart"></i>关于我们</a></li>
+	                
+	                
+	              </ul>
+	          </div>
+	          <div class="col-xs-12 col-sm-9 content">
+	            <div class="panel panel-default">
+	              <div class="panel-heading">
+	                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a>
+	                <a href="./personal.html" style=""> 个人中心</a></h3>
+	              </div>
+	              <div class="panel-body" style="margin-bottom:10%;">
+		            	<div class="content"> 
 
-					</div>
-					<div class="col-lg-offset-4 col-lg-2 col-md-12">
-		              	<a href="index.html" style="opacity:0.6;font-weight:normal;">首页 <i>/</i> </a> 
-					</div>
-		    </div>
-		    
-		</div>
-		<div class="container  box">
-			<div class="col-lg-offset-3 col-lg-6 col-md-12">
+							 <form action="/yuanku/index.php/Home/Personal/update" method="post" class="form_wd_23" enctype="multipart/form-data" class="form_wd_23">
+							 	<div class="form-group">
+							 		<label class="control-label">用户名</label>
+							 		<input class="form-control" style="display:none" name="user_name"  value="<?php echo (session('username')); ?>">
+							 		<input class="form-control" value="<?php echo (session('username')); ?>" disabled="true">
+							 	<div class="form-group">
+							 	</div>
+							 	<div class="form-group">
+							 		<label class="control-label">密码</label>
+							 		<input class="form-control" name="user_pwd">
+							 	</div>
+							 	<div class="form-group">
 
-				<form class="form-signin" role="form" action="/yuanku/index.php/Home/Register/regNewMember" method="POST" enctype="application/x-www-form-urlencoded">
-			        <div class="form-header">
-			        	<!-- <h4>注用户册</h4> -->
-			        	<h4>用户注册</h4>
-			        	<!-- <p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">注册</a></p> -->
+							 		<label class="control-label">邮箱</label>
+							 		<input class="form-control" name="email_address">
+							 	</div>
+							 	<div class="form-group">
 
-			        	<p style="margin-top:5px;">已经注册?&nbsp;<a href="login.html">登录</a></p>
-			        	<p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">找回账户或密码</a></p>
-			        </div>
-			        <div class="message">
-			        	<div id="warn" class="alert alert-warning alert-dismissable" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>请输入2-6个字符的用户名！
-			        	</div>
-			        	<div id="warn1" class="alert alert-warning alert-dismissable" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>密码内容不能低于6位！
-			        	</div>
-			        	<div id="checkBlank" class="alert alert-warning alert-dismissable" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>用户名和密码内容不能含有空格字符！
-			        	</div>
-			        	<div id="checkLogin" class="alert alert-warning alert-dismissable" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>用户已存在，请使用新的用户名进行注册！或者<a href="./login">直接登陆</a>
-			        	</div>
-			        </div>
-			        <!-- 密码 -->
-			        <div class="form-group">
+							 		<label class="control-label">头像</label>
+							 		<input class="dropify"  name="head_photo" type="file">
+							 	</div>
+							 	<button class="btn btn-success waves-effect">提交</button>
 
-			        	<!-- <p class="form-signin-heading">注册用户名或邮箱地址</p> -->
+								</form>
+							 <link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css"> 
+						 
+						</div>  
+				  </div>
 
-			        	<!-- <p class="form-signin-heading">输入用户名</p> -->
-			        	<p class="form-signin-heading">用户名</p>
+	              </div><!-- panel body -->
+	            </div>
+	        </div><!-- content -->
+	      </div>
+	    </div>
 
-			          <div class="input-group">
-			          	<!-- <input type="text" class="form-control" name="username" id="username" autocomplete="off> -->
-			            <input type="text" class="form-control" name="username" id="username" autocomplete="off" placeholder="请输入用户名或邮箱">
-			            <div id="div2" style="display:inline;color:red;"></div>
-			          </div>
 
-			        </div>
-			
-			        <div class="form-group">
-			        	<p class="form-signin-heading">密码</p>
-			          <div class="input-group">
-			            <!-- <input type="text" class="form-control" name="password" id="password" autocomplete="off"> -->
-			            <input type="password" class="form-control" name="password" id="password" autocomplete="off" placeholder="请输入6-18位的密码，建议含中英文">
-			          </div>
-			        </div>
-					<div class="Btn">
-			        <button class="btn btn-lg btn-primary btn-block" id="register" type="submit">注册</button>
-					</div>
-			     </form>
-			</div>
-    </div>
-    
+<script src="/yuanku/Public/js/dropify.min.js"></script>
+
+ <script>$('.dropify').dropify();</script>
+
+
 
 <div class="clearfix"></div>
 <nav class="foot-nav" id="back">
@@ -233,100 +227,3 @@
 <!-- </div> -->
 	</body>
 </html>
-	<script>
-		$(function(){
-			var $register = $("#register");
-			var $username = $("#username");
-			var $wran = $("#warn");
-			var $mail = $("#mail");
-			var $close = $(".close");
-			var $checkLogin=$('#checkLogin');
-			var $checkBlank=$('#checkBlank');
-			var $warn1 = $("#warn1");
-			
-			$register.click(function(){
-				if ($username.val().length < 2|| $username.val().length > 6) {
-					$wran.css("display","block");
-					return false;
-				}
-				if ($('#password').val().length<6) {
-					$warn1.css("display","block");
-					return false;
-				}
-			});
-		    
-			
-			$close.click(function(){
-				$wran.css("display","none");
-				$checkBlank.css("display","none");
-				$checkLogin.css("display","none");
-				$warn1.css("display","none");
-				return false;
-			});
-
-
-			$username.change(function(){
-			/*非空见擦*/
-			if ($username.val().length > 0) {
-					$wran.css("display","none");
-				}	
-			/* 字符串空格检查*/
-			var str=$username.val();
-			var Bnum=0;
-			for(var i=0;i<str.length;i++){
-				if(str.charCodeAt(i)==32){
-					Bnum++;
-				}
-			}
-			if(Bnum>0){
-				$('#checkBlank').css('display','block');
-			}else{
-				$('#checkBlank').css('display','none');
-			}
-
-			/*ajax 查询用户知否已经注册*/
-			var data='username='+$username.val();
-			console.log(data);
-			var path=window.location.pathname;
-			var urlSlice=path.split('Home');
-			url=urlSlice[0]+'Home/Register/userExistCheck';
-			$.ajax({
-				type:"GET",
-				url:url,
-				data:data,
-				dataType:"json",
-				success:function(data){
-					console.log(data);
-					data=data.toString();
-					if(data!="error"){
-					   $checkLogin.css('display','block');
-					}else{
-						 $checkLogin.css('display','none');
-					}
-				}
-			});
-			});
-
-			$('#password').change(function(){
-				/*非空见擦*/
-				if ($('#password').val().length > 0) {
-					$wran.css("display","none");
-				}	
-				/*检查空格*/
-				var str=$('#password').val();
-				var Bnum=0;
-				for(var i=0;i<str.length;i++){
-					if(str.charCodeAt(i)==32){
-					Bnum++;
-					}
-				}
-				if(Bnum>0){
-				$('#checkBlank').css('display','block');
-				}else{
-				$('#checkBlank').css('display','none');
-				}	
-			});
-
-		})
-		</script>			
-		<script src="/yuanku/Public/js/register.js" type="text/javascript" charset="utf-8"></script>

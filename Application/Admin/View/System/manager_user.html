@@ -39,8 +39,8 @@
                             <td class="table-date"> {$user_i.create_time|date="Y-m-d H:i:s",###} <i class="zmdi zmdi-time"></i></td>
                             <td class="text-center">
                                <div class="btn-group">
-                                <button onclick="location.href='{:U('Client/user_edit',array('id'=>$user_i[id]))}'" type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
-                                <button onclick="location.href='{:U('Client/user_del',array('id'=>$user_i[id]))}'" type="button" class="btn btn-danger waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                                <button onclick="location.href='{:U('System/user_edit',array('id'=>$user_i[id]))}'" type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                <button onclick="location.href='{:U('System/user_del',array('id'=>$user_i[id]))}'" type="button" class="btn btn-danger waves-effect"><i class="zmdi zmdi-delete"></i></button>
                               </div>
                             </td>
                         </tr>

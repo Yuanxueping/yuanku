@@ -169,11 +169,7 @@
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 theme last" >
 
-<<<<<<< HEAD
-						<img src="/lidong/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
-=======
 						<img src="/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 						<div class="theme_title">营销主题</div>
 					</div>					
 				</div>
@@ -315,43 +311,23 @@
 			
 			<div class="row container ">
 
-<<<<<<< HEAD
 				<div class="col-lg-2 col-md-2 col-sm-4  partner_logo">
-					<img src="/lidong/yuanku/Public/img/highstand homepage/clogo1_0.png"/>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-4  partner_logo">
-					<img src="/lidong/yuanku/Public/img/highstand homepage/clogo2.png"/>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-4  partner_logo">
-					<img src="/lidong/yuanku/Public/img/highstand homepage/clogo3_1.png"/>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-4  partner_logo">
-					<img src="/lidong/yuanku/Public/img/highstand homepage/clogo2_0.png"/>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-4 partner_logo">
-					<img src="/lidong/yuanku/Public/img/highstand homepage/clogo3_2.png"/>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-4  partner_logo">
-					<img src="/lidong/yuanku/Public/img/highstand homepage/clogo5_1.png"/>
-=======
-				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 partner_logo">
 					<img src="/yuanku/Public/img/highstand homepage/clogo1_0.png"/>
 				</div>
-				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 partner_logo">
+				<div class="col-lg-2 col-md-2 col-sm-4  partner_logo">
 					<img src="/yuanku/Public/img/highstand homepage/clogo2.png"/>
 				</div>
-				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 partner_logo">
+				<div class="col-lg-2 col-md-2 col-sm-4  partner_logo">
 					<img src="/yuanku/Public/img/highstand homepage/clogo3_1.png"/>
 				</div>
-				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6  partner_logo">
+				<div class="col-lg-2 col-md-2 col-sm-4  partner_logo">
 					<img src="/yuanku/Public/img/highstand homepage/clogo2_0.png"/>
 				</div>
-				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 partner_logo">
+				<div class="col-lg-2 col-md-2 col-sm-4 partner_logo">
 					<img src="/yuanku/Public/img/highstand homepage/clogo3_2.png"/>
 				</div>
-				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 partner_logo">
+				<div class="col-lg-2 col-md-2 col-sm-4  partner_logo">
 					<img src="/yuanku/Public/img/highstand homepage/clogo5_1.png"/>
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 				</div>
 
 			</div>
@@ -419,19 +395,11 @@
 						</div>					
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-<<<<<<< HEAD
 								<li><h4 >最新动态</h4></li><br/>
-								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
 					
-=======
-								<li><h4>最新动态</h4></li><br/>
-								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
-								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
-								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
-													
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
@@ -480,8 +448,8 @@
 		        </form>
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary">Search</button>
+		        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+		        <button type="button" class="btn btn-primary">搜索</button>
 		      </div>
 		    </div>
 		  </div>

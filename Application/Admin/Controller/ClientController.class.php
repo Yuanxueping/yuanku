@@ -36,8 +36,46 @@ class ClientController extends Controller {
     }
 
     //修改用户
-    // public function client_edit(){
-    // }
+    public function client_edit(){
+    	$client_m=M('Client_user');
+
+    	if (IS_POST) {
+    		
+    		$upload=new Upload();
+    		$upload->maxSize=10240000;
+    		$upload->exts=array('jpg','gif','jpeg','png');
+    		$upload->savePath='./';
+    		$info=$upload->upload();
+    		if (!$info) {
+    			$this->error($upload->getError());
+    		}else{
+    			$_POST['head_photo']='/Uploads/'.$info['head_photo']['savepath'].$info['head_photo']['savename'];
+    		}
+
+    		// 做验证、自动完成
+    		if ($client_m->create()) {
+    			if ($client_m->save()) {
+    				
+    				$this->success('修改成功！',U('Client/client_list'));
+    			}else{
+    				$this->success('修改失败或无更新！',U('Client/client_list'));
+    			}
+    		
+    		}else{
+    			//验证失败
+    			$this->error($client_m->getError());
+    		}
+
+
+    	}else{
+    		$client_info=$client_m->where('id='.I('id'))->find();
+
+    		$this->assign('client_info',$client_info);
+
+    		$this->display();
+    	}
+
+    }
 
     //删除用户
     public function client_del(){

@@ -1,8 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!-- /*
-	*yxp
-	*注册页面
- */ -->
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head lang="zh">
 	<title><?php echo ($title); ?></title>
@@ -30,8 +26,9 @@
 
 
 
-		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/register.css"/>
- 
+<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/news_detail.css"/>
+<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/iconfont.css"/>
+
   </head>
 <body>
 <!-- <div class="container-fluid"> -->
@@ -80,80 +77,116 @@
 	            </div>
 		  </div>
 	</nav>
-
-		<div class="container">
-			<div class="row login_header clearcss">
-				
-					<div class="col-lg-6 col-md-12">
-						<h1>注册用户</h1>
-
+		<div class="container-fluid page-title">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-12">
+						<h1><?php echo ($news_detail[0]['title']); ?></h1>
 					</div>
-					<div class="col-lg-offset-4 col-lg-2 col-md-12">
-		              	<a href="index.html" style="opacity:0.6;font-weight:normal;">首页 <i>/</i> </a> 
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<h2><a href="<?php echo U('Index/index');?>">Home</a><i>/</i><?php echo ($news_detail[0]['title']); ?></h2>
 					</div>
-		    </div>
-		    
-		</div>
-		<div class="container  box">
-			<div class="col-lg-offset-3 col-lg-6 col-md-12">
-
-				<form class="form-signin" role="form" action="/yuanku/index.php/Home/Register/regNewMember" method="POST" enctype="application/x-www-form-urlencoded">
-			        <div class="form-header">
-			        	<!-- <h4>注用户册</h4> -->
-			        	<h4>用户注册</h4>
-			        	<!-- <p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">注册</a></p> -->
-
-			        	<p style="margin-top:5px;">已经注册?&nbsp;<a href="login.html">登录</a></p>
-			        	<p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">找回账户或密码</a></p>
-			        </div>
-			        <div class="message">
-			        	<div id="warn" class="alert alert-warning alert-dismissable" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>请输入2-6个字符的用户名！
-			        	</div>
-			        	<div id="warn1" class="alert alert-warning alert-dismissable" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>密码内容不能低于6位！
-			        	</div>
-			        	<div id="checkBlank" class="alert alert-warning alert-dismissable" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>用户名和密码内容不能含有空格字符！
-			        	</div>
-			        	<div id="checkLogin" class="alert alert-warning alert-dismissable" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>用户已存在，请使用新的用户名进行注册！或者<a href="./login">直接登陆</a>
-			        	</div>
-			        </div>
-			        <!-- 密码 -->
-			        <div class="form-group">
-
-			        	<!-- <p class="form-signin-heading">注册用户名或邮箱地址</p> -->
-
-			        	<!-- <p class="form-signin-heading">输入用户名</p> -->
-			        	<p class="form-signin-heading">用户名</p>
-
-			          <div class="input-group">
-			          	<!-- <input type="text" class="form-control" name="username" id="username" autocomplete="off> -->
-			            <input type="text" class="form-control" name="username" id="username" autocomplete="off" placeholder="请输入用户名或邮箱">
-			            <div id="div2" style="display:inline;color:red;"></div>
-			          </div>
-
-			        </div>
-			
-			        <div class="form-group">
-			        	<p class="form-signin-heading">密码</p>
-			          <div class="input-group">
-			            <!-- <input type="text" class="form-control" name="password" id="password" autocomplete="off"> -->
-			            <input type="password" class="form-control" name="password" id="password" autocomplete="off" placeholder="请输入6-18位的密码，建议含中英文">
-			          </div>
-			        </div>
-					<div class="Btn">
-			        <button class="btn btn-lg btn-primary btn-block" id="register" type="submit">注册</button>
-					</div>
-			     </form>
+				</div>
 			</div>
-    </div>
-    
+		</div>
+		<div class="container contain">
+			<div class="row">
+				<div class="col-sm-9">
+					<div class="jumbotron">
+				  		<img src="/yuanku/Public/<?php echo ($news_detail[0]['img']); ?>" class="img-responsive"/>
+				  		<h3><a href=""><?php echo ($news_detail[0]['title']); ?></a></h3>
+				  		<p class="p1">
+				  			<a href=""><?php echo (date('Y年m月d日',$news_detail[0]['date'])); ?></a>
+				  			<span>by:<span><?php echo ($news_detail[0]['name']); ?></span>in:<span><?php echo ($news_detail[0]['sort_name']); ?></span>note:<span>0 COMMENTS</span></span>
+				  		</p>
+				  		<p class="p2"><?php echo htmlspecialchars_decode($news_detail[0]['content']) ?></p>
+				  		<p class="p3"><a href="">read more...</a></p>
+					</div>
+					<div class="line1"></div>
+					<div class="sharepost">
+						<h5>Share this Post</h5>
+						<ul>
+							<li><a href=""><i class="iconfont icon-facebookf"></i></a></li>
+							<li><a href=""><i class="iconfont icon-birdxiaoniao"></i></a></li>
+							<li><a href=""><i class="iconfont icon-google"></i></a></li>
+							<li><a href=""><i class="iconfont icon-delicious"></i></a></li>
+							<li><a href=""><i class="iconfont icon-digg"></i></a></li>
+							<li><a href=""><i class="iconfont icon-reddit"></i></a></li>
+							<li><a href=""><i class="iconfont icon-linkin"></i></a></li>
+							<li><a href=""><i class="iconfont icon-pinterest"></i></a></li>
+						</ul>
+					</div>
+					<div class="about_author">
+						<h5>About the Author</h5>
+						<div>
+							<p><?php echo ($news_detail[0]['name']); ?></p>
+							<p><?php echo ($news_detail[0]['introduction']); ?></p>
+						</div>
+					</div>
+					<div class="line2"></div>
+					<div class="comments">
+						<h5>Comments</h5>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="more_about">
+						<h4 class="title">More About</h4>
+						<ul>
+							<li><a href="">&gt; Our History</a></li>
+							<li><a href="">&gt; Professional Research</a></li>
+							<li><a href="">&gt; Our Development</a></li>
+							<li><a href="">&gt; Partnership With Us</a></li>
+							<li><a href="">&gt; Company Carreer</a></li>
+							<li><a href="">&gt; New Technology</a></li>
+							<li><a href="">&gt; Client Testimonials</a></li>
+						</ul>
+					</div>
+					<div class="recent_posts">
+						<h4 class="title">Recent Posts</h4>
+						<ul>
+							<li>
+								<a class="pull-left" href=""><img src="/yuanku/Public/img/news_img/site-img225 (1).jpg"/></a>
+								<a href="">Many desktop packages</a>
+								<span>July 5, 2016</span>
+							</li>
+							<li>
+								<a class="pull-left" href=""><img src="/yuanku/Public/img/news_img/site-img224.jpg"/></a>
+								<a href="">Many desktop packages</a>
+								<span>July 5, 2016</span>
+							</li>
+							<li>
+								<a class="pull-left" href=""><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk.jpg"/></a>
+								<a href="">Many desktop packages</a>
+								<span>July 5, 2016</span>
+							</li>
+						</ul>
+					</div>
+					<div class="happy_say">
+						<h4 class="title">Happy Client Say's</h4>
+						<img class="pull-left" src="/yuanku/Public/img/highstand homepage/people-img19_0.jpg"/>
+						<strong>- Michle Siminson</strong>
+						<p>Lorem Ipsum passage, and going through the cites of the word here classical literature passage discovere there undou btable source looks reasonable the generated charac eristic words.</p>
+					</div>
+					<div class="advertisements">
+						<h4 class="title">Site Advertisements</h4>
+						<ul>
+							<li><a href=""><img src="/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+							<li><a href=""><img src="/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+						</ul>
+						<ul>
+							<li><a href=""><img src="/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+							<li><a href=""><img src="/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+						</ul>
+					</div>
+					<div class="text_widget">
+						<h4 class="title">Text Widget</h4>
+						<p>Going to use a passage of lorem lpsum you need to be sure there anything embarrassin hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend the repeat predefined chunks as thenecessary making this the first true generator.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
 
 <div class="clearfix"></div>
 <nav class="foot-nav" id="back">
@@ -233,100 +266,3 @@
 <!-- </div> -->
 	</body>
 </html>
-	<script>
-		$(function(){
-			var $register = $("#register");
-			var $username = $("#username");
-			var $wran = $("#warn");
-			var $mail = $("#mail");
-			var $close = $(".close");
-			var $checkLogin=$('#checkLogin');
-			var $checkBlank=$('#checkBlank');
-			var $warn1 = $("#warn1");
-			
-			$register.click(function(){
-				if ($username.val().length < 2|| $username.val().length > 6) {
-					$wran.css("display","block");
-					return false;
-				}
-				if ($('#password').val().length<6) {
-					$warn1.css("display","block");
-					return false;
-				}
-			});
-		    
-			
-			$close.click(function(){
-				$wran.css("display","none");
-				$checkBlank.css("display","none");
-				$checkLogin.css("display","none");
-				$warn1.css("display","none");
-				return false;
-			});
-
-
-			$username.change(function(){
-			/*非空见擦*/
-			if ($username.val().length > 0) {
-					$wran.css("display","none");
-				}	
-			/* 字符串空格检查*/
-			var str=$username.val();
-			var Bnum=0;
-			for(var i=0;i<str.length;i++){
-				if(str.charCodeAt(i)==32){
-					Bnum++;
-				}
-			}
-			if(Bnum>0){
-				$('#checkBlank').css('display','block');
-			}else{
-				$('#checkBlank').css('display','none');
-			}
-
-			/*ajax 查询用户知否已经注册*/
-			var data='username='+$username.val();
-			console.log(data);
-			var path=window.location.pathname;
-			var urlSlice=path.split('Home');
-			url=urlSlice[0]+'Home/Register/userExistCheck';
-			$.ajax({
-				type:"GET",
-				url:url,
-				data:data,
-				dataType:"json",
-				success:function(data){
-					console.log(data);
-					data=data.toString();
-					if(data!="error"){
-					   $checkLogin.css('display','block');
-					}else{
-						 $checkLogin.css('display','none');
-					}
-				}
-			});
-			});
-
-			$('#password').change(function(){
-				/*非空见擦*/
-				if ($('#password').val().length > 0) {
-					$wran.css("display","none");
-				}	
-				/*检查空格*/
-				var str=$('#password').val();
-				var Bnum=0;
-				for(var i=0;i<str.length;i++){
-					if(str.charCodeAt(i)==32){
-					Bnum++;
-					}
-				}
-				if(Bnum>0){
-				$('#checkBlank').css('display','block');
-				}else{
-				$('#checkBlank').css('display','none');
-				}	
-			});
-
-		})
-		</script>			
-		<script src="/yuanku/Public/js/register.js" type="text/javascript" charset="utf-8"></script>

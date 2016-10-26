@@ -920,6 +920,165 @@
 
 </div>
 
+		<!--
+        	第十二节
+        -->
+				<div class="js-add-bg feature_section12 col-lg-12 col-sm-12 col-xs-12" style="background-image: url(../../img/highstand homepage/bg-image03.jpg) ;">
+					<div class="container ">
+						<h2 class="text-uppercase">最佳包装</h2>
+						<div class="linebg_3"></div>
+						<p>有些看起来可靠的文案已经变得不那么可靠了，比如下面这一句英文！ <br>dolor sit amet consectetuer adipiscing elit suspendisse justdo.</p>
+
+						<div class="one_fourth_less">
+							<h3>标准版</h3>
+							<h1>$4.95 <br> <em>/月</em></h1>
+
+							<ul>
+								<li><i class="fa  fa-check"></i> 50 GB 存储空间 </li>
+								<li><i class="fa  fa-check"></i> 1 个免费域名 </li>
+								<li><i class="fa  fa-check"></i> 100 个邮箱 </li>
+								<li><i class="fa  fa-check"></i> 24/7 支持 </li>
+								<li><i class="fa  fa-check"></i> 资金退还保证 </li>
+							</ul>
+
+							<div class="clearfix margin_bottom2"></div>
+							<a href="#" class="button four">选择该计划</a>
+						</div>
+						<!-- end section  -->
+
+						<div class="one_fourth_less">
+							<h3>专业版</h3>
+							<h1>$9.95 <br> <em>/月</em></h1>
+
+							<ul>
+								<li><i class="fa  fa-check"></i> 50 GB 存储空间 </li>
+								<li><i class="fa  fa-check"></i> 1 个免费域名 </li>
+								<li><i class="fa  fa-check"></i> 100 个邮箱 </li>
+								<li><i class="fa  fa-check"></i> 24/7 支持 </li>
+								<li><i class="fa  fa-check"></i> 资金退还保证 </li>
+							</ul>
+							<div class="clearfix margin_bottom2"></div>
+							<a href="#" class="button four">选择该计划</a>
+						</div>
+						<!-- end section  -->
+
+						<div class="one_fourth_less">
+							<h3>高级版</h3>
+							<h1>$45 <br> <em>/月</em></h1>
+
+							<ul>
+								<li><i class="fa  fa-check"></i> 50 GB 存储空间 </li>
+								<li><i class="fa  fa-check"></i> 1 个免费域名 </li>
+								<li><i class="fa  fa-check"></i> 100 个邮箱 </li>
+								<li><i class="fa  fa-check"></i> 24/7 支持 </li>
+								<li><i class="fa  fa-check"></i> 资金退还保证 </li>
+							</ul>
+							<div class="clearfix margin_bottom2"></div>
+							<a href="#" class="button four">选择该计划</a>
+						</div>
+						<!-- end section  -->
+
+						<div class="one_fourth_less last">
+							<h3>极致版</h3>
+							<h1>$100 <br> <em>/月</em></h1>
+
+							<ul>
+								<li><i class="fa  fa-check"></i> 50 GB 存储空间 </li>
+								<li><i class="fa  fa-check"></i> 1 个免费域名 </li>
+								<li><i class="fa  fa-check"></i> 100 个邮箱 </li>
+								<li><i class="fa  fa-check"></i> 24/7 支持 </li>
+								<li><i class="fa  fa-check"></i> 资金退还保证 </li>
+							</ul>
+							<div class="clearfix margin_bottom2"></div>
+							<a href="#" class="button four">选择该计划</a>
+						</div>
+						<!-- end section  -->
+					</div>
+				</div>
+				<!--
+        	第十三节
+        -->
+				<div class="views-element-container feature_section13 col-lg-12 col-sm-12 col-xs-12">
+					<div class="container">
+						<h2 class="text-uppercase">人们怎么看</h2>
+						<div class="linebg_3"></div><br><br>
+						<div class="less6">
+							<div id="owl-demo2" class="owl-carousel owl-theme">
+								<div class="owl-wrapper-outer autoHeight">
+									<div class="owl-wrapper">
+										<div class="rongqi">
+											<div class "box-none" id="d1"></div>
+											<div class "box-block" id="d2">
+												<div class="item">
+													<div class="climg"><img src="/yuanku/Public/img/highstand homepage/people-img19_0.jpg" width="100" height="100" alt="says" typeof="Image"></div>
+													<p class="bigtfont">"测试用的段落，并通过这里的词的引用古典文学通行证发现那里不可思议的源看起来合理生成的特征词。"</p>
+													<br>
+													<strong>- Michle Siminson</strong> <em>- google.com</em>
+												</div>
+											</div>
+											<div class "box-none" id="d3"></div>
+										</div>
+
+										<div class="owl-item">
+											<div class="item">
+												<div class="climg"><img src="/yuanku/Public/img/highstand homepage/people-img19_0.jpg" width="100" height="100" alt="says" typeof="Image"></div>
+												<p class="bigtfont">"测试用的段落，并通过这里的词的引用古典文学通行证发现那里不可思议的源看起来合理生成的特征词。"</p>
+												<br>
+												<strong>- Michle Siminson</strong> <em>- google.com</em>
+											</div>
+										</div>
+
+										<div class="owl-item">
+											<div class="item">
+												<div class="climg"><img src="/yuanku/Public/img/highstand homepage/people-img19_1.jpg" width="100" height="100" alt="says" typeof="Image"></div>
+												<p class="bigtfont">"测试用的段落，并通过这里的词的引用古典文学通行证发现那里不可思议的源看起来合理生成的特征词。"</p>
+												<br>
+												<strong>- Michle Siminson</strong> <em>- google.com</em>
+											</div>
+										</div>
+
+										<div class="owl-item">
+											<div class="item">
+												<div class="climg"><img src="/yuanku/Public/img/highstand homepage/people-img19.jpg" width="100" height="100" alt="says" typeof="Image"></div>
+												<p class="bigtfont">" 测试用的段落，并通过这里的词的引用古典文学通行证发现那里不可思议的源看起来合理生成的特征词。 "</p>
+												<br>
+												<strong>- Michle Siminson</strong> <em>- google.com</em>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="owl-controls clickable">
+									<div class="owl-pagination">
+										<div class="owl-page"><span class=""></span></div>
+										<div class="owl-page active"><span class=""></span></div>
+										<div class="owl-page"><span class=""></span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--
+    	作者：923413786@qq.com
+    	时间：2016-10-25
+    	描述：第十四节
+    -->
+				<div class="views-element-container feature_section14 col-lg-12 col-sm-12 col-xs-12">
+					<div class="container">
+						<h4 class="caps light text-uppercase">合作伙伴</h4>
+						<div class="clearfix margin_bottom3"></div>
+						<ul class="class-one1">
+							<li> <img src="/yuanku/Public/img/highstand homepage/clogo2.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/yuanku/Public/img/highstand homepage/clogo5_1.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/yuanku/Public/img/highstand homepage/clogo1_0.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/yuanku/Public/img/highstand homepage/clogo2.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/yuanku/Public/img/highstand homepage/clogo3_1.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/yuanku/Public/img/highstand homepage/clogo3_1.png" width="150" height="50" alt="image" typeof="Image"></li>
+						</ul>
+					</div>
+
+				</div>
 <script src="/yuanku/Public/js/home.js" type="text/javascript" charset="utf-8"></script>
 
 
@@ -931,50 +1090,46 @@
 				<div class="container">
 					<div class="row" >
 						<div class="col-lg-3 col-md-6 col-lg-12">
-							<ul class="clearfix">
-								<li><h4>友情连接</h4></li><br/>
-								<li><a href="#">1</a></li><br/>
-								<li><a href="#">2</a></li><br/>
-								<li><a href="#">3</a></li><br/>
-								<li><a href="#">4</a></li>							
+							<ul>
+								<li><h4 >友情连接</h4></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>百度一下</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>淘宝商城</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>腾讯首页</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>网易新闻</span></a></li>							
 							</ul>						
 						</div>					
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><h4>最新动态</h4></li><br/>
-								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
-								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
-								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
-													
+								<li><h4 >最新动态</h4></li><br/>
+								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
+					
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
 								<li><h4>关于我们</h4></li><br/>
-								<li><a href="#">1</a></li><br/>
-								<li><a href="#">2</a></li><br/>
-								<li><a href="#">3</a></li><br/>
-								<li><a href="#">4</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;&nbsp;<span>技术中心</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;&nbsp;<span>产品特色</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;<span>结算流程</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>&nbsp;&nbsp;<span>服务宗旨</span></a></li>
 						   </ul>
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><h4>邮箱地址</h4></li></br>
-								<li><a href="#">1</a></li><br/>
-								<li><a href="#">2</a></li><br/>
-								<li><a href="#">3</a></li><br/>
-								<li><a href="#">4</a></li>							
+								<li><h4>联系我们</h4></li></br>
+								<li><a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;<span>511186470@qq.com</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;<span>0201-6666666</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-map-marker"aria-hidden="true"></span>&nbsp;&nbsp;<span>美国洛杉矶</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>&nbsp;&nbsp;<span>邮政编码：88888</span></a></li>							
 						    </ul>
 						</div>				
 					</div>	
 				</div>
 			</div>
 			<div class="foot-text">
-<<<<<<< HEAD
 				<p>Copyright © 2016 lidong.com. All rights reserved. Terms of Use | Privacy Policy</p>
-=======
-				<p class="text-center">Copyright? 2003-2016 </p>
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 			</div>
 </nav>
 <!--摸态框-->
@@ -998,8 +1153,8 @@
 		        </form>
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary">Search</button>
+		        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+		        <button type="button" class="btn btn-primary">搜索</button>
 		      </div>
 		    </div>
 		  </div>
