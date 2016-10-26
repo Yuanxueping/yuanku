@@ -1,2044 +1,229 @@
-[ 2016-10-25T14:27:40+08:00 ] ::1 /lidong/yuanku/
+[ 2016-10-25T16:05:37+08:00 ] ::1 /yuanku/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001927s ]
+SQL: SHOW COLUMNS FROM `system_conf` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `system_conf` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000441s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000605s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025497s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001148s ]
+
+[ 2016-10-25T16:05:57+08:00 ] ::1 /yuanku/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000481s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000685s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001381s ]
+
+[ 2016-10-25T16:10:38+08:00 ] ::1 /yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003427s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000654s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000891s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.151091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.151315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.243889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.244109s ]
+
+[ 2016-10-25T16:10:43+08:00 ] ::1 /yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000291s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2016-10-25T16:10:54+08:00 ] ::1 /yuanku/index.php/Home/Index/about_us
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000916s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001066s ]
+
+[ 2016-10-25T16:10:57+08:00 ] ::1 /yuanku/index.php/Home/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002811s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2016-10-25T16:11:02+08:00 ] ::1 /yuanku/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2016-10-25T16:11:08+08:00 ] ::1 /yuanku/index.php/Home/Register/userExistCheck?username=ssssss
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001167s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
-SQL: SHOW COLUMNS FROM `system_conf` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `system_conf` LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `client_user` [ RunTime:0.0514s ]
+SQL: SELECT * FROM `client_user` WHERE ( `user_name`='ssssss' ) LIMIT 1   [ RunTime:0.0434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002341s ]
+
+[ 2016-10-25T16:11:11+08:00 ] ::1 /yuanku/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+SQL: SHOW COLUMNS FROM `client_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `client_user` WHERE ( user_name="ssssss" and user_pwd="96e79218965eb72c92a549dd5a330112" ) LIMIT 1   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000375s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038810s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.039031s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020357s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000759s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
 
-[ 2016-10-25T14:27:55+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/about_us
+[ 2016-10-25T16:11:12+08:00 ] ::1 /yuanku/index.php/Home/Personal/index.html
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001362s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001553s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+SQL: SELECT * FROM client_user WHERE user_name ='ssssss' [ RunTime:0.0007s ]
+SQL: SELECT email_address FROM client_user WHERE user_name ='ssssss' [ RunTime:0.0005s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021096s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.021301s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000362s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000607s ]
+NOTIC: [8] Undefined variable: title D:\wamp\www\yuanku\Application\Runtime\Cache\Home\c32ce1ba62d248c865a32a620b180fb9.php 第 6 行.
+NOTIC: [8] Undefined variable: title D:\wamp\www\yuanku\Application\Runtime\Cache\Home\c32ce1ba62d248c865a32a620b180fb9.php 第 86 行.
+NOTIC: [8] Undefined variable: phone_num D:\wamp\www\yuanku\Application\Runtime\Cache\Home\c32ce1ba62d248c865a32a620b180fb9.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025735s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000475s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001211s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
 
-[ 2016-10-25T14:32:41+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/about_us
+[ 2016-10-25T16:14:12+08:00 ] ::1 /yuanku/index.php/Home/Personal/index
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014763s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.014891s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000575s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
-
-[ 2016-10-25T14:32:53+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001255s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000413s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000601s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021073s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.021217s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000620s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
-
-[ 2016-10-25T14:32:58+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/contact_us
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012553s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.012685s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
-
-[ 2016-10-25T14:33:03+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/about_us
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SELECT * FROM client_user WHERE user_name ='ssssss' [ RunTime:0.0004s ]
+SQL: SELECT email_address FROM client_user WHERE user_name ='ssssss' [ RunTime:0.0003s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016836s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.016995s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000443s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000878s ]
-
-[ 2016-10-25T14:33:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/about_us
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018584s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.018718s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000969s ]
-
-[ 2016-10-25T14:35:05+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/about_us
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014613s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.014738s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000545s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001192s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001307s ]
-
-[ 2016-10-25T14:35:39+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000446s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019207s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.019332s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
-
-[ 2016-10-25T14:39:12+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000302s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000464s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038926s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.039111s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000862s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001013s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001093s ]
-
-[ 2016-10-25T14:40:24+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000296s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000435s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022198s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.022559s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000660s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
-
-[ 2016-10-25T14:40:58+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000663s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000822s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023424s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.023573s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
-
-[ 2016-10-25T14:49:16+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000523s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066735s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.066871s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000651s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000830s ]
-
-[ 2016-10-25T14:50:17+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000313s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000432s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021140s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.021311s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000636s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001060s ]
-
-[ 2016-10-25T15:18:12+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001430s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004590s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.004884s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000488s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000815s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.139537s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.139765s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007823s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.008190s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003398s ]
-INFO: [ app_end ] --END-- [ RunTime:0.003599s ]
-
-[ 2016-10-25T15:18:19+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000417s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000624s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028119s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028352s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000638s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000827s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001635s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001885s ]
-
-[ 2016-10-25T15:21:25+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001405s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000434s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000856s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030272s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.030565s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000715s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000899s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000952s ]
-
-[ 2016-10-25T15:21:53+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001298s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001427s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000404s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000596s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030530s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.030733s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000609s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000771s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000961s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001147s ]
-
-[ 2016-10-25T15:22:11+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001491s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000409s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000669s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038369s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.038657s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001026s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001219s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001278s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001491s ]
-
-[ 2016-10-25T15:23:57+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000466s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000688s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030352s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.030536s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001120s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001312s ]
-
-[ 2016-10-25T15:28:00+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000391s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000582s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028053s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028260s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000723s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000882s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001006s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001186s ]
-
-[ 2016-10-25T15:28:18+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001262s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001466s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000436s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029186s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.029379s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000716s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000879s ]
-
-[ 2016-10-25T15:28:34+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002111s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002439s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000403s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000606s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027504s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.027687s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000750s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
-
-[ 2016-10-25T15:29:03+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000922s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000456s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000751s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029322s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.029495s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000906s ]
-
-[ 2016-10-25T15:29:20+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000335s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000521s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027674s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.027834s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000901s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
-
-[ 2016-10-25T15:30:52+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000454s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028455s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028625s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000598s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000856s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001226s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001448s ]
-
-[ 2016-10-25T15:31:20+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000914s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000295s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000425s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026145s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.026352s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000656s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000827s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000952s ]
-
-[ 2016-10-25T15:31:58+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001661s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.005003s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000420s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000642s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028627s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028808s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000952s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
-
-[ 2016-10-25T15:32:03+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001166s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001387s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001622s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000397s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000597s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028268s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028477s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000789s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000933s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001030s ]
-
-[ 2016-10-25T15:33:04+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000401s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000621s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025563s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.025755s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
-
-[ 2016-10-25T15:33:19+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001306s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000459s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028770s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.029040s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000836s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001107s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000918s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001107s ]
-
-[ 2016-10-25T15:33:32+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001242s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000344s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000471s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.031370s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001055s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001236s ]
-
-[ 2016-10-25T15:36:14+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001351s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000457s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000681s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027776s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.027979s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000823s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001023s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000867s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001045s ]
-
-[ 2016-10-25T15:37:16+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000413s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028047s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028216s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000738s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000916s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001121s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001289s ]
-
-[ 2016-10-25T15:37:35+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001077s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000468s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000665s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027878s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028069s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000609s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000770s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000970s ]
-
-[ 2016-10-25T15:38:28+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000452s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029306s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.029568s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001098s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001152s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001318s ]
-
-[ 2016-10-25T15:39:16+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001266s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001554s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000439s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000638s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028424s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028612s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000742s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001349s ]
-
-[ 2016-10-25T15:39:34+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000443s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000661s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031863s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.032064s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001185s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001358s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001264s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001456s ]
-
-[ 2016-10-25T15:40:48+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000412s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000631s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030718s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.030937s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000899s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001096s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001285s ]
-
-[ 2016-10-25T15:41:13+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000399s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000596s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029890s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.030086s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000604s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000760s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
-
-[ 2016-10-25T15:42:42+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000568s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000861s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036342s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.036562s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000907s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001088s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003038s ]
-INFO: [ app_end ] --END-- [ RunTime:0.003239s ]
-
-[ 2016-10-25T15:44:18+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001095s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000411s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000616s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027821s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028048s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000580s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001139s ]
-
-[ 2016-10-25T15:44:40+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001107s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000750s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001064s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031498s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.031702s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000692s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000831s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000968s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001158s ]
-
-[ 2016-10-25T15:46:03+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001192s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001417s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000467s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000705s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028789s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.029009s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000703s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000879s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001262s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001439s ]
-
-[ 2016-10-25T15:47:29+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001240s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000377s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000533s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028742s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028874s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000536s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
-
-[ 2016-10-25T15:48:18+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001336s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000434s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000671s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027762s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.027956s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000648s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001037s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001172s ]
-
-[ 2016-10-25T15:48:49+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000419s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000614s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034277s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.034454s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000725s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000904s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001420s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001626s ]
-
-[ 2016-10-25T15:49:40+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
-INFO: [ app_init ] --END-- [ RunTime:0.002035s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002148s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.006155s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000345s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000527s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028814s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.029029s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000751s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000930s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001207s ]
-
-[ 2016-10-25T15:50:08+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000368s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000540s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028449s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028736s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000860s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001054s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
-
-[ 2016-10-25T15:50:31+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001399s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001170s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001401s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000399s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000579s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028651s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028876s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000646s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000812s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001041s ]
-
-[ 2016-10-25T15:51:10+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000420s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000649s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028198s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028427s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000744s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000931s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
-
-[ 2016-10-25T15:52:23+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000394s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000589s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030430s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.030644s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000674s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000812s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001527s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001725s ]
-
-[ 2016-10-25T15:54:36+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000414s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000614s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029366s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.029578s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000725s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000868s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
-
-[ 2016-10-25T15:55:45+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000399s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000590s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025944s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.026086s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000469s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
-
-[ 2016-10-25T15:56:00+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001035s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001132s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001333s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000386s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000563s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039417s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.039635s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000926s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001187s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001363s ]
-
-[ 2016-10-25T15:56:47+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001104s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000749s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000969s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028542s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028768s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001008s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001198s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001628s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001829s ]
-
-[ 2016-10-25T15:59:22+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000428s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000631s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032359s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.032544s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000713s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000879s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001155s ]
-
-[ 2016-10-25T15:59:48+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001021s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000393s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000584s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030105s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.030441s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000728s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000996s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002955s ]
-INFO: [ app_end ] --END-- [ RunTime:0.003161s ]
-
-[ 2016-10-25T16:00:37+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
-INFO: [ app_init ] --END-- [ RunTime:0.004195s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001288s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001555s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000515s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000720s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038460s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.038710s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001445s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001642s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001112s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001295s ]
-
-[ 2016-10-25T16:00:52+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000515s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000762s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033060s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.033293s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000717s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000909s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000999s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001192s ]
-
-[ 2016-10-25T16:03:37+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000518s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000683s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026826s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.026992s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000775s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001062s ]
-
-[ 2016-10-25T16:03:54+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000445s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000678s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029543s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.029746s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000462s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000611s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001088s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001266s ]
-
-[ 2016-10-25T16:04:34+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001297s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001571s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000402s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000590s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032530s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.032731s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000646s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000824s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001035s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
-
-[ 2016-10-25T16:07:01+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002084s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002316s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000426s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000644s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027295s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.027487s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000676s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000859s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001050s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
-
-[ 2016-10-25T16:07:26+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000530s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000752s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033408s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.033609s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000788s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000949s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000941s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001104s ]
-
-[ 2016-10-25T16:07:59+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000417s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000620s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027924s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028143s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000740s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000944s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001131s ]
-
-[ 2016-10-25T16:09:05+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000383s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000825s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029298s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.029474s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000814s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001070s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001242s ]
-
-[ 2016-10-25T16:09:28+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000399s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000583s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024861s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.025043s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000638s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001214s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001407s ]
-
-[ 2016-10-25T16:10:27+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000378s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000540s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028221s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028416s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000604s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000754s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
-
-[ 2016-10-25T16:11:15+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001153s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001368s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000391s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000567s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024539s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.024721s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000705s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000863s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001182s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001399s ]
-
-[ 2016-10-25T16:11:33+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000393s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000546s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079846s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.080026s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001141s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001322s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001427s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001684s ]
-
-[ 2016-10-25T16:12:03+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001284s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000513s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000926s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036662s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.036969s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001020s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001213s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001110s ]
-
-[ 2016-10-25T16:12:28+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001484s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001736s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032116s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.032279s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000536s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000671s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000899s ]
-
-[ 2016-10-25T16:12:32+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001151s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000399s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000597s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027090s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.027357s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000729s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000874s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
-
-[ 2016-10-25T16:12:57+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000459s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000696s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027046s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.027223s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000563s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000931s ]
-
-[ 2016-10-25T16:13:38+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001165s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000532s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000748s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027516s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.027692s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000823s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000997s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001079s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
-
-[ 2016-10-25T16:13:55+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000401s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000603s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031196s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.031429s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000784s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001221s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001423s ]
-
-[ 2016-10-25T16:14:21+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000408s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000609s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030384s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.030562s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000942s ]
-
-[ 2016-10-25T16:17:50+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001105s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000296s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000424s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033564s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.033765s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001025s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
-
-[ 2016-10-25T16:18:30+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001115s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000403s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000600s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032387s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.032592s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000787s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000970s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001142s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001323s ]
-
-[ 2016-10-25T16:18:38+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001091s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002023s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000426s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000633s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028390s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028615s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000861s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001339s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001576s ]
-
-[ 2016-10-25T16:21:27+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000407s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000610s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030748s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.030960s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000600s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000725s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001166s ]
-
-[ 2016-10-25T16:22:25+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001613s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001871s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000417s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000630s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029728s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.029913s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000599s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000756s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001051s ]
-
-[ 2016-10-25T16:25:46+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001284s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001495s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000372s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000574s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026731s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.026956s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000846s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001025s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004194s ]
-INFO: [ app_end ] --END-- [ RunTime:0.004402s ]
-
-[ 2016-10-25T16:27:06+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002440s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002781s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000495s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031567s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.031791s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000717s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000897s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000998s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
-
-[ 2016-10-25T16:32:02+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000507s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000786s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035020s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.035253s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001391s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.004411s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002306s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002677s ]
-
-[ 2016-10-25T16:33:14+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000562s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000830s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032543s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.032755s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000667s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000838s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001188s ]
-
-[ 2016-10-25T16:36:10+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000410s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000630s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028715s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028879s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001135s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001331s ]
-
-[ 2016-10-25T16:36:26+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000972s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002867s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.003095s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000435s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000662s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029089s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.029297s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000736s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000918s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000973s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001141s ]
-
-[ 2016-10-25T16:36:45+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000440s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000638s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030120s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.030398s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000706s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000865s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001164s ]
-
-[ 2016-10-25T16:37:02+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000417s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000641s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027921s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028158s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000660s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000847s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001033s ]
-
-[ 2016-10-25T16:37:30+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000450s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000683s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030752s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.030992s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001093s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001031s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001215s ]
-
-[ 2016-10-25T16:39:43+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000432s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000642s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028728s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028869s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000651s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000816s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
-
-[ 2016-10-25T16:41:34+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000405s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000600s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030769s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.031003s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001043s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001280s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001480s ]
-
-[ 2016-10-25T16:41:49+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001166s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000423s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000629s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027351s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.027558s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000661s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000825s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000818s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000948s ]
-
-[ 2016-10-25T16:42:38+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000425s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000643s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030008s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.030227s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000658s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001282s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001554s ]
-
-[ 2016-10-25T16:43:11+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000531s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000811s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028095s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028270s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000661s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000906s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001070s ]
-
-[ 2016-10-25T16:43:38+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000428s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000634s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028861s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.029134s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000972s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001205s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001035s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001210s ]
-
-[ 2016-10-25T16:44:02+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000512s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000747s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028882s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.029093s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000797s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
-
-[ 2016-10-25T16:44:39+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000340s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000491s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027819s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028111s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000814s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001022s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001187s ]
-
-[ 2016-10-25T16:45:50+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001247s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000415s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000624s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030244s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.030469s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000787s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000998s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000992s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001137s ]
-
-[ 2016-10-25T16:47:16+08:00 ] ::1 /lidong/yuanku/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001599s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001831s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000396s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000659s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089090s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.089349s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000701s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000875s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000961s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Undefined variable: title D:\wamp\www\yuanku\Application\Runtime\Cache\Home\c32ce1ba62d248c865a32a620b180fb9.php 第 6 行.
+NOTIC: [8] Undefined variable: title D:\wamp\www\yuanku\Application\Runtime\Cache\Home\c32ce1ba62d248c865a32a620b180fb9.php 第 86 行.
+NOTIC: [8] Undefined variable: phone_num D:\wamp\www\yuanku\Application\Runtime\Cache\Home\c32ce1ba62d248c865a32a620b180fb9.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
 
 [ 2016-10-25T17:09:05+08:00 ] ::1 /lidong/yuanku/
 INFO: [ app_init ] --START--
