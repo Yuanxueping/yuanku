@@ -1,6 +1,6 @@
 @charset 'utf-8';
  body{
- 	font-family: "微软雅黑"!important;
+  font-family: "微软雅黑"!important;
  }
   .modal-open {
   overflow:  inherit !important;
@@ -27,8 +27,8 @@
   height: 45px;
 }
 .top-nav .navbar-default{
-	background-color:red!important;
-	color: white;
+  background-color:red!important;
+  color: white;
 	
 	
 }
@@ -38,10 +38,10 @@
 
 
 .color>li>a{
-	color:white !important;
+   color:white !important;
 }
 .color>li>a:hover{
-	color: goldenrod!important;
+   color: goldenrod!important;
 }
 
 .top-nav .seach-input {
@@ -49,38 +49,54 @@
 }
 
 #back{
-  background-color:#272727;
-  color:white;
+   background: #212121 url(../../img/lunbo/footer-bg.jpg) no-repeat center bottom;
+   color:white;
 
 }
 #back img{
   vertical-align: middle;
-  padding-right:10px; 
+   padding-right:10px; 
 }
 
 .foot-nav .container-fluid {
-  
-  padding: 10px 0;
+   padding: 10px 0;
 
 }
 
 .foot-nav .container-fluid li {
-  display: inline-block;
-  padding: 0 4px ;
-  cursor: pointer;
+   display: inline-block;
+   padding: 8px 4px ;
+   cursor: pointer;
 
 }
 .foot-nav .container-fluid li h4{
-  color: white!important;
+   color: white!important;
+   text-indent: 12px;
 }
 .foot-nav .container-fluid li a {
-  color: white!important;
-  padding: 0 8px;
+   color: gainsboro!important;
+   padding: 0 8px;
+}
+.foot-nav .container-fluid li a span{
+   color: gainsboro!important;
+}
+.foot-nav .container-fluid li a:hover span{
+   color: white!important;
+  
 }
 .foot-nav .foot-text {
-  padding-top: 20px;
-  height: 40px;
-  background-color:rgb(17,17,17);
+	height: 60px;
+	background-color:rgb(17,17,17);
+	line-height: 60px;
+ 
+}
+.foot-nav .foot-text p{
+	text-align: center;
+	line-height: 60px;
+}
+.glyphicon{
+	font-size:8px;
+	font-weight: normal;
 }
 /*.navbar-toggle{
   position: absolute;
@@ -88,7 +104,15 @@
   right:15px;
 }*/
 .row{
-  width: 100%!important;
-  margin-right:0px!important; 
-  margin-left:0px!important
+	 width: 100%!important;
+	 margin-right:0px!important; 
+	 margin-left:0px!important
+}
+.size{
+	width: 80px;
+	display:inline-block;
+	
+}
+.size>img{
+    width:100%;	
 }

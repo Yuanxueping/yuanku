@@ -26,13 +26,13 @@
           <td>{$client_i.id}</td>
           <td>{$client_i.user_name}</td>
           <td>{$client_i.user_pwd}</td>
-          <td> {$client_i.create_time|date="Y-m-d H:i:s",###}</td>
+          <td> {$client_i.create_time}</td>
           <td>{$client_i.head_photo}</td>
-          <td>{$client_iemail_address}</td>
+          <td>{$client_i.email_address}</td>
           <!-- <td>{$vo['date']}</td> -->
           <td class="text-center">
             <div class="btn-group">
-              <button onclick="location.href='{:U('Client/client_edit',array('id'=>$client_i[id]))}'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+              <!-- <button onclick="location.href='{:U('Client/client_edit',array('id'=>$client_i[id]))}'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button> -->
               <button onclick="location.href='{:U('Client/client_del',array('id'=>$client_i[id]))}'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
             </div>
           </td>
@@ -40,6 +40,12 @@
       </volist>
         </tbody>
     </table>
+</div>
+
+<div class="btn-toolbar text-center" role="toolbar">
+  <div class="btn-group">
+    {$page_html}
+  </div>
 </div>
 
  <include file='Public:footer' /> 

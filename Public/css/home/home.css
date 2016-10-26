@@ -528,6 +528,29 @@ h3 {
     font-weight: 600;
     text-align: center;
 }
+/*for less than 480px width screen */
+@media only screen and (min-device-width:319px) and (max-device-width:480px){
+    
+    .feature_section8 .left{
+    	float: none;
+    	padding-left: 30px;
+    	padding-right: 30px;
+    	width: 100%;
+    	text-align: center;
+    }
+    .feature_section8 .left h1{
+    	font-size: 26px;
+    }
+    .feature_section8 .right{
+    	float: none;
+    	padding-left: 30px;
+    	padding-right: 30px;
+    	width: 100%;
+    	text-align: center;
+    	border: none;
+    }
+}
+
 /**
  * 第九部分
  */
@@ -706,8 +729,8 @@ h4 {
     font-family: "arial narrow";
 }
 
-/* for 480px width screen */
-@media only screen and (min-device-width:321px) and (max-device-width:480px){
+/* for less than 480px width screen */
+@media only screen and (min-device-width:319px) and (max-device-width:480px){
 	
 	.feature_section10  a{
 		margin-left: 50px;
@@ -845,8 +868,8 @@ h4 {
     transition-delay: .3s;
 }
 
-/* for 480px width screen */
-@media only screen and (min-device-width:321px) and (max-device-width:480px){
+/* for less than 410px but more than 321px width screen */
+@media only screen and (min-device-width:321px) and (max-device-width:410px){
 	
 	#tabs_container{
 		margin-top: 10px;
@@ -854,8 +877,12 @@ h4 {
 		padding-left: 1px;
 	}
 	.transition{
-		margin-left: 0px;
+		margin-right:  0px;
 	}
+    #tabs>ul>li{
+      width: 100%;
+    }
+
 	#tabs_container > div{
 		padding: 0px;
 	}
@@ -863,6 +890,40 @@ h4 {
 		width: 100%;
 	}
 }
+
+/*for less than 321px width screen*/
+@media only screen and (max-device-width:320px){
+    
+    #tabs_container{
+        padding-top: 20px;
+        padding-left: 1px;
+    }
+    #tabs_container div{
+        padding: 0px;
+    }
+    .hsta{
+        width: 100%;   
+    }
+    #tabs_container div p{
+        width:320px;
+    }
+}
+
+/*for less than 480 but more than 410px width screen*/
+@media only screen and (min-device-width:410px) and (max-device-width:480px){
+    
+    #tabs ul{
+        width: 100%;
+    }
+    #tabs_container{
+        padding-left: 1px;
+    }
+    #tabs_container div{
+        padding: 0px;
+        width: 100%;
+    }
+}
+
 
 /*
 **第一第二部分
@@ -907,6 +968,7 @@ h4 {
 	padding-left: 30px;
 	color: #727272;
 	font-size: 16px;
+	line-height: 25px;
 	min-height: 166px;	
 	float: left;
 }
@@ -959,4 +1021,284 @@ h4 {
 	color: #FFFFFF;
 }
 
+/* features section 12 */
+ ul li {
+    list-style: none;
+}
 
+div.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.feature_section12 {
+	float: left;
+	width: 100%;
+	text-align: center;
+	background-color: #eeeeee;
+	padding: 90px 0px 150px 0px;
+	background-image: url("../../img/highstand homepage/bg-image03.jpg");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.feature_section12 h2{
+	margin-bottom:15px;
+}
+.feature_section12 p{
+	font-size:16px;
+	padding:25px 0px 50px 0px;
+}
+@media only screen and (min-width: 768px) {
+.feature_section12 .one_fourth_less{
+	background-color:#fff;
+	 margin-right:2%;
+ 	 width :23%;
+ 	 padding :30px 0px 50px 0px;
+ 	 float :left;
+ 	 margin-bottom: 10px;
+}
+}
+
+@media only screen and (max-width: 776px) {
+	.feature_section12 .one_fourth_less{
+	background-color:#fff;
+	 margin-bottom:50px;
+ 	 width :100%;
+ 	 padding :30px 40px 50px 40px;
+    float: left;
+    margin-bottom: 10px;
+ }
+}
+
+@media only screen and (max-width: 500px) {
+	.feature_section12 .one_fourth_less{
+	background-color:#fff;
+	 margin-bottom:50px;
+ 	 width :100%;
+ 	 padding :30px 0px 50px 0px;
+    float: left;
+    margin-bottom: 10px;
+ }
+}
+
+.feature_section12 h1{
+	color: #2ecc71;
+    font-family: "微软雅黑", sans-serif;
+    font-size: 50px;
+    font-style: bold;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+.feature_section12 em{
+    color: #2ecc71;
+    font-family: '微软雅黑', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.feature_section12 i{
+	color:#afafaf;
+	padding-right:10px;
+	font-size:16px;
+	text-align:left;
+}
+.feature_section12 li{
+	color:#727272;
+	font-family: '微软雅黑', sans-serif;
+	font-size: 14px;
+	padding-top:6px;
+	text-align:left;
+	
+}
+
+
+/* features section 13 */
+.feature_section13 {
+	float: left;
+	width: 100%;
+	text-align: center;
+	background-color: #fff;
+	padding: 90px 0px 80px 0px;
+	background-image: url("../../img/highstand homepage/bg-image04.jpg");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.feature_section13 .climg img {
+	width: 12.5%;
+	border-radius: 100%;
+	margin-bottom: 20px;
+	height: auto;
+}
+
+.box-block strong {
+    font-weight: bold;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font: 14px '微软雅黑', sans-serif;
+    font-weight:  700;
+    font-style: normal;
+    line-height: 23px;
+    color: #727272;
+}
+
+.owl-wrapper{
+	width: 62%;
+	margin: auto;
+
+}
+.owl-item{
+	width: 33.33%;
+	margin: auto;
+	float: left;
+	display: none;
+}
+.box-block{
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+}
+.box-none{
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+	display: none;
+}
+
+.rongqi{
+	width: 300%;
+	position: relative;
+	right:100%;
+
+	
+}
+.item em{
+    font: 14px '微软雅黑', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 23px;
+    color: #727272; 
+}
+
+#d2 .item{
+	width: 33.33%;
+	margin: auto;
+}
+/* feature_section 14 */
+.class-one1 li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+.feature_section14 {
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 70px 0px 70px 0px;
+}
+.feature_section14 h4{
+	font-size: 18px;
+	font-weight:200px;
+	letter-spacing:normal;
+}
+.feature_section14 li {
+	float: left;
+	width: 16%;
+	border-right: 1px solid #eee;
+}
+.feature_section14 li.last {
+	border-right: none;
+}
+.feature_section14 span {
+	color: #999;
+	font-size: 35px;
+	display: block;
+	margin-bottom: 14px;
+}
+.feature_section14 li:hover span {
+	color: #ee7164;
+}
+
+.linebg_3 {
+    width: 50px;
+    height: 2px;
+    background-color: #2ecc71;
+    margin: 0 auto;
+}
+
+.button.four {
+    font-family: '微软雅黑', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #2ecc71;
+    padding: 12px 32px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    border-radius: 3px;
+    text-decoration: none;
+    line-height: 23px;
+}
+
+.bigtfont {
+    font-size: 16px;
+    line-height: 27px;
+    color: #727272;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1169px) and (min-width: 1000px)
+{.button.four {
+    padding: 12px 20px;
+}
+}
+
+@media only screen and (max-width: 999px) and (min-width: 768px)
+{
+.button.four {
+    padding: 12px 10px;
+    }
+}
+
+.button.four {
+   position: relative;
+   top:15px;
+}
+
+.button.four:hover {
+	background-color: #000000;
+	transition: 0.5s ease;
+}
+
+@media only screen and (max-width: 999px){
+	.feature_section14 li {
+	float: left;
+	width: 40%;
+	border-right: 1px solid #eee;
+}
+}
+
+@media only screen and (max-width: 520px){
+	.feature_section14 li {
+	float: left;
+	width: 100%;
+	border-right: 1px solid #eee;
+	margin-bottom: 5px;
+}
+}
