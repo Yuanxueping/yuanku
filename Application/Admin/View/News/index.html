@@ -33,7 +33,7 @@
 					<td>{$vo['date']|date='Y-m-d',###}</td>
 					<td class="text-center">
 						<div class="btn-group">
-							<button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+							<button onclick="location.href='{:U('News/news_edit',array('id'=>$vo['nid']))}'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
 							<button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
 						</div>
 					</td>

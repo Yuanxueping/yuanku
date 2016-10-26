@@ -80,6 +80,26 @@ class NewsController extends AuthController {
     		$this->display();
     	}
     }
+
+	public function news_edit() {
+		if(IS_POST) {
+			
+		} else {
+			$news = D('news');
+			$author = D('author');
+			$news_sort = D('news_sort');
+			
+			$news_info = $news -> where('id='.I('id')) -> select();
+			$author_list = $author -> select();
+			$sort_list = $news_sort -> select();
+			
+			$this -> assign('news_info',$news_info);
+			$this -> assign('author_list',$author_list);
+			$this -> assign('sort_list',$sort_list);
+			
+			$this -> display();
+		}
+	}
   
     public function newsort(){
     	$news_m = M('News');
