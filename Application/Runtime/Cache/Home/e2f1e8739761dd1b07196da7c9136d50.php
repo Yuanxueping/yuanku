@@ -1,4 +1,8 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!-- /*
+	*yxp
+	*注册页面
+ */ -->
+<!DOCTYPE html>
 <html>
 <head lang="zh">
 	<title><?php echo ($title); ?></title>
@@ -25,15 +29,9 @@
 		
 
 
-<!-- 联系我们页面的样式 -->
-<link rel="stylesheet" href="/lidong/yuanku/Public/css/home/contact_us.css">
 
-<!-- copy的两个关于我们页面底部的样式 -->
-<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/about.css"/>
-<!-- <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/site.min.css">  -->
-
-<!-- copy的 登陆页面 头部-->
-<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/register.css"/>
+		<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/register.css"/>
+ 
   </head>
 <body>
 <!-- <div class="container-fluid"> -->
@@ -82,98 +80,80 @@
 	            </div>
 		  </div>
 	</nav>
-<div class="container">
-	<div class="row login_header clearcss">
-		
-			<div class="col-lg-6 col-md-12">
-				<h1>联系我们</h1>
-			</div>
-			<div class="col-lg-offset-4 col-lg-2 col-md-12">
-              	<a href="index.html" style="opacity:0.6;font-weight:normal;">首页 <i>/</i> </a> 
+
+		<div class="container">
+			<div class="row login_header clearcss">
+				
+					<div class="col-lg-6 col-md-12">
+						<h1>注册用户</h1>
+
+					</div>
+					<div class="col-lg-offset-4 col-lg-2 col-md-12">
+		              	<a href="index.html" style="opacity:0.6;font-weight:normal;">首页 <i>/</i> </a> 
+					</div>
+		    </div>
+		    
+		</div>
+		<div class="container  box">
+			<div class="col-lg-offset-3 col-lg-6 col-md-12">
+
+				<form class="form-signin" role="form" action="/lidong/yuanku/index.php/Home/Register/regNewMember" method="POST" enctype="application/x-www-form-urlencoded">
+			        <div class="form-header">
+			        	<!-- <h4>注用户册</h4> -->
+			        	<h4>用户注册</h4>
+			        	<!-- <p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">注册</a></p> -->
+
+			        	<p style="margin-top:5px;">已经注册?&nbsp;<a href="login.html">登录</a></p>
+			        	<p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">找回账户或密码</a></p>
+			        </div>
+			        <div class="message">
+			        	<div id="warn" class="alert alert-warning alert-dismissable" style="display: none;"> 
+			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+			        		<strong>警告！&nbsp;&nbsp;</strong>请输入2-6个字符的用户名！
+			        	</div>
+			        	<div id="warn1" class="alert alert-warning alert-dismissable" style="display: none;"> 
+			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+			        		<strong>警告！&nbsp;&nbsp;</strong>密码内容不能低于6位！
+			        	</div>
+			        	<div id="checkBlank" class="alert alert-warning alert-dismissable" style="display: none;"> 
+			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+			        		<strong>警告！&nbsp;&nbsp;</strong>用户名和密码内容不能含有空格字符！
+			        	</div>
+			        	<div id="checkLogin" class="alert alert-warning alert-dismissable" style="display: none;"> 
+			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+			        		<strong>警告！&nbsp;&nbsp;</strong>用户已存在，请使用新的用户名进行注册！或者<a href="./login">直接登陆</a>
+			        	</div>
+			        </div>
+			        <!-- 密码 -->
+			        <div class="form-group">
+
+			        	<!-- <p class="form-signin-heading">注册用户名或邮箱地址</p> -->
+
+			        	<!-- <p class="form-signin-heading">输入用户名</p> -->
+			        	<p class="form-signin-heading">用户名</p>
+
+			          <div class="input-group">
+			          	<!-- <input type="text" class="form-control" name="username" id="username" autocomplete="off> -->
+			            <input type="text" class="form-control" name="username" id="username" autocomplete="off" placeholder="请输入用户名或邮箱">
+			            <div id="div2" style="display:inline;color:red;"></div>
+			          </div>
+
+			        </div>
+			
+			        <div class="form-group">
+			        	<p class="form-signin-heading">密码</p>
+			          <div class="input-group">
+			            <!-- <input type="text" class="form-control" name="password" id="password" autocomplete="off"> -->
+			            <input type="password" class="form-control" name="password" id="password" autocomplete="off" placeholder="请输入6-18位的密码，建议含中英文">
+			          </div>
+			        </div>
+					<div class="Btn">
+			        <button class="btn btn-lg btn-primary btn-block" id="register" type="submit">注册</button>
+					</div>
+			     </form>
 			</div>
     </div>
-</div>
-
-<!-- 联系我们的主体页面 -->
-<div class="contact_us">
-	<!-- <div class="row contact_head"> -->
-		<!-- <div class="col-md-9 col-sm-9 col-xs-12"> -->
-			<!-- <h1>联系我们</h1>
-			<div class="col-md-offset-9 col-sm-3 col-xs-12">
-              	<a href="">首页 <i>/</i> </a> 
-			</div> -->
-		<!-- </div> -->
-	<!-- </div> -->
-		
-	<!-- <div class="map_contact">
-		<a href="#" class="a_style">View Larger Map</a>
-	</div> -->
-	<div class="container-fluid">
-		<div class="panel-body">
-			<div class="row">
-				<div class="col-md-7 col-sm-7 col-xs-10 col-xs-offset-1 contact_left">
-					<!-- <p>随时与我们在线的代表交流，任何时候你请上我们的网站或使用我们的在线聊天系统低于即时消息程序。</p>
-					<p>请耐心等待响应。 (24/7 支持！) <strong>电话查询: 1-888-123-4567-8900</strong></p> -->
-					<p>任何对我们产品、服务的疑问、不满、意见及建议欢迎随时与我们联系。感谢您的信任和支持！</p>
-					<p>请耐心等待响应。 (支持24小时/7天服务！) <strong>电话查询: 1-888-123-4567-8900</strong></p>
-					<form role="form" action="<?php echo U('Index/contact_us');?>" method="post" >
-						<div class="form-group">
-						    <label for="name">姓名</label>
-						    <input type="text" class="form-control" id="name">
-						</div>
-						<div class="form-group">
-						    <label for="email">邮箱</label>
-						    <input type="email" class="form-control" id="email">
-						</div>
-						<div class="form-group">
-						    <label for="subject">主题</label>
-						    <input type="text" class="form-control" id="subject">
-						</div>
-						<div class="form-group">
-						    <label for="message">内容描述</label>
-						    <textarea class="form-control" id="message" rows="15"></textarea>
-						</div>
-						<div class="submit_btn">
-							<input type="submit" class="btn" value="发送信息">
-							<input type="submit" class="btn" value="预览">
-						</div>
-					</form>
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-10 col-xs-offset-1 contact_right">
-					<address>
-						<h4>地址一</h4>
-						<ul>
-							<li>
-								<strong>公司名称</strong><br>
-								2901 马尔路，Glassgow，西雅图，华盛顿州 98122 1090<br>
-								电话: +1 1234-567-89000<br>
-								传真: +1 0123-4567-8900<br>
-								邮箱: <a href="mailto:#" class="a_style">mail@companyname.com</a><br>
-								网址: <a href="#" class="a_style">www.yoursitename.com</a>
-							</li>
-						</ul>
-					</address>
-					<address>
-						<h4>地址二</h4>
-						<ul>
-							<li>
-								<strong>公司名称</strong><br>
-								2901 马尔路，Glassgow，西雅图，华盛顿州 98122 1090<br>
-								电话: +1 1234-567-89000<br>
-								传真: +1 0123-4567-8900<br>
-								邮箱: <a href="mailto:#" class="a_style">mail@companyname.com</a><br>
-								网址: <a href="#" class="a_style">www.yoursitename.com</a>
-							</li>
-						</ul>
-					</address>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-		
-
+    
 
 <div class="clearfix"></div>
 <nav class="foot-nav" id="back">
@@ -253,3 +233,100 @@
 <!-- </div> -->
 	</body>
 </html>
+	<script>
+		$(function(){
+			var $register = $("#register");
+			var $username = $("#username");
+			var $wran = $("#warn");
+			var $mail = $("#mail");
+			var $close = $(".close");
+			var $checkLogin=$('#checkLogin');
+			var $checkBlank=$('#checkBlank');
+			var $warn1 = $("#warn1");
+			
+			$register.click(function(){
+				if ($username.val().length < 2|| $username.val().length > 6) {
+					$wran.css("display","block");
+					return false;
+				}
+				if ($('#password').val().length<6) {
+					$warn1.css("display","block");
+					return false;
+				}
+			});
+		    
+			
+			$close.click(function(){
+				$wran.css("display","none");
+				$checkBlank.css("display","none");
+				$checkLogin.css("display","none");
+				$warn1.css("display","none");
+				return false;
+			});
+
+
+			$username.change(function(){
+			/*非空见擦*/
+			if ($username.val().length > 0) {
+					$wran.css("display","none");
+				}	
+			/* 字符串空格检查*/
+			var str=$username.val();
+			var Bnum=0;
+			for(var i=0;i<str.length;i++){
+				if(str.charCodeAt(i)==32){
+					Bnum++;
+				}
+			}
+			if(Bnum>0){
+				$('#checkBlank').css('display','block');
+			}else{
+				$('#checkBlank').css('display','none');
+			}
+
+			/*ajax 查询用户知否已经注册*/
+			var data='username='+$username.val();
+			console.log(data);
+			var path=window.location.pathname;
+			var urlSlice=path.split('Home');
+			url=urlSlice[0]+'Home/Register/userExistCheck';
+			$.ajax({
+				type:"GET",
+				url:url,
+				data:data,
+				dataType:"json",
+				success:function(data){
+					console.log(data);
+					data=data.toString();
+					if(data!="error"){
+					   $checkLogin.css('display','block');
+					}else{
+						 $checkLogin.css('display','none');
+					}
+				}
+			});
+			});
+
+			$('#password').change(function(){
+				/*非空见擦*/
+				if ($('#password').val().length > 0) {
+					$wran.css("display","none");
+				}	
+				/*检查空格*/
+				var str=$('#password').val();
+				var Bnum=0;
+				for(var i=0;i<str.length;i++){
+					if(str.charCodeAt(i)==32){
+					Bnum++;
+					}
+				}
+				if(Bnum>0){
+				$('#checkBlank').css('display','block');
+				}else{
+				$('#checkBlank').css('display','none');
+				}	
+			});
+
+		})
+		</script>			
+		<script src="/lidong/yuanku/Public/js/register.js" type="text/javascript" charset="utf-8"></script>
