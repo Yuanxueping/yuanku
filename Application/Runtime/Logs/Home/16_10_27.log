@@ -9206,3 +9206,30 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001248s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001385s ]
 
+[ 2016-10-27T15:21:03+08:00 ] ::1 /yuanku/index.php/Home/Personal/write_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+SQL: SELECT * FROM client_user WHERE user_name ='yyt' [ RunTime:0.0008s ]
+SQL: SELECT email_address FROM client_user WHERE user_name ='yyt' [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `news_sort` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`name` FROM `author`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news_sort`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000414s ]
+NOTIC: [8] Undefined variable: title D:\wamp\www\yuanku\Application\Runtime\Cache\Home\d241fec4ed8c8bcefdb243c9b64d1430.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
