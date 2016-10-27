@@ -48,6 +48,10 @@ class PersonalController extends Controller {
 
 	//用户写文章
 	public function write_article(){
+       $cache_a= S('site_name');
+
+       $this->assign('title','个人中心 - '.$cache_a['site_name']);
+
 		$this->showLogo();
 		$this->showt_email();
 		if(IS_POST) {
@@ -68,18 +72,33 @@ class PersonalController extends Controller {
 			
 			if($news -> create()) {
 				if($news -> add()) {
-					$this -> success('添加成功',U('News/index'));
+					$this -> success('添加成功',U('Index/news'));
 				} else {
-					$this -> error('添加失败',U('News/news_add'));
+					$this -> error('添加失败',U('Personal/write_article'));
 				}
 			} else {
 				$this -> error($news -> getError());
 			}
+			exit();
     	} else {
+
+
     		$author = D('author');
 			$news_sort = D('news_sort');
 			
-			$author_list = $author -> field('id,name') -> select();
+			$_POST['name']=$_SESSION['user']['user_name'];
+			$_POST['uid']=$_SESSION['user']['id'];
+
+
+			$author_list = $author -> field('id,name')->where('uid='.$_SESSION['user']['id']) -> find();
+			if (!$author_list) {
+				$author -> create();
+			 	$author -> add();
+			}
+			
+			// 	 print_r($author_list);
+			// echo $author->getLastSql();
+			// $author_list = $author -> field('id,name') -> select();
 			$news_sort = $news_sort -> select();
 			
 			$this -> assign('author_list',$author_list);

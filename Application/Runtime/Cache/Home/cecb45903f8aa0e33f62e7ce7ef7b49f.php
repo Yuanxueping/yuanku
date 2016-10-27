@@ -65,15 +65,7 @@
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
 				        </li>
-				        <!-- 
-				        <li><a href="/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
-<<<<<<< HEAD
-				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
-				       
-=======
-				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li> -->
->>>>>>> 524601d91634b83468b87deb6b29c8db3c7fc866
-				       				        
+				        				       				        
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
 				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
