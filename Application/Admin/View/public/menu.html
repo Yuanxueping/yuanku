@@ -24,11 +24,13 @@
         </div>
       </div>
     </li>
-    <li class="">
+    <php> $controller_name= CONTROLLER_NAME</php>
+
+    <li  <if condition="$controller_name eq 'System'"> class="active"</if> >
       <a href="#" aria-expanded="false"><i class="zmdi zmdi-view-dashboard"></i>系统设置<span class="zmdi arrow"></span></a>
-      <ul class="nav nav-inside collapse" aria-expanded="false" style="height: 0px;">
+      <ul class="nav nav-inside collapse <if condition="$controller_name eq 'System'"> in </if>" aria-expanded="false"  >
         <li class="inside-title">系统设置</li>
-        <li><a href="{:U('system/index')}">网站设置</a></li>
+        <!-- <li><a href="{:U('system/index')}">网站设置</a></li> -->
         <li><a href="{:U('system/manager_user')}">管理员设置</a></li>
       </ul>
     </li>
@@ -40,17 +42,18 @@
         <li><a href="/land/l1/index_r.html">首页新闻管理</a></li>
       </ul>
     </li>
-    <li>
+    <li <if condition="$controller_name eq 'Client'"> class="active"</if> >
       <a href="#"><i class="zmdi zmdi-google-pages"></i>用户管理<span class="zmdi arrow"></span></a>
-      <ul class="nav nav-inside collapse" aria-expanded="false">
+      <ul class="nav nav-inside collapse <if condition="$controller_name eq 'Client'"> in </if>" aria-expanded="false">
         <li class="inside-title">用户列表</li>
         <li><a href="{:U('client/client_list')}">用户列表</a></li>
         <li><a href="{:U('client/feedback')}">咨询列表</a></li>
       </ul>
     </li>
-    <li>
+    
+    <li <if condition="$controller_name eq 'News'"> class="active"</if>>
       <a href="#"><i class="zmdi zmdi-flower"></i>内容管理<span class="zmdi arrow"></span></a>
-      <ul class="nav nav-inside collapse" aria-expanded="false">
+      <ul class="nav nav-inside collapse <if condition="$controller_name eq 'News'"> in </if>" aria-expanded="false">
         <li class="inside-title">内容管理</li>
         <li><a href="{:U('news/index')}">内容列表</a></li>
         <li><a href="{:U('news/newsort')}">内容分类</a></li>
