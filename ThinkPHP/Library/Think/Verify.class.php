@@ -32,7 +32,6 @@ class Verify {
 
     private $_image   = NULL;     // 验证码图片实例
     private $_color   = NULL;     // 验证码字体颜色
-
     /**
      * 架构方法 设置参数
      * @access public     

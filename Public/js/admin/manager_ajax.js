@@ -3,8 +3,6 @@
  var ajax_num=1;
  $(function  () {
           $('.pwd_box').click(function  () {
-
-             
                if (cur_step==1) {
                  $('.cur_input').html($('.cur_input').attr('pwd')); 
                  // 不对当前td删除

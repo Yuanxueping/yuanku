@@ -42,12 +42,33 @@ class LoginController extends Controller {
 			$this->display();
 		}
 	}
-	public function get_verify($value='')
-	{
-		 $verfiy = new Verify();
+
+
+	// 单独出来验证码
+ 	public function get_verify()
+ 	{
+ 		$Verify = new \Think\Verify();
+ 		$Verify->useCurve=false;
+ 		$Verify->useNoise=false;
+
+		 $Verify->entry();
+ 	}	
+
+
+
+
+
+
+
+
+
+
+	// public function get_verify($value='')
+	// {
+	// 	 $verfiy = new Verify();
 		 
-		$verfiy->entry();
-	}
+	// 	$verfiy->entry();
+	// }
 	public function logout() {
 		session('[destroy]');
 		$this->success('退出成功！', U('Login/index'));
@@ -68,6 +89,11 @@ class LoginController extends Controller {
 				if (!$verfiy->check(I('verify'))) {
 					$this->ajaxReturn(array('stauts'=>-2,'message'=>'验证码错误！'));
 				}else{
+					$gourp_a=M('ThinkAuthGroupAccess')->where('uid='.$user_info['id'])->find();
+				
+					$login['group_id'] = $gourp_a['group_id'];
+
+					
 					$login['uid'] = $user_info['id'];
 					$login['user'] = 'admin';
 					session('auth', $login);

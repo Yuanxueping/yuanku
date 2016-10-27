@@ -77,6 +77,7 @@ class IndexController extends Controller {
        $cache_a= S('site_name');
        $this->assign('title','新闻列表 - '.$cache_a['site_name']);
     	// do it 
+     
        $this->display();
     	
     }
@@ -119,7 +120,6 @@ class IndexController extends Controller {
     {
        $cache_a= S('site_name');
        $this->assign('title','查看订阅的文章 - '.$cache_a['site_name']);
-
       // do it
        $this->display();
       

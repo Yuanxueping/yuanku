@@ -1,0 +1,58 @@
+.panel-heading {
+	background: none;
+}
+
+
+.table {
+	table-layout: fixed;
+}
+
+.table > thead > tr > th {
+	width:25%;
+}
+
+
+.table > tbody > tr > td:nth-child(3) {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.table > tbody > tr > td:nth-child(4) {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.table > tbody > tr > td:nth-child(5) {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.table > tbody > tr > td:nth-child(6) {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.table > tbody > tr > td:nth-child(7) {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.table > tbody > tr > td:nth-child(8) {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.btn-xs {
+	min-width: 30px;
+}
+
+.btn-toolbar .btn-group {
+	float: none;
+}
+
+.btn-toolbar .btn-group > a {
+	color: black;
+	line-height: 16px;
+	border: 1px solid #ccc!important;
+}
