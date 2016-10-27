@@ -40,11 +40,16 @@ class ClientController extends Controller {
     	$client_m=M('Client_user');
 
     	if (IS_POST) {
-    		
+    		//实例化上传类
     		$upload=new Upload();
+    		//设置附件上传大小
     		$upload->maxSize=10240000;
+    		//设置附件上传格式
     		$upload->exts=array('jpg','gif','jpeg','png');
-    		$upload->savePath='./';
+    		//附件上传根目录
+    		// $upload->rootPath=''
+    		//设置附件上传（子）目录
+    		// $upload->savePath='./';
     		$info=$upload->upload();
     		if (!$info) {
     			$this->error($upload->getError());

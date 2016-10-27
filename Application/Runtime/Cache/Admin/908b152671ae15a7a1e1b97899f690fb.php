@@ -382,7 +382,7 @@
  	<div class="form-group">
  		<label class="control-label">头像</label>
 
- 		<input class="dropify" name="head_photo" data-default-file="/yuanku/uploads<?php echo ($client_info["head_photo"]); ?>" type="file"></div>
+ 		<input class="dropify" name="head_photo" data-default-file="/yuanku/<?php echo ($client_info["head_photo"]); ?>" type="file"></div>
  	<button class="btn btn-success">提交</button>
 
  	<input type="hidden"  name="id" value="<?php echo ($client_info["id"]); ?>"></form>

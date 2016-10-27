@@ -59,16 +59,10 @@ h1{
 	height: 122px;
 	background-color: #f3f3f3;
 }
-.form-header h4{
-	padding:15px 0px 10px;
-	margin: 0px;
+.form-header h2{
+	padding-top:44px;
 	text-align: center;
-	font-weight: 600;
-}
-.form-header p{
-	text-align: center;
-	color: #727272;
-	margin-bottom: 5px;
+	font-weight: 500;
 }
 .form-header a{
 	color:  #2ecc71;
@@ -86,9 +80,15 @@ h1{
 	margin:20px 10% 8%;
 }
 .Btn > p{
-	margin-bottom: 10px;
-	color: #727272;
+	margin-top:5px;
+	text-align:center;
 	word-spacing: 2pt;
+}
+.Btn > p > a{
+	text-decoration: none;
+	display: inline-block;
+	color: #2ecc71 !important;
+
 }
 .btn-lg{
 	background-color: #2ecc71;
