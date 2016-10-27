@@ -157,9 +157,7 @@ class SystemController extends AuthController{
 			$this->display();
 
 		} 
-
-
-		
+	
 	}
 
 	// 删除管理员
@@ -172,11 +170,6 @@ class SystemController extends AuthController{
 		}else{
 			$this->success('删除失败',U('System/manager_user'));
 		}
-				
-			 
-
-
-		
 	}
 
 

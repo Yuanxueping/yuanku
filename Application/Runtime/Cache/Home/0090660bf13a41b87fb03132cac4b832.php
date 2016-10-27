@@ -10,13 +10,10 @@
 	 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/headAndFoot.css">
 	 <script src="/lidong/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
 	 <script src="/lidong/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
-	 
-
-	<!--  <link rel="stylesheet" href="css/headAndFoot.css" />
-	 <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
-		
-	<!--  <script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script> 
-	 <script type="text/javascript" src="js/bootstrap.min.js" ></script>-->
+	  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+      <![endif]-->
 
 
 

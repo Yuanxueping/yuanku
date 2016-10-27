@@ -117,6 +117,7 @@
     </div>
   </div>
 </nav> 
+
  <aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
   <ul class="nav metismenu">
     <li class="profile-sidebar-container">
@@ -370,65 +371,56 @@
         <div class="col-md-12">
           <div class="content-box">
              <div class="content"> 
- 
 
- <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="content-box p-20 twitter white f-s-16">
-            <img src="/lidong/yuanku/Public/images/admin/avatar.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-            <span class="text-uppercase">第一组</span>  <br>
-            <span class="half-opacity">@组长：黄寰</span>
-            <span class="zmdi zmdi-twitter p-absolute t-20 r-20 f-s-20"></span>
-            <p class="m-t-20">组员：劳土铸、张卓志、陈忠义<br>任务：负责首页和后台的首页管理菜单。</p>
-            <div class="socials text-right f-s-20">
-              
-              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-            </div>
-          </div>
-        </div>
-         <div class="col-lg-3 col-md-6">
-          <div class="content-box p-20 soundcloud white f-s-16">
-            <img src="/lidong/yuanku/Public/images/admin/avatar4.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-            <span class="text-uppercase">第二组</span>  <br>
-            <span class="half-opacity">@组长：沈迪豪</span>
-            <span class="zmdi zmdi-soundcloud p-absolute t-20 r-20 f-s-20"></span>
-            <p class="m-t-20">组员：郑宏扬、黎雄鹰、杨柳<br>任务：负责新闻列表和详情、后台的新闻管理。</p>
-            <div class="socials text-right f-s-20">
-              
-              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="content-box p-20 facebook white f-s-16">
-              <img src="/lidong/yuanku/Public/images/admin/avatar2.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-              <span class="text-uppercase">第三组</span>  <br>
-              <span class="half-opacity">@组长：袁雪萍</span>
-              <span class="zmdi zmdi-facebook p-absolute t-20 r-20 f-s-20"></span>
-              <p class="m-t-20">组员：石诗文、何慧怡、李浪怀<br>任务：负责登录、注册等页面，以及后台的用户管理。</p>
-              <div class="socials text-right f-s-20">
-                
-                <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-              </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="content-box p-20 gplus white f-s-16">
-            <img src="/lidong/yuanku/Public/images/admin/avatar3.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-            <span class="text-uppercase">第四组</span>  <br>
-            <span class="half-opacity">@smith</span>
-            <span class="zmdi zmdi-google-plus p-absolute t-20 r-20 f-s-20"></span>
-            <p class="m-t-20">负责框架搭建<br>攻坚解难。</p>
-            <div class="socials text-right f-s-20">
-              
-              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-            </div>
-          </div>
-        </div>
-       
-      </div>
+<h4>管理员列表
 
-     
+<button class="btn btn-success " onclick="location.href='<?php echo U('System/user_add');?>'">添加管理员</button>
+</h4>
+<div class="table-responsive alt-table">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="table-check">
+                                #
+                            </th>
+                            <th>管理员姓名</th>
+                            <th width="220">密码</th>
+                            
+                            <th>最近登录</th>
+                            <th class="text-center">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    <?php if(is_array($user_list)): $i = 0; $__LIST__ = $user_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user_i): $mod = ($i % 2 );++$i;?><tr>
+                            <td class="table-check">
+                               <?php echo ($user_i["id"]); ?>
+                            </td>
+                            <td>
+                               <?php echo ($user_i["user_name"]); ?>
+                               <br>
+                            </td>
+                             <td class="pwd_box " pwd="<?php echo ($user_i["user_pwd"]); ?>"  id_val="<?php echo ($user_i["id"]); ?>">
+                               <?php echo ($user_i["user_pwd"]); ?>
+                               <br>
+                            </td>
+                            
+                            <td class="table-date"> <?php echo (date("Y-m-d H:i:s",$user_i["create_time"])); ?> <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                               <div class="btn-group">
+                                <button onclick="location.href='<?php echo U('Client/user_edit',array('id'=>$user_i[id]));?>'" type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                <button onclick="location.href='<?php echo U('Client/user_del',array('id'=>$user_i[id]));?>'" type="button" class="btn btn-danger waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                              </div>
+                            </td>
+                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                        
+                    </tbody>
+                </table>
+            </div>
+<script>
+  var ajax_url='<?php echo U("System/ajax_set_pwd");?>';
+</script>
+      <script src="/lidong/yuanku/Public/js/admin/manager_ajax.js"> </script>
  
  </div>
           </div>

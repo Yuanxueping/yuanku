@@ -172,7 +172,7 @@
       <ul class="nav nav-inside collapse" aria-expanded="false">
         <li class="inside-title">新闻管理</li>
         <li><a href="<?php echo U('news/index');?>">新闻列表</a></li>
-        <li><a href="<?php echo U('news/newsort');?>">新闻分类</a></li>
+        <li><a href="<?php echo U('news/sort');?>">新闻分类</a></li>
         <li><a href="<?php echo U('news/news_add');?>">添加新闻</a></li>
         
       </ul>
@@ -411,7 +411,7 @@
 					<td class="text-center">
 						<div class="btn-group">
 							<button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
-							<button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+							<button onclick="location.href='<?php echo U('News/new_del',array('id'=>$vo[nid]));?>'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
 						</div>
 					</td>
 				</tr><?php endforeach; endif; else: echo "" ;endif; ?>

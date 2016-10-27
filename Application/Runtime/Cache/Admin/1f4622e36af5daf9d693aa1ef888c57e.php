@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title><?php echo ($title); ?>  后台管理</title>
@@ -370,65 +370,142 @@
         <div class="col-md-12">
           <div class="content-box">
              <div class="content"> 
- 
+<link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/new_sort.css">
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<span>新闻分类</span>
+		<a href="<?php echo U('News/sort_add');?>" class="btn btn-success btn-sm white pull-right">添加分类</a>
+	</div>
+	<table class="table table-hover">
+      	<thead>
+        	<tr>
+	          	<th>#</th>
+	          	<th>ID</th>
+		        <th>分类</th>
+		        <th class="text-center">操作</th>
+        	</tr>
+      	</thead>
+      	<tbody id="ajax_rt_box">
+      		<?php if(is_array($news_list)): $k = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
+      				<td><?php echo ($k); ?></td>
+					<td class="changeid"><?php echo ($vo['id']); ?></td>
+					<td class="changename"><?php echo ($vo['sort_name']); ?></td>
+					<td class="text-center">
+						<div class="btn-group">
+							<button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+							<button onclick="location.href='<?php echo U('News/sort_del',array('id'=>$vo[id]));?>'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+						</div>
+					</td>
+				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+      	</tbody>
+    </table>
+</div>
+<div class="btn-toolbar text-center" role="toolbar">
+	<div class="btn-group">
+		<?php echo ($page_html); ?>
+	</div>
+</div>
 
- <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="content-box p-20 twitter white f-s-16">
-            <img src="/lidong/yuanku/Public/images/admin/avatar.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-            <span class="text-uppercase">第一组</span>  <br>
-            <span class="half-opacity">@组长：黄寰</span>
-            <span class="zmdi zmdi-twitter p-absolute t-20 r-20 f-s-20"></span>
-            <p class="m-t-20">组员：劳土铸、张卓志、陈忠义<br>任务：负责首页和后台的首页管理菜单。</p>
-            <div class="socials text-right f-s-20">
-              
-              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-            </div>
-          </div>
-        </div>
-         <div class="col-lg-3 col-md-6">
-          <div class="content-box p-20 soundcloud white f-s-16">
-            <img src="/lidong/yuanku/Public/images/admin/avatar4.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-            <span class="text-uppercase">第二组</span>  <br>
-            <span class="half-opacity">@组长：沈迪豪</span>
-            <span class="zmdi zmdi-soundcloud p-absolute t-20 r-20 f-s-20"></span>
-            <p class="m-t-20">组员：郑宏扬、黎雄鹰、杨柳<br>任务：负责新闻列表和详情、后台的新闻管理。</p>
-            <div class="socials text-right f-s-20">
-              
-              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="content-box p-20 facebook white f-s-16">
-              <img src="/lidong/yuanku/Public/images/admin/avatar2.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-              <span class="text-uppercase">第三组</span>  <br>
-              <span class="half-opacity">@组长：袁雪萍</span>
-              <span class="zmdi zmdi-facebook p-absolute t-20 r-20 f-s-20"></span>
-              <p class="m-t-20">组员：石诗文、何慧怡、李浪怀<br>任务：负责登录、注册等页面，以及后台的用户管理。</p>
-              <div class="socials text-right f-s-20">
-                
-                <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-              </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="content-box p-20 gplus white f-s-16">
-            <img src="/lidong/yuanku/Public/images/admin/avatar3.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-            <span class="text-uppercase">第四组</span>  <br>
-            <span class="half-opacity">@smith</span>
-            <span class="zmdi zmdi-google-plus p-absolute t-20 r-20 f-s-20"></span>
-            <p class="m-t-20">负责框架搭建<br>攻坚解难。</p>
-            <div class="socials text-right f-s-20">
-              
-              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-            </div>
-          </div>
-        </div>
-       
-      </div>
-
-     
+<script type="text/javascript">
+$(function(){
+	$("#ajax_rt_box").find(".btn-xs").click(function(){
+		var this_box=$(this).parent().parent().prev();
+		var id=this_box.prev().html();
+		console.log(id);
+		var oldval=this_box.html();
+        this_box.html('<input type="text" autofocus="true">').addClass('cur_input');
+       $(".cur_input").find('input').focus();
+		$(".cur_input").find('input').blur(function(){
+			 var changeval=$(".cur_input").find('input').val();
+			 
+			 if(changeval!=oldval&&changeval!=""){
+			 	$.post('<?php echo U("News/ajax_set_sort");?>',{"id":id,"changeval": changeval},function(msg){
+			 		 if(msg.stauts==1){
+			 		 	this_box.html(changeval);
+			 		 }
+			 		 else if(msg.stauts==-1){
+			 		 	alert("修改失败");
+			 		 }
+			 	
+			 })
+			}else{
+				alert("没有修改！");
+				this_box.html(oldval);
+				
+			}
+			 
+			 
+		})
+	})
+})
+// var cur_step=1;
+// var old_val;
+// var ajax_num=1;
+// $(function  () {
+//        $('.pwd_box').click(function  () {
+//             if (cur_step==1) {
+//               $('.cur_input').html($('.cur_input').attr('pwd')); 
+//               // 不对当前td删除
+//               $('.cur_input').removeClass('cur_input');
+//
+//                $(this).addClass('cur_input');
+//                $(this).html('<input type="text">');
+//                old_val=$(this).attr('pwd');
+//                ajax_num=1;
+//             }
+//              
+//
+//              var this_box=$(this);
+//
+//              var input_val=$(this).find('input').val();
+//              //已经有输入新值的输入框，再点击我们不赋老的值
+//              if (input_val!="" && input_val!=old_val) {
+//                 old_val=input_val;
+//              } 
+//              $(this).find('input').focus().val(old_val).blur(function  () {
+//                  
+//
+//                    var change_val=this_box.find('input').val();
+//                     
+//
+//                    // 判断是不是有修改
+//                    if(old_val!=change_val && ajax_num==1){
+//
+//                      //提交到ajax_url，相关参数都通过jquery.post
+//                      $.post(ajax_url,{"id":this_box.attr('id_val'),"change_val":change_val},function  (rtn) {
+//                        // 在回调函数里，提示用户返回过来的提示信息
+//                          if(rtn.stauts==1){
+//                            this_box.html(change_val);
+//                            this_box.attr('pwd',change_val);
+//
+//                            cur_step=1;
+//                            $('.cur_input').html($('.cur_input').attr('pwd')); 
+//                            $('.cur_input').removeClass('cur_input');
+//                          }else if(rtn.stauts==-1){
+//                            cur_step=2;
+//                            alert(rtn.msg);
+//                          }else{
+//                            cur_step=2;
+//                            $(this).focus();
+//                            alert(rtn.msg);
+//                          }
+//
+//                      });
+//                    }else{
+//                      cur_step=1;
+//                      ajax_num=2;
+//                      $('.cur_input').html($('.cur_input').attr('pwd')); 
+//                      $('.cur_input').removeClass('cur_input');
+//
+//                    }
+//
+//
+//              });
+//            
+//        })
+//        
+//    })
+</script>
  
  </div>
           </div>

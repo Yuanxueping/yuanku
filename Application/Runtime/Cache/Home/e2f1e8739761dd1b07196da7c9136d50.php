@@ -10,24 +10,14 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
 	 <link rel="stylesheet" href="/lidong/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/headAndFoot.css">
 	 <script src="/lidong/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
 	 <script src="/lidong/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
-=======
-	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
-	 
-
-	<!--  <link rel="stylesheet" href="css/headAndFoot.css" />
-	 <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
-		
-	<!--  <script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script> 
-	 <script type="text/javascript" src="js/bootstrap.min.js" ></script>-->
+	  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+      <![endif]-->
 
 
 
@@ -37,11 +27,7 @@
 
 
 
-<<<<<<< HEAD
 		<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/register.css"/>
-=======
-		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/register.css"/>
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
  
   </head>
 <body>
@@ -57,51 +43,30 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#">
-<<<<<<< HEAD
 		      	<img class="logo" src="/lidong/yuanku/Public/img/logoko2.png" />
-=======
-		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 		      </a>
 		    </div>		
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-<<<<<<< HEAD
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/index">首页</a></li>
 				        <li>
 				        <a href="
 				        	<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/index';} else{ echo '/lidong/yuanku/index.php/Home/Index/login'; } ?>
-=======
-				        <li><a href="/yuanku/index.php/Home/Index/index">首页</a></li>
-				        <li>
-				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 				        ">
 				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
 				        </a>
 				        </li>
 				        <li>
 				        	<a href="
-<<<<<<< HEAD
 				        		<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/logout';} else{ echo '/lidong/yuanku/index.php/Home/Index/register'; } ?>
-=======
-				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 				        	">
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
 				        </li>
-<<<<<<< HEAD
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/news">新闻</a></li>
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
-=======
-				        <li><a href="/yuanku/index.php/Home/Index/news">新闻</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
-				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 				       				        
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
@@ -129,11 +94,7 @@
 		<div class="container  box">
 			<div class="col-lg-offset-3 col-lg-6 col-md-12">
 
-<<<<<<< HEAD
 				<form class="form-signin" role="form" action="/lidong/yuanku/index.php/Home/Register/regNewMember" method="POST" enctype="application/x-www-form-urlencoded">
-=======
-				<form class="form-signin" role="form" action="/yuanku/index.php/Home/Register/regNewMember" method="POST" enctype="application/x-www-form-urlencoded">
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 			        <div class="form-header">
 			        	<!-- <h4>注用户册</h4> -->
 			        	<h4>用户注册</h4>
@@ -197,82 +158,46 @@
 				<div class="container">
 					<div class="row" >
 						<div class="col-lg-3 col-md-6 col-lg-12">
-<<<<<<< HEAD
 							<ul>
 								<li><h4 >友情连接</h4></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>百度一下</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>淘宝商城</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>腾讯首页</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>网易新闻</span></a></li>							
-=======
-							<ul class="clearfix">
-								<li><h4>友情连接</h4></li><br/>
-								<li><a href="#">1</a></li><br/>
-								<li><a href="#">2</a></li><br/>
-								<li><a href="#">3</a></li><br/>
-								<li><a href="#">4</a></li>							
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 							</ul>						
 						</div>					
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-<<<<<<< HEAD
 								<li><h4 >最新动态</h4></li><br/>
 								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
 								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
 								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
 					
-=======
-								<li><h4>最新动态</h4></li><br/>
-								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>捕鱼</a></li><br/>
-								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>钓鱼</a></li><br/>
-								<li><a href="#"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/>抓鱼</a></li><br/>
-													
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
 								<li><h4>关于我们</h4></li><br/>
-<<<<<<< HEAD
 								<li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;&nbsp;<span>技术中心</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;&nbsp;<span>产品特色</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;<span>结算流程</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>&nbsp;&nbsp;<span>服务宗旨</span></a></li>
-=======
-								<li><a href="#">1</a></li><br/>
-								<li><a href="#">2</a></li><br/>
-								<li><a href="#">3</a></li><br/>
-								<li><a href="#">4</a></li>
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 						   </ul>
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-<<<<<<< HEAD
 								<li><h4>联系我们</h4></li></br>
 								<li><a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;<span>511186470@qq.com</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;<span>0201-6666666</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-map-marker"aria-hidden="true"></span>&nbsp;&nbsp;<span>美国洛杉矶</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>&nbsp;&nbsp;<span>邮政编码：88888</span></a></li>							
-=======
-								<li><h4>邮箱地址</h4></li></br>
-								<li><a href="#">1</a></li><br/>
-								<li><a href="#">2</a></li><br/>
-								<li><a href="#">3</a></li><br/>
-								<li><a href="#">4</a></li>							
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 						    </ul>
 						</div>				
 					</div>	
 				</div>
 			</div>
 			<div class="foot-text">
-<<<<<<< HEAD
 				<p>Copyright © 2016 lidong.com. All rights reserved. Terms of Use | Privacy Policy</p>
-=======
-				<p class="text-center">Copyright? 2003-2016 </p>
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 			</div>
 </nav>
 <!--摸态框-->
@@ -296,13 +221,8 @@
 		        </form>
 		      </div>
 		      <div class="modal-footer">
-<<<<<<< HEAD
 		        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 		        <button type="button" class="btn btn-primary">搜索</button>
-=======
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary">Search</button>
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39
 		      </div>
 		    </div>
 		  </div>
@@ -406,8 +326,4 @@
 
 		})
 		</script>			
-<<<<<<< HEAD
 		<script src="/lidong/yuanku/Public/js/register.js" type="text/javascript" charset="utf-8"></script>
-=======
-		<script src="/yuanku/Public/js/register.js" type="text/javascript" charset="utf-8"></script>
->>>>>>> ad0c5b9049b353c3cbbd7de3f5095980f9039e39

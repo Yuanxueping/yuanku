@@ -94,15 +94,7 @@
 	text-align: center;
 	line-height: 60px;
 }
-.glyphicon{
-	font-size:8px;
-	font-weight: normal;
-}
-/*.navbar-toggle{
-  position: absolute;
-  float: none;
-  right:15px;
-}*/
+
 .row{
 	 width: 100%!important;
 	 margin-right:0px!important; 

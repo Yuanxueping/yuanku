@@ -370,65 +370,53 @@
         <div class="col-md-12">
           <div class="content-box">
              <div class="content"> 
- 
+<link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/news.css">
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<span>新闻列表</span>
+		<a href="<?php echo U('News/news_add');?>" class="btn btn-success btn-sm white pull-right">添加新闻</a>
+	</div>
+	<table class="table table-hover">
+      	<thead>
+        	<tr>
+	          	<th>#</th>
+	          	<th>ID</th>
+		        <th>新闻标题</th>
+		        <th>作者</th>
+		        <th>分类</th>
+		        <th>内容</th>
+		        <th>图片</th>
+		        <th>日期</th>
+		        <th class="text-center">操作</th>
+        	</tr>
+      	</thead>
+      	<tbody>
+      		<?php if(is_array($news_list)): $k = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
+      				<td><?php echo ($k); ?></td>
+					<td><?php echo ($vo['nid']); ?></td>
+					<td><?php echo ($vo['title']); ?></td>
+					<td><?php echo ($vo['name']); ?></td>
+					<td><?php echo ($vo['sort_name']); ?></td>
+					<td><?php echo ($vo['content']); ?></td>
+					<td><?php echo ($vo['img']); ?></td>
+					<td><?php echo ($vo['date']); ?></td>
+					<td class="text-center">
+						<div class="btn-group">
+							<button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+							<button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+						</div>
+					</td>
+				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+      	</tbody>
+    </table>
+</div>
 
- <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="content-box p-20 twitter white f-s-16">
-            <img src="/lidong/yuanku/Public/images/admin/avatar.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-            <span class="text-uppercase">第一组</span>  <br>
-            <span class="half-opacity">@组长：黄寰</span>
-            <span class="zmdi zmdi-twitter p-absolute t-20 r-20 f-s-20"></span>
-            <p class="m-t-20">组员：劳土铸、张卓志、陈忠义<br>任务：负责首页和后台的首页管理菜单。</p>
-            <div class="socials text-right f-s-20">
-              
-              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-            </div>
-          </div>
-        </div>
-         <div class="col-lg-3 col-md-6">
-          <div class="content-box p-20 soundcloud white f-s-16">
-            <img src="/lidong/yuanku/Public/images/admin/avatar4.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-            <span class="text-uppercase">第二组</span>  <br>
-            <span class="half-opacity">@组长：沈迪豪</span>
-            <span class="zmdi zmdi-soundcloud p-absolute t-20 r-20 f-s-20"></span>
-            <p class="m-t-20">组员：郑宏扬、黎雄鹰、杨柳<br>任务：负责新闻列表和详情、后台的新闻管理。</p>
-            <div class="socials text-right f-s-20">
-              
-              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="content-box p-20 facebook white f-s-16">
-              <img src="/lidong/yuanku/Public/images/admin/avatar2.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-              <span class="text-uppercase">第三组</span>  <br>
-              <span class="half-opacity">@组长：袁雪萍</span>
-              <span class="zmdi zmdi-facebook p-absolute t-20 r-20 f-s-20"></span>
-              <p class="m-t-20">组员：石诗文、何慧怡、李浪怀<br>任务：负责登录、注册等页面，以及后台的用户管理。</p>
-              <div class="socials text-right f-s-20">
-                
-                <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-              </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="content-box p-20 gplus white f-s-16">
-            <img src="/lidong/yuanku/Public/images/admin/avatar3.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-            <span class="text-uppercase">第四组</span>  <br>
-            <span class="half-opacity">@smith</span>
-            <span class="zmdi zmdi-google-plus p-absolute t-20 r-20 f-s-20"></span>
-            <p class="m-t-20">负责框架搭建<br>攻坚解难。</p>
-            <div class="socials text-right f-s-20">
-              
-              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-            </div>
-          </div>
-        </div>
-       
-      </div>
-
-     
+<div class="btn-toolbar text-center" role="toolbar">
+	<div class="btn-group">
+		<?php echo ($page_html); ?>
+	</div>
+</div>
+<script src="/lidong/yuanku/Public/js/admin/news.js"></script>
  
  </div>
           </div>

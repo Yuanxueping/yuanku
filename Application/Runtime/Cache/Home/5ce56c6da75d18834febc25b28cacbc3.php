@@ -25,11 +25,10 @@
 		
 
 
-		<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/register.css"/>
-		<!-- <link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/transform.css"/> -->
-		
 
-		<script src="/lidong/yuanku/Public/js//register.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/news_detail.css"/>
+<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/iconfont.css"/>
+
   </head>
 <body>
 <!-- <div class="container-fluid"> -->
@@ -78,124 +77,115 @@
 	            </div>
 		  </div>
 	</nav>
-
-		<!-- <script src="/lidong/yuanku/Public/js/login.js" type="text/javascript" charset="utf-8"></script> -->
-
-		<div class="container">
-			<div class="row login_header clearcss">
-				
-					<div class="col-lg-6 col-md-12">
-						<h1>用户登陆</h1>
+		<div class="container-fluid page-title">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-12">
+						<h1><?php echo ($news_detail[0]['title']); ?></h1>
 					</div>
-					<div class="col-lg-offset-4 col-lg-2 col-md-12">
-		              	<a href="index.html" style="opacity:0.6;font-weight:normal;">首页 <i>/</i> </a> 
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<h2><a href="<?php echo U('Index/index');?>">Home</a><i>/</i><?php echo ($news_detail[0]['title']); ?></h2>
 					</div>
-		    </div>
-		    
-		</div>
-		<div class="container  box">
-			<div class="col-lg-offset-3 col-lg-6 col-md-12">
-				<form class="form-signin" role="form" action="/lidong/yuanku/index.php/Home/Login/checkLogin" method="POST" enctype="application/x-www-form-urlencoded">
-			        <div class="form-header">
-			        	<h4>账号登录</h4>
-			        	<p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">注册</a></p>
-			        	<p style="margin-top:5px;"><a href="register.html">忘记密码？</a></p>
-			        </div>
-			        <div class="message">
-			        	<div id="warn" class="alert alert-warning alert-dismissable warn" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>用户名不能为空！
-			        	</div>
-			        	<div id="notassign" class="alert alert-warning alert-dismissable warn" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>该用户未注册，请重新输入
-			        	</div>
-			        </div>
-			        <div class="form-group">
-			        	<p class="form-signin-heading"><img src="/lidong/yuanku/Public/img/login/user.png"/>&nbsp;用户名/邮箱</p>
-			          <div class="input-group">
-			            <!-- <input type="text" class="form-control" name="username" id="username"  autocomplete="off"> -->
-			            <input type="text" class="form-control" name="username" id="username"  autocomplete="off" placeholder="请输入用户名或邮箱">
-			          </div>
-			          <!-- <p style="margin-top: 10px;">输入用户名或邮箱</p> -->
-			          
-			        </div>
-			        <div class="message">
-			        	<div id="warn" class="warn_p alert alert-warning alert-dismissable" style="display: none;"> 
-			        		<button type="button" class="close close_p" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>密码不能为空！
-			        	</div>
-			        </div>
-			        <div class="form-group" style="margin-top:0px;">
-						<p class="form-signin-heading" style="margin-top:0px;"><img src="/lidong/yuanku/Public/img/login/pwd.png"/>&nbsp;密码</p>
-			          <div class="input-group">
-			          	<!-- <input type="text" class="form-control" name="password" id="password"  autocomplete="off"> -->
-			            <input type="password" class="form-control" name="password" id="password"  autocomplete="off" placeholder="请输入与用户名相匹配的密码">
-			          </div>
-			          <!-- <p style="margin-top: 10px;">输入与用户名相匹配的密码</p> -->
-			        </div>
-					<div class="Btn">
-						<!--<p>Password reset instructions will be send to your registered email address</p>-->
-			        <button class="btn btn-lg btn-primary btn-block" id="login" type="submit">登录</button>
-					</div>
-			     </form>
+				</div>
 			</div>
-    </div>
-	<script>
-		$(function(){
-			var $login = $("#login");
-			var $username = $("#username");
-			var $password = $("#password");
-			var $wran = $("#warn");
-			var $close = $(".close");
-			var $warn_p = $(".warn_p");
-			var $close_p = $(".close_p");
-			var $notassign=$('#notassign');
-			$login.click(function(){
-				if ($username.val().length === 0) {
-					$wran.css("display","block");
-					return false;
-					$warn.css("display","none");
-				} else{
-					if ($password.val().length === 0) {
-						$warn_p.css("display","block");
-						return false;
-					}
-				}
-			});
-			$username.change(function(){
-				/*ajax 查询用户知否已经注册*/
-				var data='username='+$username.val();
-				console.log(data);
-				var path=window.location.pathname;
-				var urlSlice=path.split('Home');
-				url=urlSlice[0]+'Home/Register/userExistCheck';
-				$.ajax({
-					type:"GET",
-					url:url,
-					data:data,
-					dataType:"json",
-					success:function(data){
-						console.log(data);
-						data=data.toString();
-						if(data!="error"){
-						   $notassign.css('display','none');
-						}else{
-							 $notassign.css('display','block');
-						}
-					}
-				});
-			});
-			$close.click(function(){
-				$(".warn").css("display","none");
-				return false;
-			});
-			$close_p.click(function(){
-				$warn_p.css("display","none");
-				return false;
-			});
-		})
-	</script>
+		</div>
+		<div class="container contain">
+			<div class="row">
+				<div class="col-sm-9">
+					<div class="jumbotron">
+				  		<img src="/lidong/yuanku/Public/<?php echo ($news_detail[0]['img']); ?>" class="img-responsive"/>
+				  		<h3><a href=""><?php echo ($news_detail[0]['title']); ?></a></h3>
+				  		<p class="p1">
+				  			<a href=""><?php echo ($news_detail[0]['date']); ?></a>
+				  			<span>by:<span><?php echo ($news_detail[0]['name']); ?></span>in:<span><?php echo ($news_detail[0]['sort']); ?></span>note:<span>0 COMMENTS</span></span>
+				  		</p>
+				  		<p class="p2"><?php echo ($news_detail[0]['content']); ?></p>
+				  		<p class="p3"><a href="">read more...</a></p>
+					</div>
+					<div class="line1"></div>
+					<div class="sharepost">
+						<h5>Share this Post</h5>
+						<ul>
+							<li><a href=""><i class="iconfont icon-facebookf"></i></a></li>
+							<li><a href=""><i class="iconfont icon-birdxiaoniao"></i></a></li>
+							<li><a href=""><i class="iconfont icon-google"></i></a></li>
+							<li><a href=""><i class="iconfont icon-delicious"></i></a></li>
+							<li><a href=""><i class="iconfont icon-digg"></i></a></li>
+							<li><a href=""><i class="iconfont icon-reddit"></i></a></li>
+							<li><a href=""><i class="iconfont icon-linkin"></i></a></li>
+							<li><a href=""><i class="iconfont icon-pinterest"></i></a></li>
+						</ul>
+					</div>
+					<div class="about_author">
+						<h5>About the Author</h5>
+						<div>
+							<p><?php echo ($news_detail[0]['name']); ?></p>
+							<p><?php echo ($news_detail[0]['introduction']); ?></p>
+						</div>
+					</div>
+					<div class="line2"></div>
+					<div class="comments">
+						<h5>Comments</h5>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="more_about">
+						<h4 class="title">More About</h4>
+						<ul>
+							<li><a href="">&gt; Our History</a></li>
+							<li><a href="">&gt; Professional Research</a></li>
+							<li><a href="">&gt; Our Development</a></li>
+							<li><a href="">&gt; Partnership With Us</a></li>
+							<li><a href="">&gt; Company Carreer</a></li>
+							<li><a href="">&gt; New Technology</a></li>
+							<li><a href="">&gt; Client Testimonials</a></li>
+						</ul>
+					</div>
+					<div class="recent_posts">
+						<h4 class="title">Recent Posts</h4>
+						<ul>
+							<li>
+								<a class="pull-left" href=""><img src="/lidong/yuanku/Public/img/news_img/site-img225 (1).jpg"/></a>
+								<a href="">Many desktop packages</a>
+								<span>July 5, 2016</span>
+							</li>
+							<li>
+								<a class="pull-left" href=""><img src="/lidong/yuanku/Public/img/news_img/site-img224.jpg"/></a>
+								<a href="">Many desktop packages</a>
+								<span>July 5, 2016</span>
+							</li>
+							<li>
+								<a class="pull-left" href=""><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk.jpg"/></a>
+								<a href="">Many desktop packages</a>
+								<span>July 5, 2016</span>
+							</li>
+						</ul>
+					</div>
+					<div class="happy_say">
+						<h4 class="title">Happy Client Say's</h4>
+						<img class="pull-left" src="/lidong/yuanku/Public/img/highstand homepage/people-img19_0.jpg"/>
+						<strong>- Michle Siminson</strong>
+						<p>Lorem Ipsum passage, and going through the cites of the word here classical literature passage discovere there undou btable source looks reasonable the generated charac eristic words.</p>
+					</div>
+					<div class="advertisements">
+						<h4 class="title">Site Advertisements</h4>
+						<ul>
+							<li><a href=""><img src="/lidong/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+							<li><a href=""><img src="/lidong/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+						</ul>
+						<ul>
+							<li><a href=""><img src="/lidong/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+							<li><a href=""><img src="/lidong/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+						</ul>
+					</div>
+					<div class="text_widget">
+						<h4 class="title">Text Widget</h4>
+						<p>Going to use a passage of lorem lpsum you need to be sure there anything embarrassin hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend the repeat predefined chunks as thenecessary making this the first true generator.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 
 
 <div class="clearfix"></div>
