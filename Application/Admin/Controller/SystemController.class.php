@@ -142,9 +142,7 @@ class SystemController extends AuthController{
 					$this->success('修改成功',U('System/manager_user'));
 				}else{
 					$this->success('修改失败或无更新',U('System/manager_user'));
-				}
-				
-				
+				}				
 			}else{
 				// 验证失败
 				$this->error($user_m->getError());
@@ -157,8 +155,6 @@ class SystemController extends AuthController{
 			$this->display();
 
 		} 
-
-
 		
 	}
 
@@ -171,12 +167,7 @@ class SystemController extends AuthController{
 			$this->success('删除成功',U('System/manager_user'));
 		}else{
 			$this->success('删除失败',U('System/manager_user'));
-		}
-				
-			 
-
-
-		
+		}								
 	}
 }
 
