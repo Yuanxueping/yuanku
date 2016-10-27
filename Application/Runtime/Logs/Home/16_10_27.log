@@ -9233,3 +9233,153 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
 
+[ 2016-10-27T15:26:26+08:00 ] ::1 /yuanku/index.php/Home/Personal/write_article.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SELECT * FROM client_user WHERE user_name ='yyt' [ RunTime:0.0005s ]
+SQL: SELECT email_address FROM client_user WHERE user_name ='yyt' [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0043s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\yuanku\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: validate D:\wamp\www\yuanku\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\yuanku\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `news` (`title`,`sort_id`,`content`,`date`,`img`) VALUES ('用户test','2','&lt;p&gt;&lt;span style=&quot;color: rgb(0, 176, 80);&quot;&gt;《沙与海》的拍摄人员在切换场景时镜头运用上可谓匠心独运。纪录片在由一家人的生活场景切换到另一家人的生活场景时，多采用前进式叙事。比如纪录片开头在介绍刘泽远一家时先在刘泽远家房子的外边用远景展现周围荒芜的沙漠和刘泽远家低矮的砖房，继而以刘泽远家的鸡鸣声为引子，慢慢将画面转移到房屋内，用中近景、特写表现人物及其间的关系&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 255, 0);&quot;&gt;。&lt;/span&gt;&lt;span style=&quot;color: rgb(247, 150, 70);&quot;&gt;这些镜头语言的作用在于：对于观众而言，在了解了人物所处环境后再倾听人物故事，能够更好地感知和理解当事人的境遇，引发更强的感触与共鸣。同时，对人物所处环境和事件发生环境的交代，也增强了纪录片的真实感和生活感。&lt;/span&gt;&lt;/p&gt;','1477553186','img/news_img/5811ac220d3b0.jpg') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009497s ]
+NOTIC: [8] Undefined variable: title D:\wamp\www\yuanku\Application\Runtime\Cache\Home\d241fec4ed8c8bcefdb243c9b64d1430.php 第 8 行.
+NOTIC: [8] Undefined variable: author_list D:\wamp\www\yuanku\Application\Runtime\Cache\Home\d241fec4ed8c8bcefdb243c9b64d1430.php 第 156 行.
+NOTIC: [8] Undefined variable: news_sort D:\wamp\www\yuanku\Application\Runtime\Cache\Home\d241fec4ed8c8bcefdb243c9b64d1430.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010651s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2016-10-27T15:26:27+08:00 ] ::1 /yuanku/index.php/Home/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+ERR: 无法加载控制器:News
+
+[ 2016-10-27T15:26:36+08:00 ] ::1 /yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000368s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000509s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+
+[ 2016-10-27T15:26:39+08:00 ] ::1 /yuanku/index.php/Home/Index/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `news` LIMIT 0,6   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: page_html D:\wamp\www\yuanku\Application\Home\Controller\IndexController.class.php 第 70 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] A non well formed numeric value encountered D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 98 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] A non well formed numeric value encountered D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 98 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] A non well formed numeric value encountered D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 98 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] A non well formed numeric value encountered D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 98 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] A non well formed numeric value encountered D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 98 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] A non well formed numeric value encountered D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2016-10-27T15:26:44+08:00 ] ::1 /yuanku/index.php/Home/Index/news/page_num/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `news` LIMIT 12,6   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: cur_page_style D:\wamp\www\yuanku\Application\Home\Controller\IndexController.class.php 第 70 行.
+NOTIC: [8] Undefined variable: page_html D:\wamp\www\yuanku\Application\Home\Controller\IndexController.class.php 第 70 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] A non well formed numeric value encountered D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 98 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] A non well formed numeric value encountered D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 98 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] A non well formed numeric value encountered D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 98 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
