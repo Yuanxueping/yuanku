@@ -645,3 +645,859 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003395s ]
 INFO: [ app_end ] --END-- [ RunTime:0.003625s ]
 >>>>>>> 524601d91634b83468b87deb6b29c8db3c7fc866
 
+[ 2016-10-27T15:21:47+08:00 ] ::1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002136s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000492s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000688s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2016-10-27T15:22:53+08:00 ] ::1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000345s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000478s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001963s ]
+
+[ 2016-10-27T15:23:03+08:00 ] ::1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002340s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000384s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000509s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2016-10-27T15:31:18+08:00 ] ::1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+
+[ 2016-10-27T15:31:22+08:00 ] ::1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-10-27T15:31:47+08:00 ] ::1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000341s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000472s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2016-10-27T15:31:49+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `news` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: page_html E:\mysql\wamp\www\lidong\yuanku\Application\Home\Controller\IndexController.class.php 第 70 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2016-10-27T15:31:54+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/news_detail/id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `news` INNER JOIN author INNER JOIN news_sort  WHERE ( news.id=15 AND author.id=author_id AND sort_id=news_sort.id )  [ RunTime:0.0465s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001149s ]
+
+[ 2016-10-27T15:37:39+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/news_detail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002153s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0158s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND author.id=author_id AND sort_id=news_sort.id )' at line 1
+ [ SQL语句 ] : SELECT * FROM `news` INNER JOIN author INNER JOIN news_sort  WHERE ( news.id= AND author.id=author_id AND sort_id=news_sort.id ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND author.id=author_id AND sort_id=news_sort.id )' at line 1
+ [ SQL语句 ] : SELECT * FROM `news` INNER JOIN author INNER JOIN news_sort  WHERE ( news.id= AND author.id=author_id AND sort_id=news_sort.id ) 
+
+[ 2016-10-27T15:38:04+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/news_detail/id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `news` INNER JOIN author INNER JOIN news_sort  WHERE ( news.id=15 AND author.id=author_id AND sort_id=news_sort.id )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000903s ]
+
+[ 2016-10-27T15:38:43+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/news_detail/id/16.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `news` INNER JOIN author INNER JOIN news_sort  WHERE ( news.id=16 AND author.id=author_id AND sort_id=news_sort.id )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000397s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2016-10-27T15:39:34+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000391s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000513s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2016-10-27T15:39:37+08:00 ] 127.0.0.1 /lidong/yuanku/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000347s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000476s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2016-10-27T15:39:51+08:00 ] 127.0.0.1 /lidong/yuanku/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000402s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000523s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-10-27T15:40:03+08:00 ] 127.0.0.1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000333s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000462s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2016-10-27T15:40:35+08:00 ] 127.0.0.1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000797s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2016-10-27T15:40:37+08:00 ] ::1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000334s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000455s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021941s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2016-10-27T15:43:46+08:00 ] ::1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000333s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000454s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2016-10-27T15:44:00+08:00 ] 127.0.0.1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000317s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000488s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2016-10-27T15:44:31+08:00 ] 127.0.0.1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000345s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000509s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022294s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2016-10-27T15:45:39+08:00 ] 127.0.0.1 /lidong/yuanku/index.php/Home/Index/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `news` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: page_html E:\mysql\wamp\www\lidong\yuanku\Application\Home\Controller\IndexController.class.php 第 70 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2016-10-27T15:45:47+08:00 ] 127.0.0.1 /lidong/yuanku/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000659s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000962s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2016-10-27T15:45:47+08:00 ] 127.0.0.1 /lidong/yuanku/index.php/Home/Index/ie-css3.htc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+ERR: 非法操作:ie-css3.htc
+
+[ 2016-10-27T15:46:09+08:00 ] 127.0.0.1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000444s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000771s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2016-10-27T15:46:39+08:00 ] 127.0.0.1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002106s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000812s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001927s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001160s ]
+
+[ 2016-10-27T15:48:54+08:00 ] ::1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000339s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000469s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2016-10-27T15:50:17+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `news` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: page_html E:\mysql\wamp\www\lidong\yuanku\Application\Home\Controller\IndexController.class.php 第 70 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000987s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000395s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/124465100.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_009.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_033.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003797s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_017.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_011.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_030.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001722s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_035.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004248s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_006.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/138792428.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_012.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_022.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007694s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/138792890.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/138792725.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/138792982.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_014.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/138793463.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/139431754.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135221881.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135829741.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/136538823.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004456s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135829617.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135830935.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135830562.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135830765.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+
+[ 2016-10-27T15:50:33+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135830208.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+
+[ 2016-10-27T15:53:22+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+ERR: 非法操作:news
+
+[ 2016-10-27T15:57:20+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/news_detail/id/16.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001946s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `news` INNER JOIN author INNER JOIN news_sort  WHERE ( news.id=16 AND author.id=author_id AND sort_id=news_sort.id )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000856s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2016-10-27T15:57:29+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/news_detail/id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `news` INNER JOIN author INNER JOIN news_sort  WHERE ( news.id=15 AND author.id=author_id AND sort_id=news_sort.id )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2016-10-27T16:01:12+08:00 ] ::1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000332s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000461s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2016-10-27T16:01:16+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `news` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: page_html E:\mysql\wamp\www\lidong\yuanku\Application\Home\Controller\IndexController.class.php 第 70 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 99 行.
+NOTIC: [8] A non well formed numeric value encountered E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title><?php echo ($title); ?>  后台管理</title>
@@ -116,7 +116,7 @@
       </ul>
     </div>
   </div>
-</nav> 
+</nav>
 <aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
   <ul class="nav metismenu">
     <li class="profile-sidebar-container">
@@ -375,18 +375,20 @@
        <div class="row">
         <div class="col-md-12">
           <div class="content-box">
-             <div class="content"> 
+             <div class="content">
+
 <link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/admin/news_add.css"/>
+
 <div class="panel panel-primary">
 	<div class="panel-heading">
-		<div class="panel-title">添加新闻</div>
+		<div class="panel-title">修改新闻</div>
 	</div>
 	<div class="panel-body">
 		<form role="form" class="form-horizontal" method="post" action="<?php echo U('News/news_add');?>" enctype="multipart/form-data">
 	        <div class="form-group">
 	          	<label for="title" class="col-md-2 control-label">标题</label>
 	          	<div class="col-md-10">
-	            	<input type="text" required="" placeholder="新闻标题" id="title" class="form-control" name="title">
+	            	<input type="text" required="" placeholder="新闻标题" id="title" class="form-control" name="title" value="<?php echo ($news_info[0][title]); ?>">
 	          	</div>
 	        </div>
 	        <div class="form-group">
@@ -403,22 +405,20 @@
 	          	<div class="col-md-10">
 	            	<select name="sort_id" class="form-control" required="" id="news_sort">
 	            		<option selected="selected" class="d-none">请选择分类</option>
-	            		<?php if(is_array($news_sort)): $i = 0; $__LIST__ = $news_sort;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo['id']); ?>"><?php echo ($vo['sort_name']); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+	            		<?php if(is_array($sort_list)): $i = 0; $__LIST__ = $sort_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo['id']); ?>"><?php echo ($vo['sort_name']); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 	            	</select>
 	          	</div>
 	        </div>
 	        <div class="form-group">
 	          	<label class="col-md-2 control-label" for="content">内容</label>
 	          	<div class="col-md-10">
-	            	<script id="container" name="content" type="text/plain">
-	            		
-					</script>
+	            	<script id="container" name="content" type="text/plain"><?php echo ($news_info[0]['content']); ?></script>
 	          	</div>
 	        </div>
 	        <div class="form-group">
 	          	<label class="col-md-2 control-label">图片</label>
 	          	<div class="col-md-10">
-	            	<input class="dropify form-control"  name="img" type="file" id="img">
+	            	<input class="dropify form-control"  name="img" type="file" id="img" data-default-file="/lidong/yuanku/Public/<?php echo ($news_info[0]['img']); ?>">
 	          	</div>
 	        </div>
 	        <div class="form-group">

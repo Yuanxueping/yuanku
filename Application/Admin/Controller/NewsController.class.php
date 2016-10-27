@@ -1,10 +1,6 @@
 <?php
 namespace Admin\Controller;
-<<<<<<< HEAD
 use Think\Controller;
-=======
-use Think\Upload;
->>>>>>> 524601d91634b83468b87deb6b29c8db3c7fc866
 use Common\Controller\AuthController;
 use Think\Upload;
 
@@ -15,7 +11,7 @@ class NewsController extends AuthController {
     public function index(){
 		$news_m = M('News');
 		
-		$page_count = 5;	//每页数据的条数
+		$page_count = 15;	//每页数据的条数
 		$page_num = I('page_num') > 0 ? I('page_num') : 1;	//获取ID值，没有则默认为1
 		$news_total_num = $news_m -> count();	//获取数据的总数
 		$start_index = ($page_num - 1) * $page_count;	//从第几条数据查起
@@ -35,6 +31,7 @@ class NewsController extends AuthController {
 							 -> join('author ON author_id=author.id')
 							 -> join('news_sort ON sort_id=news_sort.id')
 							 -> limit($start_index,$page_count)
+							 -> order('n.id desc')
 							 -> select();
 							 
 		
@@ -231,7 +228,7 @@ class NewsController extends AuthController {
 			$this->success('删除失败',U('News/sort'));
 		}
    }
-<<<<<<< HEAD
+
  public function ajax_set_sort(){
 		$new_m=D('NewsSort');
 		// 做验证、自动完成
@@ -254,7 +251,7 @@ class NewsController extends AuthController {
 			
 		}
  }
-=======
+
 
    //作者列表
 	public function author_list(){
@@ -332,5 +329,5 @@ $active."'>".$i."</a>";
 	}
    
   
->>>>>>> 524601d91634b83468b87deb6b29c8db3c7fc866
+
 }

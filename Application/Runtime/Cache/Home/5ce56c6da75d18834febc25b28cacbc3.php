@@ -10,13 +10,10 @@
 	 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/headAndFoot.css">
 	 <script src="/lidong/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
 	 <script src="/lidong/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
-	 
-
-	<!--  <link rel="stylesheet" href="css/headAndFoot.css" />
-	 <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
-		
-	<!--  <script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script> 
-	 <script type="text/javascript" src="js/bootstrap.min.js" ></script>-->
+	  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+      <![endif]-->
 
 
 
@@ -50,6 +47,11 @@
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/index">首页</a></li>
+				        
+				        <li><a href="/lidong/yuanku/index.php/Home/Index/news">推荐</a></li>
+				        <li><a href="/lidong/yuanku/index.php/Home/Index/news">视频</a></li>
+				        <li><a href="<?php echo U('Nba/index');?>">篮球</a></li>
+				        <li><a href="/lidong/yuanku/index.php/Home/Index/news">足球</a></li>
 				        <li>
 				        <a href="
 				        	<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/index';} else{ echo '/lidong/yuanku/index.php/Home/Index/login'; } ?>
@@ -64,9 +66,11 @@
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
 				        </li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/news">新闻</a></li>
+				        <!-- 
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
+
+				        <li><a href="/lidong/yuanku/index.php/Home/Index/about_us">关于我们</a></li> -->
+
 				       				        
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
@@ -96,10 +100,10 @@
 				  		<img src="/lidong/yuanku/Public/<?php echo ($news_detail[0]['img']); ?>" class="img-responsive"/>
 				  		<h3><a href=""><?php echo ($news_detail[0]['title']); ?></a></h3>
 				  		<p class="p1">
-				  			<a href=""><?php echo ($news_detail[0]['date']); ?></a>
-				  			<span>by:<span><?php echo ($news_detail[0]['name']); ?></span>in:<span><?php echo ($news_detail[0]['sort']); ?></span>note:<span>0 COMMENTS</span></span>
+				  			<a href=""><?php echo (date('Y年m月d日',$news_detail[0]['date'])); ?></a>
+				  			<span>by:<span><?php echo ($news_detail[0]['name']); ?></span>in:<span><?php echo ($news_detail[0]['sort_name']); ?></span>note:<span>0 COMMENTS</span></span>
 				  		</p>
-				  		<p class="p2"><?php echo ($news_detail[0]['content']); ?></p>
+				  		<p class="p2"><?php echo htmlspecialchars_decode($news_detail[0]['content']) ?></p>
 				  		<p class="p3"><a href="">read more...</a></p>
 					</div>
 					<div class="line1"></div>

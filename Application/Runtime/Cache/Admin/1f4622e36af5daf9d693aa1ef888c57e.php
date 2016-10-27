@@ -57,7 +57,7 @@
    <nav class="navbar navbar-indigo">
  <div class="navbar-header container brand-orange">
    <a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
-   <a href="/lidong/yuanku/admin" class="logo">力动企业</a>
+   <a href="/lidong/yuanku/admin" class="logo">力动网</a>
    <a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="icon-logo"></a>
  </div>
   <div class="navbar-container clearfix">
@@ -143,11 +143,13 @@
         </div>
       </div>
     </li>
-    <li class="">
+    <?php $controller_name= CONTROLLER_NAME ?>
+
+    <li  <?php if($controller_name == 'System'): ?>class="active"<?php endif; ?> >
       <a href="#" aria-expanded="false"><i class="zmdi zmdi-view-dashboard"></i>系统设置<span class="zmdi arrow"></span></a>
-      <ul class="nav nav-inside collapse" aria-expanded="false" style="height: 0px;">
+      <ul class="nav nav-inside collapse <?php if($controller_name == 'System'): ?>in<?php endif; ?>" aria-expanded="false"  >
         <li class="inside-title">系统设置</li>
-        <li><a href="<?php echo U('system/index');?>">网站设置</a></li>
+        <!-- <li><a href="<?php echo U('system/index');?>">网站设置</a></li> -->
         <li><a href="<?php echo U('system/manager_user');?>">管理员设置</a></li>
       </ul>
     </li>
@@ -155,26 +157,30 @@
       <a href="#"><i class="zmdi zmdi-view-compact"></i>首页管理<span class="zmdi arrow"></span></a>
       <ul class="nav nav-inside collapse" aria-expanded="false">
         <li class="inside-title">首页管理</li>
-        <li><a href="/land/l1/index_r.html">幻灯片管理</a></li>
+        <li><a href="<?php echo U('index/slide_manage');?>">幻灯片管理</a></li>
         <li><a href="/land/l1/index_r.html">首页新闻管理</a></li>
       </ul>
     </li>
-    <li>
+    <li <?php if($controller_name == 'Client'): ?>class="active"<?php endif; ?> >
       <a href="#"><i class="zmdi zmdi-google-pages"></i>用户管理<span class="zmdi arrow"></span></a>
-      <ul class="nav nav-inside collapse" aria-expanded="false">
+      <ul class="nav nav-inside collapse <?php if($controller_name == 'Client'): ?>in<?php endif; ?>" aria-expanded="false">
         <li class="inside-title">用户列表</li>
         <li><a href="<?php echo U('client/client_list');?>">用户列表</a></li>
         <li><a href="<?php echo U('client/feedback');?>">咨询列表</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#"><i class="zmdi zmdi-flower"></i>新闻管理<span class="zmdi arrow"></span></a>
-      <ul class="nav nav-inside collapse" aria-expanded="false">
-        <li class="inside-title">新闻管理</li>
-        <li><a href="<?php echo U('news/index');?>">新闻列表</a></li>
-        <li><a href="<?php echo U('news/sort');?>">新闻分类</a></li>
-        <li><a href="<?php echo U('news/news_add');?>">添加新闻</a></li>
-        
+ 
+    <li <?php if($controller_name == 'News'): ?>class="active"<?php endif; ?>>
+      <a href="#"><i class="zmdi zmdi-flower"></i>内容管理<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse <?php if($controller_name == 'News'): ?>in<?php endif; ?>" aria-expanded="false">
+        <li class="inside-title">内容管理</li>
+        <li><a href="<?php echo U('news/index');?>">内容列表</a></li>
+        <li><a href="<?php echo U('news/sort');?>">内容分类</a></li>
+        <li><a href="<?php echo U('news/news_add');?>">添加内容</a></li>
+        <li><a href="<?php echo U('news/author_list');?>">作者管理</a></li>
+
+         
+
       </ul>
     </li>  
      
