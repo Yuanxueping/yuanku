@@ -44,7 +44,7 @@ class IndexController extends Controller {
 //新增加
 		$news = M('News');
 		
-		$page_cout=6;
+		$page_cout=10;
 		
 		$page_num=I('page_num')>0?I('page_num'):1;
 		
@@ -52,7 +52,7 @@ class IndexController extends Controller {
 		$start_index=($page_num-1)*$page_cout;
 //		$start_index=0;
 		
-		$news_list=$news->limit($start_index,$page_cout)->select();
+		$news_list=$news->order('id desc')->limit($start_index,$page_cout)->select();
 		
 		$this->assign('news_list',$news_list);
 		
