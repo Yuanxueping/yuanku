@@ -89,6 +89,11 @@ class LoginController extends Controller {
 				if (!$verfiy->check(I('verify'))) {
 					$this->ajaxReturn(array('stauts'=>-2,'message'=>'验证码错误！'));
 				}else{
+					$gourp_a=M('ThinkAuthGroupAccess')->where('uid='.$user_info['id'])->find();
+				
+					$login['group_id'] = $gourp_a['group_id'];
+
+					
 					$login['uid'] = $user_info['id'];
 					$login['user'] = 'admin';
 					session('auth', $login);

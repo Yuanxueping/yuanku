@@ -16,7 +16,6 @@ class AuthController extends Controller {
 		$user_info=$user_m->where('id='.$sess_auth['uid'])->find();
 		$this->assign('user_info',$user_info);
 			// return true;
-
 		if ($sess_auth['group_id'] == 1) {
 			return true;
 		}
