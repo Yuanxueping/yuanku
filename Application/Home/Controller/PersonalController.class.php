@@ -14,6 +14,7 @@ class PersonalController extends Controller {
 		}
 				
 	}
+	//显示邮箱地址
 	public function showt_email(){
 		$Model = new \Think\Model() ;
 		$result=$Model->query("SELECT email_address FROM client_user WHERE user_name ='".$_SESSION['username']."'");
@@ -21,13 +22,13 @@ class PersonalController extends Controller {
 		$this->assign('email_address',$email_address);
 		
 	}
-
+	//退出
 	public function logout(){
 		unset($_SESSION['username']);
 		$this->success('退出成功，请重新登陆',U('Index/login'),3);
 	}
 
-
+	//显示头像
 	public function showLogo(){
 		$Model = new \Think\Model() ;
 		$result=$Model->query("SELECT * FROM client_user WHERE user_name ='".$_SESSION['username']."'");
@@ -38,11 +39,58 @@ class PersonalController extends Controller {
 			
 		}
 	}
-
+	//用户信息修改
 	public function edit_message(){
+		$this->showLogo();
+		$this->showt_email();
 		$this->display('Index/edit_user_info');
 	}
 
+	//用户写文章
+	public function write_article(){
+		$this->showLogo();
+		$this->showt_email();
+		if(IS_POST) {
+    		$news = D('news');
+			$_POST['date'] = time();
+			
+			$upload = new Upload();
+			$upload -> maxSize = 10240000;
+			$upload -> exts = array('jpg','gif','jpeg','png');
+			$upload -> autoSub = FALSE;
+			$upload -> rootPath = './Public/img/news_img/';
+			$info = $upload -> upload();
+			if(!$info) {
+				$this -> error($upload->getError());
+			} else {
+				$_POST['img'] = 'img/news_img/'.$info['img']['savename'];
+			}
+			
+			if($news -> create()) {
+				if($news -> add()) {
+					$this -> success('添加成功',U('News/index'));
+				} else {
+					$this -> error('添加失败',U('News/news_add'));
+				}
+			} else {
+				$this -> error($news -> getError());
+			}
+    	} else {
+    		$author = D('author');
+			$news_sort = D('news_sort');
+			
+			$author_list = $author -> field('id,name') -> select();
+			$news_sort = $news_sort -> select();
+			
+			$this -> assign('author_list',$author_list);
+			$this -> assign('news_sort',$news_sort);
+			
+    		// $this->display();
+    	}
+		$this->display('Index/write_article');
+
+
+	}
 	public function update(){
 		$data['user_name']=I('user_name');
 		if(I('email_address')!=''){
