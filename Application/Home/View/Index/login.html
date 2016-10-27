@@ -1,12 +1,11 @@
+<!--
+	*yxp
+	*登录页面
+-->
 <include file="public/header" />
 		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/register.css"/>
-		<!-- <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/transform.css"/> -->
-		
-
-		<script src="__PUBLIC__/js//register.js" type="text/javascript" charset="utf-8"></script>
+		<script src="__PUBLIC__/js/register.js" type="text/javascript" charset="utf-8"></script>
 <include file="public/headerstwo"/>
-
-		<!-- <script src="__PUBLIC__/js/login.js" type="text/javascript" charset="utf-8"></script> -->
 
 		<div class="container">
 			<div class="row login_header clearcss">
@@ -24,9 +23,9 @@
 			<div class="col-lg-offset-3 col-lg-6 col-md-12">
 				<form class="form-signin" role="form" action="__MODULE__/Login/checkLogin" method="POST" enctype="application/x-www-form-urlencoded">
 			        <div class="form-header">
-			        	<h4>账号登录</h4>
-			        	<p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">注册</a></p>
-			        	<p style="margin-top:5px;"><a href="register.html">忘记密码？</a></p>
+			        	<h2>账号登录</h2>
+			        	<!-- <p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">注册</a></p> -->
+			        	<!-- <p style="margin-top:5px;"><a href="register.html">忘记密码？</a></p> -->
 			        </div>
 			        <div class="message">
 			        	<div id="warn" class="alert alert-warning alert-dismissable warn" style="display: none;"> 
@@ -41,11 +40,8 @@
 			        <div class="form-group">
 			        	<p class="form-signin-heading"><img src="__PUBLIC__/img/login/user.png"/>&nbsp;用户名/邮箱</p>
 			          <div class="input-group">
-			            <!-- <input type="text" class="form-control" name="username" id="username"  autocomplete="off"> -->
-			            <input type="text" class="form-control" name="username" id="username"  autocomplete="off" placeholder="请输入用户名或邮箱">
+			          	<input type="text" class="form-control" name="username" id="username"  autocomplete="off" placeholder="请输入用户名或邮箱">
 			          </div>
-			          <!-- <p style="margin-top: 10px;">输入用户名或邮箱</p> -->
-			          
 			        </div>
 			        <div class="message">
 			        	<div id="warn" class="warn_p alert alert-warning alert-dismissable" style="display: none;"> 
@@ -56,15 +52,16 @@
 			        <div class="form-group" style="margin-top:0px;">
 						<p class="form-signin-heading" style="margin-top:0px;"><img src="__PUBLIC__/img/login/pwd.png"/>&nbsp;密码</p>
 			          <div class="input-group">
-			          	<!-- <input type="text" class="form-control" name="password" id="password"  autocomplete="off"> -->
-			            <input type="password" class="form-control" name="password" id="password"  autocomplete="off" placeholder="请输入与用户名相匹配的密码">
+			          	<input type="password" class="form-control" name="password" id="password"  autocomplete="off" placeholder="请输入与用户名相匹配的密码">
 			          </div>
-			          <!-- <p style="margin-top: 10px;">输入与用户名相匹配的密码</p> -->
 			        </div>
 					<div class="Btn">
-						<!--<p>Password reset instructions will be send to your registered email address</p>-->
-			        <button class="btn btn-lg btn-primary btn-block" id="login" type="submit">登录</button>
+						<button class="btn btn-lg btn-primary btn-block" id="login" type="submit">登录
+						</button>
+			        	<p>没有账号？<a href="register.html">注册</a></p>
+
 					</div>
+
 			     </form>
 			</div>
     </div>
