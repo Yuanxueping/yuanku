@@ -66,31 +66,7 @@
 	                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> 个人中心</h3>
 	              </div>
 	              <div class="panel-body">
-		               <!-- <div class="personal-right">
-							<div class="row">
-								<div class="col-md-6 col-sm-12 col-xs-12">
-									<div class="kitty">
-
-										<img width="140px" height="140px" src="__ROOT__/{$head_photo}"/>
-										<ul class="clearfix">
-											<li><b><a href="">{$Think.session.username}</a></b></li>
-											<li id="sayhello">1</li>
-											<li><a href="__CONTROLLER__/edit_message">修改个人信息</a>&nbsp;<img src="__PUBLIC__/img/personal/矩形-18-拷贝.png"/></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-6 col-sm-12 col-xs-12">
-										<div class="message">
-											<ul>
-												<!-- <li>账户安全较高：较高</li> -->
-												<!-- <li>绑定手机：{$phone_num}</li> -->
-											<!-- 	<li>绑定邮箱：{$email_address}</li>
-											</ul>
-										</div>
-								</div>
-							</div>	
-					  </div> -->
-					   <div class="personal-bottom" style="margin-top:5px;margin-bottom:10%">
+		               <div class="personal-bottom" style="margin-top:5px;margin-bottom:10%">
 									<div class="row">
 										<div class="col-md-6 col-sm-12 col-xs-12">
 											<div class="product">
@@ -128,7 +104,7 @@
 														<td>&nbsp;我发布的文章&nbsp;<span>0</span></td>
 													</tr>
 													<tr>
-														<td>&nbsp;<a href="">查看我发布的文章</a>&nbsp;<img src="__PUBLIC__/img/personal/矩形-10-拷贝.png"/></td>												
+														<td>&nbsp;<a href="{:U('Personal/published_article')}">查看我发布的文章</a>&nbsp;<img src="__PUBLIC__/img/personal/矩形-10-拷贝.png"/></td>												
 													</tr>
 												</table>
 											</div>
