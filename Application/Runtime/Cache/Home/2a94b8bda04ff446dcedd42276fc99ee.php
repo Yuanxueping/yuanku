@@ -1,10 +1,88 @@
-<include file="public/header" />
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head lang="zh">
+	<title><?php echo ($title); ?></title>
+
+	<meta charset="UTF-8">
+
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/thinkphp_3.2.3_full/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+	 
+
+	<!--  <link rel="stylesheet" href="css/headAndFoot.css" />
+	 <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+		
+	<!--  <script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script> 
+	 <script type="text/javascript" src="js/bootstrap.min.js" ></script>-->
+
+
+
+		
+
+		
+
+
 <!-- 这里写自己页面的样式 -->
 <!--HOME css-->
-<script src="__PUBLIC__/js/headerchange.js"></script>
-<link rel="stylesheet" href="__PUBLIC__/css/home/home.css" />
+<script src="/thinkphp_3.2.3_full/yuanku/Public/js/headerchange.js"></script>
+<link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/home/home.css" />
 <!--0-->
-<include file="public/headerstwo"/>
+  </head>
+<body>
+<!-- <div class="container-fluid"> -->
+	<nav class="navbar navbar-default top-nav navbar-fixed-top gaise">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header"> 
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">
+		      	<img class="logo" src="/thinkphp_3.2.3_full/yuanku/Public/img/logoko2.png" />
+		      </a>
+		    </div>		
+		    
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav navbar-right color">
+				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/index">首页</a></li>
+				        
+				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/news">推荐</a></li>
+				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/news">视频</a></li>
+				        <li><a href="<?php echo U('Nba/index');?>">篮球</a></li>
+				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/news">足球</a></li>
+				        <li>
+				        <a href="
+				        	<?php if(isset($_SESSION['username'])) {echo '/thinkphp_3.2.3_full/yuanku/index.php/Home/Personal/index';} else{ echo '/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/login'; } ?>
+				        ">
+				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
+				        </a>
+				        </li>
+				        <li>
+				        	<a href="
+				        		<?php if(isset($_SESSION['username'])) {echo '/thinkphp_3.2.3_full/yuanku/index.php/Home/Personal/logout';} else{ echo '/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/register'; } ?>
+				        	">
+				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
+				        	</a>
+				        </li>
+				        <!-- 
+				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
+				        <li><a href="/thinkphp_3.2.3_full/yuanku/index.php/Home/Index/about_us">关于我们</a></li> -->
+				       				        
+				        <li>
+				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
+				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
+				        	</a>
+				        </li>
+				      </ul>		          			        				        	
+	            </div>
+		  </div>
+	</nav>
 <!--轮播-->
 
 <div class="kong"></div>
@@ -17,14 +95,14 @@
 	      </ol>
 	      <div class="carousel-inner" role="listbox">
 	        <div class="item">
-	        	<img src="__PUBLIC__/img/lunbo/01.jpg"/>			          
+	        	<img src="/thinkphp_3.2.3_full/yuanku/Public/img/lunbo/01.jpg"/>			          
 	        </div>
 	        <div class="item">
-	        	<img src="__PUBLIC__/img/lunbo/02.jpg"/>
+	        	<img src="/thinkphp_3.2.3_full/yuanku/Public/img/lunbo/02.jpg"/>
 	          
 	        </div>
 	        <div class="item active">
-	        	<img src="__PUBLIC__/img/lunbo/03.jpg"/>
+	        	<img src="/thinkphp_3.2.3_full/yuanku/Public/img/lunbo/03.jpg"/>
 	          
 	        </div>
 	      </div>
@@ -103,7 +181,7 @@
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<a href="#" class="cbp-caption cbp-lightbox" data-title="Color  by M.A Anderson">
 					<div class="cbp-caption-defaultWrap">
-						<img src="__PUBLIC__/img/highstand homepage/project1_1.jpg" class="img-responsive" alt="pro" typeof="Image" />
+						<img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/project1_1.jpg" class="img-responsive" alt="pro" typeof="Image" />
 					</div>
 					<div class="cbp-caption-activeWrap">
 						<div class="cbp-l-caption-alignLeft">
@@ -120,7 +198,7 @@
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<a href="#" class="cbp-caption cbp-lightbox" data-title="Fledglings  by M.A Anderson">
 							<div class="cbp-caption-defaultWrap">
-								<img src="__PUBLIC__/img/highstand homepage/04-big.jpg" class="img-responsive" alt="" typeof="Image" />
+								<img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/04-big.jpg" class="img-responsive" alt="" typeof="Image" />
 							</div>
 							<div class="cbp-caption-activeWrap">
 								<div class="cbp-l-caption-alignLeft">
@@ -135,7 +213,7 @@
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<a href="#" class="cbp-caption cbp-lightbox" data-title="Packages  by M.A Anderson">
 							<div class="cbp-caption-defaultWrap">
-								<img src="__PUBLIC__/img/highstand homepage/08-big.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
+								<img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/08-big.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
 							</div>
 							<div class="cbp-caption-activeWrap">
 								<div class="cbp-l-caption-alignLeft">
@@ -153,7 +231,7 @@
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
 							<div class="cbp-caption-defaultWrap">
-								<img src="__PUBLIC__/img/highstand homepage/07-big.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
+								<img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/07-big.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
 							</div>
 							<div class="cbp-caption-activeWrap">
 								<div class="cbp-l-caption-alignLeft">
@@ -168,7 +246,7 @@
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
 							<div class="cbp-caption-defaultWrap">
-								<img src="__PUBLIC__/img/highstand homepage/05-big.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
+								<img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/05-big.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
 							</div>
 							<div class="cbp-caption-activeWrap">
 								<div class="cbp-l-caption-alignLeft">
@@ -190,7 +268,7 @@
 			<div class="col-md-3 col-sm-6 col-xs-6">
 				<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
 					<div class="cbp-caption-defaultWrap">
-						<img src="__PUBLIC__/img/highstand homepage/161689529.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
+						<img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/161689529.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
 					</div>
 					<div class="cbp-caption-activeWrap">
 						<div class="cbp-l-caption-alignLeft">
@@ -205,7 +283,7 @@
 			<div class="col-md-3 col-sm-6 col-xs-6">
 				<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
 					<div class="cbp-caption-defaultWrap">
-						<img src="__PUBLIC__/img/highstand homepage/14368986.jpg" class="img-responsive" alt="" typeof="Image" />
+						<img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/14368986.jpg" class="img-responsive" alt="" typeof="Image" />
 					</div>
 					<div class="cbp-caption-activeWrap">
 						<div class="cbp-l-caption-alignLeft">
@@ -220,7 +298,7 @@
 			<div class="col-md-3 col-sm-6 col-xs-6">
 				<a href="#" class="cbp-caption cbp-lightbox" data-title="Civil War - Trailer 1  by M.A Anderson">
 					<div class="cbp-caption-defaultWrap">
-						<img src="__PUBLIC__/img/highstand homepage/FkTybqcX-Yo.jpg" class="img-responsive" alt="" typeof="Image" />
+						<img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/FkTybqcX-Yo.jpg" class="img-responsive" alt="" typeof="Image" />
 					</div>
 					<div class="cbp-caption-activeWrap">
 						<div class="cbp-l-caption-alignLeft">
@@ -235,7 +313,7 @@
 			<div class="col-md-3 col-sm-6 col-xs-6">
 				<a href="#" class="cbp-caption cbp-lightbox" data-title="Civil War - Trailer 2  by M.A Anderson">
 					<div class="cbp-caption-defaultWrap">
-						<img src="__PUBLIC__/img/highstand homepage/dKrVegVI0Us.jpg" class="img-responsive" alt="" typeof="Image" />
+						<img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/dKrVegVI0Us.jpg" class="img-responsive" alt="" typeof="Image" />
 					</div>
 					<div class="cbp-caption-activeWrap">
 						<div class="cbp-l-caption-alignLeft">
@@ -369,7 +447,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img6.jpg?itok=V9ZP4PYd" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img6.jpg?itok=V9ZP4PYd" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -378,7 +456,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img13.jpg?itok=6z8gQRlE" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img13.jpg?itok=6z8gQRlE" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -387,7 +465,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img11.jpg?itok=nOPiPZvM" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img11.jpg?itok=nOPiPZvM" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -396,7 +474,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img1.jpg?itok=e3G3NuHa" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img1.jpg?itok=e3G3NuHa" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -405,7 +483,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img36.jpg?itok=7wK8RVbo" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img36.jpg?itok=7wK8RVbo" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -414,7 +492,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img10.jpg?itok=Ok_n3rrr" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img10.jpg?itok=Ok_n3rrr" class="rimg" alt="" />
 								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -423,7 +501,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img7.jpg?itok=kTjklOP7" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img7.jpg?itok=kTjklOP7" class="rimg" alt="" />
 								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -432,7 +510,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img31.jpg?itok=onrLxT__" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img31.jpg?itok=onrLxT__" class="rimg" alt="" />
 								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -441,7 +519,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img34.jpg?itok=NWEyjx_t" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img34.jpg?itok=NWEyjx_t" class="rimg" alt="" />
 								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -450,7 +528,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img29_0.jpg?itok=tMhYS7Hw" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img29_0.jpg?itok=tMhYS7Hw" class="rimg" alt="" />
 								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -459,7 +537,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img9.jpg?itok=LtbGjdeX" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img9.jpg?itok=LtbGjdeX" class="rimg" alt="" />
 								<div class="content">Nica Heriberty<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -468,7 +546,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img28.jpg?itok=CmRSo73C" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img28.jpg?itok=CmRSo73C" class="rimg" alt="" />
 								<div class="content">Alan Joaquin<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -478,7 +556,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img6.jpg?itok=V9ZP4PYd" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img6.jpg?itok=V9ZP4PYd" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -487,7 +565,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img13.jpg?itok=6z8gQRlE" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img13.jpg?itok=6z8gQRlE" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -496,7 +574,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img11.jpg?itok=nOPiPZvM" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img11.jpg?itok=nOPiPZvM" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -505,7 +583,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img1.jpg?itok=e3G3NuHa" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img1.jpg?itok=e3G3NuHa" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -514,7 +592,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img36.jpg?itok=7wK8RVbo" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img36.jpg?itok=7wK8RVbo" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -523,7 +601,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img10.jpg?itok=Ok_n3rrr" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img10.jpg?itok=Ok_n3rrr" class="rimg" alt="" />
 								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -532,7 +610,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img7.jpg?itok=kTjklOP7" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img7.jpg?itok=kTjklOP7" class="rimg" alt="" />
 								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -541,7 +619,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img31.jpg?itok=onrLxT__" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img31.jpg?itok=onrLxT__" class="rimg" alt="" />
 								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -550,7 +628,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img34.jpg?itok=NWEyjx_t" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img34.jpg?itok=NWEyjx_t" class="rimg" alt="" />
 								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -559,7 +637,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img29_0.jpg?itok=tMhYS7Hw" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img29_0.jpg?itok=tMhYS7Hw" class="rimg" alt="" />
 								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -568,7 +646,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img9.jpg?itok=LtbGjdeX" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img9.jpg?itok=LtbGjdeX" class="rimg" alt="" />
 								<div class="content">Nica Heriberty<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -577,7 +655,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img28.jpg?itok=CmRSo73C" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img28.jpg?itok=CmRSo73C" class="rimg" alt="" />
 								<div class="content">Alan Joaquin<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -701,7 +779,7 @@
 			<div class="one_third_less">
 				<a href="/many-desktop-packages-0">
 					<div class="box01">
-						<img src="__PUBLIC__/img/highstand homepage/site-img225.jpg?itok=oGIxJj2U" width="374" height="200" alt="image" typeof="Image" />
+						<img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/site-img225.jpg?itok=oGIxJj2U" width="374" height="200" alt="image" typeof="Image" />
 
 						<div class="content">
 							<h4>许多桌面软件包</h4>
@@ -713,7 +791,7 @@
 			<div class="one_third_less choose-blog">
 				<a href="/many-desktop-packages">
 					<div class="box01">
-						<img src="__PUBLIC__/img/highstand homepage/site-img224.jpg?itok=418pSrnX" width="374" height="200" alt="image" typeof="Image" />
+						<img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/site-img224.jpg?itok=418pSrnX" width="374" height="200" alt="image" typeof="Image" />
 
 						<div class="content">
 							<h4>许多桌面软件包</h4>
@@ -725,7 +803,7 @@
 			<div class="one_third_less last">
 				<a href="/node/15">
 					<div class="box01">
-						<img src="__PUBLIC__/img/highstand homepage/2h1BK2H2Quk.jpg?itok=Z0ts4wwD" alt="" typeof="Image" />
+						<img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/2h1BK2H2Quk.jpg?itok=Z0ts4wwD" alt="" typeof="Image" />
 						<div class="content">
 							<h4>方程式1 崩溃 | 震惊</h4>
 							<b>May 12, 2016</b>
@@ -737,7 +815,7 @@
 			<div class="two_third_less">
 				<a href="/letraset-sheets-containing-lorem">
 					<div class="box01">
-						<img src="__PUBLIC__/img/highstand homepage/works-img31-thumb.jpg?itok=xln0boD0" width="374" height="200" alt="Blog" typeof="Image" />
+						<img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/works-img31-thumb.jpg?itok=xln0boD0" width="374" height="200" alt="Blog" typeof="Image" />
 
 						<div class="content">
 							<h4>激光印字传输系统</h4>
@@ -749,7 +827,7 @@
 			<div class="one_third_less">
 				<a href="/node/13">
 					<div class="box01">
-						<img src="__PUBLIC__/img/highstand homepage/eafjQDr22kU.jpg?itok=ZAauvndp" alt="" typeof="Image" />
+						<img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/eafjQDr22kU.jpg?itok=ZAauvndp" alt="" typeof="Image" />
 						<div class="content">
 							<h4>这是一级方程式</h4>
 							<b>May 12, 2016</b>
@@ -783,7 +861,7 @@
 		<div id="tabs" class=" ">
 			<ul>
 				<li class="tabulous_active">
-					<a href="tabs1" onclick="return false;" title=""><i>  <img src="__PUBLIC__/img/highstand homepage/icon_01.png?itok=th8vSvQ_" width="50" height="50" alt="icon" typeof="Image" />
+					<a href="tabs1" onclick="return false;" title=""><i>  <img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/icon_01.png?itok=th8vSvQ_" width="50" height="50" alt="icon" typeof="Image" />
 
 
  </i>
@@ -792,7 +870,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="tabs2" onclick="return false;" title=""><i>  <img src="__PUBLIC__/img/highstand homepage/icon-02.png?itok=3EKbRHkG" width="50" height="50" alt="icon" typeof="Image" />
+					<a href="tabs2" onclick="return false;" title=""><i>  <img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/icon-02.png?itok=3EKbRHkG" width="50" height="50" alt="icon" typeof="Image" />
 
 
  </i>
@@ -801,7 +879,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="tabs3" onclick="return false;" title=""><i>  <img src="__PUBLIC__/img/highstand homepage/icon_03.png?itok=b1KoT5hg" width="50" height="50" alt="icon" typeof="Image" />
+					<a href="tabs3" onclick="return false;" title=""><i>  <img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/icon_03.png?itok=b1KoT5hg" width="50" height="50" alt="icon" typeof="Image" />
 
 
  </i>
@@ -810,7 +888,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="tabs4" onclick="return false;" title=""><i>  <img src="__PUBLIC__/img/highstand homepage/icon_04.png?itok=zCPnN_1O" width="50" height="50" alt="icon" typeof="Image" />
+					<a href="tabs4" onclick="return false;" title=""><i>  <img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/icon_04.png?itok=zCPnN_1O" width="50" height="50" alt="icon" typeof="Image" />
 
 
  </i>
@@ -821,22 +899,22 @@
 
 			</ul>
 			<div id="tabs_container" class="transition ">
-				<div id="tabs1" title=""> <img class="hsta" src="__PUBLIC__/img/highstand homepage/site-image01.jpg" width="585" height="200" alt="content" typeof="Image" />
+				<div id="tabs1" title=""> <img class="hsta" src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/site-image01.jpg" width="585" height="200" alt="content" typeof="Image" />
 
 					<h3>图形 &amp; 设计</h3>
 					<p>乱数假文只是虚拟的文字印刷排版一直是行业和# 039；标准虚拟文本自从16世纪，当一个未知的打印机把厨房型和炒做字体样本。它不仅幸存下来的五个世纪，而且进入电子排版，其余基本保持不变。这第一个真正的随机词发生器在互联网乱数假文作为。 </p>
 				</div>
-				<div id="tabs2" title=""> <img class="hsta" src="__PUBLIC__/img/highstand homepage/site-image02.jpg" width="585" height="200" alt="content" typeof="Image" />
+				<div id="tabs2" title=""> <img class="hsta" src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/site-image02.jpg" width="585" height="200" alt="content" typeof="Image" />
 
 					<h3>网站开发</h3>
 					<p>乱数假文只是虚拟的文字印刷排版一直是行业和# 039；标准虚拟文本自从16世纪，当一个未知的打印机把厨房型和炒做字体样本。它不仅幸存下来的五个世纪，而且进入电子排版，其余基本保持不变。这第一个真正的随机词发生器在互联网乱数假文作为默认的示范文本，并寻找与# 039；乱数假文和# 039；会发现很多网站仍处于起步阶段。不同的版本已经发展了多年，有时是偶然的，有时是故意的 </p>
 				</div>
-				<div id="tabs3" title=""> <img class="hsta" src="__PUBLIC__/img/highstand homepage/site-image03.jpg" width="585" height="200" alt="content" typeof="Image" />
+				<div id="tabs3" title=""> <img class="hsta" src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/site-image03.jpg" width="585" height="200" alt="content" typeof="Image" />
 
 					<h3>定制服务</h3>
 					<p>乱数假文只是虚拟的文字印刷排版一直是行业和# 039；标准虚拟文本自从16世纪，当一个未知的打印机把厨房型和炒做字体样本。它不仅幸存下来的五个世纪，而且进入电子排版，其余基本保持不变。这第一个真正的随机词发生器在互联网乱数假文作为。</p>
 				</div>
-				<div id="tabs4" title=""> <img class="hsta" src="__PUBLIC__/img/highstand homepage/site-image04.jpg" width="585" height="200" alt="content" typeof="Image" />
+				<div id="tabs4" title=""> <img class="hsta" src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/site-image04.jpg" width="585" height="200" alt="content" typeof="Image" />
 
 					<h3>响应式设计</h3>
 					<p>乱数假文只是虚拟的文字印刷排版一直是行业和# 039；标准虚拟文本自从16世纪，当一个未知的打印机把厨房型和炒做字体样本。它不仅幸存下来的五个世纪，而且进入电子排版，其余基本保持不变。这第一个真正的随机词发生器在互联网乱数假文作为默认的示范文本，并寻找与# 039；乱数假文和# 039；会发现很多网站仍处于起步阶段。不同的版本已经发展了多年，有时是偶然的，有时是故意的</p>
@@ -940,7 +1018,7 @@
 											<div class "box-none" id="d1"></div>
 											<div class "box-block" id="d2">
 												<div class="item">
-													<div class="climg"><img src="__PUBLIC__/img/highstand homepage/people-img19_0.jpg" width="100" height="100" alt="says" typeof="Image"></div>
+													<div class="climg"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img19_0.jpg" width="100" height="100" alt="says" typeof="Image"></div>
 													<p class="bigtfont">"测试用的段落，并通过这里的词的引用古典文学通行证发现那里不可思议的源看起来合理生成的特征词。"</p>
 													<br>
 													<strong>- Michle Siminson</strong> <em>- google.com</em>
@@ -951,7 +1029,7 @@
 
 										<div class="owl-item">
 											<div class="item">
-												<div class="climg"><img src="__PUBLIC__/img/highstand homepage/people-img19_0.jpg" width="100" height="100" alt="says" typeof="Image"></div>
+												<div class="climg"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img19_0.jpg" width="100" height="100" alt="says" typeof="Image"></div>
 												<p class="bigtfont">"测试用的段落，并通过这里的词的引用古典文学通行证发现那里不可思议的源看起来合理生成的特征词。"</p>
 												<br>
 												<strong>- Michle Siminson</strong> <em>- google.com</em>
@@ -960,7 +1038,7 @@
 
 										<div class="owl-item">
 											<div class="item">
-												<div class="climg"><img src="__PUBLIC__/img/highstand homepage/people-img19_1.jpg" width="100" height="100" alt="says" typeof="Image"></div>
+												<div class="climg"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img19_1.jpg" width="100" height="100" alt="says" typeof="Image"></div>
 												<p class="bigtfont">"测试用的段落，并通过这里的词的引用古典文学通行证发现那里不可思议的源看起来合理生成的特征词。"</p>
 												<br>
 												<strong>- Michle Siminson</strong> <em>- google.com</em>
@@ -969,7 +1047,7 @@
 
 										<div class="owl-item">
 											<div class="item">
-												<div class="climg"><img src="__PUBLIC__/img/highstand homepage/people-img19.jpg" width="100" height="100" alt="says" typeof="Image"></div>
+												<div class="climg"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/people-img19.jpg" width="100" height="100" alt="says" typeof="Image"></div>
 												<p class="bigtfont">" 测试用的段落，并通过这里的词的引用古典文学通行证发现那里不可思议的源看起来合理生成的特征词。 "</p>
 												<br>
 												<strong>- Michle Siminson</strong> <em>- google.com</em>
@@ -999,19 +1077,96 @@
 						<h4 class="caps light text-uppercase">合作伙伴</h4>
 						<div class="clearfix margin_bottom3"></div>
 						<ul class="class-one1">
-							<li> <img src="__PUBLIC__/img/highstand homepage/clogo2.png" width="150" height="50" alt="image" typeof="Image"></li>
-							<li> <img src="__PUBLIC__/img/highstand homepage/clogo5_1.png" width="150" height="50" alt="image" typeof="Image"></li>
-							<li> <img src="__PUBLIC__/img/highstand homepage/clogo1_0.png" width="150" height="50" alt="image" typeof="Image"></li>
-							<li> <img src="__PUBLIC__/img/highstand homepage/clogo2.png" width="150" height="50" alt="image" typeof="Image"></li>
-							<li> <img src="__PUBLIC__/img/highstand homepage/clogo3_1.png" width="150" height="50" alt="image" typeof="Image"></li>
-							<li> <img src="__PUBLIC__/img/highstand homepage/clogo3_1.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/clogo2.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/clogo5_1.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/clogo1_0.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/clogo2.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/clogo3_1.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/clogo3_1.png" width="150" height="50" alt="image" typeof="Image"></li>
 						</ul>
 					</div>
 
 				</div>
-<script src="__PUBLIC__/js/home.js" type="text/javascript" charset="utf-8"></script>
+<script src="/thinkphp_3.2.3_full/yuanku/Public/js/home.js" type="text/javascript" charset="utf-8"></script>
 
 
-<include file="public/footer" />
 
 
+<div class="clearfix"></div>
+<nav class="foot-nav" id="back">
+			<div class="container-fluid" >
+				<div class="container">
+					<div class="row" >
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul>
+								<li><h4 >友情连接</h4></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>百度一下</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>淘宝商城</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>腾讯首页</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>网易新闻</span></a></li>							
+							</ul>						
+						</div>					
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul >
+								<li><h4 >最新动态</h4></li><br/>
+								<li><a href="#"><span class="size"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/thinkphp_3.2.3_full/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
+					
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul >
+								<li><h4>关于我们</h4></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;&nbsp;<span>技术中心</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;&nbsp;<span>产品特色</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;<span>结算流程</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>&nbsp;&nbsp;<span>服务宗旨</span></a></li>
+						   </ul>
+						</div>
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul >
+								<li><h4>联系我们</h4></li></br>
+								<li><a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;<span>511186470@qq.com</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;<span>0201-6666666</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-map-marker"aria-hidden="true"></span>&nbsp;&nbsp;<span>美国洛杉矶</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>&nbsp;&nbsp;<span>邮政编码：88888</span></a></li>							
+						    </ul>
+						</div>				
+					</div>	
+				</div>
+			</div>
+			<div class="foot-text">
+				<p>Copyright © 2016 lidong.com. All rights reserved. Terms of Use | Privacy Policy</p>
+			</div>
+</nav>
+<!--摸态框-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="exampleModalLabel">搜索</h4>
+		      </div>
+		      <div class="modal-body">
+		        <form>
+		          <div class="form-group">
+		            <label for="recipient-name" class="control-label">请输入你要搜索的内容</label>
+		            <input type="text" class="form-control" id="recipient-name">
+		          </div>
+		          <!--<div class="form-group">
+		            <label for="message-text" class="control-label">Message:</label>
+		            <textarea class="form-control" id="message-text"></textarea>
+		          </div>-->
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+		        <button type="button" class="btn btn-primary">搜索</button>
+		      </div>
+		    </div>
+		  </div>
+</div>
+<!-- </div> -->
+	</body>
+</html>
