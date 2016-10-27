@@ -372,7 +372,7 @@
           <div class="content-box">
              <div class="content"> 
 
- <form action="/lidong_clone/yuanku/index.php/Admin/News/author_update/nid/1" method="post" class="form_wd_23" enctype="multipart/form-data">
+ <form action="/lidong_clone/yuanku/index.php/Admin/News/author_update/nid/22" method="post" class="form_wd_23" enctype="multipart/form-data">
  	<div>
  		<label class="control-label">作者姓名</label>
  		<input class="form-control" name="name" id="name" value="<?php echo ($data["name"]); ?>"/>
@@ -384,7 +384,7 @@
  		
     <input type="hidden" name="id" value="<?php echo ($data["id"]); ?>"/>
  	<button class="btn btn-success">修改</button>
-      <button class="btn btn-success"><a href="/lidong_clone/yuanku/index.php/Admin/News/author_list">返回</a></button>
+      <button class="btn btn-success"><a style="color:white;" href="/lidong_clone/yuanku/index.php/Admin/News/author_list">返回</a></button>
 
  	</form>
  <link rel="stylesheet" href="/lidong_clone/yuanku/Public/css/admin/dropify.min.css"> 

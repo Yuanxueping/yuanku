@@ -395,8 +395,8 @@
 					<td><?php echo ($vo["introduction"]); ?></td>
 					<td class="text-center">
 						<div class="btn-group">
-							<button type="button" class="btn btn-success btn-xs"><a href="/lidong_clone/yuanku/index.php/Admin/News/author_update/nid/<?php echo ($vo["nid"]); ?>"><span class="glyphicon glyphicon-pencil"></span></a></button>
-							<button type="button" class="btn btn-danger btn-xs"><a href="/lidong_clone/yuanku/index.php/Admin/News/author_del/nid/<?php echo ($vo["nid"]); ?>" onclick="return confirm('确定删除吗？')"><span class="glyphicon glyphicon-trash"></span></a></button>
+							<button type="button" class="btn btn-success btn-xs"><a style="color:white;" href="/lidong_clone/yuanku/index.php/Admin/News/author_update/nid/<?php echo ($vo["nid"]); ?>"><span class="glyphicon glyphicon-pencil"></span></a></button>
+							<button type="button" class="btn btn-danger btn-xs"><a style="color:white;" href="/lidong_clone/yuanku/index.php/Admin/News/author_del/nid/<?php echo ($vo["nid"]); ?>" onclick="return confirm('确定删除吗？')"><span class="glyphicon glyphicon-trash"></span></a></button>
 						</div>
 					</td>
 				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
