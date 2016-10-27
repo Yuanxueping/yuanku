@@ -19,21 +19,16 @@
     	<!--documents-->
 	        <div class="row row-offcanvas row-offcanvas-left">
 	          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
-	            <ul class="list-group panel">
+	          	<ul class="list-group panel">
 	                <li class="list-group-item"><i class="glyphicon glyphicon-align-justify"></i> <b>侧边栏</b></li>
-	                <li class="list-group-item"><a href="index.html"><i class="glyphicon glyphicon-home"></i>主页 </a></li>
+	                <li class="list-group-item"><a href='{:U('Index/index')}'><i class="glyphicon glyphicon-home"></i>主页 </a></li>
 
-	                <li class="list-group-item"><a href="login.html"><i class="glyphicon glyphicon-certificate"></i>{$Think.session.username} </a></li>
-
-	                <li class="list-group-item"><a href="login.html"><i class="glyphicon glyphicon-certificate"></i>登录 </a></li>
-
-	                <li class="list-group-item"><a href="register.html"><i class="glyphicon glyphicon-th-list"></i>注册 </a></li>
+	                <li class="list-group-item"><a href='{:U('Personal/index')}'><i class="glyphicon glyphicon-certificate"></i>{$Think.session.username} </a></li>
+	                <li class="list-group-item"><a href='{:U('Index/register')}'><i class="glyphicon glyphicon-th-list"></i>注册 </a></li>
 	                <li class="list-group-item"><a href="news.html"><i class="glyphicon glyphicon-list-alt"></i>新闻</a></li>
 	                <li class="list-group-item"><a href="contact_us.html"><i class="glyphicon glyphicon-envelope"></i>联系我们</a></li>
 	                <li class="list-group-item"><a href="about_us.html"><i class="glyphicon glyphicon-heart"></i>关于我们</a></li>
-	                
-	                
-	              </ul>
+	            </ul>
 	          </div>
 	          <div class="col-xs-12 col-sm-9 content">
 	            <div class="panel panel-default">

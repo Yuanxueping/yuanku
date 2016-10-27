@@ -7,7 +7,8 @@ class LoginController extends Controller {
 		$username=I('username');
 		$password=I('password');
 		$users=M('clientUser');
-		$passwordCncode=md5($password);
+		// $passwordCncode=md5($password);
+		$passwordCncode=$password;
 		$user=$users->where('user_name="'.$username.'" and user_pwd="'.$passwordCncode.'"')->find();
 		if($user){
 			if(isset($_SESSION['username'])&&$_SESSION['username']==$username){

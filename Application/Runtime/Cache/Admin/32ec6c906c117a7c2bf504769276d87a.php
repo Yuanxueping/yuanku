@@ -18,6 +18,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  
+<<<<<<< HEAD
   <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/bootstrap.css"> 
   <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/animate.css">
   <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/metisMenu.css">
@@ -34,6 +35,24 @@
   <script src="/lidong/yuanku/Public/js/jquery.js"></script>
   <!-- 第一步引用 -->
   <script src="/lidong/yuanku/Public/js/angular.min.js"></script>
+=======
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.css"> 
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/animate.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/metisMenu.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/jquery_002.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/waves.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/toastr.css">
+
+
+
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/jquery.css">
+
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/style.css">
+  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/common.css">
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery.js"></script>
+  <!-- 第一步引用 -->
+  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/angular.min.js"></script>
+>>>>>>> 524601d91634b83468b87deb6b29c8db3c7fc866
 
   
 
