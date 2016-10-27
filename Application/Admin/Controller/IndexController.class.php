@@ -72,4 +72,17 @@ class IndexController extends AuthController {
     	}
     	 
     }
+    /*
+    //添加新的轮播图图片
+    public function slide_add($value='')
+    {
+        
+    }
+    
+    //删除一张轮播图图片
+    public functiion slide_delete($value='')
+    {
+        $id=intival($_GET['id']);
+    }
+    */
 }

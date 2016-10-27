@@ -23,10 +23,10 @@
 				  		<img src="__PUBLIC__/{$news_detail[0]['img']}" class="img-responsive"/>
 				  		<h3><a href="">{$news_detail[0]['title']}</a></h3>
 				  		<p class="p1">
-				  			<a href="">{$news_detail[0]['date']}</a>
-				  			<span>by:<span>{$news_detail[0]['name']}</span>in:<span>{$news_detail[0]['sort']}</span>note:<span>0 COMMENTS</span></span>
+				  			<a href="">{$news_detail[0]['date']|date='Y年m月d日',###}</a>
+				  			<span>by:<span>{$news_detail[0]['name']}</span>in:<span>{$news_detail[0]['sort_name']}</span>note:<span>0 COMMENTS</span></span>
 				  		</p>
-				  		<p class="p2">{$news_detail[0]['content']}</p>
+				  		<p class="p2"><php> echo htmlspecialchars_decode($news_detail[0]['content']) </php></p>
 				  		<p class="p3"><a href="">read more...</a></p>
 					</div>
 					<div class="line1"></div>
