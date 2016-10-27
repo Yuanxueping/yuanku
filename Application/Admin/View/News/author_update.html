@@ -1,0 +1,24 @@
+ <include file='Public:header' /> 
+
+ <include file='Public:menu' /> 
+
+ <form action="__SELF__" method="post" class="form_wd_23" enctype="multipart/form-data">
+ 	<div>
+ 		<label class="control-label">作者姓名</label>
+ 		<input class="form-control" name="name" id="name" value="{$data.name}"/>
+    </div>
+ 	<div>
+ 		<label class="control-label">作者简介</label>
+ 		<textarea class="form-control" rows="10" cols="30" id="introduction" name="introduction">{$data.introduction}</textarea>
+ 	</div>
+ 		
+    <input type="hidden" name="id" value="{$data.id}"/>
+ 	<button class="btn btn-success">修改</button>
+      <button class="btn btn-success"><a href="__CONTROLLER__/author_list">返回</a></button>
+
+ 	</form>
+ <link rel="stylesheet" href="__PUBLIC__/css/admin/dropify.min.css"> 
+ <include file='Public:footer' /> 
+ <script src="__PUBLIC__/js/dropify.min.js"></script>
+
+ <script>$('.dropify').dropify();</script>

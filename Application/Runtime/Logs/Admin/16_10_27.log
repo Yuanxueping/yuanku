@@ -1,0 +1,966 @@
+[ 2016-10-27T10:10:43+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.3861s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `author` LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: page_html F:\wamp\www\lidong_clone\yuanku\Application\Admin\Controller\NewsController.class.php 第 187 行.
+SQL: SELECT n.id as nid,`name`,`introduction` FROM author n LIMIT 10,5   [ RunTime:0.0098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000348s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000534s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\0aeba65c6e860caa6a91948745738cab.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004365s ]
+
+[ 2016-10-27T10:10:43+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+
+[ 2016-10-27T10:10:43+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+
+[ 2016-10-27T10:10:43+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001446s ]
+
+[ 2016-10-27T10:10:43+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+
+[ 2016-10-27T10:10:44+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+
+[ 2016-10-27T10:10:47+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `author` LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: page_html F:\wamp\www\lidong_clone\yuanku\Application\Admin\Controller\NewsController.class.php 第 187 行.
+SQL: SELECT n.id as nid,`name`,`introduction` FROM author n LIMIT 10,5   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000544s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\0aeba65c6e860caa6a91948745738cab.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001057s ]
+
+[ 2016-10-27T10:10:48+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+
+[ 2016-10-27T10:10:48+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001897s ]
+
+[ 2016-10-27T10:10:48+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+
+[ 2016-10-27T10:10:48+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+
+[ 2016-10-27T10:10:48+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+
+[ 2016-10-27T10:10:49+08:00 ] ::1 /lidong_clone/yuanku/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002806s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0064s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000328s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000524s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001227s ]
+
+[ 2016-10-27T10:10:55+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/author_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `author` LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: page_html F:\wamp\www\lidong_clone\yuanku\Application\Admin\Controller\NewsController.class.php 第 187 行.
+SQL: SELECT n.id as nid,`name`,`introduction` FROM author n LIMIT 0,5   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\0aeba65c6e860caa6a91948745738cab.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001251s ]
+
+[ 2016-10-27T10:10:55+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+
+[ 2016-10-27T10:10:55+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001091s ]
+
+[ 2016-10-27T10:10:56+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+
+[ 2016-10-27T10:10:56+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+
+[ 2016-10-27T10:10:56+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+
+[ 2016-10-27T10:10:57+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000336s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000525s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\9ee60acdf65cbbf65b072f935ad07513.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001074s ]
+
+[ 2016-10-27T10:10:57+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+
+[ 2016-10-27T10:10:57+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+
+[ 2016-10-27T10:10:57+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+
+[ 2016-10-27T10:10:57+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+
+[ 2016-10-27T10:10:58+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+
+[ 2016-10-27T10:11:03+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0058s ]
+SQL: INSERT INTO `author` (`name`,`introduction`) VALUES ('12332321321312','23213123131231231') [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.179020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.179230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000787s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000323s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.188838s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\9ee60acdf65cbbf65b072f935ad07513.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022300s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.023878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001133s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001291s ]
+
+[ 2016-10-27T10:11:04+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+
+[ 2016-10-27T10:11:04+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+
+[ 2016-10-27T10:11:04+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+
+[ 2016-10-27T10:11:04+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+
+[ 2016-10-27T10:11:04+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+
+[ 2016-10-27T10:11:05+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `author` LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: page_html F:\wamp\www\lidong_clone\yuanku\Application\Admin\Controller\NewsController.class.php 第 187 行.
+SQL: SELECT n.id as nid,`name`,`introduction` FROM author n LIMIT 0,5   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000474s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\0aeba65c6e860caa6a91948745738cab.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2016-10-27T10:11:05+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+
+[ 2016-10-27T10:11:05+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+
+[ 2016-10-27T10:11:05+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002313s ]
+
+[ 2016-10-27T10:11:05+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+
+[ 2016-10-27T10:11:05+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+
+[ 2016-10-27T10:11:07+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `author` LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: page_html F:\wamp\www\lidong_clone\yuanku\Application\Admin\Controller\NewsController.class.php 第 187 行.
+SQL: SELECT n.id as nid,`name`,`introduction` FROM author n LIMIT 15,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000355s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000520s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\0aeba65c6e860caa6a91948745738cab.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001941s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002108s ]
+
+[ 2016-10-27T10:11:07+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+
+[ 2016-10-27T10:11:07+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+
+[ 2016-10-27T10:11:07+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+
+[ 2016-10-27T10:11:07+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+
+[ 2016-10-27T10:11:07+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002917s ]
+
+[ 2016-10-27T10:11:09+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `author` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: page_html F:\wamp\www\lidong_clone\yuanku\Application\Admin\Controller\NewsController.class.php 第 187 行.
+SQL: SELECT n.id as nid,`name`,`introduction` FROM author n LIMIT 0,5   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002830s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003023s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\0aeba65c6e860caa6a91948745738cab.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001777s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001357s ]
+
+[ 2016-10-27T10:11:09+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+
+[ 2016-10-27T10:11:09+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+
+[ 2016-10-27T10:11:09+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+
+[ 2016-10-27T10:11:09+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+
+[ 2016-10-27T10:11:09+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+
+[ 2016-10-27T10:11:18+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_del/nid/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003608s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0058s ]
+SQL: DELETE FROM `author` WHERE `id` = 7 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001335s ]
+
+[ 2016-10-27T10:11:21+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `author` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: page_html F:\wamp\www\lidong_clone\yuanku\Application\Admin\Controller\NewsController.class.php 第 187 行.
+SQL: SELECT n.id as nid,`name`,`introduction` FROM author n LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000324s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000504s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\0aeba65c6e860caa6a91948745738cab.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001133s ]
+
+[ 2016-10-27T10:11:21+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+
+[ 2016-10-27T10:11:21+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+
+[ 2016-10-27T10:11:22+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+
+[ 2016-10-27T10:11:22+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+
+[ 2016-10-27T10:11:22+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+
+[ 2016-10-27T10:11:27+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001276s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `author` LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: page_html F:\wamp\www\lidong_clone\yuanku\Application\Admin\Controller\NewsController.class.php 第 187 行.
+SQL: SELECT n.id as nid,`name`,`introduction` FROM author n LIMIT 5,5   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000525s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\0aeba65c6e860caa6a91948745738cab.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005732s ]
+
+[ 2016-10-27T10:11:27+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+
+[ 2016-10-27T10:11:27+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+
+[ 2016-10-27T10:11:27+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+
+[ 2016-10-27T10:11:27+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+
+[ 2016-10-27T10:11:27+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list/page_num/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+
+[ 2016-10-27T10:11:34+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_update/nid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `author` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000330s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\7908624bd549908c48a116d4dcac2ffd.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2016-10-27T10:11:34+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_update/nid/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+
+[ 2016-10-27T10:11:34+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_update/nid/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+
+[ 2016-10-27T10:11:34+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_update/nid/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+
+[ 2016-10-27T10:11:34+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_update/nid/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+
+[ 2016-10-27T10:11:34+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_update/nid/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+
+[ 2016-10-27T10:11:36+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_update/nid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0065s ]
+NOTIC: [8] Undefined index: validate F:\wamp\www\lidong_clone\yuanku\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\wamp\www\lidong_clone\yuanku\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `author` SET `name`='admin123',`introduction`='I\'m a freelance designer with satisfied clients worldwide. I design simple, clean websites and develop easy-to-use applications. Web Design is not just my job it\'s my passion. You need professional web designer you are welcome.' WHERE `id` = 1 [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001083s ]
+
+[ 2016-10-27T10:11:40+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/author_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `author` LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: page_html F:\wamp\www\lidong_clone\yuanku\Application\Admin\Controller\NewsController.class.php 第 187 行.
+SQL: SELECT n.id as nid,`name`,`introduction` FROM author n LIMIT 0,5   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002357s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002569s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\0aeba65c6e860caa6a91948745738cab.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001322s ]
+
+[ 2016-10-27T10:11:40+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+
+[ 2016-10-27T10:11:40+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+
+[ 2016-10-27T10:11:40+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+
+[ 2016-10-27T10:11:40+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+
+[ 2016-10-27T10:11:40+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+
+[ 2016-10-27T10:11:54+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/newsort.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0782s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: page_html F:\wamp\www\lidong_clone\yuanku\Application\Admin\Controller\NewsController.class.php 第 118 行.
+SQL: SELECT n.id as nid,`title`,`name`,`sort_name`,`content`,`img`,`date` FROM news n INNER JOIN author ON author_id=author.id INNER JOIN news_sort ON sort_id=news_sort.id  ORDER BY sort_name LIMIT 0,5   [ RunTime:0.1303s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000321s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\9ccb7e9a9bd7d3065c3068a5836116dd.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2016-10-27T10:11:54+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+
+[ 2016-10-27T10:11:54+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+
+[ 2016-10-27T10:11:54+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003843s ]
+
+[ 2016-10-27T10:11:54+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+
+[ 2016-10-27T10:11:54+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+
+[ 2016-10-27T10:12:03+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: page_html F:\wamp\www\lidong_clone\yuanku\Application\Admin\Controller\NewsController.class.php 第 24 行.
+SQL: SELECT n.id as nid,`title`,`name`,`sort_name`,`content`,`img`,`date` FROM news n INNER JOIN author ON author_id=author.id INNER JOIN news_sort ON sort_id=news_sort.id  LIMIT 0,5   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000315s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000493s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 4 行.
+NOTIC: [8] A non well formed numeric value encountered F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 402 行.
+NOTIC: [8] A non well formed numeric value encountered F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 402 行.
+NOTIC: [8] A non well formed numeric value encountered F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 402 行.
+NOTIC: [8] A non well formed numeric value encountered F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 402 行.
+NOTIC: [8] A non well formed numeric value encountered F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 402 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001901s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001216s ]
+
+[ 2016-10-27T10:12:03+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+
+[ 2016-10-27T10:12:04+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005107s ]
+
+[ 2016-10-27T10:12:04+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+
+[ 2016-10-27T10:12:04+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+
+[ 2016-10-27T10:12:04+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/news/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003231s ]
+
+[ 2016-10-27T10:12:06+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/news_edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `news_sort` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `news` WHERE ( id=1 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `author`  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `news_sort`  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000534s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\81de951176a55ca0b2204ef857acf197.php 第 4 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\81de951176a55ca0b2204ef857acf197.php 第 385 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007615s ]
+
+[ 2016-10-27T10:12:06+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/news_edit/id/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+
+[ 2016-10-27T10:12:06+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/news_edit/id/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+
+[ 2016-10-27T10:12:06+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/news_edit/id/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+
+[ 2016-10-27T10:12:06+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/news_edit/id/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+
+[ 2016-10-27T10:12:06+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/news_edit/id/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+
+[ 2016-10-27T10:12:22+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/news_edit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001720s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `author` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `news_sort` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `news` WHERE ( id=2 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `author`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `news_sort`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000504s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\81de951176a55ca0b2204ef857acf197.php 第 4 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\81de951176a55ca0b2204ef857acf197.php 第 385 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002012s ]
+
+[ 2016-10-27T10:12:22+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/news_edit/id/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-10-27T10:12:22+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/news_edit/id/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+
+[ 2016-10-27T10:12:22+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/news_edit/id/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+
+[ 2016-10-27T10:12:22+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/news_edit/id/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+
+[ 2016-10-27T10:12:22+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/news_edit/id/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+
+[ 2016-10-27T10:12:31+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/index/page_num/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0044s ]
+NOTIC: [8] Undefined variable: page_html F:\wamp\www\lidong_clone\yuanku\Application\Admin\Controller\NewsController.class.php 第 24 行.
+SQL: SELECT n.id as nid,`title`,`name`,`sort_name`,`content`,`img`,`date` FROM news n INNER JOIN author ON author_id=author.id INNER JOIN news_sort ON sort_id=news_sort.id  LIMIT 15,5   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001724s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002128s ]
+NOTIC: [8] Undefined variable: title F:\wamp\www\lidong_clone\yuanku\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001263s ]
+
+[ 2016-10-27T10:12:31+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/index/page_num/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001067s ]
+
+[ 2016-10-27T10:12:31+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/index/page_num/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+
+[ 2016-10-27T10:12:31+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/index/page_num/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+
+[ 2016-10-27T10:12:31+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/index/page_num/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002516s ]
+
+[ 2016-10-27T10:12:31+08:00 ] ::1 /lidong_clone/yuanku/index.php/Admin/News/index/page_num/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+
