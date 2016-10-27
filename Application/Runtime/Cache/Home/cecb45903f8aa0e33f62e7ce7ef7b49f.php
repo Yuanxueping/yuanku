@@ -6,10 +6,17 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 	 <link rel="stylesheet" href="/lidong/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/headAndFoot.css">
 	 <script src="/lidong/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
 	 <script src="/lidong/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+=======
+	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+>>>>>>> e266408782cc5d89e8a51e310b7dd8eaeb2ce8a2
 	  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
@@ -24,7 +31,11 @@
 
 
 
+<<<<<<< HEAD
 <link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/news_list.css"/>
+=======
+<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/news_list.css"/>
+>>>>>>> e266408782cc5d89e8a51e310b7dd8eaeb2ce8a2
   </head>
 <body>
 <!-- <div class="container-fluid"> -->
@@ -39,12 +50,17 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#">
+<<<<<<< HEAD
 		      	<img class="logo" src="/lidong/yuanku/Public/img/logoko2.png" />
+=======
+		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
+>>>>>>> e266408782cc5d89e8a51e310b7dd8eaeb2ce8a2
 		      </a>
 		    </div>		
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
+<<<<<<< HEAD
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/index">首页</a></li>
 				        
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/news">推荐</a></li>
@@ -54,22 +70,47 @@
 				        <li>
 				        <a href="
 				        	<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/index';} else{ echo '/lidong/yuanku/index.php/Home/Index/login'; } ?>
+=======
+				        <li><a href="/yuanku/index.php/Home/Index/index">首页</a></li>
+				        
+				        <li><a href="/yuanku/index.php/Home/Index/news">推荐</a></li>
+				        <li><a href="/yuanku/index.php/Home/Index/news">视频</a></li>
+				        <li><a href="<?php echo U('Nba/index');?>">篮球</a></li>
+				        <li><a href="/yuanku/index.php/Home/Index/news">足球</a></li>
+				        <li>
+				        <a href="
+				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
+>>>>>>> e266408782cc5d89e8a51e310b7dd8eaeb2ce8a2
 				        ">
 				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
 				        </a>
 				        </li>
 				        <li>
 				        	<a href="
+<<<<<<< HEAD
 				        		<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/logout';} else{ echo '/lidong/yuanku/index.php/Home/Index/register'; } ?>
+=======
+				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
+>>>>>>> e266408782cc5d89e8a51e310b7dd8eaeb2ce8a2
 				        	">
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
 				        </li>
 				        <!-- 
+<<<<<<< HEAD
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
 
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/about_us">关于我们</a></li> -->
 
+=======
+				        <li><a href="/yuanku/index.php/Home/Index/contact_us">联系我们</a></li>
+<<<<<<< HEAD
+				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li>
+				       
+=======
+				        <li><a href="/yuanku/index.php/Home/Index/about_us">关于我们</a></li> -->
+>>>>>>> 524601d91634b83468b87deb6b29c8db3c7fc866
+>>>>>>> e266408782cc5d89e8a51e310b7dd8eaeb2ce8a2
 				       				        
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
@@ -93,7 +134,11 @@
 	<div class="">
 		<!--增加-->
 		<?php if(is_array($news_list)): $i = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_i): $mod = ($i % 2 );++$i;?><div class="container">					
+<<<<<<< HEAD
 				<img src="/lidong/yuanku/Public/<?php echo ($news_i["img"]); ?>" class="news_img"/>
+=======
+				<img src="/yuanku/Public/<?php echo ($news_i["img"]); ?>" class="news_img"/>
+>>>>>>> e266408782cc5d89e8a51e310b7dd8eaeb2ce8a2
 				<div class="wenzhang">
 					<p>						
 						<a href="<?php echo U('Index/news_detail',array(id=>$news_i[id]));?>" class="biaoti"><?php echo ($news_i["title"]); ?></a>
@@ -119,7 +164,11 @@
 		</div>	
 	</div>			
 </div>
+<<<<<<< HEAD
 		<script src="/lidong/yuanku/Public/js/news_list.js" type="text/javascript" charset="utf-8"></script>
+=======
+		<script src="/yuanku/Public/js/news_list.js" type="text/javascript" charset="utf-8"></script>
+>>>>>>> e266408782cc5d89e8a51e310b7dd8eaeb2ce8a2
 
 
 
@@ -140,9 +189,15 @@
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
 								<li><h4 >最新动态</h4></li><br/>
+<<<<<<< HEAD
 								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
 								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
 								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
+=======
+								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
+>>>>>>> e266408782cc5d89e8a51e310b7dd8eaeb2ce8a2
 					
 							</ul>
 						</div>
