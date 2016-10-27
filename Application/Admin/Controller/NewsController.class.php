@@ -80,6 +80,26 @@ class NewsController extends AuthController {
     		$this->display();
     	}
     }
+
+	public function news_edit() {
+		if(IS_POST) {
+			
+		} else {
+			$news = D('news');
+			$author = D('author');
+			$news_sort = D('news_sort');
+			
+			$news_info = $news -> where('id='.I('id')) -> select();
+			$author_list = $author -> select();
+			$sort_list = $news_sort -> select();
+			
+			$this -> assign('news_info',$news_info);
+			$this -> assign('author_list',$author_list);
+			$this -> assign('sort_list',$sort_list);
+			
+			$this -> display();
+		}
+	}
   
     public function newsort(){
     	$news_m = M('News');
@@ -146,6 +166,81 @@ class NewsController extends AuthController {
    
 
    }
+
+   //作者列表
+	public function author_list(){
+		$news_m = M('Author');
+		
+		$page_count = 5;	//每页数据的条数
+		$page_num = I('page_num') > 0 ? I('page_num') : 1;	//获取ID值，没有则默认为1
+		$news_total_num = $news_m -> count();	//获取数据的总数
+		$start_index = ($page_num - 1) * $page_count;	//从第几条数据查起
+		$total_num = ceil($news_total_num/$page_count);	//总共有多少页
+		for($i = 1; $i <= $total_num; $i++) {
+			if($page_num == $i) {
+				$active = 'active';
+			}else {
+				$active = '';
+			}
+			$page_html.="<a href=".U('News/author_list','page_num='.$i)." class='btn btn-default ".
+
+$active."'>".$i."</a>";
+		}
+		
+		//获取表的数据
+		$news_list = $news_m -> alias('n')
+							 -> field('n.id as nid,name,introduction')
+							 -> limit($start_index,$page_count)
+							 -> select();
+							 
+		
+		
+		$this -> assign('news_list', $news_list);
+		$this -> assign('page_html', $page_html);		
+    	$this->display();
+	}
+//作者列表end
+
+	public function author_add(){
+		if(IS_POST){
+              if(M('author')->add(I('post.' ))){
+                    $this->success('添加成功', 'author_list','3');
+                }else{
+                    $this->error('添加失败');
+                }
+        	}
+		$this->display();
+	}
+
+	public function author_update($nid){
+		
+		if(IS_POST){
+	            $author=M('author');
+				// $id=$author[id];
+	            $data=$author->create();
+	            // $data['author_create_time']=time();
+	            if($author->save($data))
+	            {
+	                $this->success('修改成功', U('author_list'), 3);
+	            }else{
+	                $this->error('修改失败');
+	            }
+	            exit;
+        	}
+			// $category=M('category')->select();
+			$data=M('author')->find($nid);
+			// $this->assign('category',$category);
+			$this->assign('data',$data);
+			$this->display();
+	}
+
+	public function author_del($nid){
+		if(M('author')->delete($nid))
+			$this->success('成功',U('author_list'),3);
+		else
+			$this->error('失败',U('author_list'),3);
+		// $this->display();
+	}
    
   
 }
