@@ -1,18 +1,18 @@
 <include file='Public:header' /> 
 
 <include file='Public:menu' />
-<link rel="stylesheet" href="__PUBLIC__/css/admin/feedback.css"> 
 <!-- ssw用户反馈信息详情页面 -->
+<link rel="stylesheet" href="__PUBLIC__/css/admin/feedback.css"> 
 <!-- <volist name="fb_info" id="fb_i"> -->
 	<div class="row">
 		<div class="col-lg-12 col-md-6">
 			<div class="content-box">
 				<div class="head clearfix">
+					<div class="btn-group pull-right m_t_10">
+						<button onclick="location.href='{:U('Client/feedback_list')}'" class="btn btn-success raise waves-effect"><i class="zmdi zmdi-mail-reply"></i></button>
+						<button onclick="location.href='{:U('Client/feedback_del',array('fb_id'=>$fb_i[fb_id]))}'" class="btn btn-danger raise waves-effect"><i class="zmdi zmdi-delete"></i></button>
+					</div>
 					<h4 class="content-title text-color pull-left">
-						<div class="btn-group pull-right m_t_10">
-							<button onclick="location.href='{:U('Client/feedback_list')}'" class="btn btn-success raise waves-effect"><i class="zmdi zmdi-mail-reply"></i></button>
-							<button onclick="location.href='{:U('Client/feedback_del',array('fb_id'=>$fb_i[fb_id]))}'" class="btn btn-danger raise waves-effect"><i class="zmdi zmdi-delete"></i></button>
-						</div>
 						第{$fb_i.fb_id}条反馈信息
 					</h4>
 				</div>
@@ -24,7 +24,7 @@
 						<span class="text-muted p_l_20">{$fb_i.fb_email}</span>
 					</div>
 					<div class="f-s-16">
-						<p class="p_suolue">{$fb_i.fb_msg}</p>
+						<p class="t_i_30">{$fb_i.fb_msg}</p>
 					</div>
 					<hr>
 				</div>
