@@ -1,7 +1,6 @@
 <include file='Public:header' /> 
 
-<include file='Public:menu' /> 
-<!-- ssw 用户反馈列表页面 -->
+<include file='Public:menu' />
 <link rel="stylesheet" href="__PUBLIC__/css/home/contact_us.css"> 
 <div class="row">
 	<div class="col-lg-12 col-md-6">
@@ -9,8 +8,8 @@
 			<div class="head clearfix">
 				<h4 class="content-title text-color pull-left">
 					<div class="btn-group pull-right m_t_10">
-						<button onclick="location.href='{:U('Client/feedback_list')}'" class="btn btn-success raise waves-effect"><i class="zmdi zmdi-mail-reply"></i></button>
-						<button onclick="location.href='{:U('Client/feedback_del',array('fb_id'=>$fb_i[fb_id]))}'" class="btn btn-danger raise waves-effect"><i class="zmdi zmdi-delete"></i></button>
+						<button onclick="location.href='{:U('Client/feedback_list')}'" class="btn btn-success raise waves-effect"><i class="zmdi zmdi-mail-reply"></i><!-- 返回 --></button>
+						<button onclick="location.href='{:U('Client/feedback_del',array('fb_id'=>$fb_i[fb_id]))}'" class="btn btn-danger raise waves-effect"><i class="zmdi zmdi-delete"></i><!-- 删除 --></button>
 					</div>
 					第{$fb_i.fb_id}条反馈信息
 				</h4>
@@ -30,5 +29,4 @@
 		</div>
 	</div>
 </div>
-
 <include file='Public:footer' /> 

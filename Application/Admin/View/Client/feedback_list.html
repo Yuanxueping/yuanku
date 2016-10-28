@@ -17,7 +17,7 @@
       </tr>
     </thead>
     <tbody> 
-      <volist   name="fb_list" id="fb_i">
+      <volist name="fb_list" id="fb_i">
         <tr>
           <td class="table-check">{$fb_i.fb_id}</td>
           <td>{$fb_i.fb_name}</td>
@@ -25,9 +25,13 @@
           <td>{$fb_i.fb_msg}</td>
           <td class="table-date"> {$fb_i.fb_time} <i class="zmdi zmdi-time"></i></td>
           <td class="text-center">
+<!-- div class="btn-group">
+<button onclick="location.href='{:U('Client/feedback',array('fb_id'=>$fb_i[fb_id]))}'" type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-eye"></i></button>
+<button onclick="location.href='{:U('Client/feedback_del',array('fb_id'=>$fb_i[fb_id]))}'" type="button" class="btn btn-danger waves-effect"><i class="zmdi zmdi-delete"></i></button>
+</div> -->
             <div class="btn-group">
               <button onclick="location.href='{:U('Client/feedback',array('fb_id'=>$fb_i[fb_id]))}'" type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-eye"></i></button>
-              <button onclick="location.href='{:U('Client/feedback',array('fb_id'=>$fb_i[fb_id]))}'" type="button" class="btn btn-danger waves-effect"><i class="zmdi zmdi-delete"></i></button>
+              <button onclick="location.href='{:U('Client/feedback_del',array('fb_id'=>$fb_i[fb_id]))}'" type="button" class="btn btn-danger waves-effect"><i class="zmdi zmdi-delete"></i></button>
             </div>
           </td>
         </tr>
