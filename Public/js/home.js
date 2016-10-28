@@ -1,24 +1,24 @@
 /**
  * 第六部分 小图轮播的代码
  */
-	var example = document.getElementById('example');
-	var wiper = document.getElementById('wiper');
-	var items = document.getElementsByClassName('item');
-	var curr = 0;
+	// var example = document.getElementById('example');
+	// var wiper = document.getElementById('wiper');
+	// var items = document.getElementsByClassName('item');
+	// var curr = 0;
 	
-	example.style.height = items[0].offsetHeight + 'px';
-	var weight =  items[0].offsetWidth;
-	setInterval(function() {
-		curr++;
-		if(curr < items.length/2)
-			wiper.style.left = wiper.offsetLeft - weight + 'px';
-		else{
-			curr = 0;
-			wiper.style.left = 0 + 'px';
-		}
+	// example.style.height = items[0].offsetHeight + 'px';
+	// var weight =  items[0].offsetWidth;
+	// setInterval(function() {
+	// 	curr++;
+	// 	if(curr < items.length/2)
+	// 		wiper.style.left = wiper.offsetLeft - weight + 'px';
+	// 	else{
+	// 		curr = 0;
+	// 		wiper.style.left = 0 + 'px';
+	// 	}
 			
 			
-	}, 3000);
+	// }, 3000);
 
 	/**
 	 * 第八部分  画板生成百分图代码

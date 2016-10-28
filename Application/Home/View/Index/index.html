@@ -10,11 +10,22 @@
 <div class="kong"></div>
 <div class="bs-example" data-example-id="carousel-with-captions">
 	    <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+		<!--<div class="carousel-inner" role="listbox">-->
 	      <ol class="carousel-indicators">
-	        <li data-target="#carousel-example-captions" data-slide-to="0" class=""></li>
-	        <li data-target="#carousel-example-captions" data-slide-to="1" class=""></li>
-	        <li data-target="#carousel-example-captions" data-slide-to="2" class="active"></li>
+			  <volist name="slide_list" id="slide_id" key="k">
+				 <if condition ="$k eq 1">
+					 <li data-target="#carousel-example-captions" data-slide-to="{$k-1}" class="active"></li>
+					 <!--<div class="item active">-->
+				<else />
+						<li data-target="#carousel-example-captions" data-slide-to="{$k-1}" class=""></li>
+						<!--<div class="item">-->
+				 </if>
+				 	<!--<img src="__PUBLIC__/{$slide_id.img}"/>
+					 </div>-->
+			  </volist>
+	        
 	      </ol>
+<<<<<<< HEAD
 	      <div class="carousel-inner" role="listbox">
 	        <div class="item active">
 	        	<img src="__PUBLIC__/img/lunbo/01.jpg"/>			          
@@ -28,6 +39,23 @@
 	          
 	        </div>
 	      </div>
+=======
+		 <!--</div> -->
+				  
+			<div class="carousel-inner" role="listbox">
+				<volist name="slide_list" id="slide_id" key="k">
+					<if condition ="$k eq 1">
+							<div class="item active">
+					<else />
+							<div class="item">
+					</if>
+						<img src="__PUBLIC__/{$slide_id.img}"/>
+					</div>
+				</volist>
+			</div>
+			
+	      
+>>>>>>> adafdb201fd1462337bb8a21c437514a6339f5ec
 	      <a class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev">
 	        <span class="glyphicon glyphicon-chevron-left " aria-hidden="true"></span>
 	        <span class="sr-only">Previous</span>
@@ -364,8 +392,8 @@
 		<h2>前来与我们的团队洽谈</h2>
 		<div class="linebg_2"></div>
 		<p>没人喜欢"疼痛"本身的， <br /> 谁会去找它，遇上它，喜欢它，很简单...因为它就是"痛楚</p>
-		<div id="example" class="owl-carousel">
-			<div id="wiper">
+		<!--<div id="example" class="owl-carousel">-->
+			<!--<div id="wiper">
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
@@ -475,7 +503,7 @@
 					</div>
 				</div>
 				<!--复制一份-->
-				<div class="item">
+				<!--<div class="item">
 					<div class="box">
 						<div class="boximg">
 							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img6.jpg?itok=V9ZP4PYd" class="rimg" alt="" />
@@ -583,9 +611,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 
-		</div>
+		<!--</div>-->
 	</div>
 
 </div>
