@@ -167,7 +167,7 @@
       <ul class="nav nav-inside collapse <?php if($controller_name == 'Client'): ?>in<?php endif; ?>" aria-expanded="false">
         <li class="inside-title">用户列表</li>
         <li><a href="<?php echo U('client/client_list');?>">用户列表</a></li>
-        <li><a href="<?php echo U('client/feedback');?>">咨询列表</a></li>
+        <li><a href="<?php echo U('client/feedback_list');?>">咨询列表</a></li>
       </ul>
     </li>
 
@@ -378,7 +378,7 @@
           <div class="content-box">
              <div class="content"> 
 
- <form action="<?php echo U('News/sort_edit');?>" method="post" class="form_wd_23" enctype="multipart/form-data">
+ <form action="<?php echo U('News/sort_edit');?>" method="post" class="form_wd_23 center-horizontal" enctype="multipart/form-data">
  	<div>
  		<label class="control-label">sort:</label>
  		<input class="form-control" name="e_name" value="<?php echo ($new_info["e_name"]); ?>">
@@ -390,6 +390,9 @@
  
 
  	</form>
+ 	<a  class="btn btn-info pull-right white" href="javascript:history.go(-1);">返回</a>
+	<div class="clearfix">	
+	</div>
  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/dropify.min.css"> 
  
  </div>

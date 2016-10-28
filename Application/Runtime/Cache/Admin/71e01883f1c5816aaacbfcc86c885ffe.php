@@ -166,7 +166,7 @@
       <ul class="nav nav-inside collapse <?php if($controller_name == 'Client'): ?>in<?php endif; ?>" aria-expanded="false">
         <li class="inside-title">用户列表</li>
         <li><a href="<?php echo U('client/client_list');?>">用户列表</a></li>
-        <li><a href="<?php echo U('client/feedback');?>">咨询列表</a></li>
+        <li><a href="<?php echo U('client/feedback_list');?>">咨询列表</a></li>
       </ul>
     </li>
 
@@ -418,7 +418,10 @@
 	</div>
 </div>
 
-
+<a  class="btn btn-info pull-right" href="javascript:history.go(-1);">后退</a>
+<div class="clearfix">
+	
+</div>
  
  </div>
           </div>
