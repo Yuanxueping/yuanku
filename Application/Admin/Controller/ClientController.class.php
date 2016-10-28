@@ -104,6 +104,8 @@ class ClientController extends Controller {
     public function feedback(){
         $fb_m=M('ClientFeedback');
         $fb_info=$fb_m->where('fb_id='.I('fb_id'))->select();
+
+        // echo $fb_m->getLastSql();exit();
         $this->assign('fb_info',$fb_info);
         $this->display();
     }

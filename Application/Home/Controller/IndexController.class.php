@@ -49,12 +49,14 @@ class IndexController extends Controller {
           // 验证失败
           $this->error($fb_m->getError());
         }
-      } 
-       $cache_a= S('site_name');
+      } else{
+        $cache_a= S('site_name');
 
        $this->assign('title','联系我们 - '.$cache_a['site_name']);
-    	// do it
+      // do it
        $this->display();
+      }
+       
     	
     }
     public function news()
