@@ -11,7 +11,7 @@ class NewsController extends AuthController {
     public function index(){
 		$news_m = M('News');
 		
-		$page_count = 15;	//每页数据的条数
+		$page_count = 10;	//每页数据的条数
 		$page_num = I('page_num') > 0 ? I('page_num') : 1;	//获取ID值，没有则默认为1
 		$news_total_num = $news_m -> count();	//获取数据的总数
 		$start_index = ($page_num - 1) * $page_count;	//从第几条数据查起
@@ -27,9 +27,9 @@ class NewsController extends AuthController {
 		
 		//获取表的数据
 		$news_list = $news_m -> alias('n')
-							 -> field('n.id as nid,title,name,sort_name,content,img,date')
+							 -> field('n.id as nid,title,name,sort_name,img,date')
 							 -> join('author ON author_id=author.id')
-							 -> join('news_sort ON sort_id=news_sort.id')
+							 -> join('news_sort ON sort_ename=news_sort.e_name')
 							 -> order('date desc')
 							 -> limit($start_index,$page_count)
 							 -> order('n.id desc')
@@ -147,7 +147,7 @@ class NewsController extends AuthController {
 		$news_list = $news_m -> alias('n')
 							 -> field('n.id as nid,title,name,sort_name,content,img,date')
 							 -> join('author ON author_id=author.id')
-							 -> join('news_sort ON sort_id=news_sort.id')
+							 -> join('news_sort ON sort_ename=news_sort.e_name')
 							 -> limit($start_index,$page_count)
 							 -> order('sort_name')
 							 -> select();
@@ -181,7 +181,7 @@ class NewsController extends AuthController {
 		$news_list = $news_m -> alias('n')
 							 -> field('n.id as nid,title,name,sort_name,content,img,date')
 							 -> join('author ON author_id=author.id')
-							 -> join('news_sort ON sort_id=news_sort.id')
+							 -> join('news_sort ON sort_ename=news_sort.e_name')
 							 -> limit($start_index,$page_count)
 							 -> order($or)
 							 -> select();

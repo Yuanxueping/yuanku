@@ -52,7 +52,13 @@ class IndexController extends Controller {
 		$start_index=($page_num-1)*$page_cout;
 //		$start_index=0;
 		
-		$news_list=$news->order('id desc')->limit($start_index,$page_cout)->select();
+		$news_list=$news -> alias('n')
+						 -> field('n.id as id,title,name,sort_name,content,img,date')
+						 -> join('author ON author_id=author.id')
+						 -> join('news_sort ON sort_ename=news_sort.e_name')
+						 -> order('id desc')
+						 -> limit($start_index,$page_cout)
+						 -> select();
 		
 		$this->assign('news_list',$news_list);
 		
@@ -105,7 +111,7 @@ class IndexController extends Controller {
 		
     	$news = M('News');
 		
-		$news_detail = $news -> join('author') -> join('news_sort') -> where('news.id='.$id.' AND author.id=author_id AND sort_id=news_sort.id') -> select();
+		$news_detail = $news -> join('author') -> join('news_sort') -> where('news.id='.$id.' AND author.id=author_id AND sort_ename=news_sort.e_name') -> select();
 		
 		$this -> assign('news_detail',$news_detail);
     	
