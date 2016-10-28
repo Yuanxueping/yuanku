@@ -1,6 +1,6 @@
 <!-- /*
 	*yxp
-	*个人中心页面
+	*文章编辑页面
  */ -->
 <include file="public/header" />
 
@@ -19,9 +19,9 @@
 	                <div class="user-aside span3">
 					    <div class="people">
 							  <div class="basic-info">
-							    <div class="avatar" >
+							    <a class="avatar" href="{:U('Personal/index')}">
 							      <img src="__ROOT__/{$head_photo}"/ alt="5">
-							    </div>
+							    </a>
 							    <h3><a href="{:U('Personal/index')}">{$Think.session.username}</a></h3>
 							    <ul class="clearfix" >
 									
@@ -96,7 +96,8 @@
 					          	<label class="col-md-2 control-label" for="content">内容</label>
 					          	<div class="col-md-10">
 					            	<script id="container" name="content" type="text/plain">
-					            		{$news_info[0]['content']}
+					            	<php> echo htmlspecialchars_decode($news_info[0]['content']) </php>
+					            		<!-- {$news_info[0]['content']} -->
 									</script>
 					          	</div>
 					        </div>

@@ -1,12 +1,12 @@
 <!-- /*
 	*yxp
-	*个人中心页面
+	*查看已发布文章页面
  */ -->
 <include file="public/header" />
 
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/personal.css"/>
 		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/site.min.css">
 		<link rel="stylesheet" href="__PUBLIC__/css/admin/news.css">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/personal.css"/>
 	    <script src="__PUBLIC__/js/site.min.js" type="text/javascript" charset="utf-8"></script>                                  
 <include file="public/headerstwo"/>		
 
@@ -18,9 +18,9 @@
 	                <div class="user-aside span3">
 					    <div class="people">
 							  <div class="basic-info">
-							    <div class="avatar" >
+							    <a class="avatar" href="{:U('Personal/index')}">
 							      <img src="__ROOT__/{$head_photo}"/ alt="5">
-							    </div>
+							    </a>
 							    <h3><a href="{:U('Personal/index')}">{$Think.session.username}</a></h3>
 							    <ul class="clearfix" >
 									

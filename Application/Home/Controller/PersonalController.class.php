@@ -7,7 +7,21 @@ class PersonalController extends Controller {
 	public function index(){
 		$this->showLogo();
 		$this->showt_email();
+
+		$news_m = M('News');
 		if(isset($_SESSION['username'])){
+			//查询新闻列表
+			$news_list = $news_m -> alias('n')
+							 -> field('n.id as nid,title,name,sort_name,content,img,date')
+							 -> join('author ON author_id=author.id')
+							 -> join('news_sort ON sort_id=news_sort.id')
+							 -> limit($start_index,$page_count)
+							 // -> order('n.id desc')
+							 -> where('uid='.$_SESSION['user']['id']) -> select();
+
+							$num = count($news_list);
+							
+		    	$this->assign('num',$num);
 			$this->display('Index/personal');	
 		}else{
 			$this->error('用户未登陆，请重新登陆',U('Index/login'),3);
@@ -138,13 +152,10 @@ class PersonalController extends Controller {
 							 -> limit($start_index,$page_count)
 							 // -> order('n.id desc')
 							 -> where('uid='.$_SESSION['user']['id']) -> select();
-						
 						$this -> assign('news_list', $news_list);
 						$this -> assign('page_html', $page_html);
 		
-    	// $this->display();
-
-		$this->display('Index/published_article');
+    	$this->display('Index/published_article');
 	}
 
 	//编辑修改已发布的文章
