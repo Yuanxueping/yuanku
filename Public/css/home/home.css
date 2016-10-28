@@ -786,6 +786,9 @@ h4 {
     /*display: inline-block;*/
     position: relative;
 }
+.tabulous_active a h5{
+    color:#fff;
+}
 #tabs li a i {
     float: left;
     color: #fff;
@@ -1049,6 +1052,17 @@ div.container {
 .feature_section12 p{
 	font-size:16px;
 	padding:25px 0px 50px 0px;
+}
+.one_fourth_less ul{
+	padding-left: 40px;
+}
+.feature_section12 .one_fourth_less {
+    background-color: #fff;
+    margin-right: 2%;
+    width: 23%;
+    padding: 30px 0px 50px 0px;
+    float: left;
+    margin-bottom: 10px;
 }
 @media only screen and (min-width: 768px) {
 .feature_section12 .one_fourth_less{
