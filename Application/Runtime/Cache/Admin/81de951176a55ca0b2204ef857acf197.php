@@ -57,7 +57,7 @@
    <nav class="navbar navbar-indigo">
  <div class="navbar-header container brand-orange">
    <a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
-   <a href="/lidong/yuanku/admin" class="logo">力动网</a>
+   <a href="<?php echo U('Home/index/index');?>" target="_blank" class="logo">力动网</a>
    <a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="icon-logo"></a>
  </div>
   <div class="navbar-container clearfix">

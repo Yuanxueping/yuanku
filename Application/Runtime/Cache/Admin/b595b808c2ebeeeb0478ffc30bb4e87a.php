@@ -117,7 +117,6 @@
     </div>
   </div>
 </nav> 
-
  <aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
   <ul class="nav metismenu">
     <li class="profile-sidebar-container">
@@ -377,23 +376,65 @@
         <div class="col-md-12">
           <div class="content-box">
              <div class="content"> 
-
- <form action="<?php echo U('News/sort_edit');?>" method="post" class="form_wd_23 center-horizontal" enctype="multipart/form-data">
- 	<div>
- 		<label class="control-label">sort:</label>
- 		<input class="form-control" name="e_name" value="<?php echo ($new_info["e_name"]); ?>">
- 		<label class="control-label">分类名:</label>
- 		<input class="form-control" name="sort_name" value="<?php echo ($new_info["sort_name"]); ?>">
- 		<button class="btn btn-success" style="width:100%;margin-top: 20px;">修改</button>
- 		<input type="hidden" name="id" id="" value="<?php echo ($new_info["id"]); ?>" />
- 	</div>
  
 
- 	</form>
- 	<a  class="btn btn-info pull-right white" href="javascript:history.go(-1);">返回</a>
-	<div class="clearfix">	
-	</div>
- <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/dropify.min.css"> 
+ <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box p-20 twitter white f-s-16">
+            <img src="/lidong/yuanku/Public/images/admin/avatar.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+            <span class="text-uppercase">第一组</span>  <br>
+            <span class="">@组长：黄寰</span>
+            <span class="zmdi zmdi-twitter p-absolute t-20 r-20 f-s-20"></span>
+            <p class="m-t-20">组员：劳土铸、张卓志、陈忠义<br>任务：负责首页和后台的首页管理菜单。</p>
+            <div class="socials text-right f-s-20">
+              
+              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+            </div>
+          </div>
+        </div>
+         <div class="col-lg-3 col-md-6">
+          <div class="content-box p-20 soundcloud white f-s-16">
+            <img src="/lidong/yuanku/Public/images/admin/avatar4.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+            <span class="text-uppercase">第二组</span>  <br>
+            <span class="">@组长：沈迪豪</span>
+            <span class="zmdi zmdi-soundcloud p-absolute t-20 r-20 f-s-20"></span>
+            <p class="m-t-20">组员：郑宏扬、黎雄鹰、杨柳<br>任务：负责新闻列表和详情、后台的新闻管理。</p>
+            <div class="socials text-right f-s-20">
+              
+              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="content-box p-20 facebook white f-s-16">
+              <img src="/lidong/yuanku/Public/images/admin/avatar2.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+              <span class="text-uppercase">第三组</span>  <br>
+              <span class="">@组长：袁雪萍</span>
+              <span class="zmdi zmdi-facebook p-absolute t-20 r-20 f-s-20"></span>
+              <p class="m-t-20">组员：石诗文、何慧怡、李浪怀<br>任务：负责登录、注册等页面，以及后台的用户管理。</p>
+              <div class="socials text-right f-s-20">
+                
+                <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box p-20 gplus white f-s-16">
+            <img src="/lidong/yuanku/Public/images/admin/avatar3.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+            <span class="text-uppercase">第四组</span>  <br>
+            <span class="">@smith</span>
+            <span class="zmdi zmdi-google-plus p-absolute t-20 r-20 f-s-20"></span>
+            <p class="m-t-20">负责框架搭建<br>攻坚解难。</p>
+            <div class="socials text-right f-s-20">
+              
+              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+     
  
  </div>
           </div>
@@ -624,6 +665,4 @@
   </script>
 
 
-<div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html> 
- <script src="/lidong/yuanku/Public/js/dropify.min.js"></script>
- <script>$('.dropify').dropify();</script>
+<div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html>

@@ -378,21 +378,21 @@
           <div class="content-box">
              <div class="content"> 
 
- <form action="<?php echo U('News/sort_edit');?>" method="post" class="form_wd_23 center-horizontal" enctype="multipart/form-data">
+ <form action="/lidong/yuanku/index.php/Admin/News/author_update/nid/1" method="post" class="form_wd_23" enctype="multipart/form-data">
  	<div>
- 		<label class="control-label">sort:</label>
- 		<input class="form-control" name="e_name" value="<?php echo ($new_info["e_name"]); ?>">
- 		<label class="control-label">分类名:</label>
- 		<input class="form-control" name="sort_name" value="<?php echo ($new_info["sort_name"]); ?>">
- 		<button class="btn btn-success" style="width:100%;margin-top: 20px;">修改</button>
- 		<input type="hidden" name="id" id="" value="<?php echo ($new_info["id"]); ?>" />
+ 		<label class="control-label">作者姓名</label>
+ 		<input class="form-control" name="name" id="name" value="<?php echo ($data["name"]); ?>"/>
+    </div>
+ 	<div>
+ 		<label class="control-label">作者简介</label>
+ 		<textarea class="form-control" rows="10" cols="30" id="introduction" name="introduction"><?php echo ($data["introduction"]); ?></textarea>
  	</div>
- 
+ 		
+    <input type="hidden" name="id" value="<?php echo ($data["id"]); ?>"/>
+ 	<button class="btn btn-success">修改</button>
+      <button class="btn btn-success"><a style="color:white;" href="/lidong/yuanku/index.php/Admin/News/author_list">返回</a></button>
 
  	</form>
- 	<a  class="btn btn-info pull-right white" href="javascript:history.go(-1);">返回</a>
-	<div class="clearfix">	
-	</div>
  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/dropify.min.css"> 
  
  </div>
@@ -626,4 +626,5 @@
 
 <div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html> 
  <script src="/lidong/yuanku/Public/js/dropify.min.js"></script>
+
  <script>$('.dropify').dropify();</script>

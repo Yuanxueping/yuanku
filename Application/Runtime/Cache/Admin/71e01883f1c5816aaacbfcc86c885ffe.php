@@ -57,7 +57,7 @@
    <nav class="navbar navbar-indigo">
  <div class="navbar-header container brand-orange">
    <a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
-   <a href="/lidong/yuanku/admin" class="logo">力动网</a>
+   <a href="<?php echo U('Home/index/index');?>" target="_blank" class="logo">力动网</a>
    <a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="icon-logo"></a>
  </div>
   <div class="navbar-container clearfix">
@@ -400,7 +400,7 @@
 					<td class="changeid"><?php echo ($vo['name']); ?></td>
 					<td class="changename"><?php echo ($vo['title']); ?></td>
 					<td class="changename"><span class="con"><?php echo ($vo['content']); ?></span></td>
-					<td class="changename"><?php echo ($vo['date']); ?></td>
+					<td class="changename"><?php echo (date("y-m-d H:i:s",$vo['date'])); ?></td>
 					<td class="text-center">
 						<div class="btn-group">
 							<p><a class="btn btn-warning btn-xs" href="<?php echo U('Home/Index/news_detail',array('id'=>$vo[nid]));?>" target="_blank" title="查看"><span class="glyphicon glyphicon-search"></span></a></p>

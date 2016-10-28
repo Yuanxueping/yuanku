@@ -57,7 +57,7 @@
    <nav class="navbar navbar-indigo">
  <div class="navbar-header container brand-orange">
    <a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
-   <a href="/lidong/yuanku/admin" class="logo">力动网</a>
+   <a href="<?php echo U('Home/index/index');?>" target="_blank" class="logo">力动网</a>
    <a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="icon-logo"></a>
  </div>
   <div class="navbar-container clearfix">
@@ -400,7 +400,7 @@
 					<td class="changename"><?php echo ($vo['sort_name']); ?></td>
 					<td class="text-center">
 						<div class="btn-group">
-							<button onclick="location.href='<?php echo U('News/sort_detail',array('e_name'=>$vo[e_name]));?>'"type="button" class="btn btn-warning btn-xs"  title="详情"><span class="glyphicon glyphicon-zoom-in"></span></button>
+							<button onclick="location.href='<?php echo U('News/sort_detail',array('e_name'=>$vo[e_name]));?>'"type="button" class="btn btn-danger btn-xs"  title="详情"><span class="glyphicon glyphicon-book"></span></button>
 							<button onclick="location.href='<?php echo U('News/sort_edit',array('id'=>$vo[id]));?>'"type="button" class="btn btn-success btn-xs"  title="编辑"><span class="glyphicon glyphicon-pencil"></span></button>
 							<button onclick="location.href='<?php echo U('News/sort_del',array('id'=>$vo[id]));?>'" type="button" class="btn btn-danger btn-xs"  title="删除"><span class="glyphicon glyphicon-trash"></span></button>
 						</div>

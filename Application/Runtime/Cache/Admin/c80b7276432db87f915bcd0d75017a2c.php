@@ -117,7 +117,6 @@
     </div>
   </div>
 </nav> 
-
  <aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
   <ul class="nav metismenu">
     <li class="profile-sidebar-container">
@@ -378,23 +377,70 @@
           <div class="content-box">
              <div class="content"> 
 
- <form action="<?php echo U('News/sort_edit');?>" method="post" class="form_wd_23 center-horizontal" enctype="multipart/form-data">
- 	<div>
- 		<label class="control-label">sort:</label>
- 		<input class="form-control" name="e_name" value="<?php echo ($new_info["e_name"]); ?>">
- 		<label class="control-label">分类名:</label>
- 		<input class="form-control" name="sort_name" value="<?php echo ($new_info["sort_name"]); ?>">
- 		<button class="btn btn-success" style="width:100%;margin-top: 20px;">修改</button>
- 		<input type="hidden" name="id" id="" value="<?php echo ($new_info["id"]); ?>" />
- 	</div>
- 
+<!--<div class="panel panel-primary">
+    <div class="">
+        <span>轮播图列表</span>
+        <a href="<?php echo U(Index/slide_add);?>" class="btn btn success">添加新的轮播图</a> 
+    </div>
 
- 	</form>
- 	<a  class="btn btn-info pull-right white" href="javascript:history.go(-1);">返回</a>
-	<div class="clearfix">	
-	</div>
- <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/dropify.min.css"> 
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>ID</th>
+                <th>图片</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php if(is_array($slide_pic)): $pic = 0; $__LIST__ = $slide_pic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sp): $mod = ($pic % 2 );++$pic;?><tr>
+                    <td><?php echo ($pic); ?></td>
+                    <td><?php echo ($sp['id']); ?></td>
+                    <td><?php echo ($sp['img']); ?></td>
+                    <td class="text-center">
+						<div class="btn-group">
+							<a class="btn btn-success btn-xs" href="" target="_blank"><span class="glyphicon glyphicon-search"></span></a>
+							<button onclick="location.href='<?php echo U('Index/slide_edit',array('id'=>$vo['nid']));?>'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+							<button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+							
+						</div>
+					</td>
+                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+        </tbody>
+    </table>
+</div>-->
  
+     
+     
+     
+     
+     
+     
+     
+<form action="<?php echo U('Slide/slide_manage');?>" method="post" class="" enctype="multipart/form-data">  
+    <div class="form-group">
+        <label class="" for="picname">图片名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text">
+     </div>
+     <div class="form-group">
+        <label class="" for="describtion">图片描述:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text">
+     </div>
+     <div class="form-group">
+         <label class="" for="date">图片上传日期:&nbsp;</label>
+         <input type="datetime-local">
+     </div>
+     <div class="form-group">
+         <label class="" for="pic">图片</label>
+         <input class="dropify" name="slide_pic" type="file">
+     </div>
+     <button class="btn btn-success">提交</button>
+
+      
+ </form>
+
+<link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/dropify.min.css"> 
+
  </div>
           </div>
         </div>
@@ -624,6 +670,9 @@
   </script>
 
 
-<div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html> 
- <script src="/lidong/yuanku/Public/js/dropify.min.js"></script>
- <script>$('.dropify').dropify();</script>
+<div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html>  
+<script src="/lidong/yuanku/Public/js/dropify.min.js"></script>
+
+<script>
+    $('.dropify').dropify();
+</script>
