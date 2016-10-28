@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title><?php echo ($title); ?>  后台管理</title>
@@ -19,24 +19,6 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  
   
-<<<<<<< HEAD
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/material-design-iconic-font.css">
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/animate.css">
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/metisMenu.css">
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/jquery_002.css">
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/waves.css">
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/toastr.css">
-
-
-
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/jquery.css">
-
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/style.css">
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/bootstrap.css">
-  <link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/common.css">
-
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery.js"></script>
-=======
   <link rel="stylesheet" href="/yuanku/Public/css/admin/material-design-iconic-font.css">
   <link rel="stylesheet" href="/yuanku/Public/css/admin/animate.css">
   <link rel="stylesheet" href="/yuanku/Public/css/admin/metisMenu.css">
@@ -53,7 +35,6 @@
   <link rel="stylesheet" href="/yuanku/Public/css/admin/common.css">
 
   <script src="/yuanku/Public/js/jquery.js"></script>
->>>>>>> faa77fc6a47cb7d8e9401bad6f3cb5d813505e7c
 <!--
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -62,11 +43,7 @@
       <script src="bower_components/html5shiv/dist/html5shiv.min,js"></script>
       <script src="bower_components/respondJs/dest/respond.min.js"></script>
     <![endif]-->
-<<<<<<< HEAD
-<script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_008.js"></script></head>
-=======
 <script src="/yuanku/Public/js/jquery_008.js"></script></head>
->>>>>>> faa77fc6a47cb7d8e9401bad6f3cb5d813505e7c
 
 <body class="fixed-all boxed-layout fixed-sidebar mCustomScrollbar _mCS_4 mCS-autoHide" style="overflow: visible;">
  <div id="mCSB_4" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_4_container" class="mCSB_container" style="position: relative; top: -164px; left: 0px;" dir="ltr">
@@ -80,11 +57,7 @@
    <nav class="navbar navbar-indigo">
  <div class="navbar-header container brand-orange">
    <a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
-<<<<<<< HEAD
-   <a href="/thinkphp_3.2.3_full/yuanku/admin" class="logo">力动网</a>
-=======
    <a href="/yuanku/admin" class="logo">力动网</a>
->>>>>>> faa77fc6a47cb7d8e9401bad6f3cb5d813505e7c
    <a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="icon-logo"></a>
  </div>
   <div class="navbar-container clearfix">
@@ -143,17 +116,13 @@
       </ul>
     </div>
   </div>
-</nav> 
- <aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
+</nav>
+<aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
   <ul class="nav metismenu">
     <li class="profile-sidebar-container">
       <div class="profile-sidebar text-center">
         <div class="profile-userpic">
-<<<<<<< HEAD
-          <img src="/thinkphp_3.2.3_full/yuanku/Uploads<?php echo ($user_info["head_photo"]); ?>" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
-=======
           <img src="/yuanku/Uploads<?php echo ($user_info["head_photo"]); ?>" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
->>>>>>> faa77fc6a47cb7d8e9401bad6f3cb5d813505e7c
           <span class="online"></span>
         </div>
         <div class="profile-usertitle">
@@ -406,81 +375,70 @@
        <div class="row">
         <div class="col-md-12">
           <div class="content-box">
-             <div class="content"> 
+             <div class="content">
 
-<<<<<<< HEAD
-<!--<div class="panel panel-primary">
-    <div class="">
-        <span>轮播图列表</span>
-        <a href="<?php echo U(Index/slide_add);?>" class="btn btn success">添加新的轮播图</a> 
-    </div>
+<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/admin/news_add.css"/>
 
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>ID</th>
-                <th>图片</th>
-                <th>操作</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php if(is_array($slide_pic)): $pic = 0; $__LIST__ = $slide_pic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sp): $mod = ($pic % 2 );++$pic;?><tr>
-                    <td><?php echo ($pic); ?></td>
-                    <td><?php echo ($sp['id']); ?></td>
-                    <td><?php echo ($sp['img']); ?></td>
-                    <td class="text-center">
-						<div class="btn-group">
-							<a class="btn btn-success btn-xs" href="" target="_blank"><span class="glyphicon glyphicon-search"></span></a>
-							<button onclick="location.href='<?php echo U('Index/slide_edit',array('id'=>$vo['nid']));?>'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
-							<button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
-							
-						</div>
-					</td>
-                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-        </tbody>
-    </table>
-</div>-->
- 
-     
-     
-     
-     
-     
-     
-     
-<form action="<?php echo U('Slide/slide_manage');?>" method="post" class="" enctype="multipart/form-data">  
-    <div class="form-group">
-=======
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<div class="panel-title">修改新闻</div>
+	</div>
+	<div class="panel-body">
+		<form role="form" class="form-horizontal" method="post" action="<?php echo U('News/news_add');?>" enctype="multipart/form-data">
+	        <div class="form-group">
+	          	<label for="title" class="col-md-2 control-label">标题</label>
+	          	<div class="col-md-10">
+	            	<input type="text" required="" placeholder="新闻标题" id="title" class="form-control" name="title" value="<?php echo ($news_info[0][title]); ?>">
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<label for="author" class="col-md-2 control-label">作者</label>
+	          	<div class="col-md-10">
+	            	<select name="author_id" class="form-control" required="" id="author">
+	            		<option selected="selected" class="d-none">请选择作者</option>
+	            		<?php if(is_array($author_list)): $i = 0; $__LIST__ = $author_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo['id']); ?>"><?php echo ($vo['name']); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+	            	</select>
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<label for="news_sort" class="col-md-2 control-label">分类</label>
+	          	<div class="col-md-10">
+	            	<select name="sort_id" class="form-control" required="" id="news_sort">
+	            		<option selected="selected" class="d-none">请选择分类</option>
+	            		<?php if(is_array($sort_list)): $i = 0; $__LIST__ = $sort_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo['id']); ?>"><?php echo ($vo['sort_name']); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+	            	</select>
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<label class="col-md-2 control-label" for="content">内容</label>
+	          	<div class="col-md-10">
+	            	<script id="container" name="content" type="text/plain"><?php echo ($news_info[0]['content']); ?></script>
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<label class="col-md-2 control-label">图片</label>
+	          	<div class="col-md-10">
+	            	<input class="dropify form-control"  name="img" type="file" id="img" data-default-file="/yuanku/Public/<?php echo ($news_info[0]['img']); ?>">
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<div class="col-md-offset-2 col-md-10">
+	            	<button  class="btn btn-info" type="submit">添加</button>
+	          	</div>
+	        </div>
+	    </form>
+	</div>
+</div>
 
- <form action="<?php echo U('Index/slide_manage');?>" method="post" class="" enctype="multipart/form-data">
-     <div class="form-group">
->>>>>>> faa77fc6a47cb7d8e9401bad6f3cb5d813505e7c
-        <label class="" for="picname">图片名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="text">
-     </div>
-     <div class="form-group">
-        <label class="" for="describtion">图片描述:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="text">
-     </div>
-     <div class="form-group">
-         <label class="" for="date">图片上传日期:&nbsp;</label>
-         <input type="datetime-local">
-     </div>
-     <div class="form-group">
-         <label class="" for="pic">图片</label>
-         <input class="dropify" name="slide_pic" type="file">
-     </div>
-     <button class="btn btn-success">提交</button>
-
-      
- </form>
-
-<<<<<<< HEAD
-<link rel="stylesheet" href="/thinkphp_3.2.3_full/yuanku/Public/css/admin/dropify.min.css"> 
-=======
-<link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css"> 
->>>>>>> faa77fc6a47cb7d8e9401bad6f3cb5d813505e7c
+<!-- 配置文件 -->
+<script type="text/javascript" src="/yuanku/Public/lib/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="/yuanku/Public/lib/ueditor/ueditor.all.min.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('container');
+</script>
+<link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css">
 
  </div>
           </div>
@@ -489,24 +447,6 @@
 
    </div>
 </div></div>
-<<<<<<< HEAD
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/bootstrap.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/metisMenu.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_006.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/waves.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/toastr.js"></script>
-
-
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_004.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/dataTables.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/moment.js"></script>
-
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/Chart.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_005.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_007.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_003.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/jquery_002.js"></script>
-=======
   <script src="/yuanku/Public/js/bootstrap.js"></script>
   <script src="/yuanku/Public/js/metisMenu.js"></script>
   <script src="/yuanku/Public/js/jquery_006.js"></script>
@@ -523,7 +463,6 @@
   <script src="/yuanku/Public/js/jquery_007.js"></script>
   <script src="/yuanku/Public/js/jquery_003.js"></script>
   <script src="/yuanku/Public/js/jquery_002.js"></script>
->>>>>>> faa77fc6a47cb7d8e9401bad6f3cb5d813505e7c
  
 
   <script>
@@ -688,13 +627,8 @@
     });
   </script>
 
-<<<<<<< HEAD
-    <script src="/thinkphp_3.2.3_full/yuanku/Public/js/common.js"></script>
-  <script src="/thinkphp_3.2.3_full/yuanku/Public/js/demo-switch.js">  </script>
-=======
     <script src="/yuanku/Public/js/common.js"></script>
   <script src="/yuanku/Public/js/demo-switch.js">  </script>
->>>>>>> faa77fc6a47cb7d8e9401bad6f3cb5d813505e7c
     <script>
     if($(window).width() >= 1200){
       $("body").addClass("boxed-layout");
@@ -735,13 +669,6 @@
   </script>
 
 
-<div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html>  
-<<<<<<< HEAD
-<script src="/thinkphp_3.2.3_full/yuanku/Public/js/dropify.min.js"></script>
-=======
+<div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html>
 <script src="/yuanku/Public/js/dropify.min.js"></script>
->>>>>>> faa77fc6a47cb7d8e9401bad6f3cb5d813505e7c
-
-<script>
-    $('.dropify').dropify();
-</script>
+<script src="/yuanku/Public/js/admin/news_add.js"></script>
