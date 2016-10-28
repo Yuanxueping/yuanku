@@ -1,9 +1,50 @@
  <include file='Public:header' /> 
  <include file='Public:menu' /> 
 
+<!--<div class="panel panel-primary">
+    <div class="">
+        <span>轮播图列表</span>
+        <a href="{:U(Index/slide_add)}" class="btn btn success">添加新的轮播图</a> 
+    </div>
 
- <form action="{:U('Index/slide_manage')}" method="post" class="" enctype="multipart/form-data">
-     <div class="form-group">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>ID</th>
+                <th>图片</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <volist name="slide_pic" id="sp" key="pic">
+                <tr>
+                    <td>{$pic}</td>
+                    <td>{$sp['id']}</td>
+                    <td>{$sp['img']}</td>
+                    <td class="text-center">
+						<div class="btn-group">
+							<a class="btn btn-success btn-xs" href="" target="_blank"><span class="glyphicon glyphicon-search"></span></a>
+							<button onclick="location.href='{:U('Index/slide_edit',array('id'=>$vo['nid']))}'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+							<button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+							
+						</div>
+					</td>
+                </tr>
+            </volist>
+        </tbody>
+    </table>
+</div>-->
+ 
+     
+     
+     
+     
+     
+     
+     
+<form action="{:U('Slide/slide_manage')}" method="post" class="" enctype="multipart/form-data">  
+    <div class="form-group">
         <label class="" for="picname">图片名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="text">
      </div>
