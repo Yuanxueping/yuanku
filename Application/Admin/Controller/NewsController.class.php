@@ -29,6 +29,7 @@ class NewsController extends AuthController {
 							 -> field('n.id as nid,title,name,sort_name,content,img,date')
 							 -> join('author ON author_id=author.id')
 							 -> join('news_sort ON sort_id=news_sort.id')
+							 -> order('date desc')
 							 -> limit($start_index,$page_count)
 							 -> select();
 							 
@@ -82,10 +83,34 @@ class NewsController extends AuthController {
     }
 
 	public function news_edit() {
+		$news = D('news');
+		
 		if(IS_POST) {
+			if($_FILES['img']['error']!=4){
+				$upload = new Upload();
+				$upload -> maxSize = 10240000;
+				$upload -> exts = array('jpg','gif','jpeg','png');
+				$upload -> autoSub = FALSE;
+				$upload -> rootPath = './Public/img/news_img/';
+				$info = $upload -> upload();
+				
+				if(!$info) {
+					$this -> error($upload->getError());
+				} else {
+					$_POST['img'] = 'img/news_img/'.$info['img']['savename'];
+				}
+			}
 			
+			if($news->create()) {
+				if($news->save()) {
+					$this -> success('修改成功',U('News/index'));
+				} else {
+					$this -> error('修改失败或无更新',U('News/news_edit',array('id'=>$_POST['id'])));
+				}
+			} else {
+				$this -> error($news->getError());
+			}
 		} else {
-			$news = D('news');
 			$author = D('author');
 			$news_sort = D('news_sort');
 			
