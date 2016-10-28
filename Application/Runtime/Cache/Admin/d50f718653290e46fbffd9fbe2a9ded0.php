@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title><?php echo ($title); ?>  后台管理</title>
@@ -117,7 +117,8 @@
     </div>
   </div>
 </nav> 
- <aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
+
+<aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
   <ul class="nav metismenu">
     <li class="profile-sidebar-container">
       <div class="profile-sidebar text-center">
@@ -376,66 +377,57 @@
         <div class="col-md-12">
           <div class="content-box">
              <div class="content"> 
- 
+<!-- ssw 用户反馈列表页面 -->
+<!-- <style type="text/css">
+	.content>.f-w-500+p{
 
- <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="content-box p-20 twitter white f-s-16">
-            <img src="/yuanku/Public/images/admin/avatar.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-            <span class="text-uppercase">第一组</span>  <br>
-            <span class="">@组长：黄寰</span>
-            <span class="zmdi zmdi-twitter p-absolute t-20 r-20 f-s-20"></span>
-            <p class="m-t-20">组员：劳土铸、张卓志、陈忠义<br>任务：负责首页和后台的首页管理菜单。</p>
-            <div class="socials text-right f-s-20">
-              
-              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-            </div>
-          </div>
-        </div>
-         <div class="col-lg-3 col-md-6">
-          <div class="content-box p-20 soundcloud white f-s-16">
-            <img src="/yuanku/Public/images/admin/avatar4.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-            <span class="text-uppercase">第二组</span>  <br>
-            <span class="">@组长：沈迪豪</span>
-            <span class="zmdi zmdi-soundcloud p-absolute t-20 r-20 f-s-20"></span>
-            <p class="m-t-20">组员：郑宏扬、黎雄鹰、杨柳<br>任务：负责新闻列表和详情、后台的新闻管理。</p>
-            <div class="socials text-right f-s-20">
-              
-              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="content-box p-20 facebook white f-s-16">
-              <img src="/yuanku/Public/images/admin/avatar2.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-              <span class="text-uppercase">第三组</span>  <br>
-              <span class="">@组长：袁雪萍</span>
-              <span class="zmdi zmdi-facebook p-absolute t-20 r-20 f-s-20"></span>
-              <p class="m-t-20">组员：石诗文、何慧怡、李浪怀<br>任务：负责登录、注册等页面，以及后台的用户管理。</p>
-              <div class="socials text-right f-s-20">
-                
-                <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-              </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="content-box p-20 gplus white f-s-16">
-            <img src="/yuanku/Public/images/admin/avatar3.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-            <span class="text-uppercase">第四组</span>  <br>
-            <span class="">@smith</span>
-            <span class="zmdi zmdi-google-plus p-absolute t-20 r-20 f-s-20"></span>
-            <p class="m-t-20">负责框架搭建<br>攻坚解难。</p>
-            <div class="socials text-right f-s-20">
-              
-              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-            </div>
-          </div>
-        </div>
-       
-      </div>
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+</style> -->
+<div class="content-box o-hidden">
+	<!-- <div class="head info-bg clearfix ui-sortable-handle">
+		<h5 class="content-title pull-left">Draggable panel</h5>
+		<div class="functions-btns pull-right">
+			<a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+			<a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+			<a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+		</div>
+	</div> -->
 
-     
- 
+<div class="content">
+	<div class="head" style="padding-left: 0px;">
+		<h3>主题：这里是反馈信息的主题</h3>
+		<!-- <div class="functions-btns pull-right">
+				<a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+				<a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+				<a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+			</div> -->
+	</div>
+		
+	<div class="f-w-500">
+		<span class="info-color text-uppercase">姓名：tom</span>&nbsp;&nbsp;邮箱：textadmin@email.com
+	</div>
+	<p>
+		这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。
+	</p>
+
+	<div class="activity-item-footer m-t-20 f-w-500">
+		<!-- <span class="m-r-10">
+			<i class="zmdi zmdi-comment-text info-color f-s-18 m-r-5"></i>12 comments
+		</span>
+		<span>
+			<i class="zmdi zmdi-favorite danger-color f-s-18 m-r-5"></i>33 likes
+		</span> -->
+		<button onclick="location.href='/yuanku/index.php/Admin/System/.html'" type="button" class="btn btn-danger waves-effect">
+			<i class="zmdi zmdi-delete"></i>
+		</button>
+	</div>
+</div>
+
+
+
  </div>
           </div>
         </div>

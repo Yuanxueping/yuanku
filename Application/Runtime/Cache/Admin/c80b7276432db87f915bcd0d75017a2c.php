@@ -376,66 +376,71 @@
         <div class="col-md-12">
           <div class="content-box">
              <div class="content"> 
+
+<!--<div class="panel panel-primary">
+    <div class="">
+        <span>轮播图列表</span>
+        <a href="<?php echo U(Index/slide_add);?>" class="btn btn success">添加新的轮播图</a> 
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>ID</th>
+                <th>图片</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php if(is_array($slide_pic)): $pic = 0; $__LIST__ = $slide_pic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sp): $mod = ($pic % 2 );++$pic;?><tr>
+                    <td><?php echo ($pic); ?></td>
+                    <td><?php echo ($sp['id']); ?></td>
+                    <td><?php echo ($sp['img']); ?></td>
+                    <td class="text-center">
+						<div class="btn-group">
+							<a class="btn btn-success btn-xs" href="" target="_blank"><span class="glyphicon glyphicon-search"></span></a>
+							<button onclick="location.href='<?php echo U('Index/slide_edit',array('id'=>$vo['nid']));?>'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+							<button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+							
+						</div>
+					</td>
+                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+        </tbody>
+    </table>
+</div>-->
  
-
- <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="content-box p-20 twitter white f-s-16">
-            <img src="/yuanku/Public/images/admin/avatar.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-            <span class="text-uppercase">第一组</span>  <br>
-            <span class="">@组长：黄寰</span>
-            <span class="zmdi zmdi-twitter p-absolute t-20 r-20 f-s-20"></span>
-            <p class="m-t-20">组员：劳土铸、张卓志、陈忠义<br>任务：负责首页和后台的首页管理菜单。</p>
-            <div class="socials text-right f-s-20">
-              
-              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-            </div>
-          </div>
-        </div>
-         <div class="col-lg-3 col-md-6">
-          <div class="content-box p-20 soundcloud white f-s-16">
-            <img src="/yuanku/Public/images/admin/avatar4.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-            <span class="text-uppercase">第二组</span>  <br>
-            <span class="">@组长：沈迪豪</span>
-            <span class="zmdi zmdi-soundcloud p-absolute t-20 r-20 f-s-20"></span>
-            <p class="m-t-20">组员：郑宏扬、黎雄鹰、杨柳<br>任务：负责新闻列表和详情、后台的新闻管理。</p>
-            <div class="socials text-right f-s-20">
-              
-              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="content-box p-20 facebook white f-s-16">
-              <img src="/yuanku/Public/images/admin/avatar2.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-              <span class="text-uppercase">第三组</span>  <br>
-              <span class="">@组长：袁雪萍</span>
-              <span class="zmdi zmdi-facebook p-absolute t-20 r-20 f-s-20"></span>
-              <p class="m-t-20">组员：石诗文、何慧怡、李浪怀<br>任务：负责登录、注册等页面，以及后台的用户管理。</p>
-              <div class="socials text-right f-s-20">
-                
-                <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-              </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="content-box p-20 gplus white f-s-16">
-            <img src="/yuanku/Public/images/admin/avatar3.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
-            <span class="text-uppercase">第四组</span>  <br>
-            <span class="">@smith</span>
-            <span class="zmdi zmdi-google-plus p-absolute t-20 r-20 f-s-20"></span>
-            <p class="m-t-20">负责框架搭建<br>攻坚解难。</p>
-            <div class="socials text-right f-s-20">
-              
-              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
-            </div>
-          </div>
-        </div>
-       
-      </div>
-
      
- 
+     
+     
+     
+     
+     
+     
+<form action="<?php echo U('Slide/slide_manage');?>" method="post" class="" enctype="multipart/form-data">  
+    <div class="form-group">
+        <label class="" for="picname">图片名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text">
+     </div>
+     <div class="form-group">
+        <label class="" for="describtion">图片描述:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text">
+     </div>
+     <div class="form-group">
+         <label class="" for="date">图片上传日期:&nbsp;</label>
+         <input type="datetime-local">
+     </div>
+     <div class="form-group">
+         <label class="" for="pic">图片</label>
+         <input class="dropify" name="slide_pic" type="file">
+     </div>
+     <button class="btn btn-success">提交</button>
+
+      
+ </form>
+
+<link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css"> 
+
  </div>
           </div>
         </div>
@@ -665,4 +670,9 @@
   </script>
 
 
-<div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html>
+<div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html>  
+<script src="/yuanku/Public/js/dropify.min.js"></script>
+
+<script>
+    $('.dropify').dropify();
+</script>
