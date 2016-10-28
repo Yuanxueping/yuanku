@@ -206,7 +206,7 @@ class NewsController extends AuthController {
  	if(IS_POST) {
     		$news = D('NewsSort');
     		$data['sort_name']=$_POST['sort_name'];
-    		$data['e_name']=$_POST['e_name'];
+    		$data['sort_ename']=$_POST['sort_ename'];
 			if($news ->create()) {
 				if($news -> add($data)) {
 					$this -> success('添加成功',U('News/sort'));
@@ -254,6 +254,11 @@ class NewsController extends AuthController {
 		}else{
 			$this->success('删除失败',U('News/sort'));
 		}
+   }
+ public function sort_detail(){
+   	    $news=D('NewsSort');
+   	    $news->where('sort_ename="'.I('sort_ename').'"')->select();
+   	
    }
 //ajax修改
 // public function ajax_set_sort(){

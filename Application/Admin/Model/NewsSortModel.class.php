@@ -7,8 +7,8 @@ class NewsSortModel extends Model{
 
 	protected $_validate=array(
 			array('sort_name','','分类名已存在！','3','unique'),
-			array('e_name','','sort已存在！','3','unique'),
-			array('sort_name','require','不能为空'),
+			array('sort_ename','','sort已存在！','3','unique'),
+			array('sort_ename','require','不能为空'),
 			array('e_name','require','不能为空'),
 		);
 

@@ -1,0 +1,43 @@
+<include file='Public:header' /> 
+ <include file='Public:menu' /> 
+<link rel="stylesheet" href="__PUBLIC__/css/admin/new_sort.css">
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<span>分类详情</span>
+	</div>
+	<table class="table table-hover">
+      	<thead>
+        	<tr>
+	          	<th>#</th>
+	          	<th>ID</th>
+	          	<th>sort</th>
+		        <th>分类</th>
+		        <th class="text-center">操作</th>
+        	</tr>
+      	</thead>
+      	<tbody id="ajax_rt_box">
+      		<volist name="news_list" id="vo" key="k">
+      			<tr>
+      				<td>{$k}</td>
+					<td class="changeid">{$vo['id']}</td>
+					<td class="changeid">{$vo['sort_ename']}</td>
+					<td class="changename">{$vo['sort_name']}</td>
+					<td class="text-center">
+						<div class="btn-group">
+							<button onclick="location.href='{:U('News/sort_edit',array('id'=>$vo[id]))}'"type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil" title="编辑"></span></button>
+							<button onclick="location.href='{:U('News/sort_del',array('id'=>$vo[id]))}'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash" title="删除"></span></button>
+						</div>
+					</td>
+				</tr>
+			</volist>
+      	</tbody>
+    </table>
+</div>
+<div class="btn-toolbar text-center" role="toolbar">
+	<div class="btn-group">
+		{$page_html}
+	</div>
+</div>
+
+
+ <include file='Public:footer' /> 

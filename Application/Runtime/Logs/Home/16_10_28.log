@@ -1,0 +1,362 @@
+[ 2016-10-28T10:17:21+08:00 ] ::1 /lidong/yuanku/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+SQL: SHOW COLUMNS FROM `system_conf` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `system_conf` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000348s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000489s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2016-10-28T10:17:24+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2016-10-28T10:17:24+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+
+[ 2016-10-28T10:17:24+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_035.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002521s ]
+
+[ 2016-10-28T10:17:24+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_014.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002760s ]
+
+[ 2016-10-28T10:17:24+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_009.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001015s ]
+
+[ 2016-10-28T10:17:24+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_033.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+
+[ 2016-10-28T10:17:24+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/124465100.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_012.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_030.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007371s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_022.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_011.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003111s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_006.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/138792428.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/138792890.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000955s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/139431754.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/138792982.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010431s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_017.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/136538823.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135829617.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/138792725.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/138793463.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005324s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135829741.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007202s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135830208.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005465s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135830562.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001479s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135221881.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000895s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135830765.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002026s ]
+
+[ 2016-10-28T10:17:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135830935.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001927s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000406s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001241s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_033.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001060s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001875s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_009.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001545s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_014.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001742s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_035.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/124465100.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_011.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000172s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003374s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_012.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003109s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_017.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009173s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_006.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007903s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/138792725.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/138792428.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001327s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/138792890.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001313s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_030.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005052s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/139431754.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/0_022.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/138793463.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005260s ]
+
+[ 2016-10-28T10:19:13+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/136538823.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+
+[ 2016-10-28T10:19:14+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135221881.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+
+[ 2016-10-28T10:19:14+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135830208.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001066s ]
+
+[ 2016-10-28T10:19:14+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/138792982.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001386s ]
+
+[ 2016-10-28T10:19:14+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135829741.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+
+[ 2016-10-28T10:19:14+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135830562.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005636s ]
+
+[ 2016-10-28T10:19:14+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135830765.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001522s ]
+
+[ 2016-10-28T10:19:14+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135829617.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038409s ]
+
+[ 2016-10-28T10:19:14+08:00 ] ::1 /lidong/yuanku/index.php/Home/Nba/baseket_ball_files/135830935.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+
+[ 2016-10-28T10:19:14+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000332s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000460s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2016-10-28T10:19:25+08:00 ] ::1 /lidong/yuanku/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000336s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001884s ]
+
