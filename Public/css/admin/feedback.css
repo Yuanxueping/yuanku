@@ -1,0 +1,37 @@
+/*后台反馈信息详情页的p缩进与句长省略*/
+.feedback_list table{
+	table-layout: fixed;
+}
+.feedback_list tbody > tr > td:nth-of-type(4){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.feedback_list thead > tr > th:nth-of-type(1) {
+	width: 50px;
+}
+.feedback_list thead > tr > th:nth-of-type(2) {
+	width: 90px;
+}
+.feedback_list thead > tr > th:nth-of-type(3) {
+	width: 180px;
+}
+.feedback_list thead > tr > th:nth-of-type(5) {
+	width: 170px;
+	text-align: center;
+}
+.feedback_list thead > tr > th:last-child {
+	width: 100px;
+}
+.p_l_20{
+  padding-left: 20px;
+}
+.m_t_10{
+  margin-top: 10px;
+}
+.content-box .content-title{
+  width: 100%;
+}
+.t_i_30{
+  text-indent: 30px;
+}
