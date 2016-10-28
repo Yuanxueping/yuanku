@@ -379,7 +379,7 @@
 <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/new_sort.css">
 <div class="panel panel-primary">
 	<div class="panel-heading">
-		<span></span>
+		<span>内容分类</span>
 		<a href="<?php echo U('News/sort_add');?>" class="btn btn-success btn-sm white pull-right">添加分类</a>
 	</div>
 	<table class="table table-hover">
@@ -396,11 +396,11 @@
       		<?php if(is_array($news_list)): $k = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
       				<td><?php echo ($k); ?></td>
 					<td class="changeid"><?php echo ($vo['id']); ?></td>
-					<td class="changeid"><?php echo ($vo['sort_ename']); ?></td>
+					<td class="changeid"><?php echo ($vo['e_name']); ?></td>
 					<td class="changename"><?php echo ($vo['sort_name']); ?></td>
 					<td class="text-center">
 						<div class="btn-group">
-							<button onclick="location.href='<?php echo U('News/sort_detail',array('sort_ename'=>$vo[sort_ename]));?>'"type="button" class="btn btn-warning btn-xs"  title="详情"><span class="glyphicon glyphicon-zoom-in"></span></button>
+							<button onclick="location.href='<?php echo U('News/sort_detail',array('e_name'=>$vo[e_name]));?>'"type="button" class="btn btn-warning btn-xs"  title="详情"><span class="glyphicon glyphicon-zoom-in"></span></button>
 							<button onclick="location.href='<?php echo U('News/sort_edit',array('id'=>$vo[id]));?>'"type="button" class="btn btn-success btn-xs"  title="编辑"><span class="glyphicon glyphicon-pencil"></span></button>
 							<button onclick="location.href='<?php echo U('News/sort_del',array('id'=>$vo[id]));?>'" type="button" class="btn btn-danger btn-xs"  title="删除"><span class="glyphicon glyphicon-trash"></span></button>
 						</div>
