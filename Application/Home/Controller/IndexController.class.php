@@ -32,6 +32,24 @@ class IndexController extends Controller {
 
  	  public function contact_us()
     {
+      // 保存反馈信息到数据库
+      if (IS_POST) {
+        $fb_m=M('ClientFeedback');
+        //自动填充创建时间
+        $_POST['fb_time']=date('Y-m-d H:i:s');
+        // 做验证、自动完成数据填充
+        if ($fb_m->create()) {
+          //添加反馈信息
+          if ($fb_id=$fb_m->add()) {
+            $this->success('信息已反馈',U('Index/contact_us'));
+          } else {
+            $this->error('信息反馈失败',U('Index/contact_us'));
+          }
+        }else {
+          // 验证失败
+          $this->error($fb_m->getError());
+        }
+      } 
        $cache_a= S('site_name');
 
        $this->assign('title','联系我们 - '.$cache_a['site_name']);
