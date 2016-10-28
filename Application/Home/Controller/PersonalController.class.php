@@ -8,6 +8,8 @@ class PersonalController extends Controller {
 		$this->showLogo();
 		$this->showt_email();
 
+		$cache_a= S('site_name');
+       $this->assign('title','个人中心 - '.$cache_a['site_name']);
 		$news_m = M('News');
 		if(isset($_SESSION['username'])){
 			//查询新闻列表
@@ -27,7 +29,7 @@ class PersonalController extends Controller {
 		}else{
 			$this->error('用户未登陆，请重新登陆',U('Index/login'),3);
 		}
-				
+
 	}
 	//显示邮箱地址
 	public function showt_email(){
@@ -56,8 +58,18 @@ class PersonalController extends Controller {
 	}
 	//用户信息修改
 	public function edit_message(){
+		$cache_a= S('site_name');
+        $this->assign('title','修改资料 - '.$cache_a['site_name']);
+
 		$this->showLogo();
 		$this->showt_email();
+
+		$client_m = D('clientUser');
+		$client_info = $client_m -> where("`user_name`='".$_SESSION['username']."'")->find();
+		// $client_info = $client_m -> where('id='.I('id')) ->find();
+		// print_r($client_info);
+		$this -> assign('client_info',$client_info);
+
 		$this->display('Index/edit_user_info');
 	}
 
@@ -65,7 +77,7 @@ class PersonalController extends Controller {
 	public function write_article(){
        $cache_a= S('site_name');
 
-       $this->assign('title','个人中心 - '.$cache_a['site_name']);
+       $this->assign('title','编写文章 - '.$cache_a['site_name']);
 
 		$this->showLogo();
 		$this->showt_email();
@@ -126,6 +138,9 @@ class PersonalController extends Controller {
 
 	//查看已发布的文章
 	public function published_article(){
+		$cache_a= S('site_name');
+        $this->assign('title','文章列表 - '.$cache_a['site_name']);
+
 		$this->showLogo();
 		$this->showt_email();
 
@@ -162,6 +177,9 @@ class PersonalController extends Controller {
 
 	//编辑修改已发布的文章
 	public function article_edit(){
+		$cache_a= S('site_name');
+      	$this->assign('title','修改文章 - '.$cache_a['site_name']);
+
 		$this->showLogo();
 		$this->showt_email();
 
@@ -225,6 +243,7 @@ class PersonalController extends Controller {
 	
 	//更新上传
 	public function update(){
+
 		$data['user_name']=I('user_name');
 		if(I('email_address')!=''){
 			$data['email_address']=I('email_address');
