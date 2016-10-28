@@ -15,6 +15,7 @@ class LoginController extends Controller {
 				$this->success('用户已登陆', U('Index/index'),1);
 			}else{
 				$_SESSION['username']=$username;
+				$_SESSION['user']=$user;
 				$this->success('登陆成功', U('Personal/index'),1);
 			}
 			

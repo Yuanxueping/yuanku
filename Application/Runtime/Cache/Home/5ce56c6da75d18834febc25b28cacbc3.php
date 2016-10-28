@@ -6,10 +6,10 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="/lidong/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/lidong/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/lidong/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
 	  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
@@ -23,8 +23,8 @@
 
 
 
-<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/news_detail.css"/>
-<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/iconfont.css"/>
+<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/news_detail.css"/>
+<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/iconfont.css"/>
 
   </head>
 <body>
@@ -40,28 +40,28 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#">
-		      	<img class="logo" src="/lidong/yuanku/Public/img/logoko2.png" />
+		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
 		      </a>
 		    </div>		
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/index">首页</a></li>
+				        <li><a href="/yuanku/index.php/Home/Index/index">首页</a></li>
 				        
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/news">推荐</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/news">视频</a></li>
+				        <li><a href="/yuanku/index.php/Home/Index/news">推荐</a></li>
+				        <li><a href="/yuanku/index.php/Home/Index/news">视频</a></li>
 				        <li><a href="<?php echo U('Nba/index');?>">篮球</a></li>
-				        <li><a href="/lidong/yuanku/index.php/Home/Index/news">足球</a></li>
+				        <li><a href="/yuanku/index.php/Home/Index/news">足球</a></li>
 				        <li>
 				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/index';} else{ echo '/lidong/yuanku/index.php/Home/Index/login'; } ?>
+				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
 				        ">
 				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
 				        </a>
 				        </li>
 				        <li>
 				        	<a href="
-				        		<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/logout';} else{ echo '/lidong/yuanku/index.php/Home/Index/register'; } ?>
+				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
 				        	">
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
@@ -92,7 +92,7 @@
 			<div class="row">
 				<div class="col-sm-9">
 					<div class="jumbotron">
-				  		<img src="/lidong/yuanku/Public/<?php echo ($news_detail[0]['img']); ?>" class="img-responsive"/>
+				  		<img src="/yuanku/Public/<?php echo ($news_detail[0]['img']); ?>" class="img-responsive"/>
 				  		<h3><a href=""><?php echo ($news_detail[0]['title']); ?></a></h3>
 				  		<p class="p1">
 				  			<a href=""><?php echo (date('Y年m月d日',$news_detail[0]['date'])); ?></a>
@@ -144,17 +144,17 @@
 						<h4 class="title">Recent Posts</h4>
 						<ul>
 							<li>
-								<a class="pull-left" href=""><img src="/lidong/yuanku/Public/img/news_img/site-img225 (1).jpg"/></a>
+								<a class="pull-left" href=""><img src="/yuanku/Public/img/news_img/site-img225 (1).jpg"/></a>
 								<a href="">Many desktop packages</a>
 								<span>July 5, 2016</span>
 							</li>
 							<li>
-								<a class="pull-left" href=""><img src="/lidong/yuanku/Public/img/news_img/site-img224.jpg"/></a>
+								<a class="pull-left" href=""><img src="/yuanku/Public/img/news_img/site-img224.jpg"/></a>
 								<a href="">Many desktop packages</a>
 								<span>July 5, 2016</span>
 							</li>
 							<li>
-								<a class="pull-left" href=""><img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk.jpg"/></a>
+								<a class="pull-left" href=""><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk.jpg"/></a>
 								<a href="">Many desktop packages</a>
 								<span>July 5, 2016</span>
 							</li>
@@ -162,19 +162,19 @@
 					</div>
 					<div class="happy_say">
 						<h4 class="title">Happy Client Say's</h4>
-						<img class="pull-left" src="/lidong/yuanku/Public/img/highstand homepage/people-img19_0.jpg"/>
+						<img class="pull-left" src="/yuanku/Public/img/highstand homepage/people-img19_0.jpg"/>
 						<strong>- Michle Siminson</strong>
 						<p>Lorem Ipsum passage, and going through the cites of the word here classical literature passage discovere there undou btable source looks reasonable the generated charac eristic words.</p>
 					</div>
 					<div class="advertisements">
 						<h4 class="title">Site Advertisements</h4>
 						<ul>
-							<li><a href=""><img src="/lidong/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
-							<li><a href=""><img src="/lidong/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+							<li><a href=""><img src="/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+							<li><a href=""><img src="/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
 						</ul>
 						<ul>
-							<li><a href=""><img src="/lidong/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
-							<li><a href=""><img src="/lidong/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+							<li><a href=""><img src="/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+							<li><a href=""><img src="/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
 						</ul>
 					</div>
 					<div class="text_widget">
@@ -204,9 +204,9 @@
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
 								<li><h4 >最新动态</h4></li><br/>
-								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
 					
 							</ul>
 						</div>
