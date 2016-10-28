@@ -2,15 +2,21 @@
 
  <include file='Public:menu' /> 
 
- <form action="{:U('News/sort_add')}" method="post" class="form_wd_23" enctype="multipart/form-data">
+ <form action="{:U('News/sort_add')}" method="post" class="form_wd_23 center-horizontal" enctype="multipart/form-data" >
  	<div>
- 		<label class="control-label">分类名</label>
+ 		<label class="control-label">sort:</label>
+ 		<input class="form-control" name="e_name">
+ 		<label class="control-label">分类名:</label>
  		<input class="form-control" name="sort_name">
  		<button class="btn btn-success" style="width:100%;margin-top: 20px;">添加</button>
  	</div>
  
 
  	</form>
+ 	<a  class="btn btn-info pull-right white" href="javascript:history.go(-1);">后退</a>
+	<div class="clearfix">
+		
+	</div>
  <link rel="stylesheet" href="__PUBLIC__/css/admin/dropify.min.css"> 
  <include file='Public:footer' /> 
  <script src="__PUBLIC__/js/dropify.min.js"></script>

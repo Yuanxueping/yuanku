@@ -240,31 +240,6 @@ class SystemController extends AuthController{
 	}
 
 
-
-	// 添加反馈信息
-  public function feedback(){
-    if (IS_POST) {
-      $user_m=M('ClientFeedback');
-      //自动填充创建时间
-      $_POST['create_time']=date('Y-m-d H:i:s');
-      // 做验证、自动完成数据填充
-      if ($user_m->create()) {
-        //添加反馈信息
-        if ($uid=$user_m->save()) {
-          $this->success('添加成功',U('Index/contact_us'));
-        } else {
-          $this->error('添加失败',U('Index/contact_us'));
-        }
-      }
-      //  else {
-      //   // 验证失败
-      //   $this->error($user_m->getError());
-      // }
-      
-    } else {
-      $this->display();
-    }
-  }
 }
 
 ?>

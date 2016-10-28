@@ -43,26 +43,26 @@
 					<p>请耐心等待响应。 (24/7 支持！) <strong>电话查询: 1-888-123-4567-8900</strong></p> -->
 					<p>任何对我们产品、服务的疑问、不满、意见及建议欢迎随时与我们联系。感谢您的信任和支持！</p>
 					<p>请耐心等待响应。 (支持24小时/7天服务！) <strong>电话查询: 1-888-123-4567-8900</strong></p>
-					<form role="form" action="{:U('Index/contact_us')}" method="post" >
+					<form role="form" action="{:U('Index/contact_us')}" method="POST" >
 						<div class="form-group">
-						    <label for="name">姓名</label>
-						    <input type="text" class="form-control" id="name">
+						    <label for="fb_name">姓名</label>
+						    <input type="text" class="form-control" name="fb_name">
 						</div>
 						<div class="form-group">
-						    <label for="email">邮箱</label>
-						    <input type="email" class="form-control" id="email">
+						    <label for="fb_email">邮箱</label>
+						    <input type="email" class="form-control" name="fb_email">
 						</div>
 						<div class="form-group">
-						    <label for="subject">主题</label>
-						    <input type="text" class="form-control" id="subject">
+						    <label for="fb_theme">主题</label>
+						    <input type="text" class="form-control" name="fb_theme">
 						</div>
 						<div class="form-group">
-						    <label for="message">内容描述</label>
-						    <textarea class="form-control" id="message" rows="15"></textarea>
+						    <label for="fb_msg">内容描述</label>
+						    <textarea class="form-control" name="fb_msg" rows="15"></textarea>
 						</div>
 						<div class="submit_btn">
 							<input type="submit" class="btn" value="发送信息">
-							<input type="submit" class="btn" value="预览">
+							<!-- <input type="submit" class="btn" value="预览"> -->
 						</div>
 					</form>
 				</div>

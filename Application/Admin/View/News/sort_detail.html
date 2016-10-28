@@ -1,0 +1,51 @@
+<include file='Public:header' /> 
+ <include file='Public:menu' /> 
+<link rel="stylesheet" href="__PUBLIC__/css/admin/newdetail.css">
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<span>{$detail[0][sort_name]}</span>
+	</div>
+	<table class="table table-hover">
+      	<thead>
+        	<tr>
+	          	<th>#</th>
+	          	
+		        <th>作者</th>
+		        <th>标题</th>
+		        <th>内容</th>
+		        <th>日期</th>
+		        <th class="text-center">操作</th>
+        	</tr>
+      	</thead>
+      	<tbody id="ajax_rt_box">
+      		<volist name="detail" id="vo" key="k">
+      			<tr>
+      				<td>{$k}</td>
+					
+					<td class="changeid">{$vo['name']}</td>
+					<td class="changename">{$vo['title']}</td>
+					<td class="changename"><span class="con">{$vo['content']}</span></td>
+					<td class="changename">{$vo['date']}</td>
+					<td class="text-center">
+						<div class="btn-group">
+							<p><a class="btn btn-warning btn-xs" href="{:U('Home/Index/news_detail',array('id'=>$vo[nid]))}" target="_blank" title="查看"><span class="glyphicon glyphicon-search"></span></a></p>
+							<p><button onclick="location.href='{:U('News/news_edit',array('id'=>$vo[nid]))}'"type="button" class="btn btn-success btn-xs" title="编辑"><span class="glyphicon glyphicon-pencil" title="编辑"></span></button></p>
+							<p><button onclick="location.href='{:U('News/news_del',array('id'=>$vo[nid]))}'" type="button" class="btn btn-danger btn-xs" title="删除"><span class="glyphicon glyphicon-trash" title="删除"></span></button></p>
+						</div>
+					</td>
+				</tr>
+			</volist>
+      	</tbody>
+    </table>
+</div>
+<div class="btn-toolbar text-center" role="toolbar">
+	<div class="btn-group">
+		{$page_html}
+	</div>
+</div>
+
+<a  class="btn btn-info pull-right" href="javascript:history.go(-1);">后退</a>
+<div class="clearfix">
+	
+</div>
+ <include file='Public:footer' /> 
