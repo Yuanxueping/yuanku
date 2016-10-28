@@ -92,7 +92,31 @@ class ClientController extends Controller {
     		$this->success('删除失败！',U('Client/client_list'));
     	}
     }
-   
+
+    // 用户反馈列表
+    public function feedback_list(){
+        $fb_m=M('ClientFeedback');
+        $fb_list=$fb_m->select();
+        $this->assign('fb_list',$fb_list);
+        $this->display();
+    }
+    // 用户反馈详情页面
+    public function feedback(){
+        $fb_m=M('ClientFeedback');
+        $fb_info=$fb_m->where('fb_id='.I('fb_id'))->select();
+        $this->assign('fb_info',$fb_info);
+        $this->display();
+    }
+    // 删除用户反馈信息
+    public function feedback_del(){
+        $fb_m=M('ClientFeedback');
+        if ($fb_m->delete(I('fb_id'))) {
+            
+            $this->success('删除成功！',U('Client/feedback_list'));
+        }else{
+            $this->error('删除失败！',U('Client/feedback_list'));
+        }
+    }
 }
 
 ?>
