@@ -2,7 +2,7 @@
 .feedback_list table{
 	table-layout: fixed;
 }
-.feedback_list tbody > tr > td:nth-of-type(4){
+.feedback_list tbody > tr > td{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -14,9 +14,15 @@
 	width: 90px;
 }
 .feedback_list thead > tr > th:nth-of-type(3) {
-	width: 180px;
+	width: 160px;
+}
+.feedback_list thead > tr > th:nth-of-type(4) {
+	width: 140px;
 }
 .feedback_list thead > tr > th:nth-of-type(5) {
+	text-align: center;
+}
+.feedback_list thead > tr > th:nth-of-type(6) {
 	width: 170px;
 	text-align: center;
 }
@@ -34,4 +40,7 @@
 }
 .t_i_30{
   text-indent: 30px;
+}
+.btn-toolbar{
+	margin: 0px 40%;
 }
