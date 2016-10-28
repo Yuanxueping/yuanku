@@ -24,7 +24,7 @@
 
 <!-- 这里写自己页面的样式 -->
 <!--HOME css-->
-<script src="/lidong/yuanku/Public/js/headerchange.js"></script>
+
 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/sport_nba.css" />
 <!--0-->
   </head>
@@ -67,12 +67,7 @@
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
 				        </li>
-				        <!-- 
-				        <li><a href="/lidong/yuanku/index.php/Home/Nba/contact_us">联系我们</a></li>
 
-				        <li><a href="/lidong/yuanku/index.php/Home/Nba/about_us">关于我们</a></li> -->
-
-				       				        
 				        <li>
 				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
 				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
