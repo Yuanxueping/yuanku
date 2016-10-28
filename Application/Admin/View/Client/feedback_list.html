@@ -1,0 +1,40 @@
+<include file='Public:header' /> 
+
+<include file='Public:menu' /> 
+
+<h4>咨询&反馈列表</h4>
+
+<div class="table-responsive alt-table">
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th class="table-check">#</th>
+        <th>反馈用户</th>
+        <th width="220">反馈邮箱</th>
+        <th>反馈内容</th>
+        <th>反馈时间</th>
+        <th class="text-center">操作</th>
+      </tr>
+    </thead>
+    <tbody> 
+      <volist   name="fb_list" id="fb_i">
+        <tr>
+          <td class="table-check">{$fb_i.fb_id}</td>
+          <td>{$fb_i.fb_name}</td>
+          <td>{$fb_i.fb_email}</td>
+          <td>{$fb_i.fb_msg}</td>
+          <td class="table-date"> {$fb_i.fb_time} <i class="zmdi zmdi-time"></i></td>
+          <td class="text-center">
+            <div class="btn-group">
+              <button onclick="location.href='{:U('Client/feedback',array('fb_id'=>$fb_i[fb_id]))}'" type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-eye"></i></button>
+              <button onclick="location.href='{:U('Client/feedback',array('fb_id'=>$fb_i[fb_id]))}'" type="button" class="btn btn-danger waves-effect"><i class="zmdi zmdi-delete"></i></button>
+            </div>
+          </td>
+        </tr>
+      </volist>
+
+    </tbody>
+  </table>
+</div>
+<script src="__PUBLIC__/js/admin/manager_ajax.js"> </script>
+<include file='Public:footer' /> 

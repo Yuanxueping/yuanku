@@ -1,6 +1,6 @@
 <!-- /*
 	*yxp
-	*个人中心页面
+	*文章编辑页面
  */ -->
 <include file="public/header" />
 
@@ -19,9 +19,9 @@
 	                <div class="user-aside span3">
 					    <div class="people">
 							  <div class="basic-info">
-							    <div class="avatar" >
+							    <a class="avatar" href="{:U('Personal/index')}">
 							      <img src="__ROOT__/{$head_photo}"/ alt="5">
-							    </div>
+							    </a>
 							    <h3><a href="{:U('Personal/index')}">{$Think.session.username}</a></h3>
 							    <ul class="clearfix" >
 									
@@ -44,7 +44,7 @@
 								    <br>
 								    <li>
 								    <i class="glyphicon glyphicon-pencil"></i>
-								      <a href=""><span>写文章</span></a>
+								      <a href="{:U('Personal/write_article')}"><span>写文章</span></a>
 								    </li>
 								    <!-- <li>
 								      <a><b>0</b><span>字数</span></a>
@@ -67,7 +67,7 @@
 	                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> 修改文章</h3>
 	              </div>
 	              <div class="panel-body">
-						<form role="form" class="form-horizontal" method="post" action="{:U('Personal/published_article')}" enctype="multipart/form-data">
+						<form role="form" class="form-horizontal" method="post" action="{:U('Personal/article_edit')}" enctype="multipart/form-data">
 					        <div class="form-group">
 					          	<label for="title" class="col-md-2 control-label">标题</label>
 					          	<div class="col-md-10">
@@ -84,10 +84,14 @@
 					        <div class="form-group">
 					          	<label for="news_sort" class="col-md-2 control-label">分类</label>
 					          	<div class="col-md-10">
-					            	<select name="sort_id" class="form-control" required="" id="news_sort">
+					            	<select name="sort_ename" class="form-control" required="" id="news_sort">
 					            		<option selected="selected" class="d-none">请选择分类</option>
 					            		<volist name="sort_list" id="vo">
-					            			<option value="{$vo['id']}">{$vo['sort_name']}</option>
+					            			<if condition="$vo['e_name'] eq $news_info[0]['sort_ename']">
+					            				<option value="{$vo['e_name']}" selected="selected">{$vo['sort_name']}</option>
+					            			<else />
+					            				<option value="{$vo['e_name']}">{$vo['sort_name']}</option>
+					            			</if>
 					            		</volist>
 					            	</select>
 					          	</div>
@@ -96,7 +100,8 @@
 					          	<label class="col-md-2 control-label" for="content">内容</label>
 					          	<div class="col-md-10">
 					            	<script id="container" name="content" type="text/plain">
-					            		{$news_info[0]['content']}
+					            	<php> echo htmlspecialchars_decode($news_info[0]['content']) </php>
+					            		<!-- {$news_info[0]['content']} -->
 									</script>
 					          	</div>
 					        </div>
@@ -108,6 +113,7 @@
 					        </div>
 					        <div class="form-group">
 					          	<div class="col-md-offset-2 col-md-10">
+					          		<input type="hidden" name="id" value="{$news_info[0]['id']}">
 					            	<button  class="btn btn-info" type="submit">修改</button>
 					          	</div>
 					        </div>

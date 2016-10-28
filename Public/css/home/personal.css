@@ -84,19 +84,24 @@ a{
 .people a:hover{
 	color: #727272;
 }
+.avatar{
+	background: none;
+	border: none;
+}
+
 .avatar > img{
-	width:50%;
-	height:50%;
-	border-radius:50%;
+	width:50% !important;
+	height:50% !important;
+	border-radius:50% !important;
 }
 .basic-info > ul{
-	font-size: 14px;
+	font-size: 14px !important;
 	list-style:none ;
 	text-align:center;
 	padding: 0px;
 }
 .user-stats > ul{
-	font-size: 14px;
+	font-size: 14px !important;
 	list-style:none ;
 	text-align:center;
 	padding: 0px 0px 20% 0px ;
