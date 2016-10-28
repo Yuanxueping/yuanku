@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2016 年 10 月 20 日 08:29
+-- 生成日期: 2016 年 10 月 28 日 07:40
 -- 服务器版本: 5.5.20
 -- PHP 版本: 5.3.10
 
@@ -29,17 +29,20 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `news_sort` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `sort_name` varchar(255) NOT NULL,
+  `e_name` varchar(50) NOT NULL COMMENT '英文名',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
 -- 转存表中的数据 `news_sort`
 --
 
-INSERT INTO `news_sort` (`id`, `sort_name`) VALUES
-(1, 'TRAVEL'),
-(2, 'WEB TUTORIALS'),
-(3, '2016, WEB TUTORIALS');
+INSERT INTO `news_sort` (`id`, `sort_name`, `e_name`) VALUES
+(1, '篮球', 'nba'),
+(3, '棒球', 'iball'),
+(4, '排球', 'voliball'),
+(5, '羽毛球', 'fetherball'),
+(7, '兵乓球', 'pingpangball');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

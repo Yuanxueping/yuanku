@@ -17,10 +17,10 @@
 	                <div class="user-aside span3">
 					    <div class="people">
 							  <div class="basic-info">
-							    <div class="avatar" >
+							    <a class="avatar" href="{:U('Personal/index')}">
 							      <img src="__ROOT__/{$head_photo}"/ alt="5">
-							    </div>
-							    <h3><a href="">{$Think.session.username}</a></h3>
+							    </a>
+							    <h3><a href="{:U('Personal/index')}">{$Think.session.username}</a></h3>
 							    <ul class="clearfix" >
 									
 									<li id="sayhello">1</li>
@@ -42,7 +42,7 @@
 								    <br>
 								    <li>
 								    <i class="glyphicon glyphicon-pencil"></i>
-								      <a href="__CONTROLLER__/write_article"><span>写文章</span></a>
+								      <a href="{:U('Personal/write_article')}"><span>写文章</span></a>
 								    </li>
 								    <br>
 								    <li>

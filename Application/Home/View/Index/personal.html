@@ -18,9 +18,9 @@
 	                <div class="user-aside span3">
 					    <div class="people">
 							  <div class="basic-info">
-							    <div class="avatar" >
+							    <a class="avatar" href="{:U('Personal/index')}">
 							      <img src="__ROOT__/{$head_photo}"/ alt="5">
-							    </div>
+							    </a>
 							    <h3><a href="">{$Think.session.username}</a></h3>
 							    <ul class="clearfix" >
 									
@@ -43,7 +43,7 @@
 								    <br>
 								    <li>
 								    <i class="glyphicon glyphicon-pencil"></i>
-								      <a href="__CONTROLLER__/write_article"><span>写文章</span></a>
+								      <a href="{:U('Personal/write_article')}"><span>写文章</span></a>
 								    </li>
 								    <!-- <li>
 								      <a><b>0</b><span>字数</span></a>
@@ -101,7 +101,7 @@
 												<table border="0px" cellspacing="0px" cellpadding="0px">
 													<tr>
 														<td rowspan="2"><img src="__PUBLIC__/img/personal/矩形-20-拷贝-3.png"/></td>
-														<td>&nbsp;我发布的文章&nbsp;<span>0</span></td>
+														<td>&nbsp;我发布的文章：&nbsp;<span>{$num}</span></td>
 													</tr>
 													<tr>
 														<td>&nbsp;<a href="{:U('Personal/published_article')}">查看我发布的文章</a>&nbsp;<img src="__PUBLIC__/img/personal/矩形-10-拷贝.png"/></td>												
