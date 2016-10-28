@@ -7,17 +7,25 @@ class IndexController extends Controller {
     
     public function index(){ 
 
+       $slide = M('Slide');
 
+       $slide_list=$slide->select();
+    //    $this->display();
        $cache_a= S('site_name');
 
        if (empty($cache_a)) {
          $system_info=M('System_conf')->find();
          $cache_a=S('site_name',$system_info);
        }
-        
+       
+       $this->assign('slide_list',$slide_list);
        $this->assign('title','首页 - '.$cache_a['site_name']);
        $this->display();
     }
+
+    // public function slide(){
+       
+    // }
 
     public function about_us()
     {
@@ -49,14 +57,17 @@ class IndexController extends Controller {
           // 验证失败
           $this->error($fb_m->getError());
         }
-      } 
-       $cache_a= S('site_name');
+      } else{
+        $cache_a= S('site_name');
 
        $this->assign('title','联系我们 - '.$cache_a['site_name']);
-    	// do it
+      // do it
        $this->display();
+      }
+       
     	
-    }
+    } 
+
     public function news()
     {
 //新增加
@@ -97,7 +108,7 @@ class IndexController extends Controller {
 		}
 		$this->assign('page_html',$page_html);
 
-//新增加
+    //新增加
        $cache_a= S('site_name');
        $this->assign('title','新闻列表 - '.$cache_a['site_name']);
     	// do it 
@@ -140,12 +151,6 @@ class IndexController extends Controller {
        $this->display();
     	
     }
-    public function news_take()
-    {
-       $cache_a= S('site_name');
-       $this->assign('title','查看订阅的文章 - '.$cache_a['site_name']);
-      // do it
-       $this->display();
-      
-    }
+
+
 }

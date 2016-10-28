@@ -5,7 +5,7 @@ use Think\Upload;
 
 
 class SlideController extends AuthController {
-    public function index(){
+    public function slide_manage(){
         
         $slide_m = M('slide');
         $page_count = 5;	//每页数据的条数
@@ -19,10 +19,15 @@ class SlideController extends AuthController {
 			}else {
 				$active = '';
 			}
-			$page_html.="<a href=".U('slide/index','page_num='.$i)." class='btn btn-default ".$active."'>".$i."</a>";
+			$page_html.="<a href=".U('Slide/slide_manage','page_num='.$i)." class='btn btn-default ".$active."'>".$i."</a>";
 		}
 
-        $slide_list = $slide_m ->limit($start_index,$page_count)-> select();
+        $slide_list = $slide_m  -> alias('n')
+								-> field('n.id as nid,name,img,date')
+								-> limit($start_index,$page_count)
+								-> order('n.id desc')
+								-> select();
+								
         $this -> assign('slide_list',$slide_list);
 		$this -> assign('page_html', $page_html);
 
@@ -31,7 +36,7 @@ class SlideController extends AuthController {
 
    
     //添加新的轮播图图片
-    public function slide_manage($value='')
+    public function slide_add($value='')
     {
         if(IS_POST){
             $slide = M('slide');
@@ -46,22 +51,20 @@ class SlideController extends AuthController {
 			if(!$info) {
 				$this -> error($upload->getError());
 			} else {
-				$_POST['slide_img'] = 'img/lunbo/'.$info['slide_img']['savename'];
+				$_POST['img'] = 'img/lunbo/'.$info['img']['savename'];
 			}
 			
 			if($slide -> create()) {
 				if($slide -> add()) {
-					$this -> success('添加成功',U('Index/slide_manage'));
+					$this -> success('添加成功',U('Slide/slide_manage'));
 				} else {
-					$this -> error('添加失败',U('Index/slide_manage'));
+					$this -> error('添加失败',U('Slide/slide_manage'));
 				}
 			} else {
 				$this -> error($slide -> getError());
 			}
         }else{
-            $slide_info=$slide_m->where('id='.I('id'))->find();    
-            
-            $this->assign('slide_info',$slide_info);
+           
 
             $this->display();
         }
@@ -70,27 +73,29 @@ class SlideController extends AuthController {
     //删除一张轮播图图片
     public function slide_delete($value='')
     {
-       $slide_m=M('Slide');
+       $slide_m=M('slide');
        if ($slide_m->delete(I('id'))) {
-            $this->redirect('News/newsort');			
+		   $this->success('删除成功',U('Slide/slide_manage'));		
 		}else{
-			$this->success('删除失败',U('News/newsort'));
+			$this->success('删除失败',U('Slide/slide_manage'));
 		}
     }
     
     // //编辑轮播图
-    public function slide_eidt($value='')
-    {
-        if(IS_POST){
+    // public function slide_edit($value='')
+    // {
+    //     if(IS_POST){
 
-        }else{
-            $slide = M('slide');
+    //     }else{
+    //         $slide = M('slide');
 
-            $slide_info = $slide -> where('id='.I('id'))->select();
+    //         $slide_info = $slide -> where('id='.I('id'))->select();
 
-            $this->assign('slide_info',$slide_info);
+    //         $this->assign('slide_info',$slide_info);
 
-            $this -> display();
-        }
-    }
+    //         $this -> display();
+    //     }
+    // }
 }
+
+?>
