@@ -6,10 +6,17 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 	 <link rel="stylesheet" href="/lidong/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/headAndFoot.css">
 	 <script src="/lidong/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
 	 <script src="/lidong/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+=======
+	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
 	  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
@@ -25,7 +32,11 @@
 <!-- 这里写自己页面的样式 -->
 <!--HOME css-->
 
+<<<<<<< HEAD
 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/sport_nba.css" />
+=======
+<link rel="stylesheet" href="/yuanku/Public/css/home/sport_nba.css" />
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
 <!--0-->
   </head>
 <body>
@@ -41,12 +52,17 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#">
+<<<<<<< HEAD
 		      	<img class="logo" src="/lidong/yuanku/Public/img/logoko2.png" />
+=======
+		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
 		      </a>
 		    </div>		
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
+<<<<<<< HEAD
 				        <li><a href="/lidong/yuanku/index.php/Home/Index/index">首页</a></li>
 				        
 				        <li><a href="/lidong/yuanku/index.php/Home/Nba/news">推荐</a></li>
@@ -56,13 +72,28 @@
 				        <li>
 				        <a href="
 				        	<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/index';} else{ echo '/lidong/yuanku/index.php/Home/Index/login'; } ?>
+=======
+				        <li><a href="/yuanku/index.php/Home/Index/index">首页</a></li>
+				        
+				        <li><a href="/yuanku/index.php/Home/Nba/news">推荐</a></li>
+				        <li><a href="/yuanku/index.php/Home/Nba/news">视频</a></li>
+				        <li><a href="<?php echo U('Nba/index');?>">篮球</a></li>
+				        <li><a href="/yuanku/index.php/Home/Nba/news">足球</a></li>
+				        <li>
+				        <a href="
+				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
 				        ">
 				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
 				        </a>
 				        </li>
 				        <li>
 				        	<a href="
+<<<<<<< HEAD
 				        		<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/logout';} else{ echo '/lidong/yuanku/index.php/Home/Index/register'; } ?>
+=======
+				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
 				        	">
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
@@ -272,12 +303,20 @@
                                     <div class="desc">中锋 /  猛龙</div>
                                 </div>
                                 <div class="photo">
+<<<<<<< HEAD
                                     <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="/lidong/yuanku/Public/img/126115995.png" alt="220x350"></div>
+=======
+                                    <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="/yuanku/Public/img/126115995.png" alt="220x350"></div>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
                             </a>
                             <a class="player-2" href="http://nba.stats.qq.com/player/jump.htm?id=anthony_davis">
                                 <div class="rank">2</div>
                                 <div class="photo">
+<<<<<<< HEAD
                                     <img  src="/lidong/yuanku/Public/img/126116230.png" alt="132x132"></div>
+=======
+                                    <img  src="/yuanku/Public/img/126116230.png" alt="132x132"></div>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
                                 <div class="name">
                                     <p>安东尼-戴维斯</p>
                                     <span>前锋-中锋 /  鹈鹕</span>
@@ -287,7 +326,11 @@
                             <a class="player-3" href="http://nba.stats.qq.com/player/jump.htm?id=myles_turner">
                                 <div class="rank">3</div>
                                 <div class="photo">
+<<<<<<< HEAD
                                     <img  src="/lidong/yuanku/Public/img/126116230.png" alt="132x132"></div>
+=======
+                                    <img  src="/yuanku/Public/img/126116230.png" alt="132x132"></div>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
                                 <div class="name">
                                     <p>迈勒斯-特纳</p>
                                     <span>前锋-中锋 /  步行者</span>
@@ -304,12 +347,20 @@
                                     <div class="desc">前锋-中锋 /  步行者</div>
                                 </div>
                                 <div class="photo">
+<<<<<<< HEAD
                                     <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="/lidong/yuanku/Public/img/126115995.png" alt="220x350"></div>
+=======
+                                    <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="/yuanku/Public/img/126115995.png" alt="220x350"></div>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
                             </a>
                             <a class="player-2" href="http://nba.stats.qq.com/player/jump.htm?id=hassan_whiteside">
                                 <div class="rank">2</div>
                                 <div class="photo">
+<<<<<<< HEAD
                                     <img  src="/lidong/yuanku/Public/img/126116230.png" alt="132x132"></div>
+=======
+                                    <img  src="/yuanku/Public/img/126116230.png" alt="132x132"></div>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
                                 <div class="name">
                                     <p>哈桑-怀特塞德</p>
                                     <span>中锋 /  热火</span>
@@ -319,7 +370,11 @@
                             <a class="player-3" href="http://nba.stats.qq.com/player/jump.htm?id=nikola_vucevic">
                                 <div class="rank">3</div>
                                 <div class="photo">
+<<<<<<< HEAD
                                     <img  src="/lidong/yuanku/Public/img/126116230.png" alt="132x132"></div>
+=======
+                                    <img  src="/yuanku/Public/img/126116230.png" alt="132x132"></div>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
                                 <div class="name">
                                     <p>尼克拉-武切维奇</p>
                                     <span>中锋 /  魔术</span>
@@ -337,12 +392,20 @@
                                     <div class="desc">后卫 /  凯尔特人</div>
                                 </div>
                                 <div class="photo">
+<<<<<<< HEAD
                                     <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="/lidong/yuanku/Public/img/126115995.png" alt="220x350"></div>
+=======
+                                    <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="/yuanku/Public/img/126115995.png" alt="220x350"></div>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
                             </a>
                             <a class="player-2" href="http://nba.stats.qq.com/player/jump.htm?id=monta_ellis">
                                 <div class="rank">2</div>
                                 <div class="photo">
+<<<<<<< HEAD
                                     <img  src="/lidong/yuanku/Public/img/126116230.png" alt="132x132"></div>
+=======
+                                    <img  src="/yuanku/Public/img/126116230.png" alt="132x132"></div>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
                                 <div class="name">
                                     <p>蒙塔-埃利斯</p>
                                     <span>后卫 /  步行者</span>
@@ -352,7 +415,11 @@
                             <a class="player-3" href="http://nba.stats.qq.com/player/jump.htm?id=avery_bradley">
                                 <div class="rank">3</div>
                                 <div class="photo">
+<<<<<<< HEAD
                                     <img  src="/lidong/yuanku/Public/img/126116230.png" alt="132x132"></div>
+=======
+                                    <img  src="/yuanku/Public/img/126116230.png" alt="132x132"></div>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
                                 <div class="name">
                                     <p>埃弗里-布拉德利</p>
                                     <span>后卫 /  凯尔特人</span>
@@ -370,12 +437,20 @@
                                     <div class="desc">中锋-前锋 /  凯尔特人</div>
                                 </div>
                                 <div class="photo">
+<<<<<<< HEAD
                                     <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="/lidong/yuanku/Public/img/126115995.png" alt="220x350"></div>
+=======
+                                    <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="/yuanku/Public/img/126115995.png" alt="220x350"></div>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
                             </a>
                             <a class="player-2" href="http://nba.stats.qq.com/player/jump.htm?id=hassan_whiteside">
                                 <div class="rank">2</div>
                                 <div class="photo">
+<<<<<<< HEAD
                                     <img  src="/lidong/yuanku/Public/img/126116230.png" alt="132x132"></div>
+=======
+                                    <img  src="/yuanku/Public/img/126116230.png" alt="132x132"></div>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
                                 <div class="name">
                                     <p>哈桑-怀特塞德</p>
                                     <span>中锋 /  热火</span>
@@ -385,7 +460,11 @@
                             <a class="player-3" href="http://nba.stats.qq.com/player/jump.htm?id=myles_turner">
                                 <div class="rank">3</div>
                                 <div class="photo">
+<<<<<<< HEAD
                                     <img  src="/lidong/yuanku/Public/img/126116230.png" alt="132x132"></div>
+=======
+                                    <img  src="/yuanku/Public/img/126116230.png" alt="132x132"></div>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
                                 <div class="name">
                                     <p>迈勒斯-特纳</p>
                                     <span>前锋-中锋 /  步行者</span>
@@ -658,9 +737,15 @@
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
 								<li><h4 >最新动态</h4></li><br/>
+<<<<<<< HEAD
 								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
 								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
 								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
+=======
+								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
 					
 							</ul>
 						</div>

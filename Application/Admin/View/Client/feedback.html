@@ -2,53 +2,33 @@
 
 <include file='Public:menu' /> 
 <!-- ssw 用户反馈列表页面 -->
-<!-- <style type="text/css">
-	.content>.f-w-500+p{
-
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-	}
-</style> -->
-<div class="content-box o-hidden">
-	<!-- <div class="head info-bg clearfix ui-sortable-handle">
-		<h5 class="content-title pull-left">Draggable panel</h5>
-		<div class="functions-btns pull-right">
-			<a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
-			<a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
-			<a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+<link rel="stylesheet" href="__PUBLIC__/css/home/contact_us.css"> 
+<div class="row">
+	<div class="col-lg-12 col-md-6">
+		<div class="content-box">
+			<div class="head clearfix">
+				<h4 class="content-title text-color pull-left">
+					<div class="btn-group pull-right m_t_10">
+						<button onclick="location.href='{:U('Client/feedback_list')}'" class="btn btn-success raise waves-effect"><i class="zmdi zmdi-mail-reply"></i></button>
+						<button onclick="location.href='{:U('Client/feedback_del',array('fb_id'=>$fb_i[fb_id]))}'" class="btn btn-danger raise waves-effect"><i class="zmdi zmdi-delete"></i></button>
+					</div>
+					第{$fb_i.fb_id}条反馈信息
+				</h4>
+			</div>
+			<div class="content">
+				<div class="text-center m-b-40">
+					<h1 class="m-t-5">{$fb_i.fb_theme}</h1>
+					<small class="text-muted"><i class="zmdi zmdi-time f-s-14 m-r-5"></i>{$fb_i.fb_time}</small>
+					<span class="text-muted p_l_20">{$fb_i.fb_name}</span>
+					<span class="text-muted p_l_20">{$fb_i.fb_email}</span>
+				</div>
+				<div class="f-s-16">
+					<p class="p_suolue">{$fb_i.fb_msg}</p>
+				</div>
+				<hr>
+			</div>
 		</div>
-	</div> -->
-
-<div class="content">
-	<div class="head" style="padding-left: 0px;">
-		<h3>主题：这里是反馈信息的主题</h3>
-		<!-- <div class="functions-btns pull-right">
-				<a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
-				<a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
-				<a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
-			</div> -->
-	</div>
-		
-	<div class="f-w-500">
-		<span class="info-color text-uppercase">姓名：tom</span>&nbsp;&nbsp;邮箱：textadmin@email.com
-	</div>
-	<p>
-		这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。这里是内容描述。
-	</p>
-
-	<div class="activity-item-footer m-t-20 f-w-500">
-		<!-- <span class="m-r-10">
-			<i class="zmdi zmdi-comment-text info-color f-s-18 m-r-5"></i>12 comments
-		</span>
-		<span>
-			<i class="zmdi zmdi-favorite danger-color f-s-18 m-r-5"></i>33 likes
-		</span> -->
-		<button onclick="location.href='/yuanku/index.php/Admin/System/.html'" type="button" class="btn btn-danger waves-effect">
-			<i class="zmdi zmdi-delete"></i>
-		</button>
 	</div>
 </div>
-
 
 <include file='Public:footer' /> 

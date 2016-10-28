@@ -19,6 +19,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  
   
+<<<<<<< HEAD
   <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/material-design-iconic-font.css">
   <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/animate.css">
   <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/metisMenu.css">
@@ -35,6 +36,24 @@
   <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/common.css">
 
   <script src="/lidong/yuanku/Public/js/jquery.js"></script>
+=======
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/material-design-iconic-font.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/animate.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/metisMenu.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/jquery_002.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/waves.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/toastr.css">
+
+
+
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/jquery.css">
+
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/style.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/bootstrap.css">
+  <link rel="stylesheet" href="/yuanku/Public/css/admin/common.css">
+
+  <script src="/yuanku/Public/js/jquery.js"></script>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
 <!--
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -43,7 +62,11 @@
       <script src="bower_components/html5shiv/dist/html5shiv.min,js"></script>
       <script src="bower_components/respondJs/dest/respond.min.js"></script>
     <![endif]-->
+<<<<<<< HEAD
 <script src="/lidong/yuanku/Public/js/jquery_008.js"></script></head>
+=======
+<script src="/yuanku/Public/js/jquery_008.js"></script></head>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
 
 <body class="fixed-all boxed-layout fixed-sidebar mCustomScrollbar _mCS_4 mCS-autoHide" style="overflow: visible;">
  <div id="mCSB_4" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_4_container" class="mCSB_container" style="position: relative; top: -164px; left: 0px;" dir="ltr">
@@ -57,7 +80,11 @@
    <nav class="navbar navbar-indigo">
  <div class="navbar-header container brand-orange">
    <a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
+<<<<<<< HEAD
    <a href="/lidong/yuanku/admin" class="logo">力动网</a>
+=======
+   <a href="/yuanku/admin" class="logo">力动网</a>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
    <a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="icon-logo"></a>
  </div>
   <div class="navbar-container clearfix">
@@ -122,7 +149,11 @@
     <li class="profile-sidebar-container">
       <div class="profile-sidebar text-center">
         <div class="profile-userpic">
+<<<<<<< HEAD
           <img src="/lidong/yuanku/Uploads<?php echo ($user_info["head_photo"]); ?>" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
+=======
+          <img src="/yuanku/Uploads<?php echo ($user_info["head_photo"]); ?>" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
           <span class="online"></span>
         </div>
         <div class="profile-usertitle">
@@ -377,11 +408,19 @@
           <div class="content-box">
              <div class="content">
 
+<<<<<<< HEAD
 <link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/admin/news_add.css"/>
 
 <div class="panel panel-primary">
 	<div class="panel-heading">
 		<div class="panel-title">修改新闻</div>
+=======
+<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/admin/news_add.css"/>
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<div class="panel-title">修改内容</div>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
 	</div>
 	<div class="panel-body">
 		<form role="form" class="form-horizontal" method="post" action="<?php echo U('News/news_edit');?>" enctype="multipart/form-data">
@@ -422,13 +461,21 @@
 	        <div class="form-group">
 	          	<label class="col-md-2 control-label" for="content">内容</label>
 	          	<div class="col-md-10">
+<<<<<<< HEAD
 	            	<script id="container" name="content" type="text/plain"><?php echo ($news_info[0]['content']); ?></script>
+=======
+	            	<script id="container" name="content" type="text/plain"><?php echo (html_entity_decode($news_info[0]['content'])); ?></script>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
 	          	</div>
 	        </div>
 	        <div class="form-group">
 	          	<label class="col-md-2 control-label">图片</label>
 	          	<div class="col-md-10">
+<<<<<<< HEAD
 	            	<input class="dropify form-control"  name="img" type="file" id="img" data-default-file="/lidong/yuanku/Public/<?php echo ($news_info[0]['img']); ?>">
+=======
+	            	<input class="dropify form-control"  name="img" type="file" id="img" data-default-file="/yuanku/Public/<?php echo ($news_info[0]['img']); ?>">
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
 	          	</div>
 	        </div>
 	        <div class="form-group">
@@ -441,14 +488,24 @@
 </div>
 
 <!-- 配置文件 -->
+<<<<<<< HEAD
 <script type="text/javascript" src="/lidong/yuanku/Public/lib/ueditor/ueditor.config.js"></script>
 <!-- 编辑器源码文件 -->
 <script type="text/javascript" src="/lidong/yuanku/Public/lib/ueditor/ueditor.all.min.js"></script>
+=======
+<script type="text/javascript" src="/yuanku/Public/lib/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="/yuanku/Public/lib/ueditor/ueditor.all.min.js"></script>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
 <!-- 实例化编辑器 -->
 <script type="text/javascript">
     var ue = UE.getEditor('container');
 </script>
+<<<<<<< HEAD
 <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/dropify.min.css">
+=======
+<link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css">
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
 
  </div>
           </div>
@@ -457,6 +514,7 @@
 
    </div>
 </div></div>
+<<<<<<< HEAD
   <script src="/lidong/yuanku/Public/js/bootstrap.js"></script>
   <script src="/lidong/yuanku/Public/js/metisMenu.js"></script>
   <script src="/lidong/yuanku/Public/js/jquery_006.js"></script>
@@ -473,6 +531,24 @@
   <script src="/lidong/yuanku/Public/js/jquery_007.js"></script>
   <script src="/lidong/yuanku/Public/js/jquery_003.js"></script>
   <script src="/lidong/yuanku/Public/js/jquery_002.js"></script>
+=======
+  <script src="/yuanku/Public/js/bootstrap.js"></script>
+  <script src="/yuanku/Public/js/metisMenu.js"></script>
+  <script src="/yuanku/Public/js/jquery_006.js"></script>
+  <script src="/yuanku/Public/js/waves.js"></script>
+  <script src="/yuanku/Public/js/toastr.js"></script>
+
+
+  <script src="/yuanku/Public/js/jquery_004.js"></script>
+  <script src="/yuanku/Public/js/dataTables.js"></script>
+  <script src="/yuanku/Public/js/moment.js"></script>
+
+  <script src="/yuanku/Public/js/Chart.js"></script>
+  <script src="/yuanku/Public/js/jquery_005.js"></script>
+  <script src="/yuanku/Public/js/jquery_007.js"></script>
+  <script src="/yuanku/Public/js/jquery_003.js"></script>
+  <script src="/yuanku/Public/js/jquery_002.js"></script>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
  
 
   <script>
@@ -637,8 +713,13 @@
     });
   </script>
 
+<<<<<<< HEAD
     <script src="/lidong/yuanku/Public/js/common.js"></script>
   <script src="/lidong/yuanku/Public/js/demo-switch.js">  </script>
+=======
+    <script src="/yuanku/Public/js/common.js"></script>
+  <script src="/yuanku/Public/js/demo-switch.js">  </script>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
     <script>
     if($(window).width() >= 1200){
       $("body").addClass("boxed-layout");
@@ -680,5 +761,10 @@
 
 
 <div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html>
+<<<<<<< HEAD
 <script src="/lidong/yuanku/Public/js/dropify.min.js"></script>
 <script src="/lidong/yuanku/Public/js/admin/news_add.js"></script>
+=======
+<script src="/yuanku/Public/js/dropify.min.js"></script>
+<script src="/yuanku/Public/js/admin/news_add.js"></script>
+>>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a

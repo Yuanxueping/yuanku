@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title><?php echo ($title); ?>  后台管理</title>
@@ -19,24 +19,6 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  
   
-<<<<<<< HEAD
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/material-design-iconic-font.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/animate.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/metisMenu.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/jquery_002.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/waves.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/toastr.css">
-
-
-
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/jquery.css">
-
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/style.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/bootstrap.css">
-  <link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/common.css">
-
-  <script src="/lidong/yuanku/Public/js/jquery.js"></script>
-=======
   <link rel="stylesheet" href="/yuanku/Public/css/admin/material-design-iconic-font.css">
   <link rel="stylesheet" href="/yuanku/Public/css/admin/animate.css">
   <link rel="stylesheet" href="/yuanku/Public/css/admin/metisMenu.css">
@@ -53,7 +35,6 @@
   <link rel="stylesheet" href="/yuanku/Public/css/admin/common.css">
 
   <script src="/yuanku/Public/js/jquery.js"></script>
->>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
 <!--
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -62,11 +43,7 @@
       <script src="bower_components/html5shiv/dist/html5shiv.min,js"></script>
       <script src="bower_components/respondJs/dest/respond.min.js"></script>
     <![endif]-->
-<<<<<<< HEAD
-<script src="/lidong/yuanku/Public/js/jquery_008.js"></script></head>
-=======
 <script src="/yuanku/Public/js/jquery_008.js"></script></head>
->>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
 
 <body class="fixed-all boxed-layout fixed-sidebar mCustomScrollbar _mCS_4 mCS-autoHide" style="overflow: visible;">
  <div id="mCSB_4" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_4_container" class="mCSB_container" style="position: relative; top: -164px; left: 0px;" dir="ltr">
@@ -80,11 +57,7 @@
    <nav class="navbar navbar-indigo">
  <div class="navbar-header container brand-orange">
    <a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
-<<<<<<< HEAD
-   <a href="/lidong/yuanku/admin" class="logo">力动网</a>
-=======
    <a href="/yuanku/admin" class="logo">力动网</a>
->>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
    <a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="icon-logo"></a>
  </div>
   <div class="navbar-container clearfix">
@@ -144,16 +117,13 @@
     </div>
   </div>
 </nav> 
+
  <aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
   <ul class="nav metismenu">
     <li class="profile-sidebar-container">
       <div class="profile-sidebar text-center">
         <div class="profile-userpic">
-<<<<<<< HEAD
-          <img src="/lidong/yuanku/Uploads<?php echo ($user_info["head_photo"]); ?>" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
-=======
           <img src="/yuanku/Uploads<?php echo ($user_info["head_photo"]); ?>" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
->>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
           <span class="online"></span>
         </div>
         <div class="profile-usertitle">
@@ -407,91 +377,23 @@
         <div class="col-md-12">
           <div class="content-box">
              <div class="content"> 
-<<<<<<< HEAD
-<link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/new_sort.css">
-<div class="panel panel-primary">
-	<div class="panel-heading">
-		<span>内容分类</span>
-=======
-<link rel="stylesheet" href="/yuanku/Public/css/admin/new_sort.css">
-<div class="panel panel-primary">
-	<div class="panel-heading">
-		<span>新闻分类</span>
->>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
-		<a href="<?php echo U('News/sort_add');?>" class="btn btn-success btn-sm white pull-right">添加分类</a>
-	</div>
-	<table class="table table-hover">
-      	<thead>
-        	<tr>
-	          	<th>#</th>
-	          	<th>ID</th>
-	          	<th>sort</th>
-		        <th>分类</th>
-		        <th class="text-center">操作</th>
-        	</tr>
-      	</thead>
-      	<tbody id="ajax_rt_box">
-      		<?php if(is_array($news_list)): $k = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
-      				<td><?php echo ($k); ?></td>
-					<td class="changeid"><?php echo ($vo['id']); ?></td>
-					<td class="changeid"><?php echo ($vo['e_name']); ?></td>
-					<td class="changename"><?php echo ($vo['sort_name']); ?></td>
-					<td class="text-center">
-						<div class="btn-group">
-<<<<<<< HEAD
-							<button onclick="location.href='<?php echo U('News/sort_detail',array('e_name'=>$vo[e_name]));?>'"type="button" class="btn btn-warning btn-xs"  title="详情"><span class="glyphicon glyphicon-zoom-in"></span></button>
-							<button onclick="location.href='<?php echo U('News/sort_edit',array('id'=>$vo[id]));?>'"type="button" class="btn btn-success btn-xs"  title="编辑"><span class="glyphicon glyphicon-pencil"></span></button>
-							<button onclick="location.href='<?php echo U('News/sort_del',array('id'=>$vo[id]));?>'" type="button" class="btn btn-danger btn-xs"  title="删除"><span class="glyphicon glyphicon-trash"></span></button>
-=======
-							<button onclick="location.href='<?php echo U('News/sort_edit',array('id'=>$vo[id]));?>'"type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
-							<button onclick="location.href='<?php echo U('News/sort_del',array('id'=>$vo[id]));?>'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
->>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
-						</div>
-					</td>
-				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-      	</tbody>
-    </table>
-</div>
-<div class="btn-toolbar text-center" role="toolbar">
-	<div class="btn-group">
-		<?php echo ($page_html); ?>
-	</div>
-</div>
 
-<!--<script type="text/javascript">
-$(function(){
-	$("#ajax_rt_box").find(".btn-xs").click(function(){
-		var this_box=$(this).parent().parent().prev();
-		var id=this_box.prev().html();
-		console.log(id);
-		var oldval=this_box.html();
-        this_box.html('<input type="text" autofocus="true">').addClass('cur_input');
-       $(".cur_input").find('input').focus();
-		$(".cur_input").find('input').blur(function(){
-			 var changeval=$(".cur_input").find('input').val();
-			 
-			 if(changeval!=oldval&&changeval!=""){
-			 	$.post('<?php echo U("News/ajax_set_sort");?>',{"id":id,"changeval": changeval},function(msg){
-			 		 if(msg.stauts==1){
-			 		 	this_box.html(changeval);
-			 		 }
-			 		 else if(msg.stauts==-1){
-			 		 	alert("修改失败");
-			 		 }
-			 	
-			 })
-			}else{
-				alert("没有修改！");
-				this_box.html(oldval);
-				
-			}
-			 
-			 
-		})
-	})
-})
+ <form action="/yuanku/index.php/Admin/News/author_update/nid/5" method="post" class="form_wd_23" enctype="multipart/form-data">
+ 	<div>
+ 		<label class="control-label">作者姓名</label>
+ 		<input class="form-control" name="name" id="name" value="<?php echo ($data["name"]); ?>"/>
+    </div>
+ 	<div>
+ 		<label class="control-label">作者简介</label>
+ 		<textarea class="form-control" rows="10" cols="30" id="introduction" name="introduction"><?php echo ($data["introduction"]); ?></textarea>
+ 	</div>
+ 		
+    <input type="hidden" name="id" value="<?php echo ($data["id"]); ?>"/>
+ 	<button class="btn btn-success">修改</button>
+      <button class="btn btn-success"><a style="color:white;" href="/yuanku/index.php/Admin/News/author_list">返回</a></button>
 
-</script>-->
+ 	</form>
+ <link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css"> 
  
  </div>
           </div>
@@ -500,24 +402,6 @@ $(function(){
 
    </div>
 </div></div>
-<<<<<<< HEAD
-  <script src="/lidong/yuanku/Public/js/bootstrap.js"></script>
-  <script src="/lidong/yuanku/Public/js/metisMenu.js"></script>
-  <script src="/lidong/yuanku/Public/js/jquery_006.js"></script>
-  <script src="/lidong/yuanku/Public/js/waves.js"></script>
-  <script src="/lidong/yuanku/Public/js/toastr.js"></script>
-
-
-  <script src="/lidong/yuanku/Public/js/jquery_004.js"></script>
-  <script src="/lidong/yuanku/Public/js/dataTables.js"></script>
-  <script src="/lidong/yuanku/Public/js/moment.js"></script>
-
-  <script src="/lidong/yuanku/Public/js/Chart.js"></script>
-  <script src="/lidong/yuanku/Public/js/jquery_005.js"></script>
-  <script src="/lidong/yuanku/Public/js/jquery_007.js"></script>
-  <script src="/lidong/yuanku/Public/js/jquery_003.js"></script>
-  <script src="/lidong/yuanku/Public/js/jquery_002.js"></script>
-=======
   <script src="/yuanku/Public/js/bootstrap.js"></script>
   <script src="/yuanku/Public/js/metisMenu.js"></script>
   <script src="/yuanku/Public/js/jquery_006.js"></script>
@@ -534,7 +418,6 @@ $(function(){
   <script src="/yuanku/Public/js/jquery_007.js"></script>
   <script src="/yuanku/Public/js/jquery_003.js"></script>
   <script src="/yuanku/Public/js/jquery_002.js"></script>
->>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
  
 
   <script>
@@ -699,13 +582,8 @@ $(function(){
     });
   </script>
 
-<<<<<<< HEAD
-    <script src="/lidong/yuanku/Public/js/common.js"></script>
-  <script src="/lidong/yuanku/Public/js/demo-switch.js">  </script>
-=======
     <script src="/yuanku/Public/js/common.js"></script>
   <script src="/yuanku/Public/js/demo-switch.js">  </script>
->>>>>>> 969266cf6263bd5333eb33cfa7639155f9be4a3a
     <script>
     if($(window).width() >= 1200){
       $("body").addClass("boxed-layout");
@@ -746,4 +624,7 @@ $(function(){
   </script>
 
 
-<div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html>
+<div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html> 
+ <script src="/yuanku/Public/js/dropify.min.js"></script>
+
+ <script>$('.dropify').dropify();</script>
