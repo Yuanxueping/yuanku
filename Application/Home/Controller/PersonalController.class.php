@@ -165,6 +165,8 @@ class PersonalController extends Controller {
 		$this->showLogo();
 		$this->showt_email();
 
+		$news = D('news');
+		
 		if(IS_POST) {
 			if($_FILES['img']['error']!=4){
 				$upload = new Upload();
@@ -183,30 +185,29 @@ class PersonalController extends Controller {
 			
 			if($news->create()) {
 				if($news->save()) {
-					$this -> success('修改成功',U('News/index'));
+					$this -> success('修改成功',U('Index/news'));
 				} else {
-					$this -> error('修改失败或无更新',U('News/news_edit',array('id'=>$_POST['id'])));
+					$this -> error('修改失败或无更新',U('Personal/article_edit',array('id'=>$_POST['id'])));
 				}
 			} else {
 				$this -> error($news->getError());
 			}
 		} else {
-			$news = D('news');
 			$author = D('author');
 			$news_sort = D('news_sort');
 			
 			$news_info = $news -> where('id='.I('id')) -> select();
-			$author_list = $author -> select();
+			$author_list = $author -> field('id,name')->where('uid='.$_SESSION['user']['id']) -> find();
 			$sort_list = $news_sort -> select();
 			
 			$this -> assign('news_info',$news_info);
 			$this -> assign('author_list',$author_list);
 			$this -> assign('sort_list',$sort_list);
 			
+		$this->display('Index/article_edit');
 			// $this -> display();
 		}
 
-		$this->display('Index/article_edit');
 	}
 
 

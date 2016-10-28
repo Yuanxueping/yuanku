@@ -139,7 +139,7 @@
 	                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> 修改文章</h3>
 	              </div>
 	              <div class="panel-body">
-						<form role="form" class="form-horizontal" method="post" action="<?php echo U('Personal/published_article');?>" enctype="multipart/form-data">
+						<form role="form" class="form-horizontal" method="post" action="<?php echo U('Personal/article_edit');?>" enctype="multipart/form-data">
 					        <div class="form-group">
 					          	<label for="title" class="col-md-2 control-label">标题</label>
 					          	<div class="col-md-10">
@@ -181,6 +181,7 @@
 					        </div>
 					        <div class="form-group">
 					          	<div class="col-md-offset-2 col-md-10">
+					          		<input type="hidden" name="id" value="<?php echo ($news_info[0]['id']); ?>">
 					            	<button  class="btn btn-info" type="submit">修改</button>
 					          	</div>
 					        </div>

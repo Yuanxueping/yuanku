@@ -146,7 +146,7 @@
 						        <th style="width:10%">新闻标题</th>
 						        <th>作者</th>
 						        <th>分类</th>
-						        <th>内容</th>
+						        <!-- <th>内容</th> -->
 						        <th>图片</th>
 						        <th>日期</th>
 						        <th class="text-center" style="width:20%">操作</th>
@@ -159,7 +159,7 @@
 									<td><?php echo ($vo['title']); ?></td>
 									<td><?php echo ($vo['name']); ?></td>
 									<td><?php echo ($vo['sort_name']); ?></td>
-									<td><?php echo ($vo['content']); ?></td>
+									<!-- <td><?php echo ($vo['content']); ?></td> -->
 									<td><?php echo ($vo['img']); ?></td>
 									<td><?php echo (date('Y-m-d',$vo['date'])); ?></td>
 									<td class="text-center">

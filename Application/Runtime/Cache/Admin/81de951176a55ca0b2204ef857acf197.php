@@ -381,7 +381,7 @@
 
 <div class="panel panel-primary">
 	<div class="panel-heading">
-		<div class="panel-title">修改新闻</div>
+		<div class="panel-title">修改内容</div>
 	</div>
 	<div class="panel-body">
 		<form role="form" class="form-horizontal" method="post" action="<?php echo U('News/news_edit');?>" enctype="multipart/form-data">
@@ -422,7 +422,7 @@
 	        <div class="form-group">
 	          	<label class="col-md-2 control-label" for="content">内容</label>
 	          	<div class="col-md-10">
-	            	<script id="container" name="content" type="text/plain"><?php echo ($news_info[0]['content']); ?></script>
+	            	<script id="container" name="content" type="text/plain"><?php echo (html_entity_decode($news_info[0]['content'])); ?></script>
 	          	</div>
 	        </div>
 	        <div class="form-group">
