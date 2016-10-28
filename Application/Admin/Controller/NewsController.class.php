@@ -193,6 +193,7 @@ class NewsController extends AuthController {
 		
 		//获取表的数据
 		$news_list = $news_m -> limit($start_index,$page_count)
+		                     -> order('id desc')
 							 -> select();
 							 
 		$this -> assign('news_list', $news_list);
@@ -204,10 +205,10 @@ class NewsController extends AuthController {
    public function sort_add(){
  	if(IS_POST) {
     		$news = D('NewsSort');
+    		$data['sort_name']=$_POST['sort_name'];
+    		$data['e_name']=$_POST['e_name'];
 			if($news ->create()) {
-				if($news -> add()) {
-					$sort_name=$POST_['sort_name'];
-			        $auth_data=array('sort_name'=>$sort_name);
+				if($news -> add($data)) {
 					$this -> success('添加成功',U('News/sort'));
 				} else {
 					$this -> error('添加失败');
@@ -216,6 +217,31 @@ class NewsController extends AuthController {
 				$this -> error($news -> getError());
 			}
     	} else {
+    		$this->display();
+    	}
+
+ }
+  public function sort_edit(){
+  	$news = D('NewsSort');
+ 	if(IS_POST) {
+//  		$data['sort_name']=$_POST['sort_name'];
+//  		$data['e_name']=$_POST['e_name'];
+			if($news ->create()) {
+				if($news ->save()) {
+					$this -> success('修改成功',U('News/sort'));
+				} else {
+					
+					$this -> error('修改失败');
+				}
+			} else {
+				$this -> error($news -> getError());
+			}
+    	} else {
+    		
+    		$new_info=$news->where('id='.I('id'))->find();
+//          echo $news->getLastSql();
+//          exit();
+    		$this->assign('new_info',$new_info);
     		$this->display();
     	}
 
@@ -229,29 +255,29 @@ class NewsController extends AuthController {
 			$this->success('删除失败',U('News/sort'));
 		}
    }
-
- public function ajax_set_sort(){
-		$new_m=D('NewsSort');
-		// 做验证、自动完成
-	    $changeval=I("changeval");
-	    $id=I("id");
-//	    $_POST['sort_name']=$changeval;
-	    $data['sort_name']=$changeval;
-	    $data['id']=$id;
-		if($new_m->create()){
-			
-			if ($new_m->save($data)) {
-				
-				$this->ajaxReturn(array('stauts'=>1,'msg'=>'更新成功'));
-			}else{
-				$this->ajaxReturn(array('stauts'=>-1,'msg'=>'更新失败'));
-			}
-		}else{
-			// 验证失败
-			$this->ajaxReturn(array('stauts'=>0,'msg'=>$new_m->getError()));
-			
-		}
- }
+//ajax修改
+// public function ajax_set_sort(){
+//		$new_m=D('NewsSort');
+//		// 做验证、自动完成
+//	    $changeval=I("changeval");
+//	    $id=I("id");
+////	    $_POST['sort_name']=$changeval;
+//	    $data['sort_name']=$changeval;
+//	    $data['id']=$id;
+//		if($new_m->create()){
+//			
+//			if ($new_m->save($data)) {
+//				
+//				$this->ajaxReturn(array('stauts'=>1,'msg'=>'更新成功'));
+//			}else{
+//				$this->ajaxReturn(array('stauts'=>-1,'msg'=>'更新失败'));
+//			}
+//		}else{
+//			// 验证失败
+//			$this->ajaxReturn(array('stauts'=>0,'msg'=>$new_m->getError()));
+//			
+//		}
+// }
 
 
    //作者列表

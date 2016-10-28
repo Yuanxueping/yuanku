@@ -85,8 +85,8 @@ a{
 	color: #727272;
 }
 .avatar > img{
-	height:50%;
 	width:50%;
+	height:50%;
 	border-radius:50%;
 }
 .basic-info > ul{
