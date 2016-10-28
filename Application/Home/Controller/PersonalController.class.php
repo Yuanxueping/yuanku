@@ -12,10 +12,11 @@ class PersonalController extends Controller {
 		if(isset($_SESSION['username'])){
 			//查询新闻列表
 			$news_list = $news_m -> alias('n')
-							 -> field('n.id as nid,title,name,sort_name,content,img,date')
-							 -> join('author ON author_id=author.id')
-							 -> join('news_sort ON sort_id=news_sort.id')
-							 -> limit($start_index,$page_count)
+								 -> field('n.id as nid,title,name,sort_name,img,date')
+								 -> join('author ON author_id=author.id')
+								 -> join('news_sort ON sort_ename=news_sort.e_name')
+								 -> order('date desc')
+								 -> limit($start_index,$page_count)
 							 // -> order('n.id desc')
 							 -> where('uid='.$_SESSION['user']['id']) -> select();
 
@@ -146,9 +147,10 @@ class PersonalController extends Controller {
 		
 		//获取表的数据
 		$news_list = $news_m -> alias('n')
-							 -> field('n.id as nid,title,name,sort_name,content,img,date')
+							 -> field('n.id as nid,title,name,sort_name,img,date')
 							 -> join('author ON author_id=author.id')
-							 -> join('news_sort ON sort_id=news_sort.id')
+							 -> join('news_sort ON sort_ename=news_sort.e_name')
+							 -> order('date desc')
 							 -> limit($start_index,$page_count)
 							 // -> order('n.id desc')
 							 -> where('uid='.$_SESSION['user']['id']) -> select();
@@ -164,30 +166,30 @@ class PersonalController extends Controller {
 		$this->showt_email();
 
 		if(IS_POST) {
-			// $news = D('news');
-			// $_POST['date'] = time();
+			if($_FILES['img']['error']!=4){
+				$upload = new Upload();
+				$upload -> maxSize = 10240000;
+				$upload -> exts = array('jpg','gif','jpeg','png');
+				$upload -> autoSub = FALSE;
+				$upload -> rootPath = './Public/img/news_img/';
+				$info = $upload -> upload();
+				
+				if(!$info) {
+					$this -> error($upload->getError());
+				} else {
+					$_POST['img'] = 'img/news_img/'.$info['img']['savename'];
+				}
+			}
 			
-			// $upload = new Upload();
-			// $upload -> maxSize = 10240000;
-			// $upload -> exts = array('jpg','gif','jpeg','png');
-			// $upload -> autoSub = FALSE;
-			// $upload -> rootPath = './Public/img/news_img/';
-			// $info = $upload -> upload();
-			// if(!$info) {
-			// 	$this -> error($upload->getError());
-			// } else {
-			// 	$_POST['img'] = 'img/news_img/'.$info['img']['savename'];
-			// }
-			
-			// if($news -> create()) {
-			// 	if($news -> add()) {
-			// 		$this -> success('修改成功',U('Personal/published_article'));
-			// 	} else {
-			// 		$this -> error('修改失败',U('Personal/published_article'));
-			// 	}
-			// } else {
-			// 	$this -> error($news -> getError());
-			// }
+			if($news->create()) {
+				if($news->save()) {
+					$this -> success('修改成功',U('News/index'));
+				} else {
+					$this -> error('修改失败或无更新',U('News/news_edit',array('id'=>$_POST['id'])));
+				}
+			} else {
+				$this -> error($news->getError());
+			}
 		} else {
 			$news = D('news');
 			$author = D('author');

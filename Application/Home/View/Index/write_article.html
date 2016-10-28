@@ -44,7 +44,7 @@
 								    <br>
 								    <li>
 								    <i class="glyphicon glyphicon-pencil"></i>
-								      <a href=""><span>写文章</span></a>
+								      <a href="{:U('Personal/write_article')}"><span>写文章</span></a>
 								    </li>
 								    <!-- <li>
 								      <a><b>0</b><span>字数</span></a>
@@ -84,10 +84,10 @@
 					        <div class="form-group">
 					          	<label for="news_sort" class="col-md-2 control-label">分类</label>
 					          	<div class="col-md-10">
-					            	<select name="sort_id" class="form-control" required="" id="news_sort">
+					            	<select name="sort_ename" class="form-control" required="" id="news_sort">
 					            		<option selected="selected" class="d-none">请选择分类</option>
 					            		<volist name="news_sort" id="vo">
-					            			<option value="{$vo['id']}">{$vo['sort_name']}</option>
+					            			<option value="{$vo['e_name']}">{$vo['sort_name']}</option>
 					            		</volist>
 					            	</select>
 					          	</div>
