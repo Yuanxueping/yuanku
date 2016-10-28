@@ -1,12 +1,26 @@
-[ 2016-10-28T09:40:03+08:00 ] ::1 /lidong/yuanku/admin
+[ 2016-10-28T09:49:02+08:00 ] ::1 /lidong/yuanku/admin
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
-SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0045s ]
-SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0004s ]
+ERR: 1146:Table 'hello.silde' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `silde`
+ERR: 1146:Table 'hello.silde' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `silde`
+
+[ 2016-10-28T09:49:12+08:00 ] ::1 /lidong/yuanku/index.php/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0004s ]
 ERR: 1146:Table 'hello.silde' doesn't exist
  [ SQL语句 ] : SHOW COLUMNS FROM `silde`
 ERR: 1146:Table 'hello.silde' doesn't exist
