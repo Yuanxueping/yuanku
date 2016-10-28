@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [ 2016-10-28T09:58:20+08:00 ] ::1 /yuanku/admin
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
@@ -2053,4 +2054,53 @@ INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+=======
+[ 2016-10-28T10:07:07+08:00 ] ::1 /lidong/yuanku/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `admin_user` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] Undefined variable: title E:\mysql\wamp\www\lidong\yuanku\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001574s ]
+
+[ 2016-10-28T10:07:07+08:00 ] ::1 /lidong/yuanku/index.php/Admin/index/img/contacts/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+
+[ 2016-10-28T10:07:07+08:00 ] ::1 /lidong/yuanku/index.php/Admin/index/img/contacts/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+
+[ 2016-10-28T10:07:07+08:00 ] ::1 /lidong/yuanku/index.php/Admin/index/img/contacts/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+
+[ 2016-10-28T10:07:07+08:00 ] ::1 /lidong/yuanku/index.php/Admin/index/img/contacts/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+
+[ 2016-10-28T10:07:07+08:00 ] ::1 /lidong/yuanku/index.php/Admin/index/img/contacts/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+>>>>>>> 8298743c894df605c1ace114d55a307334d7b8e6
 
