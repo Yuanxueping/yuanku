@@ -31,9 +31,76 @@ class SystemController extends AuthController{
 	{
 		$user_m=M('Admin_user');
 
-		$user_list=$user_m->select();
+		// 每一页显示3条
+		$page_cout=2;
 
+		// 1、2、3
+		$page_num=I('page_num')>0?I('page_num'):1;
+
+		// $page_num=1;
+		// $start_index=0;
+  // 		(1-1)*3
+
+		// $page_num=2;
+		// $start_index=3;
+
+  // 	 	(2-1)*3
+
+		// $page_num=3;
+		// $start_index=6;
+
+  // 	 	(3-1)*3
+
+  		$start_index=($page_num-1)*$page_cout;
+  	 	
+
+		// $user_list=$user_m->limit($start_index,$page_cout)->select();
+
+		// $this->assign('user_list',$user_list);
+
+		// 7条数据 
+		// select count(*) from Admin_user
+		$user_total_num=$user_m->count();
+
+	
+		// 第一页数据
+		// select * from admin_user limit 0,3;
+		// 第二页数据
+		// select * from admin_user limit 3,3;
+		// 第三页数据
+		// SELECT * FROM admin_user LIMIT 6,3;
+		
+		// 每一页显示3条，总共有3页
+
+
+     // <a href="{:U('System/manager_user',array('page_num'=>1))}">第一页</a>
+     // <a href="{:U('System/manager_user',array('page_num'=>2))}">第二页</a>
+     // <a href="{:U('System/manager_user',array('page_num'=>3))}">第三页</a>
+     	// 不小于 x 的下一个整数
+     	// 总共有多少页
+		$total_num= ceil($user_total_num/$page_cout); 
+		$cur_page_style;
+		for ($i=1; $i<=$total_num ; $i++) { 
+			if ($page_num==$i) {
+				$cur_page_style="style='font-weight:bold;color: #9c0;'";
+			} 
+
+			$page_html.="<a ".$cur_page_style." href=".U('System/manager_user',array('page_num'=>$i)).">第".$i."页</a> &nbsp;&nbsp;&nbsp;";
+			$cur_page_style='';
+		 } 
+		$this->assign('user_total_num',$user_total_num);
+		$this->assign('page_html',$page_html);
+
+
+
+
+ 		// 实例化分页类 传入总记录数和每页显示的记录数
+		$Page       = new \Think\Page($user_total_num,$page_cout);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+		$show       = $Page->show();// 分页显示输出
+		$this->assign('page',$show);// 赋值分页输出
+		$user_list=$user_m->limit($Page->firstRow.','.$Page->listRows)->select();
 		$this->assign('user_list',$user_list);
+
 
 
 
@@ -157,9 +224,7 @@ class SystemController extends AuthController{
 			$this->display();
 
 		} 
-
-
-		
+	
 	}
 
 	// 删除管理员
@@ -172,12 +237,34 @@ class SystemController extends AuthController{
 		}else{
 			$this->success('删除失败',U('System/manager_user'));
 		}
-				
-			 
-
-
-		
 	}
+
+
+
+	// 添加反馈信息
+  public function feedback(){
+    if (IS_POST) {
+      $user_m=M('ClientFeedback');
+      //自动填充创建时间
+      $_POST['create_time']=date('Y-m-d H:i:s');
+      // 做验证、自动完成数据填充
+      if ($user_m->create()) {
+        //添加反馈信息
+        if ($uid=$user_m->save()) {
+          $this->success('添加成功',U('Index/contact_us'));
+        } else {
+          $this->error('添加失败',U('Index/contact_us'));
+        }
+      }
+      //  else {
+      //   // 验证失败
+      //   $this->error($user_m->getError());
+      // }
+      
+    } else {
+      $this->display();
+    }
+  }
 }
 
 ?>

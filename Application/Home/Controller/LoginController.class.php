@@ -7,13 +7,15 @@ class LoginController extends Controller {
 		$username=I('username');
 		$password=I('password');
 		$users=M('clientUser');
-		$passwordCncode=md5($password);
+		// $passwordCncode=md5($password);
+		$passwordCncode=$password;
 		$user=$users->where('user_name="'.$username.'" and user_pwd="'.$passwordCncode.'"')->find();
 		if($user){
 			if(isset($_SESSION['username'])&&$_SESSION['username']==$username){
 				$this->success('用户已登陆', U('Index/index'),1);
 			}else{
 				$_SESSION['username']=$username;
+				$_SESSION['user']=$user;
 				$this->success('登陆成功', U('Personal/index'),1);
 			}
 			

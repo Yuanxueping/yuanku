@@ -44,7 +44,7 @@ class IndexController extends Controller {
 //新增加
 		$news = M('News');
 		
-		$page_cout=6;
+		$page_cout=10;
 		
 		$page_num=I('page_num')>0?I('page_num'):1;
 		
@@ -52,8 +52,8 @@ class IndexController extends Controller {
 		$start_index=($page_num-1)*$page_cout;
 //		$start_index=0;
 		
-		$news_list=$news->limit($start_index,$page_cout)->select();
-
+		$news_list=$news->order('id desc')->limit($start_index,$page_cout)->select();
+		
 		$this->assign('news_list',$news_list);
 		
 //		select count(*) from News
@@ -77,6 +77,7 @@ class IndexController extends Controller {
        $cache_a= S('site_name');
        $this->assign('title','新闻列表 - '.$cache_a['site_name']);
     	// do it 
+     
        $this->display();
     	
     }
@@ -104,7 +105,7 @@ class IndexController extends Controller {
 		
     	$news = M('News');
 		
-		$news_detail = $news -> join('author') -> where('news.id='.$id.' AND author.id=author_id') -> select();
+		$news_detail = $news -> join('author') -> join('news_sort') -> where('news.id='.$id.' AND author.id=author_id AND sort_id=news_sort.id') -> select();
 		
 		$this -> assign('news_detail',$news_detail);
     	
@@ -119,7 +120,6 @@ class IndexController extends Controller {
     {
        $cache_a= S('site_name');
        $this->assign('title','查看订阅的文章 - '.$cache_a['site_name']);
-
       // do it
        $this->display();
       

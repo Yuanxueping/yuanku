@@ -71,6 +71,33 @@ a{
 	text-decoration: none;
 	color: #666666;
 }
-/*.kitty > img:hover{
-	transform: rotateX(45deg);
-}*/
+
+
+.list-group {
+	text-align:center;
+	padding-top:30%;
+}
+.people a{
+	text-decoration: none;
+	color: #000000;
+}
+.people a:hover{
+	color: #727272;
+}
+.avatar > img{
+	height:50%;
+	width:50%;
+	border-radius:50%;
+}
+.basic-info > ul{
+	font-size: 14px;
+	list-style:none ;
+	text-align:center;
+	padding: 0px;
+}
+.user-stats > ul{
+	font-size: 14px;
+	list-style:none ;
+	text-align:center;
+	padding: 0px 0px 20% 0px ;
+}
