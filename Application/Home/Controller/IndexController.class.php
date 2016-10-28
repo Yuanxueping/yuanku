@@ -73,7 +73,7 @@ class IndexController extends Controller {
 		}
 		$this->assign('page_html',$page_html);
 
-//新增加
+    //新增加
        $cache_a= S('site_name');
        $this->assign('title','新闻列表 - '.$cache_a['site_name']);
     	// do it 
@@ -119,6 +119,19 @@ class IndexController extends Controller {
     public function news_take()
     {
        $cache_a= S('site_name');
+       $news_take = M('NewsTake');
+
+
+       $page_cout=3;
+       $user_total_num=$news_take->count();
+      // 实例化分页类 传入总记录数和每页显示的记录数
+      $Page       = new \Think\Page($user_total_num,$page_cout);
+      $show       = $Page->show();// 分页显示输出
+      $this->assign('page',$show);// 赋值分页输出
+      
+      $news_take=$news_take->limit($Page->firstRow.','.$Page->listRows)->select();
+      $this -> assign('news_take',$news_take);
+
        $this->assign('title','查看订阅的文章 - '.$cache_a['site_name']);
       // do it
        $this->display();

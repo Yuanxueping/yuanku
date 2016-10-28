@@ -10,10 +10,10 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+	 <link rel="stylesheet" href="/1001/clone_two/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/1001/clone_two/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/1001/clone_two/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/1001/clone_two/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
 	  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
@@ -40,28 +40,28 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#">
-		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
+		      	<img class="logo" src="/1001/clone_two/yuanku/Public/img/logoko2.png" />
 		      </a>
 		    </div>		
 		    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav navbar-right color">
-				        <li><a href="/yuanku/index.php/Home/Index/index">首页</a></li>
+				        <li><a href="/1001/clone_two/yuanku/index.php/Home/Index/index">首页</a></li>
 				        
-				        <li><a href="/yuanku/index.php/Home/Personal/news">推荐</a></li>
-				        <li><a href="/yuanku/index.php/Home/Personal/news">视频</a></li>
+				        <li><a href="/1001/clone_two/yuanku/index.php/Home/Personal/news">推荐</a></li>
+				        <li><a href="/1001/clone_two/yuanku/index.php/Home/Personal/news">视频</a></li>
 				        <li><a href="<?php echo U('Nba/index');?>">篮球</a></li>
-				        <li><a href="/yuanku/index.php/Home/Personal/news">足球</a></li>
+				        <li><a href="/1001/clone_two/yuanku/index.php/Home/Personal/news">足球</a></li>
 				        <li>
 				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
+				        	<?php if(isset($_SESSION['username'])) {echo '/1001/clone_two/yuanku/index.php/Home/Personal/index';} else{ echo '/1001/clone_two/yuanku/index.php/Home/Index/login'; } ?>
 				        ">
 				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
 				        </a>
 				        </li>
 				        <li>
 				        	<a href="
-				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
+				        		<?php if(isset($_SESSION['username'])) {echo '/1001/clone_two/yuanku/index.php/Home/Personal/logout';} else{ echo '/1001/clone_two/yuanku/index.php/Home/Index/register'; } ?>
 				        	">
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
@@ -76,9 +76,9 @@
 	            </div>
 		  </div>
 	</nav>
-		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/personal.css"/>
-		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/site.min.css">
-		<script src="/yuanku/Public/js/site.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="/1001/clone_two/yuanku/Public/css/home/personal.css"/>
+		<link rel="stylesheet" type="text/css" href="/1001/clone_two/yuanku/Public/css/home/site.min.css">
+		<script src="/1001/clone_two/yuanku/Public/js/site.min.js" type="text/javascript" charset="utf-8"></script>
 	
 
 		<div class="container-fluid" style="margin-top:60px;">
@@ -90,14 +90,14 @@
 					    <div class="people">
 							  <div class="basic-info">
 							    <div class="avatar" >
-							      <img src="/yuanku/<?php echo ($head_photo); ?>"/ alt="5">
+							      <img src="/1001/clone_two/yuanku/<?php echo ($head_photo); ?>"/ alt="5">
 							    </div>
 							    <h3><a href=""><?php echo (session('username')); ?></a></h3>
 							    <ul class="clearfix" >
 									
 									<li id="sayhello">1</li>
 									<br>
-									<li><a href="/yuanku/index.php/Home/Personal/edit_message">修改个人信息</a>&nbsp;<img src="/yuanku/Public/img/personal/矩形-18-拷贝.png"/></li>
+									<li><a href="/1001/clone_two/yuanku/index.php/Home/Personal/edit_message">修改个人信息</a>&nbsp;<img src="/1001/clone_two/yuanku/Public/img/personal/矩形-18-拷贝.png"/></li>
 								</ul>
 							   
 							  </div>
@@ -114,7 +114,7 @@
 								    <br>
 								    <li>
 								    <i class="glyphicon glyphicon-pencil"></i>
-								      <a href="/yuanku/index.php/Home/Personal/write_article"><span>写文章</span></a>
+								      <a href="/1001/clone_two/yuanku/index.php/Home/Personal/write_article"><span>写文章</span></a>
 								    </li>
 								    <br>
 								    <li>
@@ -137,7 +137,7 @@
 	              <div class="panel-body" style="margin-bottom:10%;">
 		            	<div class="content"> 
 
-							 <form action="/yuanku/index.php/Home/Personal/update" method="post" class="form_wd_23" enctype="multipart/form-data" class="form_wd_23">
+							 <form action="/1001/clone_two/yuanku/index.php/Home/Personal/update" method="post" class="form_wd_23" enctype="multipart/form-data" class="form_wd_23">
 							 	<div class="form-group">
 							 		<label class="control-label">用户名</label>
 							 		<input class="form-control" style="display:none" name="user_name"  value="<?php echo (session('username')); ?>">
@@ -161,7 +161,7 @@
 							 	<button class="btn btn-success waves-effect">提交</button>
 
 								</form>
-								<link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css">
+								<link rel="stylesheet" href="/1001/clone_two/yuanku/Public/css/admin/dropify.min.css">
 							
 						 
 						</div>  
@@ -174,7 +174,7 @@
 	    </div>
 
 
-<script src="/yuanku/Public/js/dropify.min.js"></script>
+<script src="/1001/clone_two/yuanku/Public/js/dropify.min.js"></script>
 
  <script>$('.dropify').dropify();</script>
 
@@ -197,9 +197,9 @@
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
 								<li><h4 >最新动态</h4></li><br/>
-								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/1001/clone_two/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/1001/clone_two/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/1001/clone_two/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
 					
 							</ul>
 						</div>
