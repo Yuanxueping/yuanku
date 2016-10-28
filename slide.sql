@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2016 年 10 月 28 日 01:29
+-- 生成日期: 2016 年 10 月 28 日 01:38
 -- 服务器版本: 5.5.20
 -- PHP 版本: 5.3.10
 
@@ -23,24 +23,23 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- 表的结构 `news_sort`
+-- 表的结构 `slide`
 --
 
-CREATE TABLE IF NOT EXISTS `news_sort` (
+CREATE TABLE IF NOT EXISTS `slide` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `sort_name` varchar(255) NOT NULL,
-  `e_name` varchar(50) NOT NULL,
+  `img` varchar(255) NOT NULL,
+  `date` varchar(255) NOT NULL,
+  `content` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- 转存表中的数据 `news_sort`
+-- 转存表中的数据 `slide`
 --
 
-INSERT INTO `news_sort` (`id`, `sort_name`, `e_name`) VALUES
-(1, '篮球', 'nba'),
-(3, '棒球', 'baseball'),
-(4, '排球', 'iball');
+INSERT INTO `slide` (`id`, `img`, `date`, `content`) VALUES
+(1, '', '1477617856', '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

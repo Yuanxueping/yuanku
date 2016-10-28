@@ -94,7 +94,7 @@
 							    <div class="avatar" >
 							      <img src="/yuanku/<?php echo ($head_photo); ?>"/ alt="5">
 							    </div>
-							    <h3><a href=""><?php echo (session('username')); ?></a></h3>
+							    <h3><a href="<?php echo U('Personal/index');?>"><?php echo (session('username')); ?></a></h3>
 							    <ul class="clearfix" >
 									
 									<li id="sayhello">1</li>
