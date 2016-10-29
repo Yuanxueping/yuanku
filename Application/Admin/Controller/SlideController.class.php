@@ -45,8 +45,7 @@ class SlideController extends AuthController {
 			$upload = new Upload();
 			$upload -> maxSize = 10240000;
 			$upload -> exts = array('jpg','gif','jpeg','png');
-			$upload -> autoSub = FALSE;
-			$upload -> rootPath = './Public/img/lunbo/';
+			$upload -> rootPath = './Uploads';
 			$info = $upload -> upload();
 			if(!$info) {
 				$this -> error($upload->getError());
