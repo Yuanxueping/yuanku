@@ -7,17 +7,25 @@ class IndexController extends Controller {
     
     public function index(){ 
 
+       $slide = M('Slide');
 
+       $slide_list=$slide->select();
+    //    $this->display();
        $cache_a= S('site_name');
 
        if (empty($cache_a)) {
          $system_info=M('System_conf')->find();
          $cache_a=S('site_name',$system_info);
        }
-        
+       
+       $this->assign('slide_list',$slide_list);
        $this->assign('title','首页 - '.$cache_a['site_name']);
        $this->display();
     }
+
+    // public function slide(){
+       
+    // }
 
     public function about_us()
     {
@@ -58,7 +66,8 @@ class IndexController extends Controller {
       }
        
     	
-    }
+    } 
+
     public function news()
     {
 //新增加

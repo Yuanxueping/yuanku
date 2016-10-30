@@ -25,7 +25,7 @@
 					<td class="changeid">{$vo['name']}</td>
 					<td class="changename">{$vo['title']}</td>
 					<td class="changename"><span class="con">{$vo['content']}</span></td>
-					<td class="changename">{$vo['date']}</td>
+					<td class="changename">{$vo['date']|date="y-m-d H:i:s",###}</td>
 					<td class="text-center">
 						<div class="btn-group">
 							<p><a class="btn btn-warning btn-xs" href="{:U('Home/Index/news_detail',array('id'=>$vo[nid]))}" target="_blank" title="查看"><span class="glyphicon glyphicon-search"></span></a></p>

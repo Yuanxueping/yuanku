@@ -113,20 +113,4 @@ div.contact_us{
   font-size: 20px;
   line-height: 28px;
 }
-/*后台反馈信息详情页的p缩进与句长省略*/
-.p_suolue{
-  text-indent: 30px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.p_l_20{
-  padding-left: 20px;
-}
-.m_t_10{
-  margin-top: 10px;
-}
-.content-box .content-title{
-  width: 100%;
-}
 /*# sourceMappingURL=contact_us.css.map */
