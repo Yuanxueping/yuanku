@@ -377,9 +377,21 @@
 		<div class="one_third_less">
 			<h3 class="white caps">一个专业的网站 <br/><b> 有团队 <br/>有模式<br/>有成果</b><br/> 还有些大新闻</h3>
 		</div>
-		<!-- end item -->
+		
+		<?php if(is_array($secondnews_list)): $kk = 0; $__LIST__ = $secondnews_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_i): $mod = ($kk % 2 );++$kk; if($kk==3): ?><div class="clearfix margin_bottom2"></div><?php endif; ?>
 
-		<div class="one_third_less">
+			<?php if($kk==2 || $kk==5): ?><div class="one_third_less last">
+			<?php else: ?>
+				<div class="one_third_less"><?php endif; ?>
+			<div class="box">
+				<h5 class="caps"><?php echo ($news_i['title']); ?></h5>
+				<div class="bgline"></div>
+				<p>此处是一段非常长的文段，然而该文段在网页浏览过程中没有任何实际意义，你可以无视该文段继续浏览你所需要浏览的内容。</p>
+				
+				<a href="<?php echo U('Index/news_detail',array(id=>$news_i[id]));?>" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
+			</div>
+</div><?php endforeach; endif; else: echo "" ;endif; ?>
+		<!--<div class="one_third_less">
 			<div class="box">
 				<h5 class="caps">这是一长串英文单词 <br/>这是简短描述</h5>
 				<div class="bgline"></div>
@@ -387,7 +399,7 @@
 				<a href="#" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
 			</div>
 		</div>
-		<!-- end item -->
+		
 
 		<div class="one_third_less last">
 			<div class="box">
@@ -397,7 +409,7 @@
 				<a href="#" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
 			</div>
 		</div>
-		<!-- end item -->
+		
 
 		<div class="clearfix margin_bottom2"></div>
 
@@ -409,7 +421,7 @@
 				<a href="#" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
 			</div>
 		</div>
-		<!-- end item -->
+		
 
 		<div class="one_third_less">
 			<div class="box">
@@ -419,8 +431,7 @@
 				<a href="#" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
 			</div>
 		</div>
-		<!-- end item -->
-
+		
 		<div class="one_third_less last">
 			<div class="box">
 				<h5 class="caps">这是一长串英文单词 <br/>这是简短描述</h5>
@@ -428,9 +439,8 @@
 				<p>此处是一段非常长的文段，然而该文段在网页浏览过程中没有任何实际意义，你可以无视该文段继续浏览你所需要浏览的内容。</p>
 				<a href="#" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
 			</div>
-		</div>
-		<!-- end item -->
-
+		</div>-->
+		
 	</div>
 
 </div>
