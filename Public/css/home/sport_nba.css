@@ -1,6 +1,9 @@
 html,legend {
 	color:#000
 }
+#bestPlayerCont ul{
+	display: none;
+}
 .area,caption,th {
 	text-align:left
 }
@@ -405,20 +408,19 @@ a:hover {
 	.area-focus .slide-wrap ol {
 	width:6000px
 }
-}.area-focus .slide-wrap ol li {
+}
+.area-focus .slide-wrap ol li {
 	display:block;
-	float:left;
-	width:1240px;
-	height:400px;
-	background-color:#EFEFEF;
+	float:left;	
 	font-size:0;
+	
 	position:relative;
 	overflow:hidden
 }
-@media screen and (max-width:1260px) {
+/*@media screen and (max-width:1260px) {
 	.area-focus .slide-wrap ol li {
 	width:1000px
-}
+}*/
 }.area-focus .slide-wrap ol li .page-wrap {
 	height:100%
 }

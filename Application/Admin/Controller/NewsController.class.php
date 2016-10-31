@@ -80,7 +80,6 @@ class NewsController extends AuthController {
     		$this->display();
     	}
     }
-
 	public function news_edit() {
 		if(IS_POST) {
 			
@@ -169,35 +168,30 @@ class NewsController extends AuthController {
 
    //作者列表
 	public function author_list(){
-		$news_m = M('Author');
-		
-		$page_count = 5;	//每页数据的条数
-		$page_num = I('page_num') > 0 ? I('page_num') : 1;	//获取ID值，没有则默认为1
-		$news_total_num = $news_m -> count();	//获取数据的总数
-		$start_index = ($page_num - 1) * $page_count;	//从第几条数据查起
-		$total_num = ceil($news_total_num/$page_count);	//总共有多少页
-		for($i = 1; $i <= $total_num; $i++) {
-			if($page_num == $i) {
-				$active = 'active';
-			}else {
-				$active = '';
-			}
-			$page_html.="<a href=".U('News/author_list','page_num='.$i)." class='btn btn-default ".
+        $news_m=D('Author');
+        $page_count=5;
+        $page_num=I('page_num')>0?I('page_num'):1;
+        $news_total_num=$news_m->count();
+        $start_index=($page_num-1)*$page_count;
+        $total_num=ceil($news_total_num/$page_count);
+        for($i=1;$i<=$total_num;$i++){
+        	if($page_null==$i){
+        		$active='active';
+        	}else{
+        		$active='';
+        	} 	
+        $page_html.="<a href=".U('News/author_list','page_num='.$i)." class='btn btn-default ".
 
-$active."'>".$i."</a>";
-		}
-		
-		//获取表的数据
-		$news_list = $news_m -> alias('n')
-							 -> field('n.id as nid,name,introduction')
-							 -> limit($start_index,$page_count)
-							 -> select();
-							 
-		
-		
-		$this -> assign('news_list', $news_list);
-		$this -> assign('page_html', $page_html);		
-    	$this->display();
+        $active."'>".$i."</a>";
+        }
+        $news_list=$news_m->alias('n')
+                        ->field('n.id as nid,name,introduction')  
+                        ->limit($start_index,$page_count)
+                        ->select(); 
+                        
+                        $this->assign('news_list',$news_list);
+                        $this->assign('page_html',$page_html);
+                        $this->display();
 	}
 //作者列表end
 
@@ -234,13 +228,14 @@ $active."'>".$i."</a>";
 			$this->display();
 	}
 
+
 	public function author_del($nid){
 		if(M('author')->delete($nid))
-			$this->success('成功',U('author_list'),3);
+			$this->success('成功',U('author_list'),2);
 		else
-			$this->error('失败',U('author_list'),3);
+			$this->error('失败',U('author_list'),2);
 		// $this->display();
-	}
+	}	
    
-  
+ 
 }
