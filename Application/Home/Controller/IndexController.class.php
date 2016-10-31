@@ -153,7 +153,7 @@ class IndexController extends Controller {
     	
     }
     
-<<<<<<< HEAD
+
 	public function news_detail()
     {
     	$id = I('id');
@@ -169,19 +169,7 @@ class IndexController extends Controller {
     	
        $cache_a= S('site_name');
        $this->assign('title','新闻详情 - '.$cache_a['site_name']);
-=======
-  	public function news_detail(){
-      	$id = I('id');
-  		
-      	$news = M('News');
-  	            
-    		$news_detail = $news -> alias('n') -> field('n.id as id,title,name,sort_name,img,date') -> join('author') -> join('news_sort') -> where('n.id='.$id.' AND author.id=author_id AND sort_ename=news_sort.e_name') -> select();
-    		
-    		$this -> assign('news_detail',$news_detail);
-        	
-           $cache_a= S('site_name');
-           $this->assign('title','新闻详情 - '.$cache_a['site_name']);
->>>>>>> 3dcdc5604f8bbc878ac1b7f6a9ac4090bd4f5f92
+
 
         	// do it
            $this->display();
