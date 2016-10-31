@@ -71,7 +71,7 @@
 }
 .foot-nav .container-fluid li h4{
    color: white!important;
-   text-indent: 12px;
+   /*text-indent: 20px;*/
 }
 .foot-nav .container-fluid li a {
    color: gainsboro!important;
@@ -107,4 +107,11 @@
 }
 .size>img{
     width:100%;	
+}
+.foot-nav .container-fluid li a{
+	padding: 0px;
+}
+.foot-nav .container-fluid li a:hover{
+	padding: 0px;
+	text-decoration: underline;
 }
