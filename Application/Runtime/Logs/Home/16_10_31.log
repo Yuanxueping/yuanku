@@ -14669,3 +14669,299 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001133s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
 
+[ 2016-10-31T15:13:03+08:00 ] ::1 /yuanku/index.php/Home/Index/news.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0045s ]
+SQL: SELECT n.id as id,`title`,`name`,`sort_name`,`content`,`img`,`date` FROM news n INNER JOIN author ON author_id=author.id INNER JOIN news_sort ON sort_ename=news_sort.e_name  ORDER BY id desc LIMIT 0,10   [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: page_html D:\wamp\www\yuanku\Application\Home\Controller\IndexController.class.php 第 124 行.
+NOTIC: [8] unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 0 of 61 bytes D:\wamp\www\yuanku\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2016-10-31T15:13:06+08:00 ] ::1 /yuanku/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `slide` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `news` WHERE ( news_position="first" )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE ( news_position="second" ) ORDER BY id desc LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE ( news_position="third" )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `slide`  [ RunTime:0.0003s ]
+NOTIC: [8] unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 0 of 61 bytes D:\wamp\www\yuanku\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `system_conf` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `system_conf` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000386s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000538s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001154s ]
+
+[ 2016-10-31T15:13:09+08:00 ] ::1 /yuanku/index.php/Home/Index/news.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0037s ]
+SQL: SELECT n.id as id,`title`,`name`,`sort_name`,`content`,`img`,`date` FROM news n INNER JOIN author ON author_id=author.id INNER JOIN news_sort ON sort_ename=news_sort.e_name  ORDER BY id desc LIMIT 0,10   [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: page_html D:\wamp\www\yuanku\Application\Home\Controller\IndexController.class.php 第 124 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000397s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+
+[ 2016-10-31T15:13:11+08:00 ] ::1 /yuanku/index.php/Home/Index/news.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0035s ]
+SQL: SELECT n.id as id,`title`,`name`,`sort_name`,`content`,`img`,`date` FROM news n INNER JOIN author ON author_id=author.id INNER JOIN news_sort ON sort_ename=news_sort.e_name  ORDER BY id desc LIMIT 0,10   [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: page_html D:\wamp\www\yuanku\Application\Home\Controller\IndexController.class.php 第 124 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000418s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2016-10-31T15:13:23+08:00 ] ::1 /yuanku/index.php/Home/Index/news_detail/id/47.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`title`,`img`,`date` FROM `news` ORDER BY id desc LIMIT 3   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `news` INNER JOIN author INNER JOIN news_sort  WHERE ( news.id=47 AND author.id=author_id AND sort_ename=news_sort.e_name )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 109 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 155 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 156 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 155 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 156 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 155 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2016-10-31T15:14:58+08:00 ] ::1 /yuanku/index.php/Home/Index/news_detail/id/47.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`title`,`img`,`date` FROM `news` ORDER BY id desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` INNER JOIN author INNER JOIN news_sort  WHERE ( news.id=47 AND author.id=author_id AND sort_ename=news_sort.e_name )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 107 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 153 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 153 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 153 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2016-10-31T15:15:11+08:00 ] ::1 /yuanku/index.php/Home/Index/news_detail/id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`title`,`img`,`date` FROM `news` ORDER BY id desc LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` INNER JOIN author INNER JOIN news_sort  WHERE ( news.id=39 AND author.id=author_id AND sort_ename=news_sort.e_name )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000322s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000570s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 107 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 153 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 153 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 153 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\5ce56c6da75d18834febc25b28cacbc3.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001160s ]
+
+[ 2016-10-31T15:15:14+08:00 ] ::1 /yuanku/index.php/Home/Index/news.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0029s ]
+SQL: SELECT n.id as id,`title`,`name`,`sort_name`,`content`,`img`,`date` FROM news n INNER JOIN author ON author_id=author.id INNER JOIN news_sort ON sort_ename=news_sort.e_name  ORDER BY id desc LIMIT 0,10   [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: page_html D:\wamp\www\yuanku\Application\Home\Controller\IndexController.class.php 第 124 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\yuanku\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
+
