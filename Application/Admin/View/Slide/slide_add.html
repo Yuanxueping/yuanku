@@ -1,27 +1,30 @@
  <include file='Public:header' /> 
  <include file='Public:menu' /> 
 
- <form action="{:U('Slide/slide_add')}" method="post" class="" enctype="multipart/form-data">  
-    <div class="form-group">
-        <label class="" for="picname">图片名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="text" name="name">
-     </div>
-     <!--<div class="form-group">
-        <label class="" for="describtion">图片描述:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="text">
-     </div>-->
-     <div class="form-group">
-         <label class="" for="date">图片上传日期:&nbsp;</label>
-         <input type="datetime-local" name="date">
-     </div>
-     <div class="form-group">
-         <label class="" for="pic">图片</label>
-         <input class="dropify" name="img" type="file">
-     </div>
-     <button class="btn btn-success">提交</button>
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<div class="panel-title">添加新的幻灯片</div>
+	</div>
+	<div class="panel-body">
+        <form action="{:U('Slide/slide_add')}" method="post" class="" enctype="multipart/form-data">  
+            <div class="form-group">
+                <label class="" for="picname">图片名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-group">
+                <label class="" for="date">图片上传日期:&nbsp;</label>
+                <input type="datetime-local" name="date">
+            </div>
+            <div class="form-group">
+                <label class="" for="pic">图片</label>
+                <input class="dropify" name="img" type="file">
+            </div>
+            <button class="btn btn-success">提交</button>
 
-      
- </form>
+            
+        </form>
+    </div>
+</div>
 
 <link rel="stylesheet" href="__PUBLIC__/css/admin/dropify.min.css"> 
 <include file='Public:footer' />  

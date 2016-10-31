@@ -8,7 +8,9 @@ class IndexController extends Controller {
     public function index(){ 
 
        $slide = M('Slide');
+       $news = M('News');
 
+       $news_list=$news->where('news_position="'I('first').'"')select();
        $slide_list=$slide->select();
     //    $this->display();
        $cache_a= S('site_name');
@@ -18,6 +20,7 @@ class IndexController extends Controller {
          $cache_a=S('site_name',$system_info);
        }
        
+       $this->assgin('news_list',$news_list)
        $this->assign('slide_list',$slide_list);
        $this->assign('title','首页 - '.$cache_a['site_name']);
        $this->display();
