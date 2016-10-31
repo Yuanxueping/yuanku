@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title><?php echo ($title); ?>  后台管理</title>
@@ -117,8 +117,7 @@
     </div>
   </div>
 </nav> 
-
-<aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
+ <aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
   <ul class="nav metismenu">
     <li class="profile-sidebar-container">
       <div class="profile-sidebar text-center">
@@ -377,38 +376,54 @@
        <div class="row">
         <div class="col-md-12">
           <div class="content-box">
-             <div class="content">
-<!-- ssw用户反馈信息详情页面 -->
-<link rel="stylesheet" href="/yuanku/Public/css/admin/feedback.css"> 
-<!-- <?php if(is_array($fb_info)): $i = 0; $__LIST__ = $fb_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$fb_i): $mod = ($i % 2 );++$i;?>-->
-	<div class="row">
-		<div class="col-lg-12 col-md-6">
-			<div class="content-box">
-				<div class="head clearfix">
-					<div class="btn-group pull-right m_t_10">
-						<button onclick="location.href='<?php echo U('Client/feedback_list');?>'" class="btn btn-success raise waves-effect"><i class="zmdi zmdi-mail-reply"></i></button>
-						<button onclick="location.href='<?php echo U('Client/feedback_del',array('fb_id'=>$fb_i[fb_id]));?>'" class="btn btn-danger raise waves-effect"><i class="zmdi zmdi-delete"></i></button>
-					</div>
-					<h4 class="content-title text-color pull-left">
-						第<?php echo ($fb_i["fb_id"]); ?>条反馈信息
-					</h4>
-				</div>
-				<div class="content">
-					<div class="text-center m-b-40">
-						<h1 class="m-t-5"><?php echo ($fb_i["fb_theme"]); ?></h1>
-						<small class="text-muted"><i class="zmdi zmdi-time f-s-14 m-r-5"></i><?php echo ($fb_i["fb_time"]); ?></small>
-						<span class="text-muted p_l_20"><?php echo ($fb_i["fb_name"]); ?></span>
-						<span class="text-muted p_l_20"><?php echo ($fb_i["fb_email"]); ?></span>
-					</div>
-					<div class="f-s-16">
-						<p class="t_i_30"><?php echo ($fb_i["fb_msg"]); ?></p>
-					</div>
-					<hr>
-				</div>
-			</div>
-		</div>
+             <div class="content"> 
+<link rel="stylesheet" href="/yuanku/Public/css/admin/news.css">
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <span>轮播图列表</span>
+        <a href="<?php echo U('Slide/slide_add');?>" class="btn btn-success btn-sm white pull-right">添加新的轮播图</a> 
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>ID</th>
+                <th>名称</th>
+                <th>图片</th> 
+                <th>日期</th>
+                <th class="text-center">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php if(is_array($slide_list)): $k = 0; $__LIST__ = $slide_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$slide_id): $mod = ($k % 2 );++$k;?><tr>
+                    <td><?php echo ($k); ?></td>
+                    <td><?php echo ($slide_id['nid']); ?></td> 
+                    <td><?php echo ($slide_id["name"]); ?></td>                 
+                    <td><?php echo ($slide_id["img"]); ?></td>
+                    <td><?php echo (date("Y-m-d H:i:s",$slide_id["date"])); ?></td>
+                    <td class="text-center">
+						<div class="btn-group">
+							<!--<a class="btn btn-success btn-xs" href="" target="_blank"><span class="glyphicon glyphicon-search"></span></a>-->
+							<button onclick="location.href='<?php echo U('Slide/slide_edit',array('id'=>$slide_id['nid']));?>'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+							<button onclick="location.href='<?php echo U('Slide/slide_delete',array('id'=>$slide_id['nid']));?>'" type="button"  class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+							
+						</div>
+					</td>
+                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+        </tbody>
+    </table>
+</div>
+ 
+     
+     
+<div class="btn-toolbar text-center" role="toolbar">
+	<div class="btn-group">
+		<?php echo ($page_html); ?>
 	</div>
-<!--<?php endforeach; endif; else: echo "" ;endif; ?> -->
+</div>
+<link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css"> 
 
  </div>
           </div>
@@ -639,4 +654,9 @@
   </script>
 
 
-<div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html>
+<div class="flot-tooltip" style="position: absolute; left: 880px; top: 523px; display: none;"></div></div></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical body-scroll" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 184px; max-height: 527px; top: 48px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></body></html>  
+<script src="/yuanku/Public/js/dropify.min.js"></script>
+
+<script>
+    $('.dropify').dropify();
+</script>

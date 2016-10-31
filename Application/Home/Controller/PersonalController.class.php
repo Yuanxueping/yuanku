@@ -181,10 +181,16 @@ class PersonalController extends Controller {
 							 -> limit($start_index,$page_count)
 							 // -> order('n.id desc')
 							 -> where('uid='.$_SESSION['user']['id']) -> select();
+
+						$news_num = count($news_list);
 						$this -> assign('news_list', $news_list);
 						$this -> assign('page_html', $page_html);
-		
-    	$this->display('Index/published_article');
+		if ($news_num != 0) {
+			$this->display('Index/published_article');
+		}else{
+			$this -> success("您还没有发布文章，请前往编写页面！",__MODULE__.'/Personal/write_article');
+		}
+    	
 	}
 
 	//编辑修改已发布的文章

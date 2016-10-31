@@ -118,7 +118,7 @@
   </div>
 </nav> 
 
-<aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
+ <aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
   <ul class="nav metismenu">
     <li class="profile-sidebar-container">
       <div class="profile-sidebar text-center">
@@ -377,39 +377,55 @@
        <div class="row">
         <div class="col-md-12">
           <div class="content-box">
-             <div class="content">
-<!-- ssw用户反馈信息详情页面 -->
-<link rel="stylesheet" href="/yuanku/Public/css/admin/feedback.css"> 
-<!-- <?php if(is_array($fb_info)): $i = 0; $__LIST__ = $fb_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$fb_i): $mod = ($i % 2 );++$i;?>-->
-	<div class="row">
-		<div class="col-lg-12 col-md-6">
-			<div class="content-box">
-				<div class="head clearfix">
-					<div class="btn-group pull-right m_t_10">
-						<button onclick="location.href='<?php echo U('Client/feedback_list');?>'" class="btn btn-success raise waves-effect"><i class="zmdi zmdi-mail-reply"></i></button>
-						<button onclick="location.href='<?php echo U('Client/feedback_del',array('fb_id'=>$fb_i[fb_id]));?>'" class="btn btn-danger raise waves-effect"><i class="zmdi zmdi-delete"></i></button>
-					</div>
-					<h4 class="content-title text-color pull-left">
-						第<?php echo ($fb_i["fb_id"]); ?>条反馈信息
-					</h4>
-				</div>
-				<div class="content">
-					<div class="text-center m-b-40">
-						<h1 class="m-t-5"><?php echo ($fb_i["fb_theme"]); ?></h1>
-						<small class="text-muted"><i class="zmdi zmdi-time f-s-14 m-r-5"></i><?php echo ($fb_i["fb_time"]); ?></small>
-						<span class="text-muted p_l_20"><?php echo ($fb_i["fb_name"]); ?></span>
-						<span class="text-muted p_l_20"><?php echo ($fb_i["fb_email"]); ?></span>
-					</div>
-					<div class="f-s-16">
-						<p class="t_i_30"><?php echo ($fb_i["fb_msg"]); ?></p>
-					</div>
-					<hr>
-				</div>
-			</div>
-		</div>
-	</div>
-<!--<?php endforeach; endif; else: echo "" ;endif; ?> -->
+             <div class="content"> 
 
+ <h4>
+   管理员列表
+   <button class="btn btn-success " onclick="location.href='<?php echo U('System/user_add');?>'">添加管理员</button>
+ </h4>
+ <div class="table-responsive alt-table">
+   <table class="table table-hover table-bordered">
+     <thead>
+       <tr>
+         <th class="table-check">#</th>
+         <th>管理员姓名</th>
+         <th width="220">密码</th>
+
+         <th>最近登录</th>
+         <th class="text-center">操作</th>
+       </tr>
+     </thead>
+     <tbody> 
+                    <?php if(is_array($user_list)): $i = 0; $__LIST__ = $user_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user_i): $mod = ($i % 2 );++$i;?><tr>
+                            <td class="table-check">
+                               <?php echo ($user_i["id"]); ?>
+                            </td>
+                            <td>
+                               <?php echo ($user_i["user_name"]); ?>
+                               <br>
+                            </td>
+                             <td class="pwd_box " pwd="<?php echo ($user_i["user_pwd"]); ?>"  id_val="<?php echo ($user_i["id"]); ?>">
+                               <?php echo ($user_i["user_pwd"]); ?>
+                               <br>
+                            </td>
+                            
+                            <td class="table-date"> <?php echo (date("Y-m-d H:i:s",$user_i["create_time"])); ?> <i class="zmdi zmdi-time"></i></td>
+                            <td class="text-center">
+                               <div class="btn-group">
+                                <button onclick="location.href='<?php echo U('System/user_edit',array('id'=>$user_i[id]));?>'" type="button" class="btn btn-success waves-effect"><i class="zmdi zmdi-edit"></i></button>
+                                <button onclick="location.href='<?php echo U('System/user_del',array('id'=>$user_i[id]));?>'" type="button" class="btn btn-danger waves-effect"><i class="zmdi zmdi-delete"></i></button>
+                              </div>
+                            </td>
+                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                        
+                    </tbody>
+                </table>
+            </div>
+<script>
+  var ajax_url='<?php echo U("System/ajax_set_pwd");?>';
+</script>
+      <script src="/yuanku/Public/js/admin/manager_ajax.js"> </script>
+ 
  </div>
           </div>
         </div>

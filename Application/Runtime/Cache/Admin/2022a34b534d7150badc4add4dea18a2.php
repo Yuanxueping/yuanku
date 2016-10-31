@@ -117,7 +117,6 @@
     </div>
   </div>
 </nav> 
-
 <aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
   <ul class="nav metismenu">
     <li class="profile-sidebar-container">
@@ -158,8 +157,9 @@
       <a href="#"><i class="zmdi zmdi-view-compact"></i>首页管理<span class="zmdi arrow"></span></a>
       <ul class="nav nav-inside collapse" aria-expanded="false">
         <li class="inside-title">首页管理</li>
-        <li><a href="<?php echo U('index/slide_manage');?>">幻灯片管理</a></li>
-        <li><a href="/land/l1/index_r.html">首页新闻管理</a></li>
+        <!--<?php echo U('index/slide_manage');?>-->
+        <li><a href="<?php echo U('Slide/slide_manage');?>">幻灯片管理</a></li>
+        <li><a href="<?php echo U('Index/news_manage');?>">首页新闻管理</a></li>
       </ul>
     </li>
     <li <?php if($controller_name == 'Client'): ?>class="active"<?php endif; ?> >
@@ -377,6 +377,7 @@
         <div class="col-md-12">
           <div class="content-box">
              <div class="content"> 
+
 <!-- ssw用户反馈列表 -->
 <link rel="stylesheet" href="/yuanku/Public/css/admin/feedback.css"> 
 <h4>咨询&反馈列表</h4>
@@ -388,16 +389,18 @@
         <th class="table-check">#</th>
         <th>反馈用户</th>
         <th>反馈邮箱</th>
+        <th>反馈主题</th>
         <th>反馈内容</th>
         <th class="text-center">反馈时间</th>
         <th class="text-center">操作</th>
       </tr>
     </thead>
     <tbody> 
-      <?php if(is_array($fb_list)): $i = 0; $__LIST__ = $fb_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$fb_i): $mod = ($i % 2 );++$i;?><tr>
+      <?php if(is_array($fb_list)): $k = 0; $__LIST__ = $fb_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$fb_i): $mod = ($k % 2 );++$k;?><tr>
           <td class="table-check"><?php echo ($fb_i["fb_id"]); ?></td>
           <td><?php echo ($fb_i["fb_name"]); ?></td>
           <td><?php echo ($fb_i["fb_email"]); ?></td>
+          <td><?php echo ($fb_i["fb_theme"]); ?></td>
           <td><?php echo ($fb_i["fb_msg"]); ?></td>
           <td class="table-date"><?php echo ($fb_i["fb_time"]); ?> <i class="zmdi zmdi-time"></i></td>
           <td class="text-center">
@@ -411,7 +414,13 @@
     </tbody>
   </table>
 </div>
-<script src="/yuanku/Public/js/admin/manager_ajax.js"> </script>
+
+<div class="btn-toolbar text-center" role="toolbar">
+  <div class="btn-group text-center">
+    <?php echo ($page_html); ?>
+  </div>
+</div>
+
 
  </div>
           </div>

@@ -147,23 +147,21 @@ class IndexController extends Controller {
     	
     }
     
-	public function news_detail()
-    {
-    	$id = I('id');
-		
-    	$news = M('News');
-		
-               
-		$news_detail = $news -> alias('n') -> field('n.id as id,title,name,sort_name,img,date') -> join('author') -> join('news_sort') -> where('n.id='.$id.' AND author.id=author_id AND sort_ename=news_sort.e_name') -> select();
-		
-		$this -> assign('news_detail',$news_detail);
-    	
-       $cache_a= S('site_name');
-       $this->assign('title','新闻详情 - '.$cache_a['site_name']);
+  	public function news_detail(){
+      	$id = I('id');
+  		
+      	$news = M('News');
+  	            
+    		$news_detail = $news -> alias('n') -> field('n.id as id,title,name,sort_name,img,date') -> join('author') -> join('news_sort') -> where('n.id='.$id.' AND author.id=author_id AND sort_ename=news_sort.e_name') -> select();
+    		
+    		$this -> assign('news_detail',$news_detail);
+        	
+           $cache_a= S('site_name');
+           $this->assign('title','新闻详情 - '.$cache_a['site_name']);
 
-    	// do it
-       $this->display();
-    	
+        	// do it
+           $this->display();
+      	
     }
     //删除订阅的文章
     public function take_del($value='')
@@ -230,8 +228,13 @@ class IndexController extends Controller {
 
          $this->assign('title','查看订阅的文章 - '.$cache_a['site_name']);
         // do it
-         $this->display();
-        
+         
+         if ($user_total_num != 0) {
+          $this->display();
+         }else{
+          $this -> success("您还没有订阅文章，请前往新闻页面！",__MODULE__.'/Index/news');
+        }
+            
     } 
 
     //浏览足迹
@@ -258,7 +261,11 @@ class IndexController extends Controller {
 
          $this->assign('title','浏览足迹 - '.$cache_a['site_name']);
         // do it
-         $this->display();
+         if ($user_total_num != 0) {
+          $this->display();
+         }else{
+          $this -> success("您还没有浏览记录，请前往新闻页面！",__MODULE__.'/Index/news');
+        }
     }
 
     //喜欢的文章
@@ -285,7 +292,11 @@ class IndexController extends Controller {
 
          $this->assign('title','喜欢的文章 - '.$cache_a['site_name']);
         // do it
-         $this->display();
+         if ($user_total_num != 0) {
+          $this->display();
+         }else{
+          $this -> success("您还没有收藏喜欢的文章，请前往新闻页面！",__MODULE__.'/Index/news');
+        }
     }
     //显示头像
     public function showLogo(){
