@@ -6,10 +6,10 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+	 <link rel="stylesheet" href="/clone/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/clone/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/clone/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/clone/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
 	  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
@@ -24,7 +24,7 @@
 
 
 
-<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/news_list.css"/>
+<link rel="stylesheet" type="text/css" href="/clone/yuanku/Public/css/home/news_list.css"/>
   </head>
 <body>
 <!-- <div class="container-fluid"> -->
@@ -39,7 +39,7 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="<?php echo U('Index/index');?>">
-		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
+		      	<img class="logo" src="/clone/yuanku/Public/img/logoko2.png" />
 		      </a>
 		    </div>		
 		    
@@ -49,21 +49,21 @@
 				        
 				        <li><a href="<?php echo U('Index/news');?>">推荐</a></li> 
 				        <li><a href="<?php echo U('Nba/index');?>">篮球</a></li>
-				        <!-- <li><a href="/yuanku/index.php/Home/Index/news">足球</a></li> -->
+				        <!-- <li><a href="/clone/yuanku/index.php/Home/Index/news">足球</a></li> -->
 				        
 				        <li><a href="<?php echo U('Index/contact_us');?>">联系我们</a></li>
 
 				        <li><a href="<?php echo U('Index/about_us');?>">关于我们</a></li>  
 				        <li>
 				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
+				        	<?php if(isset($_SESSION['username'])) {echo '/clone/yuanku/index.php/Home/Personal/index';} else{ echo '/clone/yuanku/index.php/Home/Index/login'; } ?>
 				        ">
 				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
 				        </a>
 				        </li>
 				        <li>
 				        	<a href="
-				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
+				        		<?php if(isset($_SESSION['username'])) {echo '/clone/yuanku/index.php/Home/Personal/logout';} else{ echo '/clone/yuanku/index.php/Home/Index/register'; } ?>
 				        	">
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
@@ -91,23 +91,24 @@
 	<div class="">
 		<!--增加-->
 		<?php if(is_array($news_list)): $i = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_i): $mod = ($i % 2 );++$i;?><div class="container">					
-				<img src="/yuanku/Public/<?php echo ($news_i["img"]); ?>" class="news_img"/>
+				<img src="/clone/yuanku/Public/<?php echo ($news_i["img"]); ?>" class="news_img"/>
 				<div class="wenzhang">
 					<p>						
 						<a href="<?php echo U('Index/news_detail',array(id=>$news_i[id]));?>" class="biaoti"><?php echo ($news_i["title"]); ?></a>
 					</p>
 					<p>
 						<a href="" class="time"><?php echo (date('Y年m月d日',$news_i['date'])); ?></a>
-						<i>by:</i>
-						<span><?php echo ($news_i['name']); ?></span>
-						<i>in:</i> 
+						<i>作者:</i>
+						<span class="author"><?php echo ($news_i['name']); ?></span>
+						<i>分类:</i> 
 						<a href="" class="name"><?php echo ($news_i['sort_name']); ?></a> 
-						<i>note:</i> 
-						<a href="" class="comments">0 COMMENTS</a>
+						<i>评论:</i> 
+						<a href="" class="comments">0 条</a>
 					</p>
-					<p><?php echo htmlspecialchars_decode($news_i['content']) ?>
-						<a href="" class="more"> read more...</a>
-					</p>
+					<div class="news_content">
+						<?php echo subtext(htmlspecialchars_decode($news_i['content']),200) ?>
+						<a href="" class="more"> 更多</a>
+					</div>
 				</div>					
 			</div><?php endforeach; endif; else: echo "" ;endif; ?>
 	</div>					
@@ -117,7 +118,7 @@
 		</div>	
 	</div>			
 </div>
-		<script src="/yuanku/Public/js/news_list.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/clone/yuanku/Public/js/news_list.js" type="text/javascript" charset="utf-8"></script>
 
 
 
@@ -137,16 +138,16 @@
 						</div>					
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><a href="/yuanku/index.php/Home/Index/about_us"><h4>最新动态</h4></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
+								<li><a href="/clone/yuanku/index.php/Home/Index/about_us"><h4>最新动态</h4></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/clone/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/clone/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/clone/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
 					
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><a href="/yuanku/index.php/Home/Index/about_us"><h4>关于我们</h4></a></li><br/>
+								<li><a href="/clone/yuanku/index.php/Home/Index/about_us"><h4>关于我们</h4></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;&nbsp;<span>技术中心</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;&nbsp;<span>产品特色</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;<span>结算流程</span></a></li><br/>
@@ -155,7 +156,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><a href="/yuanku/index.php/Home/Index/contact_us"><h4>联系我们</h4></a></li></br>
+								<li><a href="/clone/yuanku/index.php/Home/Index/contact_us"><h4>联系我们</h4></a></li></br>
 								<li><a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;<span>511186470@qq.com</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;<span>0201-6666666</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-map-marker"aria-hidden="true"></span>&nbsp;&nbsp;<span>美国洛杉矶</span></a></li><br/>

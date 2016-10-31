@@ -6,10 +6,10 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+	 <link rel="stylesheet" href="/clone/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/clone/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/clone/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/clone/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
 	  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
@@ -24,8 +24,8 @@
 
 <!-- 这里写自己页面的样式 -->
 <!--HOME css-->
-<script src="/yuanku/Public/js/headerchange.js"></script>
-<link rel="stylesheet" href="/yuanku/Public/css/home/home.css" />
+<script src="/clone/yuanku/Public/js/headerchange.js"></script>
+<link rel="stylesheet" href="/clone/yuanku/Public/css/home/home.css" />
 <!--0-->
   </head>
 <body>
@@ -41,7 +41,7 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="<?php echo U('Index/index');?>">
-		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
+		      	<img class="logo" src="/clone/yuanku/Public/img/logoko2.png" />
 		      </a>
 		    </div>		
 		    
@@ -51,21 +51,21 @@
 				        
 				        <li><a href="<?php echo U('Index/news');?>">推荐</a></li> 
 				        <li><a href="<?php echo U('Nba/index');?>">篮球</a></li>
-				        <!-- <li><a href="/yuanku/index.php/Home/Index/news">足球</a></li> -->
+				        <!-- <li><a href="/clone/yuanku/index.php/Home/Index/news">足球</a></li> -->
 				        
 				        <li><a href="<?php echo U('Index/contact_us');?>">联系我们</a></li>
 
 				        <li><a href="<?php echo U('Index/about_us');?>">关于我们</a></li>  
 				        <li>
 				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
+				        	<?php if(isset($_SESSION['username'])) {echo '/clone/yuanku/index.php/Home/Personal/index';} else{ echo '/clone/yuanku/index.php/Home/Index/login'; } ?>
 				        ">
 				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
 				        </a>
 				        </li>
 				        <li>
 				        	<a href="
-				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
+				        		<?php if(isset($_SESSION['username'])) {echo '/clone/yuanku/index.php/Home/Personal/logout';} else{ echo '/clone/yuanku/index.php/Home/Index/register'; } ?>
 				        	">
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
@@ -92,7 +92,7 @@
 				<?php else: ?>
 						<li data-target="#carousel-example-captions" data-slide-to="<?php echo ($k-1); ?>" class=""></li>
 						<!--<div class="item">--><?php endif; ?>
-				 	<!--<img src="/yuanku/Public/<?php echo ($slide_id["img"]); ?>"/>
+				 	<!--<img src="/clone/yuanku/Public/<?php echo ($slide_id["img"]); ?>"/>
 					 </div>--><?php endforeach; endif; else: echo "" ;endif; ?>
 	        
 	      </ol>
@@ -102,7 +102,7 @@
 				<?php if(is_array($slide_list)): $k = 0; $__LIST__ = $slide_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$slide_id): $mod = ($k % 2 );++$k; if($k == 1): ?><div class="item active">
 					<?php else: ?>
 							<div class="item"><?php endif; ?>
-						<img src="/yuanku/Public/<?php echo ($slide_id["img"]); ?>"/>
+						<img src="/clone/yuanku/Public/<?php echo ($slide_id["img"]); ?>"/>
 					</div><?php endforeach; endif; else: echo "" ;endif; ?>
 			</div>
 			
@@ -181,7 +181,7 @@
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<a href="#" class="cbp-caption cbp-lightbox" data-title="Color  by M.A Anderson">
 					<div class="cbp-caption-defaultWrap">
-						<img src="/yuanku/Public/img/highstand homepage/project1_1.jpg" class="img-responsive" alt="pro" typeof="Image" />
+						<img src="/clone/yuanku/Public/img/highstand homepage/project1_1.jpg" class="img-responsive" alt="pro" typeof="Image" />
 					</div>
 					<div class="cbp-caption-activeWrap">
 						<div class="cbp-l-caption-alignLeft">
@@ -198,7 +198,7 @@
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<a href="#" class="cbp-caption cbp-lightbox" data-title="Fledglings  by M.A Anderson">
 							<div class="cbp-caption-defaultWrap">
-								<img src="/yuanku/Public/img/highstand homepage/04-big.jpg" class="img-responsive" alt="" typeof="Image" />
+								<img src="/clone/yuanku/Public/img/highstand homepage/04-big.jpg" class="img-responsive" alt="" typeof="Image" />
 							</div>
 							<div class="cbp-caption-activeWrap">
 								<div class="cbp-l-caption-alignLeft">
@@ -213,7 +213,7 @@
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<a href="#" class="cbp-caption cbp-lightbox" data-title="Packages  by M.A Anderson">
 							<div class="cbp-caption-defaultWrap">
-								<img src="/yuanku/Public/img/highstand homepage/08-big.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
+								<img src="/clone/yuanku/Public/img/highstand homepage/08-big.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
 							</div>
 							<div class="cbp-caption-activeWrap">
 								<div class="cbp-l-caption-alignLeft">
@@ -231,7 +231,7 @@
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
 							<div class="cbp-caption-defaultWrap">
-								<img src="/yuanku/Public/img/highstand homepage/07-big.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
+								<img src="/clone/yuanku/Public/img/highstand homepage/07-big.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
 							</div>
 							<div class="cbp-caption-activeWrap">
 								<div class="cbp-l-caption-alignLeft">
@@ -246,7 +246,7 @@
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
 							<div class="cbp-caption-defaultWrap">
-								<img src="/yuanku/Public/img/highstand homepage/05-big.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
+								<img src="/clone/yuanku/Public/img/highstand homepage/05-big.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
 							</div>
 							<div class="cbp-caption-activeWrap">
 								<div class="cbp-l-caption-alignLeft">
@@ -268,7 +268,7 @@
 			<div class="col-md-3 col-sm-6 col-xs-6">
 				<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
 					<div class="cbp-caption-defaultWrap">
-						<img src="/yuanku/Public/img/highstand homepage/161689529.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
+						<img src="/clone/yuanku/Public/img/highstand homepage/161689529.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
 					</div>
 					<div class="cbp-caption-activeWrap">
 						<div class="cbp-l-caption-alignLeft">
@@ -283,7 +283,7 @@
 			<div class="col-md-3 col-sm-6 col-xs-6">
 				<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
 					<div class="cbp-caption-defaultWrap">
-						<img src="/yuanku/Public/img/highstand homepage/14368986.jpg" class="img-responsive" alt="" typeof="Image" />
+						<img src="/clone/yuanku/Public/img/highstand homepage/14368986.jpg" class="img-responsive" alt="" typeof="Image" />
 					</div>
 					<div class="cbp-caption-activeWrap">
 						<div class="cbp-l-caption-alignLeft">
@@ -298,7 +298,7 @@
 			<div class="col-md-3 col-sm-6 col-xs-6">
 				<a href="#" class="cbp-caption cbp-lightbox" data-title="Civil War - Trailer 1  by M.A Anderson">
 					<div class="cbp-caption-defaultWrap">
-						<img src="/yuanku/Public/img/highstand homepage/FkTybqcX-Yo.jpg" class="img-responsive" alt="" typeof="Image" />
+						<img src="/clone/yuanku/Public/img/highstand homepage/FkTybqcX-Yo.jpg" class="img-responsive" alt="" typeof="Image" />
 					</div>
 					<div class="cbp-caption-activeWrap">
 						<div class="cbp-l-caption-alignLeft">
@@ -313,7 +313,7 @@
 			<div class="col-md-3 col-sm-6 col-xs-6">
 				<a href="#" class="cbp-caption cbp-lightbox" data-title="Civil War - Trailer 2  by M.A Anderson">
 					<div class="cbp-caption-defaultWrap">
-						<img src="/yuanku/Public/img/highstand homepage/dKrVegVI0Us.jpg" class="img-responsive" alt="" typeof="Image" />
+						<img src="/clone/yuanku/Public/img/highstand homepage/dKrVegVI0Us.jpg" class="img-responsive" alt="" typeof="Image" />
 					</div>
 					<div class="cbp-caption-activeWrap">
 						<div class="cbp-l-caption-alignLeft">
@@ -377,9 +377,21 @@
 		<div class="one_third_less">
 			<h3 class="white caps">一个专业的网站 <br/><b> 有团队 <br/>有模式<br/>有成果</b><br/> 还有些大新闻</h3>
 		</div>
-		<!-- end item -->
+		
+		<?php if(is_array($secondnews_list)): $kk = 0; $__LIST__ = $secondnews_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_i): $mod = ($kk % 2 );++$kk; if($kk==3): ?><div class="clearfix margin_bottom2"></div><?php endif; ?>
 
-		<div class="one_third_less">
+			<?php if($kk==2 || $kk==5): ?><div class="one_third_less last">
+			<?php else: ?>
+				<div class="one_third_less"><?php endif; ?>
+			<div class="box">
+				<h5 class="caps"><?php echo ($news_i['title']); ?></h5>
+				<div class="bgline"></div>
+				<p>此处是一段非常长的文段，然而该文段在网页浏览过程中没有任何实际意义，你可以无视该文段继续浏览你所需要浏览的内容。</p>
+				
+				<a href="<?php echo U('Index/news_detail',array(id=>$news_i[id]));?>" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
+			</div>
+</div><?php endforeach; endif; else: echo "" ;endif; ?>
+		<!--<div class="one_third_less">
 			<div class="box">
 				<h5 class="caps">这是一长串英文单词 <br/>这是简短描述</h5>
 				<div class="bgline"></div>
@@ -387,7 +399,7 @@
 				<a href="#" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
 			</div>
 		</div>
-		<!-- end item -->
+		
 
 		<div class="one_third_less last">
 			<div class="box">
@@ -397,7 +409,7 @@
 				<a href="#" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
 			</div>
 		</div>
-		<!-- end item -->
+		
 
 		<div class="clearfix margin_bottom2"></div>
 
@@ -409,7 +421,7 @@
 				<a href="#" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
 			</div>
 		</div>
-		<!-- end item -->
+		
 
 		<div class="one_third_less">
 			<div class="box">
@@ -419,8 +431,7 @@
 				<a href="#" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
 			</div>
 		</div>
-		<!-- end item -->
-
+		
 		<div class="one_third_less last">
 			<div class="box">
 				<h5 class="caps">这是一长串英文单词 <br/>这是简短描述</h5>
@@ -428,9 +439,8 @@
 				<p>此处是一段非常长的文段，然而该文段在网页浏览过程中没有任何实际意义，你可以无视该文段继续浏览你所需要浏览的内容。</p>
 				<a href="#" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
 			</div>
-		</div>
-		<!-- end item -->
-
+		</div>-->
+		
 	</div>
 
 </div>
@@ -447,7 +457,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img6.jpg?itok=V9ZP4PYd" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img6.jpg?itok=V9ZP4PYd" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -456,7 +466,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img13.jpg?itok=6z8gQRlE" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img13.jpg?itok=6z8gQRlE" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -465,7 +475,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img11.jpg?itok=nOPiPZvM" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img11.jpg?itok=nOPiPZvM" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -474,7 +484,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img1.jpg?itok=e3G3NuHa" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img1.jpg?itok=e3G3NuHa" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -483,7 +493,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img36.jpg?itok=7wK8RVbo" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img36.jpg?itok=7wK8RVbo" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -492,7 +502,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img10.jpg?itok=Ok_n3rrr" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img10.jpg?itok=Ok_n3rrr" class="rimg" alt="" />
 								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -501,7 +511,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img7.jpg?itok=kTjklOP7" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img7.jpg?itok=kTjklOP7" class="rimg" alt="" />
 								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -510,7 +520,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img31.jpg?itok=onrLxT__" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img31.jpg?itok=onrLxT__" class="rimg" alt="" />
 								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -519,7 +529,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img34.jpg?itok=NWEyjx_t" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img34.jpg?itok=NWEyjx_t" class="rimg" alt="" />
 								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -528,7 +538,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img29_0.jpg?itok=tMhYS7Hw" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img29_0.jpg?itok=tMhYS7Hw" class="rimg" alt="" />
 								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -537,7 +547,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img9.jpg?itok=LtbGjdeX" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img9.jpg?itok=LtbGjdeX" class="rimg" alt="" />
 								<div class="content">Nica Heriberty<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -546,7 +556,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img28.jpg?itok=CmRSo73C" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img28.jpg?itok=CmRSo73C" class="rimg" alt="" />
 								<div class="content">Alan Joaquin<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -556,7 +566,7 @@
 				<!--<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img6.jpg?itok=V9ZP4PYd" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img6.jpg?itok=V9ZP4PYd" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -565,7 +575,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img13.jpg?itok=6z8gQRlE" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img13.jpg?itok=6z8gQRlE" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -574,7 +584,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img11.jpg?itok=nOPiPZvM" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img11.jpg?itok=nOPiPZvM" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -583,7 +593,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img1.jpg?itok=e3G3NuHa" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img1.jpg?itok=e3G3NuHa" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -592,7 +602,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img36.jpg?itok=7wK8RVbo" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img36.jpg?itok=7wK8RVbo" class="rimg" alt="" />
 								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -601,7 +611,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img10.jpg?itok=Ok_n3rrr" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img10.jpg?itok=Ok_n3rrr" class="rimg" alt="" />
 								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -610,7 +620,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img7.jpg?itok=kTjklOP7" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img7.jpg?itok=kTjklOP7" class="rimg" alt="" />
 								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -619,7 +629,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img31.jpg?itok=onrLxT__" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img31.jpg?itok=onrLxT__" class="rimg" alt="" />
 								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -628,7 +638,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img34.jpg?itok=NWEyjx_t" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img34.jpg?itok=NWEyjx_t" class="rimg" alt="" />
 								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -637,7 +647,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img29_0.jpg?itok=tMhYS7Hw" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img29_0.jpg?itok=tMhYS7Hw" class="rimg" alt="" />
 								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -646,7 +656,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img9.jpg?itok=LtbGjdeX" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img9.jpg?itok=LtbGjdeX" class="rimg" alt="" />
 								<div class="content">Nica Heriberty<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -655,7 +665,7 @@
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img28.jpg?itok=CmRSo73C" class="rimg" alt="" />
+							<a href="http://google.com"><img src="/clone/yuanku/Public/img/highstand homepage/people-img28.jpg?itok=CmRSo73C" class="rimg" alt="" />
 								<div class="content">Alan Joaquin<br /> <b>- Developer-</b></div>
 							</a>
 						</div>
@@ -779,7 +789,7 @@
 			<div class="one_third_less">
 				<a href="/many-desktop-packages-0">
 					<div class="box01">
-						<img src="/yuanku/Public/img/highstand homepage/site-img225.jpg?itok=oGIxJj2U" width="374" height="200" alt="image" typeof="Image" />
+						<img src="/clone/yuanku/Public/img/highstand homepage/site-img225.jpg?itok=oGIxJj2U" width="374" height="200" alt="image" typeof="Image" />
 
 						<div class="content">
 							<h4>许多桌面软件包</h4>
@@ -791,7 +801,7 @@
 			<div class="one_third_less choose-blog">
 				<a href="/many-desktop-packages">
 					<div class="box01">
-						<img src="/yuanku/Public/img/highstand homepage/site-img224.jpg?itok=418pSrnX" width="374" height="200" alt="image" typeof="Image" />
+						<img src="/clone/yuanku/Public/img/highstand homepage/site-img224.jpg?itok=418pSrnX" width="374" height="200" alt="image" typeof="Image" />
 
 						<div class="content">
 							<h4>许多桌面软件包</h4>
@@ -803,7 +813,7 @@
 			<div class="one_third_less last">
 				<a href="/node/15">
 					<div class="box01">
-						<img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk.jpg?itok=Z0ts4wwD" alt="" typeof="Image" />
+						<img src="/clone/yuanku/Public/img/highstand homepage/2h1BK2H2Quk.jpg?itok=Z0ts4wwD" alt="" typeof="Image" />
 						<div class="content">
 							<h4>方程式1 崩溃 | 震惊</h4>
 							<b>May 12, 2016</b>
@@ -815,7 +825,7 @@
 			<div class="two_third_less">
 				<a href="/letraset-sheets-containing-lorem">
 					<div class="box01">
-						<img src="/yuanku/Public/img/highstand homepage/works-img31-thumb.jpg?itok=xln0boD0" width="374" height="200" alt="Blog" typeof="Image" />
+						<img src="/clone/yuanku/Public/img/highstand homepage/works-img31-thumb.jpg?itok=xln0boD0" width="374" height="200" alt="Blog" typeof="Image" />
 
 						<div class="content">
 							<h4>激光印字传输系统</h4>
@@ -827,7 +837,7 @@
 			<div class="one_third_less">
 				<a href="/node/13">
 					<div class="box01">
-						<img src="/yuanku/Public/img/highstand homepage/eafjQDr22kU.jpg?itok=ZAauvndp" alt="" typeof="Image" />
+						<img src="/clone/yuanku/Public/img/highstand homepage/eafjQDr22kU.jpg?itok=ZAauvndp" alt="" typeof="Image" />
 						<div class="content">
 							<h4>这是一级方程式</h4>
 							<b>May 12, 2016</b>
@@ -861,7 +871,7 @@
 		<div id="tabs" class=" ">
 			<ul>
 				<li class="tabulous_active">
-					<a href="tabs1" onclick="return false;" title=""><i>  <img src="/yuanku/Public/img/highstand homepage/icon_01.png?itok=th8vSvQ_" width="50" height="50" alt="icon" typeof="Image" />
+					<a href="tabs1" onclick="return false;" title=""><i>  <img src="/clone/yuanku/Public/img/highstand homepage/icon_01.png?itok=th8vSvQ_" width="50" height="50" alt="icon" typeof="Image" />
 
 
  </i>
@@ -870,7 +880,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="tabs2" onclick="return false;" title=""><i>  <img src="/yuanku/Public/img/highstand homepage/icon-02.png?itok=3EKbRHkG" width="50" height="50" alt="icon" typeof="Image" />
+					<a href="tabs2" onclick="return false;" title=""><i>  <img src="/clone/yuanku/Public/img/highstand homepage/icon-02.png?itok=3EKbRHkG" width="50" height="50" alt="icon" typeof="Image" />
 
 
  </i>
@@ -879,7 +889,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="tabs3" onclick="return false;" title=""><i>  <img src="/yuanku/Public/img/highstand homepage/icon_03.png?itok=b1KoT5hg" width="50" height="50" alt="icon" typeof="Image" />
+					<a href="tabs3" onclick="return false;" title=""><i>  <img src="/clone/yuanku/Public/img/highstand homepage/icon_03.png?itok=b1KoT5hg" width="50" height="50" alt="icon" typeof="Image" />
 
 
  </i>
@@ -888,7 +898,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="tabs4" onclick="return false;" title=""><i>  <img src="/yuanku/Public/img/highstand homepage/icon_04.png?itok=zCPnN_1O" width="50" height="50" alt="icon" typeof="Image" />
+					<a href="tabs4" onclick="return false;" title=""><i>  <img src="/clone/yuanku/Public/img/highstand homepage/icon_04.png?itok=zCPnN_1O" width="50" height="50" alt="icon" typeof="Image" />
 
 
  </i>
@@ -899,22 +909,22 @@
 
 			</ul>
 			<div id="tabs_container" class="transition ">
-				<div id="tabs1" title=""> <img class="hsta" src="/yuanku/Public/img/highstand homepage/site-image01.jpg" width="585" height="200" alt="content" typeof="Image" />
+				<div id="tabs1" title=""> <img class="hsta" src="/clone/yuanku/Public/img/highstand homepage/site-image01.jpg" width="585" height="200" alt="content" typeof="Image" />
 
 					<h3>研究成果</h3>
 					<p>乱数假文只是虚拟的文字印刷排版一直是行业和# 039；标准虚拟文本自从16世纪，当一个未知的打印机把厨房型和炒做字体样本。它不仅幸存下来的五个世纪，而且进入电子排版，其余基本保持不变。这第一个真正的随机词发生器在互联网乱数假文作为。 </p>
 				</div>
-				<div id="tabs2" title=""> <img class="hsta" src="/yuanku/Public/img/highstand homepage/site-image02.jpg" width="585" height="200" alt="content" typeof="Image" />
+				<div id="tabs2" title=""> <img class="hsta" src="/clone/yuanku/Public/img/highstand homepage/site-image02.jpg" width="585" height="200" alt="content" typeof="Image" />
 
 					<h3>方案制定</h3>
 					<p>乱数假文只是虚拟的文字印刷排版一直是行业和# 039；标准虚拟文本自从16世纪，当一个未知的打印机把厨房型和炒做字体样本。它不仅幸存下来的五个世纪，而且进入电子排版，其余基本保持不变。这第一个真正的随机词发生器在互联网乱数假文作为默认的示范文本，并寻找与# 039；乱数假文和# 039；会发现很多网站仍处于起步阶段。不同的版本已经发展了多年，有时是偶然的，有时是故意的 </p>
 				</div>
-				<div id="tabs3" title=""> <img class="hsta" src="/yuanku/Public/img/highstand homepage/site-image03.jpg" width="585" height="200" alt="content" typeof="Image" />
+				<div id="tabs3" title=""> <img class="hsta" src="/clone/yuanku/Public/img/highstand homepage/site-image03.jpg" width="585" height="200" alt="content" typeof="Image" />
 
 					<h3>定制服务</h3>
 					<p>乱数假文只是虚拟的文字印刷排版一直是行业和# 039；标准虚拟文本自从16世纪，当一个未知的打印机把厨房型和炒做字体样本。它不仅幸存下来的五个世纪，而且进入电子排版，其余基本保持不变。这第一个真正的随机词发生器在互联网乱数假文作为。</p>
 				</div>
-				<div id="tabs4" title=""> <img class="hsta" src="/yuanku/Public/img/highstand homepage/site-image04.jpg" width="585" height="200" alt="content" typeof="Image" />
+				<div id="tabs4" title=""> <img class="hsta" src="/clone/yuanku/Public/img/highstand homepage/site-image04.jpg" width="585" height="200" alt="content" typeof="Image" />
 
 					<h3>数据监测</h3>
 					<p>乱数假文只是虚拟的文字印刷排版一直是行业和# 039；标准虚拟文本自从16世纪，当一个未知的打印机把厨房型和炒做字体样本。它不仅幸存下来的五个世纪，而且进入电子排版，其余基本保持不变。这第一个真正的随机词发生器在互联网乱数假文作为默认的示范文本，并寻找与# 039；乱数假文和# 039；会发现很多网站仍处于起步阶段。不同的版本已经发展了多年，有时是偶然的，有时是故意的</p>
@@ -1015,7 +1025,7 @@
 											<div class "box-none" id="d1"></div>
 											<div class "box-block" id="d2">
 												<div class="item">
-													<div class="climg"><img src="/yuanku/Public/img/highstand homepage/people-img19_0.jpg" width="100" height="100" alt="says" typeof="Image"></div>
+													<div class="climg"><img src="/clone/yuanku/Public/img/highstand homepage/people-img19_0.jpg" width="100" height="100" alt="says" typeof="Image"></div>
 													<p class="bigtfont">"力动网简直棒呆了！我才在这边定制了两个月的方案，他们就免费赠送了我一瓶怡宝，说渴了可以喝，真是太贴心了！"</p>
 													<br>
 													<strong>- Michle Siminson</strong> <em>- google.com</em>
@@ -1026,7 +1036,7 @@
 
 										<div class="owl-item">
 											<div class="item">
-												<div class="climg"><img src="/yuanku/Public/img/highstand homepage/people-img19_0.jpg" width="100" height="100" alt="says" typeof="Image"></div>
+												<div class="climg"><img src="/clone/yuanku/Public/img/highstand homepage/people-img19_0.jpg" width="100" height="100" alt="says" typeof="Image"></div>
 												<p class="bigtfont">"力动网简直棒呆了！我才在这边定制了两个月的方案，他们就免费赠送了我一瓶怡宝，说渴了可以喝，真是太贴心了！"</p>
 													<br>
 												<strong>- Michle Siminson</strong> <em>- google.com</em>
@@ -1035,7 +1045,7 @@
 
 										<div class="owl-item">
 											<div class="item">
-												<div class="climg"><img src="/yuanku/Public/img/highstand homepage/people-img19_1.jpg" width="100" height="100" alt="says" typeof="Image"></div>
+												<div class="climg"><img src="/clone/yuanku/Public/img/highstand homepage/people-img19_1.jpg" width="100" height="100" alt="says" typeof="Image"></div>
 												<p class="bigtfont">"力动网简直棒呆了！我才在这边定制了两个月的方案，他们就免费赠送了我一瓶怡宝，说渴了可以喝，真是太贴心了！"</p>
 													<br>
 												<strong>- Michle Siminson</strong> <em>- google.com</em>
@@ -1044,7 +1054,7 @@
 
 										<div class="owl-item">
 											<div class="item">
-												<div class="climg"><img src="/yuanku/Public/img/highstand homepage/people-img19.jpg" width="100" height="100" alt="says" typeof="Image"></div>
+												<div class="climg"><img src="/clone/yuanku/Public/img/highstand homepage/people-img19.jpg" width="100" height="100" alt="says" typeof="Image"></div>
 												<p class="bigtfont">"力动网简直棒呆了！我才在这边定制了两个月的方案，他们就免费赠送了我一瓶怡宝，说渴了可以喝，真是太贴心了！"</p>
 													<br>
 												<strong>- Michle Siminson</strong> <em>- google.com</em>
@@ -1074,17 +1084,17 @@
 						<h4 class="caps light text-uppercase">合作伙伴</h4>
 						<div class="clearfix margin_bottom3"></div>
 						<ul class="class-one1">
-							<li> <img src="/yuanku/Public/img/highstand homepage/clogo2.png" width="150" height="50" alt="image" typeof="Image"></li>
-							<li> <img src="/yuanku/Public/img/highstand homepage/clogo5_1.png" width="150" height="50" alt="image" typeof="Image"></li>
-							<li> <img src="/yuanku/Public/img/highstand homepage/clogo1_0.png" width="150" height="50" alt="image" typeof="Image"></li>
-							<li> <img src="/yuanku/Public/img/highstand homepage/clogo2.png" width="150" height="50" alt="image" typeof="Image"></li>
-							<li> <img src="/yuanku/Public/img/highstand homepage/clogo3_1.png" width="150" height="50" alt="image" typeof="Image"></li>
-							<li> <img src="/yuanku/Public/img/highstand homepage/clogo3_1.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/clone/yuanku/Public/img/highstand homepage/clogo2.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/clone/yuanku/Public/img/highstand homepage/clogo5_1.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/clone/yuanku/Public/img/highstand homepage/clogo1_0.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/clone/yuanku/Public/img/highstand homepage/clogo2.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/clone/yuanku/Public/img/highstand homepage/clogo3_1.png" width="150" height="50" alt="image" typeof="Image"></li>
+							<li> <img src="/clone/yuanku/Public/img/highstand homepage/clogo3_1.png" width="150" height="50" alt="image" typeof="Image"></li>
 						</ul>
 					</div>
 
 				</div>
-<script src="/yuanku/Public/js/home.js" type="text/javascript" charset="utf-8"></script>
+<script src="/clone/yuanku/Public/js/home.js" type="text/javascript" charset="utf-8"></script>
 
 
 
@@ -1105,16 +1115,16 @@
 						</div>					
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><a href="/yuanku/index.php/Home/Index/about_us"><h4>最新动态</h4></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
+								<li><a href="/clone/yuanku/index.php/Home/Index/about_us"><h4>最新动态</h4></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/clone/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/clone/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/clone/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
 					
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><a href="/yuanku/index.php/Home/Index/about_us"><h4>关于我们</h4></a></li><br/>
+								<li><a href="/clone/yuanku/index.php/Home/Index/about_us"><h4>关于我们</h4></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;&nbsp;<span>技术中心</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;&nbsp;<span>产品特色</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;<span>结算流程</span></a></li><br/>
@@ -1123,7 +1133,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><a href="/yuanku/index.php/Home/Index/contact_us"><h4>联系我们</h4></a></li></br>
+								<li><a href="/clone/yuanku/index.php/Home/Index/contact_us"><h4>联系我们</h4></a></li></br>
 								<li><a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;<span>511186470@qq.com</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;<span>0201-6666666</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-map-marker"aria-hidden="true"></span>&nbsp;&nbsp;<span>美国洛杉矶</span></a></li><br/>

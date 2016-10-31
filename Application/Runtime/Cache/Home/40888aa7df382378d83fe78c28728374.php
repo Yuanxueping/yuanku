@@ -6,10 +6,10 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+	 <link rel="stylesheet" href="/clone/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/clone/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/clone/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/clone/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
 	  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
@@ -23,10 +23,10 @@
 
 
 
-		<link rel="stylesheet" href="/yuanku/Public/css/admin/animate.css"> 
-		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/about.css"/>
-		<script type="text/javascript" src="/yuanku/Public/js/about_us.js"></script>
-		<script type="text/javascript" src="/yuanku/Public/js/wow.min.js"></script>
+		<link rel="stylesheet" href="/clone/yuanku/Public/css/admin/animate.css"> 
+		<link rel="stylesheet" type="text/css" href="/clone/yuanku/Public/css/home/about.css"/>
+		<script type="text/javascript" src="/clone/yuanku/Public/js/about_us.js"></script>
+		<script type="text/javascript" src="/clone/yuanku/Public/js/wow.min.js"></script>
 
   </head>
 <body>
@@ -42,7 +42,7 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="<?php echo U('Index/index');?>">
-		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
+		      	<img class="logo" src="/clone/yuanku/Public/img/logoko2.png" />
 		      </a>
 		    </div>		
 		    
@@ -52,21 +52,21 @@
 				        
 				        <li><a href="<?php echo U('Index/news');?>">推荐</a></li> 
 				        <li><a href="<?php echo U('Nba/index');?>">篮球</a></li>
-				        <!-- <li><a href="/yuanku/index.php/Home/Index/news">足球</a></li> -->
+				        <!-- <li><a href="/clone/yuanku/index.php/Home/Index/news">足球</a></li> -->
 				        
 				        <li><a href="<?php echo U('Index/contact_us');?>">联系我们</a></li>
 
 				        <li><a href="<?php echo U('Index/about_us');?>">关于我们</a></li>  
 				        <li>
 				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
+				        	<?php if(isset($_SESSION['username'])) {echo '/clone/yuanku/index.php/Home/Personal/index';} else{ echo '/clone/yuanku/index.php/Home/Index/login'; } ?>
 				        ">
 				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
 				        </a>
 				        </li>
 				        <li>
 				        	<a href="
-				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
+				        		<?php if(isset($_SESSION['username'])) {echo '/clone/yuanku/index.php/Home/Personal/logout';} else{ echo '/clone/yuanku/index.php/Home/Index/register'; } ?>
 				        	">
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
@@ -88,7 +88,7 @@
 			<div class="row ">
 				
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="banner" style="background-image: url(/yuanku/Public/img/01.jpg);">
+					<div class="banner" style="background-image: url(/clone/yuanku/Public/img/01.jpg);">
 						<div class="container">
 							<div class="title">
 								<h1 class="wow rollIn" data-wow-duration="1s" data-wow-delay="0.2s">关于我们</h1>
@@ -118,20 +118,20 @@
 
 			<div class="row">
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 theme wow swing"  data-wow-duration="2s" data-wow-delay="0.5s">
-						<img src="/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
+						<img src="/clone/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
 						<div class="theme_title">营销主题</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 theme wow swing" data-wow-duration="2s" data-wow-delay="0.5s">
-						<img src="/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
+						<img src="/clone/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
 						<div class="theme_title">营销主题</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 theme wow swing" data-wow-duration="2s" data-wow-delay="0.5s">
-						<img src="/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
+						<img src="/clone/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
 						<div class="theme_title">营销主题</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 theme last wow swing" data-wow-duration="2s" data-wow-delay="0.5s">
 
-						<img src="/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
+						<img src="/clone/yuanku/Public/img/highstand homepage/2016-10-02_160830.png"/>
 						<div class="theme_title">营销主题</div>
 					</div>					
 				</div>
@@ -141,7 +141,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 left_img wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
-					<img src="/yuanku/Public/img/highstand homepage/2016-09-27_214450.png"/>
+					<img src="/clone/yuanku/Public/img/highstand homepage/2016-09-27_214450.png"/>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 green_center">
 					<h2 class="wow flipInX" data-wow-duration="2s" data-wow-delay="0.5s">欢迎来到我们公司</h2>
@@ -192,7 +192,7 @@
 					<div class="col-lg-2 col-md-3 col-sm-3 col-xs-3 people_detail">
 
 	                  	<div class="left">
-	    					<img src="/yuanku/Public/img/highstand homepage/people-img10.jpg" alt="" class="client_img">
+	    					<img src="/clone/yuanku/Public/img/highstand homepage/people-img10.jpg" alt="" class="client_img">
 	    					<h5 class="nocaps">郑主管<br> <span>网易有限公司</span></h5>
 						</div>
 	                  
@@ -215,7 +215,7 @@
 					<div class="col-lg-2 col-md-3 col-sm-3 col-xs-3 people_detail">
 
 	                  	<div class="left">
-	    					<img src="/yuanku/Public/img/highstand homepage/people-img13.jpg" alt="" class="client_img">
+	    					<img src="/clone/yuanku/Public/img/highstand homepage/people-img13.jpg" alt="" class="client_img">
 	    					<h5 class="nocaps">陈经理<br> <span>阿里巴巴有限公司</span></h5>
 						</div>
 	                  
@@ -238,7 +238,7 @@
 					<div class="col-lg-2 col-md-3 col-sm-3 col-xs-3 people_detail">
 
 	                  	<div class="left">
-	    					<img src="/yuanku/Public/img/highstand homepage/people-img11.jpg" alt="" class="client_img">
+	    					<img src="/clone/yuanku/Public/img/highstand homepage/people-img11.jpg" alt="" class="client_img">
 	    					<h5 class="nocaps">李副总<br> <span>腾讯有限公司</span></h5>
 						</div>
 	                  
@@ -274,22 +274,22 @@
 			<div class="row container ">
 
 				<div class="col-lg-2 col-md-2 col-sm-4  partner_logo wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
-					<img src="/yuanku/Public/img/highstand homepage/clogo1_0.png"/>
+					<img src="/clone/yuanku/Public/img/highstand homepage/clogo1_0.png"/>
 				</div>
 				<div class="col-lg-2 col-md-2 col-sm-4  partner_logo wow slideInUp" data-wow-duration="2s" data-wow-delay="0.2s">
-					<img src="/yuanku/Public/img/highstand homepage/clogo2.png"/>
+					<img src="/clone/yuanku/Public/img/highstand homepage/clogo2.png"/>
 				</div>
 				<div class="col-lg-2 col-md-2 col-sm-4  partner_logo wow slideInDown" data-wow-duration="2s" data-wow-delay="0.1s">
-					<img src="/yuanku/Public/img/highstand homepage/clogo3_1.png"/>
+					<img src="/clone/yuanku/Public/img/highstand homepage/clogo3_1.png"/>
 				</div>
 				<div class="col-lg-2 col-md-2 col-sm-4  partner_logo wow slideInDown" data-wow-duration="2s" data-wow-delay="0.1s">
-					<img src="/yuanku/Public/img/highstand homepage/clogo2_0.png"/>
+					<img src="/clone/yuanku/Public/img/highstand homepage/clogo2_0.png"/>
 				</div>
 				<div class="col-lg-2 col-md-2 col-sm-4 partner_logo wow slideInUp" data-wow-duration="2s" data-wow-delay="0.2s">
-					<img src="/yuanku/Public/img/highstand homepage/clogo3_2.png"/>
+					<img src="/clone/yuanku/Public/img/highstand homepage/clogo3_2.png"/>
 				</div>
 				<div class="col-lg-2 col-md-2 col-sm-4  partner_logo wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s">
-					<img src="/yuanku/Public/img/highstand homepage/clogo5_1.png"/>
+					<img src="/clone/yuanku/Public/img/highstand homepage/clogo5_1.png"/>
 				</div>
 
 			</div>
@@ -312,9 +312,9 @@
                             </dl>
                             <dl class="footer-nav blog_post">
                               <dt class="nav-title">Blog Posts</dt>
-                              <dd class="nav-item"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/><a href="#">image Many desktop packages</a></dd>
-                              <dd class="nav-item"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/><a href="#">Many desktop packages</a></dd>
-                              <dd class="nav-item"><img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/><a href="#">Formula 1 Crashes | Shocking</a></dd>
+                              <dd class="nav-item"><img src="/clone/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/><a href="#">image Many desktop packages</a></dd>
+                              <dd class="nav-item"><img src="/clone/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/><a href="#">Many desktop packages</a></dd>
+                              <dd class="nav-item"><img src="/clone/yuanku/Public/img/highstand homepage/2h1BK2H2Quk (1).jpg"/><a href="#">Formula 1 Crashes | Shocking</a></dd>
                             </dl>
                             <dl class="footer-nav">
                               <dt class="nav-title">About Us</dt>
@@ -359,16 +359,16 @@
 						</div>					
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><a href="/yuanku/index.php/Home/Index/about_us"><h4>最新动态</h4></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
+								<li><a href="/clone/yuanku/index.php/Home/Index/about_us"><h4>最新动态</h4></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/clone/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/clone/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/clone/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
 					
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><a href="/yuanku/index.php/Home/Index/about_us"><h4>关于我们</h4></a></li><br/>
+								<li><a href="/clone/yuanku/index.php/Home/Index/about_us"><h4>关于我们</h4></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;&nbsp;<span>技术中心</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;&nbsp;<span>产品特色</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;<span>结算流程</span></a></li><br/>
@@ -377,7 +377,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><a href="/yuanku/index.php/Home/Index/contact_us"><h4>联系我们</h4></a></li></br>
+								<li><a href="/clone/yuanku/index.php/Home/Index/contact_us"><h4>联系我们</h4></a></li></br>
 								<li><a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;<span>511186470@qq.com</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;<span>0201-6666666</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-map-marker"aria-hidden="true"></span>&nbsp;&nbsp;<span>美国洛杉矶</span></a></li><br/>
