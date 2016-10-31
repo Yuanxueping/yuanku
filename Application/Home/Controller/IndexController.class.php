@@ -8,9 +8,14 @@ class IndexController extends Controller {
     public function index(){ 
 
        $slide = M('Slide');
+       $news = M('News');
 
+       $firstnews_list=$news->where('news_position="first"')->select();
+       $secondnews_list=$news->where('news_position="second"')->limit(5)->order('id desc')->select();
+       $thirdnews_list=$news->where('news_position="third"')->select();
+       
        $slide_list=$slide->select();
-    //    $this->display();
+
        $cache_a= S('site_name');
 
        if (empty($cache_a)) {
@@ -18,8 +23,16 @@ class IndexController extends Controller {
          $cache_a=S('site_name',$system_info);
        }
        
+      //  print_r($secondnews_list);
+
+       $this->assign('firstnews_list',$firstnews_list);
+       $this->assign('secondnews_list',$secondnews_list);
+       $this->assign('thirdnews_list',$thirdnews_list);
+       
        $this->assign('slide_list',$slide_list);
+       
        $this->assign('title','首页 - '.$cache_a['site_name']);
+       
        $this->display();
     }
 
