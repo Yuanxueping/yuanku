@@ -191,9 +191,17 @@ class NewsController extends AuthController {
    public function news_del(){
    	    $new_m=D('News'); 
 		if ($new_m->delete(I('id'))) {
+<<<<<<< HEAD
+
 			$this->success('删除成功');
 		}else{
 			$this->error('删除失败');
+
+=======
+			$this->success('删除成功');
+		}else{
+			$this->error('删除失败');
+>>>>>>> 5ba910cb9d2f991a9faa39a8718b04a68c13eaf5
 		}
    }
    public function sort(){
