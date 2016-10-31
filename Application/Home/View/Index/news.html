@@ -24,16 +24,17 @@
 					</p>
 					<p>
 						<a href="" class="time">{$news_i['date']|date='Y年m月d日',###}</a>
-						<i>by:</i>
-						<span> admin</span>
-						<i>in:</i> 
-						<a href="" class="name">TRAVEL</a> 
-						<i>note:</i> 
-						<a href="" class="comments">0 COMMENTS</a>
+						<i>作者:</i>
+						<span class="author">{$news_i['name']}</span>
+						<i>分类:</i> 
+						<a href="" class="name">{$news_i['sort_name']}</a> 
+						<i>评论:</i> 
+						<a href="" class="comments">0 条</a>
 					</p>
-					<p><php> echo htmlspecialchars_decode($news_i['content']) </php>
-						<a href="" class="more"> read more...</a>
-					</p>
+					<div class="news_content">
+						<php> echo subtext(htmlspecialchars_decode($news_i['content']),200) </php>
+						<a href="" class="more"> 更多</a>
+					</div>
 				</div>					
 			</div>				
 		</volist>

@@ -9,19 +9,50 @@
 		<script src="__PUBLIC__/js/site.min.js" type="text/javascript" charset="utf-8"></script>
 	
 
-		<div class="container-fluid" style="margin-top:55px;">
+		<div class="container-fluid" style="margin-top:60px;">
     	<!--documents-->
 	        <div class="row row-offcanvas row-offcanvas-left">
 	          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
 	            <ul class="list-group panel">
-	                <li class="list-group-item"><i class="glyphicon glyphicon-align-justify"></i> <b>侧边栏</b></li>
-	                <li class="list-group-item"><a href="index.html"><i class="glyphicon glyphicon-home"></i>主页 </a></li>
-	                <li class="list-group-item"><a href="login.html"><i class="glyphicon glyphicon-certificate"></i>登录 </a></li>
-	                <li class="list-group-item"><a href="register.html"><i class="glyphicon glyphicon-th-list"></i>注册 </a></li>
-	                <li class="list-group-item"><a href="news.html"><i class="glyphicon glyphicon-list-alt"></i>新闻</a></li>
-	                <li class="list-group-item"><a href="contact_us.html"><i class="glyphicon glyphicon-envelope"></i>联系我们</a></li>
-	                <li class="list-group-item"><a href="about_us.html"><i class="glyphicon glyphicon-heart"></i>关于我们</a></li>
-	                
+	                <div class="user-aside span3">
+					    <div class="people">
+							  <div class="basic-info">
+							    <a class="avatar" href="{:U('Personal/index')}">
+							      <img src="__ROOT__/{$head_photo}"/ alt="5">
+							    </a>
+							    <h3><a href="{:U('Personal/index')}">{$Think.session.username}</a></h3>
+							    <ul class="clearfix" >
+									
+									<li id="sayhello">1</li>
+									<br>
+									<li><a href="__CONTROLLER__/edit_message">修改个人信息</a>&nbsp;<img src="__PUBLIC__/img/personal/矩形-18-拷贝.png"/></li>
+								</ul>
+							   
+							  </div>
+							  <br>
+							  <div class="user-stats">
+								  <ul class="clearfix" >
+								    <li>
+								      <p> 绑定邮箱：{$email_address}</p>
+								    </li>
+								    <li>
+								    <i class="glyphicon glyphicon-list-alt"></i>
+										<a href="news.html">看新闻</a>
+								    </li>
+								    <br>
+								    <li>
+								    <i class="glyphicon glyphicon-pencil"></i>
+								      <a href="{:U('Personal/write_article')}"><span>写文章</span></a>
+								    </li>
+								    <br>
+								    <li>
+								    <i class="glyphicon glyphicon-heart"></i>
+								      <a href="news.html"><span>收获喜欢</span></a>
+								    </li>
+								  </ul>
+							</div>
+						</div>
+					</div>
 	                
 	              </ul>
 	          </div>
@@ -29,12 +60,12 @@
 	            <div class="panel panel-default">
 	              <div class="panel-heading">
 	                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a>
-	                <a href="./personal.html" style=""> 个人中心</a></h3>
+	                <a href="./personal.html" style=""> 修改资料</a></h3>
 	              </div>
 	              <div class="panel-body" style="margin-bottom:10%;">
 		            	<div class="content"> 
 
-							 <form action="__CONTROLLER__/update" method="post" class="form_wd_23" enctype="multipart/form-data" class="form_wd_23">
+							 <form action="{:U('Personal/update')}" method="post" class="form_wd_23" enctype="multipart/form-data" class="form_wd_23">
 							 	<div class="form-group">
 							 		<label class="control-label">用户名</label>
 							 		<input class="form-control" style="display:none" name="user_name"  value="{$Think.session.username}">
@@ -43,22 +74,23 @@
 							 	</div>
 							 	<div class="form-group">
 							 		<label class="control-label">密码</label>
-							 		<input class="form-control" name="user_pwd">
+							 		<input class="form-control" type="password" name="user_pwd" value="{$client_info.user_pwd}">
 							 	</div>
 							 	<div class="form-group">
 
 							 		<label class="control-label">邮箱</label>
-							 		<input class="form-control" name="email_address">
+							 		<input class="form-control" name="email_address" value="{$client_info.email_address}">
 							 	</div>
 							 	<div class="form-group">
 
 							 		<label class="control-label">头像</label>
-							 		<input class="dropify"  name="head_photo" type="file">
+							 		<input class="dropify"  name="head_photo" data-default-file="__ROOT__/{$client_info.head_photo}" type="file">
 							 	</div>
 							 	<button class="btn btn-success waves-effect">提交</button>
 
 								</form>
-							 <link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css"> 
+								<link rel="stylesheet" href="__PUBLIC__/css/admin/dropify.min.css">
+							
 						 
 						</div>  
 				  </div>
@@ -75,3 +107,22 @@
  <script>$('.dropify').dropify();</script>
 
 <include file="public/footer" />
+<script type="text/javascript">
+    function sayhello(){
+    	var content=$('#sayhello');
+    	var time=new Date();
+    	var clock=time.getHours();
+    	if(clock>6&&clock<=12){
+    		content.html('上午好');
+    	}else if(clock>12&&clock<=18){
+    		content.html('下午好');
+    	}else if(clock>18&&clock<=24){
+    		content.html('晚上好');
+    	}else{
+    		console.log(clock);
+    		content.html('凌晨好');
+    	}
+      }
+
+      sayhello();
+</script>

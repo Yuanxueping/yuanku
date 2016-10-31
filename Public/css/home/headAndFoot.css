@@ -71,7 +71,7 @@
 }
 .foot-nav .container-fluid li h4{
    color: white!important;
-   text-indent: 12px;
+   /*text-indent: 20px;*/
 }
 .foot-nav .container-fluid li a {
    color: gainsboro!important;
@@ -94,15 +94,7 @@
 	text-align: center;
 	line-height: 60px;
 }
-.glyphicon{
-	font-size:8px;
-	font-weight: normal;
-}
-/*.navbar-toggle{
-  position: absolute;
-  float: none;
-  right:15px;
-}*/
+
 .row{
 	 width: 100%!important;
 	 margin-right:0px!important; 
@@ -115,4 +107,11 @@
 }
 .size>img{
     width:100%;	
+}
+.foot-nav .container-fluid li a{
+	padding: 0px;
+}
+.foot-nav .container-fluid li a:hover{
+	padding: 0px;
+	text-decoration: underline;
 }

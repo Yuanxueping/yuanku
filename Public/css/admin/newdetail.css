@@ -1,0 +1,23 @@
+.panel-heading {
+	background: none;
+}
+.con{
+	display: block;
+	height: 80px;
+	overflow-y: scroll;
+}
+.table>tbody>tr>td{
+	vertical-align: middle;
+}
+a.btn{
+	min-width:60px;
+	color: white;
+}
+.btn-toolbar .btn-group {
+	float: none;
+}
+.btn-toolbar .btn-group > a {
+	color: black;
+	line-height: 16px;
+	border: 1px solid #ccc!important;
+}

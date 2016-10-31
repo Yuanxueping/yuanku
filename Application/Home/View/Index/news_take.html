@@ -1,17 +1,14 @@
-
-
-<!-- <include file="Public/header" /> -->
-<!-- 个人中心页面 -->
-<!-- <include file="Public/headerstwo"/> -->
 <!-- /*
-	*yxp
-	*个人中心页面
+	*hhy
+	*新闻订阅页面
  */ -->
 <include file="public/header" />
 
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/personal.css"/>
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/site.min.css">
 		
+		<link rel="stylesheet" href="__PUBLIC__/css/admin/material-design-iconic-font.css">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/site.min.css">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/news_take.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/personal.css"/>
 	    <script src="__PUBLIC__/js/site.min.js" type="text/javascript" charset="utf-8"></script>                                  
 <include file="public/headerstwo"/>		
 
@@ -19,111 +16,79 @@
     	<!--documents-->
 	        <div class="row row-offcanvas row-offcanvas-left">
 	          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
-	            <ul class="list-group panel">
-	                <li class="list-group-item"><i class="glyphicon glyphicon-align-justify"></i> <b>侧边栏</b></li>
-	                <li class="list-group-item"><a href="index.html"><i class="glyphicon glyphicon-home"></i>主页 </a></li>
-
-	                <li class="list-group-item"><a href="login.html"><i class="glyphicon glyphicon-certificate"></i>{$Think.session.username} </a></li>
-
-	                <li class="list-group-item"><a href="login.html"><i class="glyphicon glyphicon-certificate"></i>登录 </a></li>
-
-	                <li class="list-group-item"><a href="register.html"><i class="glyphicon glyphicon-th-list"></i>注册 </a></li>
-	                <li class="list-group-item"><a href="news.html"><i class="glyphicon glyphicon-list-alt"></i>新闻</a></li>
-	                <li class="list-group-item"><a href="contact_us.html"><i class="glyphicon glyphicon-envelope"></i>联系我们</a></li>
-	                <li class="list-group-item"><a href="about_us.html"><i class="glyphicon glyphicon-heart"></i>关于我们</a></li>
-	                
-	                
-	              </ul>
+	          	<ul class="list-group panel" >
+	                <div class="user-aside span3">
+					    <div class="people">
+							  <div class="basic-info">
+							    <a class="avatar" href="{:U('Personal/index')}">
+							      <img src="__ROOT__/{$head_photo}"/ alt="5">
+							    </a>
+							    <h3><a href="">{$Think.session.username}</a></h3>
+							    <ul class="clearfix" >
+									
+									<li id="sayhello">1</li>
+									<br>
+									<li><a href="__CONTROLLER__/edit_message">修改个人信息</a>&nbsp;<img src="__PUBLIC__/img/personal/矩形-18-拷贝.png"/>
+									</li>
+								</ul>
+							   
+							  </div>
+							  <br>
+							  <div class="user-stats">
+								  <ul class="clearfix" >
+								    <li>
+								      <p> 绑定邮箱：{$email_address}</p>
+								    </li>
+								    <li>
+								    <i class="glyphicon glyphicon-list-alt"></i>
+										<a href="news.html">看新闻</a>
+								    </li>
+								    <br>
+								    <li>
+								    <i class="glyphicon glyphicon-pencil"></i>
+								      <a href="{:U('Personal/write_article')}"><span>写文章</span></a>
+								    </li>
+								    <!-- <li>
+								      <a><b>0</b><span>字数</span></a>
+								    </li> -->
+								    <br>
+								    <li>
+								    <i class="glyphicon glyphicon-heart"></i>
+								      <a href="news.html"><span>收获喜欢</span></a>
+								    </li>
+								  </ul>
+							</div>
+						</div>
+					</div>
+	            </ul>
 	          </div>
+	          <!-- 右边 -->
 	          <div class="col-xs-12 col-sm-9 content">
 	            <div class="panel panel-default">
 	              <div class="panel-heading">
-	                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> 个人中心</h3>
+	                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a>订阅的文章</h3>
 	              </div>
 	              <div class="panel-body">
-		               <div class="personal-right">
-							<div class="row">
-								<div class="col-md-6 col-sm-12 col-xs-12">
-									<div class="kitty">
-
-										<img width="140px" height="140px" src="__ROOT__/{$head_photo}"/>
-										<ul class="clearfix">
-											<li><b><a href="">{$Think.session.username}</a></b></li>
-											<li id="sayhello">1</li>
-											<li><a href="__CONTROLLER__/edit_message">修改个人信息</a>&nbsp;<img src="__PUBLIC__/img/personal/矩形-18-拷贝.png"/></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-6 col-sm-12 col-xs-12">
-										<div class="message">
-											<ul>
-												<!-- <li>账户安全较高：较高</li> -->
-												<li>绑定手机：</li>
-												<li>绑定邮箱{$email_address}</li>
-											</ul>
-										</div>
-								</div>
-							</div>	
-					  </div>
-					   <div class="personal-bottom" style="margin-top:5px">
-									<div class="row">
-										<div class="col-md-6 col-sm-12 col-xs-12">
-											<div class="product">
-												<table border="0px" cellspacing="0px" cellpadding="0px">
-													<tr>
-														<td rowspan="2"><img src="__PUBLIC__/img/personal/椭圆-3.png"/></td>
-														<td>&nbsp;订阅的文章：&nbsp;<span>0</span></td>
-													</tr>
-													<tr>
-														<td>&nbsp;<a href="">查看已订阅的文章</a>&nbsp;<img src="__PUBLIC__/img/personal/矩形-10-拷贝.png"/></td>												
-													</tr>
-												</table>
-											</div>
-										</div>
-										<div class="col-md-6 col-sm-12 col-xs-12">
-											<div class="product">
-												<table border="0px" cellspacing="0px" cellpadding="0px">
-													<tr>
-														<td rowspan="2"><img src="__PUBLIC__/img/personal/椭圆-4-拷贝.png"/></td>
-														<td>&nbsp;我的浏览足迹：&nbsp;<span>0</span></td>
-													</tr>
-													<tr>
-														<td>&nbsp;<a href="">查看浏览足迹</a>&nbsp;<img src="__PUBLIC__/img/personal/矩形-10-拷贝.png"/></td>												
-													</tr>
-												</table>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-6 col-sm-12 col-xs-12">
-											<div class="product">
-												<table border="0px" cellspacing="0px" cellpadding="0px">
-													<tr>
-														<td rowspan="2"><img src="__PUBLIC__/img/personal/矩形-20-拷贝-3.png"/></td>
-														<td>&nbsp;我发布的文章&nbsp;<span>0</span></td>
-													</tr>
-													<tr>
-														<td>&nbsp;<a href="">查看我发布的文章</a>&nbsp;<img src="__PUBLIC__/img/personal/矩形-10-拷贝.png"/></td>												
-													</tr>
-												</table>
-											</div>
-										</div>
-										<div class="col-md-6 col-sm-12 col-xs-12">
-											<div class="product">
-												<table border="0px" cellspacing="0px" cellpadding="0px">
-													<tr>
-														<td rowspan="2"><img src="__PUBLIC__/img/personal/矩形-20-拷贝.png"/></td>
-														<td>&nbsp;喜欢的文章：&nbsp;<span>0</span></td>
-													</tr>
-													<tr>
-														<td>&nbsp;<a href="">查看喜欢的文章</a>&nbsp;<img src="__PUBLIC__/img/personal/矩形-10-拷贝.png"/></td>												
-													</tr>
-												</table>
-											</div>
-										</div>
-									</div>
-					   </div>
-
+	              	<volist   name="news_take" id="take_i">
+			             <div class="row news_take">
+			             	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 new_photo">
+			             		<img src="__PUBLIC__/{$take_i.img}" alt="">
+			             		
+			             	</div>
+			             	<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 new_detail">
+			             		<h5>{$take_i.title}</h5>
+			             		<p>{$take_i.content}</p>
+			             		<p>{$take_i.date}</p>
+			             	</div>
+			             	<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 new_del">
+				             	<div class="btn-group">
+				             		<button  type="button"  onclick="location.href='{:U('Index/take_del',array('id'=>$take_i[id]))}'" class="btn btn-danger waves-effect"><i class="zmdi zmdi-delete"></i></button>
+				             		
+				             	</div>	
+			             	</div>
+			             </div>
+		          	</volist>   	
+		          	<div class="page_box">{$page}</div>			
 	              </div><!-- panel body -->
 	            </div>
 	        </div><!-- content -->

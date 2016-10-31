@@ -1,0 +1,63 @@
+<include file='Public:header' /> 
+<include file='Public:menu' /> 
+<link rel="stylesheet" href="__PUBLIC__/css/admin/news.css">
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+		<span>内容列表</span>
+	</div>
+    <table class="table table-hover">
+        <thead>
+        	<tr>
+	          	<th>#</th>
+	          	<th>ID</th>
+		        <th>内容标题</th>
+		        <th>作者</th>		       
+		        <th>首页位置</th>		       
+		        <th class="text-center" >新闻所在位置</th>
+        	</tr>
+      	</thead>
+          <tbody>
+      		<volist name="news_list" id="vo" key="k">
+      			<tr>
+      				<td>{$k}</td>
+					<td>{$vo['nid']}</td>
+					<td>{$vo['title']}</td>
+					<td>{$vo['name']}</td>
+					<td>{$vo['news_position']}</td>
+					<td class="text-center">
+						<div class="btn-group">	
+							<form action="{:U('Index/position_edit')}" method="post">
+												
+							<select name="news_position" onchange="$('#sbt_{$vo['nid']}').click()">
+								
+								<option value ="">请选择</option>
+								<option value ="first">第一块位置</option>
+								<option value ="second">第二块位置</option>
+								<option value="third">第三块位置</option>
+							</select>
+							<input type="submit" style="display:none;" id="sbt_{$vo['nid']}">
+							<input type="hidden" name="id" value="{$vo['nid']}" >
+							</form>		
+						</div>
+					</td>
+				</tr>
+			</volist>
+      	</tbody>
+    </table>
+</div>
+
+<div class="btn-toolbar text-center" role="toolbar">
+	<div class="btn-group">
+		{$page_html}
+	</div>
+</div>
+
+
+
+<link rel="stylesheet" href="__PUBLIC__/css/admin/dropify.min.css">
+<include file='Public:footer' />
+<script src="__PUBLIC__/js/dropify.min.js"></script>
+<script>
+    $('.dropify').dropify();
+</script>

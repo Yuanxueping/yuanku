@@ -11,7 +11,7 @@
 						<h1>{$news_detail[0]['title']}</h1>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-						<h2><a href="{:U('Index/index')}">Home</a><i>/</i>{$news_detail[0]['title']}</h2>
+						<h2><a href="{:U('Index/index')}">首页</a><i>/</i>{$news_detail[0]['title']}</h2>
 					</div>
 				</div>
 			</div>
@@ -24,14 +24,19 @@
 				  		<h3><a href="">{$news_detail[0]['title']}</a></h3>
 				  		<p class="p1">
 				  			<a href="">{$news_detail[0]['date']|date='Y年m月d日',###}</a>
-				  			<span>by:<span>{$news_detail[0]['name']}</span>in:<span>{$news_detail[0]['sort_name']}</span>note:<span>0 COMMENTS</span></span>
+				  			<span>作者:<span>{$news_detail[0]['name']}</span>分类:<span>{$news_detail[0]['sort_name']}</span>评论:<span>0 COMMENTS</span></span>
 				  		</p>
+<<<<<<< HEAD
+				  		<div class="p2"><php> echo htmlspecialchars_decode($news_detail[0]['content']) </php></div>
+=======
 				  		<p class="p2"><php> echo htmlspecialchars_decode($news_detail[0]['content']) </php></p>
 				  		<p class="p3"><a href="">read more...</a></p>
+				  		<button type="submit"  class="btn btn-block btn-lg btn-success" style="margin-top:10px; width:25%;" onclick="location.href='{:U('Index/take_add',array(id=>$news_detail[0]['id']))}'">点击订阅</button>
+>>>>>>> 3dcdc5604f8bbc878ac1b7f6a9ac4090bd4f5f92
 					</div>
 					<div class="line1"></div>
 					<div class="sharepost">
-						<h5>Share this Post</h5>
+						<h5>分享文章</h5>
 						<ul>
 							<li><a href=""><i class="iconfont icon-facebookf"></i></a></li>
 							<li><a href=""><i class="iconfont icon-birdxiaoniao"></i></a></li>
@@ -44,7 +49,7 @@
 						</ul>
 					</div>
 					<div class="about_author">
-						<h5>About the Author</h5>
+						<h5>关于作者</h5>
 						<div>
 							<p>{$news_detail[0]['name']}</p>
 							<p>{$news_detail[0]['introduction']}</p>
@@ -52,50 +57,42 @@
 					</div>
 					<div class="line2"></div>
 					<div class="comments">
-						<h5>Comments</h5>
+						<h5>评论</h5>
 					</div>
 				</div>
 				<div class="col-sm-3">
 					<div class="more_about">
-						<h4 class="title">More About</h4>
+						<h4 class="title">更多</h4>
 						<ul>
-							<li><a href="">&gt; Our History</a></li>
-							<li><a href="">&gt; Professional Research</a></li>
-							<li><a href="">&gt; Our Development</a></li>
-							<li><a href="">&gt; Partnership With Us</a></li>
-							<li><a href="">&gt; Company Carreer</a></li>
-							<li><a href="">&gt; New Technology</a></li>
-							<li><a href="">&gt; Client Testimonials</a></li>
+							<li><a href="">&gt; 我们的历史</a></li>
+							<li><a href="">&gt; 专业研究</a></li>
+							<li><a href="">&gt; 我们的发展</a></li>
+							<li><a href="">&gt; 合作伙伴</a></li>
+							<li><a href="">&gt; 公司事业</a></li>
+							<li><a href="">&gt; 新技术</a></li>
+							<li><a href="">&gt; 客户推荐</a></li>
 						</ul>
 					</div>
 					<div class="recent_posts">
-						<h4 class="title">Recent Posts</h4>
+						<h4 class="title">近期文章</h4>
 						<ul>
-							<li>
-								<a class="pull-left" href=""><img src="__PUBLIC__/img/news_img/site-img225 (1).jpg"/></a>
-								<a href="">Many desktop packages</a>
-								<span>July 5, 2016</span>
-							</li>
-							<li>
-								<a class="pull-left" href=""><img src="__PUBLIC__/img/news_img/site-img224.jpg"/></a>
-								<a href="">Many desktop packages</a>
-								<span>July 5, 2016</span>
-							</li>
-							<li>
-								<a class="pull-left" href=""><img src="__PUBLIC__/img/highstand homepage/2h1BK2H2Quk.jpg"/></a>
-								<a href="">Many desktop packages</a>
-								<span>July 5, 2016</span>
-							</li>
+							<volist name="news_recent" id="vo">
+								<li>
+									<a class="pull-left" href="{:U('Index/news_detail',array(id=>$vo['id']))}"><img src="__PUBLIC__/{$vo['img']}"/></a>
+									<a href="{:U('Index/news_detail',array(id=>$vo['id']))}">{$vo['title']}</a>
+									<span>{$vo['date']|date='Y年m月d日',###}</span>
+								</li>
+							</volist>
 						</ul>
 					</div>
 					<div class="happy_say">
-						<h4 class="title">Happy Client Say's</h4>
+						<h4 class="title">客户的话</h4>
 						<img class="pull-left" src="__PUBLIC__/img/highstand homepage/people-img19_0.jpg"/>
 						<strong>- Michle Siminson</strong>
 						<p>Lorem Ipsum passage, and going through the cites of the word here classical literature passage discovere there undou btable source looks reasonable the generated charac eristic words.</p>
 					</div>
 					<div class="advertisements">
-						<h4 class="title">Site Advertisements</h4>
+						<h4 class="title">客户</h4>
 						<ul>
 							<li><a href=""><img src="__PUBLIC__/img/news_img/sample-ad-banner.jpg"/></a></li>
 							<li><a href=""><img src="__PUBLIC__/img/news_img/sample-ad-banner.jpg"/></a></li>
@@ -106,7 +103,7 @@
 						</ul>
 					</div>
 					<div class="text_widget">
-						<h4 class="title">Text Widget</h4>
+						<h4 class="title">文本工具</h4>
 						<p>Going to use a passage of lorem lpsum you need to be sure there anything embarrassin hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend the repeat predefined chunks as thenecessary making this the first true generator.</p>
 					</div>
 				</div>

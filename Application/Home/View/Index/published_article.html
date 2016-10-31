@@ -1,0 +1,137 @@
+<!-- /*
+	*yxp
+	*查看已发布文章页面
+ */ -->
+<include file="public/header" />
+
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/site.min.css">
+		<link rel="stylesheet" href="__PUBLIC__/css/admin/news.css">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/personal.css"/>
+	    <script src="__PUBLIC__/js/site.min.js" type="text/javascript" charset="utf-8"></script>                                  
+<include file="public/headerstwo"/>		
+
+		<div class="container-fluid" style="margin-top:60px;">
+    	<!--documents-->
+	        <div class="row row-offcanvas row-offcanvas-left">
+	          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+	          	<ul class="list-group panel" >
+	                <div class="user-aside span3">
+					    <div class="people">
+							  <div class="basic-info">
+							    <a class="avatar" href="{:U('Personal/index')}">
+							      <img src="__ROOT__/{$head_photo}"/ alt="5">
+							    </a>
+							    <h3><a href="{:U('Personal/index')}">{$Think.session.username}</a></h3>
+							    <ul class="clearfix" >
+									
+									<li id="sayhello">1</li>
+									<br>
+									<li><a href="__CONTROLLER__/edit_message">修改个人信息</a>&nbsp;<img src="__PUBLIC__/img/personal/矩形-18-拷贝.png"/></li>
+								</ul>
+							   
+							  </div>
+							  <br>
+							  <div class="user-stats">
+								  <ul class="clearfix" >
+								    <li>
+								      <p> 绑定邮箱：{$email_address}</p>
+								    </li>
+								    <li>
+								    <i class="glyphicon glyphicon-list-alt"></i>
+										<a href="news.html">看新闻</a>
+								    </li>
+								    <br>
+								    <li>
+								    <i class="glyphicon glyphicon-pencil"></i>
+								      <a href="{:U('Personal/write_article')}"><span>写文章</span></a>
+								    </li>
+								    <!-- <li>
+								      <a><b>0</b><span>字数</span></a>
+								    </li> -->
+								    <br>
+								    <li>
+								    <i class="glyphicon glyphicon-heart"></i>
+								      <a href="news.html"><span>收获喜欢</span></a>
+								    </li>
+								  </ul>
+							</div>
+						</div>
+					</div>
+	            </ul>
+	          </div>
+	          <!-- 右边 -->
+	          <div class="col-xs-12 col-sm-9 content">
+	            <div class="panel panel-default">
+	              <div class="panel-heading">
+	                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> 已发布的文章</h3>
+	              </div>
+	              <div class="panel-body">
+					<table class="table table-hover">
+				      	<thead>
+				        	<tr>
+					          	<th>#</th>
+					          	<th style="width:10%">文章ID</th>
+						        <th style="width:10%">新闻标题</th>
+						        <th>作者</th>
+						        <th>分类</th>
+						        <!-- <th>内容</th> -->
+						        <th>图片</th>
+						        <th>日期</th>
+						        <th class="text-center" style="width:20%">操作</th>
+				        	</tr>
+				      	</thead>
+				      	<tbody>
+				      		<volist name="news_list" id="vo" key="k">
+				      			<tr>
+				      				<td>{$k}</td>
+									<td>{$vo['nid']}</td>
+									<td>{$vo['title']}</td>
+									<td>{$vo['name']}</td>
+									<td>{$vo['sort_name']}</td>
+									<!-- <td>{$vo['content']}</td> -->
+									<td>{$vo['img']}</td>
+									<td>{$vo['date']|date='Y-m-d',###}</td>
+									<td class="text-center">
+										<div class="btn-group">
+											<a class="btn btn-success btn-xs" href="{:U('Home/Index/news_detail',array('id'=>$vo[nid]))}" target="_blank"><span class="glyphicon glyphicon-search"></span></a>
+											<button onclick="location.href='{:U('Personal/article_edit',array('id'=>$vo['nid']))}'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+											<button onclick="location.href='{:U('Personal/article_del',array('id'=>$vo[nid]))}'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+											
+										</div>
+									</td>
+								</tr>
+							</volist>
+				      	</tbody>
+				    </table>
+
+					<div style="height:600px"></div>
+				  </div><!-- panel body -->
+				</div>
+	        </div><!-- content -->
+	      </div>
+	    </div>
+
+
+
+
+<include file="public/footer" />
+
+<script type="text/javascript">
+    function sayhello(){
+    	var content=$('#sayhello');
+    	var time=new Date();
+    	var clock=time.getHours();
+    	if(clock>6&&clock<=12){
+    		content.html('上午好');
+    	}else if(clock>12&&clock<=18){
+    		content.html('下午好');
+    	}else if(clock>18&&clock<=24){
+    		content.html('晚上好');
+    	}else{
+    		console.log(clock);
+    		content.html('凌晨好');
+    	}
+      }
+
+      sayhello();
+</script>
