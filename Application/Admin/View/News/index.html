@@ -31,9 +31,13 @@
 					<td>{$vo['date']|date='Y-m-d',###}</td>
 					<td class="text-center">
 						<div class="btn-group">
+<<<<<<< HEAD
+							<a class="btn btn-info btn-xs white" href="{:U('Home/Index/news_detail',array('id'=>$vo[nid]))}" target="_blank"><span class="glyphicon glyphicon-search"></span></a>
+=======
 							<a class="btn btn-success btn-xs" style="color:#fff" href="{:U('Home/Index/news_detail',array('id'=>$vo[nid]))}" target="_blank"><span class="glyphicon glyphicon-search"></span></a>
+>>>>>>> 3dcdc5604f8bbc878ac1b7f6a9ac4090bd4f5f92
 							<button onclick="location.href='{:U('News/news_edit',array('id'=>$vo['nid']))}'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
-							<button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+							<button onclick="location.href='{:U('News/news_del',array('id'=>$vo['nid']))}'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
 							
 						</div>
 					</td>
