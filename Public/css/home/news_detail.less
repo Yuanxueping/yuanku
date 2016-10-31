@@ -37,7 +37,7 @@ li {
     & .container {
         & .row {
             & .col-md-12 {
-                padding: 0;
+                padding: 0 50px 0 0;
                 & > h1 {
                     color: white;
                     font-size: 32px;
@@ -80,6 +80,7 @@ li {
     & .row {
         & .col-sm-9 {
             margin-bottom: 75px;
+            padding-right: 40px;
             
             & .jumbotron {
                 padding: 0px;
@@ -118,27 +119,19 @@ li {
                         
                         & > span {
                             color: #999;
-                            padding: 0 8px 0 8px;
+                            padding: 0 20px 0 8px;
                         }
                     }
                 }
                 
-                & > p.p2 {
+                & > div.p2 {
                     font-size: 14px;
                     color: #727272;
                     line-height: 23px;
                     margin-bottom: 0px;
-                }
-                
-                & > p.p3 {
-                    line-height: 23px;
-                    margin-bottom: 0px;
                     
-                    & > a {
-                        font-size: 14px;
-                        color: #2ecc71;
-                        
-                        .a_hover1();
+                    img {
+                        max-width: 100%;
                     }
                 }
             }

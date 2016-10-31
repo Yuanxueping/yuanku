@@ -1,259 +1,306 @@
-<aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;"><div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
-  <ul class="nav metismenu">
-    <li class="profile-sidebar-container">
-      <div class="profile-sidebar text-center">
-        <div class="profile-userpic">
-          <img src="__ROOT__/Uploads{$user_info.head_photo}" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
-          <span class="online"></span>
-        </div>
-        <div class="profile-usertitle">
-          <div class="name">
-            {$user_info.user_name}
-          </div>
-          <div class="city">
-            <i class="zmdi zmdi-pin"></i>San Francisco, CA
-          </div>
-        </div>
-        <div class="profile-activity clearfix">
-          <div class="pull-left">
-             
-          </div>
-          <div class="pull-right">
-            
-          </div>
-        </div>
-      </div>
-    </li>
-    <php> $controller_name= CONTROLLER_NAME</php>
+			<aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;">
+				<div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0">
+					<div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
+						<ul class="nav metismenu">
+							<li class="profile-sidebar-container">
+								<div class="profile-sidebar text-center">
+									<div class="profile-userpic">
+										<img src="__ROOT__/Uploads{$user_info.head_photo}" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
+										<span class="online"></span>
+									</div>
+									<div class="profile-usertitle">
+										<div class="name">
+											{$user_info.user_name}
+										</div>
+										<div class="city">
+											<i class="zmdi zmdi-pin"></i>San Francisco, CA
+										</div>
+									</div>
+									<div class="profile-activity clearfix">
+										<div class="pull-left">
+	
+										</div>
+										<div class="pull-right">
+	
+										</div>
+									</div>
+								</div>
+							</li>
+							<php> $controller_name= CONTROLLER_NAME</php>
 
-    <li  <if condition="$controller_name eq 'System'"> class="active"</if> >
-      <a href="#" aria-expanded="false"><i class="zmdi zmdi-view-dashboard"></i>系统设置<span class="zmdi arrow"></span></a>
-      <ul class="nav nav-inside collapse <if condition="$controller_name eq 'System'"> in </if>" aria-expanded="false"  >
-        <li class="inside-title">系统设置</li>
-        <!-- <li><a href="{:U('system/index')}">网站设置</a></li> -->
-        <li><a href="{:U('system/manager_user')}">管理员设置</a></li>
-      </ul>
-    </li>
-        <li>
-      <a href="#"><i class="zmdi zmdi-view-compact"></i>首页管理<span class="zmdi arrow"></span></a>
-      <ul class="nav nav-inside collapse" aria-expanded="false">
-        <li class="inside-title">首页管理</li>
-        <li><a href="{:U('index/slide_manage')}">幻灯片管理</a></li>
-        <li><a href="/land/l1/index_r.html">首页新闻管理</a></li>
-      </ul>
-    </li>
-    <li <if condition="$controller_name eq 'Client'"> class="active"</if> >
-      <a href="#"><i class="zmdi zmdi-google-pages"></i>用户管理<span class="zmdi arrow"></span></a>
-      <ul class="nav nav-inside collapse <if condition="$controller_name eq 'Client'"> in </if>" aria-expanded="false">
-        <li class="inside-title">用户列表</li>
-        <li><a href="{:U('client/client_list')}">用户列表</a></li>
-        <li><a href="{:U('client/feedback')}">咨询列表</a></li>
-      </ul>
-    </li>
+							<li <if condition="$controller_name eq 'System'"> class="active"</if> >
+								<a href="#" aria-expanded="false"><i class="zmdi zmdi-view-dashboard"></i>系统设置<span class="zmdi arrow"></span></a>
+								<ul class="nav nav-inside collapse <if condition=" $controller_name eq 'System' "> in </if>" aria-expanded="false">
+									<li class="inside-title">系统设置</li>
+									<!-- <li><a href="{:U('system/index')}">网站设置</a></li> -->
+									<li>
+										<a href="{:U('system/manager_user')}">管理员设置</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#"><i class="zmdi zmdi-view-compact"></i>首页管理<span class="zmdi arrow"></span></a>
+								<ul class="nav nav-inside collapse" aria-expanded="false">
+									<li class="inside-title">首页管理</li>
+									<li>
+										<a href="{:U('index/slide_manage')}">幻灯片管理</a>
+									</li>
+									<li>
+										<a href="/land/l1/index_r.html">首页新闻管理</a>
+									</li>
+								</ul>
+							</li>
+							<li <if condition="$controller_name eq 'Client'"> class="active"</if> >
+								<a href="#"><i class="zmdi zmdi-google-pages"></i>用户管理<span class="zmdi arrow"></span></a>
+								<ul class="nav nav-inside collapse <if condition=" $controller_name eq 'Client' "> in </if>" aria-expanded="false">
+									<li class="inside-title">用户列表</li>
+									<li>
+										<a href="{:U('client/client_list')}">用户列表</a>
+									</li>
+									<li>
+										<a href="{:U('client/feedback')}">咨询列表</a>
+									</li>
+								</ul>
+							</li>
+			
+							<li <if condition="$controller_name eq 'News'"> class="active"</if>>
+								<a href="#"><i class="zmdi zmdi-flower"></i>内容管理<span class="zmdi arrow"></span></a>
+								<ul class="nav nav-inside collapse <if condition=" $controller_name eq 'News' "> in </if>" aria-expanded="false">
+									<li class="inside-title">内容管理</li>
+									<li>
+										<a href="{:U('news/index')}">内容列表</a>
+									</li>
+									<li>
+										<a href="{:U('news/sort')}">内容分类</a>
+									</li>
+									<li>
+										<a href="{:U('news/news_add')}">添加内容</a>
+									</li>
+									<li>
+										<a href="{:U('news/author_list')}">作者管理</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="mCSB_5_scrollbar_vertical" class="mCSB_scrollTools mCSB_5_scrollbar mCS-minimal mCSB_scrollTools_vertical" style="display: block;">
+					<div class="mCSB_draggerContainer">
+						<div id="mCSB_5_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 299px; max-height: 527px; top: 0px;" oncontextmenu="return false;">
+							<div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+						</div>
+						<div class="mCSB_draggerRail"></div>
+					</div>
+				</div>
+			</aside>
 
-    <li <if condition="$controller_name eq 'News'"> class="active"</if>>
-      <a href="#"><i class="zmdi zmdi-flower"></i>内容管理<span class="zmdi arrow"></span></a>
-      <ul class="nav nav-inside collapse <if condition="$controller_name eq 'News'"> in </if>" aria-expanded="false">
-        <li class="inside-title">内容管理</li>
-        <li><a href="{:U('news/index')}">内容列表</a></li>
-        <li><a href="{:U('news/sort')}">内容分类</a></li>
-        <li><a href="{:U('news/news_add')}">添加内容</a></li>
-        <li><a href="{:U('news/author_list')}">作者管理</a></li>
-
-         
-
-      </ul>
-    </li>  
-     
-  </ul>
-</div></div><div id="mCSB_5_scrollbar_vertical" class="mCSB_scrollTools mCSB_5_scrollbar mCS-minimal mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_5_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 299px; max-height: 527px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></aside>
-
-
-<!-- 右上角弹出层 -->
-<div class="side-panel">
-    <ul class="nav nav-tabs nav-justified m-0">
-      <li class="active">
-        <a href="#tab-side-1" data-toggle="tab" aria-expanded="true"><i class="zmdi zmdi-comment-text"></i></a>
-      </li>
-      <li class="">
-        <a href="#tab-side-2" data-toggle="tab" aria-expanded="false"><i class="zmdi zmdi-settings"></i></a>
-      </li>
-    </ul>
-    <div class="tab-content">
-      <div class="tab-pane fade mCustomScrollbar _mCS_2 mCS-autoHide mCS_no_scrollbar active in" id="tab-side-1" style="position: relative; overflow: visible;"><div id="mCSB_2" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-       <div class="side-title">Activities</div>
-        <div class="p-15"> 
-          <ul class="timeline">
-              <li>
-                  <div class="timeline-icon primary-bg"><i class="zmdi zmdi-plus"></i></div>
-                  <div class="timeline-body">
-                      <div class="timeline-header">
-                          <span class="author">Jana Pena is now Follwing you</span>
-                          <span class="date">2 min ago</span>
-                      </div>
-                  </div>
-              </li>
-              <li>
-                  <div class="timeline-icon success-bg"><i class="zmdi zmdi-favorite"></i></div>
-                  <div class="timeline-body">
-                      <div class="timeline-header">
-                          <span class="author">Helen likes your photo</span>
-                          <span class="date">23 min ago</span>
-                      </div>
-                  </div>
-              </li>
-              <li>
-                  <div class="timeline-icon warning-bg"><i class="zmdi zmdi-email"></i></div>
-                  <div class="timeline-body">
-                      <div class="timeline-header">
-                          <span class="author">Colin send email</span>
-                          <span class="date">34 min ago</span>
-                      </div>
-                  </div>
-              </li>
-              <li>
-                  <div class="timeline-icon success-bg"><i class="zmdi zmdi-coffee"></i></div>
-                  <div class="timeline-body">
-                      <div class="timeline-header">
-                          <span class="author">Starbucks invites you</span>
-                          <span class="date">44 min ago</span>
-                      </div>
-                  </div>
-              </li>
-              <li>
-                  <div class="timeline-icon info-bg"><i class="zmdi zmdi-videocam"></i></div>
-                  <div class="timeline-body">
-                      <div class="timeline-header">
-                          <span class="author">Peter added new video</span>
-                          <span class="date">56 min ago</span>
-                      </div>
-                  </div>
-              </li>
-          </ul>
-        </div>
-         
-          <div class="side-title">Contacts</div>
-          <div class="p-15"> 
-          <ul class="media-list side-contacts">
-              <li class="media notification-message">
-                  <div class="media-left">
-                      <img class="img-circle avatar mCS_img_loaded" src="img/contacts/3.png" alt="user">
-                  </div>
-                  <div class="media-body">
-                    <span>Katerina Dankovich</span><br>
-                      <span class="contact-status text-success">Online</span>
-                  </div>
-              </li>
-              <li class="media notification-message">
-                  <div class="media-left">
-                      <img class="img-circle avatar mCS_img_loaded" src="img/contacts/4.png" alt="user">
-                  </div>
-                  <div class="media-body">
-                    <span>Helen Doe</span><br>
-                      <span class="contact-status text-warning">Away</span>
-                  </div>
-              </li>
-              <li class="media notification-message">
-                  <div class="media-left">
-                      <img class="img-circle avatar mCS_img_loaded" src="img/contacts/2.png" alt="user">
-                  </div>
-                  <div class="media-body">
-                    <span>Phil Simons</span><br>
-                      <span class="contact-status text-success">Online</span>
-                  </div>
-              </li>
-              <li class="media notification-message">
-                  <div class="media-left">
-                      <img class="img-circle avatar mCS_img_loaded" src="img/contacts/1.png" alt="user">
-                  </div>
-                  <div class="media-body">
-                    <span>Peter Johnson</span><br>
-                      <span class="contact-status text-muted">Offline</span>
-                  </div>
-              </li>
-              <li class="media notification-message">
-                  <div class="media-left">
-                      <img class="img-circle avatar mCS_img_loaded" src="img/contacts/5.png" alt="user">
-                  </div>
-                  <div class="media-body">
-                    <span>Kate Owl</span><br>
-                      <span class="contact-status text-danger">Busy</span>
-                  </div>
-              </li>
-          </ul>
-        </div>
-      </div></div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-minimal mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; height: 0px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
-      <div class="tab-pane fade mCustomScrollbar _mCS_3 mCS-autoHide mCS_no_scrollbar" id="tab-side-2" style="position: relative; overflow: visible;"><div id="mCSB_3" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: 588px;" tabindex="0"><div id="mCSB_3_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-         <table class="table table-settings">
-            <tbody><tr>
-                    <td>
-                        <h5>Alerts</h5>
-                        <p>Sets alerts to get notified when changes occur to get new alerming items</p>
-                    </td>
-                    <td><div class="checkbox checkbox-primary">
-                        <label><input type="checkbox">
-                          <i></i></label>
-                      </div></td>
-                </tr>
-                <tr>
-                    <td>
-                        <h5>Notifications</h5>
-                        <p>You will receive notification email for any notifications if you set notification</p>
-                    </td>
-                    <td>
-                    <div class="checkbox checkbox-primary">
-                      <label><input checked="" type="checkbox">
-                        <i></i></label>
-                    </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h5>Messages</h5>
-                        <p>You will receive notification on email after setting messages notifications</p>                            
-                    </td>
-                    <td>
-                    <div class="checkbox checkbox-primary">
-                      <label><input type="checkbox">
-                        <i></i></label>
-                    </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h5>Warnings</h5>
-                        <p>You will get warnning only some specific setttings or alert system</p>
-                    </td>
-                    <td>
-                    <div class="checkbox checkbox-primary">
-                      <label><input checked="" type="checkbox">
-                        <i></i></label>
-                    </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h5>Sidebar</h5>
-                        <p>You can hide/show use with sidebar collapsw settings</p>
-                    </td>
-                    <td>
-                    <div class="checkbox checkbox-primary">
-                      <label><input checked="" type="checkbox">
-                        <i></i></label>
-                    </div>
-                    </td>
-                </tr>
-
-        </tbody></table>
-      </div></div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-minimal mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; top: 0px; height: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
-    </div>
-</div>
-
-
-
-   <div class="container-fluid" >
-      
-       <div class="row">
-        <div class="col-md-12">
-          <div class="content-box">
-             <div class="content">
+			<!-- 右上角弹出层 -->
+			<div class="side-panel">
+				<ul class="nav nav-tabs nav-justified m-0">
+					<li class="active">
+						<a href="#tab-side-1" data-toggle="tab" aria-expanded="true"><i class="zmdi zmdi-comment-text"></i></a>
+					</li>
+					<li class="">
+						<a href="#tab-side-2" data-toggle="tab" aria-expanded="false"><i class="zmdi zmdi-settings"></i></a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane fade mCustomScrollbar _mCS_2 mCS-autoHide mCS_no_scrollbar active in" id="tab-side-1" style="position: relative; overflow: visible;">
+						<div id="mCSB_2" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0">
+							<div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+								<div class="side-title">Activities</div>
+								<div class="p-15">
+									<ul class="timeline">
+										<li>
+											<div class="timeline-icon primary-bg"><i class="zmdi zmdi-plus"></i></div>
+											<div class="timeline-body">
+												<div class="timeline-header">
+													<span class="author">Jana Pena is now Follwing you</span>
+													<span class="date">2 min ago</span>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="timeline-icon success-bg"><i class="zmdi zmdi-favorite"></i></div>
+											<div class="timeline-body">
+												<div class="timeline-header">
+													<span class="author">Helen likes your photo</span>
+													<span class="date">23 min ago</span>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="timeline-icon warning-bg"><i class="zmdi zmdi-email"></i></div>
+											<div class="timeline-body">
+												<div class="timeline-header">
+													<span class="author">Colin send email</span>
+													<span class="date">34 min ago</span>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="timeline-icon success-bg"><i class="zmdi zmdi-coffee"></i></div>
+											<div class="timeline-body">
+												<div class="timeline-header">
+													<span class="author">Starbucks invites you</span>
+													<span class="date">44 min ago</span>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="timeline-icon info-bg"><i class="zmdi zmdi-videocam"></i></div>
+											<div class="timeline-body">
+												<div class="timeline-header">
+													<span class="author">Peter added new video</span>
+													<span class="date">56 min ago</span>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+			
+								<div class="side-title">Contacts</div>
+								<div class="p-15">
+									<ul class="media-list side-contacts">
+										<li class="media notification-message">
+											<div class="media-left">
+												<img class="img-circle avatar mCS_img_loaded" src="img/contacts/3.png" alt="user">
+											</div>
+											<div class="media-body">
+												<span>Katerina Dankovich</span><br>
+												<span class="contact-status text-success">Online</span>
+											</div>
+										</li>
+										<li class="media notification-message">
+											<div class="media-left">
+												<img class="img-circle avatar mCS_img_loaded" src="img/contacts/4.png" alt="user">
+											</div>
+											<div class="media-body">
+												<span>Helen Doe</span><br>
+												<span class="contact-status text-warning">Away</span>
+											</div>
+										</li>
+										<li class="media notification-message">
+											<div class="media-left">
+												<img class="img-circle avatar mCS_img_loaded" src="img/contacts/2.png" alt="user">
+											</div>
+											<div class="media-body">
+												<span>Phil Simons</span><br>
+												<span class="contact-status text-success">Online</span>
+											</div>
+										</li>
+										<li class="media notification-message">
+											<div class="media-left">
+												<img class="img-circle avatar mCS_img_loaded" src="img/contacts/1.png" alt="user">
+											</div>
+											<div class="media-body">
+												<span>Peter Johnson</span><br>
+												<span class="contact-status text-muted">Offline</span>
+											</div>
+										</li>
+										<li class="media notification-message">
+											<div class="media-left">
+												<img class="img-circle avatar mCS_img_loaded" src="img/contacts/5.png" alt="user">
+											</div>
+											<div class="media-body">
+												<span>Kate Owl</span><br>
+												<span class="contact-status text-danger">Busy</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-minimal mCSB_scrollTools_vertical" style="display: none;">
+							<div class="mCSB_draggerContainer">
+								<div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; height: 0px; top: 0px;" oncontextmenu="return false;">
+									<div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+								</div>
+								<div class="mCSB_draggerRail"></div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade mCustomScrollbar _mCS_3 mCS-autoHide mCS_no_scrollbar" id="tab-side-2" style="position: relative; overflow: visible;">
+						<div id="mCSB_3" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: 588px;" tabindex="0">
+							<div id="mCSB_3_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+								<table class="table table-settings">
+									<tbody>
+										<tr>
+											<td>
+												<h5>Alerts</h5>
+												<p>Sets alerts to get notified when changes occur to get new alerming items</p>
+											</td>
+											<td>
+												<div class="checkbox checkbox-primary">
+													<label><input type="checkbox">
+			                          <i></i></label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h5>Notifications</h5>
+												<p>You will receive notification email for any notifications if you set notification</p>
+											</td>
+											<td>
+												<div class="checkbox checkbox-primary">
+													<label><input checked="" type="checkbox">
+			                        <i></i></label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h5>Messages</h5>
+												<p>You will receive notification on email after setting messages notifications</p>
+											</td>
+											<td>
+												<div class="checkbox checkbox-primary">
+													<label><input type="checkbox"><i></i></label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h5>Warnings</h5>
+												<p>You will get warnning only some specific setttings or alert system</p>
+											</td>
+											<td>
+												<div class="checkbox checkbox-primary">
+													<label><input checked="" type="checkbox"><i></i></label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h5>Sidebar</h5>
+												<p>You can hide/show use with sidebar collapsw settings</p>
+											</td>
+											<td>
+												<div class="checkbox checkbox-primary">
+													<label><input checked="" type="checkbox"><i></i></label>
+												</div>
+											</td>
+										</tr>
+			
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-minimal mCSB_scrollTools_vertical" style="display: none;">
+							<div class="mCSB_draggerContainer">
+								<div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; top: 0px; height: 0px;" oncontextmenu="return false;">
+									<div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+								</div>
+								<div class="mCSB_draggerRail"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="content-box">
+							<div class="content">

@@ -27,11 +27,7 @@
 	            	<select name="author_id" class="form-control" required="" id="author">
 	            		<option selected="selected" class="d-none">请选择作者</option>
 	            		<volist name="author_list" id="vo">
-	            			<if condition="$vo['id'] eq $news_info[0]['author_id']">
-	            				<option value="{$vo['id']}" selected="selected">{$vo['name']}</option>
-	            			<else />
-	            				<option value="{$vo['id']}">{$vo['name']}</option>
-	            			</if>
+	            			<option value="{$vo['id']}" <if condition="$vo['id'] eq $news_info[0]['author_id']">selected="selected"</if> >{$vo['name']}</option>
 	            		</volist>
 	            	</select>
 	          	</div>
@@ -42,11 +38,7 @@
 	            	<select name="sort_ename" class="form-control" required="" id="news_sort">
 	            		<option selected="selected" class="d-none">请选择分类</option>
 	            		<volist name="sort_list" id="vo">
-	            			<if condition="$vo['e_name'] eq $news_info[0]['sort_ename']">
-	            				<option value="{$vo['e_name']}" selected="selected">{$vo['sort_name']}</option>
-	            			<else />
-	            				<option value="{$vo['e_name']}">{$vo['sort_name']}</option>
-	            			</if>
+	            			<option value="{$vo['e_name']}" <if condition="$vo['e_name'] eq $news_info[0]['sort_ename']">selected="selected"</if> >{$vo['sort_name']}</option>
 	            		</volist>
 	            	</select>
 	          	</div>

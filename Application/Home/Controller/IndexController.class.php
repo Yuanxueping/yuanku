@@ -2,7 +2,6 @@
 namespace Home\Controller;
 use Think\Controller;
 
-
 class IndexController extends Controller {
     
     public function index(){ 
@@ -66,7 +65,6 @@ class IndexController extends Controller {
 		
 		$page_num=I('page_num')>0?I('page_num'):1;
 		
-		
 		$start_index=($page_num-1)*$page_cout;
 //		$start_index=0;
 		
@@ -77,6 +75,14 @@ class IndexController extends Controller {
 						 -> order('id desc')
 						 -> limit($start_index,$page_cout)
 						 -> select();
+		
+		$pattern="/&lt;[img|IMG].*?src=[&quot;|&lsquo;](.*?(?:[\.gif|\.jpg]))[&quot;|&lsquo;].*?[\/]?&gt;/";
+		$replacement = '';
+		
+		foreach($news_list as &$value) {
+			$value['content'] = preg_replace($pattern, $replacement, $value['content']);
+		}
+		unset($value);
 		
 		$this->assign('news_list',$news_list);
 		
@@ -129,8 +135,11 @@ class IndexController extends Controller {
 		
     	$news = M('News');
 		
+		$news_recent = $news -> field('id,title,img,date') -> order('id desc') -> limit(3) -> select();
+		
 		$news_detail = $news -> join('author') -> join('news_sort') -> where('news.id='.$id.' AND author.id=author_id AND sort_ename=news_sort.e_name') -> select();
 		
+		$this -> assign('news_recent',$news_recent);
 		$this -> assign('news_detail',$news_detail);
     	
        $cache_a= S('site_name');

@@ -188,13 +188,12 @@ class NewsController extends AuthController {
 		$this -> assign('news_list', $news_list);
     	$this->display(); 
    }
-   public function new_del(){
+   public function news_del(){
    	    $new_m=D('News'); 
 		if ($new_m->delete(I('id'))) {
-            $this->redirect('News/newsort');
-//			$this->success('删除成功',U('News/newsort'));
+			$this->success('删除成功');
 		}else{
-			$this->success('删除失败',U('News/newsort'));
+			$this->error('删除失败');
 		}
    }
    public function sort(){
