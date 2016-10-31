@@ -28,6 +28,7 @@
 							</li>
 							<php> $controller_name= CONTROLLER_NAME</php>
 
+<<<<<<< HEAD
 							<li <if condition="$controller_name eq 'System'"> class="active"</if> >
 								<a href="#" aria-expanded="false"><i class="zmdi zmdi-view-dashboard"></i>系统设置<span class="zmdi arrow"></span></a>
 								<ul class="nav nav-inside collapse <if condition=" $controller_name eq 'System' "> in </if>" aria-expanded="false">
@@ -93,6 +94,33 @@
 					</div>
 				</div>
 			</aside>
+=======
+    <li  <if condition="$controller_name eq 'System'"> class="active"</if> >
+      <a href="#" aria-expanded="false"><i class="zmdi zmdi-view-dashboard"></i>系统设置<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse <if condition="$controller_name eq 'System'"> in </if>" aria-expanded="false"  >
+        <li class="inside-title">系统设置</li>
+        <!-- <li><a href="{:U('system/index')}">网站设置</a></li> -->
+        <li><a href="{:U('system/manager_user')}">管理员设置</a></li>
+      </ul>
+    </li>
+        <li>
+      <a href="#"><i class="zmdi zmdi-view-compact"></i>首页管理<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse" aria-expanded="false">
+        <li class="inside-title">首页管理</li>
+        <!--{:U('index/slide_manage')}-->
+        <li><a href="{:U('Slide/slide_manage')}">幻灯片管理</a></li>
+        <li><a href="{:U('Index/news_manage')}">首页新闻管理</a></li>
+      </ul>
+    </li>
+    <li <if condition="$controller_name eq 'Client'"> class="active"</if> >
+      <a href="#"><i class="zmdi zmdi-google-pages"></i>用户管理<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse <if condition="$controller_name eq 'Client'"> in </if>" aria-expanded="false">
+        <li class="inside-title">用户列表</li>
+        <li><a href="{:U('client/client_list')}">用户列表</a></li>
+        <li><a href="{:U('client/feedback_list')}">咨询列表</a></li>
+      </ul>
+    </li>
+>>>>>>> 3dcdc5604f8bbc878ac1b7f6a9ac4090bd4f5f92
 
 			<!-- 右上角弹出层 -->
 			<div class="side-panel">

@@ -191,9 +191,16 @@ class NewsController extends AuthController {
    public function news_del(){
    	    $new_m=D('News'); 
 		if ($new_m->delete(I('id'))) {
+<<<<<<< HEAD
 			$this->success('删除成功');
 		}else{
 			$this->error('删除失败');
+=======
+//          $this->redirect('News/newsort');
+			$this->success('删除成功');
+		}else{
+			$this->success('删除失败');
+>>>>>>> 3dcdc5604f8bbc878ac1b7f6a9ac4090bd4f5f92
 		}
    }
    public function sort(){
@@ -273,10 +280,42 @@ class NewsController extends AuthController {
    	    $new_m=D('News_sort'); 
 		if ($new_m->delete(I('id'))) {
             $this->redirect('News/sort');
-//			$this->success('删除成功',U('News/sort'));
+//			$this->success('删除成功');
 		}else{
-			$this->success('删除失败',U('News/sort'));
+			$this->error('删除失败');
 		}
+   }
+// 分类详情
+ public function sort_detail(){
+   	    $news=D('news');
+   	    $page_count = 3;	//每页数据的条数
+		$page_num = I('page_num') > 0 ? I('page_num') : 1;	//获取ID值，没有则默认为1
+		$news_total_num = $news ->where('sort_ename="'.I('e_name').'"')-> count();	//获取数据的总数
+//		echo $news->getLastSql();exit;
+		$start_index = ($page_num - 1) * $page_count;	//从第几条数据查起
+		$total_num = ceil($news_total_num/$page_count);	//总共有多少页
+		for($i = 1; $i <= $total_num; $i++) {
+			if($page_num == $i) {
+				$active = 'active';
+			}else {
+				$active = '';
+			}
+			$page_html.="<a href=".U('News/sort_detail',array('e_name'=>I('e_name'),'page_num'=>$i) )." class='btn btn-default ".$active."'>".$i."</a>";
+		}
+   	    $detail=$news->alias('n')
+					 -> field('n.id as nid,title,name,sort_name,content,img,date')
+					 -> where('sort_ename="'.I('e_name').'"')
+					 -> limit($start_index,$page_count)
+					 -> join('author ON author_id=author.id')
+					 -> join('news_sort ON sort_ename=news_sort.e_name')
+					 -> select();
+		
+//		print_r($detail);	
+		 
+   	    $this->assign('detail',$detail);
+   	    $this -> assign('page_html', $page_html);
+   	    $this->display();
+   	
    }
 //ajax修改
 // public function ajax_set_sort(){
