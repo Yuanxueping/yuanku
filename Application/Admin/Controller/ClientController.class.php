@@ -28,7 +28,7 @@ class ClientController extends Controller {
 
 
 
-    	$client_list = $client_m ->limit($start_index,$page_count)-> select();
+    	$client_list = $client_m ->limit($start_index,$page_count)-> order('id desc')->select();
 		$this -> assign('client_list',$client_list);
 		$this -> assign('page_html', $page_html);
 
