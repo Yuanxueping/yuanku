@@ -26,13 +26,8 @@
 				  			<a href="">{$news_detail[0]['date']|date='Y年m月d日',###}</a>
 				  			<span>作者:<span>{$news_detail[0]['name']}</span>分类:<span>{$news_detail[0]['sort_name']}</span>评论:<span>0 COMMENTS</span></span>
 				  		</p>
-<<<<<<< HEAD
 				  		<div class="p2"><php> echo htmlspecialchars_decode($news_detail[0]['content']) </php></div>
-=======
-				  		<p class="p2"><php> echo htmlspecialchars_decode($news_detail[0]['content']) </php></p>
-				  		<p class="p3"><a href="">read more...</a></p>
-				  		<button type="submit"  class="btn btn-block btn-lg btn-success" style="margin-top:10px; width:25%;" onclick="location.href='{:U('Index/take_add',array(id=>$news_detail[0]['id']))}'">点击订阅</button>
->>>>>>> 3dcdc5604f8bbc878ac1b7f6a9ac4090bd4f5f92
+						<button type="submit"  class="btn btn-block btn-lg btn-success" style="margin-top:10px; width:25%;" onclick="location.href='{:U('Index/take_add',array(id=>$news_detail[0]['id']))}'">点击订阅</button>
 					</div>
 					<div class="line1"></div>
 					<div class="sharepost">
