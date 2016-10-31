@@ -192,8 +192,11 @@ class IndexController extends Controller {
           
       }  
       //查看订阅的文章    
-    public function news_take()
-      {
+    //文章订阅
+    public function news_take(){  
+
+        $this->showLogo();
+         $this->showt_email(); 
          $cache_a= S('site_name');
          $news = M('News');
          $news_take  = M('NewsTake');
@@ -216,6 +219,82 @@ class IndexController extends Controller {
         // do it
          $this->display();
         
-      }   
+    } 
+
+    //浏览足迹
+    public function browse_footprin(){
+        $this->showLogo();
+         $this->showt_email(); 
+         $cache_a= S('site_name');
+         $news = M('News');
+         $news_take  = M('NewsTake');
+         $id=$_SESSION['user']['id'];
+
+         $user_new_take = $news -> join('news_take')-> where('news_take.uid='.$id.' AND news_take.news_id=news.id') -> select();
+         $page_cout=3;
+         $user_total_num=count($user_new_take);
+         
+        // 实例化分页类 传入总记录数和每页显示的记录数
+        $Page       = new \Think\Page($user_total_num,$page_cout);
+        $show       = $Page->show();// 分页显示输出
+        $this->assign('page',$show);// 赋值分页输出
+
+        
+        $news_take=$news -> join('news_take')-> where('news_take.uid='.$id.' AND news_take.news_id=news.id')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this -> assign('news_take',$news_take);
+
+         $this->assign('title','浏览足迹 - '.$cache_a['site_name']);
+        // do it
+         $this->display();
+    }
+
+    //喜欢的文章
+    public function favorite_article(){
+        $this->showLogo();
+         $this->showt_email(); 
+         $cache_a= S('site_name');
+         $news = M('News');
+         $news_take  = M('NewsTake');
+         $id=$_SESSION['user']['id'];
+
+         $user_new_take = $news -> join('news_take')-> where('news_take.uid='.$id.' AND news_take.news_id=news.id') -> select();
+         $page_cout=3;
+         $user_total_num=count($user_new_take);
+         
+        // 实例化分页类 传入总记录数和每页显示的记录数
+        $Page       = new \Think\Page($user_total_num,$page_cout);
+        $show       = $Page->show();// 分页显示输出
+        $this->assign('page',$show);// 赋值分页输出
+
+        
+        $news_take=$news -> join('news_take')-> where('news_take.uid='.$id.' AND news_take.news_id=news.id')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this -> assign('news_take',$news_take);
+
+         $this->assign('title','喜欢的文章 - '.$cache_a['site_name']);
+        // do it
+         $this->display();
+    }
+    //显示头像
+    public function showLogo(){
+      $Model = new \Think\Model() ;
+      $result=$Model->query("SELECT * FROM client_user WHERE user_name ='".$_SESSION['username']."'");
+      if($result[0]['head_photo']){
+        $this->assign('head_photo',$result[0]['head_photo']);
+      }else{
+        $this->assign('head_photo',"Public/head_logo/default_head_logo.jpg");
+        
+      }
+    }
+
+    //显示邮箱地址
+    public function showt_email(){
+      $Model = new \Think\Model() ;
+      $result=$Model->query("SELECT email_address FROM client_user WHERE user_name ='".$_SESSION['username']."'");
+      $email_address=$result[0]['email_address'];
+      $this->assign('email_address',$email_address);
+      
+    }
+
+
 
 }

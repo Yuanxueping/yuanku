@@ -85,24 +85,29 @@
 <div class="kong"></div>
 <div class="bs-example" data-example-id="carousel-with-captions">
 	    <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+		<!--<div class="carousel-inner" role="listbox">-->
 	      <ol class="carousel-indicators">
-	        <li data-target="#carousel-example-captions" data-slide-to="0" class=""></li>
-	        <li data-target="#carousel-example-captions" data-slide-to="1" class=""></li>
-	        <li data-target="#carousel-example-captions" data-slide-to="2" class="active"></li>
+			  <?php if(is_array($slide_list)): $k = 0; $__LIST__ = $slide_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$slide_id): $mod = ($k % 2 );++$k; if($k == 1): ?><li data-target="#carousel-example-captions" data-slide-to="<?php echo ($k-1); ?>" class="active"></li>
+					 <!--<div class="item active">-->
+				<?php else: ?>
+						<li data-target="#carousel-example-captions" data-slide-to="<?php echo ($k-1); ?>" class=""></li>
+						<!--<div class="item">--><?php endif; ?>
+				 	<!--<img src="/yuanku/Public/<?php echo ($slide_id["img"]); ?>"/>
+					 </div>--><?php endforeach; endif; else: echo "" ;endif; ?>
+	        
 	      </ol>
-	      <div class="carousel-inner" role="listbox">
-	        <div class="item">
-	        	<img src="/yuanku/Public/img/lunbo/01.jpg"/>			          
-	        </div>
-	        <div class="item">
-	        	<img src="/yuanku/Public/img/lunbo/02.jpg"/>
-	          
-	        </div>
-	        <div class="item active">
-	        	<img src="/yuanku/Public/img/lunbo/03.jpg"/>
-	          
-	        </div>
-	      </div>
+
+				  
+			<div class="carousel-inner" role="listbox">
+				<?php if(is_array($slide_list)): $k = 0; $__LIST__ = $slide_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$slide_id): $mod = ($k % 2 );++$k; if($k == 1): ?><div class="item active">
+					<?php else: ?>
+							<div class="item"><?php endif; ?>
+						<img src="/yuanku/Public/<?php echo ($slide_id["img"]); ?>"/>
+					</div><?php endforeach; endif; else: echo "" ;endif; ?>
+			</div>
+			
+	      
+
 	      <a class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev">
 	        <span class="glyphicon glyphicon-chevron-left " aria-hidden="true"></span>
 	        <span class="sr-only">Previous</span>
@@ -121,14 +126,12 @@
 			<div class="section_2_welcome col-lg-5 col col-md-5 col-sm-5 col-xs-12">
 				<h2>
 					欢迎来到力动 <br>
-					<b>为了您的商务</b> <br>
-					<em>创建属于你的最具功能性和独特特征的项目</em>
+					<b>运动使您健康</b> <br>
+					<em>为您量身定制专业的运动健身项目</em>
 				</h2>
 			</div>
 			<div class="section_2_words col-lg-7 col-md-7 col-sm-7 col-xs-12">
-				<p>在看它的布局时，会被一个页面的可读内容分散注意力。英语.许多桌面出版软件包和网页编辑器现在使用乱数假文作为默认的示范文本，并为
-					乱数假文搜索会发现很多网站尚在襁褓中的版本已经发展了多年的目的。这是一个相当长的字段，之所以出现在这里是因为这段字段的主要作
-					用为填充网站所用，并且这段文字并不会阻碍您的阅读，您可以放心浏览我们网站后续的所有内容</p>
+				<p>力动是一个主打体育与健康的网站，网站致力于体育运动来改善人们的身体素质和精神状态，通过体育运动这样世人都能享受与进行的活动，使人民群众健康，实现社会和谐、国家富强。同时，网站还能够给您带来最新鲜精彩的体育资讯。</p>
 				<a href="#" class="button-one">
 					一次神奇的旅途 &nbsp;
 					<span class="glyphicon glyphicon-arrow-right"></span>
@@ -143,23 +146,23 @@
 <div class="section_2_bottom">
 	<div class="box col-lg-3 col-md-3 col-sm-6 col-xs-12">
 		<span class="glyphicon glyphicon-pencil"></span>
-		<h5>网站设计</h5>
-		<p>对于乱数假文地球发现很多网站还有最近与桌面出版像婴儿的年软件版本。这是一段毫无意义的文字内容，你可以无视它并向后浏览你所想要浏览的内容。</p>
+		<h5>写下您的要求</h5>
+		<p>对于您有什么需要的要求或者什么建议，请在这里写出，我们将会根据您的要求和状态为您提供专业的服务。</p>
 	</div>
 	<div class="box col-lg-3 col-md-3 col-sm-6 col-xs-12">
 		<span class="glyphicon glyphicon-signal"></span>
-		<h5>网站开发</h5>
-		<p>对于乱数假文地球发现很多网站还有最近与桌面出版像婴儿的年软件版本。这是一段毫无意义的文字内容，你可以无视它并向后浏览你所想要浏览的内容。</p>
+		<h5>健康测试</h5>
+		<p>对于您的身体和平时的生活习惯做出相应的测试，以真实了解您的测试结果给出专业的建议</p>
 	</div>
 	<div class="box col-lg-3 col-md-3 col-sm-6 col-xs-12">
 		<span class="glyphicon glyphicon-link"></span>
-		<h5>在线营销</h5>
-		<p>对于乱数假文地球发现很多网站还有最近与桌面出版像婴儿的年软件版本。这是一段毫无意义的文字内容，你可以无视它并向后浏览你所想要浏览的内容。</p>
+		<h5>专家对接</h5>
+		<p>专家研究分析，并和您取得实时的沟通交流，及时监控您的和健康状态。</p>
 	</div>
 	<div class="box col-lg-3 col-md-3 col-sm-6 col-xs-12">
 		<span class="glyphicon glyphicon-heart"></span>
-		<h5>良好支持</h5>
-		<p>对于乱数假文地球发现很多网站还有最近与桌面出版像婴儿的年软件版本。这是一段毫无意义的文字内容，你可以无视它并向后浏览你所想要浏览的内容。</p>
+		<h5>健康跟踪</h5>
+		<p>密切关注您的方案实施进度，并且对方案不合适的地方进行严密改良，这全都是为了你的健康。</p>
 	</div>
 </div>
 
@@ -168,9 +171,9 @@
 <div class="views-element-container feature_section3">
 
 	<div class="section_title1_1">
-		<h2 class="caps white">组合作品 </h2>
+		<h2 class="caps white">我们所改变的生活 </h2>
 		<div class="linebg"></div>
-		<p class="fontdefaulf">没人喜欢"疼痛"本身的， <br /> 谁会去找它，遇上它，喜欢它，很简单...因为它就是"痛楚</p>
+		<p class="fontdefaulf">没人喜欢"疼痛"本身的， <br /> 谁会去找它，遇上它，喜欢它，很简单...那就让运动来代替它吧。</p>
 	</div>
 
 	<div class="container-fluid">
@@ -332,26 +335,26 @@
 
 	<div class="container">
 
-		<h2>如何工作的</h2>
+		<h2>力动怎么“动”？</h2>
 		<div class="linebg_2"></div>
-		<p>当一个未知的打印机带一个厨房和它做的标本</p>
+		<p>未知的和不深刻的都需要被解释，现在就解释，力动这样用</p>
 
 		<div class="root">
 
 			<div class="one_fifth"><i class="glyphicon glyphicon-book"></i>
-				<h5 class="nocaps">产品订单</h5></div>
+				<h5 class="nocaps">客户资料录入</h5></div>
 
 			<div class="one_fifth"><i class="glyphicon glyphicon-thumbs-up"></i>
-				<h5 class="nocaps">冲刺订单</h5></div>
+				<h5 class="nocaps">制定并达成订单</h5></div>
 
 			<div class="one_fifth"><i class="glyphicon glyphicon-user"></i>
-				<h5 class="nocaps">用户故事</h5></div>
+				<h5 class="nocaps">团队制定方案</h5></div>
 
 			<div class="one_fifth"><i class="glyphicon glyphicon-picture"></i>
-				<h5 class="nocaps">演示</h5></div>
+				<h5 class="nocaps">演示教学</h5></div>
 
 			<div class="one_fifth last" style="margin-right: 0;"><i class="glyphicon glyphicon-heart"></i>
-				<h5 class="nocaps">交付成果</h5></div>
+				<h5 class="nocaps">健康成果</h5></div>
 
 		</div>
 		<!-- end root -->
@@ -372,7 +375,7 @@
 	<div class="rightbox">
 
 		<div class="one_third_less">
-			<h3 class="white caps">一个完整的网站 <br/><b> 有能力 <br/>可包装<br/>一组建议</b><br/> 许多可用的模板</h3>
+			<h3 class="white caps">一个专业的网站 <br/><b> 有团队 <br/>有模式<br/>有成果</b><br/> 还有些大新闻</h3>
 		</div>
 		<!-- end item -->
 
@@ -436,11 +439,11 @@
 <div class="views-element-container feature_section6">
 
 	<div class="container">
-		<h2>前来与我们的团队洽谈</h2>
+		<h2>欢迎来加入我们</h2>
 		<div class="linebg_2"></div>
-		<p>没人喜欢"疼痛"本身的， <br /> 谁会去找它，遇上它，喜欢它，很简单...因为它就是"痛楚</p>
-		<div id="example" class="owl-carousel">
-			<div id="wiper">
+		<p>无论以什么样的形式 <br /> 欢迎与我们为伍，为人类健康而奋斗！</p>
+		<!--<div id="example" class="owl-carousel">-->
+			<!--<div id="wiper">
 				<div class="item">
 					<div class="box">
 						<div class="boximg">
@@ -550,7 +553,7 @@
 					</div>
 				</div>
 				<!--复制一份-->
-				<div class="item">
+				<!--<div class="item">
 					<div class="box">
 						<div class="boximg">
 							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img6.jpg?itok=V9ZP4PYd" class="rimg" alt="" />
@@ -658,9 +661,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 
-		</div>
+		<!--</div>-->
 	</div>
 
 </div>
@@ -672,19 +675,19 @@
 
 		<div class="one_third">
 			<i class="glyphicon glyphicon-phone"></i>
-			<h3>改善 你的 企业</h3>
+			<h3>电话来访</h3>
 			<p>乱数假文是具有更多或更少的正常分布的字母，而不是使它看起来将文段有限制地扩充至你想要的长度。 </p>
 		</div>
 
 		<div class="one_third">
 			<i class="glyphicon glyphicon-globe"></i>
-			<h3>清洁代码易于使用</h3>
+			<h3>全球加盟</h3>
 			<p>乱数假文是具有更多或更少的正常分布的字母，而不是使它看起来将文段有限制地扩充至你想要的长度。 </p>
 		</div>
 
 		<div class="one_third last">
 			<i class="glyphicon glyphicon-picture"></i>
-			<h3>30预设计布局</h3>
+			<h3>素材提供</h3>
 			<p>乱数假文是具有更多或更少的正常分布的字母，而不是使它看起来将文段有限制地扩充至你想要的长度。 </p>
 		</div>
 
@@ -692,19 +695,19 @@
 
 		<div class="one_third">
 			<i class="glyphicon glyphicon-plane"></i>
-			<h3>商业思维</h3>
+			<h3>上门服务</h3>
 			<p>乱数假文是具有更多或更少的正常分布的字母，而不是使它看起来将文段有限制地扩充至你想要的长度。 </p>
 		</div>
 
 		<div class="one_third">
 			<i class="glyphicon glyphicon-film"></i>
-			<h3>独家的幻灯片</h3>
+			<h3>视屏教学</h3>
 			<p>乱数假文是具有更多或更少的正常分布的字母，而不是使它看起来将文段有限制地扩充至你想要的长度。 </p>
 		</div>
 
 		<div class="one_third last">
 			<i class="glyphicon glyphicon-align-justify"></i>
-			<h3>分层的PSD文件</h3>
+			<h3>人群分类</h3>
 			<p>乱数假文是具有更多或更少的正常分布的字母，而不是使它看起来将文段有限制地扩充至你想要的长度。 </p>
 		</div>
 
@@ -712,19 +715,19 @@
 
 		<div class="one_third">
 			<i class="glyphicon glyphicon-certificate"></i>
-			<h3>结构良好的页面</h3>
+			<h3>全方位策略</h3>
 			<p>乱数假文是具有更多或更少的正常分布的字母，而不是使它看起来将文段有限制地扩充至你想要的长度。 </p>
 		</div>
 
 		<div class="one_third">
 			<i class="glyphicon glyphicon-tasks"></i>
-			<h3>交叉浏览检查</h3>
+			<h3>数据处理</h3>
 			<p>乱数假文是具有更多或更少的正常分布的字母，而不是使它看起来将文段有限制地扩充至你想要的长度。 </p>
 		</div>
 
 		<div class="one_third last">
 			<i class="glyphicon glyphicon-expand"></i>
-			<h3>移动友好的主题</h3>
+			<h3>视频直播</h3>
 			<p>乱数假文是具有更多或更少的正常分布的字母，而不是使它看起来将文段有限制地扩充至你想要的长度。 </p>
 		</div>
 
@@ -737,11 +740,11 @@
 	<div class="data_bg" data-bg="/themes/highsta/images/bg-image01.jpg"></div>
 	<div class="container">
 		<div class="left">
-			<h1 class="caps"><strong>欢迎加入力动企业</strong> <br/>你将可以在这里可以获取大量非常优秀的模板 ！</h1>
+			<h1 class="caps"><strong>欢迎加入力动企业</strong> <br/>你将可以在这里可以获取大量健康信息和运动建议</h1>
 		</div>
 		<div class="right">
-			<h4 class="caps white">在我们的网站，你将可以看到跨浏览器兼容将大大增强</h4>
-			<p class="white">有变化，可以改变的话，大多数遭受看起来更是曾经在与释放提取表。这段文字没有实际意义，你可以无视并继续浏览。</p>
+			<h4 class="caps white">在我们的网站，你将可以看到你想看到的、想了解的、最新鲜的、最有用的体育与健康资讯。</h4>
+			<p class="white">如果对您有帮助，那就是我们莫大的荣幸</p>
 			<ul>
 				<li><i class="glyphicon glyphicon-ok"></i>这是一段没有任何实际意义的文段，无视它也不影响您的浏览</li>
 				<li><i class="glyphicon glyphicon-ok"></i>这是一段没有任何实际意义的文段，无视它也不影响您的浏览</li>
@@ -770,7 +773,7 @@
 	<div class="container">
 		<h2>发生在近期的博客/新闻</h2>
 		<div class="linebg"></div>
-		<p>有变化可用多数遭受蚀变的话，看起来可信 <br /> 没有人喜欢“疼痛”本身的</p>
+		<p>世间的事，原本如此 <br /> 没有人喜欢“疼痛”本身</p>
 		<div class="blogs-news">
 
 			<div class="one_third_less">
@@ -843,7 +846,7 @@
 	<div class="data_bg" data-bg="/themes/highsta/images/bg-image02.jpg"></div>
 	<div class="container">
 
-		<h1 class="less6">新的专业模板已经加入了你喜欢它的功能。 <em>这是一段毫无意义的文段描述，没有任何的翻译器能成功翻译，所以我们决定随便手打一些字段代替该段内容</em></h1>
+		<h1 class="less6">新的专业方案已经加入了你喜欢它的项目。 <em>这将会使您在运动中倍觉愉快！</em></h1>
 
 		<a class="check_it" href="#">查看演示</a>
 		<a class="purchase" href="#">现在购买!</a>
@@ -862,8 +865,8 @@
 
 
  </i>
-						<h5>图形 &amp; 设计</h5>
-						<p>如您所见，我们致力于优秀的填充网站给您一个舒适的浏览体验，请继续浏览</p>
+						<h5>研究成果</h5>
+						<p>如您所见，我们致力于优秀的成果，在此基础上再建立起方案</p>
 					</a>
 				</li>
 				<li>
@@ -871,8 +874,8 @@
 
 
  </i>
-						<h5>网站开发</h5>
-						<p>如您所见，我们致力于优秀的填充网站给您一个舒适的浏览体验，请继续浏览</p>
+						<h5>方案制定</h5>
+						<p>优秀的方案是成功的第一步，我们会为了成功做好每一步</p>
 					</a>
 				</li>
 				<li>
@@ -881,7 +884,7 @@
 
  </i>
 						<h5>定制服务</h5>
-						<p>如您所见，我们致力于优秀的填充网站给您一个舒适的浏览体验，请继续浏览</p>
+						<p>为您解决您的困扰，为您提供更方便的服务。</p>
 					</a>
 				</li>
 				<li>
@@ -889,8 +892,8 @@
 
 
  </i>
-						<h5>响应式服务</h5>
-						<p>如您所见，我们致力于优秀的填充网站给您一个舒适的浏览体验，请继续浏览.</p>
+						<h5>数据监测</h5>
+						<p>根据手机或者随身智能设备监测用户健康信息，使用大数据分析。</p>
 					</a>
 				</li>
 
@@ -898,12 +901,12 @@
 			<div id="tabs_container" class="transition ">
 				<div id="tabs1" title=""> <img class="hsta" src="/yuanku/Public/img/highstand homepage/site-image01.jpg" width="585" height="200" alt="content" typeof="Image" />
 
-					<h3>图形 &amp; 设计</h3>
+					<h3>研究成果</h3>
 					<p>乱数假文只是虚拟的文字印刷排版一直是行业和# 039；标准虚拟文本自从16世纪，当一个未知的打印机把厨房型和炒做字体样本。它不仅幸存下来的五个世纪，而且进入电子排版，其余基本保持不变。这第一个真正的随机词发生器在互联网乱数假文作为。 </p>
 				</div>
 				<div id="tabs2" title=""> <img class="hsta" src="/yuanku/Public/img/highstand homepage/site-image02.jpg" width="585" height="200" alt="content" typeof="Image" />
 
-					<h3>网站开发</h3>
+					<h3>方案制定</h3>
 					<p>乱数假文只是虚拟的文字印刷排版一直是行业和# 039；标准虚拟文本自从16世纪，当一个未知的打印机把厨房型和炒做字体样本。它不仅幸存下来的五个世纪，而且进入电子排版，其余基本保持不变。这第一个真正的随机词发生器在互联网乱数假文作为默认的示范文本，并寻找与# 039；乱数假文和# 039；会发现很多网站仍处于起步阶段。不同的版本已经发展了多年，有时是偶然的，有时是故意的 </p>
 				</div>
 				<div id="tabs3" title=""> <img class="hsta" src="/yuanku/Public/img/highstand homepage/site-image03.jpg" width="585" height="200" alt="content" typeof="Image" />
@@ -913,7 +916,7 @@
 				</div>
 				<div id="tabs4" title=""> <img class="hsta" src="/yuanku/Public/img/highstand homepage/site-image04.jpg" width="585" height="200" alt="content" typeof="Image" />
 
-					<h3>响应式设计</h3>
+					<h3>数据监测</h3>
 					<p>乱数假文只是虚拟的文字印刷排版一直是行业和# 039；标准虚拟文本自从16世纪，当一个未知的打印机把厨房型和炒做字体样本。它不仅幸存下来的五个世纪，而且进入电子排版，其余基本保持不变。这第一个真正的随机词发生器在互联网乱数假文作为默认的示范文本，并寻找与# 039；乱数假文和# 039；会发现很多网站仍处于起步阶段。不同的版本已经发展了多年，有时是偶然的，有时是故意的</p>
 				</div>
 			</div>
@@ -927,19 +930,19 @@
         -->
 				<div class="js-add-bg feature_section12 col-lg-12 col-sm-12 col-xs-12" style="background-image: url(../../img/highstand homepage/bg-image03.jpg) ;">
 					<div class="container ">
-						<h2 class="text-uppercase">最佳包装</h2>
+						<h2 class="text-uppercase">模式定制</h2>
 						<div class="linebg_3"></div>
-						<p>有些看起来可靠的文案已经变得不那么可靠了，比如下面这一句英文！ <br>dolor sit amet consectetuer adipiscing elit suspendisse justdo.</p>
+						<p>不同的模式可享受不同的待遇 <br>尽情享受健康生活吧！</p>
 
 						<div class="one_fourth_less">
 							<h3>标准版</h3>
 							<h1>$4.95 <br> <em>/月</em></h1>
 
 							<ul>
-								<li><i class="glyphicon glyphicon-ok"></i> 50 GB 存储空间 </li>
-								<li><i class="glyphicon glyphicon-ok"></i> 1 个免费域名 </li>
-								<li><i class="glyphicon glyphicon-ok"></i> 100 个邮箱 </li>
-								<li><i class="glyphicon glyphicon-ok"></i> 24/7 支持 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 专业教程 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 专业器材提供 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 在线指导 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 运动友介绍 </li>
 								<li><i class="glyphicon glyphicon-ok"></i> 资金退还保证 </li>
 							</ul>
 
@@ -953,12 +956,11 @@
 							<h1>$9.95 <br> <em>/月</em></h1>
 
 							<ul>
-								<li><i class="glyphicon glyphicon-ok"></i> 50 GB 存储空间 </li>
-								<li><i class="glyphicon glyphicon-ok"></i> 1 个免费域名 </li>
-								<li><i class="glyphicon glyphicon-ok"></i> 100 个邮箱 </li>
-								<li><i class="glyphicon glyphicon-ok"></i> 24/7 支持 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 专业教程 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 专业器材提供 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 在线指导 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 运动友介绍 </li>
 								<li><i class="glyphicon glyphicon-ok"></i> 资金退还保证 </li>
-							</ul>
 							</ul>
 							<div class="clearfix margin_bottom2"></div>
 							<a href="#" class="button four">选择该计划</a>
@@ -970,12 +972,11 @@
 							<h1>$45 <br> <em>/月</em></h1>
 
 							<ul>
-								<li><i class="glyphicon glyphicon-ok"></i> 50 GB 存储空间 </li>
-								<li><i class="glyphicon glyphicon-ok"></i> 1 个免费域名 </li>
-								<li><i class="glyphicon glyphicon-ok"></i> 100 个邮箱 </li>
-								<li><i class="glyphicon glyphicon-ok"></i> 24/7 支持 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 专业教程 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 专业器材提供 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 在线指导 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 运动友介绍 </li>
 								<li><i class="glyphicon glyphicon-ok"></i> 资金退还保证 </li>
-							</ul>
 							</ul>
 							<div class="clearfix margin_bottom2"></div>
 							<a href="#" class="button four">选择该计划</a>
@@ -987,12 +988,11 @@
 							<h1>$100 <br> <em>/月</em></h1>
 
 							<ul>
-								<li><i class="glyphicon glyphicon-ok"></i> 50 GB 存储空间 </li>
-								<li><i class="glyphicon glyphicon-ok"></i> 1 个免费域名 </li>
-								<li><i class="glyphicon glyphicon-ok"></i> 100 个邮箱 </li>
-								<li><i class="glyphicon glyphicon-ok"></i> 24/7 支持 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 专业教程 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 专业器材提供 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 在线指导 </li>
+								<li><i class="glyphicon glyphicon-ok"></i> 运动友介绍 </li>
 								<li><i class="glyphicon glyphicon-ok"></i> 资金退还保证 </li>
-							</ul>
 							</ul>
 							<div class="clearfix margin_bottom2"></div>
 							<a href="#" class="button four">选择该计划</a>
@@ -1016,7 +1016,7 @@
 											<div class "box-block" id="d2">
 												<div class="item">
 													<div class="climg"><img src="/yuanku/Public/img/highstand homepage/people-img19_0.jpg" width="100" height="100" alt="says" typeof="Image"></div>
-													<p class="bigtfont">"测试用的段落，并通过这里的词的引用古典文学通行证发现那里不可思议的源看起来合理生成的特征词。"</p>
+													<p class="bigtfont">"力动网简直棒呆了！我才在这边定制了两个月的方案，他们就免费赠送了我一瓶怡宝，说渴了可以喝，真是太贴心了！"</p>
 													<br>
 													<strong>- Michle Siminson</strong> <em>- google.com</em>
 												</div>
@@ -1027,8 +1027,8 @@
 										<div class="owl-item">
 											<div class="item">
 												<div class="climg"><img src="/yuanku/Public/img/highstand homepage/people-img19_0.jpg" width="100" height="100" alt="says" typeof="Image"></div>
-												<p class="bigtfont">"测试用的段落，并通过这里的词的引用古典文学通行证发现那里不可思议的源看起来合理生成的特征词。"</p>
-												<br>
+												<p class="bigtfont">"力动网简直棒呆了！我才在这边定制了两个月的方案，他们就免费赠送了我一瓶怡宝，说渴了可以喝，真是太贴心了！"</p>
+													<br>
 												<strong>- Michle Siminson</strong> <em>- google.com</em>
 											</div>
 										</div>
@@ -1036,8 +1036,8 @@
 										<div class="owl-item">
 											<div class="item">
 												<div class="climg"><img src="/yuanku/Public/img/highstand homepage/people-img19_1.jpg" width="100" height="100" alt="says" typeof="Image"></div>
-												<p class="bigtfont">"测试用的段落，并通过这里的词的引用古典文学通行证发现那里不可思议的源看起来合理生成的特征词。"</p>
-												<br>
+												<p class="bigtfont">"力动网简直棒呆了！我才在这边定制了两个月的方案，他们就免费赠送了我一瓶怡宝，说渴了可以喝，真是太贴心了！"</p>
+													<br>
 												<strong>- Michle Siminson</strong> <em>- google.com</em>
 											</div>
 										</div>
@@ -1045,8 +1045,8 @@
 										<div class="owl-item">
 											<div class="item">
 												<div class="climg"><img src="/yuanku/Public/img/highstand homepage/people-img19.jpg" width="100" height="100" alt="says" typeof="Image"></div>
-												<p class="bigtfont">" 测试用的段落，并通过这里的词的引用古典文学通行证发现那里不可思议的源看起来合理生成的特征词。 "</p>
-												<br>
+												<p class="bigtfont">"力动网简直棒呆了！我才在这边定制了两个月的方案，他们就免费赠送了我一瓶怡宝，说渴了可以喝，真是太贴心了！"</p>
+													<br>
 												<strong>- Michle Siminson</strong> <em>- google.com</em>
 											</div>
 										</div>
@@ -1096,7 +1096,7 @@
 					<div class="row" >
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul>
-								<li><h4 >友情连接</h4></li><br/>
+								<li><a href=""><h4>友情链接</h4></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>百度一下</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>淘宝商城</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>腾讯首页</span></a></li><br/>
@@ -1105,7 +1105,7 @@
 						</div>					
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><h4 >最新动态</h4></li><br/>
+								<li><a href="/yuanku/index.php/Home/Index/about_us"><h4>最新动态</h4></a></li><br/>
 								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
 								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
 								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
@@ -1114,7 +1114,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><h4>关于我们</h4></li><br/>
+								<li><a href="/yuanku/index.php/Home/Index/about_us"><h4>关于我们</h4></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;&nbsp;<span>技术中心</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;&nbsp;<span>产品特色</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;<span>结算流程</span></a></li><br/>
@@ -1123,7 +1123,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><h4>联系我们</h4></li></br>
+								<li><a href="/yuanku/index.php/Home/Index/contact_us"><h4>联系我们</h4></a></li></br>
 								<li><a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;<span>511186470@qq.com</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;<span>0201-6666666</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-map-marker"aria-hidden="true"></span>&nbsp;&nbsp;<span>美国洛杉矶</span></a></li><br/>

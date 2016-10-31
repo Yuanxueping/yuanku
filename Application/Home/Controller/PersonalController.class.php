@@ -11,21 +11,33 @@ class PersonalController extends Controller {
 		$cache_a= S('site_name');
        $this->assign('title','个人中心 - '.$cache_a['site_name']);
 		$news_m = M('News');
+		$take_m = M('NewsTake');
 		if(isset($_SESSION['username'])){
-			//查询新闻列表
-			// $news_list = $news_m -> alias('n')
-			// 					 -> field('n.id as nid,title,name,sort_name,img,date')
-			// 					 -> join('author ON author_id=author.id')
-			// 					 -> join('news_sort ON sort_ename=news_sort.e_name')
-			// 					 -> order('date desc')
-			// 					 -> limit($start_index,$page_count)
-			// 				 // -> order('n.id desc')
-			// 				 -> where('uid='.$_SESSION['user']['id']) -> select();
+			// 查询新闻列表
+			$news_list = $news_m -> alias('n')
+								 -> field('n.id as nid,title,name,sort_name,img,date')
+								 -> join('author ON author_id=author.id')
+								 -> join('news_sort ON sort_ename=news_sort.e_name')
+								 -> order('date desc')
+								 -> limit($start_index,$page_count)
+							 // -> order('n.id desc')
+							 -> where('uid='.$_SESSION['user']['id']) -> select();
 
-			// 				$num = count($news_list);
+							$num = count($news_list);
 							
 		    	$this->assign('num',$num);
+
+		    	$take_list = $take_m ->  where('uid='.$_SESSION['user']['id']) -> select();
+				$take_num = count($take_list);
+				
+				
+				// echo $take_num;
+				$this -> assign('take_num',$take_num);
 			$this->display('Index/personal');	
+
+
+
+
 		}else{
 			$this->error('用户未登陆，请重新登陆',U('Index/login'),3);
 		}

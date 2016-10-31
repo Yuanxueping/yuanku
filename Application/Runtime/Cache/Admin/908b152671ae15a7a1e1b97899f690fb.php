@@ -158,8 +158,9 @@
       <a href="#"><i class="zmdi zmdi-view-compact"></i>首页管理<span class="zmdi arrow"></span></a>
       <ul class="nav nav-inside collapse" aria-expanded="false">
         <li class="inside-title">首页管理</li>
-        <li><a href="<?php echo U('index/slide_manage');?>">幻灯片管理</a></li>
-        <li><a href="/land/l1/index_r.html">首页新闻管理</a></li>
+        <!--<?php echo U('index/slide_manage');?>-->
+        <li><a href="<?php echo U('Slide/slide_manage');?>">幻灯片管理</a></li>
+        <li><a href="<?php echo U('Index/news_manage');?>">首页新闻管理</a></li>
       </ul>
     </li>
     <li <?php if($controller_name == 'Client'): ?>class="active"<?php endif; ?> >

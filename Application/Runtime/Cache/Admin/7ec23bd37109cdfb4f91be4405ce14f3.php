@@ -16,7 +16,7 @@ body{ background: #fff; font-family: '微软雅黑'; color: #333; font-size: 16p
 a{color: #fff !important}
 </style>
 </head>
-<body style="background:url('/thinkphp_3.2.3_full/yuanku/Public/img/msg_tip_bg.png') 0 0 no-repeat #bee5fc;background-size: 100%;">
+<body style="background:url('/yuanku/Public/img/msg_tip_bg.png') 0 0 no-repeat #bee5fc;background-size: 100%;">
 <div class="system-message" style="color: #fff;width: 1200px;margin: 58px auto 0;text-align: center;">
 <?php if(isset($message)) {?>
 <!-- <h1>:)</h1> -->

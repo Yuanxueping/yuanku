@@ -103,6 +103,7 @@
 				  		</p>
 				  		<p class="p2"><?php echo htmlspecialchars_decode($news_detail[0]['content']) ?></p>
 				  		<p class="p3"><a href="">read more...</a></p>
+				  		<button type="submit"  class="btn btn-block btn-lg btn-success" style="margin-top:10px; width:25%;" onclick="location.href='<?php echo U('Index/take_add',array(id=>$news_detail[0]['id']));?>'">点击订阅</button>
 					</div>
 					<div class="line1"></div>
 					<div class="sharepost">
@@ -197,7 +198,7 @@
 					<div class="row" >
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul>
-								<li><h4 >友情连接</h4></li><br/>
+								<li><a href=""><h4>友情链接</h4></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>百度一下</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>淘宝商城</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>腾讯首页</span></a></li><br/>
@@ -206,7 +207,7 @@
 						</div>					
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><h4 >最新动态</h4></li><br/>
+								<li><a href="/yuanku/index.php/Home/Index/about_us"><h4>最新动态</h4></a></li><br/>
 								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
 								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
 								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
@@ -215,7 +216,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><h4>关于我们</h4></li><br/>
+								<li><a href="/yuanku/index.php/Home/Index/about_us"><h4>关于我们</h4></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;&nbsp;<span>技术中心</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;&nbsp;<span>产品特色</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;<span>结算流程</span></a></li><br/>
@@ -224,7 +225,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><h4>联系我们</h4></li></br>
+								<li><a href="/yuanku/index.php/Home/Index/contact_us"><h4>联系我们</h4></a></li></br>
 								<li><a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;<span>511186470@qq.com</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;<span>0201-6666666</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-map-marker"aria-hidden="true"></span>&nbsp;&nbsp;<span>美国洛杉矶</span></a></li><br/>
