@@ -37,7 +37,7 @@ li {
     & .container {
         & .row {
             & .col-md-12 {
-                padding: 0;
+                padding: 0 50px 0 0;
                 & > h1 {
                     color: white;
                     font-size: 32px;
@@ -80,6 +80,7 @@ li {
     & .row {
         & .col-sm-9 {
             margin-bottom: 75px;
+            padding-right: 40px;
             
             & .jumbotron {
                 padding: 0px;
@@ -118,28 +119,24 @@ li {
                         
                         & > span {
                             color: #999;
-                            padding: 0 8px 0 8px;
+                            padding: 0 20px 0 8px;
                         }
                     }
                 }
                 
-                & > p.p2 {
+                & > div.p2 {
                     font-size: 14px;
                     color: #727272;
                     line-height: 23px;
                     margin-bottom: 0px;
+                    
+                    img {
+                        max-width: 100%;
+                    }
                 }
                 
-                & > p.p3 {
-                    line-height: 23px;
-                    margin-bottom: 0px;
-                    
-                    & > a {
-                        font-size: 14px;
-                        color: #2ecc71;
-                        
-                        .a_hover1();
-                    }
+                & > button.dingyue {
+                    margin-top:10px;
                 }
             }
             
@@ -331,8 +328,14 @@ li {
     }
 }
 
-@media(max-width:786px) {
+@media screen and (max-width:786px) {
     .container {
         margin: 0 8%;
+    }
+}
+
+@media screen and (min-width:786px) {
+    button.dingyue {
+        width: 25%;
     }
 }

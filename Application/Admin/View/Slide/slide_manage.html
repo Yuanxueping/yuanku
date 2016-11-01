@@ -16,7 +16,7 @@
                 <th>名称</th>
                 <th>图片</th> 
                 <th>日期</th>
-                <th>操作</th>
+                <th class="text-center">操作</th>
             </tr>
         </thead>
         <tbody>
@@ -31,7 +31,7 @@
 						<div class="btn-group">
 							<!--<a class="btn btn-success btn-xs" href="" target="_blank"><span class="glyphicon glyphicon-search"></span></a>-->
 							<button onclick="location.href='{:U('Slide/slide_edit',array('id'=>$slide_id['nid']))}'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
-							<button onclick="location.href='{:U('Slide/slide_delete',array('id'=>$slide_id['nid']))}'" type="button"  class="btn btn-danger btn-xs"><i class="zmdi zmdi-delete"></i></button>
+							<button onclick="location.href='{:U('Slide/slide_delete',array('id'=>$slide_id['nid']))}'" type="button"  class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
 							
 						</div>
 					</td>

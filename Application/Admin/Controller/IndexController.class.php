@@ -93,7 +93,7 @@ class IndexController extends AuthController {
 		
 		//获取表的数据
 		$news_list = $news_m -> alias('n')
-							 -> field('n.id as nid,title,name,img')
+							 -> field('n.id as nid,title,name,news_position')
 							 -> join('author ON author_id=author.id')
 							 -> limit($start_index,$page_count)
 							 -> order('n.id desc')
@@ -106,6 +106,29 @@ class IndexController extends AuthController {
 		
     	$this->display();
     }
+
+    public function position_edit(){
+        // $news_m = M('News');
+
+        if(IS_POST){
+	            $news_m=M('News');
+				
+	            $data=$news_m->create();
+	           
+	            if($news_m->save($data))
+	            {
+	                $this->success('修改成功', U('Index/news_manage'), 3);
+	            }else{
+	                $this->error('修改失败');
+	            }
+	            exit;
+        	}
+        
+        // $data=M('News')->find($nid);
+
+        // $this->assign('data',$data);
+        // $this -> display();
+
+    }
     
-   
 }
