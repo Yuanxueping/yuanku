@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en"><head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title><?php echo ($title); ?>  后台管理</title>
@@ -122,8 +122,8 @@
       					</ul>
     				</div>
   				</div>
-			</nav> 
- 			<aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;">
+			</nav>
+			<aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;">
 				<div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0">
 					<div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
 						<ul class="nav metismenu">
@@ -428,55 +428,77 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="content-box">
-							<div class="content"> 
-<link rel="stylesheet" href="/yuanku/Public/css/admin/news.css">
+							<div class="content">
+
+<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/admin/news_add.css"/>
+
 <div class="panel panel-primary">
 	<div class="panel-heading">
-		<span>内容列表</span>
-		<a href="<?php echo U('News/news_add');?>" class="btn btn-success btn-sm white pull-right">添加内容</a>
+		<div class="panel-title">修改内容</div>
 	</div>
-	<table class="table table-hover">
-      	<thead>
-        	<tr>
-	          	<th>#</th>
-	          	<th>ID</th>
-		        <th>内容标题</th>
-		        <th>作者</th>
-		        <th>分类</th>
-		        <th>图片</th>
-		        <th>日期</th>
-		        <th class="text-center">操作</th>
-        	</tr>
-      	</thead>
-      	<tbody>
-      		<?php if(is_array($news_list)): $k = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
-      				<td><?php echo ($k); ?></td>
-					<td><?php echo ($vo['nid']); ?></td>
-					<td><?php echo ($vo['title']); ?></td>
-					<td><?php echo ($vo['name']); ?></td>
-					<td><?php echo ($vo['sort_name']); ?></td>
-					<td><?php echo ($vo['img']); ?></td>
-					<td><?php echo (date('Y-m-d',$vo['date'])); ?></td>
-					<td class="text-center">
-						<div class="btn-group">
-							<a class="btn btn-info btn-xs white" href="<?php echo U('Home/Index/news_detail',array('id'=>$vo[nid]));?>" target="_blank"><span class="glyphicon glyphicon-search"></span></a>
-							<button onclick="location.href='<?php echo U('News/news_edit',array('id'=>$vo['nid']));?>'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
-							<button onclick="location.href='<?php echo U('News/news_del',array('id'=>$vo['nid']));?>'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
-							
-						</div>
-					</td>
-				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-      	</tbody>
-    </table>
+	<div class="panel-body">
+		<form role="form" class="form-horizontal" method="post" action="<?php echo U('News/news_edit');?>" enctype="multipart/form-data">
+			<div class="form-group hidden">
+	          	<label for="id" class="col-md-2 control-label">ID</label>
+	          	<div class="col-md-10">
+	            	<input type="text" required="" placeholder="ID" id="id" class="form-control" name="id" value="<?php echo ($news_info[0]['id']); ?>">
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<label for="title" class="col-md-2 control-label">标题</label>
+	          	<div class="col-md-10">
+	            	<input type="text" required="" placeholder="新闻标题" id="title" class="form-control" name="title" value="<?php echo ($news_info[0]['title']); ?>">
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<label for="author" class="col-md-2 control-label">作者</label>
+	          	<div class="col-md-10">
+	            	<select name="author_id" class="form-control" required="" id="author">
+	            		<option selected="selected" class="d-none">请选择作者</option>
+	            		<?php if(is_array($author_list)): $i = 0; $__LIST__ = $author_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo['id']); ?>" <?php if($vo['id'] == $news_info[0]['author_id']): ?>selected="selected"<?php endif; ?> ><?php echo ($vo['name']); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+	            	</select>
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<label for="news_sort" class="col-md-2 control-label">分类</label>
+	          	<div class="col-md-10">
+	            	<select name="sort_ename" class="form-control" required="" id="news_sort">
+	            		<option selected="selected" class="d-none">请选择分类</option>
+	            		<?php if(is_array($sort_list)): $i = 0; $__LIST__ = $sort_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo['e_name']); ?>" <?php if($vo['e_name'] == $news_info[0]['sort_ename']): ?>selected="selected"<?php endif; ?> ><?php echo ($vo['sort_name']); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+	            	</select>
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<label class="col-md-2 control-label" for="content">内容</label>
+	          	<div class="col-md-10">
+	            	<script id="container" name="content" type="text/plain"><?php echo (html_entity_decode($news_info[0]['content'])); ?></script>
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<label class="col-md-2 control-label">图片</label>
+	          	<div class="col-md-10">
+	            	<input class="dropify form-control"  name="img" type="file" id="img" data-default-file="/yuanku/Public/<?php echo ($news_info[0]['img']); ?>">
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<div class="col-md-offset-2 col-md-10">
+	            	<button  class="btn btn-info" type="submit">修改</button>
+	          	</div>
+	        </div>
+	    </form>
+	</div>
 </div>
 
-<div class="btn-toolbar text-center" role="toolbar">
-	<div class="btn-group">
-		<?php echo ($page_html); ?>
-	</div>
-</div>
-<script src="/yuanku/Public/js/admin/news.js"></script>
- 									</div>
+<!-- 配置文件 -->
+<script type="text/javascript" src="/yuanku/Public/lib/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="/yuanku/Public/lib/ueditor/ueditor.all.min.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('container');
+</script>
+<link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css">
+									</div>
 								</div>
 							</div>
 						</div>
@@ -711,3 +733,5 @@
 </body>
 
 </html>
+<script src="/yuanku/Public/js/dropify.min.js"></script>
+<script src="/yuanku/Public/js/admin/news_add.js"></script>

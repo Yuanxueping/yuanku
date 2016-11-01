@@ -1018,3 +1018,444 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001125s ]
 ERR: 无法加载模块:Public
 
+[ 2016-10-31T15:19:43+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002151s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T15:19:59+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000254s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001210s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T15:20:03+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T15:20:06+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T15:27:05+08:00 ] ::1 /yuanku/Public/img/best_tag_bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T15:27:05+08:00 ] ::1 /yuanku/Public/img/icon_vplay_small.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T15:27:20+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:08:52+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001052s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:09:20+08:00 ] ::1 /yuanku/Public/img/best_tag_bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:09:20+08:00 ] ::1 /yuanku/Public/img/icon_vplay_small.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:09:27+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:10:05+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:10:13+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:10:53+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:11:04+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:11:33+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:11:39+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:12:06+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:12:08+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:12:47+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:13:19+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:13:33+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:13:45+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:14:45+08:00 ] ::1 /yuanku/Public/css/img/icon_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000952s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:16:03+08:00 ] ::1 /yuanku/Public/js/admin/news.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:16:03+08:00 ] ::1 /yuanku/Public/css/img/icon_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:16:03+08:00 ] ::1 /yuanku/Public/bootstrap-3.3.0/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:16:03+08:00 ] ::1 /yuanku/Public/js/admin/news.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:16:07+08:00 ] ::1 /yuanku/Public/css/img/icon_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:16:20+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:16:28+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000866s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:16:42+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001575s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:16:53+08:00 ] ::1 /yuanku/Public/css/home/news_detail.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:17:13+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:17:13+08:00 ] ::1 /yuanku/Public/css/home/news_list.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:17:18+08:00 ] ::1 /yuanku/Public/js/admin/news.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001656s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:17:18+08:00 ] ::1 /yuanku/Public/css/img/icon_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:17:18+08:00 ] ::1 /yuanku/Public/bootstrap-3.3.0/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:17:18+08:00 ] ::1 /yuanku/Public/js/admin/news.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:17:23+08:00 ] ::1 /yuanku/Public/js/admin/news.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:17:23+08:00 ] ::1 /yuanku/Public/js/admin/news.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:17:23+08:00 ] ::1 /yuanku/Public/css/img/icon_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005805s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:17:23+08:00 ] ::1 /yuanku/Public/bootstrap-3.3.0/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:17:52+08:00 ] ::1 /yuanku/Public/js/site.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:18:07+08:00 ] ::1 /yuanku/Public/js/site.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:18:09+08:00 ] ::1 /yuanku/Public/js/site.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:18:12+08:00 ] ::1 /yuanku/Public/js/site.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:34:42+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:35:20+08:00 ] ::1 /yuanku/Public/js/admin/news.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:35:20+08:00 ] ::1 /yuanku/Public/js/admin/news.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:35:20+08:00 ] ::1 /yuanku/Public/bootstrap-3.3.0/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:35:20+08:00 ] ::1 /yuanku/Public/css/img/icon_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:35:22+08:00 ] ::1 /yuanku/Public/js/admin/news.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:35:22+08:00 ] ::1 /yuanku/Public/css/img/icon_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+ERR: 无法加载模块:Public
+
+
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:35:54+08:00 ] ::1 /yuanku/Public/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:35:54+08:00 ] ::1 /yuanku/Public/js/waves.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:35:55+08:00 ] ::1 /yuanku/Public/css/admin/maps/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:35:55+08:00 ] ::1 /yuanku/Public/css/admin/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:37:10+08:00 ] ::1 /yuanku/Public/css/img/icon_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:37:10+08:00 ] ::1 /yuanku/Public/bootstrap-3.3.0/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:37:44+08:00 ] ::1 /yuanku/Public/js/admin/news.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:37:45+08:00 ] ::1 /yuanku/Public/css/img/icon_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:37:45+08:00 ] ::1 /yuanku/Public/bootstrap-3.3.0/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:37:45+08:00 ] ::1 /yuanku/Public/js/admin/news.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:37:58+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:37:59+08:00 ] ::1 /yuanku/Public/img/best_tag_bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:37:59+08:00 ] ::1 /yuanku/Public/img/icon_vplay_small.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:38:02+08:00 ] ::1 /yuanku/Public/img/news_img/580f0d4c58a02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:38:52+08:00 ] ::1 /yuanku/Public/css/img/icon_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:38:52+08:00 ] ::1 /yuanku/Public/bootstrap-3.3.0/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:39:28+08:00 ] ::1 /yuanku/Public/bootstrap-3.3.0/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:39:28+08:00 ] ::1 /yuanku/Public/js/admin/news.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T18:39:28+08:00 ] ::1 /yuanku/Public/css/img/icon_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载模块:Public
+

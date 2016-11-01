@@ -1,7 +1,7 @@
-<?php if (!defined('THINK_PATH')) exit();?><!--
+<?php if (!defined('THINK_PATH')) exit();?><!-- /*
 	*yxp
-	*登录页面
--->
+	*文章编辑页面
+ */ -->
 <!DOCTYPE html>
 <html>
 <head lang="zh">
@@ -26,8 +26,11 @@
 		
 
 
-		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/register.css"/>
-		<script src="/yuanku/Public/js/register.js" type="text/javascript" charset="utf-8"></script>
+
+		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/personal.css"/>
+		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/site.min.css">
+		
+	    <script src="/yuanku/Public/js/site.min.js" type="text/javascript" charset="utf-8"></script>                                  
   </head>
 <body>
 <!-- <div class="container-fluid"> -->
@@ -52,7 +55,7 @@
 				        
 				        <li><a href="<?php echo U('Index/news');?>">推荐</a></li> 
 				        <li><a href="<?php echo U('Nba/index');?>">篮球</a></li>
-				        <!-- <li><a href="/yuanku/index.php/Home/Index/news">足球</a></li> -->
+				        <!-- <li><a href="/yuanku/index.php/Home/Personal/news">足球</a></li> -->
 				        
 				        <li><a href="<?php echo U('Index/contact_us');?>">联系我们</a></li>
 
@@ -80,121 +83,133 @@
 				      </ul>		          			        				        	
 	            </div>
 		  </div>
-	</nav>
+	</nav>		
 
-		<div class="container">
-			<div class="row login_header clearcss">
-				
-					<div class="col-lg-6 col-md-12">
-						<h1>用户登陆</h1>
+		<div class="container-fluid" style="margin-top:60px;">
+    	<!--documents-->
+	        <div class="row row-offcanvas row-offcanvas-left">
+	          <!-- 左边 -->
+	          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+	          	<ul class="list-group panel" >
+	                <div class="user-aside span3">
+					    <div class="people">
+							  <div class="basic-info">
+							    <a class="avatar" href="<?php echo U('Personal/index');?>">
+							      <img src="/yuanku/<?php echo ($head_photo); ?>"/ alt="5">
+							    </a>
+							    <h3><a href="<?php echo U('Personal/index');?>"><?php echo (session('username')); ?></a></h3>
+							    <ul class="clearfix" >
+									
+									<li id="sayhello">1</li>
+									<br>
+									<li><a href="/yuanku/index.php/Home/Personal/edit_message">修改个人信息</a>&nbsp;<img src="/yuanku/Public/img/personal/矩形-18-拷贝.png"/></li>
+								</ul>
+							   
+							  </div>
+							  <br>
+							  <div class="user-stats">
+								  <ul class="clearfix" >
+								    <li>
+								      <p> 绑定邮箱：<?php echo ($email_address); ?></p>
+								    </li>
+								    <li>
+								    <i class="glyphicon glyphicon-list-alt"></i>
+										<a href="news.html">看新闻</a>
+								    </li>
+								    <br>
+								    <li>
+								    <i class="glyphicon glyphicon-pencil"></i>
+								      <a href="<?php echo U('Personal/write_article');?>"><span>写文章</span></a>
+								    </li>
+								    <!-- <li>
+								      <a><b>0</b><span>字数</span></a>
+								    </li> -->
+								    <br>
+								    <li>
+								    <i class="glyphicon glyphicon-heart"></i>
+								      <a href="news.html"><span>收获喜欢</span></a>
+								    </li>
+								  </ul>
+							</div>
+						</div>
 					</div>
-					<div class="col-lg-offset-4 col-lg-2 col-md-12">
-		              	<a href="index.html" style="opacity:0.6;font-weight:normal;">首页 <i>/</i> </a> 
-					</div>
-		    </div>
-		    
-		</div>
-		<div class="container  box">
-			<div class="col-lg-offset-3 col-lg-6 col-md-12">
-				<form class="form-signin" role="form" action="/yuanku/index.php/Home/Login/checkLogin" method="POST" enctype="application/x-www-form-urlencoded">
-			        <div class="form-header">
-			        	<h2>账号登录</h2>
-			        	<!-- <p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">注册</a></p> -->
-			        	<!-- <p style="margin-top:5px;"><a href="register.html">忘记密码？</a></p> -->
-			        </div>
-			        <div class="message">
-			        	<div id="warn" class="alert alert-warning alert-dismissable warn" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>用户名不能为空！
-			        	</div>
-			        	<div id="notassign" class="alert alert-warning alert-dismissable warn" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>该用户未注册，请重新输入
-			        	</div>
-			        </div>
-			        <div class="form-group">
-			        	<p class="form-signin-heading"><img src="/yuanku/Public/img/login/user.png"/>&nbsp;用户名/邮箱</p>
-			          <div class="input-group">
-			          	<input type="text" class="form-control" name="username" id="username"  autocomplete="off" placeholder="请输入用户名或邮箱">
-			          </div>
-			        </div>
-			        <div class="message">
-			        	<div id="warn" class="warn_p alert alert-warning alert-dismissable" style="display: none;"> 
-			        		<button type="button" class="close close_p" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>密码不能为空！
-			        	</div>
-			        </div>
-			        <div class="form-group" style="margin-top:0px;">
-						<p class="form-signin-heading" style="margin-top:0px;"><img src="/yuanku/Public/img/login/pwd.png"/>&nbsp;密码</p>
-			          <div class="input-group">
-			          	<input type="password" class="form-control" name="password" id="password"  autocomplete="off" placeholder="请输入与用户名相匹配的密码">
-			          </div>
-			        </div>
-					<div class="Btn">
-						<button class="btn btn-lg btn-primary btn-block" id="login" type="submit">登录
-						</button>
-			        	<p>没有账号？<a href="register.html">注册</a></p>
+	            </ul>
+	          </div>
+	          <!-- 右边 -->
+	          <div class="col-xs-12 col-sm-9 content">
+	            <div class="panel panel-default">
+	              <div class="panel-heading">
+	                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> 修改文章</h3>
+	              </div>
+	              <div class="panel-body">
+						<form role="form" class="form-horizontal" method="post" action="<?php echo U('Personal/article_edit');?>" enctype="multipart/form-data">
+					        <div class="form-group">
+					          	<label for="title" class="col-md-2 control-label">标题</label>
+					          	<div class="col-md-10">
+					            	<input type="text" required="" placeholder="新闻标题" id="title" class="form-control" name="title" value="<?php echo ($news_info[0][title]); ?>">
+					          	</div>
+					        </div>
+					        <div class="form-group">
+					          	<label for="author" class="col-md-2 control-label">作者</label>
+					          	<div class="col-md-10">
+						          	<input class="form-control" value="<?php echo (session('username')); ?>" disabled="true">
+						          	<input type="hidden" name="author_id" value="<?php echo ($author_list['id']); ?>">
+					            </div>
+					        </div>
+					        <div class="form-group">
+					          	<label for="news_sort" class="col-md-2 control-label">分类</label>
+					          	<div class="col-md-10">
+					            	<select name="sort_ename" class="form-control" required="" id="news_sort">
+					            		<option selected="selected" class="d-none">请选择分类</option>
+					            		<?php if(is_array($sort_list)): $i = 0; $__LIST__ = $sort_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if($vo['e_name'] == $news_info[0]['sort_ename']): ?><option value="<?php echo ($vo['e_name']); ?>" selected="selected"><?php echo ($vo['sort_name']); ?></option>
+					            			<?php else: ?>
+					            				<option value="<?php echo ($vo['e_name']); ?>"><?php echo ($vo['sort_name']); ?></option><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+					            	</select>
+					          	</div>
+					        </div>
+					        <div class="form-group">
+					          	<label class="col-md-2 control-label" for="content">内容</label>
+					          	<div class="col-md-10">
+					            	<script id="container" name="content" type="text/plain">
+					            	<?php echo htmlspecialchars_decode($news_info[0]['content']) ?>
+					            		<!-- <?php echo ($news_info[0]['content']); ?> -->
+									</script>
+					          	</div>
+					        </div>
+					        <div class="form-group">
+					          	<label class="col-md-2 control-label">图片</label>
+					          	<div class="col-md-10">
+					            	<input class="dropify form-control"  name="img" type="file" id="img" data-default-file="/yuanku/Public/<?php echo ($news_info[0]['img']); ?>">
+					          	</div>
+					        </div>
+					        <div class="form-group">
+					          	<div class="col-md-offset-2 col-md-10">
+					          		<input type="hidden" name="id" value="<?php echo ($news_info[0]['id']); ?>">
+					            	<button  class="btn btn-info" type="submit">修改</button>
+					          	</div>
+					        </div>
+					    </form>
+				  </div>
 
-					</div>
+	              
+	              <!-- panel body -->
+	            </div>
+	        </div><!-- content -->
+	      </div>
+	    </div>
 
-			     </form>
-			</div>
-    </div>
-	<script>
-		$(function(){
-			var $login = $("#login");
-			var $username = $("#username");
-			var $password = $("#password");
-			var $wran = $("#warn");
-			var $close = $(".close");
-			var $warn_p = $(".warn_p");
-			var $close_p = $(".close_p");
-			var $notassign=$('#notassign');
-			$login.click(function(){
-				if ($username.val().length === 0) {
-					$wran.css("display","block");
-					return false;
-					$warn.css("display","none");
-				} else{
-					if ($password.val().length === 0) {
-						$warn_p.css("display","block");
-						return false;
-					}
-				}
-			});
-			$username.change(function(){
-				/*ajax 查询用户知否已经注册*/
-				var data='username='+$username.val();
-				console.log(data);
-				var path=window.location.pathname;
-				var urlSlice=path.split('Home');
-				url=urlSlice[0]+'Home/Register/userExistCheck';
-				$.ajax({
-					type:"GET",
-					url:url,
-					data:data,
-					dataType:"json",
-					success:function(data){
-						console.log(data);
-						data=data.toString();
-						if(data!="error"){
-						   $notassign.css('display','none');
-						}else{
-							 $notassign.css('display','block');
-						}
-					}
-				});
-			});
-			$close.click(function(){
-				$(".warn").css("display","none");
-				return false;
-			});
-			$close_p.click(function(){
-				$warn_p.css("display","none");
-				return false;
-			});
-		})
-	</script>
+
+
+
+<!-- 配置文件 -->
+<script type="text/javascript" src="/yuanku/Public/lib/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="/yuanku/Public/lib/ueditor/ueditor.all.min.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('container');
+</script>
+<link rel="stylesheet" href="/yuanku/Public/css/admin/dropify.min.css">
 
 
 <div class="clearfix"></div>
@@ -213,7 +228,7 @@
 						</div>					
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><a href="/yuanku/index.php/Home/Index/about_us"><h4>最新动态</h4></a></li><br/>
+								<li><a href="/yuanku/index.php/Home/Personal/about_us"><h4>最新动态</h4></a></li><br/>
 								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
 								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
 								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
@@ -222,7 +237,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><a href="/yuanku/index.php/Home/Index/about_us"><h4>关于我们</h4></a></li><br/>
+								<li><a href="/yuanku/index.php/Home/Personal/about_us"><h4>关于我们</h4></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;&nbsp;<span>技术中心</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;&nbsp;<span>产品特色</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;<span>结算流程</span></a></li><br/>
@@ -231,7 +246,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><a href="/yuanku/index.php/Home/Index/contact_us"><h4>联系我们</h4></a></li></br>
+								<li><a href="/yuanku/index.php/Home/Personal/contact_us"><h4>联系我们</h4></a></li></br>
 								<li><a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;<span>511186470@qq.com</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;<span>0201-6666666</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-map-marker"aria-hidden="true"></span>&nbsp;&nbsp;<span>美国洛杉矶</span></a></li><br/>
@@ -275,3 +290,26 @@
 <!-- </div> -->
 	</body>
 </html>
+
+<script src="/yuanku/Public/js/dropify.min.js"></script>
+<script src="/yuanku/Public/js/admin/news_add.js"></script>
+
+<script type="text/javascript">
+    function sayhello(){
+    	var content=$('#sayhello');
+    	var time=new Date();
+    	var clock=time.getHours();
+    	if(clock>6&&clock<=12){
+    		content.html('上午好');
+    	}else if(clock>12&&clock<=18){
+    		content.html('下午好');
+    	}else if(clock>18&&clock<=24){
+    		content.html('晚上好');
+    	}else{
+    		console.log(clock);
+    		content.html('凌晨好');
+    	}
+      }
+
+      sayhello();
+</script>

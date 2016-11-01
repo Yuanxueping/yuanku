@@ -431,51 +431,50 @@
 							<div class="content"> 
 <link rel="stylesheet" href="/yuanku/Public/css/admin/news.css">
 <div class="panel panel-primary">
-	<div class="panel-heading">
-		<span>内容列表</span>
-		<a href="<?php echo U('News/news_add');?>" class="btn btn-success btn-sm white pull-right">添加内容</a>
-	</div>
-	<table class="table table-hover">
-      	<thead>
-        	<tr>
-	          	<th>#</th>
-	          	<th>ID</th>
-		        <th>内容标题</th>
-		        <th>作者</th>
-		        <th>分类</th>
-		        <th>图片</th>
-		        <th>日期</th>
-		        <th class="text-center">操作</th>
-        	</tr>
-      	</thead>
-      	<tbody>
-      		<?php if(is_array($news_list)): $k = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
-      				<td><?php echo ($k); ?></td>
-					<td><?php echo ($vo['nid']); ?></td>
-					<td><?php echo ($vo['title']); ?></td>
-					<td><?php echo ($vo['name']); ?></td>
-					<td><?php echo ($vo['sort_name']); ?></td>
-					<td><?php echo ($vo['img']); ?></td>
-					<td><?php echo (date('Y-m-d',$vo['date'])); ?></td>
-					<td class="text-center">
-						<div class="btn-group">
-							<a class="btn btn-info btn-xs white" href="<?php echo U('Home/Index/news_detail',array('id'=>$vo[nid]));?>" target="_blank"><span class="glyphicon glyphicon-search"></span></a>
-							<button onclick="location.href='<?php echo U('News/news_edit',array('id'=>$vo['nid']));?>'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
-							<button onclick="location.href='<?php echo U('News/news_del',array('id'=>$vo['nid']));?>'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
-							
-						</div>
-					</td>
-				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-      	</tbody>
+  <div class="panel-heading">
+    <h5>用户列表</h5>
+  </div>
+  <table class="table table-hover">
+        <thead>
+          <tr>
+              <th>#</th>
+              <th>ID</th>
+            <th>用户名</th>
+            <th>密码</th>
+            <th>创建时间</th>
+            <th>头像</th>
+            <th>邮箱地址</th>
+            <!-- <th>日期</th> -->
+            <th class="text-center">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php if(is_array($client_list)): $k = 0; $__LIST__ = $client_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$client_i): $mod = ($k % 2 );++$k;?><tr>
+              <td><?php echo ($k); ?></td>
+          <td><?php echo ($client_i["id"]); ?></td>
+          <td><?php echo ($client_i["user_name"]); ?></td>
+          <td><?php echo ($client_i["user_pwd"]); ?></td>
+          <td> <?php echo ($client_i["create_time"]); ?></td>
+          <td><?php echo ($client_i["head_photo"]); ?></td>
+          <td><?php echo ($client_i["email_address"]); ?></td>
+          <!-- <td><?php echo ($vo['date']); ?></td> -->
+          <td class="text-center">
+            <div class="btn-group">
+              <button onclick="location.href='<?php echo U('Client/client_edit',array('id'=>$client_i[id]));?>'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+              <button onclick="location.href='<?php echo U('Client/client_del',array('id'=>$client_i[id]));?>'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+            </div>
+          </td>
+        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+        </tbody>
     </table>
 </div>
 
 <div class="btn-toolbar text-center" role="toolbar">
-	<div class="btn-group">
-		<?php echo ($page_html); ?>
-	</div>
+  <div class="btn-group">
+    <?php echo ($page_html); ?>
+  </div>
 </div>
-<script src="/yuanku/Public/js/admin/news.js"></script>
+
  									</div>
 								</div>
 							</div>

@@ -104,7 +104,7 @@
 
 				  		<p class="p2"><?php echo htmlspecialchars_decode($news_detail[0]['content']) ?></p>
 				  		<p class="p3"><a href="">read more...</a></p>
-				  		<button type="submit"  class="btn btn-block btn-lg btn-success" style="margin-top:10px; width:25%;" onclick="location.href='<?php echo U('Index/take_add',array(id=>$news_detail[0]['id']));?>'">点击订阅</button>
+				  		<button type="submit"  class="btn btn-block btn-lg btn-success" style="margin-top:10px; width:25%;" onclick="location.href='<?php echo U('Index/take_add',array(id=>$id));?>'">点击订阅</button>
 
 					</div>
 					<div class="line1"></div>

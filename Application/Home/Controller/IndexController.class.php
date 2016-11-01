@@ -162,10 +162,12 @@ class IndexController extends Controller {
 		
 		$news_recent = $news -> field('id,title,img,date') -> order('id desc') -> limit(3) -> select();
 		
-		$news_detail = $news -> join('author') -> join('news_sort') -> where('news.id='.$id.' AND author.id=author_id AND sort_ename=news_sort.e_name') -> select();
+		$news_detail = $news -> join('author') -> join('news_sort') -> join('news_take')->where('news.id='.$id.' AND author.id=author_id AND sort_ename=news_sort.e_name') -> select();
+      // print_r($news_detail);
 		
 		$this -> assign('news_recent',$news_recent);
-		$this -> assign('news_detail',$news_detail);
+    $this -> assign('news_detail',$news_detail);
+		$this -> assign('id',$id);
     	
 
        $cache_a= S('site_name');
