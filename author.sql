@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2016 年 10 月 19 日 08:15
+-- 生成日期: 2016 年 11 月 01 日 08:29
 -- 服务器版本: 5.5.20
 -- PHP 版本: 5.3.10
 
@@ -30,16 +30,21 @@ CREATE TABLE IF NOT EXISTS `author` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL COMMENT '作者名字',
   `introduction` text NOT NULL COMMENT '介绍',
+  `uid` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
 -- 转存表中的数据 `author`
 --
 
-INSERT INTO `author` (`id`, `name`, `introduction`) VALUES
-(1, 'admin', 'I''m a freelance designer with satisfied clients worldwide. I design simple, clean websites and develop easy-to-use applications. Web Design is not just my job it''s my passion. You need professional web designer you are welcome.'),
-(2, 'author', 'authorauthorauthorauthorauthorauthorauthor');
+INSERT INTO `author` (`id`, `name`, `introduction`, `uid`) VALUES
+(1, 'admin', 'I''m a freelance designer with satisfied clients worldwide. I design simple, clean websites and develop easy-to-use applications. Web Design is not just my job it''s my passion. You need professional web designer you are welcome.', 0),
+(2, 'author', 'authorauthorauthorauthorauthorauthorauthor', 0),
+(5, 'yyt', 'hahahahahah\r\n', 40),
+(6, 'yxp', '', 36),
+(7, 'kaka', '', 39),
+(8, 'DD', '', 41);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
