@@ -21,6 +21,25 @@ class IndexController extends Controller {
        $this->assign('slide_list',$slide_list);
        $this->assign('title','首页 - '.$cache_a['site_name']);
        $this->display();
+       $news = M('News');
+		
+		$page_cout=3;
+		
+		$page_num=I('page_num')>0?I('page_num'):1;
+		
+		
+		$start_index=($page_num-1)*$page_cout;
+//		$start_index=0;
+		
+		$news_list=$news -> alias('n')
+						 -> field('n.id as id,title,name,sort_name,content,img,date')
+						 -> join('author ON author_id=author.id')
+						 -> join('news_sort ON sort_ename=news_sort.e_name')
+						 -> order('id desc')
+						 -> limit($start_index,$page_cout)
+						 -> select();
+		
+		$this->assign('news_list',$news_list);
     }
 
     // public function slide(){
@@ -217,5 +236,17 @@ class IndexController extends Controller {
          $this->display();
         
       }   
+	 public function search(){
+	       $news=M('news');
+	       $re=I('search');
+	       
+	       $result=$news->where("title like '%".$re."%'")->select();
+	       
+	       $this->assign('num',count($result));
+	       $this->assign('result',$result);
+	       
+	       $this->display();
+	       
+	      }
 
 }

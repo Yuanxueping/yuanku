@@ -1,12 +1,7 @@
-<?php if (!defined('THINK_PATH')) exit();?><!--
-	*yxp
-	*登录页面
--->
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head lang="zh">
 	<title><?php echo ($title); ?></title>
-
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,8 +21,6 @@
 		
 
 
-		<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/register.css"/>
-		<script src="/lidong/yuanku/Public/js/register.js" type="text/javascript" charset="utf-8"></script>
   </head>
 <body>
 <!-- <div class="container-fluid"> -->
@@ -81,120 +74,24 @@
 	            </div>
 		  </div>
 	</nav>
+<div style="height: 50px;width: 100%;">
+</div>
+<div class="sea-body">
+<ul class="list-group">
+	<?php if($num == '' ): ?><li class="list-group-item text-center">对不起，没有搜索到你想要的内容</li><?php endif; ?>
+<?php if(is_array($result)): $k = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><li class="list-group-item ">
+   	<h3 style="display: inline;"><?php echo ($k); ?>.</h3>&nbsp;<!--&nbsp;<a class= "sea" href="<?php echo U('Home/Index/news_detail',array('id'=>$vo[id]));?>"><img src="/lidong/yuanku/Public/<?php echo ($vo["img"]); ?>"/></a>&nbsp;&nbsp;-->
+	<a href="<?php echo U('Home/Index/news_detail',array('id'=>$vo[id]));?>" class="sea"><?php echo ($vo["title"]); ?></a>
+	<span style="font-size: 8px; "><?php echo (date("Y-m-d",$vo["date"])); ?></span>
+  </li>
+  
+  <!--<li class="list-group-item"><a href="<?php echo U('Home/Index/news_detail',array('id'=>$vo[id]));?>"><?php echo ($k); ?>.<?php echo ($vo["title"]); ?></a></li>--><?php endforeach; endif; else: echo "" ;endif; ?>
+ <h3 class="text-center">总共：<?php echo ($num); ?>条记录</h3>	
 
-		<div class="container">
-			<div class="row login_header clearcss">
-				
-					<div class="col-lg-6 col-md-12">
-						<h1>用户登陆</h1>
-					</div>
-					<div class="col-lg-offset-4 col-lg-2 col-md-12">
-		              	<a href="index.html" style="opacity:0.6;font-weight:normal;">首页 <i>/</i> </a> 
-					</div>
-		    </div>
-		    
-		</div>
-		<div class="container  box">
-			<div class="col-lg-offset-3 col-lg-6 col-md-12">
-				<form class="form-signin" role="form" action="/lidong/yuanku/index.php/Home/Login/checkLogin" method="POST" enctype="application/x-www-form-urlencoded">
-			        <div class="form-header">
-			        	<h2>账号登录</h2>
-			        	<!-- <p style="margin:0px;">不记得账号或密码?&nbsp;<a href="register.html">注册</a></p> -->
-			        	<!-- <p style="margin-top:5px;"><a href="register.html">忘记密码？</a></p> -->
-			        </div>
-			        <div class="message">
-			        	<div id="warn" class="alert alert-warning alert-dismissable warn" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>用户名不能为空！
-			        	</div>
-			        	<div id="notassign" class="alert alert-warning alert-dismissable warn" style="display: none;"> 
-			        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>该用户未注册，请重新输入
-			        	</div>
-			        </div>
-			        <div class="form-group">
-			        	<p class="form-signin-heading"><img src="/lidong/yuanku/Public/img/login/user.png"/>&nbsp;用户名/邮箱</p>
-			          <div class="input-group">
-			          	<input type="text" class="form-control" name="username" id="username"  autocomplete="off" placeholder="请输入用户名或邮箱">
-			          </div>
-			        </div>
-			        <div class="message">
-			        	<div id="warn" class="warn_p alert alert-warning alert-dismissable" style="display: none;"> 
-			        		<button type="button" class="close close_p" data-dismiss="alert" aria-hidden="true">×</button>
-			        		<strong>警告！&nbsp;&nbsp;</strong>密码不能为空！
-			        	</div>
-			        </div>
-			        <div class="form-group" style="margin-top:0px;">
-						<p class="form-signin-heading" style="margin-top:0px;"><img src="/lidong/yuanku/Public/img/login/pwd.png"/>&nbsp;密码</p>
-			          <div class="input-group">
-			          	<input type="password" class="form-control" name="password" id="password"  autocomplete="off" placeholder="请输入与用户名相匹配的密码">
-			          </div>
-			        </div>
-					<div class="Btn">
-						<button class="btn btn-lg btn-primary btn-block" id="login" type="submit">登录
-						</button>
-			        	<p>没有账号？<a href="register.html">注册</a></p>
 
-					</div>
+</ul>
 
-			     </form>
-			</div>
-    </div>
-	<script>
-		$(function(){
-			var $login = $("#login");
-			var $username = $("#username");
-			var $password = $("#password");
-			var $wran = $("#warn");
-			var $close = $(".close");
-			var $warn_p = $(".warn_p");
-			var $close_p = $(".close_p");
-			var $notassign=$('#notassign');
-			$login.click(function(){
-				if ($username.val().length === 0) {
-					$wran.css("display","block");
-					return false;
-					$warn.css("display","none");
-				} else{
-					if ($password.val().length === 0) {
-						$warn_p.css("display","block");
-						return false;
-					}
-				}
-			});
-			$username.change(function(){
-				/*ajax 查询用户知否已经注册*/
-				var data='username='+$username.val();
-				console.log(data);
-				var path=window.location.pathname;
-				var urlSlice=path.split('Home');
-				url=urlSlice[0]+'Home/Register/userExistCheck';
-				$.ajax({
-					type:"GET",
-					url:url,
-					data:data,
-					dataType:"json",
-					success:function(data){
-						console.log(data);
-						data=data.toString();
-						if(data!="error"){
-						   $notassign.css('display','none');
-						}else{
-							 $notassign.css('display','block');
-						}
-					}
-				});
-			});
-			$close.click(function(){
-				$(".warn").css("display","none");
-				return false;
-			});
-			$close_p.click(function(){
-				$warn_p.css("display","none");
-				return false;
-			});
-		})
-	</script>
+</div>
 
 
 <div class="clearfix"></div>
@@ -214,10 +111,11 @@
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
 								<li><a href="/lidong/yuanku/index.php/Home/Index/about_us"><h4>最新动态</h4></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
-					
+								 <?php echo get_new_list(); ?>
+								
+								<!--<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>-->
+					            
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
@@ -254,24 +152,27 @@
 		        <h4 class="modal-title" id="exampleModalLabel">搜索</h4>
 		      </div>
 		      <div class="modal-body">
-		        <form>
+		        <form action="<?php echo U("Index/search");?>" method="post">
 		          <div class="form-group">
 		            <label for="recipient-name" class="control-label">请输入你要搜索的内容</label>
-		            <input type="text" class="form-control" id="recipient-name">
+		            <input type="text" class="form-control" id="recipient-name" name="search" value="123">
 		          </div>
 		          <!--<div class="form-group">
 		            <label for="message-text" class="control-label">Message:</label>
 		            <textarea class="form-control" id="message-text"></textarea>
 		          </div>-->
+		           <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			        <button type="submit" class="btn btn-primary">搜索</button>
+		          </div>
 		        </form>
 		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-		        <button type="button" class="btn btn-primary">搜索</button>
-		      </div>
+		     
 		    </div>
 		  </div>
+		 
 </div>
 <!-- </div> -->
 	</body>
+
 </html>

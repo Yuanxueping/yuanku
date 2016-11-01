@@ -1149,7 +1149,7 @@
 		        <form action="<?php echo U("Index/search");?>" method="post">
 		          <div class="form-group">
 		            <label for="recipient-name" class="control-label">请输入你要搜索的内容</label>
-		            <input type="text" class="form-control" id="recipient-name" name="search" value="123">
+		            <input type="text" class="form-control" id="recipient-name" name="search">
 		          </div>
 		          <!--<div class="form-group">
 		            <label for="message-text" class="control-label">Message:</label>
@@ -1164,7 +1164,9 @@
 		     
 		    </div>
 		  </div>
-		 
+		  <div class="result">
+		  	
+		  </div>
 </div>
 <!-- </div> -->
 	</body>

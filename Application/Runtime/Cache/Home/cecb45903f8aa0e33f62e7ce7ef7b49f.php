@@ -2,7 +2,6 @@
 <html>
 <head lang="zh">
 	<title><?php echo ($title); ?></title>
-
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -94,7 +93,7 @@
 				<img src="/lidong/yuanku/Public/<?php echo ($news_i["img"]); ?>" class="news_img"/>
 				<div class="wenzhang">
 					<p>						
-						<a href="<?php echo U('Index/news_detail',array(id=>$news_i[id]));?>" class="biaoti"><?php echo ($news_i["title"]); ?></a>
+						<a href=" class="biaoti"><?php echo ($news_i["title"]); ?></a>
 					</p>
 					<p>
 						<a href="" class="time"><?php echo (date('Y年m月d日',$news_i['date'])); ?></a>
@@ -138,10 +137,11 @@
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
 								<li><a href="/lidong/yuanku/index.php/Home/Index/about_us"><h4>最新动态</h4></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
-					
+								 <?php echo get_new_list(); ?>
+								
+								<!--<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>-->
+					            
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
