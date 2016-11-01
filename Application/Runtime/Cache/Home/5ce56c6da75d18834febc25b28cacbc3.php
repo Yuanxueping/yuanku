@@ -6,10 +6,10 @@
 	<meta charset="UTF-8">
 
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
-	 <script src="/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+	 <link rel="stylesheet" href="/clone/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/clone/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/clone/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/clone/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
 	  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
@@ -23,8 +23,8 @@
 
 
 
-<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/news_detail.css"/>
-<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/iconfont.css"/>
+<link rel="stylesheet" type="text/css" href="/clone/yuanku/Public/css/home/news_detail.css"/>
+<link rel="stylesheet" type="text/css" href="/clone/yuanku/Public/css/home/iconfont.css"/>
 
   </head>
 <body>
@@ -40,7 +40,7 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="<?php echo U('Index/index');?>">
-		      	<img class="logo" src="/yuanku/Public/img/logoko2.png" />
+		      	<img class="logo" src="/clone/yuanku/Public/img/logoko2.png" />
 		      </a>
 		    </div>		
 		    
@@ -50,21 +50,21 @@
 				        
 				        <li><a href="<?php echo U('Index/news');?>">推荐</a></li> 
 				        <li><a href="<?php echo U('Nba/index');?>">篮球</a></li>
-				        <!-- <li><a href="/yuanku/index.php/Home/Index/news">足球</a></li> -->
+				        <!-- <li><a href="/clone/yuanku/index.php/Home/Index/news">足球</a></li> -->
 				        
 				        <li><a href="<?php echo U('Index/contact_us');?>">联系我们</a></li>
 
 				        <li><a href="<?php echo U('Index/about_us');?>">关于我们</a></li>  
 				        <li>
 				        <a href="
-				        	<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/index';} else{ echo '/yuanku/index.php/Home/Index/login'; } ?>
+				        	<?php if(isset($_SESSION['username'])) {echo '/clone/yuanku/index.php/Home/Personal/index';} else{ echo '/clone/yuanku/index.php/Home/Index/login'; } ?>
 				        ">
 				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
 				        </a>
 				        </li>
 				        <li>
 				        	<a href="
-				        		<?php if(isset($_SESSION['username'])) {echo '/yuanku/index.php/Home/Personal/logout';} else{ echo '/yuanku/index.php/Home/Index/register'; } ?>
+				        		<?php if(isset($_SESSION['username'])) {echo '/clone/yuanku/index.php/Home/Personal/logout';} else{ echo '/clone/yuanku/index.php/Home/Index/register'; } ?>
 				        	">
 				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
 				        	</a>
@@ -95,16 +95,15 @@
 			<div class="row">
 				<div class="col-sm-9">
 					<div class="jumbotron">
-				  		<img src="/yuanku/Public/<?php echo ($news_detail[0]['img']); ?>" class="img-responsive"/>
+				  		<img src="/clone/yuanku/Public/<?php echo ($news_detail[0]['img']); ?>" class="img-responsive"/>
 				  		<h3><a href=""><?php echo ($news_detail[0]['title']); ?></a></h3>
 				  		<p class="p1">
 				  			<a href=""><?php echo (date('Y年m月d日',$news_detail[0]['date'])); ?></a>
 				  			<span>作者:<span><?php echo ($news_detail[0]['name']); ?></span>分类:<span><?php echo ($news_detail[0]['sort_name']); ?></span>评论:<span>0 COMMENTS</span></span>
 				  		</p>
 
-				  		<p class="p2"><?php echo htmlspecialchars_decode($news_detail[0]['content']) ?></p>
-				  		<p class="p3"><a href="">read more...</a></p>
-				  		<button type="submit"  class="btn btn-block btn-lg btn-success" style="margin-top:10px; width:25%;" onclick="location.href='<?php echo U('Index/take_add',array(id=>$id));?>'">点击订阅</button>
+				  		<div class="p2"><?php echo htmlspecialchars_decode($news_detail[0]['content']) ?></div>
+				  		<button type="submit"  class="btn btn-block btn-lg btn-success dingyue" onclick="location.href='<?php echo U('Index/take_add',array(id=>$id));?>'">点击订阅</button>
 
 					</div>
 					<div class="line1"></div>
@@ -167,7 +166,7 @@
 						<h4 class="title">近期文章</h4>
 						<ul>
 							<?php if(is_array($news_recent)): $i = 0; $__LIST__ = $news_recent;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-									<a class="pull-left" href="<?php echo U('Index/news_detail',array(id=>$vo['id']));?>"><img src="/yuanku/Public/<?php echo ($vo['img']); ?>"/></a>
+									<a class="pull-left" href="<?php echo U('Index/news_detail',array(id=>$vo['id']));?>"><img src="/clone/yuanku/Public/<?php echo ($vo['img']); ?>"/></a>
 									<a href="<?php echo U('Index/news_detail',array(id=>$vo['id']));?>"><?php echo ($vo['title']); ?></a>
 									<span><?php echo (date('Y年m月d日',$vo['date'])); ?></span>
 								</li><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -175,19 +174,19 @@
 					</div>
 					<div class="happy_say">
 						<h4 class="title">客户的话</h4>
-						<img class="pull-left" src="/yuanku/Public/img/highstand homepage/people-img19_0.jpg"/>
+						<img class="pull-left" src="/clone/yuanku/Public/img/highstand homepage/people-img19_0.jpg"/>
 						<strong>- Michle Siminson</strong>
 						<p>Lorem Ipsum passage, and going through the cites of the word here classical literature passage discovere there undou btable source looks reasonable the generated charac eristic words.</p>
 					</div>
 					<div class="advertisements">
 						<h4 class="title">客户</h4>
 						<ul>
-							<li><a href=""><img src="/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
-							<li><a href=""><img src="/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+							<li><a href=""><img src="/clone/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+							<li><a href=""><img src="/clone/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
 						</ul>
 						<ul>
-							<li><a href=""><img src="/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
-							<li><a href=""><img src="/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+							<li><a href=""><img src="/clone/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
+							<li><a href=""><img src="/clone/yuanku/Public/img/news_img/sample-ad-banner.jpg"/></a></li>
 						</ul>
 					</div>
 					<div class="text_widget">
@@ -216,16 +215,16 @@
 						</div>					
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><a href="/yuanku/index.php/Home/Index/about_us"><h4>最新动态</h4></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
-								<li><a href="#"><span class="size"><img src="/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
+								<li><a href="/clone/yuanku/index.php/Home/Index/about_us"><h4>最新动态</h4></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/clone/yuanku/Public/img/highstand homepage/site-img225.jpg "/></span><span>灯塔</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/clone/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/clone/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>
 					
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><a href="/yuanku/index.php/Home/Index/about_us"><h4>关于我们</h4></a></li><br/>
+								<li><a href="/clone/yuanku/index.php/Home/Index/about_us"><h4>关于我们</h4></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;&nbsp;<span>技术中心</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;&nbsp;<span>产品特色</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;<span>结算流程</span></a></li><br/>
@@ -234,7 +233,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-lg-12">
 							<ul >
-								<li><a href="/yuanku/index.php/Home/Index/contact_us"><h4>联系我们</h4></a></li></br>
+								<li><a href="/clone/yuanku/index.php/Home/Index/contact_us"><h4>联系我们</h4></a></li></br>
 								<li><a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;<span>511186470@qq.com</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;<span>0201-6666666</span></a></li><br/>
 								<li><a href="#"><span class="glyphicon glyphicon-map-marker"aria-hidden="true"></span>&nbsp;&nbsp;<span>美国洛杉矶</span></a></li><br/>

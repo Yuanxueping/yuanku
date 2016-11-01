@@ -163,7 +163,7 @@ class IndexController extends Controller {
 		$news_recent = $news -> field('id,title,img,date') -> order('id desc') -> limit(3) -> select();
 		
 		$news_detail = $news -> alias('n')
-							 -> field('n.id as id,title,name,sort_name,content,img,date')
+							 -> field('n.id as id,title,name,sort_name,content,img,date,introduction')
 							 -> join('author')
 							 -> join('news_sort')
 							 -> join('news_take')

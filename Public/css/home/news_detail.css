@@ -99,6 +99,9 @@ li {
 .container.contain .row .col-sm-9 .jumbotron > div.p2 img {
   max-width: 100%;
 }
+.container.contain .row .col-sm-9 .jumbotron > button.dingyue {
+  margin-top: 10px;
+}
 .container.contain .row .col-sm-9 .line1 {
   padding-top: 70px;
   margin-bottom: 75px;
@@ -242,9 +245,14 @@ li {
   line-height: 23px;
   color: #727272;
 }
-@media (max-width: 786px) {
+@media screen and (max-width: 786px) {
   .container {
     margin: 0 8%;
+  }
+}
+@media screen and (min-width: 786px) {
+  button.dingyue {
+    width: 25%;
   }
 }
 /*# sourceMappingURL=news_detail.css.map */
