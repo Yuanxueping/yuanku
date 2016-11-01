@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en"><head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title><?php echo ($title); ?>  后台管理</title>
@@ -14,18 +14,18 @@
   	<meta name="apple-mobile-web-app-capable" content="yes">
   	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  
- 	<link rel="stylesheet" href="/yuanku/Public/css/admin/material-design-iconic-font.css">
-  	<link rel="stylesheet" href="/yuanku/Public/css/admin/animate.css">
-  	<link rel="stylesheet" href="/yuanku/Public/css/admin/metisMenu.css">
-  	<link rel="stylesheet" href="/yuanku/Public/css/admin/jquery_002.css">
-  	<link rel="stylesheet" href="/yuanku/Public/css/admin/waves.css">
-  	<link rel="stylesheet" href="/yuanku/Public/css/admin/toastr.css">
-	<link rel="stylesheet" href="/yuanku/Public/css/admin/jquery.css">
-	<link rel="stylesheet" href="/yuanku/Public/css/admin/style.css">
-  	<link rel="stylesheet" href="/yuanku/Public/css/admin/bootstrap.css">
-  	<link rel="stylesheet" href="/yuanku/Public/css/admin/common.css">
+ 	<link rel="stylesheet" href="/clone/yuanku/Public/css/admin/material-design-iconic-font.css">
+  	<link rel="stylesheet" href="/clone/yuanku/Public/css/admin/animate.css">
+  	<link rel="stylesheet" href="/clone/yuanku/Public/css/admin/metisMenu.css">
+  	<link rel="stylesheet" href="/clone/yuanku/Public/css/admin/jquery_002.css">
+  	<link rel="stylesheet" href="/clone/yuanku/Public/css/admin/waves.css">
+  	<link rel="stylesheet" href="/clone/yuanku/Public/css/admin/toastr.css">
+	<link rel="stylesheet" href="/clone/yuanku/Public/css/admin/jquery.css">
+	<link rel="stylesheet" href="/clone/yuanku/Public/css/admin/style.css">
+  	<link rel="stylesheet" href="/clone/yuanku/Public/css/admin/bootstrap.css">
+  	<link rel="stylesheet" href="/clone/yuanku/Public/css/admin/common.css">
 
-	<script src="/yuanku/Public/js/jquery.js"></script>
+	<script src="/clone/yuanku/Public/js/jquery.js"></script>
 
   	<!--<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />-->
@@ -34,7 +34,7 @@
       	<script src="bower_components/html5shiv/dist/html5shiv.min,js"></script>
       	<script src="bower_components/respondJs/dest/respond.min.js"></script>
     <![endif]-->
-	<script src="/yuanku/Public/js/jquery_008.js"></script></head>
+	<script src="/clone/yuanku/Public/js/jquery_008.js"></script></head>
 
 <body class="fixed-all boxed-layout fixed-sidebar mCustomScrollbar _mCS_4 mCS-autoHide" style="overflow: visible;">
  	<div id="mCSB_4" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_4_container" class="mCSB_container" style="position: relative; top: -164px; left: 0px;" dir="ltr">
@@ -50,7 +50,7 @@
    			<nav class="navbar navbar-indigo">
  				<div class="navbar-header container brand-orange">
    					<a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
-   						<a href="/yuanku/admin" class="logo">力动网</a>
+   						<a href="/clone/yuanku/admin" class="logo">力动网</a>
    						<a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="icon-logo"></a>
  				</div>
   				<div class="navbar-container clearfix">
@@ -130,7 +130,7 @@
 							<li class="profile-sidebar-container">
 								<div class="profile-sidebar text-center">
 									<div class="profile-userpic">
-										<img src="/yuanku/Uploads<?php echo ($user_info["head_photo"]); ?>" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
+										<img src="/clone/yuanku/Uploads<?php echo ($user_info["head_photo"]); ?>" class="img-responsive img-circle center-block mCS_img_loaded" alt="user">
 										<span class="online"></span>
 									</div>
 									<div class="profile-usertitle">
@@ -429,53 +429,79 @@
 					<div class="col-md-12">
 						<div class="content-box">
 							<div class="content"> 
-<link rel="stylesheet" href="/yuanku/Public/css/admin/news.css">
+<link rel="stylesheet" href="/clone/yuanku/Public/css/admin/new_sort.css">
 <div class="panel panel-primary">
 	<div class="panel-heading">
-		<span>内容列表</span>
-		<a href="<?php echo U('News/news_add');?>" class="btn btn-success btn-sm white pull-right">添加内容</a>
+		<span>内容分类</span>
+		<a href="<?php echo U('News/sort_add');?>" class="btn btn-success btn-sm white pull-right">添加分类</a>
 	</div>
 	<table class="table table-hover">
       	<thead>
         	<tr>
 	          	<th>#</th>
 	          	<th>ID</th>
-		        <th>内容标题</th>
-		        <th>作者</th>
+	          	<th>sort</th>
 		        <th>分类</th>
-		        <th>图片</th>
-		        <th>日期</th>
 		        <th class="text-center">操作</th>
         	</tr>
       	</thead>
-      	<tbody>
+      	<tbody id="ajax_rt_box">
       		<?php if(is_array($news_list)): $k = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
       				<td><?php echo ($k); ?></td>
-					<td><?php echo ($vo['nid']); ?></td>
-					<td><?php echo ($vo['title']); ?></td>
-					<td><?php echo ($vo['name']); ?></td>
-					<td><?php echo ($vo['sort_name']); ?></td>
-					<td><?php echo ($vo['img']); ?></td>
-					<td><?php echo (date('Y-m-d',$vo['date'])); ?></td>
+					<td class="changeid"><?php echo ($vo['id']); ?></td>
+					<td class="changeid"><?php echo ($vo['e_name']); ?></td>
+					<td class="changename"><?php echo ($vo['sort_name']); ?></td>
 					<td class="text-center">
 						<div class="btn-group">
-							<a class="btn btn-info btn-xs white" href="<?php echo U('Home/Index/news_detail',array('id'=>$vo[nid]));?>" target="_blank"><span class="glyphicon glyphicon-search"></span></a>
-							<button onclick="location.href='<?php echo U('News/news_edit',array('id'=>$vo['nid']));?>'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
-							<button onclick="location.href='<?php echo U('News/news_del',array('id'=>$vo['nid']));?>'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
-							
+							<button onclick="location.href='<?php echo U('News/sort_detail',array('e_name'=>$vo[e_name]));?>'"type="button" class="btn btn-danger btn-xs"  title="详情"><span class="glyphicon glyphicon-book"></span></button>
+							<button onclick="location.href='<?php echo U('News/sort_edit',array('id'=>$vo[id]));?>'"type="button" class="btn btn-success btn-xs"  title="编辑"><span class="glyphicon glyphicon-pencil"></span></button>
+							<button onclick="location.href='<?php echo U('News/sort_del',array('id'=>$vo[id]));?>'" type="button" class="btn btn-danger btn-xs"  title="删除"><span class="glyphicon glyphicon-trash"></span></button>
 						</div>
 					</td>
 				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
       	</tbody>
     </table>
 </div>
-
 <div class="btn-toolbar text-center" role="toolbar">
 	<div class="btn-group">
 		<?php echo ($page_html); ?>
 	</div>
 </div>
-<script src="/yuanku/Public/js/admin/news.js"></script>
+
+<!--<script type="text/javascript">
+$(function(){
+	$("#ajax_rt_box").find(".btn-xs").click(function(){
+		var this_box=$(this).parent().parent().prev();
+		var id=this_box.prev().html();
+		console.log(id);
+		var oldval=this_box.html();
+        this_box.html('<input type="text" autofocus="true">').addClass('cur_input');
+       $(".cur_input").find('input').focus();
+		$(".cur_input").find('input').blur(function(){
+			 var changeval=$(".cur_input").find('input').val();
+			 
+			 if(changeval!=oldval&&changeval!=""){
+			 	$.post('<?php echo U("News/ajax_set_sort");?>',{"id":id,"changeval": changeval},function(msg){
+			 		 if(msg.stauts==1){
+			 		 	this_box.html(changeval);
+			 		 }
+			 		 else if(msg.stauts==-1){
+			 		 	alert("修改失败");
+			 		 }
+			 	
+			 })
+			}else{
+				alert("没有修改！");
+				this_box.html(oldval);
+				
+			}
+			 
+			 
+		})
+	})
+})
+
+</script>-->
  									</div>
 								</div>
 							</div>
@@ -483,21 +509,21 @@
 					</div>
 				</div>
 			</div>
-<script src="/yuanku/Public/js/bootstrap.js"></script>
-<script src="/yuanku/Public/js/metisMenu.js"></script>
-<script src="/yuanku/Public/js/jquery_006.js"></script>
-<script src="/yuanku/Public/js/waves.js"></script>
-<script src="/yuanku/Public/js/toastr.js"></script>
+<script src="/clone/yuanku/Public/js/bootstrap.js"></script>
+<script src="/clone/yuanku/Public/js/metisMenu.js"></script>
+<script src="/clone/yuanku/Public/js/jquery_006.js"></script>
+<script src="/clone/yuanku/Public/js/waves.js"></script>
+<script src="/clone/yuanku/Public/js/toastr.js"></script>
 
-<script src="/yuanku/Public/js/jquery_004.js"></script>
-<script src="/yuanku/Public/js/dataTables.js"></script>
-<script src="/yuanku/Public/js/moment.js"></script>
+<script src="/clone/yuanku/Public/js/jquery_004.js"></script>
+<script src="/clone/yuanku/Public/js/dataTables.js"></script>
+<script src="/clone/yuanku/Public/js/moment.js"></script>
 
-<script src="/yuanku/Public/js/Chart.js"></script>
-<script src="/yuanku/Public/js/jquery_005.js"></script>
-<script src="/yuanku/Public/js/jquery_007.js"></script>
-<script src="/yuanku/Public/js/jquery_003.js"></script>
-<script src="/yuanku/Public/js/jquery_002.js"></script>
+<script src="/clone/yuanku/Public/js/Chart.js"></script>
+<script src="/clone/yuanku/Public/js/jquery_005.js"></script>
+<script src="/clone/yuanku/Public/js/jquery_007.js"></script>
+<script src="/clone/yuanku/Public/js/jquery_003.js"></script>
+<script src="/clone/yuanku/Public/js/jquery_002.js"></script>
 
 <script>
 	$(function() {
@@ -663,8 +689,8 @@
 	});
 </script>
 
-<script src="/yuanku/Public/js/common.js"></script>
-<script src="/yuanku/Public/js/demo-switch.js">
+<script src="/clone/yuanku/Public/js/common.js"></script>
+<script src="/clone/yuanku/Public/js/demo-switch.js">
 </script>
 <script>
 	if($(window).width() >= 1200) {

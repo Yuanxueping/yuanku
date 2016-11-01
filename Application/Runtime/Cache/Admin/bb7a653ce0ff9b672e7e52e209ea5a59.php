@@ -168,10 +168,10 @@
 								<ul class="nav nav-inside collapse" aria-expanded="false">
 									<li class="inside-title">首页管理</li>
 									<li>
-										<a href="<?php echo U('index/slide_manage');?>">幻灯片管理</a>
+										<a href="<?php echo U('slide/slide_manage');?>">幻灯片管理</a>
 									</li>
 									<li>
-										<a href="/land/l1/index_r.html">首页新闻管理</a>
+										<a href="<?php echo U('index/news_manage');?>">首页新闻管理</a>
 									</li>
 								</ul>
 							</li>
@@ -429,7 +429,61 @@
 					<div class="col-md-12">
 						<div class="content-box">
 							<div class="content"> 
-<link rel="stylesheet" href="/yuanku/Public/css/admin/news.css">
+<<<<<<< HEAD:Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php
+ 
+
+ <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box p-20 twitter white f-s-16">
+            <img src="/yuanku/Public/images/admin/avatar.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+            <span class="text-uppercase">第一组</span>  <br>
+            <span class="">@组长：黄寰</span>
+            <span class="zmdi zmdi-twitter p-absolute t-20 r-20 f-s-20"></span>
+            <p class="m-t-20">组员：劳土铸、张卓志、陈忠义<br>任务：负责首页和后台的首页管理菜单。</p>
+            <div class="socials text-right f-s-20">
+              
+              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+            </div>
+          </div>
+        </div>
+         <div class="col-lg-3 col-md-6">
+          <div class="content-box p-20 soundcloud white f-s-16">
+            <img src="/yuanku/Public/images/admin/avatar4.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+            <span class="text-uppercase">第二组</span>  <br>
+            <span class="">@组长：沈迪豪</span>
+            <span class="zmdi zmdi-soundcloud p-absolute t-20 r-20 f-s-20"></span>
+            <p class="m-t-20">组员：郑宏扬、黎雄鹰、杨柳<br>任务：负责新闻列表和详情、后台的新闻管理。</p>
+            <div class="socials text-right f-s-20">
+              
+              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="content-box p-20 facebook white f-s-16">
+              <img src="/yuanku/Public/images/admin/avatar2.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+              <span class="text-uppercase">第三组</span>  <br>
+              <span class="">@组长：袁雪萍</span>
+              <span class="zmdi zmdi-facebook p-absolute t-20 r-20 f-s-20"></span>
+              <p class="m-t-20">组员：石诗文、何慧怡、李浪怀<br>任务：负责登录、注册等页面，以及后台的用户管理。</p>
+              <div class="socials text-right f-s-20">
+                
+                <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box p-20 gplus white f-s-16">
+            <img src="/yuanku/Public/images/admin/avatar3.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+            <span class="text-uppercase">第四组</span>  <br>
+            <span class="">@smith</span>
+            <span class="zmdi zmdi-google-plus p-absolute t-20 r-20 f-s-20"></span>
+            <p class="m-t-20">负责框架搭建<br>攻坚解难。</p>
+            <div class="socials text-right f-s-20">
+              
+              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+=======
+<link rel="stylesheet" href="/clone/yuanku/Public/css/admin/news.css">
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h5>用户列表</h5>
@@ -462,6 +516,7 @@
             <div class="btn-group">
               <button onclick="location.href='<?php echo U('Client/client_edit',array('id'=>$client_i[id]));?>'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
               <button onclick="location.href='<?php echo U('Client/client_del',array('id'=>$client_i[id]));?>'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+>>>>>>> 96e646dfa36ebbd7dd51c86a2ee4d155d565f902:Application/Runtime/Cache/Admin/bb7a653ce0ff9b672e7e52e209ea5a59.php
             </div>
           </td>
         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
