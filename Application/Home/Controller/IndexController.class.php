@@ -162,7 +162,7 @@ class IndexController extends Controller {
 		
 		$news_recent = $news -> field('id,title,img,date') -> order('id desc') -> limit(3) -> select();
 		
-		$news_detail = $news -> join('author') -> join('news_sort') -> where('news.id='.$id.' AND author.id=author_id AND sort_ename=news_sort.e_name') -> select();
+		$news_detail = $news -> alias('n') -> field('n.id as id,title,name,sort_name,content,img,date') -> join('author') -> join('news_sort') -> where('n.id='.$id.' AND author.id=author_id AND sort_ename=news_sort.e_name') -> select();
 		
 		$this -> assign('news_recent',$news_recent);
 		$this -> assign('news_detail',$news_detail);
@@ -332,7 +332,6 @@ class IndexController extends Controller {
       $this->assign('email_address',$email_address);
       
     }
-
 
 
 }
