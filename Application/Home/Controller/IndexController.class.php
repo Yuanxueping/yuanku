@@ -11,7 +11,7 @@ class IndexController extends Controller {
 
        $firstnews_list=$news->where('news_position="first"')->select();
        $secondnews_list=$news->where('news_position="second"')->limit(5)->order('id desc')->select();
-       $thirdnews_list=$news->where('news_position="third"')->select();
+       $thirdnews_list=$news->where('news_position="third"')->limit(5)->select();
        
        $slide_list=$slide->select();
 
@@ -220,7 +220,11 @@ class IndexController extends Controller {
           $news = M('News');
 
           $id = I('id');
-
+          if ($_SESSION['user']['id']==0) {
+               $this->success('请先登录！',U('index/login'));
+            
+            exit();
+          }
           if ($id>0) {
               // $data['take']='1';
               // $news->where('id='.$id)->save($data);
