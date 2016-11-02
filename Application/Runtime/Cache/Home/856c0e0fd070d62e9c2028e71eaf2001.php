@@ -1,6 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?><!-- /*
 	*yxp
-	*个人中心页面
+	*查看已发布文章页面
  */ -->
 <!DOCTYPE html>
 <html>
@@ -27,9 +27,9 @@
 
 
 
-		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/personal.css"/>
 		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/site.min.css">
-		
+		<link rel="stylesheet" href="/yuanku/Public/css/admin/news.css">
+		<link rel="stylesheet" type="text/css" href="/yuanku/Public/css/home/personal.css"/>
 	    <script src="/yuanku/Public/js/site.min.js" type="text/javascript" charset="utf-8"></script>                                  
   </head>
 <body>
@@ -96,13 +96,12 @@
 							    <a class="avatar" href="<?php echo U('Personal/index');?>">
 							      <img src="/yuanku<?php echo ($head_photo); ?>"/ alt="5">
 							    </a>
-							    <h3><a href=""><?php echo (session('username')); ?></a></h3>
+							    <h3><a href="<?php echo U('Personal/index');?>"><?php echo (session('username')); ?></a></h3>
 							    <ul class="clearfix" >
 									
 									<li id="sayhello">1</li>
 									<br>
-									<li><a href="/yuanku/index.php/Home/Personal/edit_message">修改个人信息</a>&nbsp;<img src="/yuanku/Public/img/personal/arrow_orange.png"/>
-									</li>
+									<li><a href="/yuanku/index.php/Home/Personal/edit_message">修改个人信息</a>&nbsp;<img src="/yuanku/Public/img/personal/arrow_orange.png"/></li>
 								</ul>
 							   
 							  </div>
@@ -139,70 +138,48 @@
 	          <div class="col-xs-12 col-sm-9 content">
 	            <div class="panel panel-default">
 	              <div class="panel-heading">
-	                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> 个人中心</h3>
+	                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> 已发布的文章</h3>
 	              </div>
 	              <div class="panel-body">
-		               <div class="personal-bottom" style="margin-top:5px;margin-bottom:10%">
-									<div class="row">
-										<div class="col-md-6 col-sm-12 col-xs-12">
-											<div class="product">
-												<table border="0px" cellspacing="0px" cellpadding="0px">
-													<tr>
-														<td rowspan="2"><img src="/yuanku/Public/img/personal/order.png"/></td>
-														<td>&nbsp;订阅的文章：&nbsp;<span><?php echo ($take_num); ?></span></td>
-													</tr>
-													<tr>
-														<td>&nbsp;<a href="<?php echo U('Index/news_take');?>">查看已订阅的文章</a>&nbsp;<img src="/yuanku/Public/img/personal/arrow_gray.png"/></td>												
-													</tr>
-												</table>
-											</div>
+					<table class="table table-hover">
+				      	<thead>
+				        	<tr>
+					          	<th>#</th>
+					          	<th style="width:10%">文章ID</th>
+						        <th style="width:10%">新闻标题</th>
+						        <th>作者</th>
+						        <th>分类</th>
+						        <!-- <th>内容</th> -->
+						        <th>图片</th>
+						        <th>日期</th>
+						        <th class="text-center" style="width:20%">操作</th>
+				        	</tr>
+				      	</thead>
+				      	<tbody>
+				      		<?php if(is_array($news_list)): $k = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
+				      				<td><?php echo ($k); ?></td>
+									<td><?php echo ($vo['nid']); ?></td>
+									<td><?php echo ($vo['title']); ?></td>
+									<td><?php echo ($vo['name']); ?></td>
+									<td><?php echo ($vo['sort_name']); ?></td>
+									<!-- <td><?php echo ($vo['content']); ?></td> -->
+									<td><?php echo ($vo['img']); ?></td>
+									<td><?php echo (date('Y-m-d',$vo['date'])); ?></td>
+									<td class="text-center">
+										<div class="btn-group">
+											<a class="btn btn-success btn-xs" href="<?php echo U('Home/Index/news_detail',array('id'=>$vo[nid]));?>" target="_blank"><span class="glyphicon glyphicon-search"></span></a>
+											<button onclick="location.href='<?php echo U('Personal/article_edit',array('id'=>$vo['nid']));?>'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+											<button onclick="location.href='<?php echo U('Personal/article_del',array('id'=>$vo[nid]));?>'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+											
 										</div>
-										<div class="col-md-6 col-sm-12 col-xs-12">
-											<div class="product">
-												<table border="0px" cellspacing="0px" cellpadding="0px">
-													<tr>
-														<td rowspan="2"><img src="/yuanku/Public/img/personal/footerprint.png"/></td>
-														<td>&nbsp;我的浏览足迹：&nbsp;<span><?php echo ($take_num); ?></span></td>
-													</tr>
-													<tr>
-														<td>&nbsp;<a href="<?php echo U('Index/browse_footprin');?>">查看浏览足迹</a>&nbsp;<img src="/yuanku/Public/img/personal/arrow_gray.png"/></td>												
-													</tr>
-												</table>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-6 col-sm-12 col-xs-12">
-											<div class="product">
-												<table border="0px" cellspacing="0px" cellpadding="0px">
-													<tr>
-														<td rowspan="2"><img src="/yuanku/Public/img/personal/msg.png"/></td>
-														<td>&nbsp;我发布的文章：&nbsp;<span><?php echo ($num); ?></span></td>
-													</tr>
-													<tr>
-														<td>&nbsp;<a href="<?php echo U('Personal/published_article');?>">查看我发布的文章</a>&nbsp;<img src="/yuanku/Public/img/personal/arrow_gray.png"/></td>												
-													</tr>
-												</table>
-											</div>
-										</div>
-										<div class="col-md-6 col-sm-12 col-xs-12">
-											<div class="product">
-												<table border="0px" cellspacing="0px" cellpadding="0px">
-													<tr>
-														<td rowspan="2"><img src="/yuanku/Public/img/personal/heart.png"/></td>
-														<td>&nbsp;喜欢的文章：&nbsp;<span><?php echo ($take_num); ?></span></td>
-													</tr>
-													<tr>
-														<td>&nbsp;<a href="<?php echo U('Index/favorite_article');?>">查看喜欢的文章</a>&nbsp;<img src="/yuanku/Public/img/personal/arrow_gray.png"/></td>												
-													</tr>
-												</table>
-											</div>
-										</div>
-									</div>
-					   </div>
+									</td>
+								</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+				      	</tbody>
+				    </table>
 
-	              </div><!-- panel body -->
-	            </div>
+					<div style="height:600px"></div>
+				  </div><!-- panel body -->
+				</div>
 	        </div><!-- content -->
 	      </div>
 	    </div>
@@ -290,6 +267,7 @@
 <!-- </div> -->
 	</body>
 </html>
+
 <script type="text/javascript">
     function sayhello(){
     	var content=$('#sayhello');

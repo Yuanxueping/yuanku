@@ -18,14 +18,14 @@
 					    <div class="people">
 							  <div class="basic-info">
 							    <a class="avatar" href="{:U('Personal/index')}">
-							      <img src="__ROOT__/{$head_photo}"/ alt="5">
+							      <img src="__ROOT__{$head_photo}"/ alt="5">
 							    </a>
 							    <h3><a href="{:U('Personal/index')}">{$Think.session.username}</a></h3>
 							    <ul class="clearfix" >
 									
 									<li id="sayhello">1</li>
 									<br>
-									<li><a href="__CONTROLLER__/edit_message">修改个人信息</a>&nbsp;<img src="__PUBLIC__/img/personal/矩形-18-拷贝.png"/></li>
+									<li><a href="__CONTROLLER__/edit_message">修改个人信息</a>&nbsp;<img src="__PUBLIC__/img/personal/arrow_orange.png"/></li>
 								</ul>
 							   
 							  </div>
@@ -74,7 +74,7 @@
 							 	</div>
 							 	<div class="form-group">
 							 		<label class="control-label">密码</label>
-							 		<input class="form-control" type="password" name="user_pwd" value="{$client_info.user_pwd}">
+							 		<input class="form-control" type="password" name="user_pwd" >
 							 	</div>
 							 	<div class="form-group">
 
@@ -84,7 +84,7 @@
 							 	<div class="form-group">
 
 							 		<label class="control-label">头像</label>
-							 		<input class="dropify"  name="head_photo" data-default-file="__ROOT__/{$client_info.head_photo}" type="file">
+							 		<input class="dropify"  name="head_photo" data-default-file="__ROOT__{$client_info.head_photo}" type="file">
 							 	</div>
 							 	<button class="btn btn-success waves-effect">提交</button>
 

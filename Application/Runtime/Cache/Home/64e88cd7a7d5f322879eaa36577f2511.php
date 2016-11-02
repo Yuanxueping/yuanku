@@ -103,7 +103,7 @@
 									
 									<li id="sayhello">1</li>
 									<br>
-									<li><a href="/yuanku/index.php/Home/Index/edit_message">修改个人信息</a>&nbsp;<img src="/yuanku/Public/img/personal/矩形-18-拷贝.png"/>
+									<li><a href="/yuanku/index.php/Home/Index/edit_message">修改个人信息</a>&nbsp;<img src="/yuanku/Public/img/personal/arrow_orange.png"/>
 									</li>
 								</ul>
 							   

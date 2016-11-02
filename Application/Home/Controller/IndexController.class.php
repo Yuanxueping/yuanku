@@ -337,6 +337,22 @@ class IndexController extends Controller {
       $this->assign('email_address',$email_address);
       
     }
+    //用户信息修改
+    public function edit_message(){
+      $cache_a= S('site_name');
+          $this->assign('title','修改资料 - '.$cache_a['site_name']);
+
+      $this->showLogo();
+      $this->showt_email();
+
+      $client_m = D('clientUser');
+      $client_info = $client_m -> where("`user_name`='".$_SESSION['username']."'")->find();
+      // $client_info = $client_m -> where('id='.I('id')) ->find();
+      // print_r($client_info);
+      $this -> assign('client_info',$client_info);
+
+      $this->display('Index/edit_user_info');
+    }
 
 
 }
