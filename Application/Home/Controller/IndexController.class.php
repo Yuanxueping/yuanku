@@ -185,7 +185,6 @@ class IndexController extends Controller {
 							 -> field('n.id as id,title,name,sort_name,content,img,date,introduction')
 							 -> join('author')
 							 -> join('news_sort')
-							 -> join('news_take')
 							 -> where('n.id='.$id.' AND author.id=author_id AND sort_ename=news_sort.e_name')
 							 -> select();
 		
