@@ -27,7 +27,6 @@
 				  			<span>作者:<span>{$news_detail[0]['name']}</span>分类:<span>{$news_detail[0]['sort_name']}</span>评论:<span>0 COMMENTS</span></span>
 				  		</p>
  
-
 				  		<div class="p2"><php> echo htmlspecialchars_decode($news_detail[0]['content']) </php></div>
 				  		<button type="submit"  class="btn btn-block btn-lg btn-success dingyue" onclick="location.href='{:U('Index/take_add',array(id=>$id))}'">点击订阅</button>
 

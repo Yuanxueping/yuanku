@@ -169,10 +169,7 @@ class IndexController extends Controller {
 
     	// do it
        $this->display();
-    	
-    }
-    
-
+   }
 	public function news_detail()
     {
     	$id = I('id');
