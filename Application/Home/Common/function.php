@@ -1,5 +1,5 @@
 <?php
-<<<<<<< HEAD
+
 
 function get_new_list(){
 	$news = M('News');
@@ -18,12 +18,12 @@ function get_new_list(){
 }
 
 
-=======
+
 function subtext($text, $length)
 {
     if(mb_strlen($text, 'utf8') > $length) 
     return mb_substr($text, 0, $length, 'utf8').'...';
     return $text;
 }
->>>>>>> 5295fd789f85bcd19aa5371c50d0e99be7981b41
+
 ?>

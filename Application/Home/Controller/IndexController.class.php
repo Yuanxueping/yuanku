@@ -294,21 +294,11 @@ class IndexController extends Controller {
         $this->assign('page',$show);// 赋值分页输出
 
         
-<<<<<<< HEAD
+
       }   
 	 public function search(){
 	       $news=M('news');
-	       $re=I('search');
-	       
-	       $result=$news->where("title like '%".$re."%'")->select();
-	       
-	       $this->assign('num',count($result));
-	       $this->assign('result',$result);
-	       
-	       $this->display();
-	       
-	      }
-=======
+
         $news_take=$news -> join('news_take')-> where('news_take.uid='.$id.' AND news_take.news_id=news.id')->limit($Page->firstRow.','.$Page->listRows)->select();
         $this -> assign('news_take',$news_take);
 
@@ -371,7 +361,17 @@ class IndexController extends Controller {
       $this->assign('email_address',$email_address);
       
     }
+   public function lookfor(){
+   	$news=M('news');
+	       $re=I('search');
+	       
+	       $result=$news->where("title like '%".$re."%'")->select();
+	       
+	       $this->assign('num',count($result));
+	       $this->assign('result',$result);
+	       
+	       $this->display();
+   }
 
->>>>>>> 5295fd789f85bcd19aa5371c50d0e99be7981b41
 
 }
