@@ -32,7 +32,8 @@
 						<a href="" class="comments">0 条</a>
 					</p>
 					<div class="news_content">
-						<php> echo subtext(htmlspecialchars_decode($news_i['content']),200) </php>
+						 <p><php> echo subtext(strip_tags(htmlspecialchars_decode($news_i['content']),''),200) </php></p>
+					
 						<a href="" class="more"> 更多</a>
 					</div>
 				</div>					
