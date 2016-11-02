@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <html lang="en"><head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title><?php echo ($title); ?>  后台管理</title>
@@ -123,7 +123,7 @@
     				</div>
   				</div>
 			</nav> 
- 			<aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;">
+			<aside class="sidebar mCustomScrollbar _mCS_5 mCS-autoHide" style="overflow: visible;">
 				<div id="mCSB_5" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0">
 					<div id="mCSB_5_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
 						<ul class="nav metismenu">
@@ -429,53 +429,70 @@
 					<div class="col-md-12">
 						<div class="content-box">
 							<div class="content"> 
-<link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/newdetail.css">
+<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/admin/news_add.css"/>
 <div class="panel panel-primary">
 	<div class="panel-heading">
-		<span><?php echo ($detail[0][sort_name]); ?></span>
+		<div class="panel-title">添加新闻</div>
 	</div>
-	<table class="table table-hover">
-      	<thead>
-        	<tr>
-	          	<th>#</th>
-	          	
-		        <th>作者</th>
-		        <th>标题</th>
-		        <th>内容</th>
-		        <th>日期</th>
-		        <th class="text-center">操作</th>
-        	</tr>
-      	</thead>
-      	<tbody id="ajax_rt_box">
-      		<?php if(is_array($detail)): $k = 0; $__LIST__ = $detail;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
-      				<td><?php echo ($k); ?></td>
-					
-					<td class="changeid"><?php echo ($vo['name']); ?></td>
-					<td class="changename"><span class="cons"><?php echo ($vo['title']); ?></span></td>
-					<td class="changename"><span class="con"><?php echo ($vo['content']); ?></span></td>
-					<td class="changename"><?php echo (date("y-m-d H:i:s",$vo['date'])); ?></td>
-					<td class="text-center">
-						<div class="btn-group">
-							<p><a class="btn btn-warning btn-xs" href="<?php echo U('Home/Index/news_detail',array('id'=>$vo[nid]));?>" target="_blank" title="查看"><span class="glyphicon glyphicon-search"></span></a></p>
-							<p><button onclick="location.href='<?php echo U('News/news_edit',array('id'=>$vo[nid]));?>'"type="button" class="btn btn-success btn-xs" title="编辑"><span class="glyphicon glyphicon-pencil" title="编辑"></span></button></p>
-							<p><button onclick="location.href='<?php echo U('News/news_del',array('id'=>$vo[nid]));?>'" type="button" class="btn btn-danger btn-xs" title="删除"><span class="glyphicon glyphicon-trash" title="删除"></span></button></p>
-						</div>
-					</td>
-				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-      	</tbody>
-    </table>
-</div>
-<div class="btn-toolbar text-center" role="toolbar">
-	<div class="btn-group">
-		<?php echo ($page_html); ?>
+	<div class="panel-body">
+		<form role="form" class="form-horizontal" method="post" action="<?php echo U('News/news_add');?>" enctype="multipart/form-data">
+	        <div class="form-group">
+	          	<label for="title" class="col-md-2 control-label">标题</label>
+	          	<div class="col-md-10">
+	            	<input type="text" required="" placeholder="新闻标题" id="title" class="form-control" name="title">
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<label for="author" class="col-md-2 control-label">作者</label>
+	          	<div class="col-md-10">
+	            	<select name="author_id" class="form-control" required="" id="author">
+	            		<option selected="selected" class="d-none">请选择作者</option>
+	            		<?php if(is_array($author_list)): $i = 0; $__LIST__ = $author_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo['id']); ?>"><?php echo ($vo['name']); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+	            	</select>
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<label for="news_sort" class="col-md-2 control-label">分类</label>
+	          	<div class="col-md-10">
+	            	<select name="sort_ename" class="form-control" required="" id="news_sort">
+	            		<option selected="selected" class="d-none">请选择分类</option>
+	            		<?php if(is_array($news_sort)): $i = 0; $__LIST__ = $news_sort;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo['e_name']); ?>"><?php echo ($vo['sort_name']); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+	            	</select>
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<label class="col-md-2 control-label" for="content">内容</label>
+	          	<div class="col-md-10">
+	            	<script id="container" name="content" type="text/plain">
+	            		
+					</script>
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<label class="col-md-2 control-label">图片</label>
+	          	<div class="col-md-10">
+	            	<input class="dropify form-control"  name="img" type="file" id="img">
+	          	</div>
+	        </div>
+	        <div class="form-group">
+	          	<div class="col-md-offset-2 col-md-10">
+	            	<button  class="btn btn-info" type="submit">添加</button>
+	          	</div>
+	        </div>
+	    </form>
 	</div>
 </div>
 
-<a  class="btn btn-info pull-right" href="javascript:history.go(-1);">后退</a>
-<div class="clearfix">
-	
-</div>
- 									</div>
+<!-- 配置文件 -->
+<script type="text/javascript" src="/lidong/yuanku/Public/lib/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="/lidong/yuanku/Public/lib/ueditor/ueditor.all.min.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('container');
+</script>
+<link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/dropify.min.css">
+									</div>
 								</div>
 							</div>
 						</div>
@@ -710,3 +727,5 @@
 </body>
 
 </html>
+<script src="/lidong/yuanku/Public/js/dropify.min.js"></script>
+<script src="/lidong/yuanku/Public/js/admin/news_add.js"></script>

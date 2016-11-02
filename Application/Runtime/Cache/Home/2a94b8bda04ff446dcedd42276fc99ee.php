@@ -176,7 +176,8 @@
 	</div>
 
 	<div class="container-fluid">
-		<div class="row">
+
+		<div class="row">			
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<a href="#" class="cbp-caption cbp-lightbox" data-title="Color  by M.A Anderson">
 					<div class="cbp-caption-defaultWrap">
@@ -225,7 +226,6 @@
 						</a>
 					</div>
 				</div>
-
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
@@ -258,71 +258,69 @@
 						</a>
 					</div>
 				</div>
-
 			</div>
-			<!--col-md-6-->
-		</div>
-
-		<div class="row">
-			<div class="col-md-3 col-sm-6 col-xs-6">
-				<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
-					<div class="cbp-caption-defaultWrap">
-						<img src="/lidong/yuanku/Public/img/highstand homepage/161689529.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
-					</div>
-					<div class="cbp-caption-activeWrap">
-						<div class="cbp-l-caption-alignLeft">
-							<div class="cbp-l-caption-body">
-								<div class="cbp-l-caption-title">LG dLite</div>
-								<div class="cbp-l-caption-desc">by M.A Anderson</div>
+			
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/lidong/yuanku/Public/img/highstand homepage/161689529.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">LG dLite</div>
+									<div class="cbp-l-caption-desc">by M.A Anderson</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-md-3 col-sm-6 col-xs-6">
-				<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
-					<div class="cbp-caption-defaultWrap">
-						<img src="/lidong/yuanku/Public/img/highstand homepage/14368986.jpg" class="img-responsive" alt="" typeof="Image" />
-					</div>
-					<div class="cbp-caption-activeWrap">
-						<div class="cbp-l-caption-alignLeft">
-							<div class="cbp-l-caption-body">
-								<div class="cbp-l-caption-title">LG dLite</div>
-								<div class="cbp-l-caption-desc">by M.A Anderson</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/lidong/yuanku/Public/img/highstand homepage/14368986.jpg" class="img-responsive" alt="" typeof="Image" />
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">LG dLite</div>
+									<div class="cbp-l-caption-desc">by M.A Anderson</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-md-3 col-sm-6 col-xs-6">
-				<a href="#" class="cbp-caption cbp-lightbox" data-title="Civil War - Trailer 1  by M.A Anderson">
-					<div class="cbp-caption-defaultWrap">
-						<img src="/lidong/yuanku/Public/img/highstand homepage/FkTybqcX-Yo.jpg" class="img-responsive" alt="" typeof="Image" />
-					</div>
-					<div class="cbp-caption-activeWrap">
-						<div class="cbp-l-caption-alignLeft">
-							<div class="cbp-l-caption-body">
-								<div class="cbp-l-caption-title">Civil War - Trailer 1</div>
-								<div class="cbp-l-caption-desc">by M.A Anderson</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<a href="#" class="cbp-caption cbp-lightbox" data-title="Civil War - Trailer 1  by M.A Anderson">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/lidong/yuanku/Public/img/highstand homepage/FkTybqcX-Yo.jpg" class="img-responsive" alt="" typeof="Image" />
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">Civil War - Trailer 1</div>
+									<div class="cbp-l-caption-desc">by M.A Anderson</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-md-3 col-sm-6 col-xs-6">
-				<a href="#" class="cbp-caption cbp-lightbox" data-title="Civil War - Trailer 2  by M.A Anderson">
-					<div class="cbp-caption-defaultWrap">
-						<img src="/lidong/yuanku/Public/img/highstand homepage/dKrVegVI0Us.jpg" class="img-responsive" alt="" typeof="Image" />
-					</div>
-					<div class="cbp-caption-activeWrap">
-						<div class="cbp-l-caption-alignLeft">
-							<div class="cbp-l-caption-body">
-								<div class="cbp-l-caption-title">Civil War - Trailer 2</div>
-								<div class="cbp-l-caption-desc">by M.A Anderson</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<a href="#" class="cbp-caption cbp-lightbox" data-title="Civil War - Trailer 2  by M.A Anderson">
+						<div class="cbp-caption-defaultWrap">
+							<img src="/lidong/yuanku/Public/img/highstand homepage/dKrVegVI0Us.jpg" class="img-responsive" alt="" typeof="Image" />
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignLeft">
+								<div class="cbp-l-caption-body">
+									<div class="cbp-l-caption-title">Civil War - Trailer 2</div>
+									<div class="cbp-l-caption-desc">by M.A Anderson</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -371,74 +369,26 @@
 		</div>
 	</div>
 
-	<div class="rightbox">
+		<div class="rightbox">
 
-		<div class="one_third_less">
-			<h3 class="white caps">一个专业的网站 <br/><b> 有团队 <br/>有模式<br/>有成果</b><br/> 还有些大新闻</h3>
-		</div>
+			<div class="one_third_less">
+				<h3 class="white caps">一个专业的网站 <br/><b> 有团队 <br/>有模式<br/>有成果</b><br/> 还有些大新闻</h3>
+			</div>
+			
+			<?php if(is_array($secondnews_list)): $kk = 0; $__LIST__ = $secondnews_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_i): $mod = ($kk % 2 );++$kk; if($kk==3): ?><div class="clearfix margin_bottom2"></div><?php endif; ?>
+
+				<?php if($kk==2 || $kk==5): ?><div class="one_third_less last">
+				<?php else: ?>
+					<div class="one_third_less"><?php endif; ?>
+				<div class="box">
+					<h5 class="caps"><?php echo ($news_i['title']); ?></h5>
+					<div class="bgline"></div>
+					<p>此处是一段非常长的文段，然而该文段在网页浏览过程中没有任何实际意义，你可以无视该文段继续浏览你所需要浏览的内容。</p>
+					
+					<a href="<?php echo U('Index/news_detail',array(id=>$news_i[id]));?>" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
+				</div>
+		</div><?php endforeach; endif; else: echo "" ;endif; ?>
 		
-		<?php if(is_array($secondnews_list)): $kk = 0; $__LIST__ = $secondnews_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_i): $mod = ($kk % 2 );++$kk; if($kk==3): ?><div class="clearfix margin_bottom2"></div><?php endif; ?>
-
-			<?php if($kk==2 || $kk==5): ?><div class="one_third_less last">
-			<?php else: ?>
-				<div class="one_third_less"><?php endif; ?>
-			<div class="box">
-				<h5 class="caps"><?php echo ($news_i['title']); ?></h5>
-				<div class="bgline"></div>
-				<p>此处是一段非常长的文段，然而该文段在网页浏览过程中没有任何实际意义，你可以无视该文段继续浏览你所需要浏览的内容。</p>
-				
-				<a href="<?php echo U('Index/news_detail',array(id=>$news_i[id]));?>" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
-			</div>
-</div><?php endforeach; endif; else: echo "" ;endif; ?>
-		<!--<div class="one_third_less">
-			<div class="box">
-				<h5 class="caps">这是一长串英文单词 <br/>这是简短描述</h5>
-				<div class="bgline"></div>
-				<p>此处是一段非常长的文段，然而该文段在网页浏览过程中没有任何实际意义，你可以无视该文段继续浏览你所需要浏览的内容。</p>
-				<a href="#" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
-			</div>
-		</div>
-		
-
-		<div class="one_third_less last">
-			<div class="box">
-				<h5 class="caps">这是一长串英文单词 <br/>这是简短描述</h5>
-				<div class="bgline"></div>
-				<p>此处是一段非常长的文段，然而该文段在网页浏览过程中没有任何实际意义，你可以无视该文段继续浏览你所需要浏览的内容。</p>
-				<a href="#" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
-			</div>
-		</div>
-		
-
-		<div class="clearfix margin_bottom2"></div>
-
-		<div class="one_third_less">
-			<div class="box">
-				<h5 class="caps">这是一长串英文单词 <br/>这是简短描述</h5>
-				<div class="bgline"></div>
-				<p>此处是一段非常长的文段，然而该文段在网页浏览过程中没有任何实际意义，你可以无视该文段继续浏览你所需要浏览的内容。</p>
-				<a href="#" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
-			</div>
-		</div>
-		
-
-		<div class="one_third_less">
-			<div class="box">
-				<h5 class="caps">这是一长串英文单词 <br/>这是简短描述</h5>
-				<div class="bgline"></div>
-				<p>此处是一段非常长的文段，然而该文段在网页浏览过程中没有任何实际意义，你可以无视该文段继续浏览你所需要浏览的内容。</p>
-				<a href="#" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
-			</div>
-		</div>
-		
-		<div class="one_third_less last">
-			<div class="box">
-				<h5 class="caps">这是一长串英文单词 <br/>这是简短描述</h5>
-				<div class="bgline"></div>
-				<p>此处是一段非常长的文段，然而该文段在网页浏览过程中没有任何实际意义，你可以无视该文段继续浏览你所需要浏览的内容。</p>
-				<a href="#" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
-			</div>
-		</div>-->
 		
 	</div>
 
@@ -785,14 +735,40 @@
 		<p>世间的事，原本如此 <br /> 没有人喜欢“疼痛”本身</p>
 		<div class="blogs-news">
 
-			<div class="one_third_less">
+
+			<?php if(is_array($thirdnews_list)): $kkk = 0; $__LIST__ = $thirdnews_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_j): $mod = ($kkk % 2 );++$kkk; if($kkk==4): ?><div class="clearfix margin_bottom2"></div><?php endif; ?>
+
+
+				<?php if($kkk==2): ?><div class=" one_third_less choose-blog">
+				
+				<?php elseif($kkk==3): ?>
+					<div class="one_third_less last ">
+				
+				<?php elseif($kkk==4): ?>
+					 <div class="two_third_less">
+				<?php else: ?>
+					<div class="one_third_less"><?php endif; ?>
+					<a href="/many-desktop-packages-0">
+						<div class="box01">
+							<img src="/lidong/yuanku/Public/<?php echo ($news_j["img"]); ?>" width="374" height="200"  />
+
+							<div class="content">
+								<h4><?php echo ($news_j["title"]); ?></h4>
+								<b><?php echo (date('Y年m月d日',$news_j['date'])); ?></b>
+							</div>
+						</div>
+					</a>
+				</div><?php endforeach; endif; else: echo "" ;endif; ?>
+
+
+			<!--<div class="one_third_less">
 				<a href="/many-desktop-packages-0">
 					<div class="box01">
 						<img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg?itok=oGIxJj2U" width="374" height="200" alt="image" typeof="Image" />
 
 						<div class="content">
-							<h4>许多桌面软件包</h4>
-							<b>July 5, 2016</b>
+							<h4><?php echo ($news_j["title"]); ?></h4>
+							<b><?php echo (date('Y年m月d日',$news_j['date'])); ?></b>
 						</div>
 					</div>
 				</a>
@@ -803,7 +779,7 @@
 						<img src="/lidong/yuanku/Public/img/highstand homepage/site-img224.jpg?itok=418pSrnX" width="374" height="200" alt="image" typeof="Image" />
 
 						<div class="content">
-							<h4>许多桌面软件包</h4>
+							<h4><?php echo ($news_j["title"]); ?></h4>
 							<b>July 5, 2016</b>
 						</div>
 					</div>
@@ -814,7 +790,7 @@
 					<div class="box01">
 						<img src="/lidong/yuanku/Public/img/highstand homepage/2h1BK2H2Quk.jpg?itok=Z0ts4wwD" alt="" typeof="Image" />
 						<div class="content">
-							<h4>方程式1 崩溃 | 震惊</h4>
+							<h4><?php echo ($news_j["title"]); ?></h4>
 							<b>May 12, 2016</b>
 						</div>
 					</div>
@@ -827,7 +803,7 @@
 						<img src="/lidong/yuanku/Public/img/highstand homepage/works-img31-thumb.jpg?itok=xln0boD0" width="374" height="200" alt="Blog" typeof="Image" />
 
 						<div class="content">
-							<h4>激光印字传输系统</h4>
+							<h4><?php echo ($news_j["title"]); ?></h4>
 							<b>May 12, 2016</b>
 						</div>
 					</div>
@@ -838,12 +814,12 @@
 					<div class="box01">
 						<img src="/lidong/yuanku/Public/img/highstand homepage/eafjQDr22kU.jpg?itok=ZAauvndp" alt="" typeof="Image" />
 						<div class="content">
-							<h4>这是一级方程式</h4>
+							<h4><?php echo ($news_j["title"]); ?></h4>
 							<b>May 12, 2016</b>
 						</div>
 					</div>
 				</a>
-			</div>
+			</div>-->
 
 		</div>
 	</div>

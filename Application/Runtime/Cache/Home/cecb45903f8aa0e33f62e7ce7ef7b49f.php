@@ -21,15 +21,9 @@
 		
 
 
-<!-- 联系我们页面的样式 -->
-<link rel="stylesheet" href="/lidong/yuanku/Public/css/home/contact_us.css">
 
-<!-- copy的两个关于我们页面底部的样式 -->
-<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/about.css"/>
-<!-- <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/site.min.css">  -->
 
-<!-- copy的 登陆页面 头部-->
-<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/register.css"/>
+<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/news_list.css"/>
   </head>
 <body>
 <!-- <div class="container-fluid"> -->
@@ -83,130 +77,48 @@
 	            </div>
 		  </div>
 	</nav>
-<div class="container">
-	<div class="row login_header clearcss">
-		
-			<div class="col-lg-6 col-md-12">
-				<h1>联系我们</h1>
-			</div>
-			<div class="col-lg-offset-4 col-lg-2 col-md-12">
-              	<a href="index.html" style="opacity:0.6;font-weight:normal;">首页 <i>/</i> </a> 
-			</div>
-    </div>
-</div>
-
-<!-- 联系我们的主体页面 -->
-<div class="contact_us">
-	<!-- <div class="row contact_head"> -->
-		<!-- <div class="col-md-9 col-sm-9 col-xs-12"> -->
-			<!-- <h1>联系我们</h1>
-			<div class="col-md-offset-9 col-sm-3 col-xs-12">
-              	<a href="">首页 <i>/</i> </a> 
-			</div> -->
-		<!-- </div> -->
-	<!-- </div> -->
-		
-	<!-- <div class="map_contact">
-		<a href="#" class="a_style">View Larger Map</a>
-	</div> -->
-	<div class="container-fluid">
-		<div class="panel-body">
-			<div class="row">
-				<div class="col-md-7 col-sm-7 col-xs-10 col-xs-offset-1 contact_left">
-					<!-- <p>随时与我们在线的代表交流，任何时候你请上我们的网站或使用我们的在线聊天系统低于即时消息程序。</p>
-					<p>请耐心等待响应。 (24/7 支持！) <strong>电话查询: 1-888-123-4567-8900</strong></p> -->
-					<p>任何对我们产品、服务的疑问、不满、意见及建议欢迎随时与我们联系。感谢您的信任和支持！</p>
-					<p>请耐心等待响应。 (支持24小时/7天服务！) <strong>电话查询: 1-888-123-4567-8900</strong></p>
-					<form role="form" action="<?php echo U('Index/contact_us');?>" method="POST">
-						
-						<div class="form-group">
-						    <label for="fb_name">姓名</label>
-						    <div class="message">
-					        	<div id="warn" class="alert alert-warning alert-dismissable" style="display: none;"> 
-					        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-					        		<strong>警告！&nbsp;&nbsp;</strong>用户姓名不能为空！
-					        	</div>
-					        	<div id="checkBlank" class="alert alert-warning alert-dismissable" style="display: none;"> 
-					        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-					        		<strong>警告！&nbsp;&nbsp;</strong>用户姓名不能含有空格字符！
-					        	</div>
-					        </div>
-						    <input type="text" class="form-control" name="fb_name" id="fb_name">
-						</div>
-
-						<div class="form-group">
-						    <label for="fb_email">邮箱</label>
-						    <div class="message">
-					        	<div id="warn1" class="alert alert-warning alert-dismissable" style="display: none;"> 
-					        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-					        		<strong>警告！&nbsp;&nbsp;</strong>邮箱不能为空！
-					        	</div>
-					        	<div id="checkEmail" class="alert alert-warning alert-dismissable" style="display: none;"> 
-					        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-					        		<strong>警告！&nbsp;&nbsp;</strong>请输入正确格式的邮箱地址！
-					        	</div>
-					        </div>
-						    <input type="email" class="form-control" name="fb_email" id="fb_email">
-						</div>
-
-						<div class="form-group">
-						    <label for="fb_theme">主题</label>
-				        	<div id="warn2" class="alert alert-warning alert-dismissable" style="display: none;"> 
-				        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-				        		<strong>警告！&nbsp;&nbsp;</strong>主题不能为空！
-				        	</div>
-						    <input type="text" class="form-control" name="fb_theme" id="fb_theme">
-						</div>
-
-						
-						<div class="form-group">
-						    <label for="fb_msg">内容描述</label>
-						    <div id="warn3" class="alert alert-warning alert-dismissable" style="display: none;"> 
-				        		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-				        		<strong>警告！&nbsp;&nbsp;</strong>内容描述不能为空！
-				        	</div>
-						    <textarea class="form-control" name="fb_msg" rows="15" id="fb_msg"></textarea>
-						</div>
-						<div class="submit_btn">
-							<input type="submit" class="btn" id="submit" value="发送信息">
-							<!-- <input type="submit" class="btn" value="预览"> -->
-						</div>
-					</form>
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-10 col-xs-offset-1 contact_right">
-					<address>
-						<h4>地址一</h4>
-						<ul>
-							<li>
-								<strong>公司名称</strong><br>
-								2901 马尔路，Glassgow，西雅图，华盛顿州 98122 1090<br>
-								电话: +1 1234-567-89000<br>
-								传真: +1 0123-4567-8900<br>
-								邮箱: <a href="mailto:#" class="a_style">mail@companyname.com</a><br>
-								网址: <a href="#" class="a_style">www.yoursitename.com</a>
-							</li>
-						</ul>
-					</address>
-					<address>
-						<h4>地址二</h4>
-						<ul>
-							<li>
-								<strong>公司名称</strong><br>
-								2901 马尔路，Glassgow，西雅图，华盛顿州 98122 1090<br>
-								电话: +1 1234-567-89000<br>
-								传真: +1 0123-4567-8900<br>
-								邮箱: <a href="mailto:#" class="a_style">mail@companyname.com</a><br>
-								网址: <a href="#" class="a_style">www.yoursitename.com</a>
-							</li>
-						</ul>
-					</address>
-				</div>
-			</div>
+<div class="container-fluid clearfix toubei">
+	<div class="container clearfix">
+		<h1 class="clearfix" style="color: white;">博客文章</h1>
+		<div class="clearfix">
+			<a href="index.html" class="clearfix">主页&nbsp;<i>&#47;</i></a>
 		</div>
 	</div>
 </div>
 
-<script src="/lidong/yuanku/Public/js/contact_us.js" type="text/javascript" charset="utf-8"></script>	
+<div class="products">		
+	<div class="">
+		<!--增加-->
+		<?php if(is_array($news_list)): $i = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_i): $mod = ($i % 2 );++$i;?><div class="container">					
+				<img src="/lidong/yuanku/Public/<?php echo ($news_i["img"]); ?>" class="news_img"/>
+				<div class="wenzhang">
+					<p>						
+						<a href=" class="biaoti""><?php echo ($news_i["title"]); ?></a>
+					</p>
+					<p>
+						<a href="" class="time"><?php echo (date('Y年m月d日',$news_i['date'])); ?></a>
+						<i>作者:</i>
+						<span class="author"><?php echo ($news_i['name']); ?></span>
+						<i>分类:</i> 
+						<a href="" class="name"><?php echo ($news_i['sort_name']); ?></a> 
+						<i>评论:</i> 
+						<a href="" class="comments">0 条</a>
+					</p>
+					<div class="news_content">
+						<?php echo subtext(htmlspecialchars_decode($news_i['content']),200) ?>
+						<a href="" class="more"> 更多</a>
+					</div>
+				</div>					
+			</div><?php endforeach; endif; else: echo "" ;endif; ?>
+	</div>					
+	<div class="paging wrapper">		
+		<div class="container fenye tab">
+			<?php echo ($page_html); ?>
+		</div>	
+	</div>			
+</div>
+		<script src="/lidong/yuanku/Public/js/news_list.js" type="text/javascript" charset="utf-8"></script>
+
 
 
 <div class="clearfix"></div>
