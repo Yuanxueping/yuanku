@@ -134,6 +134,10 @@ li {
                         max-width: 100%;
                     }
                 }
+                
+                & > button.dingyue {
+                    margin-top:10px;
+                }
             }
             
             & .line1 {
@@ -324,8 +328,14 @@ li {
     }
 }
 
-@media(max-width:786px) {
+@media screen and (max-width:786px) {
     .container {
         margin: 0 8%;
+    }
+}
+
+@media screen and (min-width:786px) {
+    button.dingyue {
+        width: 25%;
     }
 }

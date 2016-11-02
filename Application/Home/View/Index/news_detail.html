@@ -26,10 +26,8 @@
 				  			<a href="">{$news_detail[0]['date']|date='Y年m月d日',###}</a>
 				  			<span>作者:<span>{$news_detail[0]['name']}</span>分类:<span>{$news_detail[0]['sort_name']}</span>评论:<span>0 COMMENTS</span></span>
 				  		</p>
-
-				  		<p class="p2"><php> echo htmlspecialchars_decode($news_detail[0]['content']) </php></p>
-				  		<p class="p3"><a href="">read more...</a></p>
-				  		<button type="submit"  class="btn btn-block btn-lg btn-success" style="margin-top:10px; width:25%;" onclick="location.href='{:U('Index/take_add',array(id=>$news_detail[0]['id']))}'">点击订阅</button>
+				  		<div class="p2"><php> echo htmlspecialchars_decode($news_detail[0]['content']) </php></div>
+				  		<button type="submit"  class="btn btn-block btn-lg btn-success dingyue" onclick="location.href='{:U('Index/take_add',array(id=>$id))}'">点击订阅</button>
 
 					</div>
 					<div class="line1"></div>
@@ -56,6 +54,23 @@
 					<div class="line2"></div>
 					<div class="comments">
 						<h5>评论</h5>
+						<!-- 多说评论框 start -->
+							<div class="ds-thread" data-thread-key="{$news_detail[0]['id']}" data-title="{$news_detail[0]['title']}" data-url=""></div>
+						<!-- 多说评论框 end -->
+						<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+						<script type="text/javascript">
+						var duoshuoQuery = {short_name:"liddd"};
+							(function() {
+								var ds = document.createElement('script');
+								ds.type = 'text/javascript';ds.async = true;
+								ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+								ds.charset = 'UTF-8';
+								(document.getElementsByTagName('head')[0] 
+								 || document.getElementsByTagName('body')[0]).appendChild(ds);
+							})();
+							</script>
+						<!-- 多说公共JS代码 end -->
+
 					</div>
 				</div>
 				<div class="col-sm-3">
