@@ -45,12 +45,12 @@ class SlideController extends AuthController {
 			$upload = new Upload();
 			$upload -> maxSize = 10240000;
 			$upload -> exts = array('jpg','gif','jpeg','png');
-			$upload -> rootPath = './Uploads';
+			$upload -> rootPath = './Uploads/';
 			$info = $upload -> upload();
 			if(!$info) {
 				$this -> error($upload->getError());
 			} else {
-				$_POST['img'] = 'img/lunbo/'.$info['img']['savename'];
+				$_POST['img'] = '/Uploads/'.$info['img']['savepath'].$info['img']['savename'];
 			}
 			
 			if($slide -> create()) {
@@ -80,21 +80,43 @@ class SlideController extends AuthController {
 		}
     }
     
-    // //编辑轮播图
-    // public function slide_edit($value='')
-    // {
-    //     if(IS_POST){
+    //编辑轮播图
+    public function slide_edit($value='')
+    {
+        if(IS_POST){
+        	if($_FILES['img']['error']!=4){
+				$upload = new Upload();
+				$upload -> maxSize = 10240000;
+				$upload -> exts = array('jpg','gif','jpeg','png');
+				$upload -> rootPath = './Uploads/';
+				$info = $upload -> upload();
+				if(!$info) {
+					$this -> error($upload->getError());
+				} else {
+					$_POST['img'] = '/Uploads/'.$info['img']['savepath'].$info['img']['savename'];
+				}
+			}
 
-    //     }else{
-    //         $slide = M('slide');
+       		$slide=M('slide');
+			if($slide->create()) {
+				if($slide->save()) {
+					$this -> success('修改成功',U('Slide/slide_manage'));
+				} else {
+					$this -> error('修改失败或无更新',U('Slide/slide_edit',array('id'=>$_POST['id'])));
+				}
+			} else {
+				$this -> error($slide->getError());
+			}
+        }else{
+            $slide = M('slide');
 
-    //         $slide_info = $slide -> where('id='.I('id'))->select();
+            $slide_info = $slide -> where('id='.I('id'))->find();
 
-    //         $this->assign('slide_info',$slide_info);
+            $this->assign('slide_info',$slide_info);
 
-    //         $this -> display();
-    //     }
-    // }
+            $this -> display();
+        }
+    }
 }
 
 ?>

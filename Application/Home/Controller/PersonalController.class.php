@@ -64,7 +64,7 @@ class PersonalController extends Controller {
 		if($result[0]['head_photo']){
 			$this->assign('head_photo',$result[0]['head_photo']);
 		}else{
-			$this->assign('head_photo',"Public/head_logo/default_head_logo.jpg");
+			$this->assign('head_photo',"/Public/head_logo/default_head_logo.jpg");
 			
 		}
 	}

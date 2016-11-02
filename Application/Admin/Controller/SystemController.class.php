@@ -32,7 +32,7 @@ class SystemController extends AuthController{
 		$user_m=M('Admin_user');
 
 		// 每一页显示3条
-		$page_cout=2;
+		$page_cout=10;
 
 		// 1、2、3
 		$page_num=I('page_num')>0?I('page_num'):1;
@@ -143,7 +143,7 @@ class SystemController extends AuthController{
 			$upload=new Upload();
 			$upload->maxSize=10240000;
 			$upload->exts=array('jpg','gif','jpeg','png');
-			$upload->savePath='./';
+			$upload->savePath='/';
 			$info=$upload->upload();
 			if (!$info) {
 				$this->error($upload->getError());
@@ -192,7 +192,7 @@ class SystemController extends AuthController{
 			$upload=new Upload();
 			$upload->maxSize=10240000;
 			$upload->exts=array('jpg','gif','jpeg','png');
-			$upload->savePath='./';
+			$upload->savePath='/';
 			$info=$upload->upload();
 			if (!$info) {
 				$this->error($upload->getError());
@@ -209,9 +209,7 @@ class SystemController extends AuthController{
 					$this->success('修改成功',U('System/manager_user'));
 				}else{
 					$this->success('修改失败或无更新',U('System/manager_user'));
-				}
-				
-				
+				}				
 			}else{
 				// 验证失败
 				$this->error($user_m->getError());
@@ -223,8 +221,7 @@ class SystemController extends AuthController{
 			$this->assign('user_info',$user_info);
 			$this->display();
 
-		} 
-	
+		}  
 	}
 
 	// 删除管理员
@@ -236,7 +233,9 @@ class SystemController extends AuthController{
 			$this->success('删除成功',U('System/manager_user'));
 		}else{
 			$this->success('删除失败',U('System/manager_user'));
-		}
+ 
+		}								
+ 
 	}
 
 

@@ -11,7 +11,7 @@ class IndexController extends Controller {
 
        $firstnews_list=$news->where('news_position="first"')->select();
        $secondnews_list=$news->where('news_position="second"')->limit(5)->order('id desc')->select();
-       $thirdnews_list=$news->where('news_position="third"')->select();
+       $thirdnews_list=$news->where('news_position="third"')->limit(5)->select();
        
        $slide_list=$slide->select();
 
@@ -170,10 +170,7 @@ class IndexController extends Controller {
 
     	// do it
        $this->display();
-    	
-    }
-    
-
+   }
 	public function news_detail()
     {
     	$id = I('id');
@@ -186,7 +183,6 @@ class IndexController extends Controller {
 							 -> field('n.id as id,title,name,sort_name,content,img,date,introduction')
 							 -> join('author')
 							 -> join('news_sort')
-							 -> join('news_take')
 							 -> where('n.id='.$id.' AND author.id=author_id AND sort_ename=news_sort.e_name')
 							 -> select();
 		
@@ -225,7 +221,11 @@ class IndexController extends Controller {
           $news = M('News');
 
           $id = I('id');
-
+          if ($_SESSION['user']['id']==0) {
+               $this->success('请先登录！',U('index/login'));
+            
+            exit();
+          }
           if ($id>0) {
               // $data['take']='1';
               // $news->where('id='.$id)->save($data);
@@ -299,16 +299,7 @@ class IndexController extends Controller {
       }   
 	 public function search(){
 	       $news=M('news');
-	       $re=I('search');
-	       
-	       $result=$news->where("title like '%".$re."%'")->select();
-	       
-	       $this->assign('num',count($result));
-	       $this->assign('result',$result);
-	       
-	       $this->display();
-	       
-	      }
+
 
         $news_take=$news -> join('news_take')-> where('news_take.uid='.$id.' AND news_take.news_id=news.id')->limit($Page->firstRow.','.$Page->listRows)->select();
         $this -> assign('news_take',$news_take);
@@ -372,6 +363,36 @@ class IndexController extends Controller {
       $this->assign('email_address',$email_address);
       
     }
+
+    //用户信息修改
+    public function edit_message(){
+      $cache_a= S('site_name');
+          $this->assign('title','修改资料 - '.$cache_a['site_name']);
+
+      $this->showLogo();
+      $this->showt_email();
+
+      $client_m = D('clientUser');
+      $client_info = $client_m -> where("`user_name`='".$_SESSION['username']."'")->find();
+      // $client_info = $client_m -> where('id='.I('id')) ->find();
+      // print_r($client_info);
+      $this -> assign('client_info',$client_info);
+
+      $this->display('Index/edit_user_info');
+    }
+
+   public function lookfor(){
+   	$news=M('news');
+	       $re=I('search');
+	       
+	       $result=$news->where("title like '%".$re."%'")->select();
+	       
+	       $this->assign('num',count($result));
+	       $this->assign('result',$result);
+	       
+	       $this->display();
+   }
+
 
 
 
