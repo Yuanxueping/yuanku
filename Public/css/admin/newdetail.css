@@ -3,8 +3,8 @@
 }
 .con{
 	display: block;
-	height: 80px;
 	overflow-y: scroll;
+	height:80px;
 }
 .table>tbody>tr>td{
 	vertical-align: middle;
@@ -20,4 +20,9 @@ a.btn{
 	color: black;
 	line-height: 16px;
 	border: 1px solid #ccc!important;
+}
+.cons{
+	display: block;
+	overflow-y:hidden;
+	height:80px;
 }
