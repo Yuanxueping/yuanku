@@ -151,8 +151,7 @@ class IndexController extends Controller {
     	// do it
        $this->display();
     	
-    }
-     
+    } 
 	public function news_detail()
     {
     	$id = I('id');
@@ -165,13 +164,13 @@ class IndexController extends Controller {
 		
 		$this -> assign('news_recent',$news_recent);
 		$this -> assign('news_detail',$news_detail);
-    	
-       $cache_a= S('site_name');
-       $this->assign('title','新闻详情 - '.$cache_a['site_name']);
+    	 
+       	$cache_a= S('site_name');
+       	$this->assign('title','新闻详情 - '.$cache_a['site_name']);
  
 
         	// do it
-           $this->display();
+        $this->display();
       	
     }
     //删除订阅的文章

@@ -190,11 +190,10 @@ class NewsController extends AuthController {
    public function news_del(){
    	    $new_m=D('News'); 
 		if ($new_m->delete(I('id'))) {
- 
-//          $this->redirect('News/newsort');
+
 			$this->success('删除成功');
 		}else{
-			$this->success('删除失败'); 
+			$this->error('删除失败');
 		}
    }
    public function sort(){
