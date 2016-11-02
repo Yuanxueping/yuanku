@@ -294,7 +294,7 @@ class IndexController extends Controller {
         $this->assign('page',$show);// 赋值分页输出
 
         
-<<<<<<< HEAD
+
       }   
 	 public function search(){
 	       $news=M('news');
@@ -308,7 +308,7 @@ class IndexController extends Controller {
 	       $this->display();
 	       
 	      }
-=======
+
         $news_take=$news -> join('news_take')-> where('news_take.uid='.$id.' AND news_take.news_id=news.id')->limit($Page->firstRow.','.$Page->listRows)->select();
         $this -> assign('news_take',$news_take);
 
@@ -372,6 +372,6 @@ class IndexController extends Controller {
       
     }
 
->>>>>>> 5295fd789f85bcd19aa5371c50d0e99be7981b41
+
 
 }
