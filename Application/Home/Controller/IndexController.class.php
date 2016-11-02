@@ -169,10 +169,7 @@ class IndexController extends Controller {
 
     	// do it
        $this->display();
-    	
-    }
-    
-
+   }
 	public function news_detail()
     {
     	$id = I('id');
@@ -185,7 +182,6 @@ class IndexController extends Controller {
 							 -> field('n.id as id,title,name,sort_name,content,img,date,introduction')
 							 -> join('author')
 							 -> join('news_sort')
-							 -> join('news_take')
 							 -> where('n.id='.$id.' AND author.id=author_id AND sort_ename=news_sort.e_name')
 							 -> select();
 		
@@ -362,6 +358,24 @@ class IndexController extends Controller {
       $this->assign('email_address',$email_address);
       
     }
+
+    //用户信息修改
+    public function edit_message(){
+      $cache_a= S('site_name');
+          $this->assign('title','修改资料 - '.$cache_a['site_name']);
+
+      $this->showLogo();
+      $this->showt_email();
+
+      $client_m = D('clientUser');
+      $client_info = $client_m -> where("`user_name`='".$_SESSION['username']."'")->find();
+      // $client_info = $client_m -> where('id='.I('id')) ->find();
+      // print_r($client_info);
+      $this -> assign('client_info',$client_info);
+
+      $this->display('Index/edit_user_info');
+    }
+
    public function lookfor(){
    	$news=M('news');
 	       $re=I('search');
@@ -373,6 +387,7 @@ class IndexController extends Controller {
 	       
 	       $this->display();
    }
+
 
 
 

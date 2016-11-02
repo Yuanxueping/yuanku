@@ -3,6 +3,30 @@
 
 
 
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<div class="panel-title">编辑幻灯片</div>
+	</div>
+	<div class="panel-body">
+        <form action="{:U('Slide/slide_edit')}" method="post" class="" enctype="multipart/form-data">  
+            <div class="form-group">
+                <label class="" for="picname">图片名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="name" value="{$slide_info['name']}">
+            </div>
+            <div class="form-group">
+                <label class="" for="date">图片上传日期:&nbsp;</label>
+                <input type="datetime-local" name="date"  value="{$slide_info['date']}">
+            </div>
+            <div class="form-group">
+                <label class="" for="pic">图片</label>
+                <input class="dropify" name="img" type="file" data-default-file="__ROOT__/{$slide_info['img']}">
+            </div>
+            <button class="btn btn-success">提交</button>
+
+            <input type="hidden" name="id" value="{$slide_info['id']}">
+        </form>
+    </div>
+</div>
 
 
 
