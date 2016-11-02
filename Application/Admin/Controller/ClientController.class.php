@@ -50,13 +50,15 @@ class ClientController extends Controller {
     		// $upload->rootPath=''
     		//设置附件上传（子）目录
     		// $upload->savePath='./';
-    		$info=$upload->upload();
+            
+            $info=$upload->upload();
     		if (!$info) {
     			$this->error($upload->getError());
     		}else{
     			$_POST['head_photo']='/Uploads/'.$info['head_photo']['savepath'].$info['head_photo']['savename'];
     		}
 
+            $_POST['user_pwd']=md5($_POST['user_pwd']);
     		// 做验证、自动完成
     		if ($client_m->create()) {
     			if ($client_m->save()) {
