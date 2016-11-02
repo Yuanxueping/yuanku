@@ -24,9 +24,9 @@ class RegisterController extends Controller {
 
 	public function regNewMember(){
 	
-		$person['user_name']=I('username');
+		// $person['user_name']=I('username');
 		//密码加密
-		// $person['user_pwd']=md5(I('password'));
+		$person['user_pwd']=md5(I('password'));
 		
 		// 密码无加密
 		$person['user_pwd']=I('password');
