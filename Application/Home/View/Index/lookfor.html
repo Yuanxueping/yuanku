@@ -1,0 +1,25 @@
+<include file="public/header" />
+<include file="public/headerstwo"/>
+<div style="height: 50px;width: 100%;">
+</div>
+<div class="sea-body">
+<ul class="list-group">
+	<if condition="$num eq '' ">
+      <li class="list-group-item text-center">对不起，没有搜索到你想要的内容</li>
+    </if>
+<volist   name="result" id="vo" key="k">
+   <li class="list-group-item ">
+   	<h3 style="display: inline;">{$k}.</h3>&nbsp;<!--&nbsp;<a class= "sea" href="{:U('Home/Index/news_detail',array('id'=>$vo[id]))}"><img src="__PUBLIC__/{$vo.img}"/></a>&nbsp;&nbsp;-->
+	<a href="{:U('Home/Index/news_detail',array('id'=>$vo[id]))}" class="sea">{$vo.title}</a>
+	<span style="font-size: 8px; ">{$vo.date|date="Y-m-d",###}</span>
+  </li>
+  
+  <!--<li class="list-group-item"><a href="{:U('Home/Index/news_detail',array('id'=>$vo[id]))}">{$k}.{$vo.title}</a></li>-->
+</volist>
+ <h3 class="text-center">总共：{$num}条记录</h3>	
+
+
+</ul>
+
+</div>
+<include file="public/footer" />

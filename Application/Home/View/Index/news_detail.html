@@ -26,10 +26,9 @@
 				  			<a href="">{$news_detail[0]['date']|date='Y年m月d日',###}</a>
 				  			<span>作者:<span>{$news_detail[0]['name']}</span>分类:<span>{$news_detail[0]['sort_name']}</span>评论:<span>0 COMMENTS</span></span>
 				  		</p>
-
-				  		<p class="p2"><php> echo htmlspecialchars_decode($news_detail[0]['content']) </php></p>
-				  		<p class="p3"><a href="">read more...</a></p>
-				  		<button type="submit"  class="btn btn-block btn-lg btn-success" style="margin-top:10px; width:25%;" onclick="location.href='{:U('Index/take_add',array(id=>$id))}'">点击订阅</button>
+ 
+				  		<div class="p2"><php> echo htmlspecialchars_decode($news_detail[0]['content']) </php></div>
+				  		<button type="submit"  class="btn btn-block btn-lg btn-success dingyue" onclick="location.href='{:U('Index/take_add',array(id=>$id))}'">点击订阅</button>
 
 					</div>
 					<div class="line1"></div>
@@ -106,21 +105,7 @@
 						<strong>- Michle Siminson</strong>
 						<p>Lorem Ipsum passage, and going through the cites of the word here classical literature passage discovere there undou btable source looks reasonable the generated charac eristic words.</p>
 					</div>
-					<div class="advertisements">
-						<h4 class="title">客户</h4>
-						<ul>
-							<li><a href=""><img src="__PUBLIC__/img/news_img/sample-ad-banner.jpg"/></a></li>
-							<li><a href=""><img src="__PUBLIC__/img/news_img/sample-ad-banner.jpg"/></a></li>
-						</ul>
-						<ul>
-							<li><a href=""><img src="__PUBLIC__/img/news_img/sample-ad-banner.jpg"/></a></li>
-							<li><a href=""><img src="__PUBLIC__/img/news_img/sample-ad-banner.jpg"/></a></li>
-						</ul>
-					</div>
-					<div class="text_widget">
-						<h4 class="title">文本工具</h4>
-						<p>Going to use a passage of lorem lpsum you need to be sure there anything embarrassin hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend the repeat predefined chunks as thenecessary making this the first true generator.</p>
-					</div>
+					 
 				</div>
 			</div>
 		</div>

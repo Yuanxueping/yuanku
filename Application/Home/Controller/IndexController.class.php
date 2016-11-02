@@ -33,6 +33,25 @@ class IndexController extends Controller {
        $this->assign('title','首页 - '.$cache_a['site_name']);
        
        $this->display();
+       $news = M('News');
+		
+		$page_cout=3;
+		
+		$page_num=I('page_num')>0?I('page_num'):1;
+		
+		
+		$start_index=($page_num-1)*$page_cout;
+//		$start_index=0;
+		
+		$news_list=$news -> alias('n')
+						 -> field('n.id as id,title,name,sort_name,content,img,date')
+						 -> join('author ON author_id=author.id')
+						 -> join('news_sort ON sort_ename=news_sort.e_name')
+						 -> order('id desc')
+						 -> limit($start_index,$page_cout)
+						 -> select();
+		
+		$this->assign('news_list',$news_list);
     }
 
     // public function slide(){
@@ -150,10 +169,7 @@ class IndexController extends Controller {
 
     	// do it
        $this->display();
-    	
-    }
-    
-
+   }
 	public function news_detail()
     {
     	$id = I('id');
@@ -163,10 +179,9 @@ class IndexController extends Controller {
 		$news_recent = $news -> field('id,title,img,date') -> order('id desc') -> limit(3) -> select();
 		
 		$news_detail = $news -> alias('n')
-							 -> field('n.id as id,title,name,sort_name,content,img,date')
+							 -> field('n.id as id,title,name,sort_name,content,img,date,introduction')
 							 -> join('author')
 							 -> join('news_sort')
-							 -> join('news_take')
 							 -> where('n.id='.$id.' AND author.id=author_id AND sort_ename=news_sort.e_name')
 							 -> select();
 		
@@ -275,6 +290,12 @@ class IndexController extends Controller {
         $this->assign('page',$show);// 赋值分页输出
 
         
+
+      }   
+	 public function search(){
+	       $news=M('news');
+
+
         $news_take=$news -> join('news_take')-> where('news_take.uid='.$id.' AND news_take.news_id=news.id')->limit($Page->firstRow.','.$Page->listRows)->select();
         $this -> assign('news_take',$news_take);
 
@@ -337,6 +358,7 @@ class IndexController extends Controller {
       $this->assign('email_address',$email_address);
       
     }
+
     //用户信息修改
     public function edit_message(){
       $cache_a= S('site_name');
@@ -353,6 +375,20 @@ class IndexController extends Controller {
 
       $this->display('Index/edit_user_info');
     }
+
+   public function lookfor(){
+   	$news=M('news');
+	       $re=I('search');
+	       
+	       $result=$news->where("title like '%".$re."%'")->select();
+	       
+	       $this->assign('num',count($result));
+	       $this->assign('result',$result);
+	       
+	       $this->display();
+   }
+
+
 
 
 }
