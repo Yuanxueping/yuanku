@@ -299,6 +299,7 @@ class IndexController extends Controller {
 	 public function search(){
 	       $news=M('news');
 
+
         $news_take=$news -> join('news_take')-> where('news_take.uid='.$id.' AND news_take.news_id=news.id')->limit($Page->firstRow.','.$Page->listRows)->select();
         $this -> assign('news_take',$news_take);
 
@@ -372,6 +373,7 @@ class IndexController extends Controller {
 	       
 	       $this->display();
    }
+
 
 
 }
