@@ -48,7 +48,6 @@ li {
 }
 .container.contain .row .col-sm-9 {
   margin-bottom: 75px;
-  padding-right: 40px;
 }
 .container.contain .row .col-sm-9 .jumbotron {
   padding: 0px;
@@ -119,6 +118,7 @@ li {
 }
 .container.contain .row .col-sm-9 .sharepost > ul > li {
   display: inline-block;
+  padding-bottom: 10px;
 }
 .container.contain .row .col-sm-9 .sharepost > ul > li > a {
   display: block;
@@ -245,12 +245,10 @@ li {
   line-height: 23px;
   color: #727272;
 }
-@media screen and (max-width: 786px) {
+@media screen and (min-width: 786px) {
   .container {
     margin: 0 8%;
   }
-}
-@media screen and (min-width: 786px) {
   button.dingyue {
     width: 25%;
   }

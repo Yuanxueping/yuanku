@@ -9,9 +9,9 @@ class IndexController extends Controller {
        $slide = M('Slide');
        $news = M('News');
 
-       $firstnews_list=$news->where('news_position="first"')->select();
+       $firstnews_list=$news->where('news_position="first"')->limit(9)->order('id desc')->select();
        $secondnews_list=$news->where('news_position="second"')->limit(5)->order('id desc')->select();
-       $thirdnews_list=$news->where('news_position="third"')->select();
+       $thirdnews_list=$news->where('news_position="third"')->order('id desc')->limit(5)->select();
        
        $slide_list=$slide->select();
 
@@ -22,9 +22,10 @@ class IndexController extends Controller {
          $cache_a=S('site_name',$system_info);
        }
        
-      //  print_r($secondnews_list);
+      //  print_r($secondnews_list);exit();
 
        $this->assign('firstnews_list',$firstnews_list);
+      //  print_r($firstnews_list);exit();
        $this->assign('secondnews_list',$secondnews_list);
        $this->assign('thirdnews_list',$thirdnews_list);
        
@@ -170,8 +171,7 @@ class IndexController extends Controller {
     	// do it
        $this->display();
    }
-	public function news_detail()
-    {
+	public function news_detail(){
     	$id = I('id');
 		
     	$news = M('News');
@@ -220,7 +220,11 @@ class IndexController extends Controller {
           $news = M('News');
 
           $id = I('id');
-
+          if ($_SESSION['user']['id']==0) {
+               $this->success('请先登录！',U('index/login'));
+            
+            exit();
+          }
           if ($id>0) {
               // $data['take']='1';
               // $news->where('id='.$id)->save($data);
@@ -289,6 +293,16 @@ class IndexController extends Controller {
         $show       = $Page->show();// 分页显示输出
         $this->assign('page',$show);// 赋值分页输出
 
+        $news_take=$news -> join('news_take')-> where('news_take.uid='.$id.' AND news_take.news_id=news.id')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this -> assign('news_take',$news_take);
+
+         $this->assign('title','浏览足迹 - '.$cache_a['site_name']);
+        // do it
+         if ($user_total_num != 0) {
+          $this->display();
+         }else{
+          $this -> success("您还没有浏览记录，请前往新闻页面！",__MODULE__.'/Index/news');
+        }
         
 
       }   

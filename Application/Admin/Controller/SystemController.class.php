@@ -32,7 +32,7 @@ class SystemController extends AuthController{
 		$user_m=M('Admin_user');
 
 		// 每一页显示3条
-		$page_cout=2;
+		$page_cout=10;
 
 		// 1、2、3
 		$page_num=I('page_num')>0?I('page_num'):1;
@@ -143,7 +143,7 @@ class SystemController extends AuthController{
 			$upload=new Upload();
 			$upload->maxSize=10240000;
 			$upload->exts=array('jpg','gif','jpeg','png');
-			$upload->savePath='./';
+			$upload->savePath='/';
 			$info=$upload->upload();
 			if (!$info) {
 				$this->error($upload->getError());
@@ -192,7 +192,7 @@ class SystemController extends AuthController{
 			$upload=new Upload();
 			$upload->maxSize=10240000;
 			$upload->exts=array('jpg','gif','jpeg','png');
-			$upload->savePath='./';
+			$upload->savePath='/';
 			$info=$upload->upload();
 			if (!$info) {
 				$this->error($upload->getError());

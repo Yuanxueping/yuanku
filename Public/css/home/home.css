@@ -118,6 +118,10 @@ p {
 	top:0;
 	left: 0;
 }
+.feature_section3>.section_title1_1>.fontdefaulf{
+    padding-top: 25px;
+}
+
  .cbp-lightbox:hover img{
     -webkit-transform:scale(1.5,1.5);
     -moz-transform:scale(1.5,1.5);

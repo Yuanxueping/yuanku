@@ -17,7 +17,9 @@
 		<!--增加-->
 		<volist   name="news_list" id="news_i">
 			<div class="container">					
-				<img src="__PUBLIC__/{$news_i.img}" class="news_img"/>
+				<div class="text-center">
+					<img src="__PUBLIC__/{$news_i.img}" class="news_img"/>
+				</div>
 				<div class="wenzhang">
 					<p>						
 						<a href="{:U('Index/news_detail',array(id=>$news_i['id']))}" class="biaoti">{$news_i.title}</a>
@@ -31,8 +33,9 @@
 						<i>评论:</i> 
 						<a href="" class="comments">0 条</a>
 					</p>
-					<div class="news_content">
-						<php> echo subtext(htmlspecialchars_decode($news_i['content']),200) </php>
+					<div class="news_content text-justify">
+						 <p><php> echo subtext(strip_tags(htmlspecialchars_decode($news_i['content']),''),200) </php></p>
+					
 						<a href="" class="more"> 更多</a>
 					</div>
 				</div>					

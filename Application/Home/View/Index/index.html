@@ -85,17 +85,17 @@
 	<div class="box col-lg-3 col-md-3 col-sm-6 col-xs-12">
 		<span class="glyphicon glyphicon-signal"></span>
 		<h5>健康测试</h5>
-		<p>对于您的身体和平时的生活习惯做出相应的测试，以真实了解您的测试结果给出专业的建议</p>
+		<p>我们将对于您的身体和平时的生活习惯做出相应性的测试，以助于我们真实了解您的测试结果给出专业的建议。</p>
 	</div>
 	<div class="box col-lg-3 col-md-3 col-sm-6 col-xs-12">
 		<span class="glyphicon glyphicon-link"></span>
 		<h5>专家对接</h5>
-		<p>专家研究分析，并和您取得实时的沟通交流，及时监控您的和健康状态。</p>
+		<p>我们将能带给你更专业的专家研究分析，并与您取得实时的沟通交流，及时监控您的精神近况和健康状态。</p>
 	</div>
 	<div class="box col-lg-3 col-md-3 col-sm-6 col-xs-12">
 		<span class="glyphicon glyphicon-heart"></span>
 		<h5>健康跟踪</h5>
-		<p>密切关注您的方案实施进度，并且对方案不合适的地方进行严密改良，这全都是为了你的健康。</p>
+		<p>力动会持续密切地关注您的方案实施进度，并且对方案不合适的地方进行严密改良，这全都是为了你的健康。</p>
 	</div>
 </div>
 
@@ -112,15 +112,16 @@
 	<div class="container-fluid">
 
 		<div class="row">			
-			<div class="col-md-6 col-sm-12 col-xs-12">
-				<a href="#" class="cbp-caption cbp-lightbox" data-title="Color  by M.A Anderson">
+			<div class="col-md-6 col-sm-12 col-xs-12">	
+				
+				<a href="{:U('Index/news_detail',array(id=>$firstnews_list[0][id]))}" class="cbp-caption cbp-lightbox" data-title="Color  by M.A Anderson">
 					<div class="cbp-caption-defaultWrap">
-						<img src="__PUBLIC__/img/highstand homepage/project1_1.jpg" class="img-responsive" alt="pro" typeof="Image" />
+						<img src="__PUBLIC__/{$firstnews_list[0]['img']}" class="img-responsive" alt="pro" typeof="Image" style="height:490px;"/>
 					</div>
 					<div class="cbp-caption-activeWrap">
 						<div class="cbp-l-caption-alignLeft">
 							<div class="cbp-l-caption-body">
-								<div class="cbp-l-caption-title">Color</div>
+								<div class="cbp-l-caption-title">{$firstnews_list[0]['title']}</div>
 								<div class="cbp-l-caption-desc">by M.A Anderson</div>
 							</div>
 						</div>
@@ -130,14 +131,15 @@
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-xs-6">
-						<a href="#" class="cbp-caption cbp-lightbox" data-title="Fledglings  by M.A Anderson">
+						
+						<a href="{:U('Index/news_detail',array(id=>$firstnews_list[1][id]))}" class="cbp-caption cbp-lightbox" data-title="Fledglings  by M.A Anderson">
 							<div class="cbp-caption-defaultWrap">
-								<img src="__PUBLIC__/img/highstand homepage/04-big.jpg" class="img-responsive" alt="" typeof="Image" />
+								<img src="__PUBLIC__/{$firstnews_list[1]['img']}" class="img-responsive" alt="" typeof="Image" style="width:337px;height:253px;"/>
 							</div>
 							<div class="cbp-caption-activeWrap">
 								<div class="cbp-l-caption-alignLeft">
 									<div class="cbp-l-caption-body">
-										<div class="cbp-l-caption-title">Fledglings</div>
+										<div class="cbp-l-caption-title">{$firstnews_list[1]['title']}</div>
 										<div class="cbp-l-caption-desc">by M.A Anderson</div>
 									</div>
 								</div>
@@ -145,14 +147,15 @@
 						</a>
 					</div>
 					<div class="col-md-6 col-sm-6 col-xs-6">
-						<a href="#" class="cbp-caption cbp-lightbox" data-title="Packages  by M.A Anderson">
+						
+						<a href="{:U('Index/news_detail',array(id=>$firstnews_list[2][id]))}" class="cbp-caption cbp-lightbox" data-title="Packages  by M.A Anderson">
 							<div class="cbp-caption-defaultWrap">
-								<img src="__PUBLIC__/img/highstand homepage/08-big.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
+								<img src="__PUBLIC__/{$firstnews_list[2]['img']}" class="img-responsive" alt="Portfolio" typeof="Image" style="width:337px;height:253px;"/>
 							</div>
 							<div class="cbp-caption-activeWrap">
 								<div class="cbp-l-caption-alignLeft">
 									<div class="cbp-l-caption-body">
-										<div class="cbp-l-caption-title">Packages</div>
+										<div class="cbp-l-caption-title">{$firstnews_list[2]['title']}</div>
 										<div class="cbp-l-caption-desc">by M.A Anderson</div>
 									</div>
 								</div>
@@ -162,14 +165,15 @@
 				</div>
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-xs-6">
-						<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
+						
+						<a href="{:U('Index/news_detail',array(id=>$firstnews_list[3][id]))}" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
 							<div class="cbp-caption-defaultWrap">
-								<img src="__PUBLIC__/img/highstand homepage/07-big.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
+								<img src="__PUBLIC__/{$firstnews_list[3]['img']}" class="img-responsive" alt="Portfolio" typeof="Image" style="width:337px;height:253px;"/>
 							</div>
 							<div class="cbp-caption-activeWrap">
 								<div class="cbp-l-caption-alignLeft">
 									<div class="cbp-l-caption-body">
-										<div class="cbp-l-caption-title">LG dLite</div>
+										<div class="cbp-l-caption-title">{$firstnews_list[3]['title']}</div>
 										<div class="cbp-l-caption-desc">by M.A Anderson</div>
 									</div>
 								</div>
@@ -177,14 +181,15 @@
 						</a>
 					</div>
 					<div class="col-md-6 col-sm-6 col-xs-6">
-						<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
+						
+						<a href="{:U('Index/news_detail',array(id=>$firstnews_list[4][id]))}" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
 							<div class="cbp-caption-defaultWrap">
-								<img src="__PUBLIC__/img/highstand homepage/05-big.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
+								<img src="__PUBLIC__/{$firstnews_list[4]['img']}" class="img-responsive" alt="Portfolio" typeof="Image" style="width:337px;height:253px;"/>
 							</div>
 							<div class="cbp-caption-activeWrap">
 								<div class="cbp-l-caption-alignLeft">
 									<div class="cbp-l-caption-body">
-										<div class="cbp-l-caption-title">LG dLite</div>
+										<div class="cbp-l-caption-title">{$firstnews_list[4]['title']}</div>
 										<div class="cbp-l-caption-desc">by M.A Anderson</div>
 									</div>
 								</div>
@@ -196,14 +201,15 @@
 			
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
+					
+					<a href="{:U('Index/news_detail',array(id=>$firstnews_list[5][id]))}" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
 						<div class="cbp-caption-defaultWrap">
-							<img src="__PUBLIC__/img/highstand homepage/161689529.jpg" class="img-responsive" alt="Portfolio" typeof="Image" />
+							<img src="__PUBLIC__/{$firstnews_list[5]['img']}" class="img-responsive" alt="Portfolio" typeof="Image" style="width:337px;height:253px;"/>
 						</div>
 						<div class="cbp-caption-activeWrap">
 							<div class="cbp-l-caption-alignLeft">
 								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">LG dLite</div>
+									<div class="cbp-l-caption-title">{$firstnews_list[5]['title']}</div>
 									<div class="cbp-l-caption-desc">by M.A Anderson</div>
 								</div>
 							</div>
@@ -211,14 +217,15 @@
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<a href="#" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
+					
+					<a href="{:U('Index/news_detail',array(id=>$firstnews_list[6][id]))}" class="cbp-caption cbp-lightbox" data-title="LG dLite  by M.A Anderson">
 						<div class="cbp-caption-defaultWrap">
-							<img src="__PUBLIC__/img/highstand homepage/14368986.jpg" class="img-responsive" alt="" typeof="Image" />
+							<img src="__PUBLIC__/{$firstnews_list[6]['img']}" class="img-responsive" alt="" typeof="Image" style="width:337px;height:253px;"/>
 						</div>
 						<div class="cbp-caption-activeWrap">
 							<div class="cbp-l-caption-alignLeft">
 								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">LG dLite</div>
+									<div class="cbp-l-caption-title">{$firstnews_list[6]['title']}</div>
 									<div class="cbp-l-caption-desc">by M.A Anderson</div>
 								</div>
 							</div>
@@ -226,14 +233,15 @@
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<a href="#" class="cbp-caption cbp-lightbox" data-title="Civil War - Trailer 1  by M.A Anderson">
+					
+					<a href="{:U('Index/news_detail',array(id=>$firstnews_list[7][id]))}" class="cbp-caption cbp-lightbox" data-title="Civil War - Trailer 1  by M.A Anderson">
 						<div class="cbp-caption-defaultWrap">
-							<img src="__PUBLIC__/img/highstand homepage/FkTybqcX-Yo.jpg" class="img-responsive" alt="" typeof="Image" />
+							<img src="__PUBLIC__/{$firstnews_list[7]['img']}" class="img-responsive" alt="" typeof="Image" style="width:337px;height:253px;"/>
 						</div>
 						<div class="cbp-caption-activeWrap">
 							<div class="cbp-l-caption-alignLeft">
 								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">Civil War - Trailer 1</div>
+									<div class="cbp-l-caption-title">{$firstnews_list[7]['title']}</div>
 									<div class="cbp-l-caption-desc">by M.A Anderson</div>
 								</div>
 							</div>
@@ -241,14 +249,15 @@
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<a href="#" class="cbp-caption cbp-lightbox" data-title="Civil War - Trailer 2  by M.A Anderson">
+					
+					<a href="{:U('Index/news_detail',array(id=>$firstnews_list[8][id]))}" class="cbp-caption cbp-lightbox" data-title="Civil War - Trailer 2  by M.A Anderson">
 						<div class="cbp-caption-defaultWrap">
-							<img src="__PUBLIC__/img/highstand homepage/dKrVegVI0Us.jpg" class="img-responsive" alt="" typeof="Image" />
+							<img src="__PUBLIC__/{$firstnews_list[8]['img']}" class="img-responsive" alt="" typeof="Image" style="width:337px;height:253px;"/>
 						</div>
 						<div class="cbp-caption-activeWrap">
 							<div class="cbp-l-caption-alignLeft">
 								<div class="cbp-l-caption-body">
-									<div class="cbp-l-caption-title">Civil War - Trailer 2</div>
+									<div class="cbp-l-caption-title">{$firstnews_list[8]['title']}</div>
 									<div class="cbp-l-caption-desc">by M.A Anderson</div>
 								</div>
 							</div>
@@ -322,7 +331,7 @@
 				<div class="box">
 					<h5 class="caps">{$news_i['title']}</h5>
 					<div class="bgline"></div>
-					<p>此处是一段非常长的文段，然而该文段在网页浏览过程中没有任何实际意义，你可以无视该文段继续浏览你所需要浏览的内容。</p>
+					<p><php> echo subtext(strip_tags(htmlspecialchars_decode($news_i['content']),''),30) </php></p>
 					
 					<a href="{:U('Index/news_detail',array(id=>$news_i[id]))}" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
 				</div>
@@ -341,228 +350,7 @@
 		<h2>欢迎来加入我们</h2>
 		<div class="linebg_2"></div>
 		<p>无论以什么样的形式 <br /> 欢迎与我们为伍，为人类健康而奋斗！</p>
-		<!--<div id="example" class="owl-carousel">-->
-			<!--<div id="wiper">
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img6.jpg?itok=V9ZP4PYd" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img13.jpg?itok=6z8gQRlE" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img11.jpg?itok=nOPiPZvM" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img1.jpg?itok=e3G3NuHa" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img36.jpg?itok=7wK8RVbo" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img10.jpg?itok=Ok_n3rrr" class="rimg" alt="" />
-								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img7.jpg?itok=kTjklOP7" class="rimg" alt="" />
-								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img31.jpg?itok=onrLxT__" class="rimg" alt="" />
-								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img34.jpg?itok=NWEyjx_t" class="rimg" alt="" />
-								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img29_0.jpg?itok=tMhYS7Hw" class="rimg" alt="" />
-								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img9.jpg?itok=LtbGjdeX" class="rimg" alt="" />
-								<div class="content">Nica Heriberty<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img28.jpg?itok=CmRSo73C" class="rimg" alt="" />
-								<div class="content">Alan Joaquin<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<!--复制一份-->
-				<!--<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img6.jpg?itok=V9ZP4PYd" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img13.jpg?itok=6z8gQRlE" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img11.jpg?itok=nOPiPZvM" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img1.jpg?itok=e3G3NuHa" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img36.jpg?itok=7wK8RVbo" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img10.jpg?itok=Ok_n3rrr" class="rimg" alt="" />
-								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img7.jpg?itok=kTjklOP7" class="rimg" alt="" />
-								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img31.jpg?itok=onrLxT__" class="rimg" alt="" />
-								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img34.jpg?itok=NWEyjx_t" class="rimg" alt="" />
-								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img29_0.jpg?itok=tMhYS7Hw" class="rimg" alt="" />
-								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img9.jpg?itok=LtbGjdeX" class="rimg" alt="" />
-								<div class="content">Nica Heriberty<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="__PUBLIC__/img/highstand homepage/people-img28.jpg?itok=CmRSo73C" class="rimg" alt="" />
-								<div class="content">Alan Joaquin<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>-->
-
-		<!--</div>-->
+		 
 	</div>
 
 </div>
@@ -692,8 +480,8 @@
 					 <div class="two_third_less">
 				<else />
 					<div class="one_third_less">
-				</if>
-					<a href="/many-desktop-packages-0">
+				</if> 
+					<a href="{:U('Index/news_detail',array(id=>$news_j[id]))}">
 						<div class="box01">
 							<img src="__PUBLIC__/{$news_j.img}" width="374" height="200"  />
 
@@ -706,66 +494,7 @@
 				</div>
 			</volist>
 
-
-			<!--<div class="one_third_less">
-				<a href="/many-desktop-packages-0">
-					<div class="box01">
-						<img src="__PUBLIC__/img/highstand homepage/site-img225.jpg?itok=oGIxJj2U" width="374" height="200" alt="image" typeof="Image" />
-
-						<div class="content">
-							<h4>{$news_j.title}</h4>
-							<b>{$news_j['date']|date='Y年m月d日',###}</b>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="one_third_less choose-blog">
-				<a href="/many-desktop-packages">
-					<div class="box01">
-						<img src="__PUBLIC__/img/highstand homepage/site-img224.jpg?itok=418pSrnX" width="374" height="200" alt="image" typeof="Image" />
-
-						<div class="content">
-							<h4>{$news_j.title}</h4>
-							<b>July 5, 2016</b>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="one_third_less last">
-				<a href="/node/15">
-					<div class="box01">
-						<img src="__PUBLIC__/img/highstand homepage/2h1BK2H2Quk.jpg?itok=Z0ts4wwD" alt="" typeof="Image" />
-						<div class="content">
-							<h4>{$news_j.title}</h4>
-							<b>May 12, 2016</b>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="clearfix margin_bottom2"></div>
-			<div class="two_third_less">
-				<a href="/letraset-sheets-containing-lorem">
-					<div class="box01">
-						<img src="__PUBLIC__/img/highstand homepage/works-img31-thumb.jpg?itok=xln0boD0" width="374" height="200" alt="Blog" typeof="Image" />
-
-						<div class="content">
-							<h4>{$news_j.title}</h4>
-							<b>May 12, 2016</b>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="one_third_less">
-				<a href="/node/13">
-					<div class="box01">
-						<img src="__PUBLIC__/img/highstand homepage/eafjQDr22kU.jpg?itok=ZAauvndp" alt="" typeof="Image" />
-						<div class="content">
-							<h4>{$news_j.title}</h4>
-							<b>May 12, 2016</b>
-						</div>
-					</div>
-				</a>
-			</div>-->
+ 
 
 		</div>
 	</div>

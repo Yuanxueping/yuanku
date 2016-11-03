@@ -11,7 +11,7 @@ class CacheController extends Controller{
      header("Content-type: text/html; charset=utf-8");
      //清文件缓存
      $dirs = array(dirname(dirname(dirname(__FILE__))).'/Runtime/Cache/Home/');
-     @mkdir('Runtime',0777,true);
+   
      //清理缓存
      foreach($dirs as $value) {
       $this->rmdirr($value);
@@ -27,7 +27,7 @@ class CacheController extends Controller{
      //清文件缓存
      $dirs = array(dirname(dirname(dirname(__FILE__))).'/Runtime/Cache/Admin/');
      
-     @mkdir('Runtime',0777,true);
+   
      //清理缓存
      foreach($dirs as $value) {
       $this->rmdirr($value);
