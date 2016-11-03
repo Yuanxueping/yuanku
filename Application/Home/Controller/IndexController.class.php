@@ -22,9 +22,10 @@ class IndexController extends Controller {
          $cache_a=S('site_name',$system_info);
        }
        
-      //  print_r($secondnews_list);
+      //  print_r($secondnews_list);exit();
 
        $this->assign('firstnews_list',$firstnews_list);
+      //  print_r($firstnews_list);exit();
        $this->assign('secondnews_list',$secondnews_list);
        $this->assign('thirdnews_list',$thirdnews_list);
        
