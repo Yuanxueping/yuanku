@@ -9,9 +9,9 @@ class IndexController extends Controller {
        $slide = M('Slide');
        $news = M('News');
 
-       $firstnews_list=$news->where('news_position="first"')->select();
+       $firstnews_list=$news->where('news_position="first"')->limit(9)->order('id desc')->select();
        $secondnews_list=$news->where('news_position="second"')->limit(5)->order('id desc')->select();
-       $thirdnews_list=$news->where('news_position="third"')->limit(5)->select();
+       $thirdnews_list=$news->where('news_position="third"')->order('id desc')->limit(5)->select();
        
        $slide_list=$slide->select();
 
