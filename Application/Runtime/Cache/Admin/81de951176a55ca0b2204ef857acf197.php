@@ -50,13 +50,13 @@
    			<nav class="navbar navbar-indigo">
  				<div class="navbar-header container brand-orange">
    					<a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
-   						<a href="/lidong/yuanku/admin" class="logo">力动网</a>
-   						<a href="http://91.234.35.26/pacificonis-admin/v1.0.1/land/l3/index.html" class="icon-logo"></a>
+   						<a href="<?php echo U('Home/Index/index');?>" class="logo" target="_blank">力动网</a>
  				</div>
   				<div class="navbar-container clearfix">
     				<div class="pull-left">
     					<a href="#" class="page-title text-uppercase">管理后台</a>
     				</div>
+ 
     				<div class="pull-right">
       					<div class="pull-left search-container">
         					<form class="searchbox">
@@ -160,6 +160,8 @@
 									<!-- <li><a href="<?php echo U('system/index');?>">网站设置</a></li> -->
 									<li>
 										<a href="<?php echo U('system/manager_user');?>">管理员设置</a>
+										<a target="_blank" href="<?php echo U('cache/home');?>">前台缓存</a>
+										<a target="_blank" href="<?php echo U('cache/admin');?>">后台缓存</a>
 									</li>
 								</ul>
 							</li>
@@ -167,7 +169,7 @@
 								<a href="#"><i class="zmdi zmdi-view-compact"></i>首页管理<span class="zmdi arrow"></span></a>
 								<ul class="nav nav-inside collapse" aria-expanded="false">
 									<li class="inside-title">首页管理</li>
-									<li>
+									<li> 
 										<a href="<?php echo U('slide/slide_manage');?>">幻灯片管理</a>
 									</li>
 									<li>

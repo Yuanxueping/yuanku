@@ -23,8 +23,9 @@
 
 
 
+<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/news_detail.css"/>
+<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/iconfont.css"/>
 
-<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/css/home/news_list.css"/>
   </head>
 <body>
 <!-- <div class="container-fluid"> -->
@@ -78,48 +79,110 @@
 	            </div>
 		  </div>
 	</nav>
-<div class="container-fluid clearfix toubei">
-	<div class="container clearfix">
-		<h1 class="clearfix" style="color: white;">博客文章</h1>
-		<div class="clearfix">
-			<a href="index.html" class="clearfix">主页&nbsp;<i>&#47;</i></a>
-		</div>
-	</div>
-</div>
-
-<div class="products">		
-	<div class="">
-		<!--增加-->
-		<?php if(is_array($news_list)): $i = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_i): $mod = ($i % 2 );++$i;?><div class="container">					
-				<img src="/lidong/yuanku/Public/<?php echo ($news_i["img"]); ?>" class="news_img"/>
-				<div class="wenzhang">
-					<p>						
-						<a href="<?php echo U('Index/news_detail',array(id=>$news_i['id']));?>" class="biaoti"><?php echo ($news_i["title"]); ?></a>
-					</p>
-					<p>
-						<a href="" class="time"><?php echo (date('Y年m月d日',$news_i['date'])); ?></a>
-						<i>作者:</i>
-						<span class="author"><?php echo ($news_i['name']); ?></span>
-						<i>分类:</i> 
-						<a href="" class="name"><?php echo ($news_i['sort_name']); ?></a> 
-						<i>评论:</i> 
-						<a href="" class="comments">0 条</a>
-					</p>
-					<div class="news_content">
-						<?php echo subtext(htmlspecialchars_decode($news_i['content']),200) ?>
-						<a href="" class="more"> 更多</a>
+		<div class="container-fluid page-title">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-12">
+						<h1><?php echo ($news_detail[0]['title']); ?></h1>
 					</div>
-				</div>					
-			</div><?php endforeach; endif; else: echo "" ;endif; ?>
-	</div>					
-	<div class="paging wrapper">		
-		<div class="container fenye tab">
-			<?php echo ($page_html); ?>
-		</div>	
-	</div>			
-</div>
-		<script src="/lidong/yuanku/Public/js/news_list.js" type="text/javascript" charset="utf-8"></script>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<h2><a href="<?php echo U('Index/index');?>">首页</a><i>/</i><?php echo ($news_detail[0]['title']); ?></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container contain">
+			<div class="row">
+				<div class="col-sm-9">
+					<div class="jumbotron">
+				  		<img src="/lidong/yuanku/Public/<?php echo ($news_detail[0]['img']); ?>" class="img-responsive"/>
+				  		<h3><a href=""><?php echo ($news_detail[0]['title']); ?></a></h3>
+				  		<p class="p1">
+				  			<a href=""><?php echo (date('Y年m月d日',$news_detail[0]['date'])); ?></a>
+				  			<span>作者:<span><?php echo ($news_detail[0]['name']); ?></span>分类:<span><?php echo ($news_detail[0]['sort_name']); ?></span>评论:<span>0 COMMENTS</span></span>
+				  		</p>
+ 
+				  		<div class="p2"><?php echo htmlspecialchars_decode($news_detail[0]['content']) ?></div>
+				  		<button type="submit"  class="btn btn-block btn-lg btn-success dingyue" onclick="location.href='<?php echo U('Index/take_add',array(id=>$id));?>'">点击订阅</button>
 
+					</div>
+					<div class="line1"></div>
+					<div class="sharepost">
+						<h5>分享文章</h5>
+						<ul>
+							<li><a href=""><i class="iconfont icon-facebookf"></i></a></li>
+							<li><a href=""><i class="iconfont icon-birdxiaoniao"></i></a></li>
+							<li><a href=""><i class="iconfont icon-google"></i></a></li>
+							<li><a href=""><i class="iconfont icon-delicious"></i></a></li>
+							<li><a href=""><i class="iconfont icon-digg"></i></a></li>
+							<li><a href=""><i class="iconfont icon-reddit"></i></a></li>
+							<li><a href=""><i class="iconfont icon-linkin"></i></a></li>
+							<li><a href=""><i class="iconfont icon-pinterest"></i></a></li>
+						</ul>
+					</div>
+					<div class="about_author">
+						<h5>关于作者</h5>
+						<div>
+							<p><?php echo ($news_detail[0]['name']); ?></p>
+							<p><?php echo ($news_detail[0]['introduction']); ?></p>
+						</div>
+					</div>
+					<div class="line2"></div>
+					<div class="comments">
+						<h5>评论</h5>
+						<!-- 多说评论框 start -->
+							<div class="ds-thread" data-thread-key="<?php echo ($news_detail[0]['id']); ?>" data-title="<?php echo ($news_detail[0]['title']); ?>" data-url=""></div>
+						<!-- 多说评论框 end -->
+						<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+						<script type="text/javascript">
+						var duoshuoQuery = {short_name:"liddd"};
+							(function() {
+								var ds = document.createElement('script');
+								ds.type = 'text/javascript';ds.async = true;
+								ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+								ds.charset = 'UTF-8';
+								(document.getElementsByTagName('head')[0] 
+								 || document.getElementsByTagName('body')[0]).appendChild(ds);
+							})();
+							</script>
+						<!-- 多说公共JS代码 end -->
+
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="more_about">
+						<h4 class="title">更多</h4>
+						<ul>
+							<li><a href="">&gt; 我们的历史</a></li>
+							<li><a href="">&gt; 专业研究</a></li>
+							<li><a href="">&gt; 我们的发展</a></li>
+							<li><a href="">&gt; 合作伙伴</a></li>
+							<li><a href="">&gt; 公司事业</a></li>
+							<li><a href="">&gt; 新技术</a></li>
+							<li><a href="">&gt; 客户推荐</a></li>
+						</ul>
+					</div>
+					<div class="recent_posts">
+						<h4 class="title">近期文章</h4>
+						<ul>
+							<?php if(is_array($news_recent)): $i = 0; $__LIST__ = $news_recent;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
+									<a class="pull-left" href="<?php echo U('Index/news_detail',array(id=>$vo['id']));?>"><img src="/lidong/yuanku/Public/<?php echo ($vo['img']); ?>"/></a>
+									<a href="<?php echo U('Index/news_detail',array(id=>$vo['id']));?>"><?php echo ($vo['title']); ?></a>
+									<span><?php echo (date('Y年m月d日',$vo['date'])); ?></span>
+								</li><?php endforeach; endif; else: echo "" ;endif; ?>
+						</ul>
+					</div>
+					<div class="happy_say">
+						<h4 class="title">客户的话</h4>
+						<img class="pull-left" src="/lidong/yuanku/Public/img/highstand homepage/people-img19_0.jpg"/>
+						<strong>- Michle Siminson</strong>
+						<p>Lorem Ipsum passage, and going through the cites of the word here classical literature passage discovere there undou btable source looks reasonable the generated charac eristic words.</p>
+					</div>
+					 
+				</div>
+			</div>
+		</div>
+		
 
 
 <div class="clearfix"></div>

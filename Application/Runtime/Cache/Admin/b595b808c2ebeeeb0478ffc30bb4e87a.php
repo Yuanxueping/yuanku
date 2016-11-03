@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
 <html lang="en"><head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title><?php echo ($title); ?>  后台管理</title>
@@ -431,52 +431,65 @@
 					<div class="col-md-12">
 						<div class="content-box">
 							<div class="content"> 
-<link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/newdetail.css">
-<div class="panel panel-primary">
-	<div class="panel-heading">
-		<span><?php echo ($detail[0][sort_name]); ?></span>
-	</div>
-	<table class="table table-hover">
-      	<thead>
-        	<tr>
-	          	<th>#</th>
-	          	
-		        <th>作者</th>
-		        <th>标题</th>
-		       <!-- <th>内容</th>-->
-		        <th>日期</th>
-		        <th class="text-center">操作</th>
-        	</tr>
-      	</thead>
-      	<tbody id="ajax_rt_box">
-      		<?php if(is_array($detail)): $k = 0; $__LIST__ = $detail;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
-      				<td><?php echo ($k); ?></td>
-					
-					<td class="changeid"><?php echo ($vo['name']); ?></td>
-					<td class="changename"><span class="cons"><?php echo ($vo['title']); ?></span></td>
-					<!--<td class="changename"><span class="con"><?php echo ($vo['content']); ?></span></td>-->
-					<td class="changename"><?php echo (date("y-m-d H:i:s",$vo['date'])); ?></td>
-					<td class="text-center">
-						<div class="btn-group">
-							<p><a class="btn btn-warning btn-xs" href="<?php echo U('Home/Index/news_detail',array('id'=>$vo[nid]));?>" target="_blank" title="查看"><span class="glyphicon glyphicon-search"></span></a></p>
-							<p><button onclick="location.href='<?php echo U('News/news_edit',array('id'=>$vo[nid]));?>'"type="button" class="btn btn-success btn-xs" title="编辑"><span class="glyphicon glyphicon-pencil" title="编辑"></span></button></p>
-							<p><button onclick="location.href='<?php echo U('News/news_del',array('id'=>$vo[nid]));?>'" type="button" class="btn btn-danger btn-xs" title="删除"><span class="glyphicon glyphicon-trash" title="删除"></span></button></p>
-						</div>
-					</td>
-				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-      	</tbody>
-    </table>
-</div>
-<div class="btn-toolbar text-center" role="toolbar">
-	<div class="btn-group">
-		<?php echo ($page_html); ?>
-	</div>
-</div>
+ 
 
-<a  class="btn btn-info pull-right" href="javascript:history.go(-1);">后退</a>
-<div class="clearfix">
-	
-</div>
+ <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box p-20 twitter white f-s-16">
+            <img src="/lidong/yuanku/Public/images/admin/avatar.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+            <span class="text-uppercase">第一组</span>  <br>
+            <span class="">@组长：黄寰</span>
+            <span class="zmdi zmdi-twitter p-absolute t-20 r-20 f-s-20"></span>
+            <p class="m-t-20">组员：劳土铸、张卓志、陈忠义<br>任务：负责首页和后台的首页管理菜单。</p>
+            <div class="socials text-right f-s-20">
+              
+              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+            </div>
+          </div>
+        </div>
+         <div class="col-lg-3 col-md-6">
+          <div class="content-box p-20 soundcloud white f-s-16">
+            <img src="/lidong/yuanku/Public/images/admin/avatar4.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+            <span class="text-uppercase">第二组</span>  <br>
+            <span class="">@组长：沈迪豪</span>
+            <span class="zmdi zmdi-soundcloud p-absolute t-20 r-20 f-s-20"></span>
+            <p class="m-t-20">组员：郑宏扬、黎雄鹰、杨柳<br>任务：负责新闻列表和详情、后台的新闻管理。</p>
+            <div class="socials text-right f-s-20">
+              
+              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="content-box p-20 facebook white f-s-16">
+              <img src="/lidong/yuanku/Public/images/admin/avatar2.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+              <span class="text-uppercase">第三组</span>  <br>
+              <span class="">@组长：袁雪萍</span>
+              <span class="zmdi zmdi-facebook p-absolute t-20 r-20 f-s-20"></span>
+              <p class="m-t-20">组员：石诗文、何慧怡、李浪怀<br>任务：负责登录、注册等页面，以及后台的用户管理。</p>
+              <div class="socials text-right f-s-20">
+                
+                <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box p-20 gplus white f-s-16">
+            <img src="/lidong/yuanku/Public/images/admin/avatar3.png" class="pull-left m-r-10 mCS_img_loaded" alt="avatar">
+            <span class="text-uppercase">第四组</span>  <br>
+            <span class="">@smith</span>
+            <span class="zmdi zmdi-google-plus p-absolute t-20 r-20 f-s-20"></span>
+            <p class="m-t-20">负责框架搭建<br>攻坚解难。</p>
+            <div class="socials text-right f-s-20">
+              
+              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+     
  									</div>
 								</div>
 							</div>

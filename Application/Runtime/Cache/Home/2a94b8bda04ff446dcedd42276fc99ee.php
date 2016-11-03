@@ -8,6 +8,7 @@
 	 <link rel="stylesheet" href="/lidong/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/headAndFoot.css">
 	 <script src="/lidong/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/lidong/yuanku/Public/js/change.js" type="text/javascript" charset="utf-8"></script>
 	 <script src="/lidong/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
 	  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -101,7 +102,7 @@
 				<?php if(is_array($slide_list)): $k = 0; $__LIST__ = $slide_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$slide_id): $mod = ($k % 2 );++$k; if($k == 1): ?><div class="item active">
 					<?php else: ?>
 							<div class="item"><?php endif; ?>
-						<img src="/lidong/yuanku/Public/<?php echo ($slide_id["img"]); ?>"/>
+						<img src="/lidong/yuanku<?php echo ($slide_id["img"]); ?>"/>
 					</div><?php endforeach; endif; else: echo "" ;endif; ?>
 			</div>
 			

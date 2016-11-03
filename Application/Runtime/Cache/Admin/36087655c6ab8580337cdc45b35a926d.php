@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
 <html lang="en"><head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title><?php echo ($title); ?>  后台管理</title>
@@ -431,52 +431,53 @@
 					<div class="col-md-12">
 						<div class="content-box">
 							<div class="content"> 
-<link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/newdetail.css">
+<link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/news.css">
 <div class="panel panel-primary">
 	<div class="panel-heading">
-		<span><?php echo ($detail[0][sort_name]); ?></span>
+		<span>内容列表</span>
+		<a href="<?php echo U('News/news_add');?>" class="btn btn-success btn-sm white pull-right">添加内容</a>
 	</div>
 	<table class="table table-hover">
       	<thead>
         	<tr>
 	          	<th>#</th>
-	          	
+	          	<th>ID</th>
+		        <th>内容标题</th>
 		        <th>作者</th>
-		        <th>标题</th>
-		       <!-- <th>内容</th>-->
+		        <th>分类</th>
+		        <th>图片</th>
 		        <th>日期</th>
 		        <th class="text-center">操作</th>
         	</tr>
       	</thead>
-      	<tbody id="ajax_rt_box">
-      		<?php if(is_array($detail)): $k = 0; $__LIST__ = $detail;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
+      	<tbody>
+      		<?php if(is_array($news_list)): $k = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
       				<td><?php echo ($k); ?></td>
-					
-					<td class="changeid"><?php echo ($vo['name']); ?></td>
-					<td class="changename"><span class="cons"><?php echo ($vo['title']); ?></span></td>
-					<!--<td class="changename"><span class="con"><?php echo ($vo['content']); ?></span></td>-->
-					<td class="changename"><?php echo (date("y-m-d H:i:s",$vo['date'])); ?></td>
+					<td><?php echo ($vo['nid']); ?></td>
+					<td><?php echo ($vo['title']); ?></td>
+					<td><?php echo ($vo['name']); ?></td>
+					<td><?php echo ($vo['sort_name']); ?></td>
+					<td><?php echo ($vo['img']); ?></td>
+					<td><?php echo (date('Y-m-d',$vo['date'])); ?></td>
 					<td class="text-center">
 						<div class="btn-group">
-							<p><a class="btn btn-warning btn-xs" href="<?php echo U('Home/Index/news_detail',array('id'=>$vo[nid]));?>" target="_blank" title="查看"><span class="glyphicon glyphicon-search"></span></a></p>
-							<p><button onclick="location.href='<?php echo U('News/news_edit',array('id'=>$vo[nid]));?>'"type="button" class="btn btn-success btn-xs" title="编辑"><span class="glyphicon glyphicon-pencil" title="编辑"></span></button></p>
-							<p><button onclick="location.href='<?php echo U('News/news_del',array('id'=>$vo[nid]));?>'" type="button" class="btn btn-danger btn-xs" title="删除"><span class="glyphicon glyphicon-trash" title="删除"></span></button></p>
+							<a class="btn btn-info btn-xs white" href="<?php echo U('Home/Index/news_detail',array('id'=>$vo[nid]));?>" target="_blank"><span class="glyphicon glyphicon-search"></span></a>
+							<button onclick="location.href='<?php echo U('News/news_edit',array('id'=>$vo['nid']));?>'" type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+							<button onclick="location.href='<?php echo U('News/news_del',array('id'=>$vo['nid']));?>'" type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>
+							
 						</div>
 					</td>
 				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
       	</tbody>
     </table>
 </div>
+
 <div class="btn-toolbar text-center" role="toolbar">
 	<div class="btn-group">
 		<?php echo ($page_html); ?>
 	</div>
 </div>
-
-<a  class="btn btn-info pull-right" href="javascript:history.go(-1);">后退</a>
-<div class="clearfix">
-	
-</div>
+<script src="/lidong/yuanku/Public/js/admin/news.js"></script>
  									</div>
 								</div>
 							</div>

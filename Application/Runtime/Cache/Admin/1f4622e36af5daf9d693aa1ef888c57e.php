@@ -431,36 +431,33 @@
 					<div class="col-md-12">
 						<div class="content-box">
 							<div class="content"> 
-<link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/newdetail.css">
+<link rel="stylesheet" href="/lidong/yuanku/Public/css/admin/new_sort.css">
 <div class="panel panel-primary">
 	<div class="panel-heading">
-		<span><?php echo ($detail[0][sort_name]); ?></span>
+		<span>内容分类</span>
+		<a href="<?php echo U('News/sort_add');?>" class="btn btn-success btn-sm white pull-right">添加分类</a>
 	</div>
 	<table class="table table-hover">
       	<thead>
         	<tr>
 	          	<th>#</th>
-	          	
-		        <th>作者</th>
-		        <th>标题</th>
-		       <!-- <th>内容</th>-->
-		        <th>日期</th>
+	          	<th>ID</th>
+	          	<th>sort</th>
+		        <th>分类</th>
 		        <th class="text-center">操作</th>
         	</tr>
       	</thead>
       	<tbody id="ajax_rt_box">
-      		<?php if(is_array($detail)): $k = 0; $__LIST__ = $detail;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
+      		<?php if(is_array($news_list)): $k = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
       				<td><?php echo ($k); ?></td>
-					
-					<td class="changeid"><?php echo ($vo['name']); ?></td>
-					<td class="changename"><span class="cons"><?php echo ($vo['title']); ?></span></td>
-					<!--<td class="changename"><span class="con"><?php echo ($vo['content']); ?></span></td>-->
-					<td class="changename"><?php echo (date("y-m-d H:i:s",$vo['date'])); ?></td>
+					<td class="changeid"><?php echo ($vo['id']); ?></td>
+					<td class="changeid"><?php echo ($vo['e_name']); ?></td>
+					<td class="changename"><?php echo ($vo['sort_name']); ?></td>
 					<td class="text-center">
 						<div class="btn-group">
-							<p><a class="btn btn-warning btn-xs" href="<?php echo U('Home/Index/news_detail',array('id'=>$vo[nid]));?>" target="_blank" title="查看"><span class="glyphicon glyphicon-search"></span></a></p>
-							<p><button onclick="location.href='<?php echo U('News/news_edit',array('id'=>$vo[nid]));?>'"type="button" class="btn btn-success btn-xs" title="编辑"><span class="glyphicon glyphicon-pencil" title="编辑"></span></button></p>
-							<p><button onclick="location.href='<?php echo U('News/news_del',array('id'=>$vo[nid]));?>'" type="button" class="btn btn-danger btn-xs" title="删除"><span class="glyphicon glyphicon-trash" title="删除"></span></button></p>
+							<button onclick="location.href='<?php echo U('News/sort_detail',array('e_name'=>$vo[e_name]));?>'"type="button" class="btn btn-danger btn-xs"  title="详情"><span class="glyphicon glyphicon-book"></span></button>
+							<button onclick="location.href='<?php echo U('News/sort_edit',array('id'=>$vo[id]));?>'"type="button" class="btn btn-success btn-xs"  title="编辑"><span class="glyphicon glyphicon-pencil"></span></button>
+							<button onclick="location.href='<?php echo U('News/sort_del',array('id'=>$vo[id]));?>'" type="button" class="btn btn-danger btn-xs"  title="删除"><span class="glyphicon glyphicon-trash"></span></button>
 						</div>
 					</td>
 				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -473,10 +470,40 @@
 	</div>
 </div>
 
-<a  class="btn btn-info pull-right" href="javascript:history.go(-1);">后退</a>
-<div class="clearfix">
-	
-</div>
+<!--<script type="text/javascript">
+$(function(){
+	$("#ajax_rt_box").find(".btn-xs").click(function(){
+		var this_box=$(this).parent().parent().prev();
+		var id=this_box.prev().html();
+		console.log(id);
+		var oldval=this_box.html();
+        this_box.html('<input type="text" autofocus="true">').addClass('cur_input');
+       $(".cur_input").find('input').focus();
+		$(".cur_input").find('input').blur(function(){
+			 var changeval=$(".cur_input").find('input').val();
+			 
+			 if(changeval!=oldval&&changeval!=""){
+			 	$.post('<?php echo U("News/ajax_set_sort");?>',{"id":id,"changeval": changeval},function(msg){
+			 		 if(msg.stauts==1){
+			 		 	this_box.html(changeval);
+			 		 }
+			 		 else if(msg.stauts==-1){
+			 		 	alert("修改失败");
+			 		 }
+			 	
+			 })
+			}else{
+				alert("没有修改！");
+				this_box.html(oldval);
+				
+			}
+			 
+			 
+		})
+	})
+})
+
+</script>-->
  									</div>
 								</div>
 							</div>
