@@ -3,7 +3,7 @@
 <head lang="zh">
 	<title><?php echo ($title); ?></title>
 	<meta charset="UTF-8">
-
+	<link rel="shortcut icon" href="/favicon.ico">
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
@@ -106,7 +106,8 @@
 						<a href="" class="comments">0 条</a>
 					</p>
 					<div class="news_content">
-						<?php echo subtext(htmlspecialchars_decode($news_i['content']),200) ?>
+						 <p><?php echo subtext(strip_tags(htmlspecialchars_decode($news_i['content']),''),200) ?></p>
+					
 						<a href="" class="more"> 更多</a>
 					</div>
 				</div>					

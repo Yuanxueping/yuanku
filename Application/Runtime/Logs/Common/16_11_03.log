@@ -1,0 +1,42 @@
+[ 2016-11-03T09:11:23+08:00 ] ::1 /yuanku/Uploads./2016-10-14/58004d3c2bdb8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+ERR: 无法加载模块:Uploads
+
+[ 2016-11-03T09:11:26+08:00 ] ::1 /yuanku/Public/bootstrap-3.3.0/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-03T09:11:36+08:00 ] ::1 /yuanku/Public/bootstrap-3.3.0/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-03T09:13:12+08:00 ] ::1 /yuanku/Public/img/lunbo/footer-bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-03T09:13:28+08:00 ] ::1 /yuanku/Public/bootstrap-3.3.0/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-03T09:13:38+08:00 ] ::1 /yuanku/Public/bootstrap-3.3.0/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-03T09:13:43+08:00 ] ::1 /yuanku/Public/bootstrap-3.3.0/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+ERR: 无法加载模块:Public
+

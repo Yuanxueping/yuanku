@@ -13,6 +13,7 @@
   	<!-- iOS Safari -->
   	<meta name="apple-mobile-web-app-capable" content="yes">
   	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="shortcut icon" href="/favicon.ico">
  
  	<link rel="stylesheet" href="/yuanku/Public/css/admin/material-design-iconic-font.css">
   	<link rel="stylesheet" href="/yuanku/Public/css/admin/animate.css">
@@ -185,7 +186,7 @@
 										<a href="<?php echo U('client/client_list');?>">用户列表</a>
 									</li>
 									<li>
-										<a href="<?php echo U('client/feedback');?>">咨询列表</a>
+										<a href="<?php echo U('client/feedback_list');?>">咨询列表</a>
 									</li>
 								</ul>
 							</li>

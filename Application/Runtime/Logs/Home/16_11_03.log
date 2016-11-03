@@ -1,0 +1,29 @@
+[ 2016-11-03T09:13:12+08:00 ] ::1 /yuanku/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `slide` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `news` WHERE ( news_position="first" )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE ( news_position="second" ) ORDER BY id desc LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `news` WHERE ( news_position="third" ) LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `slide`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000473s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000657s ]
+SQL: SELECT * FROM `news` ORDER BY id desc LIMIT 3   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: f_html D:\wamp\www\yuanku\Application\Home\Common\function.php 第 15 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000599s ]
+SQL: SELECT n.id as id,`title`,`name`,`sort_name`,`content`,`img`,`date` FROM news n INNER JOIN author ON author_id=author.id INNER JOIN news_sort ON sort_ename=news_sort.e_name  ORDER BY id desc LIMIT 0,3   [ RunTime:0.0107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+

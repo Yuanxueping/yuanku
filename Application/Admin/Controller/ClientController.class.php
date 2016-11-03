@@ -58,7 +58,14 @@ class ClientController extends Controller {
     			$_POST['head_photo']='/Uploads/'.$info['head_photo']['savepath'].$info['head_photo']['savename'];
     		}
 
+           //检查修改密码是否为空
+            if($_POST['user_pwd'] !=''){
+            // $data['user_pwd']=md5(I('user_pwd'));
             $_POST['user_pwd']=md5($_POST['user_pwd']);
+            
+            }else{
+                unset($_POST['user_pwd']);
+            }
     		// 做验证、自动完成
     		if ($client_m->create()) {
     			if ($client_m->save()) {

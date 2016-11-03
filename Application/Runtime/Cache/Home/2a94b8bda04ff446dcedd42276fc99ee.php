@@ -3,7 +3,7 @@
 <head lang="zh">
 	<title><?php echo ($title); ?></title>
 	<meta charset="UTF-8">
-
+	<link rel="shortcut icon" href="/favicon.ico">
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link rel="stylesheet" href="/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="/yuanku/Public/css/home/headAndFoot.css">
@@ -384,7 +384,7 @@
 				<div class="box">
 					<h5 class="caps"><?php echo ($news_i['title']); ?></h5>
 					<div class="bgline"></div>
-					<p>此处是一段非常长的文段，然而该文段在网页浏览过程中没有任何实际意义，你可以无视该文段继续浏览你所需要浏览的内容。</p>
+					<p><?php echo subtext(strip_tags(htmlspecialchars_decode($news_i['content']),''),30) ?></p>
 					
 					<a href="<?php echo U('Index/news_detail',array(id=>$news_i[id]));?>" class="button two">阅读 更多 &nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
 				</div>
@@ -402,228 +402,7 @@
 		<h2>欢迎来加入我们</h2>
 		<div class="linebg_2"></div>
 		<p>无论以什么样的形式 <br /> 欢迎与我们为伍，为人类健康而奋斗！</p>
-		<!--<div id="example" class="owl-carousel">-->
-			<!--<div id="wiper">
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img6.jpg?itok=V9ZP4PYd" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img13.jpg?itok=6z8gQRlE" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img11.jpg?itok=nOPiPZvM" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img1.jpg?itok=e3G3NuHa" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img36.jpg?itok=7wK8RVbo" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img10.jpg?itok=Ok_n3rrr" class="rimg" alt="" />
-								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img7.jpg?itok=kTjklOP7" class="rimg" alt="" />
-								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img31.jpg?itok=onrLxT__" class="rimg" alt="" />
-								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img34.jpg?itok=NWEyjx_t" class="rimg" alt="" />
-								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img29_0.jpg?itok=tMhYS7Hw" class="rimg" alt="" />
-								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img9.jpg?itok=LtbGjdeX" class="rimg" alt="" />
-								<div class="content">Nica Heriberty<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img28.jpg?itok=CmRSo73C" class="rimg" alt="" />
-								<div class="content">Alan Joaquin<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<!--复制一份-->
-				<!--<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img6.jpg?itok=V9ZP4PYd" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img13.jpg?itok=6z8gQRlE" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img11.jpg?itok=nOPiPZvM" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img1.jpg?itok=e3G3NuHa" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img36.jpg?itok=7wK8RVbo" class="rimg" alt="" />
-								<div class="content">ALAN FRENKELY<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img10.jpg?itok=Ok_n3rrr" class="rimg" alt="" />
-								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img7.jpg?itok=kTjklOP7" class="rimg" alt="" />
-								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img31.jpg?itok=onrLxT__" class="rimg" alt="" />
-								<div class="content">Mark Anderson<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img34.jpg?itok=NWEyjx_t" class="rimg" alt="" />
-								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img29_0.jpg?itok=tMhYS7Hw" class="rimg" alt="" />
-								<div class="content">JOHN CASALENA<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img9.jpg?itok=LtbGjdeX" class="rimg" alt="" />
-								<div class="content">Nica Heriberty<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="box">
-						<div class="boximg">
-							<a href="http://google.com"><img src="/yuanku/Public/img/highstand homepage/people-img28.jpg?itok=CmRSo73C" class="rimg" alt="" />
-								<div class="content">Alan Joaquin<br /> <b>- Developer-</b></div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>-->
-
-		<!--</div>-->
+		 
 	</div>
 
 </div>
@@ -749,7 +528,7 @@
 					 <div class="two_third_less">
 				<?php else: ?>
 					<div class="one_third_less"><?php endif; ?>
-					<a href="/many-desktop-packages-0">
+					<a href="<?php echo U('Index/news_detail',array(id=>$news_j[id]));?>">
 						<div class="box01">
 							<img src="/yuanku/Public/<?php echo ($news_j["img"]); ?>" width="374" height="200"  />
 
@@ -761,66 +540,7 @@
 					</a>
 				</div><?php endforeach; endif; else: echo "" ;endif; ?>
 
-
-			<!--<div class="one_third_less">
-				<a href="/many-desktop-packages-0">
-					<div class="box01">
-						<img src="/yuanku/Public/img/highstand homepage/site-img225.jpg?itok=oGIxJj2U" width="374" height="200" alt="image" typeof="Image" />
-
-						<div class="content">
-							<h4><?php echo ($news_j["title"]); ?></h4>
-							<b><?php echo (date('Y年m月d日',$news_j['date'])); ?></b>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="one_third_less choose-blog">
-				<a href="/many-desktop-packages">
-					<div class="box01">
-						<img src="/yuanku/Public/img/highstand homepage/site-img224.jpg?itok=418pSrnX" width="374" height="200" alt="image" typeof="Image" />
-
-						<div class="content">
-							<h4><?php echo ($news_j["title"]); ?></h4>
-							<b>July 5, 2016</b>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="one_third_less last">
-				<a href="/node/15">
-					<div class="box01">
-						<img src="/yuanku/Public/img/highstand homepage/2h1BK2H2Quk.jpg?itok=Z0ts4wwD" alt="" typeof="Image" />
-						<div class="content">
-							<h4><?php echo ($news_j["title"]); ?></h4>
-							<b>May 12, 2016</b>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="clearfix margin_bottom2"></div>
-			<div class="two_third_less">
-				<a href="/letraset-sheets-containing-lorem">
-					<div class="box01">
-						<img src="/yuanku/Public/img/highstand homepage/works-img31-thumb.jpg?itok=xln0boD0" width="374" height="200" alt="Blog" typeof="Image" />
-
-						<div class="content">
-							<h4><?php echo ($news_j["title"]); ?></h4>
-							<b>May 12, 2016</b>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="one_third_less">
-				<a href="/node/13">
-					<div class="box01">
-						<img src="/yuanku/Public/img/highstand homepage/eafjQDr22kU.jpg?itok=ZAauvndp" alt="" typeof="Image" />
-						<div class="content">
-							<h4><?php echo ($news_j["title"]); ?></h4>
-							<b>May 12, 2016</b>
-						</div>
-					</div>
-				</a>
-			</div>-->
+ 
 
 		</div>
 	</div>

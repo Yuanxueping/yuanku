@@ -13,6 +13,7 @@
   	<!-- iOS Safari -->
   	<meta name="apple-mobile-web-app-capable" content="yes">
   	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="shortcut icon" href="/favicon.ico">
  
  	<link rel="stylesheet" href="/yuanku/Public/css/admin/material-design-iconic-font.css">
   	<link rel="stylesheet" href="/yuanku/Public/css/admin/animate.css">
@@ -186,7 +187,7 @@
 										<a href="<?php echo U('client/client_list');?>">用户列表</a>
 									</li>
 									<li>
-										<a href="<?php echo U('client/feedback');?>">咨询列表</a>
+										<a href="<?php echo U('client/feedback_list');?>">咨询列表</a>
 									</li>
 								</ul>
 							</li>
@@ -439,11 +440,11 @@
  		<br><?php echo ($client_info["user_name"]); ?></div>
  	<div class="form-group">
  		<label class="control-label">密码</label>
- 		<input class="form-control" name="user_pwd"></div>
+ 		<input class="form-control" type="password" name="user_pwd"></div>
  	<div class="form-group">
  		<label class="control-label">头像</label>
 
- 		<input class="dropify" name="head_photo" data-default-file="/yuanku/<?php echo ($client_info["head_photo"]); ?>" type="file"></div>
+ 		<input class="dropify" name="head_photo" data-default-file="/yuanku<?php echo ($client_info["head_photo"]); ?>" type="file"></div>
  	<button class="btn btn-success">提交</button>
 
  	<input type="hidden"  name="id" value="<?php echo ($client_info["id"]); ?>"></form>

@@ -170,8 +170,7 @@ class IndexController extends Controller {
     	// do it
        $this->display();
    }
-	public function news_detail()
-    {
+	public function news_detail(){
     	$id = I('id');
 		
     	$news = M('News');
@@ -293,6 +292,16 @@ class IndexController extends Controller {
         $show       = $Page->show();// 分页显示输出
         $this->assign('page',$show);// 赋值分页输出
 
+        $news_take=$news -> join('news_take')-> where('news_take.uid='.$id.' AND news_take.news_id=news.id')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this -> assign('news_take',$news_take);
+
+         $this->assign('title','浏览足迹 - '.$cache_a['site_name']);
+        // do it
+         if ($user_total_num != 0) {
+          $this->display();
+         }else{
+          $this -> success("您还没有浏览记录，请前往新闻页面！",__MODULE__.'/Index/news');
+        }
         
 
       }   
