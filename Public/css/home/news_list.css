@@ -57,9 +57,20 @@ a {
   margin-top: 60px;
   padding-bottom: 60px;
 }
+@media only screen and (min-width: 542px) {
+	.products .container img {
+		width: 60%;
+	}
+}
 .products .container .wenzhang {
-  padding-top: 30px;
-  font-size: 14px;
+    padding-top: 30px;
+    font-size: 14px;
+}
+@media only screen and (min-width: 542px) {
+	.products .container .wenzhang {
+    padding: 30px 120px 0;
+    font-size: 14px;
+  }
 }
 .products .container .wenzhang p a.biaoti {
   color: #2ecc71;
