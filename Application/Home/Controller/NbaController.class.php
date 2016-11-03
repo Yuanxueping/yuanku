@@ -18,7 +18,7 @@ class NbaController extends Controller {
                      -> field('n.id as id,title,name,sort_name,content,img,date')
 					 -> join('author ON author_id=author.id')
 					 -> join('news_sort ON sort_ename=news_sort.e_name')
-					 ->	where("sort_name='nba'")				
+					 ->	where("e_name='nba'")				
 					 -> order('id desc')
 					 -> limit($start_index,$page_cout)
 					 -> select();
@@ -27,7 +27,7 @@ class NbaController extends Controller {
 		 -> field('n.id as id,title,name,sort_name,content,img,date')
 		 -> join('author ON author_id=author.id')
 		 -> join('news_sort ON sort_ename=news_sort.e_name')
-		 ->	where("sort_name='cba'")				
+		 ->	where("e_name='cba'")				
 		 -> order('id desc')
 		 -> limit($start_index,$page_cout)
 		 -> select();
@@ -36,7 +36,7 @@ class NbaController extends Controller {
 		 -> field('n.id as id,title,name,sort_name,content,img,date')
 		 -> join('author ON author_id=author.id')
 		 -> join('news_sort ON sort_ename=news_sort.e_name')
-		 ->	where("sort_name='ucba'")				
+		 ->	where("e_name='ucba'")				
 		 -> order('id desc')
 		 -> limit($start_index,$page_cout)
 		 -> select();
@@ -45,10 +45,11 @@ class NbaController extends Controller {
 		 -> field('n.id as id,title,name,sort_name,content,img,date')
 		 -> join('author ON author_id=author.id')
 		 -> join('news_sort ON sort_ename=news_sort.e_name')
-		 ->	where("sort_name='lunbo'")				
+		 ->	where("e_name='lnba'")				
 		 -> order('id desc')
 		 -> limit($start_index,$page_cout)
 		 -> select();
+//		print_r($news_lion);
 
 		$pattern="/&lt;[img|IMG].*?src=[&quot;|&lsquo;](.*?(?:[\.gif|\.jpg]))[&quot;|&lsquo;].*?[\/]?&gt;/";
 		$replacement = '';
@@ -65,12 +66,13 @@ class NbaController extends Controller {
 		foreach($news_lion as &$value) {
 			$value['content'] = preg_replace($pattern, $replacement, $value['content']);
 		}
+		
 		unset($value);
 		
 		$this->assign('news_list',$news_list);
 	    $this->assign('news_line',$news_line);
 	    $this->assign('news_live',$news_live);
-	    $this->assign('news_lion',$news_live);
+	    $this->assign('news_lion',$news_lion);
 		
 //		select count(*) from News
 		$news_total_num=$news->count();

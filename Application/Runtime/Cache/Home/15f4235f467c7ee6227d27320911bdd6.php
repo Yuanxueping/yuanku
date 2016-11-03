@@ -1,17 +1,92 @@
+<?php if (!defined('THINK_PATH')) exit();?>
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+	<title><?php echo ($title); ?></title>
+	<meta charset="UTF-8">
 
-<include file="public/header" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="/lidong/yuanku/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/lidong/yuanku/Public/css/home/headAndFoot.css">
+	 <script src="/lidong/yuanku/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/lidong/yuanku/Public/js/change.js" type="text/javascript" charset="utf-8"></script>
+	 <script src="/lidong/yuanku/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>
+	  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+      <![endif]-->
+
+
+
+		
+
+		
+
+
 <!-- 这里写自己页面的样式 -->
 <!--HOME css-->
  
 
-<script src="__PUBLIC__/js/change.js" type="text/javascript" charset="utf-8"></script>
+<script src="/lidong/yuanku/Public/js/change.js" type="text/javascript" charset="utf-8"></script>
  
-<link rel="stylesheet" href="__PUBLIC__/css/home/sport_nba.css" />
+<link rel="stylesheet" href="/lidong/yuanku/Public/css/home/sport_nba.css" />
 
-<!--<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/foucsbox.css"/>-->
+<!--<link rel="stylesheet" type="text/css" href="/lidong/yuanku/Public/home/foucsbox.css"/>-->
 
 <!--0-->
-<include file="public/headerstwo"/>
+  </head>
+<body>
+<!-- <div class="container-fluid"> -->
+	<nav class="navbar navbar-default top-nav navbar-fixed-top gaise">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header"> 
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="<?php echo U('Index/index');?>">
+		      	<img class="logo" src="/lidong/yuanku/Public/img/logoko2.png" />
+		      </a>
+		    </div>		
+		    
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav navbar-right color">
+				        <li><a href="<?php echo U('Index/index');?>">首页</a></li>
+				        
+				        <li><a href="<?php echo U('Index/news');?>">推荐</a></li> 
+				        <li><a href="<?php echo U('Nba/index');?>">篮球</a></li>
+				        <!-- <li><a href="/lidong/yuanku/index.php/Home/Nba/news">足球</a></li> -->
+				        
+				        <li><a href="<?php echo U('Index/contact_us');?>">联系我们</a></li>
+
+				        <li><a href="<?php echo U('Index/about_us');?>">关于我们</a></li>  
+				        <li>
+				        <a href="
+				        	<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/index';} else{ echo '/lidong/yuanku/index.php/Home/Index/login'; } ?>
+				        ">
+				        <?php  if(isset($_SESSION['username'])){ echo $_SESSION['username']; }else{ echo '登陆'; } ?>
+				        </a>
+				        </li>
+				        <li>
+				        	<a href="
+				        		<?php if(isset($_SESSION['username'])) {echo '/lidong/yuanku/index.php/Home/Personal/logout';} else{ echo '/lidong/yuanku/index.php/Home/Index/register'; } ?>
+				        	">
+				        		<?php if(isset($_SESSION['username'])) {echo '退出';} else{ echo '注册'; } ?>
+				        	</a>
+				        </li>
+ 
+				        <li>
+				        	<a  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="cursor: pointer;">
+				        		<span class="glyphicon glyphicon-search" style="color: white;" ></span>
+				        	</a>
+				        </li>
+				      </ul>		          			        				        	
+	            </div>
+		  </div>
+	</nav>
 <br><br><br>
 <!--轮播-->
  <!-- 焦点图 -->
@@ -22,41 +97,27 @@
                     <div class="bs-example" data-example-id="carousel-with-captions">
 	                    <div id="carousel-example-captions" class="carousel slide" data-ride="carousel" style="height:400px;position: relative;">
 						    <ol class="carousel-indicators" style="left: 600px; width:60px;height:auto;text-align: center;">
-						    	<volist name="news_lion" id="news_g" key="kk">
-						        <if condition ="$kk==1 || $kk==3 || $kk==5">
-						        <li data-target="#carousel-example-captions" data-slide-to="{$kk-1}"></li>						  
-						         </if>
-						        </volist>
+						    	<?php if(is_array($news_lion)): $kk = 0; $__LIST__ = $news_lion;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_g): $mod = ($kk % 2 );++$kk; if($kk==1 || $kk==3 || $kk==5): ?><li data-target="#carousel-example-captions" data-slide-to="<?php echo ($kk-1); ?>"></li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 						    </ol>
 	                <div class="carousel-inner" role="listbox">
-                    <volist name="news_lion" id="news_g" key="kk">
-                    	
-                    <if condition="$kk==1 || $kk==3 || $kk==5 ">
-	                <div class="item <if condition='$kk==1'>active </if>">	                
+                    <?php if(is_array($news_lion)): $kk = 0; $__LIST__ = $news_lion;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_g): $mod = ($kk % 2 );++$kk; if($kk==1 || $kk==3 || $kk==5 ): ?><div class="item <?php if($kk==1): ?>active<?php endif; ?>">	                
 	        	        <li class="col-2">
-                            <div area_id="indexfoucsg_229" area_type="pic-text" area_num="1" area_img="1张图:1240X400;2张图:615X400;3张图:410X400" source="http://www.qq.com/source1?site=" mode="manual" class="page-wrap">
-	                            
-	                </if>
+                            <div area_id="indexfoucsg_229" area_type="pic-text" area_num="1" area_img="1张图:1240X400;2张图:615X400;3张图:410X400" source="http://www.qq.com/source1?site=" mode="manual" class="page-wrap"><?php endif; ?>
 	                
 	                            
 	                            <a target="_blank" href="http://kbs.sports.qq.com/kbsweb/game.htm?mid=100000:1468640" title="正视频直播篮网vs绿军 书豪托马斯抢全明星" class="pic">
 	                                <div>
-	                                    <img src="__PUBLIC__/{$news_g[img]}" alt="正视频直播篮网vs绿军 书豪托马斯抢全明星" style="width: 100%;height: auto;"></div>
+	                                    <img src="/lidong/yuanku/Public/<?php echo ($news_g[img]); ?>" alt="正视频直播篮网vs绿军 书豪托马斯抢全明星" style="width: 100%;height: auto;"></div>
 	                                   
-	                                <p>{$news_g['title']}</p>
+	                                <p><?php echo ($news_g['title']); ?></p>
 	                            </a>
 	                            
 	                             
 	                            
 	                            
-                           <if condition="$kk==2 || $kk==4 || $kk==6 ">
-	                  </div>
+                           <?php if($kk==2 || $kk==4 || $kk==6 ): ?></div>
                         </li>                      
-	                </div>   
-	                </if>  
-	               
-	               
-	                </volist>
+	                </div><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 	                
 	             
 	                
@@ -98,36 +159,31 @@
                 </div>
                 
                 <div class="block-body cf" bosszone="SY_Vlist">               
-                    <volist name="news_list" id="news_i" key="kk">
-                    <!--tpl--> 
-                <if condition="$kk==1"> 
-                    <div area_id="hotvideoa_225" area_type="pic-text" area_num="1" area_img="400x250" source="http://www.qq.com/source1?site=" mode="manual" class="col-left cf">
+                    <?php if(is_array($news_list)): $kk = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_i): $mod = ($kk % 2 );++$kk;?><!--tpl--> 
+                <?php if($kk==1): ?><div area_id="hotvideoa_225" area_type="pic-text" area_num="1" area_img="400x250" source="http://www.qq.com/source1?site=" mode="manual" class="col-left cf">
                         <div class="pic-item pic-item-large" style="height: 300px;">
-                            <a target="_blank" href="{:U('Index/news_detail',array(id=>$news_i[id]))}" title="{$news_i['title']}">
-                                <img src="__PUBLIC__/{$news_i.img}" alt="{$news_i['title']}">
+                            <a target="_blank" href="<?php echo U('Index/news_detail',array(id=>$news_i[id]));?>" title="<?php echo ($news_i['title']); ?>">
+                                <img src="/lidong/yuanku/Public/<?php echo ($news_i["img"]); ?>" alt="<?php echo ($news_i['title']); ?>">
                                 <p>
-                                    <span>{$news_i['title']}</span>
+                                    <span><?php echo ($news_i['title']); ?></span>
                                 </p>
                                 <div class="is-video-big"></div>
                             </a>
                         </div>
                     </div>
                     <div area_id="hotvideoa_226" area_type="pic-text" area_num="6" area_img="240x135" source="http://www.qq.com/source1?site=" mode="manual" class="col-right cf">                           
-                <else />  
+                <?php else: ?>  
                 <div class="pic-item">
-                    <a target="_blank" href="{:U('Index/news_detail',array(id=>$news_i[id]))}" title="{$news_i['title']}">
-                        <!--<img src="__PUBLIC__/{$news_i.img}" alt="易建联NBA征程全景纪录片">-->
-                        <img src="__PUBLIC__/{$news_i.img}" alt="{$news_i['title']}">
+                    <a target="_blank" href="<?php echo U('Index/news_detail',array(id=>$news_i[id]));?>" title="<?php echo ($news_i['title']); ?>">
+                        <!--<img src="/lidong/yuanku/Public/<?php echo ($news_i["img"]); ?>" alt="易建联NBA征程全景纪录片">-->
+                        <img src="/lidong/yuanku/Public/<?php echo ($news_i["img"]); ?>" alt="<?php echo ($news_i['title']); ?>">
                         <p>
-                            <!--<span>{$news_i.title}</span>-->
-                            <span>{$news_i['title']}</span>
+                            <!--<span><?php echo ($news_i["title"]); ?></span>-->
+                            <span><?php echo ($news_i['title']); ?></span>
                         </p>
                         <div class="is-video"></div>
                     </a>
-                </div>                    
-                    
-                 </if>
-                </volist>
+                </div><?php endif; endforeach; endif; else: echo "" ;endif; ?>
                 
                 </div>
                 </div>
@@ -166,13 +222,13 @@
                                     <div class="desc">中锋 /  猛龙</div>
                                 </div>
                                 <div class="photo">
-                                    <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="__PUBLIC__/img/basketball/202685.png" alt="220x350" style="height: 160px;"></div>
+                                    <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="/lidong/yuanku/Public/img/basketball/202685.png" alt="220x350" style="height: 160px;"></div>
                             </a>
                          
                             <a class="player-2" href="http://nba.stats.qq.com/player/jump.htm?id=anthony_davis">
                                 <div class="rank">2</div>
                                 <div class="photo">
-                                    <img  src="__PUBLIC__/img/basketball/203076.png" alt="132x132"></div>
+                                    <img  src="/lidong/yuanku/Public/img/basketball/203076.png" alt="132x132"></div>
                                 <div class="name">
                                     <p>安东尼-戴维斯</p>
                                     <span>前锋-中锋 /  鹈鹕</span>
@@ -182,7 +238,7 @@
                             <a class="player-3" href="http://nba.stats.qq.com/player/jump.htm?id=myles_turner">
                                 <div class="rank">3</div>
                                 <div class="photo">
-                                    <img  src="__PUBLIC__/img/basketball/1626167.png" alt="132x132"></div>
+                                    <img  src="/lidong/yuanku/Public/img/basketball/1626167.png" alt="132x132"></div>
                                 <div class="name">
                                     <p>迈勒斯-特纳</p>
                                     <span>前锋-中锋 /  步行者</span>
@@ -201,12 +257,12 @@
                                     <div class="desc">前锋-中锋 /  步行者</div>
                                 </div>
                                 <div class="photo">
-                                    <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="__PUBLIC__/img/basketball/1626167.png" alt="220x350" style="height: 160px;"></div>
+                                    <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="/lidong/yuanku/Public/img/basketball/1626167.png" alt="220x350" style="height: 160px;"></div>
                             </a>
                             <a class="player-2" href="http://nba.stats.qq.com/player/jump.htm?id=hassan_whiteside">
                                 <div class="rank">2</div>
                                 <div class="photo">
-                                    <img  src="__PUBLIC__/img/basketball/202355.png" alt="132x132"></div>
+                                    <img  src="/lidong/yuanku/Public/img/basketball/202355.png" alt="132x132"></div>
                                 <div class="name">
                                     <p>哈桑-怀特塞德</p>
                                     <span>中锋 /  热火</span>
@@ -216,7 +272,7 @@
                             <a class="player-3" href="http://nba.stats.qq.com/player/jump.htm?id=nikola_vucevic">
                                 <div class="rank">3</div>
                                 <div class="photo">
-                                    <img  src="__PUBLIC__/img/basketball/202696.png" alt="132x132"></div>
+                                    <img  src="/lidong/yuanku/Public/img/basketball/202696.png" alt="132x132"></div>
                                 <div class="name">
                                     <p>尼克拉-武切维奇</p>
                                     <span>中锋 /  魔术</span>
@@ -234,12 +290,12 @@
                                     <div class="desc">后卫 /  凯尔特人</div>
                                 </div>
                                 <div class="photo">
-                                    <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="__PUBLIC__/img/basketball/202738.png" alt="220x350" style="height: 160px;"></div>
+                                    <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="/lidong/yuanku/Public/img/basketball/202738.png" alt="220x350" style="height: 160px;"></div>
                             </a>
                             <a class="player-2" href="http://nba.stats.qq.com/player/jump.htm?id=monta_ellis">
                                 <div class="rank">2</div>
                                 <div class="photo">
-                                    <img  src="__PUBLIC__/img/basketball/101145.png" alt="132x132"></div>
+                                    <img  src="/lidong/yuanku/Public/img/basketball/101145.png" alt="132x132"></div>
                                 <div class="name">
                                     <p>蒙塔-埃利斯</p>
                                     <span>后卫 /  步行者</span>
@@ -249,7 +305,7 @@
                             <a class="player-3" href="http://nba.stats.qq.com/player/jump.htm?id=avery_bradley">
                                 <div class="rank">3</div>
                                 <div class="photo">
-                                    <img  src="__PUBLIC__/img/basketball/202340.png" alt="132x132"></div>
+                                    <img  src="/lidong/yuanku/Public/img/basketball/202340.png" alt="132x132"></div>
                                 <div class="name">
                                     <p>埃弗里-布拉德利</p>
                                     <span>后卫 /  凯尔特人</span>
@@ -267,12 +323,12 @@
                                     <div class="desc">中锋-前锋 /  凯尔特人</div>
                                 </div>
                                 <div class="photo">
-                                    <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="__PUBLIC__/img/basketball/201143.png" alt="220x350" style="height: 160px;"></div>
+                                    <img onerror="this.onerror=null; this.src=bestPlayerReplaceImg.big;" src="/lidong/yuanku/Public/img/basketball/201143.png" alt="220x350" style="height: 160px;"></div>
                             </a>
                             <a class="player-2" href="http://nba.stats.qq.com/player/jump.htm?id=hassan_whiteside">
                                 <div class="rank">2</div>
                                 <div class="photo">
-                                    <img  src="__PUBLIC__/img/basketball/202355.png" alt="132x132"></div>
+                                    <img  src="/lidong/yuanku/Public/img/basketball/202355.png" alt="132x132"></div>
                                 <div class="name">
                                     <p>哈桑-怀特塞德</p>
                                     <span>中锋 /  热火</span>
@@ -282,7 +338,7 @@
                             <a class="player-3" href="http://nba.stats.qq.com/player/jump.htm?id=myles_turner">
                                 <div class="rank">3</div>
                                 <div class="photo">
-                                    <img  src="__PUBLIC__/img/basketball/1626167.png" alt="132x132"></div>
+                                    <img  src="/lidong/yuanku/Public/img/basketball/1626167.png" alt="132x132"></div>
                                 <div class="name">
                                     <p>迈勒斯-特纳</p>
                                     <span>前锋-中锋 /  步行者</span>
@@ -303,7 +359,7 @@
                                 <div class="desc">前锋 / 休斯敦火箭</div>
                             </div>
                             <div class="photo">
-                                <img src="__PUBLIC__/img/basketball/201935.png" alt="160x235"></div>
+                                <img src="/lidong/yuanku/Public/img/basketball/201935.png" alt="160x235"></div>
                         </div>
                         <div class="player-2">
                             <div class="rank">2</div>
@@ -340,7 +396,7 @@
                                 <div class="desc">大前锋/ 鹈鹕</div>
                             </div>
                             <div class="photo">
-                                <img src="__PUBLIC__/img/basketball/203076 (1).png" alt="160x235"></div>
+                                <img src="/lidong/yuanku/Public/img/basketball/203076 (1).png" alt="160x235"></div>
                         </div>
                         <div class="player-2">
                             <div class="rank">2</div>
@@ -377,7 +433,7 @@
                                 <div class="desc">雷霆 / 俄克拉马雷霆</div>
                             </div>
                             <div class="photo">
-                                <img src="__PUBLIC__/img/basketball/201566.png" alt="160x235"></div>
+                                <img src="/lidong/yuanku/Public/img/basketball/201566.png" alt="160x235"></div>
                         </div>
                         <div class="player-2">
                             <div class="rank">2</div>
@@ -414,7 +470,7 @@
                                 <div class="desc">前锋 / 洛杉矶湖人</div>
                             </div>
                             <div class="photo">
-                                <img src="__PUBLIC__/img/basketball/1626204.png" alt="160x235"></div>
+                                <img src="/lidong/yuanku/Public/img/basketball/1626204.png" alt="160x235"></div>
                         </div>
                         <div class="player-2">
                             <div class="rank">2</div>
@@ -469,172 +525,164 @@
                 <div class="photos-wrap" id="highFocusCont" bosszone="SY_Photoclk">
                     <div class="page" style="display: block;">
                        <!-- 位置1 / 420x405-->
-                      <volist name="news_line" id="news_e" key="kk">           
-                      <if condition="$kk==1">
-                        <a class="hdpic-item hdpic-item-1" href="{:U('Index/news_detail',array(id=>$news_e[id]))}">
+                      <?php if(is_array($news_line)): $kk = 0; $__LIST__ = $news_line;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_e): $mod = ($kk % 2 );++$kk; if($kk==1): ?><a class="hdpic-item hdpic-item-1" href="<?php echo U('Index/news_detail',array(id=>$news_e[id]));?>">
                             <div class="imgage">
-                                <img src="__PUBLIC__/{$news_e.img}" alt="{$news_e['title']}" style="width: 100%;height: auto;"></div>
+                                <img src="/lidong/yuanku/Public/<?php echo ($news_e["img"]); ?>" alt="<?php echo ($news_e['title']); ?>" style="width: 100%;height: auto;"></div>
                             <div class="mask">
                                 <div class="tag">组图</div>
                                 <i class="go">&gt;</i>
-                                <p>{$news_e['title']}</p>
+                                <p><?php echo ($news_e['title']); ?></p>
                             </div>
                         </a>
                         <!-- 位置2 / 405x200-->
-                       <elseif condition="$kk==2" />
-                        <a class="hdpic-item hdpic-item-2" href="{:U('Index/news_detail',array(id=>$news_e[id]))}">
+                       <?php elseif($kk==2): ?>
+                        <a class="hdpic-item hdpic-item-2" href="<?php echo U('Index/news_detail',array(id=>$news_e[id]));?>">
                             <div class="imgage">
-                                <img src="__PUBLIC__/{$news_e.img}" alt="{$news_e['title']}" style="width: 100%;height: auto;"></div>
+                                <img src="/lidong/yuanku/Public/<?php echo ($news_e["img"]); ?>" alt="<?php echo ($news_e['title']); ?>" style="width: 100%;height: auto;"></div>
                             <div class="mask">
                                 <div class="tag">组图</div>
                                 <i class="go">&gt;</i>
-                                <p>{$news_e['title']}</p>
+                                <p><?php echo ($news_e['title']); ?></p>
                             </div>
                         </a>
                         <!-- 位置3 / 200x200-->
-                        <elseif condition="$kk==3" />
-                        <a class="hdpic-item hdpic-item-3" href="{:U('Index/news_detail',array(id=>$news_e[id]))}">
+                        <?php elseif($kk==3): ?>
+                        <a class="hdpic-item hdpic-item-3" href="<?php echo U('Index/news_detail',array(id=>$news_e[id]));?>">
                             <div class="imgage">
-                                <img src="__PUBLIC__/{$news_e.img}" alt="{$news_e['title']}" style="width: 100%;height: auto;"></div>
+                                <img src="/lidong/yuanku/Public/<?php echo ($news_e["img"]); ?>" alt="<?php echo ($news_e['title']); ?>" style="width: 100%;height: auto;"></div>
                             <div class="mask">
                                 <div class="tag">组图</div>
                                 <i class="go">&gt;</i>
-                                <p>{$news_e['title']}</p>
+                                <p><?php echo ($news_e['title']); ?></p>
                             </div>
                         </a>
                         <!-- 位置4 / 200x200-->
-                        <elseif condition="$kk==4" />
-                        <a class="hdpic-item hdpic-item-4" href="{:U('Index/news_detail',array(id=>$news_e[id]))}">
+                        <?php elseif($kk==4): ?>
+                        <a class="hdpic-item hdpic-item-4" href="<?php echo U('Index/news_detail',array(id=>$news_e[id]));?>">
                             <div class="imgage">
-                                <img src="__PUBLIC__/{$news_e.img}" alt="{$news_e['title']}" style="width: 100%;height: auto;"></div>
+                                <img src="/lidong/yuanku/Public/<?php echo ($news_e["img"]); ?>" alt="<?php echo ($news_e['title']); ?>" style="width: 100%;height: auto;"></div>
                             <div class="mask">
                                 <div class="tag">组图</div>
                                 <i class="go">&gt;</i>
-                                <p>{$news_e['title']}</p>
+                                <p><?php echo ($news_e['title']); ?></p>
                             </div>
                         </a>
                         <!-- 位置5 / 200x405-->
-                       <elseif condition="$kk==5" />
-                        <a class="hdpic-item hdpic-item-5" href="{:U('Index/news_detail',array(id=>$news_e[id]))}">
+                       <?php elseif($kk==5): ?>
+                        <a class="hdpic-item hdpic-item-5" href="<?php echo U('Index/news_detail',array(id=>$news_e[id]));?>">
                             <div class="imgage">
-                                <img src="__PUBLIC__/{$news_e.img}" alt="{$news_e['title']}" style="width: 100%;height: auto;"></div>
+                                <img src="/lidong/yuanku/Public/<?php echo ($news_e["img"]); ?>" alt="<?php echo ($news_e['title']); ?>" style="width: 100%;height: auto;"></div>
                             <div class="mask">
                                 <div class="tag">组图</div>
                                 <i class="go">&gt;</i>
-                                <p>{$news_e['title']}</p>
+                                <p><?php echo ($news_e['title']); ?></p>
                             </div>
 
                         </a>
                         <!-- 位置6 / 200x200-->
-                        <elseif condition="$kk==6" />
-                        <a class="hdpic-item hdpic-item-6" href="{:U('Index/news_detail',array(id=>$news_e[id]))}">
+                        <?php elseif($kk==6): ?>
+                        <a class="hdpic-item hdpic-item-6" href="<?php echo U('Index/news_detail',array(id=>$news_e[id]));?>">
                             <div class="imgage">
-                                <img src="__PUBLIC__/{$news_e.img}" alt="{$news_e['title']}”" style="width:100%;"></div>
+                                <img src="/lidong/yuanku/Public/<?php echo ($news_e["img"]); ?>" alt="<?php echo ($news_e['title']); ?>”" style="width:100%;"></div>
                             <div class="mask">
                                 <div class="tag">组图</div>
                                 <i class="go">&gt;</i>
-                                <p>{$news_e['title']}</p>
+                                <p><?php echo ($news_e['title']); ?></p>
                             </div>
                         </a>
                         <!-- 位置7 / 200x200-->
-                       <else />
-                        <a class="hdpic-item hdpic-item-7" href="{:U('Index/news_detail',array(id=>$news_e[id]))}">
+                       <?php else: ?>
+                        <a class="hdpic-item hdpic-item-7" href="<?php echo U('Index/news_detail',array(id=>$news_e[id]));?>">
                             <div class="imgage">
-                                <img src="__PUBLIC__/{$news_e.img}" alt="{$news_e['title']}" style="width: 100%;"></div>
+                                <img src="/lidong/yuanku/Public/<?php echo ($news_e["img"]); ?>" alt="<?php echo ($news_e['title']); ?>" style="width: 100%;"></div>
                             <div class="mask">
                                 <div class="tag"></div>
                                 <i class="go">&gt;</i>
-                                <p>{$news_e['title']}</p>
+                                <p><?php echo ($news_e['title']); ?></p>
                             </div>
-                        </a>
-                        </if>
-                       </volist>
+                        </a><?php endif; endforeach; endif; else: echo "" ;endif; ?>
                         <!--[if !IE]>
                         |xGv00|6df37f4163b83bf7406cc37efeb1adde
                         <![endif]--> </div>
                       
                     <div class="page" style="display: none;">
                         <!-- 位置1 / 420x405-->
-                     <volist name="news_live" id="news_f" key="kk">
-                      <if condition="$kk==1">
-                        <a class="hdpic-item hdpic-item-1" href="{:U('Index/news_detail',array(id=>$news_f[id]))}">
+                     <?php if(is_array($news_live)): $kk = 0; $__LIST__ = $news_live;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news_f): $mod = ($kk % 2 );++$kk; if($kk==1): ?><a class="hdpic-item hdpic-item-1" href="<?php echo U('Index/news_detail',array(id=>$news_f[id]));?>">
                             <div class="imgage">
-                                <img src="__PUBLIC__/{$news_f.img}" alt="{$news_f['title']}" style="width: 100%;"></div>
+                                <img src="/lidong/yuanku/Public/<?php echo ($news_f["img"]); ?>" alt="<?php echo ($news_f['title']); ?>" style="width: 100%;"></div>
                             <div class="mask">
                                 <div class="tag">组图</div>
                                 <i class="go">&gt;</i>
-                                <p>{$news_f['title']}</p>
+                                <p><?php echo ($news_f['title']); ?></p>
                             </div>
                         </a>
                         <!-- 位置2 / 405x200-->
-                        <elseif condition="$kk==2" />
-                        <a class="hdpic-item hdpic-item-2" href="{:U('Index/news_detail',array(id=>$news_f[id]))}">
+                        <?php elseif($kk==2): ?>
+                        <a class="hdpic-item hdpic-item-2" href="<?php echo U('Index/news_detail',array(id=>$news_f[id]));?>">
                             <div class="imgage">
-                                <img src="__PUBLIC__/{$news_f.img}" alt="{$news_f['title']}" style="width: 100%;"></div>
+                                <img src="/lidong/yuanku/Public/<?php echo ($news_f["img"]); ?>" alt="<?php echo ($news_f['title']); ?>" style="width: 100%;"></div>
                             <div class="mask">
                                 <div class="tag">组图</div>
                                 <i class="go">&gt;</i>
-                                <p>{$news_f['title']}</p>
+                                <p><?php echo ($news_f['title']); ?></p>
                             </div>
                         </a>
                         <!-- 位置3 / 200x200-->
-                        <elseif condition="$kk==3" />
-                        <a class="hdpic-item hdpic-item-3" href="{:U('Index/news_detail',array(id=>$news_f[id]))}">
+                        <?php elseif($kk==3): ?>
+                        <a class="hdpic-item hdpic-item-3" href="<?php echo U('Index/news_detail',array(id=>$news_f[id]));?>">
                             <div class="imgage">
-                                <img src="__PUBLIC__/{$news_f.img}" alt="{$news_f['title']}" style="width: 100%;height: auto;"></div>
+                                <img src="/lidong/yuanku/Public/<?php echo ($news_f["img"]); ?>" alt="<?php echo ($news_f['title']); ?>" style="width: 100%;height: auto;"></div>
                             <div class="mask">
                                 <div class="tag">组图</div>
                                 <i class="go">&gt;</i>
-                                <p>{$news_f['title']}</p>
+                                <p><?php echo ($news_f['title']); ?></p>
                             </div>
                         </a>
                         <!-- 位置4 / 200x200-->
-                        <elseif condition="$kk==4" />
-                        <a class="hdpic-item hdpic-item-4" href="{:U('Index/news_detail',array(id=>$news_f[id]))}">
+                        <?php elseif($kk==4): ?>
+                        <a class="hdpic-item hdpic-item-4" href="<?php echo U('Index/news_detail',array(id=>$news_f[id]));?>">
                             <div class="imgage">
-                                <img src="__PUBLIC__/{$news_f.img}" alt="{$news_f['title']}" style="width: 100%;height: 190px;"></div>
+                                <img src="/lidong/yuanku/Public/<?php echo ($news_f["img"]); ?>" alt="<?php echo ($news_f['title']); ?>" style="width: 100%;height: 190px;"></div>
                             <div class="mask">
                                 <div class="tag">组图</div>
                                 <i class="go">&gt;</i>
-                                <p>{$news_f['title']}</p>
+                                <p><?php echo ($news_f['title']); ?></p>
                             </div>
                         </a>
                         <!-- 位置5 / 200x405-->
-                        <elseif condition="$kk==5" />
-                        <a class="hdpic-item hdpic-item-5" href="{:U('Index/news_detail',array(id=>$news_f[id]))}">
+                        <?php elseif($kk==5): ?>
+                        <a class="hdpic-item hdpic-item-5" href="<?php echo U('Index/news_detail',array(id=>$news_f[id]));?>">
                             <div class="imgage">
-                                <img src="__PUBLIC__/{$news_f.img}" alt="{$news_f['title']} " style="width: 100%;height: auto;"></div>
+                                <img src="/lidong/yuanku/Public/<?php echo ($news_f["img"]); ?>" alt="<?php echo ($news_f['title']); ?> " style="width: 100%;height: auto;"></div>
                             <div class="mask">
                                 <div class="tag">组图</div>
                                 <i class="go">&gt;</i>
-                                <p>{$news_f['title']}</p>
+                                <p><?php echo ($news_f['title']); ?></p>
                             </div>
 
                         </a>
                         <!-- 位置6 / 200x200-->
-                        <elseif condition="$kk==6" />
-                        <a class="hdpic-item hdpic-item-6" href="{:U('Index/news_detail',array(id=>$news_f[id]))}">
+                        <?php elseif($kk==6): ?>
+                        <a class="hdpic-item hdpic-item-6" href="<?php echo U('Index/news_detail',array(id=>$news_f[id]));?>">
                             <div class="imgage">
-                                <img src="__PUBLIC__/{$news_f.img}" alt="{$news_f['title']} " style="width: 100%;height: auto;"></div>
+                                <img src="/lidong/yuanku/Public/<?php echo ($news_f["img"]); ?>" alt="<?php echo ($news_f['title']); ?> " style="width: 100%;height: auto;"></div>
                             <div class="mask">
                                 <div class="tag">组图</div>
                                 <i class="go">&gt;</i>
-                                <p>{$news_f['title']}</p>
+                                <p><?php echo ($news_f['title']); ?></p>
                             </div>
                         </a>
                         <!-- 位置7 / 200x200-->
-                        <else />
-                        <a class="hdpic-item hdpic-item-7" href="{:U('Index/news_detail',array(id=>$news_f[id]))}">
+                        <?php else: ?>
+                        <a class="hdpic-item hdpic-item-7" href="<?php echo U('Index/news_detail',array(id=>$news_f[id]));?>">
                             <div class="imgage">
-                                <img src="__PUBLIC__/{$news_f.img}" alt="{$news_f['title']}" style="width: 100%;height: 200px;"></div>
+                                <img src="/lidong/yuanku/Public/<?php echo ($news_f["img"]); ?>" alt="<?php echo ($news_f['title']); ?>" style="width: 100%;height: 200px;"></div>
                             <div class="mask">
                                 <div class="tag">组图</div>
                                 <i class="go">&gt;</i>
-                                <p>{$news_f['title']}</p>
+                                <p><?php echo ($news_f['title']); ?></p>
                             </div>
-                        </a>
-                        </if>
-                        </volist>
+                        </a><?php endif; endforeach; endif; else: echo "" ;endif; ?>
                         <!--[if !IE]>
                         |xGv00|12bcbdcd0a17f4550a5480fde08fb0e7
                         <![endif]--> </div>
@@ -665,9 +713,87 @@
     
 </a>
 </div> 
-<include file="public/footer" />
 
 
+<div class="clearfix"></div>
+<nav class="foot-nav" id="back">
+			<div class="container-fluid" >
+				<div class="container">
+					<div class="row" >
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul>
+								<li><a href=""><h4>友情链接</h4></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>百度一下</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>淘宝商城</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>腾讯首页</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span>网易新闻</span></a></li>							
+							</ul>						
+						</div>					
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul >
+								<li><a href="/lidong/yuanku/index.php/Home/Nba/about_us"><h4>最新动态</h4></a></li><br/>
+								 <?php echo get_new_list(); ?>
+								
+								<!--<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img224.jpg"/></span><span>上海</span></a></li><br/>
+								<li><a href="#"><span class="size"><img src="/lidong/yuanku/Public/img/highstand homepage/site-img225.jpg"/></span><span>新闻</span></a></li><br/>-->
+					            
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul >
+								<li><a href="/lidong/yuanku/index.php/Home/Nba/about_us"><h4>关于我们</h4></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;&nbsp;<span>技术中心</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;&nbsp;<span>产品特色</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;<span>结算流程</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>&nbsp;&nbsp;<span>服务宗旨</span></a></li>
+						   </ul>
+						</div>
+						<div class="col-lg-3 col-md-6 col-lg-12">
+							<ul >
+								<li><a href="/lidong/yuanku/index.php/Home/Nba/contact_us"><h4>联系我们</h4></a></li></br>
+								<li><a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;<span>511186470@qq.com</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;<span>0201-6666666</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-map-marker"aria-hidden="true"></span>&nbsp;&nbsp;<span>美国洛杉矶</span></a></li><br/>
+								<li><a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>&nbsp;&nbsp;<span>邮政编码：88888</span></a></li>							
+						    </ul>
+						</div>				
+					</div>	
+				</div>
+			</div>
+			<div class="foot-text">
+				<p>Copyright © 2016 lidong.com. All rights reserved. Terms of Use | Privacy Policy</p>
+			</div>
+</nav>
+<!--摸态框-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="exampleModalLabel">搜索</h4>
+		      </div>
+		      <div class="modal-body">
+		        <form action="<?php echo U("Index/lookfor");?>" method="post">
+		          <div class="form-group">
+		            <label for="recipient-name" class="control-label">请输入你要搜索的内容</label>
+		            <input type="text" class="form-control" id="recipient-name" name="search">
+		          </div>
+		          <!--<div class="form-group">
+		            <label for="message-text" class="control-label">Message:</label>
+		            <textarea class="form-control" id="message-text"></textarea>
+		          </div>-->
+		           <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			        <button type="submit" class="btn btn-primary">搜索</button>
+		          </div>
+		        </form>
+		      </div>
+		     
+		    </div>
+		  </div>
+		 
+</div>
+<!-- </div> -->
+	</body>
 
-
-
+</html>
